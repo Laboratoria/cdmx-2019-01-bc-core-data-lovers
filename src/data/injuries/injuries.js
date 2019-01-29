@@ -1,11 +1,11 @@
 var INJURIES = [{
   "Total_Injured_Persons": 3061790,
   "Total_Injured_Persons_Highway": 3032672,
-    "Total_Injured_Persons_Motorcyclists": 60236,
-    "Total_Injured_Persons_Bus_Occupants": 15427,
-    "Total_Injured_Persons_Passenger_Car_Occupants": 1926625,
-    "Total_Injured_Persons_Pedalcyclists": 45277,
-    "Total_Injured_Persons_Pedestrians": 77619,
+  "Total_Injured_Persons_Motorcyclists": 60236,
+  "Total_Injured_Persons_Bus_Occupants": 15427,
+  "Total_Injured_Persons_Passenger_Car_Occupants": 1926625,
+  "Total_Injured_Persons_Pedalcyclists": 45277,
+  "Total_Injured_Persons_Pedestrians": 77619,
   "Year": "2001-01-04"
 }, {
   "Total_Injured_Persons": 2946446,
@@ -18,7 +18,7 @@ var INJURIES = [{
   "Year": "2002-01-04"
 }, {
   "Total_Injured_Persons": 2906666,
-"Total_Injured_Persons_Highway": 2888601,
+  "Total_Injured_Persons_Highway": 2888601,
   "Total_Injured_Persons_Bus_Occupants": 18174,
   "Total_Injured_Persons_Motorcyclists": 67103,
   "Total_Injured_Persons_Passenger_Car_Occupants": 1756495,
@@ -72,7 +72,7 @@ var INJURIES = [{
   "Year": "2008-01-04"
 }, {
   "Total_Injured_Persons": 2237367,
-"Total_Injured_Persons_Highway": 2217000,
+  "Total_Injured_Persons_Highway": 2217000,
   "Total_Injured_Persons_Bus_Occupants": 12000,
   "Total_Injured_Persons_Motorcyclists": 90000,
   "Total_Injured_Persons_Passenger_Car_Occupants": 1216000,
@@ -119,7 +119,7 @@ var INJURIES = [{
   "Year": "2013-01-04"
 }, {
   "Total_Injured_Persons": 2351372,
-    "Total_Injured_Persons_Highway": 2332000,
+  "Total_Injured_Persons_Highway": 2332000,
   "Total_Injured_Persons_Bus_Occupants": 14000,
   "Total_Injured_Persons_Motorcyclists": 92000,
   "Total_Injured_Persons_Passenger_Car_Occupants": 1292000,
@@ -144,4 +144,4 @@ var INJURIES = [{
   "Total_Injured_Persons_Pedalcyclists": null,
   "Total_Injured_Persons_Pedestrians": null,
   "Year": "2016-01-04"
-}];;
+}];
