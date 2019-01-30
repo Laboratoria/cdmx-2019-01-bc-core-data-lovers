@@ -1,0 +1,64 @@
+:root {
+    background:#2980B9;
+  }
+.hide{
+    display:none;
+}
+.titleWeb{
+        position: relative;
+        top: 15px;
+        font-family: monospace; 
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 100px;
+        text-align: center;
+        color: white;
+        -webkit-text-stroke: 1px black;
+    }
+#enterToPikapedia{
+        background-color:#00CED1;
+        border:none;  
+        color:white;
+        padding: 12px 18px;  
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 22px; 
+        font-family: monospace;
+        border-radius: 5px;
+        position:relative;
+        cursor: pointer;
+        top:70px;
+        left:45%;
+        }
+ #enterToPikapedia:hover
+ {
+        background-color:royalblue;
+        
+ }
+
+#detectivePikachu{
+        height: 422px;
+        position: relative;
+        top: 35px;
+        left: 430px;
+
+        }
+
+#btn1,#btn2,#btn3,#btn4,#btn5 {
+    background-color:#00CED1;
+    border: none; 
+    color: white; 
+    padding: 12px 35px; 
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    margin:5px;
+  }
+  
+  #btn1:hover, #btn2:hover, #btn3:hover,
+  #btn4:hover,  #btn5:hover {
+    background-color: RoyalBlue;
+  }      
+
