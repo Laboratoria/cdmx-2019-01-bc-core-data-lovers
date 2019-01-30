@@ -1,0 +1,23 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFAD09;
+  font-size: 4.5em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #037393;
+  font-size: 3em;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #2109A4;
+  font-size: 2em;
+}
+
+body{
+background:url("images/UnitedStates.png") no-repeat center top;
+background-size: 80%;
+text-align: center;
+}
