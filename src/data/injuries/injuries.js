@@ -1,6 +1,6 @@
 var INJURIES = [{
   "Total_Injured_Persons": 3061790,
-  "Total_Injured_Persons_Highway": 3032672,
+  "Total_Injured_Persons_Highway": 2125184,
   "Total_Injured_Persons_Motorcyclists": 60236,
   "Total_Injured_Persons_Bus_Occupants": 15427,
   "Total_Injured_Persons_Passenger_Car_Occupants": 1926625,
