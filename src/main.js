@@ -1,3 +1,4 @@
+const POKEMON = POKEMON;
 const data = POKEMON.pokemon;
 
 data.forEach(element => {
