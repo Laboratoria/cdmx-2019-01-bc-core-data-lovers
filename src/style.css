@@ -1,0 +1,86 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+}
+.header {
+  grid-column: span 12;
+  background-color: green;
+  height: 200px;
+
+}
+.navigation-menu {
+  grid-column: span 4;
+  background-color: blue;
+}
+.main-content {
+  grid-column: span 8;
+  background-color: gray;
+}
+.footer {
+  grid-column: span 12;
+  background-color: pink;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+  }
+  .navigation-menu {
+    grid-row: 1;
+    grid-column: span 12;
+    height: 50px;
+
+  }
+  .header {
+    display: none;
+
+  }
+  .main-content {
+    display: grid;
+    grid-column: span 12;
+    background-image: url(http://images.yodibujo.es/_uploads/wallpaper/18182_capture.jpg);
+    height: 500px;
+
+  }
+  .footer {
+    grid-column: span 12;
+    background-color: pink;
+    height: 50px;
+  }
+  #hola{
+
+    margin: 0px;
+    background-color: black;
+    display: inline-grid;
+    margin-left: 100px;
+    margin-right: 100px;
+
+  }
+  .pokedex{
+    background-color:white;
+    border-style: solid;
+    border-radius: 12px;
+    color:green;
+    opacity: 0.8;
+    margin: 10%;
+    height: 300px;
+    width: 60%;
+    display: inline-block;
+  }
+  .scrolling {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+
+
+}
