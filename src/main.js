@@ -1,11 +1,9 @@
-//botón en página de inicio
-//add(hideElement) añade esconder :. oculta
-//remove(hideElement) quita esconder :. muestra
-//const botonUno = document.getElementById("comenzar");
+//Declarando las variables que enlazan los elementos HTML mediante el DOM
+const start = document.getElementById('start');
+const championList = document.getElementById('champion-list');
+const startButton = document.getElementById('start-button');
 
-//botonUno.addEventListener("click", () => {
- // inicio.classList.add("hideElement");
-  //filtro.classList.add("hideElement");
-  //fin.classList.add("hideElement");
-  //tarjetas.classList.remove("hideElement");
-//});
+startButton.addEventListener('click',()=>{
+  start.classList.add('hide');
+  championList.classList.remove('hide');
+});
