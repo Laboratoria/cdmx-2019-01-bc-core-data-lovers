@@ -1,12 +1,15 @@
 require('../src/data.js');
 
 
-describe('example', () => {
+describe('filter', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `filter`', () => {
+    expect(filterTheme()).toBe('filter');
   });
 });
+
+
+
