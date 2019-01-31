@@ -4,6 +4,10 @@
 /*const example = () => {
   return 'example';
 };*/
+
+
+
+
 const filter = () => {
 
 };
@@ -20,3 +24,4 @@ const find = () => {
 window.filter = filter
 window.order = order;
 window.find = find;
+
