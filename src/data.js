@@ -5,8 +5,23 @@
   return 'example';
 };*/
 
-const filter =() =>{
 
-}
 
-window.filter = filter;
+
+const filter = () => {
+
+};
+
+const order = () => {
+  
+};
+
+const find = () => {
+
+};
+
+
+window.filter = filter
+window.order = order;
+window.find = find;
+
