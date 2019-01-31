@@ -1,0 +1,84 @@
+
+.inicio {
+    display: inline-block;    
+    text-align: center;
+    background-color: red;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.pokedex {
+    background-image: url(./start.png);
+    height: -webkit-fill-available;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+   }
+   
+   .pokedexFilter {
+    background-image: url(./options.png);
+    height: -webkit-fill-available;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+   }
+   
+   .pokedexFinal {
+    background-image: url(./result.png);
+    height: -webkit-fill-available;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+   }
+
+   #buttonStart {
+    margin-top: 150%;
+    margin-left: 37%;
+    padding: 2px;
+    text-align: center;
+    font-size: 448%;
+    background: transparent;
+    background-image: url(./botonStart.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:transparent;
+    border:0;
+}
+
+#buttonType {
+    margin-top: 68%;
+    margin-left: 20%;
+    font-size: 212%;
+    background: transparent;
+    border: 0;
+    color: transparent;
+}
+
+#buttonWeaknesses {
+    background: transparent;
+    border: 0;
+    margin-left: 39%;
+    font-size: 209%;
+    color: transparent;
+}
+
+    #buttonHome{
+    margin-top: 15%;
+    margin-left: 8%;
+    font-size: 236%;
+    color: transparent;
+    background: transparent;
+    border: 0;
+}
+   .pokedexFilter, .pokedexFinal {
+       display: none;   
+   }
