@@ -2,13 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Pokedex</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+      <section id= "start" class = "pokedex" >
+        <button type = "button" id= "buttonStart" onclick="changeOptions()">______</button>
+    </section>
+    <section id = "options" class = "pokedexFilter">
+        <button type = "button" id= "buttonType" onclick="changeType()">______</button>
+        <button type = "button" id= "buttonWeaknesses" onclick="changeWeaknesses()">______</button>
+    </section>
+    <section id = "finalResult" class = "pokedexFinal">
+        <button type = "button" id= "buttonHome" onclick="changeHome()">______</button><hi>   </hi>
+    </section>
+   
     <div id="root"></div>
-   <script src="./data/pokemon/pokemon.js"></script>
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
+
+
+
