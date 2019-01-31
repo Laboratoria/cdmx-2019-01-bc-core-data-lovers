@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0;}
+
+body {
+background: #FFFFFF
+}
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #FFFFFF;
+margin-bottom: 2em
+}
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
