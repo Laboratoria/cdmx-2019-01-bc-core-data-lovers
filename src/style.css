@@ -1,3 +1,7 @@
+/*.hide {
+  display: none
+}
+*/
 h1 {
   font-family: 'Montserrat', sans-serif;
   color: #FFAD09;
@@ -17,7 +21,88 @@ p {
 }
 
 body{
-background:url("images/UnitedStates.png") no-repeat center top;
+/*background:url("images/UnitedStates.png") no-repeat center top;
+*/ 
 background-size: 80%;
 text-align: center;
+opacity: 30%;
 }
+
+.side_menu {
+  background: #112659;
+  color: #fff;
+  text-align: center;
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 72px;
+  z-index: 3;
+}
+
+
+.fa-walking {
+  font-size: 200px;
+  color: rgb(18, 18, 134);
+  padding-right: 200px;
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
+  margin-right: 131px;
+  
+}
+
+.fa-bicycle {
+  font-size: 60px;
+  color: orangered;
+  padding-right: 200px;
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
+  margin-right: 131px;
+}
+.fa-motorcycle {
+  font-size: 60px;
+  color: crimson;
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
+}
+.fa-bus {
+  font-size: 60px;
+  color: forestgreen;
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
+}
+.fa-car {
+  font-size: 60px;
+  color: darkmagenta;
+  padding-right: 150px;
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
+  margin-right: 131px;
+}
+
