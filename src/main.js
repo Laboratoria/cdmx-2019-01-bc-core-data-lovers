@@ -17,6 +17,13 @@ document.getElementById('botonjson').addEventListener("click", loadjson);
 function loadjson() {
   fetch("pokemon.json")
   .then(function(response){
-    console.log(response)
+    return response.json();
+  })
+  .then(function(data){
+    let html = "";
+    data.forEach(function(pokm){
+      html += `<li>${pokm.name} - ${pokm.id}</li>`;
+    })
+    document.getElementById("resultadojson").innerHtml = html;
   })
 }
