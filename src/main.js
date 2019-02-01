@@ -15,7 +15,7 @@ data.forEach(element => {
 document.getElementById('botonjson').addEventListener("click", loadjson);
 
 function loadjson() {
-  fetch("./data/pokemon/pokemon.json")
+  fetch("https://github.com/GENESIS-ENRIQUEZ/cdmx-2019-01-bc-core-data-lovers/blob/master/src/data/pokemon/pokemon.json")
   .then(function(response){
     return response.json();
   })
