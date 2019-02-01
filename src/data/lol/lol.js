@@ -1309,6 +1309,7 @@ var LOL = {
       key: "28",
       name: "Evelynn",
       title: "the Widowmaker",
+      img: "https://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Evelynn.png",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
       blurb:
@@ -3024,7 +3025,7 @@ var LOL = {
       key: "7",
       name: "LeBlanc",
       title: "the Deceiver",
-      "name:":
+      img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Leblanc.png",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
