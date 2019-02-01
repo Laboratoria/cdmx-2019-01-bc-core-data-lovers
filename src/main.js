@@ -5,34 +5,26 @@ const championList = document.getElementById('champion-list');
 const startButton = document.getElementById('start-button');
 const back = document.getElementById('back');
 const imprimirLista = document.getElementById('imprimir-lista');
+const es = document.getElementById('es');
+
 
 
 //Evento del boton Comenzar
-startButton.addEventListener('click',()=>{
+startButton.addEventListener('click', () => {
   start.classList.add('hide');
   championList.classList.remove('hide');
 });
 
-back.addEventListener('click', ()=>{
+back.addEventListener('click', () => {
   championList.classList.add('hide');
   start.classList.remove('hide');
 });
 
 
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
-/*var string1 = "";
-const dataLOL = LOL.type;
-//console.log(dataLOL);
-for (let type in LOL){
-  let name =LOL[type].data
-  string1 = LOL[type];
-  console.log(LOL)
-  console.log(name)
-}
-*/
 
-const search = document.getElementById('search')
 
+/*const search = document.getElementById('search')
 const buscadora = () => {
   console.log(search.value)
   for (const key in dataLol) {
@@ -41,17 +33,19 @@ const buscadora = () => {
       let name = element.name;
       let tag = element.tags[0];
       let img = element.img;
-  
-      if(search.value === 'A'){
+
+      if (search.value === 'A') {
         console.log(name)
       }
-  
-  
+
+
       //console.log(element.info.defense)
-      
+
     }
   }
 }
+
+
 
 search.addEventListener('keyup', buscadora)
 
@@ -65,28 +59,29 @@ for (const key in dataLol) {
     let tag = element.tags[0];
     let img = element.img;
 
-    if(search.value === 'A'){
+   //se usa para el buscado
+    if (search.value === 'A') {
       console.log('encontrado')
     }
 
 
     //console.log(element.info.defense)
-    
+
   }
 }
+*/
 
-//console.log(string1.Aatrox);
-// expected output: "123"
-
-
-/*
-const data =  LOL;
-const print=(type) => {
-    let result = `<p>Tipo: ${type}</p>`
-    imprimirLista.insertAdjacentHTML("beforeend",result);
-    return result;
+const lolData = LOL.data;
+let name = "";
+const print = (name)=>{
+  let result = `<p> ${name} </p>`;
+  es.insertAdjacentHTML("beforeend",result);
 }
+for (const key in lolData) {
+  if (lolData.hasOwnProperty(key)) {
 
-for(const type in data => {
-    console.log(type);
-});*/
+    const element = lolData[key];
+     name = element.name;
+    print(name);
+  }
+}
