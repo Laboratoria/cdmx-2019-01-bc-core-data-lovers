@@ -144,9 +144,29 @@
         "armor": 26.38,
         "armorperlevel": 3.5,
         "spellblock": 32.1,
-        "spellblockperlevel": 1.25,
+    //botón en página de inicio
+//add(hideElement) añade esconder :. oculta
+//remove(hideElement) quita esconder :. muestra
+//const botonUno = document.getElementById("comenzar");
+
+//botonUno.addEventListener("click", () => {
+ // inicio.classList.add("hideElement");
+  //filtro.classList.add("hideElement");
+  //fin.classList.add("hideElement");
+  //tarjetas.classList.remove("hideElement");
+//});    "spellblockperlevel": 1.25,
         "attackrange": 125,
-        "hpregen": 8.34,
+    //botón en página de inicio
+//add(hideElement) añade esconder :. oculta
+//remove(hideElement) quita esconder :. muestra
+//const botonUno = document.getElementById("comenzar");
+
+//botonUno.addEventListener("click", () => {
+ // inicio.classList.add("hideElement");
+  //filtro.classList.add("hideElement");
+  //fin.classList.add("hideElement");
+  //tarjetas.classList.remove("hideElement");
+//});    "hpregen": 8.34,
         "hpregenperlevel": 0.65,
         "mpregen": 50,
         "mpregenperlevel": 0,
