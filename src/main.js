@@ -34,13 +34,6 @@ const buscadora = () => {
       let tag = element.tags[0];
       let img = element.img;
 
-<<<<<<< HEAD
-      if(search.value === 'A'){
-        console.log(name)
-      }
-
-      //console.log(element.info.defense)
-=======
       if (search.value === 'A') {
         console.log(name)
       }
@@ -48,7 +41,6 @@ const buscadora = () => {
 
       //console.log(element.info.defense)
 
->>>>>>> origin/master
     }
   }
 }
@@ -80,18 +72,16 @@ for (const key in dataLol) {
 */
 
 const lolData = LOL.data;
-
-const print = (img, name)=>{
-  let result = `<img src="${img}">
-  <p> ${name} </p>`;
+let name = "";
+const print = (name)=>{
+  let result = `<p> ${name} </p>`;
   es.insertAdjacentHTML("beforeend",result);
 }
 for (const key in lolData) {
   if (lolData.hasOwnProperty(key)) {
 
     const element = lolData[key];
-    let img = element.img;
-     let name = element.name;
-    print(img, name);
+     name = element.name;
+    print(name);
   }
 }
