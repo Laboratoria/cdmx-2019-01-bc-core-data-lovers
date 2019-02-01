@@ -1,5 +1,6 @@
 var POKEMON = {
-  "pokemon": [{
+  "pokemon": [
+    {
     "id": 1,
     "num": "001",
     "name": "Bulbasaur",
@@ -4083,5 +4084,4 @@ var POKEMON = {
       "Dark"
     ]
   }]
-}
-;;
+};;

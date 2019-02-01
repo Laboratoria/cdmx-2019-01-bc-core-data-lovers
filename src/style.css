@@ -5,17 +5,10 @@
     display:none;
 }
 .titleWeb{
-        position: relative;
-        top: 15px;
-        font-family: monospace; 
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 100px;
-        text-align: center;
-        color: white;
-        -webkit-text-stroke: 1px black;
-    }
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
 #enterToPikapedia{
         background-color:#00CED1;
         border:none;  
@@ -28,7 +21,7 @@
         border-radius: 5px;
         position:relative;
         cursor: pointer;
-        top:70px;
+        top:50px;
         left:45%;
         }
  #enterToPikapedia:hover
@@ -61,4 +54,35 @@
   #btn4:hover,  #btn5:hover {
     background-color: RoyalBlue;
   }      
+
+.welcomeMessage{
+   color:#FFDE00;
+   font-size: 30px;
+   font-family: monospace;
+   text-align: center;
+}
+
+.pokemones{
+    text-align: center;
+    color:white;
+    font-family: monospace;
+    font-size: 20px;
+    
+}
+
+h1,h2{
+    color:#FFDE00;
+    display: inline-block;
+}
+p{
+   color: white;
+   font-size: 16px;
+   background:#8A2BE2;
+   width: 270px;
+   margin:0px;
+   position: relative;
+   left:540px;
+
+  
+}
 
