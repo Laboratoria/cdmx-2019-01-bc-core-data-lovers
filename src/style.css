@@ -10,7 +10,7 @@ body{
 }
 
 .contenedor{
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     background: #C2FAB9;
@@ -18,8 +18,8 @@ body{
 
 .fua{
 display: inline-block;
-width: 30%;
-border: #FFBA5C;
+width: 33%;
+background: #C2FAB9;
 }
 
 .pokeball-page{
@@ -35,7 +35,22 @@ border: #FFBA5C;
 }
 
 header{
-background: #12203E;
+
+width: 100%;
+background: #C2FAB9;
+height: 4em;
 color:whitesmoke;
 }
 
+.textfiltertop{
+    background: #5A6978;
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    height: 3em;
+    width: 100%;
+    background: #976DD0;
+
+}
