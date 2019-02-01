@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+.hideElement{
+    display:none;
+}
 body{
     background:  #E9ECF4;
 }
@@ -15,6 +17,17 @@ body{
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, auto);
+    background: #C2FAB9;
 }
 
-.contenedor .header
+header{
+background: #12203E;
+color:whitesmoke;
+}
+
+#imprimir-lista{
+display:inline-flex;
+flex-wrap: wrap;
+background: #C2FAB9;
+border: 10px solid #FFBA5C
+}
