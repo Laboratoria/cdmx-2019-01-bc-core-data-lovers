@@ -15,8 +15,7 @@ data.forEach(element => {
 document.getElementById('botonjson').addEventListener("click", loadjson);
 
 function loadjson() {
-  fetch("pokemon.json")
-  .then(function(response){
+  fetch("pokemon.json").then(function(response){
     return response.json();
   })
   .then(function(data){
