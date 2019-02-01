@@ -1,5 +1,4 @@
 //alert("hola mundo");
+//console.log(INJURIES);
 
-console.log(INJURIES);
-
-//fetch ("./data/injuries/injuries.json./data/injuries/injuries.json").them((data) => cosole.log(data));
+//console.log(INJURIES[0].Year);
