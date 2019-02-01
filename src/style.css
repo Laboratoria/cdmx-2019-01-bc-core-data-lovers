@@ -39,7 +39,6 @@ h2 {
 .logo2 {
   width: 50%;
   display: inline-block;
-  float: right;
 }
 
 .start {
@@ -84,7 +83,7 @@ header {
   padding: 0px;
 }
 
-#hamburguer {
+#hamburger {
   width: 15%;
   display: inline-block;
   margin:30px;
@@ -120,4 +119,9 @@ footer{
   background-color: black;
   height: 100vh;
   padding: 25px;
+}
+
+p{
+  color: white;
+  font-size: 2em;
 }
