@@ -1,14 +1,20 @@
+const data=  POKEMON.pokemon;
+const pokeballPage=document.getElementById('pokeball-page');
+const pokemonPage=document.getElementById('pokemon-page');
+const pokeballButton=document.getElementById('pokeball-button');
+const printList = document.getElementById('print-list');
 
 
-const data =  POKEMON.pokemon;
-
-const imprimirLista = document.getElementById('imprimir-lista');
+pokeballButton.addEventListener('click',()=> {
+ pokeballPage.classList.add('hideElement');    
+ pokemonPage.classList.remove('hideElement');
+});
 
 const print=(name,type,img) => {
-    let result = `<section> <img src="${img}"> nombre: ${name} Tipo: ${type}</section>`
-    imprimirLista.insertAdjacentHTML("beforeend",result);
+    let result = `<div class=fua> <img src="${img}">  <p>${name}</p> <p>Tipo: ${type}</p></div>`
+    printList.insertAdjacentHTML("beforeend",result);
     return result;
-}
+};
 
 data.forEach(element => {
     let name=element.name;
@@ -16,6 +22,3 @@ data.forEach(element => {
     let img=element.img;
     print(name,type,img);
 });
-
-
-//let result = `<section><img src="${img}"> nombre: ${name} Tipo: ${type}</section>`

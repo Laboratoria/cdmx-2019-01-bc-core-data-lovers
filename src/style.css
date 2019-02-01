@@ -2,19 +2,40 @@
     margin: 0;
     padding: 0;
 }
-
+.hideElement{
+    display:none;
+}
 body{
     background:  #E9ECF4;
 }
 
 .contenedor{
-    width: 70%;
-    max-width: 1000px;
-    margin: 10px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, auto);
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: #C2FAB9;
 }
 
-.contenedor .header
+.fua{
+display: inline-block;
+width: 30%;
+border: #FFBA5C;
+}
+
+.pokeball-page{
+    position: relative;
+}
+
+.poke-button{
+    background: #C2FAB9;
+    border: none;
+    margin-left: 40vw;  
+    margin-top: 60vh;
+    
+}
+
+header{
+background: #12203E;
+color:whitesmoke;
+}
+
