@@ -1,3 +1,6 @@
+/*global INJURIES: true*/
+/*global Map: true*/
+/*eslint no-undef: "error"*/
 //fetch ("https://swapi.co/api/people/1").then((data)=>data.json()).then((injuries) => {return console.log(injuries)});
 
 // esta es una función de ejemplo
@@ -8,17 +11,12 @@ const example = () => {
 };
 
 window.example = example;
-//injuries: (year,total_Injured_Persons) =>{
-
 
 var years = new Map();
-for (let i = 0; i < INJURIES.length; i++) {
-  years.set(INJURIES[i].Year, INJURIES[i].Total_Injured_Persons);
-  //console.log(INJURIES[i]);
+
+for (let injuriesByYear of INJURIES) {
+  years.set(injuriesByYear.Year, injuriesByYear);
+  console.log(injuriesByYear);
 }
-years.size;
-  console.log(years.size);
-years.forEach(function(value, key, map){
-  console.log(`key is ${key} for value ${value}`);
-});
-//};
+
+//console.log(years.get("2001-01-04").Total_Injured_Persons);
