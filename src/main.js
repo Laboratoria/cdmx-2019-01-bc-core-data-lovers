@@ -24,7 +24,6 @@ enterToPikapedia.addEventListener("click", () => {
     <p>${num}</p>
     <p>${type}</p>`;
     totalData.insertAdjacentHTML("beforeend", result);
-  
   }
   
  pokemonData.forEach(element =>{
