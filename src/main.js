@@ -7,21 +7,27 @@ const imprimirRoles = document.getElementById("imprimirRoles")
 
 /*esta función imprimir los tags de los personales*/
 let tags = "";
-const print = (tags) =>{
-    let resultTags = `<p>${tags}</p>`;
-    imprimirRoles.insertAdjacentHTML("beforeend", resultTags);
+const print =(name,imga,title) =>{
+    let result = `<div class="cuadro"><img src="${imga}"> ${name} ${title}</div>`; 
+    imprimirRoles.insertAdjacentHTML("beforeend",result);
 }
 
-/*const filtroRoles = () => {*/
+/*let img = "";
+const printimg = (img) =>{
+    let resultimg = `<div class=><img src="${img}"${name}</div>`;
+    imprimirRoles.insertAdjacentHTML("beforeend", resultimg);
+}*/
+
+
 for (const key in datalol) {
     if (datalol.hasOwnProperty(key)) {
       const element = datalol[key];
       let name = element.name;
       let tag = element.tags[0];
-      let img = element.img;
-      let dato = [`${name}, ${tag}, ${img}`]
-
-      print (dato);
+      let imga = element.img;
+      let title = element.title;
+      let dato = [`${name}, ${tag}`]
+      print(name,imga,title);
 
     }
 };
