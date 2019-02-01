@@ -41,14 +41,12 @@ const buscadora = () => {
       let name = element.name;
       let tag = element.tags[0];
       let img = element.img;
-  
+
       if(search.value === 'A'){
         console.log(name)
       }
-  
-  
+
       //console.log(element.info.defense)
-      
     }
   }
 }
@@ -71,7 +69,7 @@ for (const key in dataLol) {
 
 
     //console.log(element.info.defense)
-    
+
   }
 }
 
