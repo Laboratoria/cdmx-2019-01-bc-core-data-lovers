@@ -1,29 +1,27 @@
-const lol = LOL;
- //const dataLol = LOL.data;
- console.log(lol);
- console.log(lol.data)
-
- /*const dataname = document.getElementById('dataname');
-
- const print = (championsNames) => {
-  let resultName = `<h2>${championsNames}<h2>`
-  dataname.insertAdjacentHTML("beforeend", resultName);
- }
+/*convierte la base de datos en una variable*/
+const datalol = LOL.data;
+const roles = document.getElementById("roles").value;
+/*trae el div imprimir roles para identificarlo e imprimir*/
+const imprimirRoles = document.getElementById("imprimirRoles")
 
 
+/*esta función imprimir los tags de los personales*/
+let tags = "";
+const print = (tags) =>{
+    let resultTags = `<p>${tags}</p>`;
+    imprimirRoles.insertAdjacentHTML("beforeend", resultTags);
+}
 
-  /*lol.forEach(element =>{
-      let championsNames = element.data;
-      console.log(championsNames)
-  });
+/*const filtroRoles = () => {*/
+for (const key in datalol) {
+    if (datalol.hasOwnProperty(key)) {
+      const element = datalol[key];
+      let name = element.name;
+      let tag = element.tags[0];
+      let img = element.img;
+      let dato = [`${name}, ${tag}, ${img}`]
 
+      print (dato);
 
-
-  /*dataLol.forEach(element =>{
-      let name = element.data;
-      let championsNames = element.name;
-      for (let data in name){
-          return championsNames, `name.${data} = ${name[data]}`;
-      }
-
-  })*/
+    }
+};
