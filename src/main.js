@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-
-=======
 /* const search = document.getElementById('search')
 const buscadora = () => {
   console.log(search.value)
@@ -56,7 +53,6 @@ for (const key in dataLol) {
             let img = element.img;
 
             print (name,tag);
->>>>>>> upstream/master
 
             console.log(name);}}
         
