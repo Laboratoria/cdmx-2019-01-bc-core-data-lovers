@@ -1,4 +1,3 @@
-
 const principalpage = document.getElementById('principalpage');
 const pedestrianspage = document.getElementById('pedestrianspage');
 const pedalcyclistspage = document.getElementById('pedalcyclistspage');
@@ -14,4 +13,4 @@ const pedestrian_data = () => {
 //console.log(INJURIES);
 
 //console.log(INJURIES[0].Year);
-
+pedalcyclistspage.addEventListener()

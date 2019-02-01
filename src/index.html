@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon (2).ico">
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins" rel="stylesheet">
 
   <!--link que enlaza íconos de fontawesome-->
@@ -20,17 +21,16 @@
 
 
   <section1 id="principalpage" class=hide>
-  <h1>Injured persons by 
-    <br>transportation mode</h1>
+  <h1>Injured persons by<br>transportation mode</h1>
 
   <h2>in United States of America</h2>
-    <button class="fas fa-walking" id="pedestrians" onclick="pedestrian_data()"></button>
-    <button class="fas fa-bicycle" id="pedalcyclists" onclick="pedalcyclists_data()"></button>
-    <button class="fas fa-bus" id="bus_occupants" onclick="busoccupants_data()"></button>
+    <a href="page1.html"><button class="fas fa-walking" id="pedestrians" onclick="pedestrian_data()"></button>
+    <a href="page2.html"><button class="fas fa-bicycle" id="pedalcyclists" onclick="pedalcyclists_data()"></button>
+    <a href="page3.html"><button class="fas fa-bus" id="bus_occupants" onclick="busoccupants_data()"></button>
     <br>
     <br>
-    <button class="fas fa-car" id="car_occupants" onclick="carocuppants_data()"></button>
-    <button class="fas fa-motorcycle" id="motorcyclists" onclick="motorcyclists_data()"></button>
+    <a href="page4.html"><button class="fas fa-car" id="car_occupants" onclick="carocuppants_data()"></button>
+    <a href="page5.html"><button class="fas fa-motorcycle" id="motorcyclists" onclick="motorcyclists_data()"></button>
   </section1>
 
   <nav class="side_menu">
@@ -38,15 +38,12 @@
   </nav>
 
   <p>comentarios blablabla</p>
-
+<!--por que pusiste esto aqui???-->
   <section2 id="pedestrianspage" class=hide></section2>
   <section3 id="pedalcyclistspage" class=hide></section3>
   <section4 id="busoccupantspage" class=hide></section4>
   <section5 id="caroccupantspage" class=hide></section5>
   <section6 id="motorcyclistspage" class=hide></section6>
-
-<button type="button" name="button" id= "years">Years</button>
-
 
   <script src="data.js"></script>
 
