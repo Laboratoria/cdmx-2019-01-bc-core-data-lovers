@@ -12,6 +12,3 @@ dataPokemon.forEach(element =>{
     let imagePokemon = element.img;
     toPrint(namePokemon,imagePokemon);
 });
-
-
-
