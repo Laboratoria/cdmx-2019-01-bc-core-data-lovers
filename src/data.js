@@ -1,8 +1,9 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const example = () => {
+const filter = () => {
   return 'example';
 };
 
-window.example = example;
+window.filter = filter;
+
