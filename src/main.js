@@ -1,13 +1,59 @@
-//Varable del objeto LOL
-/*const dataLol = LOL.data;
-console.log(dataLol);
+/* const search = document.getElementById('search')
+const buscadora = () => {
+  console.log(search.value)
+  for (const key in dataLol) {
+    if (dataLol.hasOwnProperty(key)) {
+      const element = dataLol[key];
+      let name = element.name;
+      let tag = element.tags[0];
+      let img = element.img;
+  
+      if(search.value === 'A'){
+        console.log(name)
+      }
+  
+  
+      //console.log(element.info.defense)
+      
+    }
+  }
+}
+search.addEventListener('keyup', buscadora)
+console.log(LOL.data.Aatrox)
+const dataLol = LOL.data
+for (const key in dataLol) {
+  if (dataLol.hasOwnProperty(key)) {
+    const element = dataLol[key];
+    let name = element.name;
+    let tag = element.tags[0];
+    let img = element.img;
+    if(search.value === 'A'){
+      console.log('encontrado')
+    } */
 
-//funcion para traer el elemento del html donde vamos a pintar
-const personajes = document.getElementById("personajes");
+    const search = document.getElementById('search')
+    /* Convierte la base de datos en una variable*/
+    const dataLol = LOL.data;
+    /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
+    const es = document.getElementById('es')
+  
+   /*esta función imprime los nombres de los personajes*/
+    let name = "";
+    const print = (name)=>{
+        let result = `<p>${name}</p>`;
+        es.insertAdjacentHTML("beforeend",result);}
+    
+   /* const buscadora =() => {*/
+        for(const key in dataLol){
+            if(dataLol.hasOwnProperty(key)){
+            const element = dataLol[key];
+            let name = element.name;
+            let tag = element.tags[0];
+            let img = element.img;
 
-//función para imprimir elementos en el html
-const imprimir = (personajesName)=> {
-    let result= `<p>${personajesName}</p>`
-    personajes.insertAdjacentHTML("beforeend", result);
-}  */
+            print (name,tag);
 
+            console.log(name);}}
+        
+  
+    
