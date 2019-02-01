@@ -12,6 +12,18 @@ buttonIdntificador.addEventListener("click",()=>{
 });
 
 
+const indicatorPeru= WORLDBANK.PER.indicators;
+console.log(indicatorPeru);
+const contenido = document.getElementById("contenido");
+const print = (indicatorPeru) =>{
+  let result= `<h1>${indicatorPeru}</h1>`
+  contenido.insertAdjacentHTML("beforeend", result);
+}
+
+indicatorPeru.forEach(element => {
+    let dataPer = element.indicatorName;
+    print(dataPer)
+});
 
 /*const buttonIdentificador= document.getElementById("Identificador");
 
