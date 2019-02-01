@@ -121,16 +121,28 @@ footer{
 }
 
 p{
+  width: 280px;
   color: white;
-  font-size: 2em;
+  font-size: 3em;
+  display: flex;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  justify-content:center;
+  color: #efc056;
 }
 
 .cuadro {
-  width: 30%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.champion{
+  width: 33%;
   display: inline-block;
 }
 
-img#campeon {
-  width: 200px;
-  display: inline-block;
+img {
+  width: 300px;
 }
