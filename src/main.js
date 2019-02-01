@@ -36,6 +36,11 @@ for (const key in dataLol) {
     const dataLol = LOL.data;
     /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
     const es = document.getElementById('es')
+
+    /* botones*/
+    const inicio = document.getElementById('inicio')
+
+
    /*esta función imprime los nombres de los personajes*/
    /*let imprimirImagen = "";
             const printImg = (img)=>{
@@ -46,8 +51,12 @@ for (const key in dataLol) {
         const print = (datos)=>{
         let result = `<div class ="lista"> ${datos} </div>`;
         es.insertAdjacentHTML("beforeend",result);}*/
+   inicio.onclick = ()=>{
+     document.getElementById("primera-pantalla").style.display = 'none';
+     document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';}
+
 const print =(name,img,title) => {
- let nameList = `<div class="nameList"><img src="${img}">${name} ${title}</div>`;
+ let nameList = `<div class="nameList"><img class="lolIcons" src="${img}">${name} ${title}</div>`;
  es.insertAdjacentHTML("beforeend",nameList)}
     
    /* const buscadora =() => {*/
