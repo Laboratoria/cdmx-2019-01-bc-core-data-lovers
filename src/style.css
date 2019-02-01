@@ -117,11 +117,20 @@ footer{
 
 #champion-list {
   background-color: black;
-  height: 100vh;
   padding: 25px;
 }
 
 p{
   color: white;
   font-size: 2em;
+}
+
+.cuadro {
+  width: 30%;
+  display: inline-block;
+}
+
+img#campeon {
+  width: 200px;
+  display: inline-block;
 }
