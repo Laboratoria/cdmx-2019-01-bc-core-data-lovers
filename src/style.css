@@ -1,0 +1,11 @@
+@media (max-width: 414px) and (orientation: landscape) {
+
+    h2{
+        color: red;
+        margin: 1%;
+    }
+}
+
+h1 {
+    color: red;
+}
