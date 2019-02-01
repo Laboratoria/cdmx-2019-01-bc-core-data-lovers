@@ -1,13 +1,14 @@
-const dataPokemon= POKEMON.pokemon;
-let printPokemon= document.getElementById('root');
+const pokemones = document.getElementById('pokemones');
+const dataPokemon = POKEMON.pokemon;
 
-const print= () => {
-    printPokemon.insertAdjacentHTML('beforeend',root);
-    dataPokemon.forEach(element => {
-        let name= element.name;
-        let image=element.img;
-        print(name,image);
-    });
 
-   return print();
-}
+const toPrint = (namePokemon,imagePokemon) =>{
+    let visualPokemon = `<section class="divPokemon"><img src"${imagePokemon}">${namePokemon}</section>`;
+    pokemones.insertAdjacentHTML("beforeend",visualPokemon);    
+};
+
+dataPokemon.forEach(element =>{
+    let namePokemon = element.name;
+    let imagePokemon = element.img;
+    toPrint(namePokemon,imagePokemon);
+});
