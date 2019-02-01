@@ -1,5 +1,6 @@
-const data = POKEMON.pokemon;
 
+
+const data =  POKEMON.pokemon;
 
 const imprimirLista = document.getElementById('imprimir-lista');
 
