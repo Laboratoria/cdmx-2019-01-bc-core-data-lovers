@@ -11,7 +11,7 @@ pokeballButton.addEventListener('click',()=> {
 });
 
 const print=(name,type,img) => {
-    let result = `<section> <img src="${img}"> nombre: ${name} Tipo: ${type}</section>`
+    let result = `<div class=fua> <img src="${img}">  <p>${name}</p> <p>Tipo: ${type}</p></div>`
     printList.insertAdjacentHTML("beforeend",result);
     return result;
 };
