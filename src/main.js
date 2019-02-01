@@ -4,10 +4,9 @@ const moto = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Motorcyc
 const bike = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Pedalcyclists}`);
 const walk = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Pedestrians}`);
 const transit = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Transit_Total}`);
+const root = document.getElementById("root")
 
-console.log(walk)
-
-document.getElementById("root").innerHTML= `${date},${moto}`;
+root.insertAdjacentHTML('beforeend', date)
 
 //Total_Injured_Persons
 //Total_Injured_Persons_Motorcyclists
