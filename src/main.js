@@ -74,8 +74,8 @@ for (const key in dataLol) {
 const lolData = LOL.data;
 
 const print = (img, name)=>{
-  let result = `<img src="${img}">
-  <p> ${name} </p>`;
+  let result = `<a href="#card"> <div class="champion"> <img src="${img}">
+  <p> ${name} </p></div></a>`;
   es.insertAdjacentHTML("beforeend",result);
 }
 for (const key in lolData) {
