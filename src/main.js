@@ -20,14 +20,62 @@ back.addEventListener('click', ()=>{
 
 
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
-var string1 = "";
+/*var string1 = "";
 const dataLOL = LOL.type;
-console.log(dataLOL);
-for (var type in LOL){
+//console.log(dataLOL);
+for (let type in LOL){
+  let name =LOL[type].data
   string1 = LOL[type];
+  console.log(LOL)
+  console.log(name)
+}
+*/
+
+const search = document.getElementById('search')
+
+const buscadora = () => {
+  console.log(search.value)
+  for (const key in dataLol) {
+    if (dataLol.hasOwnProperty(key)) {
+      const element = dataLol[key];
+      let name = element.name;
+      let tag = element.tags[0];
+      let img = element.img;
+  
+      if(search.value === 'A'){
+        console.log(name)
+      }
+  
+  
+      //console.log(element.info.defense)
+      
+    }
+  }
 }
 
-console.log(string1);
+search.addEventListener('keyup', buscadora)
+
+console.log(LOL.data.Aatrox)
+
+const dataLol = LOL.data
+for (const key in dataLol) {
+  if (dataLol.hasOwnProperty(key)) {
+    const element = dataLol[key];
+    let name = element.name;
+    let tag = element.tags[0];
+    let img = element.img;
+
+    if(search.value === 'A'){
+      console.log('encontrado')
+    }
+
+
+    //console.log(element.info.defense)
+    
+  }
+}
+
+//console.log(string1.Aatrox);
 // expected output: "123"
 
 
