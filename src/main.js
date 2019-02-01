@@ -9,3 +9,7 @@ const pedestrian_data = () => {
     page1.classList.add('hide');
     page2.classList.remove('hide');
   }
+//alert("hola mundo");
+//console.log(INJURIES);
+
+//console.log(INJURIES[0].Year);

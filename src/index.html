@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
-<body onload="load()">
+<body>
   <div id="root"></div>
-  <!--<script src="./data/injuries/injuries.js"></script>-->
+  <script src="./data/injuries/injuries.js"></script>
+  <script src="main.js"></script>
 
   <section1 id="principalpage" class=hide>
   <h1>Injured persons by 
@@ -28,6 +29,7 @@
     <br>
     <button class="fas fa-car" id="car_occupants" onclick="carocuppants_data()"></button>
     <button class="fas fa-motorcycle" id="motorcyclists" onclick="motorcyclists_data()"></button>
+    <button type="button" name="button" id= "years">Years</button>
   </section1>
 
   <nav class="side_menu">
