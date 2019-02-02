@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: ;
+    color: #000;
+  }
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+.header{
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    padding: 5px 40px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    height: 80px;
+    line-height: 30px;
+    background: #fff;
+    z-index: 40; 
+}
+.title{
+    display: inline-block;
+}
+.nav__menu.ocultar{
+    display: none;
+}
+.container{
+    margin-top: 80px;
+}
