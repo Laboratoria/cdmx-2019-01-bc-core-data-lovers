@@ -2,9 +2,11 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
+
 }
 .header {
   grid-column: span 12;
+  grid-row: span 1;
   background-color: green;
   height: 200px;
 
@@ -12,10 +14,12 @@
 .navigation-menu {
   grid-column: span 4;
   background-color: blue;
+  height: 500px;
 }
 .main-content {
   grid-column: span 8;
   background-color: gray;
+  height: 500px;
 }
 .footer {
   grid-column: span 12;
@@ -71,14 +75,44 @@
     color:green;
     opacity: 0.8;
     margin: 10%;
-    height: 300px;
-    width: 60%;
+    height:200px;
+    width: 25%;
     display: inline-block;
+
+
+  }
+
+  .pokedex1{
+    background-color:white;
+    border-style: solid;
+    border-radius: 12px;
+    color:green;
+    opacity: 0.8;
+    margin: 10%;
+    height:300px;
+    width: 25%;
+    display: inline-block;
+
+
   }
   .scrolling {
   overflow-x: scroll;
-  overflow-y: hidden;
+    overflow-y: hidden;
   white-space: nowrap;
+
+
+}
+
+.debilidades{
+  background-color:green;
+  border-style: solid;
+  border-radius: 12px;
+  color:black;
+  opacity: 0.8;
+  margin: 10%;
+  height:20px;
+  width: 50%;;
+  display: inline-block;
 
 }
 
