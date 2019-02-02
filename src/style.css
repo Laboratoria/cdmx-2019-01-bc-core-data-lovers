@@ -1,0 +1,29 @@
+    
+   .pokedex{
+    position: absolute;
+    top: 21%;
+    left: 33%;
+    clear: inherit;
+   }
+    #root{
+        max-width: 40%;
+        position: relative;
+        left: 31%;
+        top: 15%;
+       
+    }
+    h1{
+        background:red;
+    }
+    
+    .contenedorfoto { 
+        float:left; 
+        max-width: 100%;        
+        height: auto; 
+        margin:1%; 
+        padding:1%; 
+        background-color:white; 
+        text-align:center; 
+        background: black;
+     }
+
