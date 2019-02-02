@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny|Libre+Barcode+128+Text|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+
+
+p{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    border: black 10px solid;
+  
+    background-color: rgb(162, 175, 177);
+    font-size: 20px;
+}
