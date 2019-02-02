@@ -2,51 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+  
+  
+
+<div id="root"></div>
 <div id= "box1">
  <header>Tasa de Fuerza Laboral</header>
 </br>
 </br>
 <input id= "home" type= "button" value= "Home"></input>
-<input id= "identificador" type= "button" value= "Identificador"></input>
+<input id= "indicador" type= "button" value= "Indicadores"></input>
 
 </div>
 <div id= "box2" class= "hide">
   <p>BIENVENIDA</p>
 </div>
+
 <div id= "box3" class= "hide">
  <br> </br>
-  <select name= "filtrarPaís">
-    <option value= "value"> País</option>
-    <option value= "value1"> México</option>
-    <option value= "value2"> Peru</option>
-    <option value= "value3"> Chile</option>
-    <option value= "value4"> Brasil</option>
+  <select id= "filtrar-pais" >
+    <option value= "Pais"> País</option>
+    <option value= "MEX">Mexico</option>
+    <option value= "PER">Peru</option>
+    <option value= "CHL">Chile</option>
+    <option value= "BRA">Brasil</option>
   </select>
 
-  <select name= "orden">
+  <select name= "orden" >
     <option value= "value1"> Ordenar</option>
     <option value= "value5"> Ascendente</option>
-    <option value= "value6"> Descendente</option>
-    
+    <option value= "value6"> Descendente</option>     
   </select>
-  <div id="contenido">
-  
-
-  </div>
 </div>
 
+<div id="contenido">
 
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <script src="./data/worldbank/worldbank.js"></script>
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+</div>
+<!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+<script src="main.js"></script>   
   </body>
 </html>

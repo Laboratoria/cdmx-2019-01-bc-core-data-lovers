@@ -1,38 +1,37 @@
-const buttonHome= document.getElementById('home');
-buttonHome.addEventListener("click",()=>{
-    const box2= document.getElementById("box2").style.display="block";
-    const box3= document.getElementById("box3").style.display="none";
-});
+const box2= document.getElementById('box2');
+const box3= document.getElementById('box3');
+const buttonHome = document.getElementById('home');
+const buttonIndicador = document.getElementById('indicador');
+const selOption = document.getElementById('filtrar-pais');
+let contenido = document.getElementById('contenido');
 
-const buttonIdntificador= document.getElementById('identificador');
-buttonIdntificador.addEventListener("click",()=>{
-    const box3= document.getElementById("box3").style.display="block";
-    const box2= document.getElementById("box2").style.display="none";
-    
-});
-
-
-const indicatorPeru= WORLDBANK.PER.indicators;
-console.log(indicatorPeru);
-const contenido = document.getElementById("contenido");
-const print = (indicatorPeru) =>{
-  let result= `<h1>${indicatorPeru}</h1>`
-  contenido.insertAdjacentHTML("beforeend", result);
+const bienvenida = () =>{
+  
+    box2.classList.remove('hide');
+    box3.classList.add('hide'); 
 }
 
-indicatorPeru.forEach(element => {
-    let dataPer = element.indicatorName;
-    print(dataPer)
-});
+buttonHome.addEventListener('click', bienvenida);
 
-/*const buttonIdentificador= document.getElementById("Identificador");
 
- const home = () =>{
-    const box2= document.getElementById("box2");
-    const box3= document.getElementById("box3");
+const muestra_indicador = () =>{
 
     box2.classList.add('hide');
     box3.classList.remove('hide');
 }
+buttonIndicador.addEventListener('click', muestra_indicador);
 
-buttonHome.addEventListener('click', home);*/
+/*const imprime = (pais) =>{
+ let result = `<h1>${pais}</h1>`
+ contenido.insertAdjacentHTML("beforeend", result);
+}*/
+
+const elemCambio = () =>{
+     
+        let select= selOption.value; //Select optiene el valor que contiene cada opcion de value
+        console.log(select);
+        let pais = filtroPais(select);
+        contenido = document.write("Los datos del indicador Población, mujeres (% del total) son: " + JSON.stringify(pais));
+              
+}
+selOption.addEventListener('click',elemCambio);
