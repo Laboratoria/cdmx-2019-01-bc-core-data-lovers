@@ -11,11 +11,17 @@ window.example = example;*/
 const dataMex = WORLDBANK.MEX.indicators;
 //console.log(dataMex)
 
-// extraer elementos 
+// recorrer elementos 
+/*const dataEducation = dataMex. forEach (element => {
+  let indicatorName = element.indicatorName;
+  for (year in indicatorName) {
+    console.log(indicatorName,year)
+  }
+});*/
+
 const levelOfInstruction = () => {
-  let instruction = dataMex.filter(
-    dataMex.indicatorName
+  let instruction = dataEducation.filter (
+    dataEducation => dataEducation.indicatorName = educacion
   )
-  console.log(levelOfInstruction)
-};
+}
 
