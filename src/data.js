@@ -8,5 +8,14 @@
 window.example = example;*/
 
 // Traer elementos del data
-const dataMex = WORLDBANK.Mex.indicators;
-console.log(dataMex)
+const dataMex = WORLDBANK.MEX.indicators;
+//console.log(dataMex)
+
+// extraer elementos 
+const levelOfInstruction = () => {
+  let instruction = dataMex.filter(
+    dataMex.indicatorName
+  )
+  console.log(levelOfInstruction)
+};
+
