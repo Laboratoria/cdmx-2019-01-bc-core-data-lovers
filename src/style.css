@@ -10,24 +10,44 @@ body{
     box-sizing: border-box;
   }
 .header{
-    width: 100%;
     position: fixed;
-    display: inline-block;
-    padding: 5px 40px;
-    left: 0;
     top: 0;
-    text-align: left;
-    height: 80px;
-    line-height: 30px;
-    background: #fff;
-    z-index: 40; 
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 0;
+    min-height: 80px;
+    background-color: #fff;
+    padding: 5px 15px;
+   
 }
-.title{
-    display: inline-block;
+.icon-logo{
+    width: 171px;
+    height: 37px;
+    margin-top: 20px;
+}
+.menu{
+    width: 25px;
+    margin-bottom: 10px;
 }
 .nav__menu.ocultar{
     display: none;
 }
 .container{
     margin-top: 80px;
+    padding: 5px 15px;
+
+}
+.news{
+    width: 100%;
+}
+.news-mexico,
+.news-brazil,
+.news-peru,
+.news-chile
+{
+height: 200px;
+}
+.information-filter{
+    border: 1px solid black;
 }
