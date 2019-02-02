@@ -17,9 +17,9 @@ h1{
   width: calc(100vw - 30px);
   height: calc(130vh - 30px);
 }
-#log1{
+/*#log1{
 
-}  
+} */ 
 /*HAMBURGER MENU CSS*/
 .checkbox-container {
   display: block;
