@@ -1,7 +1,101 @@
+* {
+margin: 0;
+padding:0;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+body{
+    background:#FFFFFA;
+}
+p{
+    text-align: justify;
+    padding: 3%;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 3%;
+    font-family:'Questrial', sans-serif;
+}
+header{
+    width: 100%;
+}
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin:20px auto;
+    background: #024959;
+}
+.menu{
+    display:none;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    color: #FFF;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+header nav ul li a i{
+    margin-right: 10px;
+}
+header nav ul li a:hover{
+    background: #037e8c;
+}
+section{
+    padding:20px;
+}
+@media screen and (max-width:800px){
+header nav{
+    width: 80%;
+    height: 100%;
+    /*left:-100%;*/
+    margin:0;
+    position: fixed;
+}
+header nav ul li{
+    display: block;
+    float:none;
+    border-bottom:1px solid rgba(255,255,255, .3);
+    font-size: 120%;
+}
+.menu{
+display: block;
+width: 100%;
+background: #eee;
+}
+.menu .bt-menu{
+    display: block;
+    padding:20px;
+    background: #024959;
+    color:#FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.menu i{
+    float: right;
+    font-size: 75%;
+}
+}
+
+
 .hide{
     display: none;
 }
-header{
+/*header{
     background:#D5EDE2;
     display: inline-block; 
     vertical-align: top;
@@ -13,6 +107,6 @@ body{
     
     background-color: #84A5B6;
 
-}
+}*/
 
 
