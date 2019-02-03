@@ -1,11 +1,24 @@
+body{
+    display: flex;
+}
+img{
+    width: 20%;
+}
+
 .divPokemon{
+
+    text-align: center;
     border: 1px solid black;
     background-color: #04B486; /*<--- Cambie un poco el color del fondo de los pokemon*/
     width:75%;/*<--- Cambie el tamaño del div solo para mejor visualizacion,pero si no te acomoda vuelvelo a reconfigurar*/
 }
 
-#Bul{
-    background-color: green;
+#details{
+    font-size: 1.5em;
+}
+
+#name{
+    font-size: 2em;
 }
 
 .wellcomeBackground{
