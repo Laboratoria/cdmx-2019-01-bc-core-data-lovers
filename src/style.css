@@ -1,8 +1,8 @@
 body{
     margin:0;
     padding: 0;
-    font-family: ;
-    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    color:#585858;
   }
   *{
     -webkit-box-sizing: border-box;
@@ -19,19 +19,32 @@ body{
     min-height: 80px;
     background-color: #fff;
     padding: 5px 15px;
+    text-align: right;
    
 }
+.header-left{
+    float: left;
+}
+.header-right,
+.header-left{
+    width: auto;
+    display: inline-block;
+    font-size: 1rem;
+}
+
 .icon-logo{
     width: 171px;
     height: 37px;
     margin-top: 20px;
 }
-.menu{
-    width: 25px;
-    margin-bottom: 10px;
+.nav__menu{
+    margin-top: 20px;
+    width: 25px
 }
-.nav__menu.ocultar{
+.item-menu{
+    font-size: 1rem;
     display: none;
+   
 }
 .container{
     margin-top: 80px;
@@ -46,8 +59,46 @@ body{
 .news-peru,
 .news-chile
 {
-height: 200px;
+height: auto;
 }
 .information-filter{
     border: 1px solid black;
+}
+.search-information{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.search-country{
+    cursor: pointer;
+    width: 65px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color:#ffdd00;
+    border: 1px solid #ffdd00; 
+    color:#fff;
+    font-size: .9em;
+    
+}
+.search-country:hover{
+    background-color:#fff;
+    border: 1px solid #ffdd00; 
+    color: #ffdd00;
+    -webkit-transition: all linear 250ms;
+    -o-transition: all linear 250ms;
+    transition: all linear 250ms;
+}
+footer{
+    
+    background-color: #333333;;
+    height:50px;;
+}
+.title-footer{
+    font-size: .6em;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
 }

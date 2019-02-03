@@ -2,62 +2,90 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <img class="icon-logo" src="./images/logo.svg" alt="nav">
-      <img class="menu" src="./images/menu.svg" alt="">
-      <img src="" alt="">
-      <nav class="nav__menu ocultar">
-        <ul>
-          <li><a href="">Acerca de banco mundial</a></li>
-          <li><a href="">Busqueda de informacion</a></li>
-          <li><a href="">Contacto </a></li>
-        </ul>
-      </nav>
+      <section class="header-left">
+        <img class="icon-logo" src="./images/logo.svg" alt="nav">
+      </section>
+      <section class="header-right">
+        <img  class="nav__menu" src="./images/menu.svg" alt="">
+      </section>
+      <nav>
+          <ul>
+            <li class="item-menu"><a href="">Acerca de banco mundial</a></li>
+            <li class="item-menu"><a href="">Busqueda de informacion</a></li>
+            <li class="item-menu"><a href="">Contacto </a></li>
+          </ul>
+        </nav>
     </header>
     <div id="root">
       <main class="container">
         <section class="news">
           <article class="news-mexico">
-              <p>Mexico</p>
+              <h2>El Banco Mundial en Mexico</h2>
+              <p>La labor del Banco Mundial en México se organiza en torno a un modelo que ofrece soluciones integrales y personalizadas para el desarrollo mediante un paquete de herramientas financieras, de conocimiento y coordinación en todas las ramas de la institución.</p>
           </article >
           <article  class="news-brazil">
-              <p>Brasil</p>
+              <h2>El Banco Mundial en Brasil</h2>
+              <p>El progreso económico y social de Brasil entre 2003 y 2014 sacó a 29 millones de personas de la pobreza y la desigualdad se redujo significativamente. Restaurar la sostenibilidad fiscal es el desafío económico más urgente para Brasil.</p>
           </article>
           <article class="news-peru">
-              <p>Peru</p>
+              <h2>El Banco Mundial en Peru</h2>
+              <p>Las acertadas políticas macroeconómicas y estructurales del Perú, combinadas con condiciones externas propicias, han generado un crecimiento importante. El país creció a un ritmo cercano al 6% durante la última década y, entre 2004 y 2015, 9 millones de peruanos salieron de la pobreza.</p>
           </article>
           <article class="news-chile">
-             <p>Chile</p>
+             <h2>El Banco Mundial en Chile
+             </h2>
+             <p>En las últimas décadas, Chile ha sido una de las economías de más rápido crecimiento en Latinoamérica. Esto le ha permitido una importante reducción de la pobreza. Por ejemplo, entre 2000 y 2015, la proporción de la población considerada pobre (US$4 por día) se redujo del 26 a 7.9%.</p>
           </article>
         </section>
         <section class="about-bancamundial">
-            <article class="quienes-somos" >
-              <p>Quienes somos</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptate aperiam nobis id sed explicabo voluptatibus, voluptates beatae ab accusamus veritatis libero, officiis facilis exercitationem, saepe et deleniti quae! Ipsum.</p>
+            <article class="who-we-are" >
+              <h2>Quienes somos</h2>
+              <p>El Grupo Banco Mundial está conformado por 189 países miembros; su personal proviene de más de 170 países, y tiene más de 130 oficinas en todo el mundo. Constituye una asociación mundial única: las cinco instituciones que lo integran trabajan en la búsqueda de soluciones sostenibles para reducir la pobreza y generar prosperidad compartida en los países en desarrollo.</p>
             </article>
-            <article class="que-hacemos">
-              <p> Que hacemos</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet voluptas optio, distinctio consequuntur vitae porro pariatur, velit ipsum hic omnis ex eum odit sequi unde laboriosam nesciunt itaque assumenda.</p>
+            <article class="what-we-do">
+              <h2> Que hacemos</h2>
+              <p>El Grupo Banco Mundial trabaja en todas las principales esferas del desarrollo: proporciona una gran variedad de productos financieros y asistencia técnica, y ayuda a los países a enfrentar los desafíos mediante el intercambio de conocimiento de vanguardia y la aplicación de soluciones innovadoras.</p>
             </article>
         </section>
         <section class="search-information">
-          <a href="#">Mexico</a>
-          <a href="#">Brasil</a>
-          <a href="#">Peru</a>
-          <a href="#">Chile</a>
-          <article id="informacion__filtrada" class="information-filter" >
-          </article>
+          <a class="search-country" href="#">Mexico</a>
+          <a class="search-country" href="#">Brasil</a>
+          <a class="search-country" href="#">Peru</a>
+          <a class="search-country" href="#">Chile</a>
+        </section>
+        <section>
+          <form>
+            <select >
+                <option value="value1">Primer tema escibir</option> 
+                <option value="value2">Value 2</option>
+                <option value="value3">Value 3</option>
+                <option value="value3">Value 4</option>
+                <option value="value3">Value 5</option>
+              </select>
+              <select >
+                  <option value="az">a-z</option> 
+                  <option value="za">z-a</option>
+                
+                </select>
+            </form>
+        </section>
+        <section id="informacion__filtrada" class="information-filter" >
         </section>
         <section class="contact-us">
         </section>
       </main>
     </div>
-    <footer>banco mundial 2019</footer>
-   
+    <footer>
+      <p class="title-footer">©2019 Grupo Banco Mundial. Reservados todos los derechos.</p> 
+    </footer>
+ 
     <script src="./data/worldbank/worldbank.js"></script> 
     <script src="data.js"></script>
     <script src="main.js"></script>
