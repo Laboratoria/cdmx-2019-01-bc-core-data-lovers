@@ -2,46 +2,72 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width", user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0>
   </head>
   <body>
-    <div id="root"></div>
-<div id= "box1">
- <header>Tasa de Fuerza Laboral</header>
-</br>
-</br>
-<input id= "home" type= "button" value= "Home"></input>
-<input id= "identificador" type= "button" value= "Identificador"></input>
+  
+  
 
-</div>
-<div id= "box2" class= "hide">
-  <p>BIENVENIDA</p>
-</div>
-<div id= "box3" class= "hide">
- <br> </br>
-  <select name= "filtrarPaís">
-    <option value= "value"> País</option>
-    <option value= "value1"> México</option>
-    <option value= "value2"> Peru</option>
-    <option value= "value3"> Chile</option>
-    <option value= "value4"> Brasil</option>
+
+<main id= "box1">
+<header>
+  <div class= "menu" id="showMenu" type="button" ><a class="bt-menu" href="#"><i class="fas fa-bars"></i>Menu</a></div>
+  <nav id="menuList" class="hide">
+    <ul>
+      <li id= "home" type= "button"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+      <li id= "indicador" type= "button" ><a href="#"><i class="fas fa-chart-line"></i>Indicadores</a></li>
+      <li><a href="#"><i class="fas fa-user-friends"></i>Propósito</a></li>
+      <li><a href="#"><i class="far fa-envelope"></i>Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<section id= "box2" >
+  <h1>Indicadores demográficos</h1>
+  <p> Los indicadores demográficos muestran las dinámicas de población y sirven para conocer el panorama
+     y distinguir las diferencias entre cada una, de modo que ofrecen una visión general que puede ayudar
+      a identificar lugares que requieren intervención. Generalmente se obtienen por ciudad o país, o por
+      una localidad determinada.   
+  </p>
+  <p>Algunos brindan información general sobre el tamaño, distribución territorial, composición y
+     estructura, mientras que otros son útiles para conocer los cambios en su composición y movilidad,
+      en términos sociales. 
+</p>
+</main>
+<div id="root"></div>
+ 
+</section>
+
+
+<section id= "box3" class= "hide">
+ 
+  <select id= "filtrar-pais" >
+    <option value= "Pais"> País</option>
+    <option value= "MEX">Mexico</option>
+    <option value= "PER">Peru</option>
+    <option value= "CHL">Chile</option>
+    <option value= "BRA">Brasil</option>
   </select>
 
-  <select name= "orden">
+  <select name= "orden" >
     <option value= "value1"> Ordenar</option>
     <option value= "value5"> Ascendente</option>
-    <option value= "value6"> Descendente</option>
-    
+    <option value= "value6"> Descendente</option>     
   </select>
-</div>
+</section>
 
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <script src="./data/worldbank/worldbank.js"></script>
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+<section id="contenido">
+
+</section>
+<!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+<script src="main.js"></script>   
   </body>
 </html>
