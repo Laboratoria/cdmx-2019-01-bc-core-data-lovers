@@ -1,15 +1,17 @@
-const total = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons}`);
-const date = INJURIES.map(INJURIES => `${INJURIES.Year}`);
-const moto = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Motorcyclists}`);
-const bike = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Pedalcyclists}`);
-const walk = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Pedestrians}`);
-const transit = INJURIES.map(INJURIES => `${INJURIES.Total_Injured_Persons_Transit_Total}`);
+const injuriesby = INJURIES;
 const root = document.getElementById("root")
 
-root.insertAdjacentHTML('beforeend', date)
+injuriesby.forEach(function(element){
+  let total = element.Total_Injured_Persons;
+  let moto = element.Total_Injured_Persons_Motorcyclists;
+  let year = element.Year;
+  let bike = element.Total_Injured_Persons_Pedalcyclists;
+  let walk = element.Total_Injured_Persons_Pedestrians;
+  let transit = element.Total_Injured_Persons_Transit_Total;
+  
 
-//Total_Injured_Persons
-//Total_Injured_Persons_Motorcyclists
-//Total_Injured_Persons_Pedalcyclists
-//Total_Injured_Persons_Pedestrians
-//Total_Injured_Persons_Transit_Total
+  root.insertAdjacentHTML('beforeend', year);
+  console.log(total, moto,year, bike, walk, transit);
+
+});
+ 
