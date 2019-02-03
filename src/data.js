@@ -30,7 +30,7 @@ const baseDatos =  WORLDBANK;
       const nomIndicador = pais.filter(element=>{ //Funcion filtro por Poblacion Total de mujeres
       return element.indicatorName === "Población, mujeres (% del total)";
       })
-      console.log(nomIndicador); 
+      //console.log(nomIndicador); 
       nomIndicador.forEach(element => { //recorre elemento del filtro de la funcion anterior
         let datosIndicador = element.data;
         console.log(datosIndicador); 
