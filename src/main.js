@@ -3,7 +3,7 @@ const injuriesby = INJURIES;
 // ConsoleLog = Array(33) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
 
 //Constante del elemento root del HTML
-const totalsecc = document.getElementById("total")
+const totalsecc = document.getElementById("know")
 //Función para imprimir en html 
 const printpage = (year, total, moto, bike, walk, transit) => {
   let result = `<b>Año:</b> <i>${year}</i> <br><b>Total de heridos:</b> <i>${total};</i> <b>en Moto:</b> <i>${moto};</i> <b>en bici:</b> <i>${bike}</i>; <b>peatones:</b> <i>${walk}</i>; <b>autos:</b> <i>${transit};</i>  <br><br> `
