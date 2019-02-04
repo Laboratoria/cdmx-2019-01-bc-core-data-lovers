@@ -1,3 +1,7 @@
+*{
+  text-align: center;
+}
+
 nav {
   display: block;
 }
@@ -26,35 +30,36 @@ header{
 .info{
 background-color: #eb008b;
 width: auto;
-height: 500px;
-margin-block-end: 0px;
-margin-block-start: 0px;
+height: 60%;
+margin-block-end: 0;
+margin-block-start: 0;
 color: white;
 text-align: justify;
 font-family: sans-serif;
-padding: 18px;
+padding: 7%;
 }
 
 .total{
 background-color: #231f20;
 width: auto;
-color: aliceblue;
-height: 500px;
+height: 60%;
+padding: 5%;
+color: #eb008b;
 }
 
 .know{
 background-color: white;
 width: auto;
-height: 500px;
+height: 50%;
 }
 
 .photos{
 background-color: #eb008b;
 width: auto;
-height: 1000px;
+height: 100%;
 }
 footer{
 background-color: #231f20;
 width: auto;
-height: 110px;
+height: 100%;
 }
