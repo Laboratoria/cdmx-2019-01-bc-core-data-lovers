@@ -6,11 +6,12 @@ const injuriesby = INJURIES;
 const totalsecc = document.getElementById("total")
 //Función para imprimir en html 
 const printpage = (year, total, moto, bike, walk, transit) => {
-  let result = `<b>Año:</b> <i>${year}</i> <br><b>total de heridos:</b> <i>${total};</i> <b>por Moto:</b> <i>${moto};</i> <b>por bici:</b> <i>${bike}</i>; <b>peatones:</b> <i>${walk}</i>; <b>autos:</b> <i>${transit};</i>  <br><br> `
+  let result = `<b>Año:</b> <i>${year}</i> <br><b>Total de heridos:</b> <i>${total};</i> <b>en Moto:</b> <i>${moto};</i> <b>en bici:</b> <i>${bike}</i>; <b>peatones:</b> <i>${walk}</i>; <b>autos:</b> <i>${transit};</i>  <br><br> `
   totalsecc.insertAdjacentHTML("beforeend", result);
 }
 //Función ForEach para recorrer elementos.
 injuriesby.forEach(element => {
+  
   let year = element.Year;
   let total = element.Total_Injured_Persons;
   let moto = element.Total_Injured_Persons_Motorcyclists;
@@ -24,5 +25,4 @@ injuriesby.forEach(element => {
   //ConsoleLog si muestra todos los elementos console.log(total)
 
 });
-// root.insertAdjacentHTML('beforeend', );
-//console.log(injuriesby);
+
