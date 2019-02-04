@@ -4,12 +4,56 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
   </head>
   <body>
 
-    <div id="pokemons">
-<input type="button" name="pokemon" value="pokemon" id ="boton">
-    </div>
+
+<div class="contenedor">
+    <header>
+      <img src="imagenes/POKEMON.png" class = "imgPokemon">
+    </header>
+
+    <section class="displayNone" id="getName"> <!--Obtener nombre y boton siguiente-->
+<h2 class = "cualEs">¿Cuál es tu Nombre?</h2>
+      <form>
+        <br>
+         <input type="text" placeholder="Esrcibe tu Nombre" class="WriteName" id="inputName">
+      </form>
+         <button type="submit" id="next" class="ok">Siguiente</button>
+    </section>
+</div>
+
+
+
+<div>
+  <section class="displayNone2" id="aparicion"> <!-- 1 qUE SALGA EL NOMBRE DE LA PERSONA-->
+    <h2>Hola <p id = "NombreDeUsuario">(Nombre De Usuario)</p> Descubre tus Pokemones </h2>
+     <!--<button type="submit" id="neext" class="ok">Siguiente</button>-->
+     <h1 id="pokemons"></h1>
+      <button type="submit" id="showPokemons">Pokémons Ordenados por Num</button>
+   </section>
+ </div>
+
+
+  <!--<div class="">
+    <section>
+       <button type="submit" id="showPokemons">Pokémons Ordenados por Num</button>
+    </section>
+  </div>-->
+
+
+
+
+<!--<div class="">
+  <section id="main" class="displayNone3" id="noneDisplay"> //Boton para mostrar los Pokemones-->
+        <!-- <h1 id="pokemons"></h1>
+    </section>
+</div>-->
+
+
 
 
 
