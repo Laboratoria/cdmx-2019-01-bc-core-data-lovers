@@ -8,8 +8,13 @@
 
 
 }
+
 #pokemones{
   display:flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+li{
+  list-style: none;
 }
