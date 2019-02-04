@@ -43,7 +43,9 @@
 
         }
 
-#btn1,#btn2,#buttonSearchPokemon,#filterButton,#buttonBack,#buttonBackFilterPage {
+
+#btn1,#btn2,#buttonSearchPokemon,#filterButton,
+#buttonBack,#buttonBackFilterPage {
     background-color:#00CED1;
     border: none; 
     color: white; 
@@ -55,9 +57,8 @@
     margin:5px;
   }
   
-  #btn1:hover, #btn2:hover, #buttonSearchPokemon:hover,
-  #filterButton:hover,  #buttonBack:hover,
-  #buttonBackFilterPage:hover {
+  #btn1:hover, #btn2:hover, #btn3:hover,
+  #filterButton:hover,  #buttonBack:hover {
     background-color: RoyalBlue;
   }      
 
