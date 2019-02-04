@@ -28,27 +28,13 @@ const print = (weaknesses) => {
 dataPokemon.forEach(element => {
   let weaknesses = element.weaknesses;
   print(weaknesses);
-});
-*/
-/*
-const pokemones = document.getElementById('pokemones');
-const dataPokemon = POKEMON.pokemon;
-
-const imprimir =(nombre,imgen) => {
-  let nombrePokemon = '<div class ="divPokemon"><img src="${imagen}">${nombre} </div>';
-  pokemones.insertAdjacentHTML("beforeend",nombrePokemon);
-
-};
-dataPokemon.forEach(elemento =>{
-  let nombre =elemento.name;
-  let imagen = elemento.img;
-  imprimir(nombre,imagen);
 });*/
 
+/*En esta seccion estoy extrayendo datos especificos de la data*/
 const pokes = document.getElementById("probando");
 const datapokes = POKEMON.pokemon;
 
-const imprimir =(imagen,nombre2,id,candy,altura,peso,debilidades) => {
+const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   let nombrePokemon = `<p> <img src="${imagen}">Nombre:${nombre2}
   <br> Su Id es :${id}</br>
   <br> Su candy es :${candy}</br>
@@ -56,22 +42,64 @@ const imprimir =(imagen,nombre2,id,candy,altura,peso,debilidades) => {
   <br> Su peso es :${peso}</br>
   <br> debilidades :${debilidades}</br>
   </p>`;
+<<<<<<< HEAD
   pokes.insertAdjacentHTML("beforeend",nombrePokemon);
+=======
+  pokes.insertAdjacentHTML("beforeend", nombrePokemon);
+>>>>>>> upstream/master
 };
 datapokes.forEach(elemento => {
   let imagen = elemento.img;
   let nombre2 = elemento.name;
-  let id=elemento.id;
-  let candy= elemento.candy;
+  let id = elemento.id;
+  let candy = elemento.candy;
   let altura = elemento.height;
+<<<<<<< HEAD
   let peso =elemento.weight;
   let debilidades =elemento.weaknesses;
  
   imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
  
+=======
+  let peso = elemento.weight;
+  let debilidades = elemento.weaknesses;
+
+  imprimir(imagen, nombre2, id, candy, altura, peso, debilidades);
+
+>>>>>>> upstream/master
 });
 let water = datapokes.filter(pokemonWater => elemento.type =="Water");
 document.addEventListener("click",elemento());
 
 
 
+/*En esta Seccion estoy trabajando en la seccion de busqueda*/
+
+function searching() {
+  document.getElementById("result").innerHTML = '';
+
+  let filtro = [
+    "Dragonair",
+    "pikachu",
+    "mew",
+    "mewtwo",
+    "moltres"
+  ];
+
+  let elemento = document.getElementById("busqueda").value;
+  let proceso = elemento.length;
+  for (indice in filtro) {
+    let name = filtro[indice];
+    let str = name.substring(0, proceso);
+    if (elemento.length <= name.length && elemento.length != 0 && name.length != 0) {
+      if (elemento.toLowerCase() == str.toLowerCase()) {
+        let node = document.createElement("LI");
+        let textnode = document.createTextNode(filtro[indice]);
+        node.appendChild(textnode);
+        document.getElementById("result").appendChild(node);
+      } else {
+        //alert('no')
+      }
+    }
+  }
+}
