@@ -8,7 +8,7 @@ const selOption = document.getElementById('filtrar-pais');
 let contenido = document.getElementById('contenido');
 let contador=0;
 
-const mostrarMenu = () =>{
+const mostrarMenu = () =>{//Funcion mantiene activo o desactivo el menu, segun el valor del contador
     if(contador==0){
         menuList.style.display= 'block';
         contador ++;
@@ -19,12 +19,16 @@ const mostrarMenu = () =>{
     }
 }
 
-const menu = () =>{
+const menu = () =>{//llama funcion mostrar menu, cuando se da click en Menu
+    contenido.style.display= 'none';
+   
     mostrarMenu()
+    
+    
 }
 buttonMenu.addEventListener('click', menu);
 
-const bienvenida = () =>{
+const bienvenida = () =>{ //funcion muestra apartado Bienvenida
     mostrarMenu()
     box2.classList.remove('hide');
     box3.classList.add('hide');
@@ -33,24 +37,28 @@ const bienvenida = () =>{
 buttonHome.addEventListener('click', bienvenida);
 
 
-const muestra_indicador = () =>{
+const muestra_indicador = () =>{// funcion muestra apartado indicador
     mostrarMenu()
     box2.classList.add('hide');
     box3.classList.remove('hide');
 }
 buttonIndicador.addEventListener('click', muestra_indicador);
 
-/*const imprime = (pais) =>{
- let result = `<h1>${pais}</h1>`
- contenido.insertAdjacentHTML("beforeend", result);
-}*/
-
-const elemCambio = () =>{
-        
-        let select= selOption.value; //Select optiene el valor que contiene cada opcion de value
-        console.log(select);
-        let pais = filtroPais(select);
-        contenido = document.write("Los datos del indicador Población, mujeres (% del total) son: " + JSON.stringify(pais));
-              
+const filtraIndPais = () =>{
+    contenido.style.display= 'block';
+    let select= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
+    //console.log(select);
+     let pais = window.filtroPais(select); //Se llama la funcion window.filtroPais con el valor de selec
+     recorrerObjeto (pais); 
 }
-selOption.addEventListener('click',elemCambio);
+
+selOption.addEventListener('click',filtraIndPais); //funcion recorre el objeto
+const recorrerObjeto = (pais)=>{
+let respuesta="";
+ for (let i in pais) //for iteracon cada elemento del objeto
+  {
+    respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
+  }
+  document.getElementById('contenido').innerHTML = respuesta;   
+ return respuesta
+}
