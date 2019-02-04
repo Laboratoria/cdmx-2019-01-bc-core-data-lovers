@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html>
-             
- 
-
-
-<head>
+ <head>
   <meta charset="utf-8">
-     <title>Pikapedia</title>
-       <link rel="stylesheet" href="style.css" />
-           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-</head>
+   <title>Pikapedia</title>
+     <link rel="stylesheet" href="style.css" />
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+       crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+ </head>
 <body>
   <div id="root"></div>
-  <!-- PÁGINA 1 -->
-  <section id="page1">
-
-   
-    <header class="titleWeb"> <img src="https://fontmeme.com/permalink/190131/5da1fd9f888163ac1f007ae0c421f891.png" alt="pokemonFont">
-    </header>
-
-           <div> <button id="enterToPikapedia">ENTRAR</button></div>
-         <figure><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" id="detectivePikachu"></figure>
+   <!-- PÁGINA 1 -->
+<section id="enterPage" class="show">
+     <header class="titleWeb"> <img src="https://fontmeme.com/permalink/190131/5da1fd9f888163ac1f007ae0c421f891.png" alt="pokemonFont">
+     </header>
+   <div> <button id="enterToPikapedia">ENTRAR</button></div>
+  <figure><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" id="detectivePikachu"></figure>
   </section>
   <!-- PÁGINA 2 -->
-  <section id="page2" class="hide">
+  <section id="pageKanto" class="hide">
     <nav> 
       <ol>
         <button id="btn1"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
-
            <button id="btn2"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
-              <button id="btn3"><i class="fas fa-search"></i> BUSCAR POKÉMON </button>
-            <button id="btn4"><i class="fas fa-filter"></i>FILTRAR POKÉMONS </button>
-          <button id="btn5"><i class="fas fa-undo-alt"></i> VOLVER </button>
+              <button id="buttonSearchPokemon"><i class="fas fa-search"></i> BUSCAR POKÉMON </button>
+            <button id="filterButton"><i class="fas fa-filter"></i>FILTRAR POKÉMON </button>
+          <button id="buttonBack"><i class="fas fa-undo-alt"></i> VOLVER </button>
       </ol>
    </nav>
-
      <main class="welcomeMessage"><img src="https://fontmeme.com/permalink/190201/e3023a41d60c4c0dc0c6150069296ce1.png"></a></main>
      <article id="total-data" class="pokemones">
-       
        <h1></h1>
        <h2></h2>
        <div class="figure"></div>
@@ -48,26 +38,49 @@
 
   </section>
   <!-- PÁGINA 3 -->
-  <section id="page3" class="hide">
-    <main id="Pokemon-light"> </main>
-    <main id="Pokemon-Heavy"></main>
-  </section>
-  <!-- PÁGINA 4 -->
-  <section id="page4" class="hide">
+  <section id="filterPage" class="hide">
+      <nav> 
+          <ol>
+            <button id="btn1"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
+               <button id="btn2"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
+                  <button id="buttonSearchPokemon"><i class="fas fa-search"></i> BUSCAR POKÉMON </button>
+                <button id="filterButton"><i class="fas fa-filter"></i>FILTRAR POKÉMON </button>
+              <button id="buttonBackFilterPage"><i class="fas fa-undo-alt"></i> VOLVER </button>
+          </ol>
+       </nav>
+
+  <main><figure class="titlepokemonLightght"><img src="https://fontmeme.com/permalink/190203/0bf66c3b9788fe67f0e1c3679e5dab96.png"> </figure>
+      <div id="Pokemon-light" class="pokemones"></div></main>
+  <main><figure class="titlePokemonHeavy"><img src="https://fontmeme.com/permalink/190203/8a6b09e6db28df09ff8fb961695f29c7.png"></figure>
+      <div id="Pokemon-Heavy" class="pokemones"><div></main>
+  <main> <figure class="titlePokemonSmall"><img src="https://fontmeme.com/permalink/190203/a0562d229bbeaecef3c3fc949e3ff120.png"></figure>
+     <div id="pokemon-Small" class="pokemones"><div></main>
+  <main><figure class="titlePokemonMedium"><img src="https://fontmeme.com/permalink/190203/3f194b32dd436edafea146e2961ab2f5.png"></figure>
+     <div id="pokemon-Medium" class="pokemones"></div></main>  
+  <main><figure class="titlePokemonTall"> <img src="https://fontmeme.com/permalink/190203/d429df87d8776f1400f4c43682fb301f.png"></figure>
+    <div id="pokemon-Tall" class="pokemones"></div> </main>
+  <main><figure class="titlePokemonSortByHeight"><img src="https://fontmeme.com/permalink/190204/985e8f0128da248c5c2bf7fc9d477d67.png"></figure>
+    <div id="pokemon-Sort-Height" class="pokemones"></div></main>
+  <main><figure class="titlePokemonSortByWeight"><img src="https://fontmeme.com/permalink/190204/0d834d09366f54a173c57761e696eb24.png"></figure>
+    <div id="pokemon-Sort-Weight" class="pokemones"></div></main>
+
 
   </section>
+  <!-- PÁGINA 4 -->
+  <section id="searchPage" class="hide">
+
+   
+    
+  </section>
   <!-- PÁGINA 5 -->
-  <section id="page5" class="hide">
+  <section id="stadisticsPage" class="hide">
 
   </section>
   <!-- PÁGINA 6 -->
-  <section id="page6" class="hide">
+  <section id="aboutPikapedia" class="hide">
 
   </section>
-  <!-- PÁGINA 7 -->
-  <section id="page7" class="hide">
-
-  </section>
+  
 
 
 
