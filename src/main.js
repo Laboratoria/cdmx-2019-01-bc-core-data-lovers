@@ -47,28 +47,28 @@ const printBrasil= (indicatorNameBra)=>{
 }
 
 //Eventos de los botones de banderas
-const botonPeru = document.getElementById("").addEventListener("click", function () {
+const botonPeru = document.getElementById("Peru").addEventListener("click", function () {
       indicatorsPeru.forEach(element => {
       let indicatorName = element.indicatorName;
       print(indicatorName); 
     })
   })
 
-const botonMexico = document.getElementById("").addEventListener("click", function (){
+const botonMexico = document.getElementById("Mexico").addEventListener("click", function (){
   indicatorsMexico.forEach(element=> {
     let indicatorNameMex =element.indicatorName;
     printMex(indicatorNameMex);
   })
 })
 
-const botonChile = document.getElementById("").addEventListener("click", function (){
+const botonChile = document.getElementById("Chile").addEventListener("click", function (){
   indicatorsChile.forEach(element=> {
     let indicatorNameChl =element.indicatorName;
     printChile(indicatorNameChl);
   })
 })
 
-const botonBrasil = document.getElementById("").addEventListener("click", function (){
+const botonBrasil = document.getElementById("Brasil").addEventListener("click", function (){
   indicatorsBrasil.forEach(element=> {
     let indicatorNameBra =element.indicatorName;
     printBrasil(indicatorNameBra);
