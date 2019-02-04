@@ -14,7 +14,6 @@ width: 65%;
 height: 100vh;
 background-repeat:no-repeat;
 background-position:center;
-
 margin: 0;
 }
 
@@ -28,6 +27,7 @@ height: 100vh;
 .lolIcons{
     width: 25%;
     margin: 5px;
+    display: inline-block;
     
 
 }
@@ -35,17 +35,36 @@ height: 100vh;
        margin: 5%;
        background-color: rgb(1,10,19);
        padding: 5%;
-     
        border: 3px solid rgba(70,55,20);
+       
+       background-size:100%;
+     
 
     }
 
- #letras {
+ 
+.hidden{
+    display: none;
+}   
+#letras{
+    display: inline-block;
+    margin-top: 5%;
+    margin:0px auto;
+    width: 60%;
+   
+ }
+ #nombre {
+    
     font-size: 20px;
     color: white;
+    margin:2%;
 
  }   
 
-.hidden{
-    display: none;
-}
+ #titulo {
+    font-size: 20px;
+    color: rgba(70,55,20);  
+    margin:2%;
+ }
+
+ 

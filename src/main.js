@@ -57,7 +57,7 @@ for (const key in dataLol) {
      document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';}
 
 const print =(name,img,title) => {
- let nameList = `<div class="nameList"><img class="lolIcons" src="${img}">${name} ${title}</div>`;
+ let nameList = `<div class="nameList"><img class="lolIcons" src="${img}"><div id="letras"><h1 id= "nombre" >${name}</h1> <p id="titulo">${title}</p></div></div>`;
  es.insertAdjacentHTML("beforeend",nameList)}
     
    /* const buscadora =() => {*/
