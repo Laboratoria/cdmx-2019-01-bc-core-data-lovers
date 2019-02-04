@@ -51,6 +51,7 @@ header nav ul li a i{
 header nav ul li a:hover{
     background: #037e8c;
 }
+
 section{
     padding:20px;
 }
@@ -68,6 +69,7 @@ header nav ul li{
     border-bottom:1px solid rgba(255,255,255, .3);
     font-size: 120%;
 }
+
 .menu{
 display: block;
 width: 100%;
@@ -90,23 +92,17 @@ background: #eee;
     font-size: 75%;
 }
 }
-
-
 .hide{
     display: none;
 }
-/*header{
-    background:#D5EDE2;
-    display: inline-block; 
-    vertical-align: top;
-    margin-top: 0px;
-    width: 1280px;
-    height: 48PX;
-  }
-body{ /*text body*/
-    
-    background-color: #84A5B6;
 
-}*/
+#contenido li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    border: solid 1px #037e8c;
+    width: 150px;
+}
+
 
 
