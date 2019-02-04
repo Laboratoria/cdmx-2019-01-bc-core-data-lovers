@@ -13,4 +13,4 @@ const pedestrian_data = () => {
 //console.log(INJURIES);
 
 //console.log(INJURIES[0].Year);
-pedalcyclistspage.addEventListener()
+//pedalcyclistspage.addEventListener()
