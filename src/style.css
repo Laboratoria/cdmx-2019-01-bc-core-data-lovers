@@ -128,8 +128,8 @@ ul {
 }
 
 .desplegable li ul li ul {
-	right:-250px;
-	top: 0px;
+	right:-285px;
+	top: -30px;
 }
 
 #hamburger {
@@ -152,7 +152,7 @@ ul {
   font-size: 3em;
   color: #efc056;
   margin-top: 25%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 footer{
@@ -166,6 +166,7 @@ footer{
 #champion-list {
   background-color: black;
   padding: 25px;
+  padding-top: 50px;
 }
 
 p{
