@@ -26,16 +26,42 @@
 <!--Página de acción-->
 
  <!--Header-->
- <section class="hide" id="champion-list">
+
  <header>
-   <img id="hamburger" src="imagenes/hamb.png">
+   <div id="listado">
+           <ul class="desplegable">
+               <li><a><img id="hamburger" src="imagenes/hamb.png"></a>
+
+                   <ul>
+                     <li><a>Filtrar por rol</a>
+                           <ul>
+                               <li><a href="">Tanque</a></li>
+                               <li><a href="">Luchador</a></li>
+                               <li><a href="">Asesino</a></li>
+                               <li><a href="">Mago</a></li>                                                                <li><a href="">Tirador</a></li>
+                             <li><a href="">Soporte</a></li>
+                           </ul>
+                       </li>
+                       <li><a>Ordenar por</a>
+                           <ul>
+                               <li><a href="">Ataque</a></li>
+                               <li><a href="">Defensa</a></li>
+                               <li><a href="">Magia</a></li>
+                           </ul>
+                       </li>
+                      <li><a href="">Comparar campeones</a>
+                         </li>
+                     <li><a href="">Regresar al inicio</a>
+                         </li>
+                   </ul>
+               </li>
+       </div>
     <img class="logo2" src="imagenes/logo_lol.png" alt="">
   </header>
-
+<section class="hide" id="champion-list">
  <!--Cuerpo de la página-->
- <button class="back" id="back"></button>
+
  <input id="search" type="search" placeholder="Filtrar por nombre">
- <br>
  <h2>¡Selecciona un campeón <br> para visualizar sus stats!</h2>
 
 <div class="cuadro" id="es">
@@ -51,6 +77,7 @@
 </section>
 
 <section id="card">
+  <button class="back" id="back"></button>
 <p>  Hola!!</p>
 </section>
 
