@@ -1,10 +1,10 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
-const buscar = () => {
+/*const buscar = () => {
  
 };
 
-window.buscar = buscar;
+window.buscar = buscar;*/
 /*const example= () => {
   return 'example';
 };
