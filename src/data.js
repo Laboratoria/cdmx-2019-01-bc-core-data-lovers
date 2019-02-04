@@ -72,3 +72,32 @@ datapokes.forEach(elemento => {
   
 });
 
+function searching () {
+  document.getElementById("result").innerHTML = '';
+
+  let filtro = [
+      "Dragonair",
+      "pikachu",
+      "mew",
+      "mewtwo",
+      "moltres"
+  ];
+
+  let elemento = document.getElementById("busqueda").value;
+  let proceso = elemento.length;
+  for(indice in filtro){
+      let name = filtro[indice];
+      let str = name.substring(0,proceso);
+      if(elemento.length <= name.length && elemento.length != 0 && name.length != 0){
+          if(elemento.toLowerCase() == str.toLowerCase()){
+              let node = document.createElement("LI");
+              let textnode = document.createTextNode(filtro[indice]);
+              node.appendChild(textnode);
+              document.getElementById("result").appendChild(node);
+          } else {
+  //alert('no')
+}
+      }
+  }
+}
+

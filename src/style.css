@@ -13,3 +13,18 @@ p{
     background-color: rgb(162, 175, 177);
     font-size: 20px;
 }
+
+#busqueda{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    border: solid 2px;
+    font-size: 60px;
+
+}
+
+#result{
+
+    font-size: 30px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+
