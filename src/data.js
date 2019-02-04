@@ -5,7 +5,8 @@ window.pokemon = {
         const imprimir = (nombre,imagen) =>{
 
         const pokemons = document.getElementById("pokemons");
-        let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
+        let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">
+                            <p>${nombre}</p></div>`;
         pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
 
     }

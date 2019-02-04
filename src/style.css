@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Pokemon-Hollow;
+    font-style: normal;
+    font-weight: normal;
+    src: url(assets/fonts/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+    font-family: Pokemon-Solid;
+    font-style: normal;
+    font-weight: normal;
+    src: url(assets/fonts/Pokemon\ Solid.ttf);
+}
+
+body{
+    background-image: url(../src/assets/img/BackgroudMain.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.divPokemon{
+    
+    background-image: url(../src/assets/img/pokedex.png);
+    background-size: cover;
+    background-position: center center;
+    width: 300px;
+    height: 200px;
+    
+}
+.styleButtonNext{
+    position: absolute;
+    left: 73%;
+    top: 291px;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 13px groove #000000;
+}
+
+.fontPokemon{
+    font-family: Pokemon-Hollow;
+    color: gold;  
+}
+#pokemon{
+    text-align: center;
+}
+

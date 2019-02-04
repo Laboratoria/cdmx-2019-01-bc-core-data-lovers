@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>PokéDataDex</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
-    <ul>
-      <li>no se que pasa</li>
-      <li>si se que pasa</li>
-      <li>bueno no</li>
-    </ul>
+    <header>
+      <figure id="logoPokemon"> <img src="../src/assets/img/International_Pokémon_logo.svg.png" alt="Pokémon_logo"></figure>
+    </header>
+    <section id="getName">
+      <form>
+         <h2 class="fontPokemon">¿Cuál es tu Nombre?</h2> 
 
+         <input type="text">
+      
 
-    <h1>HOLAAAAA</h1>
-    <h2>miraaa</h2>
-    <h1>vamooos</h1>
-    <h1 id="pokemons"></h1>
+      </form>
+      <button type="submit" id="next" class="styleButtonNext">Siguiente</button>
+    </section>
+    
+    <section id="main" class="displayNone">
+      <h1 id="pokemons"></h1>
     <button type="submit" id="showPokemons">Pokémons Ordenados por Num</button>
+  </section>
+    
 
     <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
