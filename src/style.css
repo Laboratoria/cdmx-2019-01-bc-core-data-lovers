@@ -1,5 +1,5 @@
 body{
-   background-image: url(./assets/cover.jpeg);
+   background-image: url(./assets/cover.jpg);
    background-size: cover;
    width: 100%;
    height: 100vh;
@@ -27,15 +27,24 @@ height: 100vh;
 
 .lolIcons{
     width: 25%;
+    margin: 5px;
+    
+
 }
 .nameList{
-       margin: 20px;
+       margin: 5%;
        background-color: rgb(1,10,19);
        padding: 5%;
-       font-size: 20px;
-       border-width: 15px, 15px,15px,15px;
-       color: white;
-     border-color: rgb(120,90,40)}
+     
+       border: 3px solid rgba(70,55,20);
+
+    }
+
+ #letras {
+    font-size: 20px;
+    color: white;
+
+ }   
 
 .hidden{
     display: none;
