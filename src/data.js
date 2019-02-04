@@ -1,6 +1,10 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
+const buscar = () => {
+ 
+};
 
+window.buscar = buscar;
 /*const example= () => {
   return 'example';
 };
@@ -38,7 +42,11 @@ const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   <br> Su peso es :${peso}</br>
   <br> debilidades :${debilidades}</br>
   </p>`;
+<<<<<<< HEAD
+  pokes.insertAdjacentHTML("beforeend",nombrePokemon);
+=======
   pokes.insertAdjacentHTML("beforeend", nombrePokemon);
+>>>>>>> upstream/master
 };
 datapokes.forEach(elemento => {
   let imagen = elemento.img;
@@ -46,12 +54,24 @@ datapokes.forEach(elemento => {
   let id = elemento.id;
   let candy = elemento.candy;
   let altura = elemento.height;
+<<<<<<< HEAD
+  let peso =elemento.weight;
+  let debilidades =elemento.weaknesses;
+ 
+  imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
+ 
+=======
   let peso = elemento.weight;
   let debilidades = elemento.weaknesses;
 
   imprimir(imagen, nombre2, id, candy, altura, peso, debilidades);
 
+>>>>>>> upstream/master
 });
+let water = datapokes.filter(pokemonWater => elemento.type =="Water");
+document.addEventListener("click",elemento());
+
+
 
 /*En esta Seccion estoy trabajando en la seccion de busqueda*/
 
