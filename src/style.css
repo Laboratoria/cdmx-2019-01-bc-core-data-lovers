@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Pokemon-Hollow;
     font-style: normal;
@@ -65,5 +66,39 @@ body{
 }
 #pokemon{
     text-align: center;
+}
+
+
+body {
+  background-image: url("imagenes/fondoPokemon.png");
+  background-size: 100%;
+background-repeat: no-repeat;
+
+}
+
+.imgPokemon{
+  width: 30%;
+margin-left: 34%;
+
+}
+
+
+
+.cualEs{
+font-family: 'Gochi Hand', cursive;
+font-size: 300%;
+
+}
+
+
+
+.displayNone {
+    display: block;
+
+}
+
+
+.displayNone2 {
+    display: none ;
 }
 
