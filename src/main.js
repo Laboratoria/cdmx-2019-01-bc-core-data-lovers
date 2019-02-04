@@ -3,7 +3,7 @@ document.getElementById("next").addEventListener("click", () => {
 
 })
 
-document.getElementsByClassName("showPoke").addEventListener("click", ()=> {
+document.getElementById("showPoke").addEventListener("click", ()=> {
      const dataPokemon = POKEMON.pokemon;
      window.pokemon.show(dataPokemon);
 })
