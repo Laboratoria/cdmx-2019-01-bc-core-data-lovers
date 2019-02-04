@@ -39,12 +39,62 @@ nav {
   background-color: #231f20;
   width: auto;
   height: 500px;
+  display: block;
+  padding: 10px;
+}
+
+h2{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+p{
+  color: white;
+  font-family: sans-serif;
+  text-align: justify;
+  padding: 16px;
+  font-size: 14px;
+  margin: 0px;
+}
+#totalInjured {
+  color: #eb008b;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 28px;
+  text-align: center;
+  margin: 0px;
+}
+
+.icon{
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  padding: 19px;
 }
 
 .know{
   background-color: white;
   width: auto;
   height: 500px;
+}
+
+#knowMore{
+  color: black;
+  margin-top: 50px;
+}
+
+.image{
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  padding: 2px;
+}
+
+.select{
+  margin: 20%;
+margin-top: 4%;
+padding: 2%;
 }
 
 .photos{
