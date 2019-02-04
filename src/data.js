@@ -11,17 +11,61 @@ window.example = example;*/
 const dataMex = WORLDBANK.MEX.indicators;
 //console.log(dataMex)
 
-// recorrer elementos 
-/*const dataEducation = dataMex. forEach (element => {
+const literacy = (select) => {
+  let userIndicator;
+  if (select === "adultWomen"){
+      let literacyIndicator = dataMex.filter (element => {
+      return element.indicatorCode === "SE.ADT.LITR.FE.ZS";
+    })
+    literacyIndicator.forEach(element => {
+      let indicatorData = element.data;
+      userIndicator = indicatorData;
+    })
+  } else if (select === "youngWomen"){
+     let literacyIndicator = dataMex.filter (element => {
+     return element.indicatorCode === "SE.ADT.1524.LT.FE.ZS";
+  })
+    literacyIndicator.forEach(element => {
+    let indicatorData = element.data;
+    userIndicator = indicatorData;
+    }) 
+  }
+  return userIndicator;
+};
+
+
+/*const levelOfInstruction = dataMex.filter(function(){
+  let indicatorCode = element.indicatorCode
+  return indicatorCode.data
+})
+console.log(levelOfInstruction)*/
+
+
+// recorrer elementos (indicador, dato y año) 
+/*const dataEducation = dataMex.forEach (element => {
+  let year = element.data
   let indicatorName = element.indicatorName;
-  for (year in indicatorName) {
-    console.log(indicatorName,year)
+  for (data in year) {
+    console.log(indicatorName,`year.${data} - ${year[data]}`)
   }
 });*/
 
-const levelOfInstruction = () => {
-  let instruction = dataEducation.filter (
-    dataEducation => dataEducation.indicatorName = educacion
-  )
-}
 
+/*const instruction = dataMex.map ((data) => return(data.year))*/
+
+
+
+/*const levelOfInstruction = (option) => {
+  let instruction = dataMex.filter (
+    dataMex => dataMex.indicatorName == data
+  )
+  console.log(levelOfInstruction)
+}*/
+//const levelOfInstruction = dataMex.filter(element(indicatorCode[WORLDBANK["SE.TER.CUAT.BA.FE.ZS"]])) 
+ // console.log(levelOfInstruction)
+
+
+
+/*const levelOfInstruction = dataMex.map(dataMex => 
+  `${dataMex.alfabetismo} ${dataMex.educacion}`);
+  console.log(levelOfInstruction)*/
