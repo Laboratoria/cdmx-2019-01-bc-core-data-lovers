@@ -4,7 +4,12 @@
 .hide{
     display:none;
 }
-.titleWeb{
+.show{
+    display:contents;
+}
+.titleWeb, .titlepokemonLightght, .titlePokemonHeavy,
+.titlePokemonSmall, .titlePokemonMedium, .titlePokemonTall,
+.titlePokemonSortByHeight, .titlePokemonSortByWeight{
     position: relative;
     top: 15px;
     text-align: center;
@@ -31,14 +36,14 @@
  }
 
 #detectivePikachu{
-        height: 422px;
+        height: 400px;
         position: relative;
-        top: 35px;
+        top: 20px;
         left: 430px;
 
         }
 
-#btn1,#btn2,#btn3,#btn4,#btn5 {
+#btn1,#btn2,#buttonSearchPokemon,#filterButton,#buttonBack,#buttonBackFilterPage {
     background-color:#00CED1;
     border: none; 
     color: white; 
@@ -50,8 +55,9 @@
     margin:5px;
   }
   
-  #btn1:hover, #btn2:hover, #btn3:hover,
-  #btn4:hover,  #btn5:hover {
+  #btn1:hover, #btn2:hover, #buttonSearchPokemon:hover,
+  #filterButton:hover,  #buttonBack:hover,
+  #buttonBackFilterPage:hover {
     background-color: RoyalBlue;
   }      
 
@@ -82,7 +88,5 @@ p{
    margin:0px;
    position: relative;
    left:540px;
-
-  
 }
 
