@@ -91,9 +91,10 @@ const indicatorClick = indicator.addEventListener('click', () => {
   })
 });
 */
-//evento del botón inicio:
+
 
 //función con switch
+
 const indicatorClick = indicator.addEventListener('click', () => {
   dataMex.forEach(element => {
     let year = element.data;
@@ -104,23 +105,44 @@ const indicatorClick = indicator.addEventListener('click', () => {
           indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
           document.getElementById('indicator-name').innerHTML = indicatorName + ':';
           document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
+          sectionTwo.classList.remove('hide');
+          sectionOne.classList.add('hide');
           break;
         case 'Prevalencia de anemia entre mujeres en edad fértil (% de mujeres de entre 15 y 49 años)':
           indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
           document.getElementById('indicator-name').innerHTML = indicatorName + ':';
           document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
+          sectionTwo.classList.remove('hide');
+          sectionOne.classList.add('hide');
           break;
         case 'Mujeres que creen que está justificado que un marido golpee a su esposa cuando ella se niega a tener relaciones sexuales (%)':
           indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
           document.getElementById('indicator-name').innerHTML = indicatorName + ':';
           document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
+          sectionTwo.classList.remove('hide');
+          sectionOne.classList.add('hide');
           break;
         case 'Mujeres que creen que está justificado que un marido golpee a su esposa (cualquiera de las cinco razones) (%)':
           indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
           document.getElementById('indicator-name').innerHTML = indicatorName + ':';
           document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
+          sectionTwo.classList.remove('hide');
+          sectionOne.classList.add('hide');
           break;
+          
       }
     }
   })
+})
+
+//Eventos, variables
+const sectionOne = document.getElementById('section-1');
+const sectionTwo = document.getElementById('section-2');
+
+//Evento del botón "Volver a inicio"
+const startButton = document.getElementById('startButton');
+
+startButton.addEventListener('click', () => {
+  sectionTwo.classList.add('hide');
+  sectionOne.classList.remove('hide');
 })
