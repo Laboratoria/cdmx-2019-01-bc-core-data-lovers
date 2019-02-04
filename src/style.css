@@ -37,7 +37,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Chewy');
-<<<<<<< HEAD
 p{
     font-family: 'Ubuntu Condensed', sans-serif;
     background-color: rgb(237, 243, 243);
@@ -53,7 +52,6 @@ p{
    
 
   
-=======
 
 
 p {
@@ -76,5 +74,4 @@ p {
   font-size: 30px;
   font-family: 'Ubuntu Condensed', sans-serif;
 
->>>>>>> upstream/master
 }
