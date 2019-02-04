@@ -11,8 +11,11 @@ require('../src/data.js');
   });
 });*/
 
-describe('filter', () => {
+describe('filter', (obj) => {
   it('is a function', () => {
     expect('filter').toBe('function');
   });
+  it ('returns ``', () => {
+    expect(filter(obj)).toBe('')
+  })
 });
