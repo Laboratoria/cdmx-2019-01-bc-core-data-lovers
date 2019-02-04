@@ -74,15 +74,15 @@ for (const key in dataLol) {
 const lolData = LOL.data;
 
 const print = (img, name, tags, tags2)=>{
-  let result = `<a href="#card"> <div class="champion"> <div class="padre"> <img src="${img}">
-  <h3> ${name} </h3></div> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
+  let result = `<a href="#card"> <div class="champion"> <img src="${img}">
+  <div class="fondoh"> <h3> ${name} </h3></div> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
   es.insertAdjacentHTML("beforeend",result);
 }
 for (const key in lolData) {
   if (lolData.hasOwnProperty(key)) {
 
     const element = lolData[key];
-    let img = element.img;
+    let img = element.splash;
     let name = element.name;
     let tags = element.tags;
     let tags2 = element.tags;
