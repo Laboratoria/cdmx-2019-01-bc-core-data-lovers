@@ -1,55 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
 
-    
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <busqueda  >
-          <input type="text" id="busqueda" onkeyup="searching()" > <!--onkeyup es un evento de liberacion de tecla-->
-          <div>
-                <ul id="result"></ul>
-          </div>
-      </busqueda>
-    
-    
-
-    <primerparte>
+<body>
 
 
-      
-     <seccion id ="probando"> 
-        
-     
+<!--En esta seccion estoy creando  los elementos de la funcion busqueda-->
+  <busqueda>
+    <input type="text" id="busqueda" onkeyup="searching()">
+    <!--onkeyup es un evento de liberacion de tecla-->
+    <div>
+      <ul id="result"></ul>
+    </div>
+  </busqueda>
 
+<!--Dentro de la etiqueta primera parte estan los elementos que estoy ocupando para pintar la data-->
 
-      <script src="./data/pokemon/pokemon.js"></script> 
-      </seccion>
+  <primerparte>
 
-      
-      <seccion id= "pokemones">
-          <script src="./data/pokemon/pokemon.js"></script> 
-    
+    <seccion id="probando">
+
+      <script src="./data/pokemon/pokemon.js"></script>
     </seccion>
-    </primerparte>
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> origin/master
-   
- 
+    <seccion id="pokemones">
+      <script src="./data/pokemon/pokemon.js"></script>
 
- 
+    </seccion>
+  </primerparte>
 
-    
-    
-  
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
