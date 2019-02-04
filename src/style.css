@@ -85,10 +85,11 @@ p{
 }
 
 .image{
-  display: inline-block;
-  width: 300px;
+  display: block;
+  width: 99%;
   height: auto;
-  padding: 2px;
+  padding: 0.5%;
+  padding-block-start: 7%;
 }
 
 .select{
@@ -100,10 +101,27 @@ padding: 2%;
 .photos{
   background-color: #eb008b;
   width: auto;
-  height: 1000px;
+  height: 100%;
+  align-content: center;
+  margin-block-start: 0%;
+  vertical-align: bottom;
 }
+
 footer{
   background-color: #231f20;
   width: auto;
   height: 110px;
+}
+
+.redes{
+  width: 55%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 24%
+}
+
+.final{
+  width: 100%;
+  vertical-align: bottom;
+  margin-top: 8%;
 }
