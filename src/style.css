@@ -101,7 +101,8 @@ ul {
 
 .desplegable li a {
 	background-color: black;
-	color: #efc056;
+  color: #efc056;
+  line-height: 1.5;
 	text-decoration:none;
 	padding:10px 10px;
 	display:block;
