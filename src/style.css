@@ -175,14 +175,12 @@ h3{
   color: white;
   font-size: 2.7em;
   display: flex;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   justify-content:center;
   color: #efc056;
   position: absolute;
-  transform: translate(0%, -70px);
+  transform: translate(0, -58px);
+  background-color: rgba(29, 33, 40, 0.5);
+  width: 31.3%;
 }
 
 p{
@@ -209,7 +207,7 @@ p{
 }
 
 img {
-  width: 300px;
+  width: 100%;
   padding-top: 20px;
   position: relative;
 }
