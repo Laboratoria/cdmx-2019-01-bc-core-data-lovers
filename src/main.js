@@ -18,6 +18,7 @@ const buttonBackFilterPage = document.getElementById('buttonBackFilterPage');
 const buttonSearchPokemon = document.getElementById('buttonSearchPokemon');
 const pokemonSortHeight = document.getElementById('pokemon-Sort-Height');
 const pokemonSortWeight = document.getElementById('pokemon-Sort-Weight');
+const enterToPikapedia=document.getElementById('enterToPikapedia');
 
 //Botón de entrada
 enterToPikapedia.addEventListener("click", () => {
