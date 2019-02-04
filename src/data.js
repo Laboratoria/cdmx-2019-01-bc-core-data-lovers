@@ -23,6 +23,8 @@ const showAllData = () => {
   return completeData;
 };
 
+window.showAllData = showAllData;
+
 const filterByType = (category) => {
   //const filteredData = dataPokemon.filter(data =>(data.type == category));
   //const filterData = dataPokemon.filter(data =>(data.spawn_chance > 1));
@@ -40,3 +42,5 @@ const filterByType = (category) => {
   });
   return pokemonList;
 };
+
+window.filterByType = filterByType;

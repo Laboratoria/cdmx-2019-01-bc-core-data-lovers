@@ -6,8 +6,8 @@ const printPokemon = (nombre, imagen) => {
   pokemones.insertAdjacentHTML("beforeend",nombrePokemon);
 };
 
-const allData = showAllData();
-const dataByType = filterByType('Fire');
+const allData = window.showAllData();
+const dataByType = window.filterByType('Fire');
 
 const showList = (pokemonList) => {
   pokemonList.forEach(element => {
