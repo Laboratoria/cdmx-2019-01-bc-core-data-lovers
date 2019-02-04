@@ -1,8 +1,23 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+window.pokemon = {
 
-const example = () => {
-  return 'example';
-};
+  show:(data) => {
 
-window.example = example;
+    const imprimir = (nombre,imagen) =>{
+
+      const pokemons = document.getElementById("pokemons");
+      let nombrePokemon = '<div class="divPokemon"><img src="${imagen}">${nombre}</div>';
+      pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
+
+    }
+
+    data.forEach(elemento =>{
+      let nombre = elemento.name;
+      let imagen = elemento.img;
+      imprimir(nombre, imagen);
+
+    })
+      return imprimir;
+    }
+  }
+
+
