@@ -33,6 +33,8 @@ const literacy = (select) => {
   return userIndicator;
 };
 
+window.literacy = literacy;
+
 
 /*const levelOfInstruction = dataMex.filter(function(){
   let indicatorCode = element.indicatorCode
