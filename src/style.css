@@ -82,9 +82,9 @@ h2 {
 
 header {
   background-color: black;
-  padding: 0px;
   position: fixed;
   width: 100%;
+  top: 0px;
 }
 
 #listado {
@@ -169,10 +169,25 @@ footer{
   padding-top: 50px;
 }
 
+h3{
+  width: 280px;
+  color: white;
+  font-size: 2.7em;
+  display: flex;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  justify-content:center;
+  color: #efc056;
+  position: absolute;
+  transform: translate(0%, -70px);
+}
+
 p{
   width: 280px;
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
   display: flex;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -194,4 +209,14 @@ p{
 
 img {
   width: 300px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.tags {
+  background-color: rgba(29, 33, 40, 0.5);
+  border-top-color: #efc056;
+  border-top-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
