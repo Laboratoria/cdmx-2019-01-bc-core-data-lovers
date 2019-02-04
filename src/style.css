@@ -45,7 +45,8 @@ height: 100vh;
  
 .hidden{
     display: none;
-}   
+}
+
 #letras{
     display: inline-block;
     margin-top: 5%;
