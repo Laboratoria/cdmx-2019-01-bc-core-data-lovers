@@ -16,7 +16,7 @@ function showFilter() {
 const typeWatter = pokemon.filter(pokemon => pokemon.type[0] === "Water");
 
 const imprimir = (name, imagen) => {
-  let pokemonWater = `<div class="pokemonSection"><img src="${imagen}"> ${name}</div>`;
+  let pokemonWater = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
   returnFilter.innerHTML += pokemonWater;
 };
 
@@ -35,7 +35,7 @@ typeWatter.forEach(pokemon =>{
 const typeElectric = pokemon.filter(pokemon => pokemon.type[0] === "Electric");
 
 const imprimirElectric = (name, imagen) => {
-  let pokemonElectric = `<div class="pokemonSection"><img src="${imagen}"> ${name}</div>`;
+  let pokemonElectric = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
   returnFilter.innerHTML += pokemonElectric;
 };
 
@@ -53,7 +53,7 @@ function filterTypeElectric() {
 const typeFire = pokemon.filter(pokemon => pokemon.type[0] === "Fire");
 
 const printFire = (name, imagen) => {
-  let pokemonFire = `<div class="pokemonSection"><img src="${imagen}"> ${name}</div>`;
+  let pokemonFire = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
   returnFilter.innerHTML += pokemonFire;
 }
 
