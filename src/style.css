@@ -1,3 +1,5 @@
+*{margin: 0;
+}
 body,html{
     margin: 0;
     padding: 0;
@@ -8,14 +10,9 @@ body,html{
 #pantalla-uno{
     background-image: url("https://media.alienwarearena.com/media/wallpaper-9.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    display: block;
-    position: relative;
     width: 100%;
-    height: 100%;
-}
+    height: 100
+}     
 .boton-inicio{
     border: 1px solid #eeeeee;
     border-radius:5px;
@@ -27,3 +24,43 @@ body,html{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.pantalla-tres{
+    background: rgb(45, 45, 51);
+}
+.cuadro{
+    margin: 5%;
+    background-color: rgb(9, 32, 66);
+    padding: 2%;
+    width: 80%;
+    max-width: 100%;
+    color: rgb(199, 173, 25);
+    font-size: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(31, 161, 151);
+}
+img{
+    width: 10%;
+}
+nav{
+    width: 9em;
+    position: relative;
+    height: 8em;
+    top: -21px;
+    left: -143px;
+}
+nav.mostrar{
+    width: 9em;
+    position: relative;
+    height: 8em;
+    top: -21px;
+    left: 0px;
+}
+.contenedor{
+    position: relative;
+    top: 30px;
+}
+.contenedorboton{
+    z-index: 20px;
+}
+
