@@ -27,7 +27,6 @@ const printimg = (img) =>{
     imprimirRoles.insertAdjacentHTML("beforeend", resultimg);
 }*/
 
-
 for (const key in datalol) {
     if (datalol.hasOwnProperty(key)) {
       const element = datalol[key];
