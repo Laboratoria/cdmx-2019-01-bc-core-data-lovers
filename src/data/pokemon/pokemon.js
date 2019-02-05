@@ -1,4 +1,4 @@
-var POKEMON = {
+let POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",

@@ -1,9 +1,8 @@
-
 const pokemones = document.getElementById('pokemones');
 
 const printPokemon = (nombre, imagen) => {
   let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
-  pokemones.insertAdjacentHTML("beforeend",nombrePokemon);
+  pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
 
 const allData = window.showAllData();
@@ -17,4 +16,17 @@ const showList = (pokemonList) => {
   });
 };
 
-showList(allData);// En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
+showList(allData); // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
+
+
+//MENU
+let menu = document.querySelector('#menu');
+let drawer = document.querySelector('nav');
+
+menu.addEventListener('click', (e) => {
+  //Despliega menú
+  drawer.classList.toggle('open');
+  //noscroll
+  document.getElementsByTagName("html")[0].style.overflow = "hidden";
+  e.stopPropagation();
+});
