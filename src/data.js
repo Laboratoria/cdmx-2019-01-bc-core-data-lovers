@@ -10,20 +10,30 @@ window.example = example;*/
 
 //Traer array
 
-const dataEducacion = WORLDBANK.MEX.indicators;
-console.log(dataEducacion)
+/ Traer elementos del data
+const database = WORLDBANK.MEX.indicators;
+//console.log(database)
 
-// Enlazar elementos del DOM
-const indicador = document.getElementById("indicador");
-
-// función para imprimir elementos en el html
-const print = (indicadorName) => {
-  let result = `<h5> ${indicadorName} </h5>`
-  indicador.insertAdjacentHTML("beforeend", result)
+const literacy = (select) => {
+  let userIndicator;
+  if (select === "adultWomen"){
+      let literacyIndicator = database.filter (element => {
+      return element.indicatorName === "Tasa de alfabetización, mujeres adultas (% de mujeres de 15 años o más)";
+    })
+    literacyIndicator.forEach(element => {
+      let indicatorData = element.data;
+      userIndicator = indicatorData;
+    })
+  } else if (select === "youngWomen"){
+     let literacyIndicator = database.filter (element => {
+     return element.indicatorName === "Tasa de alfabetización, mujeres jóvenes (% de mujeres entre 15 y 24 años)";
+  })
+    literacyIndicator.forEach(element => {
+    let indicatorData = element.data;
+    userIndicator = indicatorData;
+    }) 
+  }
+  return userIndicator;
 };
 
-// extraer elementos
-dataEducacion.forEach (element => {
-  let indicadorName = element.indicatorName;
-  print(indicadorName)
-});
+window.literacy = literacy;
