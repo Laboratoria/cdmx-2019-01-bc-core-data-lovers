@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   color: #037393;
-  font-size: 300%;
+  font-size: 2em;
 }
 
 p {
@@ -75,6 +75,10 @@ p {
   border-width: 10px;
   background-color: transparent;
 
+}
+
+.fa-walking {
+  color: rgb(18, 18, 134);
 }
 
 .fa-bicycle {
