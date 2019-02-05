@@ -4,7 +4,7 @@ const championList = document.getElementById('champion-list');
 
 const startButton = document.getElementById('start-button');
 const imprimirLista = document.getElementById('imprimir-lista');
-const es = document.getElementById('es');
+const es = document.getElementById('sq');
 
 
 
@@ -72,7 +72,7 @@ const lolData = LOL.data;
 const print = (img, name, tags, tags2)=>{
   let result = `<a href="#card"> <div class="champion"> <img src="${img}">
   <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
-  es.insertAdjacentHTML("beforeend",result);
+  sq.insertAdjacentHTML("beforeend",result);
 }
 for (const key in lolData) {
   if (lolData.hasOwnProperty(key)) {

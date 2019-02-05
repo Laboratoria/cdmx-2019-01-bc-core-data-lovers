@@ -60,22 +60,6 @@ h2 {
   font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.back {
-  border-radius: 20px;
-  border-color: #efc056;
-  border-width: 5px;
-  color: #efc056;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  background-color: rgba(29, 33, 40, 0.5);
-  font-size: 2em;
-  font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-
 .hide {
   display: none;
 }
@@ -87,7 +71,7 @@ header {
   top: 0px;
 }
 
-#listado {
+#enlisted {
   width: 20%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
@@ -99,7 +83,7 @@ ul {
   padding: 30px;
 }
 
-.desplegable li a {
+.drop-down li a {
   background-color: black;
   color: #efc056;
   line-height: 1.5;
@@ -108,27 +92,27 @@ ul {
   display: block;
 }
 
-.desplegable li a:hover {
+.drop-down li a:hover {
   background-color: #434343;
 }
 
-.desplegable li ul {
+.drop-down li ul {
   margin: 0px;
   display: none;
   position: absolute;
   width: 45%;
 }
 
-.desplegable li:hover>ul {
+.drop-down li:hover>ul {
   display: block;
 }
 
-.desplegable li ul li {
+.drop-down li ul li {
   position: relative;
   margin-left: -40px;
 }
 
-.desplegable li ul li ul {
+.drop-down li ul li ul {
   right: -285px;
   top: -30px;
 }
@@ -195,7 +179,7 @@ p {
   color: #efc056;
 }
 
-.cuadro {
+.square {
   width: 100%;
   margin: 0 auto;
 }
