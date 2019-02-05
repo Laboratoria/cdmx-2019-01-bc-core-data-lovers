@@ -10,7 +10,7 @@ window.example = example;*/
 
 //Traer array
 
-/ Traer elementos del data
+//Traer elementos del data
 const database = WORLDBANK.MEX.indicators;
 //console.log(database)
 
