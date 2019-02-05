@@ -1,16 +1,21 @@
 const enterPage = document.getElementById('enterPage');
 const pageKanto = document.getElementById('pageKanto');
 const filterPage = document.getElementById('filterPage');
+
 // Estamos desarrollando searchPage
+
 const searchPage = document.getElementById('searchPage');
 const stadisticsPage = document.getElementById('stadisticsPage');
 const aboutPikapedia = document.getElementById('aboutPikapedia');
 const filterButton = document.getElementById("filterButton");
-const totalData = document.getElementById("total-data");
-const pokemonLight = document.getElementById('Pokemon-light');
-const pokemonHe = document.getElementById('Pokemon-Heavy');
+
+
+const totalData= document.getElementById("total-data");
+const pokemonLight= document.getElementById("Pokemon-light");
+const pokemonHe= document.getElementById("Pokemon-Heavy");
+
 const pokemonData = POKEMON.pokemon;
-const buttonBack = document.getElementById('buttonBack');
+const buttonBack= document.getElementById("buttonBack");
 const pokemonSm = document.getElementById('pokemon-Small');
 const pokemonMedium = document.getElementById('pokemon-Medium');
 const pokemonTall = document.getElementById('pokemon-Tall');
@@ -19,39 +24,38 @@ const buttonSearchPokemon = document.getElementById('buttonSearchPokemon');
 const pokemonSortHeight = document.getElementById('pokemon-Sort-Height');
 const pokemonSortWeight = document.getElementById('pokemon-Sort-Weight');
 const enterToPikapedia=document.getElementById('enterToPikapedia');
+const pokemonTypeAll=document.getElementById('pokemonTypeAll');
 
 //Botón de entrada
 enterToPikapedia.addEventListener("click", () => {
-  enterPage.classList.remove('show')
-  enterPage.classList.add('hide');
-  pageKanto.classList.remove('hide');
 
-})
-buttonBack.addEventListener("click", () => {
-  pageKanto.classList.add('hide');
-  enterPage.classList.add('show');
-})
+    enterPage.classList.add('hide');
+    pageKanto.classList.remove('hide');
+  });
 
-filterButton.addEventListener("click", () => {
+  buttonBack.addEventListener("click", () => {
+    pageKanto.classList.add('hide');
+    enterPage.classList.add('show');
+  });
+
+filterButton.addEventListener("click",() =>{
   pageKanto.classList.add('hide');
   filterPage.classList.remove('hide');
-})
+});
 
 buttonBackFilterPage.addEventListener("click", () => {
   filterPage.classList.add('hide');
   pageKanto.classList.remove('hide');
 })
 
-
 buttonSearchPokemon.addEventListener("click", () => {
   pageKanto.classList.add('hide');
   searchPage.classList.remove('hide');
 })
 
-
 //función para imprimir la data total de pokémons
 const print = (num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
-  spawn_time, multipliers, weaknesses, next_evolution) => {
+  spawn_time, multipliers, weaknesses, next_evolution,) => {
   let result = `<h1>${num}</h1> 
         <h2>${name}</h2>
         <div><img src=${img}></div>
@@ -68,8 +72,7 @@ const print = (num, name, img, type, height, weight, candy, candy_count, egg, sp
         <p>WEAKNESSES: ${weaknesses}</p>
         <p>NEXT EVOLUTION: ${next_evolution}</p>`;
   totalData.insertAdjacentHTML("beforeend", result);
-}
-
+};
 
 pokemonData.forEach(element => {
   let num = element.num;
@@ -213,8 +216,8 @@ pokemonsSortWeight.forEach(element => {
   let weightSort = element.weight;
   print8(nameSortByWeight, img, weightSort);
 })
- 
 
+ 
 
 //Función para ordenar los pokémons de manera descendente. (falta imprimirlos)
 pokemonsSortHeightDescending=pokemonsSortHeight.reverse();
@@ -222,10 +225,154 @@ console.log(pokemonsSortHeightDescending);
 
 
 
+ 
+
+/*const pokemonsSortWeight = () => pokemonsLight.sort((a,b) =>{
+  if ((parseInt(a.weight)) > (parseInt(b.weight))){
+    return 1;
+  };
+  if((parseInt(a.weight)) < (parseInt(b.weight))){
+    return -1;
+  }else{
+    return 0;
+  }
+})*/
+const printAll = (namePokemonAll, img, typePokemonAll) => {
+  let resultTypeAll = `<h1>${namePokemonAll}</h1>
+  <div><img src=${img}></div>
+  <p>TYPE: ${typePokemonAll}</p>`;
+  pokemonTypeAll.insertAdjacentHTML('beforeend', resultTypeAll);
+}
 
 
 
+//retorna los tipos de pokemones gaby 
+function filtrar(id_tipo) {
+  //console.log("hola");
+  if (id_tipo==1){//tipo fuego
+    const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Fire"));
+    pokemonType.forEach(element =>{
+      let namePokemonFire=element.name;
+      let img=element.img;
+      let typePokemonFire=element.type;
+      printAll(namePokemonFire, img, typePokemonFire)
+      console.log(namePokemonFire, img, typePokemonFire);
+     });
 
+     }else if (id_tipo==2){//tipo grass
+    const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Grass"));
+    pokemonType.forEach(element =>{
+      let namePokemonGrass=element.name;
+      let typePokemonGrass=element.type;
+      let img=element.img;
+      printAll(namePokemonGrass, img, typePokemonGrass)
+  })
+
+  } else if (id_tipo==3){//tipo ice
+    const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Ice"));
+    pokemonType.forEach(element =>{
+      let namePokemonIce=element.name;
+      let typePokemonIce=element.type;
+      let img=element.img;
+      printAll(namePokemonIce, img, typePokemonIce)
+  })
+ } else if (id_tipo==4){//tipo poison
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Poison"));
+  pokemonType.forEach(element =>{
+    let namePokemonPoison=element.name;
+    let typePokemonPoison=element.type;
+    let img=element.img;
+    printAll(namePokemonPoison, img, typePokemonPoison)
+})
+} else if (id_tipo==5){//tipo Flying
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Flying"));
+  pokemonType.forEach(element =>{
+    let namePokemonFlying=element.name;
+    let typePokemonFlying=element.type;
+    let img=element.img;
+    printAll(namePokemonFlying, img, typePokemonFlying)
+})}else if (id_tipo==6){//tipo psychic
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Psychic"));
+  pokemonType.forEach(element =>{
+    let namePokemonPsychic=element.name;
+    let typePokemonPsychic=element.type;
+    let img=element.img;
+    printAll(namePokemonPsychic, img, typePokemonPsychic)
+})}else if (id_tipo==7){//tipo water
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Water"));
+  pokemonType.forEach(element =>{
+    let namePokemonWater=element.name;
+    let typePokemonWater=element.type;
+    let img=element.img;
+    printAll(namePokemonWater, img, typePokemonWater)
+})}else if (id_tipo==8){//tipo Ground
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Ground"));
+  pokemonType.forEach(element =>{
+    let namePokemonGround=element.name;
+    let typePokemonGround=element.type;
+    let img=element.img;
+    printAll(namePokemonGround, img, typePokemonGround)
+})}else if (id_tipo==9){//tipo Rock
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Rock"));
+  pokemonType.forEach(element =>{
+    let namePokemonRock=element.name;
+    let typePokemonRock=element.type;
+    let img=element.img;
+    printAll(namePokemonRock, img, typePokemonRock)
+})} else if(id_tipo==10){//tipo Electric
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Electric"));
+  pokemonType.forEach(element =>{
+    let namePokemonElectric=element.name;
+    let typePokemonElectric=element.type;
+    let img=element.img;
+    printAll(namePokemonElectric, img, typePokemonElectric)
+})}else if(id_tipo==11){//tipo Bug
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Bug"));
+  pokemonType.forEach(element =>{
+    let namePokemonBug=element.name;
+    let typePokemonBug=element.type;
+    let img=element.img;
+    printAll(namePokemonBug, img, typePokemonBug)
+})}else if(id_tipo==12){//tipo Normal
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Normal"));
+  pokemonType.forEach(element =>{
+    let namePokemonNormal=element.name;
+    let typePokemonNormal=element.type;
+    let img=element.img;
+    printAll(namePokemonNormal, img, typePokemonNormal)
+})}else if(id_tipo==13){//tipo Fighting
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Fighting"));
+  pokemonType.forEach(element =>{
+    let namePokemonFighting=element.name;
+    let typePokemonFighting=element.type;
+    let img=element.img;
+    printAll(namePokemonFighting, img, typePokemonFighting)
+})}else if(id_tipo==14){//tipo Fairy
+  const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Dragon"));
+  pokemonType.forEach(element =>{
+    let namePokemonDragon=element.name;
+    let typePokemonDragon=element.type;
+    let img=element.img;
+    printAll(namePokemonDragon, img, typePokemonDragon)
+})}
+
+}
+
+filtrar(1);
+console.log("imprimiendo solo hierva");
+filtrar(2);
+filtrar(3);
+filtrar(4);
+filtrar(5);
+filtrar(6);
+filtrar(7);
+filtrar(8);
+filtrar(9);
+filtrar(10);
+filtrar(11);
+filtrar(12);
+filtrar(13);
+filtrar(14);
 
 /*const pokemonsSortHeight=pokemonData.sort(pokemon=>(parseInt(pokemon.height)), function(a, b){return a - b})
 pokemonsSortHeight.forEach(element=>{
@@ -279,4 +426,4 @@ console.log(pokemons);*/
   print2(pokemonsLight)
   }
   console.log(pokemonsLight);
-});*/
+})*/
