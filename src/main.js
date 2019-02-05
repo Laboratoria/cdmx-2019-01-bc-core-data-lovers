@@ -1,13 +1,13 @@
 const pokemones = document.getElementById('pokemones');
 
 const printPokemon = (nombre, imagen) => {
-  let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
+  let nombrePokemon = `<div class="divPokemon"><img src="${imagen}"><br>${nombre}</div>`;
   pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
 
 const allData = window.showAllData();
-const dataByType = window.filterByType('Fire');
-
+const dataByType = window.filterByType('Poison');
+//console.log(dataByType);
 const showList = (pokemonList) => {
   pokemonList.forEach(element => {
     let name = element.name;
@@ -16,7 +16,17 @@ const showList = (pokemonList) => {
   });
 };
 
-showList(allData); // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
+//esta parte obtiene la ubicacion de la pagina y dependiendo de ésta ejecuta las funciones
+let ubication = location.href;
+console.log(ubication);
+if (ubication.includes('index.html')) {
+
+}
+else if (ubication.includes('typePokemon.html')) {
+ // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
+  showList(allData);
+}
+console.log(ubication);
 
 
 //MENU
@@ -38,6 +48,3 @@ outMenu.addEventListener('click', () => {
   //Cierra menú al seleccionar una opción
   drawer.classList.remove('open');
 });
-
-
-
