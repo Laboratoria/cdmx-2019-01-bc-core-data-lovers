@@ -1,36 +1,32 @@
-
-//const POKEMON = POKEMON;
 const pokemones = document.getElementById('pokemones');
-const dataPokemon = POKEMON.pokemon;
 
-const imprimir = (nombre, imagen) => {
+const printPokemon = (nombre, imagen) => {
   let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
-  pokemones.insertAdjacentHTML("beforeend",nombrePokemon);
+  pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
 
-dataPokemon.forEach(elemento => {
-  let nombre = elemento.name;
-  let imagen = elemento.img;
-  imprimir(nombre, imagen);
+const allData = window.showAllData();
+const dataByType = window.filterByType('Fire');
 
-});
+const showList = (pokemonList) => {
+  pokemonList.forEach(element => {
+    let name = element.name;
+    let image = element.img;
+    printPokemon(name, image);
+  });
+};
 
-const dataByType = filterByType('Normal');
-console.log(dataByType);
-
-
-
+showList(allData); // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
 
 
 //MENU
 let menu = document.querySelector('#menu');
-    let drawer = document.querySelector('nav');
-    
-    menu.addEventListener('click', (e) => {
-        //Despliega menú
-        drawer.classList.toggle('open');
-        //noscroll
-        document.getElementsByTagName("html")[0].style.overflow = "hidden";
-        e.stopPropagation();
-    });
-    
+let drawer = document.querySelector('nav');
+
+menu.addEventListener('click', (e) => {
+  //Despliega menú
+  drawer.classList.toggle('open');
+  //noscroll
+  document.getElementsByTagName("html")[0].style.overflow = "hidden";
+  e.stopPropagation();
+});
