@@ -20,8 +20,11 @@
 
 // console.log(filteredaccess);
 // indicator.insertAdjacentHTML("beforeend", filteredaccess);
+const navMenu = document.getElementById("nav-menu");
 
-
+function navOcultar(){
+navMenu.classList.toggle("ocultar");
+};
 
 //acceder a la data de cada pais
 const ciudadesMex = WORLDBANK.MEX.indicators;

@@ -10,7 +10,6 @@ body{
     box-sizing: border-box;
   }
 .header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,17 +36,23 @@ body{
     height: 37px;
     margin-top: 20px;
 }
-.nav__menu{
+.nav-icon{
     margin-top: 20px;
     width: 25px
 }
+.nav-menu{
+    margin-top: 20px;
+    border: 1px solid black ;
+    -webkit-transition: height 2s;
+    transition: height 2s;
+}
+.ocultar{
+    display: none;
+}
 .item-menu{
     font-size: 1rem;
-    display: none;
-   
 }
 .container{
-    margin-top: 80px;
     padding: 5px 15px;
 
 }
