@@ -1,19 +1,7 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-/*const example = () => {
-  return 'example';
-};
-
-window.example = example;*/
-
-
-//Traer array
-
-/ Traer elementos del data
+//Traer elementos del data
 const database = WORLDBANK.MEX.indicators;
-//console.log(database)
 
+//Filtrar indicadores de alfabetización.
 const literacy = (select) => {
   let userIndicator;
   if (select === "adultWomen"){
@@ -37,3 +25,5 @@ const literacy = (select) => {
 };
 
 window.literacy = literacy;
+
+
