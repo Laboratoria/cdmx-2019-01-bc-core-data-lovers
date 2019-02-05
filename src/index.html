@@ -9,80 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
   </head>
-  <body>
-
+  <body>    
     <header>
-      <figure id="logoPokemon"> <img src="../src/assets/img/International_Pokémon_logo.svg.png" alt="Pokémon_logo"></figure>
+      <img src="assets/img/POKEMON.png" class = "imgPokemon">
     </header>
-    <section id="getName">
-      <form>
-         <h2 class="fontPokemon">¿Cuál es tu Nombre?</h2> 
-
-         <input type="text">
-      
-
-      </form>
-      <button type="submit" id="next" class="styleButtonNext">Siguiente</button>
-    </section>
-    
-    <section id="main" class="displayNone">
-      <h1 id="pokemons"></h1>
-
-
-<div class="contenedor">
-    <header>
-      <img src="imagenes/POKEMON.png" class = "imgPokemon">
-    </header>
-
-    <section class="displayNone" id="getName"> <!--Obtener nombre y boton siguiente-->
-<h2 class = "cualEs">¿Cuál es tu Nombre?</h2>
-      <form>
-        <br>
-         <input type="text" placeholder="Esrcibe tu Nombre" class="WriteName" id="inputName">
-      </form>
-         <button type="submit" id="next" class="ok">Siguiente</button>
-    </section>
-</div>
-
-
-
-<div>
-  <section class="displayNone2" id="aparicion"> <!-- 1 qUE SALGA EL NOMBRE DE LA PERSONA-->
-    <h2>Hola <p id = "NombreDeUsuario">(Nombre De Usuario)</p> Descubre tus Pokemones </h2>
+      <section id="getName"> <!--Obtener nombre y boton siguiente-->
+        <h2 class = "cualEs">¿Cuál es tu Nombre?</h2>
+          <br>
+            <input type="text" placeholder="Esrcibe tu Nombre" class="WriteName" id="inputName">
+            <button type="submit" id="next" class="styleButtonNext">Siguiente</button>
+      </section>
+  
+    <section id="aparicion"> <!-- 1 qUE SALGA EL NOMBRE DE LA PERSONA-->
+      <h2 class="fontPokemon">Hola <p id = "NombreDeUsuario">(Nombre De Usuario)</p> Descubre tus Pokemones ordenados </h2>
      <!--<button type="submit" id="neext" class="ok">Siguiente</button>-->
-     <h1 id="pokemons"></h1>
-      <button type="submit" id="showPokemons">Pokémons Ordenados por Num</button>
-   </section>
- </div>
-
-
-  <!--<div class="">
-    <section>
-       <button type="submit" id="showPokemons">Pokémons Ordenados por Num</button>
+      <button type="submit" id="showPokemons" class="styleButtonNext">VER</button>
     </section>
-  </div>-->
-
-
-
-
-<!--<div class="">
-  <section id="main" class="displayNone3" id="noneDisplay"> //Boton para mostrar los Pokemones-->
-        <!-- <h1 id="pokemons"></h1>
-    </section>
-</div>-->
-
-
-
-
-
-
-    
+ 
     <h1 id="pokemons"></h1>
-
-    <button type="submit" id="showPokemons">Pokémons Ordenados por Num</button>
-  </section>
-    
-
 
     <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
