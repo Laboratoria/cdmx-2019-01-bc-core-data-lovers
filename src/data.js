@@ -1,11 +1,3 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-/*const example = () => {
-  return 'example';
-};
-
-window.example = example;*/
 const baseDatos =  WORLDBANK;
  
  function filtroPais(select)
@@ -20,6 +12,14 @@ const baseDatos =  WORLDBANK;
       })
     console.log(nomIndicador); 
     indicadorFiltro=nomIndicador;
+    
+    console.log(indicadorFiltro); 
+    indicadorFiltro.forEach(element => { //forEach recorre arreglo de Indicadores,obteniendo solo la data del elemnto que le pasa el filtro anterior 
+      let datosIndicador = element.data;
+      console.log(datosIndicador); 
+      enviaIndicador= datosIndicador; 
+    })   
+  //return enviaIndicador;
     } 
      else if (select==="PER")
      {
@@ -28,6 +28,12 @@ const baseDatos =  WORLDBANK;
      return element.indicatorName === "Población, mujeres (% del total)";
      })
      indicadorFiltro=nomIndicador;
+     console.log(indicadorFiltro); 
+      indicadorFiltro.forEach(element => { //forEach recorre arreglo de Indicadores,obteniendo solo la data del elemnto que le pasa el filtro anterior 
+      let datosIndicador = element.data;
+      console.log(datosIndicador); 
+      enviaIndicador= datosIndicador; 
+    }) 
     } 
      else if (select==="BRA")
     {
@@ -36,6 +42,12 @@ const baseDatos =  WORLDBANK;
      return element.indicatorName === "Población, mujeres (% del total)";
      })
       indicadorFiltro=nomIndicador;
+      console.log(indicadorFiltro); 
+      indicadorFiltro.forEach(element => { //forEach recorre arreglo de Indicadores,obteniendo solo la data del elemnto que le pasa el filtro anterior 
+      let datosIndicador = element.data;
+      console.log(datosIndicador); 
+      enviaIndicador= datosIndicador; 
+    }) 
     } 
 
     else if (select==="CHL")
@@ -45,15 +57,15 @@ const baseDatos =  WORLDBANK;
      return element.indicatorName === "Población, mujeres (% del total)";
      })
      indicadorFiltro=nomIndicador;
-    }
-
-    console.log(indicadorFiltro); 
-    indicadorFiltro.forEach(element => { //forEach recorre arreglo de Indicadores,obteniendo solo la data del elemnto que le pasa el filtro anterior 
+     console.log(indicadorFiltro); 
+      indicadorFiltro.forEach(element => { //forEach recorre arreglo de Indicadores,obteniendo solo la data del elemnto que le pasa el filtro anterior 
       let datosIndicador = element.data;
       console.log(datosIndicador); 
       enviaIndicador= datosIndicador; 
-    })   
+    }) 
+    }
+
+  
   return enviaIndicador;
 }
 window.filtroPais = filtroPais;
-

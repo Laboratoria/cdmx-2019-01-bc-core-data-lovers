@@ -21,12 +21,15 @@ const mostrarMenu = () =>{//Funcion mantiene activo o desactivo el menu, segun e
 
 const menu = () =>{//llama funcion mostrar menu, cuando se da click en Menu
     contenido.style.display= 'none';
+   
     mostrarMenu()
+    
+    
 }
 buttonMenu.addEventListener('click', menu);
 
 const bienvenida = () =>{ //funcion muestra apartado Bienvenida
-   mostrarMenu()
+    mostrarMenu()
     box2.classList.remove('hide');
     box3.classList.add('hide');
 }
