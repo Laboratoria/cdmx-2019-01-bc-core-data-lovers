@@ -61,10 +61,9 @@ opacity: 30%;
   margin-top: 0;
 }
 
-.fa-walking {
+.fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car, {
   cursor: pointer;
   font-size: 200px;
-  color: rgb(18, 18, 134);
   padding-right: 200px;
   width: 120px;
   height: 120px;
@@ -77,56 +76,20 @@ opacity: 30%;
   
 }
 
+.fa-walking {
+  color: rgb(18, 18, 134);
+}
+
 .fa-bicycle {
-  cursor: pointer;
-  font-size: 60px;
   color: orangered;
-  padding-right: 200px;
-  width: 120px;
-  height: 120px;
-  padding: 10px 16px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
-  margin-right: 131px;
 }
 .fa-motorcycle {
-  cursor: pointer;
-  font-size: 60px;
   color: crimson;
-  width: 120px;
-  height: 120px;
-  padding: 10px 16px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
 }
 .fa-bus {
-  cursor: pointer;
-  font-size: 60px;
   color: forestgreen;
-  width: 120px;
-  height: 120px;
-  padding: 10px 16px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
 }
 .fa-car {
-  cursor: pointer;
-  font-size: 60px;
   color: darkmagenta;
-  padding-right: 150px;
-  width: 120px;
-  height: 120px;
-  padding: 10px 16px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
-  margin-right: 131px;
 }
 
