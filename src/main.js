@@ -22,11 +22,22 @@ showList(allData); // En esta le paso allData para mostrar toda la info o dataBy
 //MENU
 let menu = document.querySelector('#menu');
 let drawer = document.querySelector('nav');
+let outMenu = document.querySelector('nav');
 
-menu.addEventListener('click', (e) => {
+menu.addEventListener('click', () => {
   //Despliega menú
   drawer.classList.toggle('open');
-  //noscroll
+  //Permite scroll
+  document.getElementsByTagName("html")[0].style.overflow = "auto";
+  /*noscroll
   document.getElementsByTagName("html")[0].style.overflow = "hidden";
-  e.stopPropagation();
+  e.stopPropagation();*/
 });
+
+outMenu.addEventListener('click', () => {
+  //Cierra menú al seleccionar una opción
+  drawer.classList.remove('open');
+});
+
+
+
