@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins" rel="stylesheet">
+  <link rel="icon" href="../images/favicon (2).ico">
   <link rel="stylesheet" href="../style.css" />
   <!--link que enlaza íconos de fontawesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -11,93 +12,36 @@
 </head>
 
 <body>
-  <script src="./data/injuries/injuries.js"></script>
-  <script src="main.js"></script>
+
   <h2 class="motorcyclists_info">Motorcyclists</h2>
 
-  <table class="fas fa-motorcycle">
-    <thead>
-      <tr>
-        <td>Years</td>
-        <td>Injuries</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2001</td>
-        <td>60236</td>
-      </tr>
-      <tr>
-        <td>2002</td>
-        <td>64713</td>
-      </tr>
-      <tr>
-        <td>2003</td>
-        <td>67103</td>
-      </tr>
-      <tr>
-        <td>2004</td>
-        <td>76379</td>
-      </tr>
-      <tr>
-        <td>2005</td>
-        <td>87335</td>
-      </tr>
-      <tr>
-        <td>2006</td>
-        <td>88652</td>
-      </tr>
-      <tr>
-        <td>2007</td>
-        <td>102994</td>
-      </tr>
-      <tr>
-        <td>2008</td>
-        <td>95986</td>
-      </tr>
-      <tr>
-        <td>2009</td>
-        <td>90000</td>
-      </tr>
-      <tr>
-        <td>2010</td>
-        <td>82000</td>
-      </tr>
-      <tr>
-        <td>2011</td>
-        <td>81000</td>
-      </tr>
-      <tr>
-        <td>2012</td>
-        <td>93000</td>
-      </tr>
-      <tr>
-        <td>2013</td>
-        <td>88000</td>
-      </tr>
-      <tr>
-        <td>2014</td>
-        <td>92000</td>
-      </tr>
-      <tr>
-        <td>2015</td>
-        <td>88000</td>
-      </tr>
-      <tr>
-        <td>2016</td>
-        <td>null</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="realB">
 
-  <nav class="side_menu">
+    <p>This is de number of injuries at year for this transport mode since 2001 to 2015</p>
+
+    <table class="fas fa-motorcycle">
+      <thead>
+        <tr>
+          <td>Years</td>
+          <td>Injuries</td>
+        </tr>
+      </thead>
+      <tbody id="dataTable">
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="side_menu">
     <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
-
-  <script src="data.js"></script>
+  </div>
 </body>
+<script src="../data/injuries/injuries.js"></script>
+<script src="../data.js"></script>
+<script src="../main.js"></script>
 
-</html
+</html>

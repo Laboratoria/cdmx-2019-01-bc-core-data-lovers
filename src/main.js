@@ -1,16 +1,33 @@
-const principalpage = document.getElementById('principalpage');
-const pedestrianspage = document.getElementById('pedestrianspage');
-const pedalcyclistspage = document.getElementById('pedalcyclistspage');
-const busoccupantspage = document.getElementById('busoccupantspage');
-const caroccupantspag = document.getElementById('caroccupantspag');
-const motorcyclistspage = document.getElementById('motorcyclistspage');
+let tableToPrint = document.getElementById('dataTable');
+//let openMenuButton = document.getElementById('burger');
 
-const pedestrian_data = () => {
-    page1.classList.add('hide');
-    page2.classList.remove('hide');
-  }
+/*openMenuButton.addEventListener('click', ()=>{
+  openNav();
+});*/
+let accidentsData = window.data.getData('Total_Injured_Persons_Motorcyclists');
+
+tableToPrint.insertAdjacentHTML('beforeend', `<tr><td></td><td></td></tr>`);
+
+accidentsData.forEach(element => {
+  printDataInHTML(element.year, element.number);
+});
+
+
+
+function printDataInHTML(year, number){
+  tableToPrint.insertAdjacentHTML('beforeend', `<tr><td>${year}</td><td>${number}</td></tr>`);
+}
 //alert("hola mundo");
 //console.log(INJURIES);
 
 //console.log(INJURIES[0].Year);
 //pedalcyclistspage.addEventListener()
+
+//menu
+/*function openNav() {
+  document.getElementById("side_menu").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("side_menu").style.width = "0";
+}*/
