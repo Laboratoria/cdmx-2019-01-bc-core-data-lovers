@@ -5,3 +5,7 @@
 };
 window.filterTheme = filterTheme;*/
 
+window.WorldBank = {
+
+
+}
