@@ -2,7 +2,43 @@
    * {
         box-sizing: border-box;
    }
-    h1{
+
+   h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 200px;
+    color: rgba(232, 236, 13, 0.726);
+    -webkit-text-stroke: 4px black;
+  
+   /*animacion*/
+   animation-duration: 7s;
+   animation-name: slidein;
+ }
+ 
+ @keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300% border: #FF33C7 20px solid;
+     font-family: 'Staatliches', cursive;
+ 
+ 
+     font-size: 200px;
+ 
+   }
+ 
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+  
+ 
+    
+  
+
+ 
+     
+   }
+
+    h2{
         background:red;  
         color:white;  
     }
@@ -27,9 +63,13 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Chewy');
+
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
 #pokemones{
     
 }
+
 
 p{
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -40,6 +80,20 @@ p{
     height: auto; 
     margin:0.5%; 
     border: 1px solid #ccc;
+
+}
+   
+
+  
+
+
+p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  border: black 10px solid;
+
+  background-color: rgb(162, 175, 177);
+  font-size: 20px;
+
 }
 
 #busqueda {
@@ -58,4 +112,28 @@ p{
   font-size: 20px;
   font-family: 'Ubuntu Condensed', sans-serif;
 
+}
+
+
+#PaginaInicio{
+  background-image: url("https://images7.alphacoders.com/661/thumb-1920-661986.jpg");
+}
+
+#Start{
+
+  
+  width: 480px;
+  height: 480px;
+  font-size: 40px;
+  background-image: url("https://cdn2.scratch.mit.edu/get_image/user/17932341_60x60.png");
+  text-align: center;
+  font-family: "Indie Flower", "cursive";
+  padding: 10px;
+  font-weight: 600;
+  color: black;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.089);
+ border: #000000;
+
+  
 }

@@ -52,7 +52,10 @@ const imprimir = (imagen, nombre2) => {
   <br> debilidades :${debilidades}</br>
   </p>`;
   pokes.insertAdjacentHTML("beforeend",nombrePokemon);
+
+
   /*pokes.insertAdjacentHTML("beforeend", nombrePokemon);
+
 };
 datapokes.forEach(elemento => {
   let imagen = elemento.img;
@@ -66,10 +69,13 @@ datapokes.forEach(elemento => {
   imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
 
 
+});
+
 });*/
 
 //let water = datapokes.filter(pokemonWater => elemento.type =="Water");
 //document.addEventListener("click",elemento());
+
 
 
 
