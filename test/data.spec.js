@@ -1,12 +1,12 @@
-require('../src/data.js');
+// require('../src/data.js');
 
 
-describe('example', () => {
+describe('pokemon', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof pokemon).toBe('object');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
+  // it('returns `example`', () => {
+  //   expect(example()).toBe('example');
+  // });
 });
