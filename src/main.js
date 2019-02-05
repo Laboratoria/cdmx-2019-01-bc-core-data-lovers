@@ -6,8 +6,10 @@ const dataMex = WORLDBANK.MEX.indicators;
 const indicator = document.getElementById('indicator');
 
 //función para imprimir elementos en el html
-const print = (indicatorName) => {
-  let result = `<a href="#section-2"><div id = ${indicatorName}>${indicatorName}</div></a>`
+indicator.insertAdjacentHTML("beforeend", '<option value="">Selecciona un indicador</option>');
+const print = (indicatorName, indicatorCode) => {
+  
+  let result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`
   indicator.insertAdjacentHTML("beforeend", result);
 }
 
@@ -17,19 +19,34 @@ const print = (indicatorName) => {
 //función de extraer elementos:
 dataMex.forEach(element => {
   let indicatorName = element.indicatorName;
-  print(indicatorName)
+  let indicatorCode = element.indicatorCode;
+  print(indicatorName, indicatorCode)
 });
 
 //función que extrae data, e itera ese arreglo para imprimir el contenido del indicador, dependiendo del indicador al que le de click
 
 //función para imprimir datos de variable en el html
 
+indicator.addEventListener("change", ()=> {
+  let indicatorSelect = indicator.value;
+  dataMex.forEach( element => {
+    if(element.indicatorCode == indicatorSelect){
+      let indicatorName = element.indicatorName;
+      let year = element.data;
+      console.log(element.data);
+      for (let data in year) {
+        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
+        document.getElementById('indicator-name').innerHTML = indicatorName + ':';
+        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
+      }
+    }
+  })
+})
 
 //EVENTO EN EL INDICADOR
 let indicatorResult = ('');
 /*
 const indicatorClick = indicator.addEventListener('click', () => {
-
   dataMex.forEach(element => {
     let year = element.data;
     let indicatorName = element.indicatorName;
@@ -95,7 +112,7 @@ const indicatorClick = indicator.addEventListener('click', () => {
 
 //función con switch
 
-const indicatorClick = indicator.addEventListener('click', () => {
+/*const indicatorClick = indicator.addEventListener('click', () => {
   dataMex.forEach(element => {
     let year = element.data;
     let indicatorName = element.indicatorName;
@@ -133,7 +150,7 @@ const indicatorClick = indicator.addEventListener('click', () => {
       }
     }
   })
-})
+})*/
 
 //Eventos, variables
 const sectionOne = document.getElementById('section-1');
