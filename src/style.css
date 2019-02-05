@@ -1,8 +1,7 @@
 /************body*********/
 body{
-/*background:url("images/UnitedStates.png") no-repeat center top;
+background:url("images/usa.png") no-repeat center top;
 background-size: 80%;
-opacity: 30%;*/
 text-align: center;
 }
 
@@ -27,12 +26,6 @@ h2 {
   font-size: 2em;
 }
 
-p {
-  margin: 35px;
-  font-family: 'Lato', sans-serif;
-  color: #2109A4;
-  font-size: 200%;
-}
 
 /************** menu ********/
 .side_menu {
@@ -55,7 +48,9 @@ p {
     margin: 15%;
 		display: block;
 		padding: .5em;
-		background-color: #F9B53C;
+    background-color: #F9B53C;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2em;
 		text-decoration: none;
 		color: #fff;
 	}
@@ -64,60 +59,45 @@ p {
 	}
 
 /********** iconos*****/
-.fa-walking {
-  color: rgb(18, 18, 134);
+.fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car {
+  color: white;
   position: static;
   width: 120px;
   height: 120px;
   padding: 10px 16px;
-  font-size: 24px;
+  font-size: 3em;
   border-radius: 70px;
   border-width: 10px;
   background-color: transparent;
 
 }
 
-.fa-walking {
-  color: rgb(18, 18, 134);
+.fa-walking, .pedestrians_info {
+  background-color: rgb(18, 18, 134);
 }
 
-.fa-bicycle {
-  color: orangered;
-  position: static;
-  width: 120px;
-  height: 120px;
-  padding: 10px 16px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
+.fa-bicycle, .pedalcyclists_info {
+  background-color: orangered;
 }
-.fa-motorcycle {
-  color: crimson;
-  position: inherit;
-  width: 120px;
-  height: 120px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
+.fa-motorcycle, .motorcyclists_info {
+  background-color: crimson;
 }
-.fa-bus {
-  color: forestgreen;
-  width: 120px;
-  height: 120px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
+.fa-bus, .busoccupants_info {
+  background-color: forestgreen;
 }
-.fa-car {
-  color: darkmagenta;
-  width: 120px;
-  height: 120px;
-  padding: 10px 16px;
-  font-size: 24px;
-  border-radius: 70px;
-  border-width: 10px;
-  background-color: transparent;
+.fa-car, .caroccupants_info {
+  background-color: darkmagenta;
+}
+
+.motorcyclists_info, .pedestrians_info, .pedalcyclists_info, .busoccupants_info, .caroccupants_info{
+  color: #fff;
+  opacity: 0.8;
+  text-align: center;
+  height: 100vh;
+  width: 20%;
+  left: 80;
+  padding-left: 20%;
+  padding-right: 20px;
+  padding-top: 85px;
+  position: fixed;
 }
