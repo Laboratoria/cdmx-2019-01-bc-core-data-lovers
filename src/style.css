@@ -1,20 +1,56 @@
 body {
   margin: 0;
+  font-family: 'PT Sans', sans-serif;
  }
  
  h1 {
   color: #57295F;
- 
   background-repeat: no-repeat;
   margin: 1%;
   display: inline;
   padding: 10%;
-  width: 50%;
-  height: 10%;
   align-content: center;
   border-left-width: 10%;
   border-right-width: 10%;
- 
+ }
+
+ h2 {
+   margin-top: 20%;
+   font-size: 140%;
+ }
+
+ h3, h2 {
+   margin-left: 4%;
+ }
+
+ .btn0 {
+  text-align: center;
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 20%;
+  padding: 3%;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #76448A;
+  border: none;
+  color:#F5EEF8;
+  font-size: 100%;
+ }
+
+ .btn0:hover {
+   background-color: #EAECEE;
+ }
+
+ .btn3{
+  text-align: center;
+  display: inline-block;
+  padding: 3%;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #76448A;
+  border: none;
+  color:#F5EEF8;
+  font-size: 100%;
  }
  
  footer {
@@ -37,7 +73,8 @@ body {
  }
  
  .img1,
- .img2 {
+ .img2,
+ .img3 {
   height: auto;
   max-width: 100%;
  }
@@ -47,24 +84,20 @@ body {
   margin-left: 0%;
   padding: 0%;
   max-width: auto;
-  width: calc(100vw - 30px);
-  height: calc(130vh - 30px);
+ 
  }
  
  .logo {
   display: inline;
   text-align: center;
-  padding-bottom: 50%;
  }
  
- log1 {
+ .log1 {
   display: inline-block;
-  background-size: 10%;
-  padding-inline-start: 10%;
+  background-size: 20%;
+  padding-inline-start: 20%;
+  margin-top: 2%;
  }
- }
- 
- */
  
  /*HAMBURGER MENU CSS*/
  .checkbox-container {
@@ -113,7 +146,7 @@ body {
   position: relative;
   display: inline-block;
   margin: 0;
-  margin-top: 1.45em;
+  margin-top: 2em;
   margin-right: 0.35em;
   margin-left: 0.35em;
   margin-bottom: 1.45em;
@@ -176,4 +209,22 @@ body {
  .menu-content ul li:hover {
   color: white;
   background: black;
+ }
+
+ .category{
+   display: block;
+   margin-top: 2%;
+   margin-bottom: 2%;
+   padding-top: 2%;
+ }
+
+ p{
+   padding: 9%;
+   text-align: justify;
+ }
+
+ .resultados{
+   display: block;
+   margin-top: 3%;
+   padding-top: 10%;
  }
