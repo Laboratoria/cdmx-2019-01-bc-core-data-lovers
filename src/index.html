@@ -21,16 +21,50 @@
        <!-- <button id="inicio" class>Bienvenidos</button>-->
     </div>
  </section>
+<!--Menú desplegable
+<div id="mySidenav" class="sidenav">
+  <a href=>&times;</a>
+  <p>Filtrar por</p>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>-->
+
 <!--lista de campeones-->
  <section id="fondo-de-lista-de-campeones" class="hidden"> 
+    <header>
+        <i class="fas fa-bars" onclick="openNav()"></i>
+       </header>
+       <section id="fondo-de-lista-de-campeones" class="hidden"> 
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <p class="titulo" >Filtrar por</p>
+              <a class="titulo" href="#"></a>
+              <a class="titulo" href="#">Services</a>
+              <a class="titulo" href="#">Clients</a>
+              <a class="titulo" href="#">Contact</a>
+            </div>
    <div id="es"></div>
     
+
+
+
+
   </section>    
 
     <script src="./data/lol/lol.js"></script> 
     <script src="data.js"></script>
     <script src="main.js"></script>
-   
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
 
   </body>
 </html>
