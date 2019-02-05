@@ -1,62 +1,66 @@
+*{
+  text-align: center;
+}
 nav {
-    display: block;
-  }
-
-  header{
-    background: white;
-    display: inline-block;
-    vertical-align: bottom;
-  }
-
-  .menu{
-    width: 30px;
-    height: auto;
-    vertical-align: top;
-    padding: 7px;
-    padding-top: 28px;
-    margin-left: 183px;
-}
-
-  .logo{
-    width: 50px;
-    height: auto;
-    padding: 10px;
-  }
-
-.info{
-  background-color: #eb008b;
-  width: auto;
-  height: 500px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  color: white;
-  text-align: justify;
-  font-family: sans-serif;
-  padding: 18px;
-}
-
-.total{
-  background-color: #231f20;
-  width: auto;
-  height: 500px;
   display: block;
+}
+
+header {
+  background: white;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.menu {
+  width: 30px;
+  height: auto;
+  vertical-align: top;
+  padding: 7px;
+  padding-top: 28px;
+  margin-left: 183px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
   padding: 10px;
 }
 
-h2{
+.info {
+  background-color: #eb008b;
+  width: auto;
+  height: 100%;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  color: white;
+  text-align: justify;
+  font-family: sans-serif;
+  padding: 5%;
+}
+
+.total {
+  background-color: #231f20;
+  width: auto;
+  height: 100%;
+  display: block;
+  padding: 5%;
+}
+
+h2 {
   color: white;
   font-family: sans-serif;
   text-align: center;
 }
 
-p{
+p {
   color: white;
   font-family: sans-serif;
   text-align: justify;
-  padding: 16px;
+  padding: 5%;
   font-size: 14px;
-  margin: 0px;
+  margin: 0;
 }
+
 #totalInjured {
   color: #eb008b;
   font-family: sans-serif;
@@ -66,25 +70,25 @@ p{
   margin: 0px;
 }
 
-.icon{
+.icon {
   display: inline-block;
   width: 100px;
   height: auto;
   padding: 19px;
 }
 
-.know{
+.know {
   background-color: white;
   width: auto;
   height: 100%;
 }
 
-#knowMore{
+#knowMore {
   color: black;
   margin-top: 50px;
 }
 
-.image{
+.image {
   display: block;
   width: 99%;
   height: auto;
@@ -92,14 +96,14 @@ p{
   padding-block-start: 7%;
 }
 
-.select{
+.select {
   margin: 20%;
 
-margin-top: 4%;
-padding: 2%;
+  margin-top: 4%;
+  padding: 2%;
 }
 
-.photos{
+.photos {
   background-color: #eb008b;
   width: auto;
   height: 100%;
@@ -108,20 +112,20 @@ padding: 2%;
   vertical-align: bottom;
 }
 
-footer{
+footer {
   background-color: #231f20;
   width: auto;
-  height: 110px;
+  height: 100%;
 }
 
-.redes{
+.redes {
   width: 55%;
   height: auto;
   padding-top: 8%;
   padding-left: 24%
 }
 
-.final{
+.final {
   width: 100%;
   vertical-align: bottom;
   margin-top: 8%;
