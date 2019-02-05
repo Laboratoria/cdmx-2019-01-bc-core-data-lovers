@@ -1,25 +1,31 @@
 *{margin: 0;
 }
-    #pantalla-uno{
-    background-image: url("https://i.pinimg.com/originals/ab/1e/82/ab1e8231b32f4b88b4a9c96532b95749.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
+body,html{
+    margin: 0;
     padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#pantalla-uno{
+    background-image: url("https://media.alienwarearena.com/media/wallpaper-9.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100
+}     
+.boton-inicio{
+    border: 1px solid #eeeeee;
+    border-radius:5px;
+    width: 200px;
+    height: 75px;
+    background-color: #efb810;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .pantalla-tres{
     background: rgb(45, 45, 51);
-}
-.boton-inicio{
-    margin: 0;
-    margin-top: 0;
-    display: block;
-    height: 100px;
-    width: 200px;
-    background-color: red;
-    position: relative;
 }
 .cuadro{
     margin: 5%;
@@ -49,14 +55,11 @@ nav.mostrar{
     height: 8em;
     top: -21px;
     left: 0px;
-
 }
-
 .contenedor{
     position: relative;
     top: 30px;
 }
-
 .contenedorboton{
     z-index: 20px;
 }
