@@ -1,7 +1,7 @@
 const pokemones = document.getElementById('pokemones');
 
 const printPokemon = (nombre, imagen) => {
-  let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
+  let nombrePokemon = `<div class="divPokemon"><img src="${imagen}"><br>${nombre}</div>`;
   pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
 
