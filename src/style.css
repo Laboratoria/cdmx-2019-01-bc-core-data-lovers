@@ -1,36 +1,82 @@
-body{
+body {
   margin: 0;
-}
-h1{
-    color:#57295F; 
-    
-    background-repeat: no-repeat;
-    margin: center;
-  
-  
-}
-.screen{
+ }
+ 
+ h1 {
+  color: #57295F;
+ 
+  background-repeat: no-repeat;
+  margin: 1%;
+  display: inline;
+  padding: 10%;
+  width: 50%;
+  height: 10%;
+  align-content: center;
+  border-left-width: 10%;
+  border-right-width: 10%;
+ 
+ }
+ 
+ footer {
+  padding: 10%;
+  margin: 54%, 0%;
+  background-size: 10%;
+  border-image: 0mm;
+ }
+ 
+ .image {
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 1000%, 1000%;
+  max-width: 100%;
+  padding: 0%;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  ;
+ 
+ }
+ 
+ .img1,
+ .img2 {
+  height: auto;
+  max-width: 100%;
+ }
+ 
+ .screen {
   box-sizing: border-box;
-  margin-left: 14em;
-  padding: 15px;
-  max-width: 700px;
+  margin-left: 0%;
+  padding: 0%;
+  max-width: auto;
   width: calc(100vw - 30px);
   height: calc(130vh - 30px);
-}
-/*#log1{
-
-} */ 
-/*HAMBURGER MENU CSS*/
-.checkbox-container {
-  display: block;
+ }
+ 
+ .logo {
+  display: inline;
+  text-align: center;
+  padding-bottom: 50%;
+ }
+ 
+ log1 {
+  display: inline-block;
+  background-size: 10%;
+  padding-inline-start: 10%;
+ }
+ }
+ 
+ */
+ 
+ /*HAMBURGER MENU CSS*/
+ .checkbox-container {
+  display: inline-block;
   float: left;
-  width: 50px;
+  width: 0%;
   height: 50px;
   position: relative;
   background: white;
-}
-
-.checkbox-trigger {
+ }
+ 
+ .checkbox-trigger {
   opacity: 0;
   position: absolute;
   width: 50px;
@@ -38,11 +84,11 @@ h1{
   left: 0px;
   cursor: pointer;
   z-index: 5;
-}
-
-.hamburger-menu,
-.hamburger-menu::before,
-.hamburger-menu::after {
+ }
+ 
+ .hamburger-menu,
+ .hamburger-menu::before,
+ .hamburger-menu::after {
   display: block;
   position: absolute;
   background: black;
@@ -50,47 +96,48 @@ h1{
   height: 4px;
   margin: 1.3em 3em;
   transition: background 0.3s;
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after {
+ }
+ 
+ .hamburger-menu::before,
+ .hamburger-menu::after {
   content: '';
   position: absolute;
   margin: -0.7em 0 0;
-}
-
-.hamburger-menu::after {
+ }
+ 
+ .hamburger-menu::after {
   margin-top: 0.7em;
-}
-
-.hamburger-menu {
+ }
+ 
+ .hamburger-menu {
   position: relative;
-  display: block;
+  display: inline-block;
   margin: 0;
   margin-top: 1.45em;
   margin-right: 0.35em;
   margin-left: 0.35em;
   margin-bottom: 1.45em;
-}
-.checkbox-trigger:checked {
+ }
+ 
+ .checkbox-trigger:checked {
   left: 152px;
-}
-
-.checkbox-trigger:checked + .menu-content ul {
+ }
+ 
+ .checkbox-trigger:checked+.menu-content ul {
   width: 150px;
   height: 150px;
   ;
   transition: width 0.7s ease 0.3s, height 0.3s ease;
-}
-
-.menu-content {
+ }
+ 
+ .menu-content {
   display: flex;
   background: auto;
   color: black;
   float: left;
-}
-
-.menu-content ul {
+ }
+ 
+ .menu-content ul {
   display: block;
   padding-left: 0;
   padding-top: 1em;
@@ -100,9 +147,9 @@ h1{
   height: 0px;
   overflow: hidden;
   transition: height 0.3s ease 0.7s, width 0.7s ease;
-}
-
-.menu-content ul li {
+ }
+ 
+ .menu-content ul li {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -110,24 +157,23 @@ h1{
   text-align: center;
   font-family: Helvetica;
   transition: color 0.5s, background 0.5s;
-}
-
-.menu-content ul li a {
+ }
+ 
+ .menu-content ul li a {
   color: #57295F;
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 50px;
   padding-right: 80px;
-}
-
-.menu-content ul li a:hover {
+ }
+ 
+ .menu-content ul li a:hover {
   color: white;
   background: black;
-}
-
-.menu-content ul li:hover {
+ }
+ 
+ .menu-content ul li:hover {
   color: white;
   background: black;
-}
-/*END OF HAMBURGER MENU CSS*/
+ }
