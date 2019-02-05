@@ -20,7 +20,7 @@ window.pokemon = {
     }
   }
 
- rama-andrea
+
 
 
 //const example = () => {
@@ -28,4 +28,4 @@ window.pokemon = {
 //};
 
 //window.example = example;
- master
+
