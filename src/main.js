@@ -1,6 +1,6 @@
 //Creamos las constantes que traeran la data
 const injuriesby = INJURIES;
-// ConsoleLog = Array(33) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
+// ConsoleLog = Array(33) [ {…}, {…}, {…},]
 
 //Constante del elemento root del HTML
 const totalsecc = document.getElementById("know")

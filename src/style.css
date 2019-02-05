@@ -1,6 +1,7 @@
-*{
+* {
   text-align: center;
 }
+
 nav {
   display: block;
 }
@@ -116,6 +117,7 @@ footer {
   background-color: #231f20;
   width: auto;
   height: 100%;
+
 }
 
 .redes {
