@@ -20,65 +20,69 @@
 <div class="screen" id="welcome-screen">
   <title>MexEduca</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
 
   <body>
-    <div class="contenedor">
-      <header>
-        <img class="log1" src="imagenes/learning.png" alt="login">
-        <h1><span class="logo" id="log">MexEduca</span></h1>
-        <h3>índices educativos en México</h3>
-        <h4>Sección mujeres</h4>
-        <img class="img1" src="imagenes/graduadas.jpg" alt="gradu">
-        <br>
-        <button>Entrar</button>
-        <img class="img2" src="imagenes/gradu.jpg" alt="gr">
-      </header>
-      <!--------------categorias------------------------->
-      <div class="screen2" id="category-screen"></div>
-      <section class="categorías">
-        <h2>Categorías</h2>
-        <button>Nivel educativo</button>
-        <button>Alfabetización</button>
-      </section>
+    <header>
+      <nav>
+        <div id="page1">
+          <img class="log1" src="imagenes/learning.png" alt="login">
+          <h1><span class="logo" id="log">MexEduca</span></h1>
+          <img class="img1" src="imagenes/graduadas.jpg" alt="back">
+      </nav>
+      <h3>Indices educativos en México</h3>
+      <h4>Sección mujeres</h4>
+      <button value="mostrar" onclick="myFunction()">entrar</button>
+    </header>
+</div>
+<!--------------categorias------------------------->
 
-      <section class="resultados">
-        <h4>Nivel educativo</h4>
-        <fieldset>
-          Para : <select name="nivelEstudios" id="nivelEstudios">
-            <option value="primaria">Primaria</option>
-            <option value="secundaria">Secundaria</option>
-            <option value="licenciatura">Licenciatura</option>
-            <option value="maestria">Maestría</option>
-            <option value="doctorado">Doctorado</option>
-          </select>
-          De : <input type="number"> A: <input type="number">
-        </fieldset>
-        <h5 id="indicador"></h5>
+<div class="category" id="page2">
+  <section class="categorías">
+    <h2>Categorías</h2>
+    <button id="nLearn" class="btn2" onclick="functionN()">Nivel educativo</button>
+    <button id="aLearn" class="btn3" onclick="functionA()">Alfabetización</button>
+  </section>
+</div>
 
-      </section>
+<div id="results">
+  <section class="resultados">
+    <h4>Nivel educativo</h4>
+    <fieldset>
+      Para : <select name="nivelEstudios" id="nivelEstudios">
+        <option value="primaria">Primaria</option>
+        <option value="secundaria">Secundaria</option>
+        <option value="licenciatura">Licenciatura</option>
+        <option value="maestria">Maestría</option>
+        <option value="doctorado">Doctorado</option>
+      </select>
+      De : <input type="number"> A: <input type="number">
+    </fieldset>
+    <h5 id="indicador"></h5>
 
-
-
-      <footer>
-        <img src="" alt="">
-      </footer>
-
-    </div>
+  </section>
+</div>
 
 
+<footer>
+  <img src="" alt="">
+</footer>
+
+</div>
 
 
- 
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <script src="./data/worldbank/worldbank.js"></script>
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+
+
+<div id="root"></div>
+<!-- <script src="./data/injuries/injuries.js"></script> -->
+<!-- <script src="./data/pokemon/pokemon.js"></script> -->
+<!-- <script src="./data/steam/steam.js"></script> -->
+<script src="./data/worldbank/worldbank.js"></script>
+<!-- <script src="./data/lol/lol.js"></script> -->
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
 
 </html>
