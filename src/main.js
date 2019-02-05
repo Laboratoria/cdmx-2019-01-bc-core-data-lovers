@@ -21,8 +21,5 @@ injuriesby.forEach(element => {
 
 //Le digo qué quiero que imprima. Deben ir en orden.
   printpage(year, total, moto, bike, walk, transit)
-
-
   //ConsoleLog si muestra todos los elementos console.log(total)
-
 });
