@@ -20,3 +20,6 @@ for (let injuriesByYear of INJURIES) {
 }
 
 //console.log(years.get("2001-01-04").Total_Injured_Persons);
+
+
+
