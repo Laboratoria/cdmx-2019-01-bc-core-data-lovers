@@ -17,9 +17,10 @@ const showAllData = () => {
 window.showAllData = showAllData;
 
 const filterByType = (category) => {
-  //const filteredData = dataPokemon.filter(data =>(data.type == category));
-  //const filterData = dataPokemon.filter(data =>(data.spawn_chance > 1));
-  const pokemonList = [];
+  const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
+  //const filteredData = dataPokemon.filter(data =>(data.spawn_chance > 1));
+  return filteredData;
+  /*const pokemonList = [];
   dataPokemon.forEach(element => {
     element.type.forEach(elemenType => {
       if(elemenType === category){
@@ -31,7 +32,7 @@ const filterByType = (category) => {
       }
     });
   });
-  return pokemonList;
+  return pokemonList;*/
 };
 
 window.filterByType = filterByType;
