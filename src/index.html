@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Lovers</title>
+    <title>Banco Mundial</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
@@ -54,38 +54,26 @@
               <p>El Grupo Banco Mundial trabaja en todas las principales esferas del desarrollo: proporciona una gran variedad de productos financieros y asistencia técnica, y ayuda a los países a enfrentar los desafíos mediante el intercambio de conocimiento de vanguardia y la aplicación de soluciones innovadoras.</p>
             </article>
         </section>
-        <section class="search-information">
-          <a class="search-country" href="#">Mexico</a>
-          <a class="search-country" href="#">Brasil</a>
-          <a class="search-country" href="#">Peru</a>
-          <a class="search-country" href="#">Chile</a>
-        </section>
-        <section>
-          <form>
-            <select >
-                <option value="value1">Primer tema escibir</option> 
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-                <option value="value3">Value 4</option>
-                <option value="value3">Value 5</option>
-              </select>
-              <select >
-                  <option value="az">a-z</option> 
-                  <option value="za">z-a</option>
-                
-                </select>
-            </form>
-        </section>
-        <section id="informacion__filtrada" class="information-filter" >
-        </section>
-        <section class="contact-us">
+        <section class="information-filter">
+           <a class="btn_mex search-country" id="btn_mex" data-ciudad="ciudadesMex">México</a>
+           <a class="btn_per search-country" id="btn_per" data-ciudad="ciudadesPeru">Peru</a>
+           <a class="btn_bra search-country" id="btn_bra" data-ciudad="ciudadesBrasil">Brasil</a>
+           <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="ciudadesChile">Chile</a>
+        </section>         
+        <select id="list-question">
+            <option value="valor" >texto</option>
+        </select>
+        <select >
+            <option value="az">a-z</option> 
+            <option value="za">z-a</option>
+        </select>
+        <section id="information-filter-inner" class="information-filter" >
         </section>
       </main>
     </div>
     <footer>
       <p class="title-footer">©2019 Grupo Banco Mundial. Reservados todos los derechos.</p> 
     </footer>
- 
     <script src="./data/worldbank/worldbank.js"></script> 
     <script src="data.js"></script>
     <script src="main.js"></script>
