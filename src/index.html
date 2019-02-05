@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pókemon</title>
-    <link rel="stylesheet" href="style.css" />
-    <h1>PokeGram</h1>
-  </head>
-  <body>
-    <!--En esta seccion estoy creando  los elementos de la funcion busqueda-->
-      <busqueda>
-          <input type="text" id="busqueda" onkeyup="searching()" size=100px style="width:200px">
-          <!--onkeyup es un evento de liberacion de tecla-->
-          <input button type="image" src="assets/search.png" id="icon-search">
-          <div>
-            <ul id="result"></ul>
-          </div>
-        </busqueda>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pókemon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--En esta seccion esta todos los elementos que contiene la pagina principal-->
+ <div id="PaginaInicio">
+    <h1> PokeGram</h1>
+    <div>
+      <input id="Start" type="button" value="Start">
+    </div>
+  </div>
+  <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
+  <p>
+  <div id="PaginaElementos" class="ocultar">
+      <h2>PokeGram</h2>
+    <div>
+      <input type="text" id="busqueda" onkeyup="searching()" size=100px style="width:200px">
+    </div>
+  </div>
     <br><br>
     <div id="filter">
-        <button type="submit"><img src="./assets/agua1.png" id="agua">
+       <button type="submit"><img src="./assets/agua.png" id="agua">
         <button type="submit"><img src="assets/bug.png">
-        <button type="submit"><img src="assets/dragon.png">
-        <button type="submit"><img src="assets/electric.png">
-        <button type="submit"><img src="assets/fairy.png">
-        <button type="submit"><img src="assets/flying.png">
-        <button type="submit"><img src="assets/ghost.png">
-        <button type="submit"><img src="assets/grass.png">
-        <button type="submit"><img src="assets/hypnotic.png">
-        <button type="submit"><img src="assets/ice.png">
-        <button type="submit"><img src="assets/normal.png">
-        <button type="submit"><img src="assets/rock.png">
+          <button type="submit"><img src="assets/dragon.png">
+            <button type="submit"><img src="assets/electric.png">
+              <button type="submit"><img src="assets/fairy.png">
+                <button type="submit"><img src="assets/flying.png">
+                  <button type="submit"><img src="assets/ghost.png">
+                    <button type="submit"><img src="assets/grass.png">
+                      <button type="submit"><img src="assets/hypnotic.png">
+                        <button type="submit"><img src="assets/ice.png">
+                          <button type="submit"><img src="assets/normal.png">
+                            <button type="submit"><img src="assets/rock.png">
     </div>
-    <!--Dentro de la etiqueta primera parte estan los elementos que estoy ocupando para pintar la data-->
-   <primerparte>
-    <seccion id ="probando"> 
-    <script src="./data/pokemon/pokemon.js"></script> 
-    <seccion id= "pokemones">
-    <script src="./data/pokemon/pokemon.js"></script> 
-    </seccion>
+    <script src="./data/pokemon/pokemon.js"></script>
+    <primerparte>
+      <seccion id="probando">
+        <script src="./data/pokemon/pokemon.js"></script>
+        <seccion id="pokemones">
+          <script src="./data/pokemon/pokemon.js"></script>
+        </seccion>
     </primerparte>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <!--En esta seccion estoy creando  los elementos de la funcion busqueda-->
+    <busqueda>
+      <!--onkeyup es un evento de liberacion de tecla-->
+      <div>
+        <ul id="result"></ul>
+      </div>
+    </busqueda>
 
-  </body>
+    <!--Dentro de la etiqueta primera parte estan los elementos que estoy ocupando para pintar la data-->
+
+    <primerparte>
+
+      <seccion id="probando">
+
+        <script src="./data/pokemon/pokemon.js"></script>
+      </seccion>
+
+      <seccion id="pokemones">
+        <script src="./data/pokemon/pokemon.js"></script>
+
+      </seccion>
+    </primerparte>
+
+
+    
+  </div>
+
+  <!--En esta seccion estan todos los elementos correspondientes a la paginade de los perfiles de cada personaje -->
+
+  <div id="PaginaPerfil" class="ocultar">
+
+  </div>
+
+</p>
+
+  <script src="data.js"></script>
+    <script src="main.js"></script>
+
+</body>
 
 </html>
