@@ -13,17 +13,20 @@
 </section>
 <section id="pantalla-dos" class="pantalla-dos">
 <header>
-  <nav class="menu">
-    <ul class="menu">
-        <i class="fas fa-align-justify"></i>
+  <div class="contenedorboton"></div>
+  <button id="mostrar" class="mostrar"><i id="mostrar" class="fas fa-align-justify"></i></button> 
+  <nav id="menu" class="menu">
+    <div class="contenedor">
+    <ul class="menu"> 
       <li><a href="#">Campeones</a></li>
       <li><a href="#">Roles</a></li>
     </ul>
+  </div>
   </nav>
 </header>
 </section>
 <br>
-<section>
+<section id="pantalla-tres" class="pantalla-tres">
   <select id="roles" class="roles" name="roles" size="2">
     <option value="tanque">Tanque</option>
     <option value="mago">Mago</option>
@@ -33,7 +36,7 @@
     <option value="tirador">Tirador</option>
     </select>
 
-  <div id=imprimirRoles></div>
+  <div id="imprimirRoles" class="imprimir-roles"></div>
 </section>
 
     <div id="root"></div>
