@@ -3,7 +3,6 @@ const start = document.getElementById('start');
 const championList = document.getElementById('champion-list');
 
 const startButton = document.getElementById('start-button');
-const back = document.getElementById('back');
 const imprimirLista = document.getElementById('imprimir-lista');
 const es = document.getElementById('es');
 
@@ -15,10 +14,7 @@ startButton.addEventListener('click', () => {
   championList.classList.remove('hide');
 });
 
-back.addEventListener('click', () => {
-  championList.classList.add('hide');
-  start.classList.remove('hide');
-});
+
 
 
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
@@ -75,7 +71,7 @@ const lolData = LOL.data;
 
 const print = (img, name, tags, tags2)=>{
   let result = `<a href="#card"> <div class="champion"> <img src="${img}">
-  <div class="fondoh"> <h3> ${name} </h3></div> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
+  <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
   es.insertAdjacentHTML("beforeend",result);
 }
 for (const key in lolData) {
