@@ -14,5 +14,18 @@
     "eslint-plugin-jest": "^22.1.2",
     "htmlhint": "^0.10.1",
     "jest": "^23.6.0"
-  }
+  },
+  "description": "- [Preámbulo](#preámbulo)\r - [Descripción](#resumen-del-proyecto)\r - [Consideraciones generales](#consideraciones-generales)\r - [Objetivos de aprendizaje](#objetivos-de-aprendizaje)\r - [Parte obligatoria](#parte-obligatoria)\r - [Parte opcional](#parte-opcional-hacker-edition)\r - [Consideraciones técnicas](#consideraciones-técnicas)\r - [Primeros pasos](#primeros-pasos)\r - [Contenido de referencia](#contenido-de-referencia)\r - [Checklist](#checklist)",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaG-M/cdmx-2019-01-bc-core-data-lovers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/DianaG-M/cdmx-2019-01-bc-core-data-lovers/issues"
+  },
+  "homepage": "https://github.com/DianaG-M/cdmx-2019-01-bc-core-data-lovers#readme"
 }
