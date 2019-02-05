@@ -1,12 +1,20 @@
 // Traer elemento HTML
 const root = document.getElementById("root");
 const literacyOptions = document.getElementById("literacyOptions");
-const result = document.getElementById("result");
+const dataLiteracy = document.getElementById("dataLiteracy");
 
-const print = (literacy) => {
-    let result = `<h5>${literacy}</h5>`
-    result.insertAdjacentHTML("beforeend", result);
 
-} 
+/*const print = (window.literacy) => {
+    let result = `<h5>${window.literacy}</h5>`
+    dataLiteracy.insertAdjacentHTML("beforeend", result);
+
+}*/
+const newData = () => {
+    let options = literacyOptions.value;
+    let literacy = filtroLiteracy(select);
+    dataLiteracy = document.write("Los datos son:");
+}
+
+
 
 

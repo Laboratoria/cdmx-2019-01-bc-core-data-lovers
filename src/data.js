@@ -8,22 +8,22 @@
 window.example = example;*/
 
 // Traer elementos del data
-const dataMex = WORLDBANK.MEX.indicators;
-//console.log(dataMex)
+const database = WORLDBANK.MEX.indicators;
+//console.log(database)
 
 const literacy = (select) => {
   let userIndicator;
   if (select === "adultWomen"){
-      let literacyIndicator = dataMex.filter (element => {
-      return element.indicatorCode === "SE.ADT.LITR.FE.ZS";
+      let literacyIndicator = database.filter (element => {
+      return element.indicatorName === "Tasa de alfabetización, mujeres adultas (% de mujeres de 15 años o más)";
     })
     literacyIndicator.forEach(element => {
       let indicatorData = element.data;
       userIndicator = indicatorData;
     })
   } else if (select === "youngWomen"){
-     let literacyIndicator = dataMex.filter (element => {
-     return element.indicatorCode === "SE.ADT.1524.LT.FE.ZS";
+     let literacyIndicator = database.filter (element => {
+     return element.indicatorName === "Tasa de alfabetización, mujeres jóvenes (% de mujeres entre 15 y 24 años)";
   })
     literacyIndicator.forEach(element => {
     let indicatorData = element.data;
@@ -34,6 +34,7 @@ const literacy = (select) => {
 };
 
 window.literacy = literacy;
+
 
 
 /*const levelOfInstruction = dataMex.filter(function(){
@@ -70,4 +71,4 @@ console.log(levelOfInstruction)*/
 
 /*const levelOfInstruction = dataMex.map(dataMex => 
   `${dataMex.alfabetismo} ${dataMex.educacion}`);
-  console.log(levelOfInstruction)*/
+  console.log(levelOfInstruction) */ 
