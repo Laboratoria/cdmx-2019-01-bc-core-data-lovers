@@ -989,14 +989,14 @@ var POKEMON = {
   }, {
     "id": 35,
     "num": "035",
-    "name": "Clefairy",
+    "name": "CleDragon",
     "img": "http://www.serebii.net/pokemongo/pokemon/035.png",
     "type": [
       "Normal"
     ],
     "height": "0.61 m",
     "weight": "7.5 kg",
-    "candy": "Clefairy Candy",
+    "candy": "CleDragon Candy",
     "candy_count": 50,
     "egg": "2 km",
     "spawn_chance": 0.92,
@@ -1023,7 +1023,7 @@ var POKEMON = {
     ],
     "height": "1.30 m",
     "weight": "40.0 kg",
-    "candy": "Clefairy Candy",
+    "candy": "CleDragon Candy",
     "egg": "Not in Eggs",
     "spawn_chance": 0.012,
     "avg_spawns": 1.2,
@@ -1034,7 +1034,7 @@ var POKEMON = {
     ],
     "prev_evolution": [{
       "num": "035",
-      "name": "Clefairy"
+      "name": "CleDragon"
     }]
   }, {
     "id": 37,
@@ -1575,7 +1575,7 @@ var POKEMON = {
     "weaknesses": [
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ],
     "next_evolution": [{
       "num": "057",
@@ -1600,7 +1600,7 @@ var POKEMON = {
     "weaknesses": [
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ],
     "prev_evolution": [{
       "num": "056",
@@ -1742,7 +1742,7 @@ var POKEMON = {
       "Grass",
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ],
     "prev_evolution": [{
       "num": "060",
@@ -1864,7 +1864,7 @@ var POKEMON = {
     "weaknesses": [
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ],
     "next_evolution": [{
       "num": "067",
@@ -1893,7 +1893,7 @@ var POKEMON = {
     "weaknesses": [
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ],
     "prev_evolution": [{
       "num": "066",
@@ -1922,7 +1922,7 @@ var POKEMON = {
     "weaknesses": [
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ],
     "prev_evolution": [{
       "num": "066",
@@ -2989,7 +2989,7 @@ var POKEMON = {
     "weaknesses": [
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ]
   }, {
     "id": 107,
@@ -3010,7 +3010,7 @@ var POKEMON = {
     "weaknesses": [
       "Flying",
       "Psychic",
-      "Fairy"
+      "Dragon"
     ]
   }, {
     "id": 108,
@@ -3971,7 +3971,7 @@ var POKEMON = {
     "weaknesses": [
       "Ice",
       "Dragon",
-      "Fairy"
+      "Dragon"
     ],
     "next_evolution": [{
       "num": "148",
@@ -4000,7 +4000,7 @@ var POKEMON = {
     "weaknesses": [
       "Ice",
       "Dragon",
-      "Fairy"
+      "Dragon"
     ],
     "prev_evolution": [{
       "num": "147",
@@ -4031,7 +4031,7 @@ var POKEMON = {
       "Ice",
       "Rock",
       "Dragon",
-      "Fairy"
+      "Dragon"
     ],
     "prev_evolution": [{
       "num": "147",
