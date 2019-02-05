@@ -11,25 +11,6 @@ window.buscar = buscar;*/
 
 window.example = example;*/
 
-/*
-//
-//open space john
-const dataPokemon = POKEMON.pokemon.weaknesses;
-console.log(dataPokemon);
-//función para traer el elemento del html donde vamos a pintar la data
-const types = document.getElementById('types');
-//función para imprimir elementos en el html
-const print = (weaknesses) => {
-  let result = `<h4>${weaknesses}</h4>`
-  indicator.insertAdjacentHTML("beforeend", result);
-}
-//imprime todo, pero "data" es un objeto, así que para iterarlo, hay que hacer un forIn
-//función de extraer elementos:
-dataPokemon.forEach(element => {
-  let weaknesses = element.weaknesses;
-  print(weaknesses);
-});*/
-
 /*En esta seccion estoy extrayendo datos especificos de la data*/
 const pokes = document.getElementById("probando");
 const datapokes = POKEMON.pokemon;
@@ -58,7 +39,7 @@ datapokes.forEach(elemento => {
 
 
 });
-
+-
 
 
 

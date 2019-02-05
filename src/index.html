@@ -14,8 +14,6 @@
   <!--En esta seccion esta todos los elementos que contiene la pagina principal-->
 
  <div id="PaginaInicio">
-
-  
     <h1> PokeGram</h1>
 
     <div>
@@ -25,21 +23,20 @@
 
   <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
   <p>
-  <div id="PaginaElenentos" class="ocultar">
+  <div id="PaginaElementos" class="ocultar">
       <h2>PokeGram</h2>
     <div>
-      <input type="text" id="search" size=100px style="width:200px">
-
-      <input button type="image" src="assets/search.png" id="searching">
+     <br> <input type="text"  id="busqueda" onkeyup="searching()" size=100px style="width:200px"></br>
     </div>
-    <br><br>
+
+    
     <div id="filter">
 
         <button type="submit"><img src="./assets/agua1.png" id="agua">
 
-      <button type="submit"><img src="./assets/agua.png" id="agua">
+      
 
-        <button type="submit"><img src="assets/bug.png">
+        <button id= type="submit"><img src="assets/bug.png">
           <button type="submit"><img src="assets/dragon.png">
             <button type="submit"><img src="assets/electric.png">
               <button type="submit"><img src="assets/fairy.png">
@@ -63,14 +60,14 @@
     <script src="main.js"></script>
 
 
-
+  </div>
 
 
 
 
     <!--En esta seccion estoy creando  los elementos de la funcion busqueda-->
     <busqueda>
-      <input type="text" id="busqueda" onkeyup="searching()">
+     
       <!--onkeyup es un evento de liberacion de tecla-->
       <div>
         <ul id="result"></ul>
