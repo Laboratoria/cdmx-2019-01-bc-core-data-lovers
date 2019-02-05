@@ -33,8 +33,17 @@ dataPokemon.forEach(element => {
 /*En esta seccion estoy extrayendo datos especificos de la data*/
 const pokes = document.getElementById("probando");
 const datapokes = POKEMON.pokemon;
-
-const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
+const imprimir = (imagen, nombre2) => {
+    let nombrePokemon = `<p> <img src="${imagen}">${nombre2}
+    </p>`;
+    pokes.insertAdjacentHTML("beforeend",nombrePokemon);
+  };
+  datapokes.forEach(elemento => {
+    let imagen = elemento.img;
+    let nombre2 = elemento.name;
+    imprimir(imagen,nombre2);
+  });
+/*const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   let nombrePokemon = `<p> <img src="${imagen}">Nombre:${nombre2}
   <br> Su Id es :${id}</br>
   <br> Su candy es :${candy}</br>
@@ -43,7 +52,10 @@ const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   <br> debilidades :${debilidades}</br>
   </p>`;
   pokes.insertAdjacentHTML("beforeend",nombrePokemon);
- 
+
+
+  /*pokes.insertAdjacentHTML("beforeend", nombrePokemon);
+
 };
 datapokes.forEach(elemento => {
   let imagen = elemento.img;
@@ -58,6 +70,11 @@ datapokes.forEach(elemento => {
 
 
 });
+
+});*/
+
+//let water = datapokes.filter(pokemonWater => elemento.type =="Water");
+//document.addEventListener("click",elemento());
 
 
 

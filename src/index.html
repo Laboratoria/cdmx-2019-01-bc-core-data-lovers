@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +33,25 @@
 
       <input button type="image" src="assets/search.png" id="searching">
     </div>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pókemon</title>
+    <link rel="stylesheet" href="style.css" />
+    <h1>PokeGram</h1>
+  </head>
+  <body>
+    <!--En esta seccion estoy creando  los elementos de la funcion busqueda-->
+      <busqueda>
+          <input type="text" id="busqueda" onkeyup="searching()" size=100px style="width:200px">
+          <!--onkeyup es un evento de liberacion de tecla-->
+          <input button type="image" src="assets/search.png" id="icon-search">
+          <div>
+            <ul id="result"></ul>
+          </div>
+        </busqueda>
+
     <br><br>
     <div id="filter">
       <button type="submit"><img src="./assets/agua.png" id="agua">
@@ -47,6 +67,7 @@
                           <button type="submit"><img src="assets/normal.png">
                             <button type="submit"><img src="assets/rock.png">
     </div>
+
     <script src="./data/pokemon/pokemon.js"></script>
     <primerparte>
       <seccion id="probando">
@@ -104,5 +125,19 @@
     <script src="main.js"></script>
 
 </body>
+
+    <!--Dentro de la etiqueta primera parte estan los elementos que estoy ocupando para pintar la data-->
+   <primerparte>
+    <seccion id ="probando"> 
+    <script src="./data/pokemon/pokemon.js"></script> 
+    <seccion id= "pokemones">
+    <script src="./data/pokemon/pokemon.js"></script> 
+    </seccion>
+    </primerparte>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+
 
 </html>
