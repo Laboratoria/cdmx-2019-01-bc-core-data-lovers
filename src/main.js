@@ -25,6 +25,12 @@ const pokemonSortHeight = document.getElementById('pokemon-Sort-Height');
 const pokemonSortWeight = document.getElementById('pokemon-Sort-Weight');
 const enterToPikapedia=document.getElementById("enterToPikapedia");
 const pokemonTypeAll = document.getElementById("pokemonTypeAll");
+
+
+
+
+
+
 //Botón de entrada
 enterToPikapedia.addEventListener("click", () => {
 
