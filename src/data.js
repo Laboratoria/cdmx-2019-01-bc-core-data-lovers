@@ -1,39 +1,6 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-/*const buscar = () => {
- 
-};
-
-window.buscar = buscar;*/
-/*const example= () => {
-  return 'example';
-};
-
-window.example = example;*/
-
-/*
-//
-//open space john
-const dataPokemon = POKEMON.pokemon.weaknesses;
-console.log(dataPokemon);
-//función para traer el elemento del html donde vamos a pintar la data
-const types = document.getElementById('types');
-//función para imprimir elementos en el html
-const print = (weaknesses) => {
-  let result = `<h4>${weaknesses}</h4>`
-  indicator.insertAdjacentHTML("beforeend", result);
-}
-//imprime todo, pero "data" es un objeto, así que para iterarlo, hay que hacer un forIn
-//función de extraer elementos:
-dataPokemon.forEach(element => {
-  let weaknesses = element.weaknesses;
-  print(weaknesses);
-});*/
-
+const datapokes = POKEMON.pokemon;
 /*En esta seccion estoy extrayendo datos especificos de la data*/
 const pokes = document.getElementById("probando");
-const datapokes = POKEMON.pokemon;
-
 const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   let nombrePokemon = `<p> <img src="${imagen}">Nombre:${nombre2}
   <br> Su Id es :${id}</br>
@@ -43,7 +10,6 @@ const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   <br> debilidades :${debilidades}</br>
   </p>`;
   pokes.insertAdjacentHTML("beforeend",nombrePokemon);
- 
 };
 datapokes.forEach(elemento => {
   let imagen = elemento.img;
@@ -53,15 +19,8 @@ datapokes.forEach(elemento => {
   let altura = elemento.height;
   let peso =elemento.weight;
   let debilidades =elemento.weaknesses;
- 
   imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
-
-
 });
-
-
-
-
 /*En esta Seccion estoy trabajando en la seccion de busqueda*/
 
 function searching() {
@@ -92,3 +51,13 @@ function searching() {
     }
   }
 }
+/*Probando filter*/
+ /*const filterElement= POKEMON.pokemon;*/
+ let newArr = datapokes.filter(pokemon => pokemon.type.includes("Fire"));
+ console.log(newArr);
+
+ let newArr2 = datapokes.filter(pokemon => pokemon.type.includes("Water"));
+ console.log(newArr2);
+
+ let newArr3 = datapokes.filter(pokemon => pokemon.name.includes("Pikachu"));
+ console.log(newArr3);
