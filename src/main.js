@@ -30,15 +30,17 @@ toReturn.addEventListener("click", () =>{
     pokemones.classList.remove('hide');
 })
 
-//Funcion que imprime los datos que son llamdos y la imagen de los pokemones
+//Función que imprime los datos que son llamados y la imagen de los pokemones
 const toPrint = (namePokemon,imagePokemon,typePokemon,weaknessesPokemon,candyPokemon,eggPokemon) =>{
-    let visualPokemon = `<div class="divPokemon"><p class="name">  ${namePokemon}</p><br><img src="${imagePokemon}">
-    <p class="details"><br>Type: ${typePokemon}<br>Weaknesses: ${weaknessesPokemon}<br>
-    Candy: ${candyPokemon} <br> ${eggPokemon}</p></div>`;
+    let visualPokemon = `<button id="btnPokemon" class="divPokemon ${typePokemon[0]}"><p class="name ">${namePokemon}</p><br><img src="${imagePokemon}">
+    </button>`;
+    
+    /*<p class="details"><br>Type: ${typePokemon}<br>Weaknesses: ${weaknessesPokemon}<br>
+    Candy: ${candyPokemon} <br> ${eggPokemon}</p>`;*/
     pokemones.insertAdjacentHTML("beforeend",visualPokemon);    
 };
 
-//Por cada elemento del arreglo muetsra los datos llamados
+//Por cada elemento del arreglo muestra los datos llamados
 dataPokemon.forEach(element =>{
     let imagePokemon = element.img;
     let namePokemon = element.name;
