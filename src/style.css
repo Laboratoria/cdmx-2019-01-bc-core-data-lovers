@@ -1,11 +1,24 @@
-/*.hide {
-  display: none
+/************body*********/
+body{
+/*background:url("images/UnitedStates.png") no-repeat center top;
+background-size: 80%;
+opacity: 30%;*/
+text-align: center;
 }
-*/
+
+table{
+font-family: 'Montserrat', sans-serif;
+border-spacing: 20px;
+width: 100%;
+margin: 0;
+
+}
+
+/**********fonts***********/
 h1 {
   font-family: 'Montserrat', sans-serif;
   color: #FFAD09;
-  font-size: 4.5em;
+  font-size: 400%;
 }
 
 h2 {
@@ -15,56 +28,45 @@ h2 {
 }
 
 p {
+  margin: 35px;
   font-family: 'Lato', sans-serif;
   color: #2109A4;
-  font-size: 2em;
+  font-size: 200%;
 }
 
-body{
-background:url(images/usa.png) no-repeat center top;
-margin-left: 20%;
-background-size: 80%;
-text-align: center;
-opacity: 30%;
-}
-
+/************** menu ********/
 .side_menu {
   background: #112659;
   color: #fff;
   text-align: center;
-  display: block;
   bottom: 0;
   left: 0;
   position: fixed;
   top: 0;
-  width: 15%;
-  z-index: 3;
+  width: 10%;
+/*  z-index: 3;*/
 }
+.side_menu ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.side_menu a {
+    margin: 15%;
+		display: block;
+		padding: .5em;
+		background-color: #F9B53C;
+		text-decoration: none;
+		color: #fff;
+	}
+	.side_menu a:hover {
+		background-color: #037393;
+	}
 
-.fa-align-justify {
-  color: #fff;
-  margin-top: 20%;
-  font-size: 30px;
-}
-.menu_button {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  color: #fff;
-  border: 0;
-  cursor: pointer;
-  display: block;
-  font-weight: 700;
-  padding: 15px 0;
-  text-transform: uppercase;
-  width: 100%;
-  background-color: transparent;
-  margin-top: 0;
-}
-
-.fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car, {
-  cursor: pointer;
-  font-size: 200px;
-  padding-right: 200px;
+/********** iconos*****/
+.fa-walking {
+  color: rgb(18, 18, 134);
+  position: static;
   width: 120px;
   height: 120px;
   padding: 10px 16px;
@@ -72,8 +74,7 @@ opacity: 30%;
   border-radius: 70px;
   border-width: 10px;
   background-color: transparent;
-  margin-right: 131px;
-  
+
 }
 
 .fa-walking {
@@ -82,14 +83,41 @@ opacity: 30%;
 
 .fa-bicycle {
   color: orangered;
+  position: static;
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
 }
 .fa-motorcycle {
   color: crimson;
+  position: inherit;
+  width: 120px;
+  height: 120px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
 }
 .fa-bus {
   color: forestgreen;
+  width: 120px;
+  height: 120px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
 }
 .fa-car {
   color: darkmagenta;
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 24px;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: transparent;
 }
-
