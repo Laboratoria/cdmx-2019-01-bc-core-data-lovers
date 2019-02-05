@@ -55,6 +55,10 @@
     section{
         padding:20px;
     }
+
+
+
+    
     @media screen and (max-width:800px){
     header nav{
         width: 80%;
@@ -91,6 +95,15 @@
         font-size: 75%;
     }
     }
+
+    @media screen and (min-width:801px){
+        .hide{
+            display:block !important
+        }
+    }
+
+
+/*     
     .hide{
         display: none;
     }
@@ -108,11 +121,11 @@
     float: right;
     font-size: 75%;
 }
-}
+} */
 
-.hide{
+/* .hide{
     display: none;
-}
+} */
 #contenido li{
         display: inline-block;
         list-style: none;

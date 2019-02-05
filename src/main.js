@@ -52,7 +52,7 @@ const filtraIndPais = () =>{
      recorrerObjeto (pais); 
 }
 
-selOption.addEventListener('click',filtraIndPais); //funcion recorre el objeto
+selOption.addEventListener('change',filtraIndPais); //funcion recorre el objeto
 const recorrerObjeto = (pais)=>{
 let respuesta="";
  for (let i in pais) //for iteracon cada elemento del objeto
