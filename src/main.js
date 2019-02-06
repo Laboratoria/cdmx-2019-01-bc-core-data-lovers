@@ -16,6 +16,9 @@ const showList = (pokemonList) => {
   });
 };
 
+const buttonWater = document.getElementById('button-water');
+const buttonBug = document.getElementById('button-bug');
+
 //esta parte obtiene la ubicacion de la pagina y dependiendo de ésta ejecuta las funciones
 let ubication = location.href;
 console.log(ubication);
@@ -24,9 +27,16 @@ if (ubication.includes('index.html')) {
 }
 else if (ubication.includes('typePokemon.html')) {
  // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
-  showList(allData);
+  //showList(allData);
+  buttonWater.addEventListener('click', () => {
+    pokemones.innerHTML="";
+    showList(window.filterByType('Water'));
+  });
+  buttonBug.addEventListener('click', () => {
+    pokemones.innerHTML="";
+    showList(window.filterByType('Bug'));
+  });
 }
-console.log(ubication);
 
 
 //MENU
