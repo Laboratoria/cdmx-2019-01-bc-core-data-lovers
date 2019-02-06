@@ -102,14 +102,32 @@ const print =(name,img,title) => {
         
   
   const support =document.getElementById('support');
- 
+   
 
-  for ( let i=0; i<rol.length; i++){
-    rol[i].addEventListener('click', () => {
-      let rolId = rol[i].id;
 
+    for ( let i=0; i<rol.length; i++) {
+      rol[i].addEventListener('click', () => {
+        let rolId = rol[i].id;
+        const dataToArray = Object.values(dataLol); 
+        filtrado =dataToArray.filter(element => element.tags[0]===rolId);
+      console.log(filtrado);
+      })}; 
+
+      
     
 
+
+        
+
+
+
+
+
+
+
+  /*for ( let i=0; i<rol.length; i++){
+    rol[i].addEventListener('click', () => {
+      let rolId = rol[i].id;
         let arr=[];
         const dataToArray = Object.values(dataLol);
         dataToArray.forEach(element => {
@@ -118,14 +136,15 @@ const print =(name,img,title) => {
             arr.push(element);
           }
           });
-          
-          console.log(arr);
-        })}
 
+          return arr;
+        })} */
+ 
     
 
 
 //Funcion para imprimir//
+
 
     
       //const filtroSupport = Object.values(dataLol)
