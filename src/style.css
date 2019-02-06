@@ -83,7 +83,7 @@ ul {
   padding: 30px;
 }
 
-.drop-down li a {
+.drop-down li {
   background-color: black;
   color: #efc056;
   line-height: 1.5;
@@ -92,7 +92,7 @@ ul {
   display: block;
 }
 
-.drop-down li a:hover {
+.drop-down li:hover {
   background-color: #434343;
 }
 
@@ -203,5 +203,5 @@ img {
   border-top-style: solid;
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 80px; 
+  height: 80px;
 }

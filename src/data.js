@@ -1,6 +1,5 @@
 window.lol = {
   showData: (lolData) => {
-    console.log('see')
   for (const key in lolData) {
     if (lolData.hasOwnProperty(key)) {
       const element = lolData[key];
@@ -14,8 +13,11 @@ window.lol = {
       print(img, name, tags[0], tags2[1]);
     }
   }
-  //,
+},
+searchData: (lolData)=> {
+
 }
+//esta llave cierra window.lol
 }
 
 

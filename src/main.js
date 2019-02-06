@@ -2,24 +2,52 @@
 const start = document.getElementById('start');
 const championList = document.getElementById('champion-list');
 const imprimirLista = document.getElementById('imprimir-lista');
-const es = document.getElementById('sq');
+const sq = document.getElementById('sq');
+const rol = document.getElementsByClassName('rol');
 //Declarando las variables que enlazan los botones del HTML mediante el DOM
 const startButton = document.getElementById('start-button');
 
+const lolData = LOL.data;
 //Evento del boton Comenzar
 startButton.addEventListener('click', () => {
-  const lolData = LOL.data;
   start.classList.add('hide');
   championList.classList.remove('hide');
-  const toprint = window.lol.showData( lolData);
+  const toPrint = window.lol.showData(lolData);
 });
 
-//Función para imprimir la data en el HTML 
+//Función para imprimir la data en el HTML
 const print = (img, name, tags, tags2)=>{
-  let result = `<a href="#card"> <div class="champion"> <img src="${img}">
-  <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
+  let result = `<div class="champion"> <img src="${img}">
+  <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div>`;
   sq.insertAdjacentHTML("beforeend",result);
 }
+
+ for( let i= 0; i<rol.length; i++){
+    rol[i].addEventListener("click",() => {
+    let rolId = rol[i].id;
+
+    let newArray = [];
+    const arrayData = Object.values(lolData);
+    arrayData.forEach(element => {
+    const roles = element.tags[0];
+      if(roles === rolId){
+        newArray.push(element);
+    }
+});
+  console.log(newArray);
+})}
+
+
+
+
+
+
+
+/*
+tank.addEventListener('click', () => {
+  const tankFilter = window.lol.searchData(lolData);
+});*/
+
 
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
 /*const search = document.getElementById('search')
@@ -30,7 +58,20 @@ const buscadora = () => {
       const element = dataLol[key];
       let name = element.name;
       let tag = element.tags[0];
-      let img = element.img;
+      let img = element.img; for( let i= 0; i<rol.length;i++){
+              rol[i].addEventListener("click",() => {
+                let rolId = rol[i].id;
+                let nuevoArreglo = [];
+                const arrayData = Object.values(dataLol);
+                arrayData.forEach(element => {
+                  const roles = element.tags[0];
+                  if(roles === rolId ){
+                    nuevoArreglo.push(element);
+                  }
+                });
+                console.log(nuevoArreglo);
+              })}
+
       if (search.value === 'A') {
         console.log(name)
       }
