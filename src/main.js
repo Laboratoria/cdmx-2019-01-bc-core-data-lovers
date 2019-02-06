@@ -19,6 +19,33 @@ const showList = (pokemonList) => {
 const buttonWater = document.getElementById('button-water');
 const buttonBug = document.getElementById('button-bug');
 
+// Mike estuvo aquí
+const buttonsCollection = document.getElementsByClassName("typesPokemon");
+const buttonsArray = Array.from(buttonsCollection)
+
+console.log(buttonsArray)
+
+// Función que genere el tipo de Pokemon de acuerdo al click del botón que seleccionó el usuario
+const getTypePokemon = (arrayButtons) => {
+
+      arrayButtons.map(boton => {
+        boton.addEventListener("click",(event) =>{
+          console.log(event.target.name);
+
+          console.log(window.filterByType(event.target.name));
+          // Invocar una función que pinte Pokemon
+
+          showList(window.filterByType(event.target.name))
+
+        })
+      })
+}
+getTypePokemon(buttonsArray)
+
+// INvoco una función que cuando le ponga un tipo de Pokemon me retorne un arreglo de Pokemons filtrados por ese tipo.
+// window.filterByType(getTypePokemon())
+
+
 //esta parte obtiene la ubicacion de la pagina y dependiendo de ésta ejecuta las funciones
 let ubication = location.href;
 console.log(ubication);
