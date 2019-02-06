@@ -19,6 +19,7 @@ window.showAllData = showAllData;
 const filterByType = (category) => {
   const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
   //const filteredData = dataPokemon.filter(data =>(data.spawn_chance > 1));
+  console.log(filteredData)
   return filteredData;
   /*const pokemonList = [];
   dataPokemon.forEach(element => {

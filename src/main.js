@@ -9,6 +9,7 @@ const allData = window.showAllData();
 const dataByType = window.filterByType('Poison');
 //console.log(dataByType);
 const showList = (pokemonList) => {
+  pokemones.innerHTML="";
   pokemonList.forEach(element => {
     let name = element.name;
     let image = element.img;
@@ -16,17 +17,42 @@ const showList = (pokemonList) => {
   });
 };
 
+// Mike estuvo aquí
+const buttonsCollection = document.getElementsByClassName("typesPokemon");
+const buttonsArray = Array.from(buttonsCollection)
+
+console.log(buttonsArray)
+
+// Función que genere el tipo de Pokemon de acuerdo al click del botón que seleccionó el usuario
+const getTypePokemon = (arrayButtons) => {
+
+      arrayButtons.map(boton => {
+        boton.addEventListener("click",(event) =>{
+          //console.log(event.target.name);
+          //console.log(window.filterByType(event.target.name));
+          // Invocar una función que pinte Pokemon
+          showList(window.filterByType(event.target.name));
+        })
+      })
+}
+
+getTypePokemon(buttonsArray)
+
+// INvoco una función que cuando le ponga un tipo de Pokemon me retorne un arreglo de Pokemons filtrados por ese tipo.
+// window.filterByType(getTypePokemon())
+
+
 //esta parte obtiene la ubicacion de la pagina y dependiendo de ésta ejecuta las funciones
 let ubication = location.href;
-console.log(ubication);
+
 if (ubication.includes('index.html')) {
 
 }
 else if (ubication.includes('typePokemon.html')) {
  // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
-  showList(allData);
+  //showList(allData);
+
 }
-console.log(ubication);
 
 
 //MENU
