@@ -14,11 +14,11 @@ window.pokemon = {
 
 
         };
-    data.forEach(elemento =>{
+    data.forEach(element =>{
 
-        let nombre = elemento.name;
-        let imagen = elemento.img;
-        let id = elemento.id;
+        let nombre = element.name;
+        let imagen = element.img;
+        let id = element.id;
         imprimir(nombre, imagen, id);
 
      })
@@ -27,58 +27,51 @@ window.pokemon = {
 
 
 },
+
 imprim: (tipo) => {
-  const arrNew = [];
+  let arrNew = [];
+
+
 tipo.forEach(element => {
-  if(element.type[0] === 'Water' || element.type[1] === 'Water' || element.type[2]){
+  if(element.type[0] === 'Water' || element.type[1] === 'Water' || element.type[2] === 'Water'){
     arrNew.push(element)
   }
-// let tipoPokemon = `<div><p class="tipooPokemon"> ${element.type}</p></div>`;
-// filtrado.insertAdjacentHTML("beforeend", tipoPokemon);
+
+
+
 })
 
 console.log(arrNew)
 return arrNew
+},
+
+impri: (tipo) => {
+  let arrNew = [];
+
+tipo.forEach(element => {
+  if(element.type[0] === 'Fire' || element.type[1] === 'Fire' || element.type[2] === 'Fire'){
+    arrNew.push(element)
+  }
+
+})
+
+
+return arrNew
+
+},
+
+impr: (tipo) => {
+  const arrNew = [];
+
+tipo.forEach(element => {
+  if(element.type[0] === 'Grass' || element.type[1] === 'Grass' || element.type[2] === 'Grass'){
+    arrNew.push(element)
+  }
+
+})
+
+
+return arrNew
+
 }
-
-};
-
-
-  // tipo.forEach(elemento => {
-  //
-  //     let tipo = elemento.type;
-  //
-  //     imprimir(type);
-  //   })
-
-    // return imprim;
-
-
-
-
-
-
-//
-// }
-
-
-//   show: (type) => {
-// const imprim = (type) => {
-//
-//   const filtrado = type.filter(fire)
-// let tipoPokemon = `<div><p class="namePokemon"> ${nombre}</p></div>`;
-// filtrado.insertAdjacentHTML("beforeend", tipoPokemon);
-//
-// };
-//
-// type.forEach(elemento => {
-//
-//     let nombre = elemento.name;
-//     let imagen = elemento.img;
-//     let id = elemento.id;
-//     imprimir(nombre, imagen, id);
-//   })
-//
-//   return imprimir;
-// }
-//   }
+}
