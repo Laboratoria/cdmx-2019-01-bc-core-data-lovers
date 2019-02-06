@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -36,10 +36,35 @@
 </main>
 <div id="root"></div>
  
-</section>
 
 <section id= "box3" class= "hide">
-  <p>Indicador <b>Población mujeres (% del total),</b> seleccione País del que desea mostrar los datos.</p>
+    <h1> <b>INDICADORES DE POBLACION FEMENINA</b> </h1>
+    <p>Los indicadores de consulta que integran esta seccion, hacen referencia de datos porcentual-anual desde 1960 a 2017 donde se muestra el pocentaje de la poblacion femenina por edad de entre 0 a 80 años, de los paises Mexico, Peru, Chile y Brasil. </p>
+    <p>Para consultar la informacion, seleccione el indicador de su interes y el pias del cual desea realizar la consulta.</p>
+
+    <select id="filtrar-indicador" name= "indicators" >
+        <option value= "value1"> Indicador</option>
+        <option value= "Población de 80 años en adelante, mujeres (% de la población femenina)">Población de 80 años en adelante</option>
+        <option value= "Población de 75 a 79 años, mujeres (% de la población femenina)">Población de 75 a 79 años</option>
+        <option value= "Población de 70 a 74 años, mujeres (% de la población femenina)">Población de 70 a 74 años</option>     
+        <option value= "Población de 65 a 69 años, mujeres (% de la población femenina)">Población de 65 a 69 años</option> 
+        <option value= "Población de 50 a 64 años, mujeres (% de la población femenina)">Población de 50 a 64 años</option> 
+        <option value= "Población de 55 a 59 años, mujeres (% de la población femenina)">Población de 55 a 59 años</option> 
+        <option value= "Población de 50 a 54 años, mujeres (% de la población femenina)">Población de 50 a 54 años</option> 
+        <option value= "Población de 45 a 49 años, mujeres (% de la población femenina)">Población de 45 a 49 años</option> 
+        <option value= "Población de 40 a 44 años, mujeres (% de la población femenina)">Población de 40 a 44 años</option> 
+        <option value= "Población de 35 a 39 años, mujeres (% de la población femenina)">Población de 35 a 39 años</option> 
+        <option value= "Población de 30 a 34 años, mujeres (% de la población femenina)">Población de 30 a 34 años</option> 
+        <option value= "Población de 25 a 29 años, mujeres (% de la población femenina)">Población de 25 a 29 años</option> 
+        <option value= "Población de 20 a 24 años, mujeres (% de la población femenina)">Población de 20 a 24 años</option> 
+        <option value= "Población de 15 a 19 años, mujeres (% de la población femenina)">Población de 15 a 19 años</option> 
+        <option value= "Población de 10 a 14 años, mujeres (% de la población femenina)">Población de 10 a 14 años</option> 
+        <option value= "Población de 5 a 9 años, mujeres (% de la población femenina)">Población de 5 a 9 años</option> 
+        <option value= "Población de 0 a 4 años, mujeres (% de la población femenina)">Población de 0 a 4 años</option> 
+      </select>
+
+
+  
   <select id="filtrar-pais" name="paises">
     <option value= "value1"> País</option>
     <option value= "MEX">Mexico</option>
@@ -48,21 +73,12 @@
     <option value= "BRA">Brasil</option>
   </select>
 
-  <select name= "indicators" >
-    <option value= "Población de 80 años en adelante, mujeres (% de la población femenina)"> Población de 80 años en adelante</option>
-    <option value= "Población de 75 a 79 años, mujeres (% de la población femenina)"> Ascendente</option>
+  <select name= "order" >
+    <option value= "value1"> Ordenar</option>
+    <option value= "value5"> Ascendente</option>
     <option value= "value6"> Descendente</option>     
   </select>
-
-  <select name= "order" >
-    <option value= "ordenar"> Ordenar</option>
-    <option value= "ascendente"> Ascendente</option>
-    <option value= "descendente"> Descendente</option>     
-  </select>
-
- 
 </section>
-
 
 <section id="contenido">  
  <p id="nom-indicador" class="hide"></p> 

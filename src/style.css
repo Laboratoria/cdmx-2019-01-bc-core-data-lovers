@@ -85,6 +85,7 @@ background: #eee;
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
+    
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
@@ -114,11 +115,29 @@ background: #eee;
     header nav ul li a{
         color: #FFF;
         padding: 20px;
-        padding-left: 100px;
-        padding-right: 64px;
+        padding-left: 82.1px;
+        padding-right: 82.1px;
         display: block;
         text-decoration: none;
-        text-align: center;
+}
+p{
+    text-align: justify;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-right: 12%;
+    padding-left: 12%;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+#contenido{
+    padding-right: 12%;
+    padding-left: 12%;
+}
+#box3{
+    padding-right: 12%;
+    padding-left: 12%;
 }
 
 }
+
