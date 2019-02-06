@@ -12,23 +12,14 @@ startButton.addEventListener('click', () => {
   start.classList.add('hide');
   championList.classList.remove('hide');
   const toprint = window.lol.showData( lolData);
-  // let result = `<a href="#card"> <div class="champion"> <img src="${img}">
-  // <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
-  // sq.insertAdjacentHTML("beforeend",result);
 });
 
-
-
+//Función para imprimir la data en el HTML 
 const print = (img, name, tags, tags2)=>{
   let result = `<a href="#card"> <div class="champion"> <img src="${img}">
   <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
   sq.insertAdjacentHTML("beforeend",result);
 }
-
-
-window.addEventListener('load', () => {
-  // let resultado = window.lol.show(lolData);
-})
 
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
 /*const search = document.getElementById('search')
