@@ -38,6 +38,13 @@ for (const key in dataLol) {
     /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
     const es = document.getElementById('es')
 
+    //Variable class del menu//
+    const rol= document.getElementsByClassName("rolPersonajes");
+
+    
+    
+
+
     /* Variales botones*/
     const inicio = document.getElementById('inicio')
     const menu = document.getElementById('menu')
@@ -68,6 +75,10 @@ for (const key in dataLol) {
         document.getElementById("mySidenav").style.width = "0px";};
   
 
+
+
+
+
 // Pintar en HTML
 const print =(name,img,title) => {
  let nameList = `<div class="nameList"><img class="lolIcons" src="${img}"><div id="letras"><h1 id= "nombre" >${name}</h1> <p id="titulo">${title}</p></div></div>`;
@@ -86,7 +97,8 @@ const print =(name,img,title) => {
             printImg(img);*/
             print(name, img, title)
 
-            console.log(name);}}
+            //console.log(name);
+          }};
         
   
   const support =document.getElementById('support');
