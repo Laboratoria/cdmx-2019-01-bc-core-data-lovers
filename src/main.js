@@ -28,6 +28,8 @@ dataMex.forEach(element => {
 //función para imprimir datos de variable en el html
 
 indicator.addEventListener("change", ()=> {
+  document.getElementById('indicator-name').innerHTML = '';
+  document.getElementById('indicator-result').innerHTML='';
   let indicatorSelect = indicator.value;
   dataMex.forEach( element => {
     if(element.indicatorCode == indicatorSelect){
@@ -163,3 +165,22 @@ startButton.addEventListener('click', () => {
   sectionTwo.classList.add('hide');
   sectionOne.classList.remove('hide');
 })
+
+//filtrar base de datos, para seleccionar indicadores que contengan la palabra "educación"
+
+let educationIndicators = [];
+
+dataMex.forEach((element) => {
+  if(/educación/i.test(element.indicatorName)) {
+  educationIndicators.push(`${element.indicatorName}, ${element.data}`);
+  }
+})
+console.log(educationIndicators);
+
+/*
+let educationData = dataMex.find(element => {
+  element.indicatorName == /educación/i.test
+})
+console.log(educationData);
+*/
+
