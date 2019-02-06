@@ -117,7 +117,7 @@ const print =(name,img,title) => {
           if (roles === rolId){
             arr.push(element);
           }
-          }); 
+          });
           
           console.log(arr);
         })}
