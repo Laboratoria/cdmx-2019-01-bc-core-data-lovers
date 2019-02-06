@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 @import url('https://fonts.googleapis.com/css?family=Coiny|Libre+Barcode+128+Text|Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
@@ -6,7 +9,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Chewy');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
    * {
         box-sizing: border-box;
    }
@@ -83,20 +89,13 @@ p{
     border: 1px solid #ccc;
 
 }
-   
-
-  
-
-
 p {
   font-family: 'Ubuntu Condensed', sans-serif;
   border: black 10px solid;
 
   background-color: rgb(162, 175, 177);
   font-size: 20px;
-
 }
-
 #busqueda {
   font-family: 'Ubuntu Condensed', sans-serif;
   border: solid 2px;
@@ -107,12 +106,9 @@ p {
     height: 32px;
     width: 35%;
 }
-
 #result {
-
   font-size: 20px;
   font-family: 'Ubuntu Condensed', sans-serif;
-
 }
 
 
