@@ -3,7 +3,7 @@
 const dataMex = WORLDBANK.MEX.indicators;
 
 //función para traer el elemento del html donde vamos a pintar la data
-const indicator = document.getElementById('indicator');
+/*const indicator = document.getElementById('indicator');
 
 //función para imprimir elementos en el html
 indicator.insertAdjacentHTML("beforeend", '<option value="">Selecciona un indicador</option>');
@@ -42,7 +42,92 @@ indicator.addEventListener("change", ()=> {
       }
     }
   })
+})*/
+
+//filtrar base de datos, para seleccionar indicadores que contengan la palabra "educación"
+
+let educationIndicators = [];
+let laboralIndicators = [];
+let demographicIndicators = [];
+
+dataMex.forEach((element) => {
+  if(/educación/i.test(element.indicatorName)) {
+  educationIndicators.push(element);
+  } else if (/laboral/i.test(element.indicatorName)) {
+  laboralIndicators.push(element);
+  } else if (/población/i.test(element.indicatorName)){
+    demographicIndicators.push(element);
+  }
 })
+// console.log(populationIndicators);
+
+const education = document.getElementById('education');
+const laboral = document.getElementById ('laboral');
+const demographic = document.getElementById ('demographic');
+
+// Funcion que imprime los indicadores de educación en el select
+education.insertAdjacentHTML ("beforeend", '<option value="">Selecciona un indicador</option>');
+const print = (indicatorName, indicatorCode) => {
+  let result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`
+  education.insertAdjacentHTML('beforeend', result);
+}
+
+//función de extraer elementos:
+educationIndicators.forEach(element => {
+  let indicatorName = element.indicatorName;
+  let indicatorCode = element.indicatorCode;
+  print(indicatorName, indicatorCode)
+});
+
+// Funcion que imprime los indicadores de laboral en el select
+laboral.insertAdjacentHTML ("beforeend", '<option value="">Selecciona un indicador</option>');
+const printLaboral = (indicatorName, indicatorCode) => {
+  let result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`
+  laboral.insertAdjacentHTML('beforeend', result);
+}
+
+
+//función de extraer elementos:
+laboralIndicators.forEach(element => {
+  let indicatorName = element.indicatorName;
+  let indicatorCode = element.indicatorCode;
+  printLaboral(indicatorName, indicatorCode)
+});
+
+// Funcion que imprime los indicadores de demográfico en el select
+
+demographic.insertAdjacentHTML ("beforeend", '<option value="">Selecciona un indicador</option>');
+const printDemographic = (indicatorName, indicatorCode) => {
+  let result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`
+  demographic.insertAdjacentHTML('beforeend', result);
+}
+
+//función de extraer elementos:
+demographicIndicators.forEach(element => {
+  let indicatorName = element.indicatorName;
+  let indicatorCode = element.indicatorCode;
+  printDemographic(indicatorName, indicatorCode)
+});
+
+//función para imprimir datos de variable en el html
+education.addEventListener("change", ()=> {
+  document.getElementById('indicator-name').innerHTML = '';
+  document.getElementById('indicator-result').innerHTML='';
+  let indicatorSelect = education.value;
+  educationIndicatiors.forEach( element => {
+    if(element.indicatorCode == indicatorSelect){
+      let indicatorName = element.indicatorName;
+      let year = element.data;
+      console.log(element.data);
+      for (let data in year) {
+        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
+        document.getElementById('indicator-name').innerHTML = indicatorName + ':';
+        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
+      }
+    }
+  })
+})
+
 
 //EVENTO EN EL INDICADOR
 let indicatorResult = ('');
@@ -52,29 +137,13 @@ const sectionOne = document.getElementById('section-1');
 const sectionTwo = document.getElementById('section-2');
 
 //Evento del botón "Volver a inicio"
-const startButton = document.getElementById('startButton');
+// const startButton = document.getElementById('startButton');
 
-startButton.addEventListener('click', () => {
-  sectionTwo.classList.add('hide');
-  sectionOne.classList.remove('hide');
-})
+// startButton.addEventListener('click', () => {
+//   sectionTwo.classList.add('hide');
+//   sectionOne.classList.remove('hide');
+// })
 
-//filtrar base de datos, para seleccionar indicadores que contengan la palabra "educación"
-
-let educationIndicators = [];
-let laboralIndicators = [];
-let populationIndicators = [];
-
-dataMex.forEach((element) => {
-  if(/educación/i.test(element.indicatorName)) {
-  educationIndicators.push(element);
-  } else if (/laboral/i.test(element.indicatorName)) {
-  laboralIndicators.push(element);
-  } else if (/población/i.test(element.indicatorName)){
-    populationIndicators.push(element);
-  }
-})
-console.log(populationIndicators);
 
 
 /*
