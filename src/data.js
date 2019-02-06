@@ -1,3 +1,16 @@
+// esta es una función de ejemplo
+// puedes ver como agregamos la función a nuestro objeto global window
+/*const buscar = () => {
+ 
+};
+
+window.buscar = buscar;*/
+/*const example= () => {
+  return 'example';
+};
+
+window.example = example;*/
+
 const datapokes = POKEMON.pokemon;
 /*En esta seccion estoy extrayendo datos especificos de la data*/
 const pokes = document.getElementById("probando");
@@ -61,3 +74,4 @@ function searching() {
 
  let newArr3 = datapokes.filter(pokemon => pokemon.name.includes("Pikachu"));
  console.log(newArr3);
+

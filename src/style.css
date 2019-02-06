@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Coiny|Libre+Barcode+128+Text|Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
@@ -5,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Chewy');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
+
    * {
         box-sizing: border-box;
     
@@ -50,6 +52,19 @@
       
 }
 
+
+    #icon-search{
+       margin-top:5px;
+       position: absolute;
+       top: 66px;
+    }
+
+
+#pokemones{
+    
+}
+
+
 p{
     font-family: 'Ubuntu Condensed', sans-serif;
     
@@ -87,7 +102,7 @@ p{
      font-family: 'Staatliches', cursive;
      font-size: 100px;
    }
-   to {
+   to {gi
      
      width: 100%;
    }
