@@ -38,9 +38,11 @@ for (const key in dataLol) {
     /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
     const es = document.getElementById('es')
 
-    /* botones*/
+    /* Variales botones*/
     const inicio = document.getElementById('inicio')
-
+    const menu = document.getElementById('menu')
+    const cerrar = document.getElementById('cerrar')
+    
 
    /*esta función imprime los nombres de los personajes*/
    /*let imprimirImagen = "";
@@ -52,10 +54,21 @@ for (const key in dataLol) {
         const print = (datos)=>{
         let result = `<div class ="lista"> ${datos} </div>`;
         es.insertAdjacentHTML("beforeend",result);}*/
+
+  //Funcion de botones
+
    inicio.onclick = ()=>{
      document.getElementById("primera-pantalla").style.display = 'none';
-     document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';}
+     document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';};
+  
+   menu.onclick = ()=> {
+      document.getElementById("mySidenav").style.width = "250px";};
 
+   cerrar.onclick = ()=> {
+        document.getElementById("mySidenav").style.width = "0px";};
+  
+
+// Pintar en HTML
 const print =(name,img,title) => {
  let nameList = `<div class="nameList"><img class="lolIcons" src="${img}"><div id="letras"><h1 id= "nombre" >${name}</h1> <p id="titulo">${title}</p></div></div>`;
  es.insertAdjacentHTML("beforeend",nameList)}
