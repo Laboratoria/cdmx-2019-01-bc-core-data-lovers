@@ -33,10 +33,7 @@ body{
 display: inline-block;
 width: 33%;
 background: #C2FAB9;
-padding-top: 80px;
-border-image: 5px;
-border-image-width: 20px;
-border-color: #FFBA5C;
+border: 5px solid #FFBA5c;
 }
 
 
