@@ -61,7 +61,7 @@
     margin:5px;
   }
   
-  #btn1:hover, #btn2:hover, #btn3:hover,
+  #btn1:hover, #btn2:hover,#buttonSearchPokemon:hover, #btn3:hover,
   #filterButton:hover,  #buttonBack:hover {
     background-color: RoyalBlue;
   }      
@@ -94,4 +94,16 @@ p{
    position: relative;
    left:540px;
 }
+#buttonPokemonWater{
+  font-size: 15px;
+  font-family: monospace;
+  border-radius: 200px;
+  border:0;
+  width: 195px;
+  height:195px;
+  background-color:#2980B9;
 
+}
+.agua{
+    width: 80%;
+}
