@@ -7,8 +7,8 @@ const indicator = document.getElementById('indicator');
 
 //función para imprimir elementos en el html
 indicator.insertAdjacentHTML("beforeend", '<option value="">Selecciona un indicador</option>');
+
 const print = (indicatorName, indicatorCode) => {
-  
   let result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`
   indicator.insertAdjacentHTML("beforeend", result);
 }
@@ -26,7 +26,6 @@ dataMex.forEach(element => {
 //función que extrae data, e itera ese arreglo para imprimir el contenido del indicador, dependiendo del indicador al que le de click
 
 //función para imprimir datos de variable en el html
-
 indicator.addEventListener("change", ()=> {
   document.getElementById('indicator-name').innerHTML = '';
   document.getElementById('indicator-result').innerHTML='';
@@ -47,112 +46,6 @@ indicator.addEventListener("change", ()=> {
 
 //EVENTO EN EL INDICADOR
 let indicatorResult = ('');
-/*
-const indicatorClick = indicator.addEventListener('click', () => {
-  dataMex.forEach(element => {
-    let year = element.data;
-    let indicatorName = element.indicatorName;
-    for (let data in year) {
-      if (indicatorName === 'Prevalencia de anemia entre mujeres no embarazadas (% de mujeres entre 15-49 años)'){
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Prevalencia de anemia entre mujeres en edad fértil (% de mujeres de entre 15 y 49 años)'){
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Mujeres que creen que está justificado que un marido golpee a su esposa cuando ella se niega a tener relaciones sexuales (%)'){
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Mujeres que creen que está justificado que un marido golpee a su esposa (cualquiera de las cinco razones) (%)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Mujeres que creen que está justificado que un marido golpee a su esposa cuando descuida a los hijos (%)'){
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Mujeres que creen que está justificado que un marido golpee a su esposa cuando sale sin avisarle (%)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Mujeres que creen que está justificado que un marido golpee a su esposa cuando a ella se le quema la comida (%)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Mujeres que creen que está justificado que un marido golpee a su esposa cuando ella discute con él (%)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Proporción de mujeres víctimas de violencia física o sexual en los últimos 12 meses (% de mujeres de entre 15 y 49 años)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'La ley exige igualdad de remuneración para hombres y mujeres por trabajo de igual valor (1=sí; 0=no)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Las mujeres no embarazadas y que no amamantan pueden hacer los mismos trabajos que los hombres (1=sí; 0=no)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Proporción de escaños ocupados por mujeres en los parlamentos nacionales (%)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      } else if (indicatorName === 'Educacin terciaria, profesores (% de mujeres)') {
-        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-        document.getElementById('indicator-name').innerHTML= indicatorName +':';
-        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-      }
-    }
-  })
-});
-*/
-
-
-//función con switch
-
-/*const indicatorClick = indicator.addEventListener('click', () => {
-  dataMex.forEach(element => {
-    let year = element.data;
-    let indicatorName = element.indicatorName;
-    for (let data in year) {
-      switch (indicatorName) {
-        case 'Prevalencia de anemia entre mujeres no embarazadas (% de mujeres entre 15-49 años)':
-          indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-          document.getElementById('indicator-name').innerHTML = indicatorName + ':';
-          document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-          sectionTwo.classList.remove('hide');
-          sectionOne.classList.add('hide');
-          break;
-        case 'Prevalencia de anemia entre mujeres en edad fértil (% de mujeres de entre 15 y 49 años)':
-          indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-          document.getElementById('indicator-name').innerHTML = indicatorName + ':';
-          document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-          sectionTwo.classList.remove('hide');
-          sectionOne.classList.add('hide');
-          break;
-        case 'Mujeres que creen que está justificado que un marido golpee a su esposa cuando ella se niega a tener relaciones sexuales (%)':
-          indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-          document.getElementById('indicator-name').innerHTML = indicatorName + ':';
-          document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-          sectionTwo.classList.remove('hide');
-          sectionOne.classList.add('hide');
-          break;
-        case 'Mujeres que creen que está justificado que un marido golpee a su esposa (cualquiera de las cinco razones) (%)':
-          indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
-          document.getElementById('indicator-name').innerHTML = indicatorName + ':';
-          document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
-          sectionTwo.classList.remove('hide');
-          sectionOne.classList.add('hide');
-          break;
-          
-      }
-    }
-  })
-})*/
 
 //Eventos, variables
 const sectionOne = document.getElementById('section-1');
@@ -169,13 +62,20 @@ startButton.addEventListener('click', () => {
 //filtrar base de datos, para seleccionar indicadores que contengan la palabra "educación"
 
 let educationIndicators = [];
+let laboralIndicators = [];
+let populationIndicators = [];
 
 dataMex.forEach((element) => {
   if(/educación/i.test(element.indicatorName)) {
-  educationIndicators.push(`${element.indicatorName}, ${element.data}`);
+  educationIndicators.push(element);
+  } else if (/laboral/i.test(element.indicatorName)) {
+  laboralIndicators.push(element);
+  } else if (/población/i.test(element.indicatorName)){
+    populationIndicators.push(element);
   }
 })
-console.log(educationIndicators);
+console.log(populationIndicators);
+
 
 /*
 let educationData = dataMex.find(element => {
@@ -183,4 +83,3 @@ let educationData = dataMex.find(element => {
 })
 console.log(educationData);
 */
-
