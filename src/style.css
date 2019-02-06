@@ -29,7 +29,7 @@ body,html{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+/* mi codigo
 header{
 width: 100%;
 background: #efb810;
@@ -90,7 +90,7 @@ header label:hover {
     #btn-menu:checked ~ .menu {
         margin: 0;
     }
-
+*/
 .pantalla-tres{
     background: rgb(45, 45, 51);
 }
@@ -130,4 +130,3 @@ nav.mostrar{
 .contenedorboton{
     z-index: 20px;
 }
-
