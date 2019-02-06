@@ -44,7 +44,7 @@ mostrar.addEventListener("click",() =>{
 /*esta función imprimir los tags de los personales*/
 //let tags = "";
 const print =(name,imga,title) =>{
-    let result = `<div class="cuadro"><img class="imagen" src="${imga}"> ${name} ${title}</div>`; 
+    let result = `<div class="cuadro"><img class="imagen" src="${imga}"> <div id="subtitulo"><h1 id="nombre">${name}</h1> <h2 id"titulo"> ${title}</h2></div></div>`; 
     imprimirRoles.insertAdjacentHTML("beforeend",result);
 }
 
