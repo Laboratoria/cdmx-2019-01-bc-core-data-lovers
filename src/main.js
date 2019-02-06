@@ -29,7 +29,7 @@ for (const key in dataLol) {
     let tag = element.tags[0];
     let img = element.img;
     if(search.value === 'A'){
-      console.log('encontrado')
+      console.log('encontrado')32-8
     } */
 
     const search = document.getElementById('search')
@@ -101,21 +101,40 @@ const print =(name,img,title) => {
           }};
         
   
+  const support =document.getElementById('support');
+  const rol = document.getElementsByClassName("rolPersonajes");
+
+  for ( let i=0; i<rol.length; i++){
+    rol[i].addEventListener('click', () => {
+      let rolId = rol[i].id;
+
     
-            for( let i= 0; i<rol.length;i++){
-              rol[i].addEventListener("click",() => {
-                let rolId = rol[i].id;
-                let nuevoArreglo = [];
-                const arrayData = Object.values(dataLol);
-                arrayData.forEach(element => {
-                  const roles = element.tags[0];
-                  if(roles === rolId ){
-                    nuevoArreglo.push(element);
-                    
-                  }
-                   
-                });
-                console.log(nuevoArreglo);
-              })}
-             
+
+        let arr=[];
+        const dataToArray = Object.values(dataLol);
+        dataToArray.forEach(element => {
+          const roles = element.tags[0];
+          if (roles === rolId){
+            arr.push(element);
+          }
+          }); 
+          
+          console.log(arr);
+        })}
+
     
+
+
+
+
+    
+      //const filtroSupport = Object.values(dataLol)
+        //    filtroSupport.forEach(element => {
+          //  const roles = element.tags[0];
+          /*if (roles === "Support"){
+              console.log(element);}
+            });
+              
+            }
+
+            support.addEventListener('click',filtroPorRol)*/
