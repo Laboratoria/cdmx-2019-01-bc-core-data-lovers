@@ -8,10 +8,10 @@
 window.example = example;*/
 
 // Traer elementos del data
-const database = WORLDBANK.MEX.indicators;
+//const dataMex = WORLDBANK.MEX.indicators;
 //console.log(database)
 
-const literacy = (select) => {
+/*const literacy = (select) => {
   let userIndicator;
   if (select === "adultWomen"){
       let literacyIndicator = database.filter (element => {
@@ -33,7 +33,7 @@ const literacy = (select) => {
   return userIndicator;
 };
 
-window.literacy = literacy;
+window.literacy = literacy;*/
 
 
 
@@ -45,6 +45,18 @@ console.log(levelOfInstruction)*/
 
 
 // recorrer elementos (indicador, dato y año) 
+
+const dataEducacion = () => {
+  const dataMex = WORLDBANK.MEX.indicators;
+  console.log(dataMex)
+  const dataEducation = dataMex.forEach (element => {
+  let indicatorName = element.indicatorName;
+  console.log("indicatorName")
+ });
+}
+
+
+
 /*const dataEducation = dataMex.forEach (element => {
   let year = element.data
   let indicatorName = element.indicatorName;
@@ -52,6 +64,7 @@ console.log(levelOfInstruction)*/
     console.log(indicatorName,`year.${data} - ${year[data]}`)
   }
 });*/
+
 
 
 /*const instruction = dataMex.map ((data) => return(data.year))*/
@@ -72,3 +85,19 @@ console.log(levelOfInstruction)*/
 /*const levelOfInstruction = dataMex.map(dataMex => 
   `${dataMex.alfabetismo} ${dataMex.educacion}`);
   console.log(levelOfInstruction) */ 
+
+//Traer elementos del DOM
+/*const indicador = document.getElementById("indicador");
+
+// función para imprimir elementos en el html
+const print = (dataEducation) => {
+  let result = `<h5> ${dataEducation} </h5>`
+  indicador.insertAdjacentHTML("beforeend", result)
+  print(dataEducation)
+};
+
+// extraer elementos
+dataEducacion.forEach (element => {
+  let indicadorName = element.indicatorName;
+  print(indicadorName)
+});*/

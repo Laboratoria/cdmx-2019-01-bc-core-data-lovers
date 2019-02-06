@@ -1,7 +1,7 @@
 // Traer elemento HTML
-const root = document.getElementById("root");
+/*const root = document.getElementById("root");
 const literacyOptions = document.getElementById("literacyOptions");
-const dataLiteracy = document.getElementById("dataLiteracy");
+const dataLiteracy = document.getElementById("dataLiteracy");*/
 
 
 /*const print = (window.literacy) => {
@@ -9,11 +9,11 @@ const dataLiteracy = document.getElementById("dataLiteracy");
     dataLiteracy.insertAdjacentHTML("beforeend", result);
 
 }*/
-const newData = () => {
+/*const newData = () => {
     let options = literacyOptions.value;
     let literacy = filtroLiteracy(select);
     dataLiteracy = document.write("Los datos son:");
-}
+}*/
 
 
 
