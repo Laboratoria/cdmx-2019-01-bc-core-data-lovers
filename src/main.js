@@ -1,12 +1,10 @@
 //Declarando las variables que enlazan los elementos HTML mediante el DOM
 const start = document.getElementById('start');
 const championList = document.getElementById('champion-list');
-
-const startButton = document.getElementById('start-button');
 const imprimirLista = document.getElementById('imprimir-lista');
 const es = document.getElementById('sq');
-
-
+//Declarando las variables que enlazan los botones del HTML mediante el DOM
+const startButton = document.getElementById('start-button');
 
 //Evento del boton Comenzar
 startButton.addEventListener('click', () => {
@@ -14,12 +12,29 @@ startButton.addEventListener('click', () => {
   championList.classList.remove('hide');
 });
 
+const lolData = LOL.data;
 
+const print = (img, name, tags, tags2)=>{
+  let result = `<a href="#card"> <div class="champion"> <img src="${img}">
+  <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
+  sq.insertAdjacentHTML("beforeend",result);
+}
+for (const key in lolData) {
+  if (lolData.hasOwnProperty(key)) {
+    const element = lolData[key];
+    let img = element.splash;
+    let name = element.name;
+    let tags = element.tags;
+    let tags2 = element.tags;
+    if (typeof tags2[1] == "undefined"){
+      tags2[1]="";
+    }
+    print(img, name, tags[0], tags2[1]);
+  }
+}
 
 
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
-
-
 /*const search = document.getElementById('search')
 const buscadora = () => {
   console.log(search.value)
@@ -29,19 +44,13 @@ const buscadora = () => {
       let name = element.name;
       let tag = element.tags[0];
       let img = element.img;
-
       if (search.value === 'A') {
         console.log(name)
       }
-
-
       //console.log(element.info.defense)
-
     }
   }
 }
-
-
 
 search.addEventListener('keyup', buscadora)
 
@@ -59,29 +68,7 @@ for (const key in dataLol) {
     if (search.value === 'A') {
       console.log('encontrado')
     }
-
-
     //console.log(element.info.defense)
-
   }
 }
 */
-
-const lolData = LOL.data;
-
-const print = (img, name, tags, tags2)=>{
-  let result = `<a href="#card"> <div class="champion"> <img src="${img}">
-  <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
-  sq.insertAdjacentHTML("beforeend",result);
-}
-for (const key in lolData) {
-  if (lolData.hasOwnProperty(key)) {
-
-    const element = lolData[key];
-    let img = element.splash;
-    let name = element.name;
-    let tags = element.tags;
-    let tags2 = element.tags;
-    print(img, name, tags[0], tags2[1]);
-  }
-}
