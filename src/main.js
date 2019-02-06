@@ -1,3 +1,4 @@
+
 //mostrar y ocultar pagina home page con pagina principal de la información de los cuatro países
 const botonInfo = document.getElementById('botonInfo');
 const botonMexico = document.getElementById('botonMexico');
@@ -42,8 +43,4 @@ botonBrasil.addEventListener('click', () => {
 
 
 
-//paginación por país como primera filtración
-//Mexico.addEventListener('click', () => {
-  //informate
-  //pagMex
-//});
+
