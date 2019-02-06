@@ -8,31 +8,27 @@ const startButton = document.getElementById('start-button');
 
 //Evento del boton Comenzar
 startButton.addEventListener('click', () => {
+  const lolData = LOL.data;
   start.classList.add('hide');
   championList.classList.remove('hide');
+  const toprint = window.lol.showData( lolData);
+  // let result = `<a href="#card"> <div class="champion"> <img src="${img}">
+  // <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
+  // sq.insertAdjacentHTML("beforeend",result);
 });
 
-const lolData = LOL.data;
+
 
 const print = (img, name, tags, tags2)=>{
   let result = `<a href="#card"> <div class="champion"> <img src="${img}">
   <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div></a>`;
   sq.insertAdjacentHTML("beforeend",result);
 }
-for (const key in lolData) {
-  if (lolData.hasOwnProperty(key)) {
-    const element = lolData[key];
-    let img = element.splash;
-    let name = element.name;
-    let tags = element.tags;
-    let tags2 = element.tags;
-    if (typeof tags2[1] == "undefined"){
-      tags2[1]="";
-    }
-    print(img, name, tags[0], tags2[1]);
-  }
-}
 
+
+window.addEventListener('load', () => {
+  // let resultado = window.lol.show(lolData);
+})
 
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
 /*const search = document.getElementById('search')
