@@ -14,6 +14,19 @@ body{
     height: 100vh;
     margin: 0 auto;
     background: #C2FAB9;
+    position: fixed;
+}
+
+.img{
+    margin: 30% auto 0;
+    display: block;
+}
+
+.poke-button{
+    background: #C2FAB9;
+    border: none;
+    margin: auto;
+    display: block;
 }
 
 .fua{
@@ -23,22 +36,12 @@ background: #C2FAB9;
 border: 5px solid #FFBA5c;
 }
 
-.pokeball-page{
-    position: relative;
-}
 
-.poke-button{
-    background: #C2FAB9;
-    border: none;
-    margin-left: 40vw;  
-    margin-top: 60vh;
-    
-}
 
 header{
-
+    position: fixed;
 width: 100%;
-background: #C2FAB9;
+background: #976DD0;
 height: 4em;
 color:whitesmoke;
 }
