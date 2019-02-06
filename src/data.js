@@ -1,10 +1,17 @@
 /*global INJURIES: true*/
 /*global Map: true*/
 /*eslint no-undef: "error"*/
-/*fetch('/data/injuries/injuri.json')
-.then((data) => data.json()).then((injuries) => {
+/*fetch('./data/injuries/injuries.json').then((injuries) => injuries.json()).then((injuries) => {
   return console.log(injuries)
 });*/
+/*fetch('/data/injuries/injuries.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }*/
 
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
@@ -32,6 +39,3 @@ window.data = {
 
 
 //console.log(years.get("2001-01-04").Total_Injured_Persons);
-
-
-

@@ -1,18 +1,20 @@
 /************body*********/
-body{
-background:url("images/usa.png") no-repeat center top;
-background-size: 80%;
-opacity: 30%;
-text-align: center;
+body {
+  background: url("images/usa.png") no-repeat center top;
+  background-size: 80%;
+  opacity: 30%;
+  text-align: center;
 }
 
-table{
-border-spacing: 20px;
+span {
+  font-size: 50px;
+  cursor: pointer;
 }
- span {
-   font-size: 50px;
-   cursor: pointer;
- }
+
+table {
+  border-spacing: 0.5%;
+}
+
 /**********fonts***********/
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -23,25 +25,15 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   color: #037393;
-  font-size: 2em;
+  font-size: 32px;
 }
 
+p {
+  display: inline-block;
+  color: #112659;
+}
 
 /************** menu ********/
-.close_menu {
-  background: #112659;
-  color: #fff;
-  position: fixed;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 100%;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  width: 10%;
-  z-index: 3;
-}
-
 .side_menu {
   background: #112659;
   color: #fff;
@@ -52,38 +44,54 @@ h2 {
   bottom: 0;
   left: 0;
   top: 0;
-  width: 0;
-  z-index: 2;
-  transition: 0.5s;
+  width: 10%;
 }
+.side_menu a {
+  margin: 15%;
+  display: block;
+  padding: .5em;
+  background-color: #F9B53C;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 2em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.side_menu a:hover {
+  background-color: #037393;
+}
+
 .side_menu ul {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	.side_menu a {
-    margin: 15%;
-		display: block;
-		padding: .5em;
-    background-color: #F9B53C;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 2em;
-		text-decoration: none;
-		color: #fff;
-	}
-	.side_menu a:hover {
-		background-color: #037393;
-	}
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/**************** div ***********************/
 
 .realB {
-  position: relative;
+  display: block;
   margin-left: auto;
   width: 90%;
 }
+
+.overBody {
+  display: block;
+  margin-left: auto;
+  width: 90%;
+  background: #037393;
+  text-align: center;
+  opacity: 0.5;
+}
+
+#tableStructure {
+  display: inline;
+  margin-right: 10px;
+}
+
 /********** iconos*****/
 .fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car {
   color: white;
-  position: static;
   width: 120px;
   height: 120px;
   padding: 10px 16px;
@@ -91,7 +99,7 @@ h2 {
   border-radius: 70px;
   border-width: 10px;
   background-color: transparent;
-
+  text-align: center;
 }
 
 .fa-walking, .pedestrians_info {
@@ -101,25 +109,28 @@ h2 {
 .fa-bicycle, .pedalcyclists_info {
   background-color: orangered;
 }
+
 .fa-motorcycle, .motorcyclists_info {
   background-color: crimson;
 }
+
 .fa-bus, .busoccupants_info {
   background-color: forestgreen;
 }
+
 .fa-car, .caroccupants_info {
   background-color: darkmagenta;
 }
 
-.motorcyclists_info, .pedestrians_info, .pedalcyclists_info, .busoccupants_info, .caroccupants_info{
+.motorcyclists_info, .pedestrians_info, .pedalcyclists_info, .busoccupants_info, .caroccupants_info {
   color: #fff;
   opacity: 0.8;
   text-align: center;
   height: 100vh;
   width: 20%;
-  left: 80;
+  left: 80pxs;
   padding-left: 20%;
   padding-right: 20px;
   padding-top: 85px;
-  position: fixed;
+  position: absolute;
 }

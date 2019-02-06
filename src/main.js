@@ -6,7 +6,6 @@ let tableToPrint = document.getElementById('dataTable');
 });*/
 let accidentsData = window.data.getData('Total_Injured_Persons_Motorcyclists');
 
-tableToPrint.insertAdjacentHTML('beforeend', `<tr><td></td><td></td></tr>`);
 
 accidentsData.forEach(element => {
   printDataInHTML(element.year, element.number);
