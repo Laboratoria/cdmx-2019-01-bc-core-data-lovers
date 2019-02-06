@@ -102,7 +102,7 @@ const print =(name,img,title) => {
         
   
   const support =document.getElementById('support');
-  const rol = document.getElementsByClassName("rolPersonajes");
+ 
 
   for ( let i=0; i<rol.length; i++){
     rol[i].addEventListener('click', () => {
