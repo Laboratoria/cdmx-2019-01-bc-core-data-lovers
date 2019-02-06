@@ -44,10 +44,12 @@ document.getElementById('btn_mex').addEventListener('click', () =>{
 
 //filtrar 
 listQuestion.addEventListener("change", () =>{
-  indicator.innerHTML = " ";
+  indicator.innerHTML = "";
+  console.log(indicator)
   let selectQuestion = listQuestion.options[listQuestion.selectedIndex].text;
   let countrySelect = listQuestion.value;
   let country = listQuestion.dataset.ciudad;
+  let  tabla = '';
   if(country == 'ciudadesMex' ){
     ciudadesMex.forEach(ciudad =>{
       if(ciudad.indicatorCode == countrySelect){
@@ -56,8 +58,12 @@ listQuestion.addEventListener("change", () =>{
         //let resultado= JSON.stringify(ciudad.data);
         //indicator.insertAdjacentHTML("beforeend", resultado);
         for(let resultado in ciudad.data){
-          let tabla =`<p>Año: ${resultado} = ${ciudad.data[resultado] }%</p>` 
-          indicator.insertAdjacentHTML("beforebegin", tabla);
+          
+          //tabla = `<p>Año: ${resultado} = ${ciudad.data[resultado] || 0} %</p>` 
+          let parrafo = document.createElement('p');
+          parrafo.innerHTML = `Año: ${resultado} = ${ciudad.data[resultado] || 0} `
+          //indicator.insertAdjacentHTML("beforebegin", tabla);
+          indicator.appendChild(parrafo);
         }
       }
     });
