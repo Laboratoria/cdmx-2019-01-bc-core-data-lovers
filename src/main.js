@@ -1,7 +1,6 @@
 const enterPage = document.getElementById('enterPage');
 const pageKanto = document.getElementById('pageKanto');
 const filterPage = document.getElementById('filterPage');
-// Estamos desarrollando searchPage
 const searchPage = document.getElementById('searchPage');
 const stadisticsPage = document.getElementById('stadisticsPage');
 const aboutPikapedia = document.getElementById('aboutPikapedia');
@@ -317,7 +316,6 @@ const printAll = (namePokemonAll, img, typePokemonAll) => {
 
 //retorna los tipos de pokemones gaby 
 function filtrar(id_tipo) {
-  //console.log("hola");
   if (id_tipo == 1) { //tipo fuego
     const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Fire"));
     pokemonType.forEach(element => {
