@@ -14,7 +14,6 @@ window.lol = {
     }
   }
 },
-
 searchData: (rol, arrayData)=> {
   for( let i= 0; i<rol.length; i++){
      rol[i].addEventListener("click",() => {

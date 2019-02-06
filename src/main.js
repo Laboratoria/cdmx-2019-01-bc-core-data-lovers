@@ -17,14 +17,14 @@ startButton.addEventListener('click', () => {
 });
 
 //Función para imprimir la data en el HTML
-const print = (img, name, tags, tags2)=>{
-
+const print = (img, name, tags, tags2) =>{
   let result = `<div class="champion"> <img src="${img}">
   <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div>`;
   sq.insertAdjacentHTML("beforeend",result);
 }
 
-const searchPrint = window.lol.searchData(rol, arrayData);
+  const toPrint = window.lol.searchData(rol, arrayData);
+
 
 
 
