@@ -97,8 +97,17 @@ p{
    position: relative;
    left:540px;
 }
+#buttonPokemonWater{
+  font-size: 15px;
+  font-family: monospace;
+  border-radius: 200px;
+  border:0;
+  width: 195px;
+  height:195px;
+  background-color:#2980B9;
+}
 
-.checkbox{
+ .checkbox {
     width: 30%;
     height: auto;
     background-color: #00CED1;
@@ -106,5 +115,6 @@ p{
     font-family:'Love Ya Like A Sister', cursive;
     
 }
+
 
 
