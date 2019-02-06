@@ -8,6 +8,7 @@ const rol = document.getElementsByClassName('rol');
 const startButton = document.getElementById('start-button');
 
 const lolData = LOL.data;
+const arrayData = Object.values(lolData);
 //Evento del boton Comenzar
 startButton.addEventListener('click', () => {
   start.classList.add('hide');
@@ -17,28 +18,13 @@ startButton.addEventListener('click', () => {
 
 //Función para imprimir la data en el HTML
 const print = (img, name, tags, tags2)=>{
+
   let result = `<div class="champion"> <img src="${img}">
   <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div>`;
   sq.insertAdjacentHTML("beforeend",result);
 }
 
- for( let i= 0; i<rol.length; i++){
-    rol[i].addEventListener("click",() => {
-    let rolId = rol[i].id;
-
-    let newArray = [];
-    const arrayData = Object.values(lolData);
-    arrayData.forEach(element => {
-    const roles = element.tags[0];
-      if(roles === rolId){
-        newArray.push(element);
-    }
-});
-  console.log(newArray);
-})}
-
-
-
+const searchPrint = window.lol.searchData(rol, arrayData);
 
 
 
