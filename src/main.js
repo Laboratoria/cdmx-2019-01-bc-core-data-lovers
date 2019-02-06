@@ -1,26 +1,20 @@
+//Constante de la sección know del HTML
+const knowsecc = document.getElementById("know");
+//Declaramos input del año
+let yearbutton = document.getElementById("yearbttn");
+//Declaramos input del usurio
+let userbutton = document.getElementById("user");
+//Declaramos input del consulta
+let searchbutton = document.getElementById("search");
 
-//Constante del elemento root del HTML
-const totalsecc = document.getElementById("know");
-let yearButton = document.getElementById("yearButton")
-let userButton = document.getElementById("user")
-let search = document.getElementById("search")
+searchbutton.addEventListener("click", ()=>{
+  let yearValue = yearbutton.value;
+  let userValue = userbutton.value;
+  console.log(yearValue, userValue)
+})
+
 //Función para imprimir en html
-const printpage = (year, total, moto, bike, walk, transit) => {
-  let result = `<b>Año:</b> <i>${year}</i> <br><b>total de heridos:</b> <i>${total};</i> <b>por Moto:</b> <i>${moto};</i> <b>por bici:</b> <i>${bike}</i>; <b>peatones:</b> <i>${walk}</i>; <b>autos:</b> <i>${transit};</i>  <br><br> `
-  totalsecc.insertAdjacentHTML("beforeend", result);
-}
-
-
-//Función ForEach para recorrer elementos.
-injuriesby.forEach(element => {
-  let year = element.Year;
-  let total = element.Total_Injured_Persons;
-  let moto = element.Total_Injured_Persons_Motorcyclists;
-  let bike = element.Total_Injured_Persons_Pedalcyclists;
-  let walk = element.Total_Injured_Persons_Pedestrians;
-  let transit = element.Total_Injured_Persons_Transit_Total;
-
-//Le digo qué quiero que imprima. Deben ir en orden.
-  printpage(year, total, moto, bike, walk, transit)
-  //ConsoleLog si muestra todos los elementos console.log(total)
-});
+//const printpage = (year, total, moto, bike, walk, transit) => {
+//  let result = `<b>Año:</b> <i>${year}</i> <br><b>Total de heridos:</b> <i>${total};</i> <b>en Moto:</b> <i>${moto};</i> <b>en bici:</b> <i>${bike}</i>; <b>peatones:</b> <i>${walk}</i>; <b>autos:</b> <i>${transit};</i>  <br><br> `
+//  knowsecc.insertAdjacentHTML("beforeend", result);
+//}
