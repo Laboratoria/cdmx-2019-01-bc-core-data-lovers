@@ -12,77 +12,83 @@
 
 <body>
   <div id="root">
-  <header><img src="images/logo.png" alt="PuntoMuerto" class="logo">
-    <img src="images/menu.png" class="menu"></header>
+    <header><img src="images/logo.png" alt="PuntoMuerto" class="logo">
+      <img src="images/menu.png" class="menu"></header>
 
 
-    <section class="info">
+    <section id="info" class="info">
       <p class="info">PUNTO MUERTO es una campaña que está orientada a la población
-      de jóvenes adolescentes de 17 y 18 años, por la proximidad de
-      los mismos a la posibilidad de acceder a una licencia de conducir,
-      y por ser este un momento propicio debido al inicio del aprendizaje
-      y con posibilidad de condicionar conductas responsables.
+        de jóvenes adolescentes de 17 y 18 años, por la proximidad de
+        los mismos a la posibilidad de acceder a una licencia de conducir,
+        y por ser este un momento propicio debido al inicio del aprendizaje
+        y con posibilidad de condicionar conductas responsables.
 
-      Nos proponemos concientizar a la juventud de los riesgos a que
-      se exponen y sus posibles consecuencias.</p>
+        Nos proponemos concientizar a la juventud de los riesgos a que
+        se exponen y sus posibles consecuencias.</p>
+
+        <input type="button" value="CONSULTA"></input>
     </section>
 
-<section class="total">
-<h2> TOTAL DE HERIDOS </h2>
-<p>Tan solo en el 2016,  50 por ciento de los percances automovilísticos
-  se relaciona con el consumo de alcohol y se dan
-  principalmente entre jóvenes.</p>
-  <p id="totalInjured"> 2’443,175 </p>
-  <img src="images/car.png" alt="PuntoMuerto" class="icon">
-<img src="images/crossing.png" alt="PuntoMuerto" class="icon">
-<img src="images/moto.png" alt="PuntoMuerto" class="icon">
-<img src="images/bike.png" alt="PuntoMuerto" class="icon">
-</section>
+    <section class="total">
+      <h2> TOTAL DE HERIDOS </h2>
+      <p>Tan solo en el 2016, 50 por ciento de los percances automovilísticos
+        se relaciona con el consumo de alcohol y se dan
+        principalmente entre jóvenes.</p>
+      <p id="totalInjured"> 2’443,175 </p>
+      <img src="images/car.png" alt="PuntoMuerto" class="icon">
+      <img src="images/crossing.png" alt="PuntoMuerto" class="icon">
+      <img src="images/moto.png" alt="PuntoMuerto" class="icon">
+      <img src="images/bike.png" alt="PuntoMuerto" class="icon">
+    </section>
 
-<section id="know" class="know" >
-<h2 id="knowMore"> CONOCE MÁS </h2>
-<img src="images/peaton.png" alt="PuntoMuerto" class="image">
-<form class="select">
-<select name="year">
-   <option selected value="0"> AÑO </option>
-       <option value="1">2001</option>
-       <option value="2">2002</option>
-       <option value="3">2003</option>
-  </select>
-  <select name="user">
-     <option selected value="0"> USUARIO </option>
-         <option value="1">Motociclista</option>
-         <option value="2">Peaton</option>
-         <option value="3">Ciclista</option>
-         <option value="4">Conductor</option>
-    </select>
-    <input type="button" value="CONSULTA">
-  </form>
-</section>
+    <section id="know" class="know">
+      <h2 id="knowMore"> CONOCE MÁS </h2>
+      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
+      <form class="select">
+        <select id="yearbttn" name="year">
+          <option selected value="0"> AÑO </option>
+          <option value="2001-01-04">2001</option>
+          <option value="2002-01-04">2002</option>
+          <option value="2003-01-04">2003</option>
+          <option value="2004-01-04">2004</option>
+        </select>
+        <select id="user" name="user">
+          <option selected value="0"> USUARIO </option>
+          <option value="moto">Motociclista</option>
+          <option value="peaton">Peaton</option>
+          <option value="Ciclista">Ciclista</option>
+          <option value="conductor">Conductor</option>
+          <option value="todos">TODOS</option>
+        </select>
+        <input id="search" type="button" value="CONSULTA">
+      </form>
+    </section>
 
-<section class="photos">
-<img src="images/cros.png" alt="PuntoMuerto" class="image">
-<img src="images/incident.png" alt="PuntoMuerto" class="image">
-<img src="images/way.png" alt="PuntoMuerto" class="image">
-<h2> FQA </h2>
-<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-  sed diam nonummy nibh euismod tincidunt
-<br>
-ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-minim veniam, quis nostrud exerci tation<br>
+    <section class="photos">
+      <img src="images/cros.png" alt="PuntoMuerto" class="image">
+      <img src="images/incident.png" alt="PuntoMuerto" class="image">
+      <img src="images/way.png" alt="PuntoMuerto" class="image">
+      <h2> FQA </h2>
+      <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt
+        <br>
+        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+        minim veniam, quis nostrud exerci tation<br>
+        >>>>>>> upstream/master
 
-ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-consequat. Duis autem vel eudolore eu feug </p>
-</section>
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eudolore eu feug </p>
+    </section>
     <footer>
-<img src="images/redes.png" alt="PuntoMuerto" class="redes">
-<img src="images/final.png" alt="PuntoMuerto" class="final">
+      <img src="images/redes.png" alt="PuntoMuerto" class="redes">
+      <img src="images/final.png" alt="PuntoMuerto" class="final">
     </footer>
   </div>
 
   <script src="./data/injuries/injuries.js"></script>
-  <script src="data.js"></script>
+  
   <script src="main.js"></script>
+  <script src="data.js"></script>
 </body>
 
 </html>
