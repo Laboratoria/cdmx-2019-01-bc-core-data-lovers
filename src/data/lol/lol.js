@@ -84,7 +84,7 @@ var LOL = {
       },
       tags: ["Mage", "Assassin"],
       partype: "MP",
-      stats: {
+      stats: {  
         hp: 514.4,
         hpperlevel: 80,
         mp: 334,
