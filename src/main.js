@@ -2,7 +2,27 @@
 const datalol = LOL.data;
 //const lolfiltro = datalol.filter(datalol.hasOwnProperty, "key");
 //console.log(lolfiltro);
+//console.log(Object.values(datalol))
+const tank = document.getElementById('tank');
+const rol = document.getElementsByClassName('rol');
 
+//const filtrarRol = () => {
+  //  for(let i = 0; i<rol.length; i++)
+
+
+const filtrarRol = () => {
+    const filtrotank = Object.values(datalol)
+    filtrotank.forEach(element => {
+        const roles = element.tags[0];
+        if(roles === "Tank"){
+            console.log(element);
+
+        }
+        
+    });
+}
+
+tank.addEventListener('click', filtrarRol)
 
 const roles = document.getElementById("roles").value;
 /*trae el div imprimir roles para identificarlo e imprimir*/
@@ -39,3 +59,4 @@ for (const key in datalol) {
 
     }
 };
+
