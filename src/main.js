@@ -6,6 +6,7 @@ const buttonHome = document.getElementById('home');
 const buttonIndicador = document.getElementById('indicador');
 const selOption = document.getElementById('filtrar-pais');
 const orderAscDat = document.getElementById('order');
+const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let contador=0;
 
@@ -50,8 +51,9 @@ buttonIndicador.addEventListener('click', muestra_indicador);
 const filtraIndPais = () =>{
     contenido.style.display= 'block';
     let select= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
+    let indicador = nameIndicators.value;
     //console.log(select);
-     let pais = window.filtroPais(select); //Se llama la funcion window.filtroPais con el valor de selec
+     let pais = window.filtroPais(select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
      recorrerObjeto (pais); 
 }
 
@@ -61,7 +63,7 @@ const recorrerObjeto = (pais)=>{
 let respuesta="";
  for (let i in pais) //for iteracon cada elemento del objeto
   {
-    respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i]/*.toFixed(2)+"%"+*/+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
+    respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
   }
   document.getElementById('contenido').innerHTML = respuesta;   
  return respuesta
