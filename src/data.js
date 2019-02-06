@@ -14,8 +14,28 @@ window.lol = {
     }
   }
 },
-searchData: (lolData)=> {
 
+searchData: (rol, arrayData)=> {
+  for( let i= 0; i<rol.length; i++){
+     rol[i].addEventListener("click",() => {
+     let rolId = rol[i].id;
+
+      let newArray = [];
+      arrayData.forEach(element => {
+      let img = element.splash;
+      let name = element.name;
+      const tags = element.tags[0];
+      const tags2 = element.tags[1];
+       if(tags === rolId){
+         newArray.push(element);
+         print(img, name, tags, tags2);
+     }
+      if (tags2 === rolId){
+        newArray.push(element);
+        print(img, name, tags, tags2);
+      }
+  });
+  })}
 }
 //esta llave cierra window.lol
 }
