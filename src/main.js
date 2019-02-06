@@ -1,67 +1,32 @@
 const botonMenu = document.getElementById('menuHide') ;
 const returnFilter = document.getElementById('returnFilter');
-const butWatter = document.getElementById('butWatter');
-const butElectric = document.getElementById('butElectric');
-const butFire = document.getElementById('butFire');
+const botonFilter = Array.from(document.getElementsByClassName("boton-filter"));
 const pokemon = POKEMON.pokemon;
 
+//seleccionando un boton
+botonFilter.forEach(function(boton){
+  boton.addEventListener("click", function(event){
+    const optionfilter = event.target.id;
+    console.log(optionfilter);
 
-botonMenu.addEventListener("click", showFilter);
-function showFilter() {
-  let menushow = document.getElementById('menushow');
-  menushow.classList.toggle('mostrar');
-}
 
-//Funcion filtrado agua
-const typeWatter = pokemon.filter(pokemon => pokemon.type[0] === "Water");
-
-const imprimir = (name, imagen) => {
-  let pokemonWater = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
-  returnFilter.innerHTML += pokemonWater;
-};
-
-butWatter.addEventListener("click", filterTypeWatter);
-function filterTypeWatter(){
-typeWatter.forEach(pokemon =>{
-  let name = pokemon.name;
-  let imagen = pokemon.img;
-  imprimir(name,imagen);
-});
-}
-
-// Terminada llamado pokemon Water
-
-//Funcion filtro Electric
-const typeElectric = pokemon.filter(pokemon => pokemon.type[0] === "Electric");
-
-const imprimirElectric = (name, imagen) => {
-  let pokemonElectric = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
-  returnFilter.innerHTML += pokemonElectric;
-};
-
-butElectric.addEventListener("click", filterTypeElectric);
-function filterTypeElectric() {
-  typeElectric.forEach(pokemon => {
-    let name = pokemon.name;
-    let imagen = pokemon.img;
-    imprimirElectric(name, imagen);
+    //console.log(event.target.id);
+    //filterdata(pokemon,optionfilter)
+    return optionfilter;
   });
-}
-// Terminada llamado pokemon Electric
+filterdata(optionfilter);
+})
 
-//Funcion filtro Fire
-const typeFire = pokemon.filter(pokemon => pokemon.type[0] === "Fire");
+//funcion pura del filtrado
+const filterdata = (pokemon, optionfilter) => {
+  // Filtrar el tipo de pokemon mediante dos parámetros
+  // Uno es el array "pokemon" y el otro parámetro es un evento que
+  // me regresa el tipo
 
-const printFire = (name, imagen) => {
-  let pokemonFire = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
-  returnFilter.innerHTML += pokemonFire;
+  // Capturar el primer parámetro (el array Pokemon)
+  // Capturar el evento el cual este debe retornar el tipo
+  const newDataA = pokemon.filter(pokemon => pokemon.type.includes(optionfilters));
+  console.log(newDataA);
+  //console.log(pokemon , optionfilter);
 }
-
-butFire.addEventListener("click", filterTypeFire);
-function filterTypeFire() {
-  typeFire.forEach(pokemon => {
-    let name = pokemon.name;
-    let imagen = pokemon.img;
-    printFire(name, imagen);
-  })
-}
+console.log(filterdata);
