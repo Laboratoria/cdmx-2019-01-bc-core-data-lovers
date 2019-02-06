@@ -22,7 +22,7 @@ body {
 
 
 .divPokemon{
-    
+
     background-image: url(../src/assets/img/pokedex1.jpg);
     background-size: cover;
     background-position: center center;
@@ -39,12 +39,12 @@ body {
 .divPokemon img{
     display: inline-block;
     position: absolute;
-    
+
 }
 .divPokemon p{
     display: inline-block;
     position: absolute;
-    
+
 }
 .namePokemon{
     margin-left: 7%;
@@ -73,7 +73,7 @@ body {
     color: rgb(12, 10, 1);
     font-size: 120%;
       }
-      
+
 .styleButtonNext:hover{
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       background-color: rgb(94, 204, 207); /* Green */
@@ -89,7 +89,7 @@ body {
 
 .fontPokemon{
     font-family: Pokemon-Solid;
-    color: gold;  
+    color: gold;
 }
 #pokemon{
     text-align: center;
