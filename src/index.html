@@ -10,10 +10,7 @@
   </head>
   <body>
   
-  
-
-
-<main id= "box1">
+ <main id= "box1">
 <header>
   <div class= "menu" id="showMenu" type="button" ><a class="bt-menu" href="#"><i class="fas fa-bars"></i>Menu</a></div>
   <nav id="menuList" class="hide">
@@ -41,26 +38,25 @@
  
 </section>
 
-
 <section id= "box3" class= "hide">
- 
-  <select id= "filtrar-pais" >
-    <option value= "Pais"> País</option>
+  <p>Indicador <b>Población mujeres (% del total),</b> seleccione País del que desea mostrar los datos.</p>
+  <select id="filtrar-pais" name="paises">
+    <option value= "value1"> País</option>
     <option value= "MEX">Mexico</option>
     <option value= "PER">Peru</option>
     <option value= "CHL">Chile</option>
     <option value= "BRA">Brasil</option>
   </select>
 
-  <select name= "orden" >
+  <select name= "order" >
     <option value= "value1"> Ordenar</option>
     <option value= "value5"> Ascendente</option>
     <option value= "value6"> Descendente</option>     
   </select>
 </section>
 
-<section id="contenido">
-
+<section id="contenido">  
+ <p id="nom-indicador" class="hide"></p> 
 </section>
 <!-- <script src="./data/injuries/injuries.js"></script> -->
   <!-- <script src="./data/pokemon/pokemon.js"></script> -->

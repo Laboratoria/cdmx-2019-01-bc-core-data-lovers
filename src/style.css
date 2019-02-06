@@ -1,40 +1,42 @@
 * {
-margin: 0;
-padding:0;
-}
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Questrial');
+    margin: 0;
+    padding:0;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+    @import url('https://fonts.googleapis.com/css?family=Questrial');
+    
+    body{
+        background:#FFFFFA;
+    }
+    p{
+        text-align: justify;
+        padding: 3%;
+        font-family: 'Raleway', sans-serif;
+    }
+    h1{
+        text-align: center;
+        padding: 3%;
+        font-family:'Questrial', sans-serif;
+    }
+    header{
+        width: 100%;
+    }
+    header nav{
+        width: 90%;
+        max-width: 1000px;
+        margin:20px auto;
+        background: #024959;
+    }
+    .menu{
+        display:none;
+    }
+    
+    header nav ul {
+        overflow: hidden;
+        list-style: none;
+    }
 
-body{
-    background:#FFFFFA;
-}
-p{
-    text-align: justify;
-    padding: 3%;
-    font-family: 'Raleway', sans-serif;
-}
-h1{
-    text-align: center;
-    padding: 3%;
-    font-family:'Questrial', sans-serif;
-}
-header{
-    width: 100%;
-}
-header nav{
-    width: 90%;
-    max-width: 1000px;
-    margin:20px auto;
-    background: #024959;
-}
-.menu{
-    display:none;
-}
 
-header nav ul {
-    overflow: hidden;
-    list-style: none;
-}
 
 header nav ul li{
     float: left;
@@ -51,6 +53,7 @@ header nav ul li a i{
 header nav ul li a:hover{
     background: #037e8c;
 }
+
 section{
     padding:20px;
 }
@@ -58,7 +61,6 @@ section{
 header nav{
     width: 80%;
     height: 100%;
-    /*left:-100%;*/
     margin:0;
     position: fixed;
 }
@@ -68,6 +70,7 @@ header nav ul li{
     border-bottom:1px solid rgba(255,255,255, .3);
     font-size: 120%;
 }
+
 .menu{
 display: block;
 width: 100%;
@@ -90,23 +93,20 @@ background: #eee;
     font-size: 75%;
 }
 }
-
-
 .hide{
     display: none;
 }
-/*header{
-    background:#D5EDE2;
-    display: inline-block; 
-    vertical-align: top;
-    margin-top: 0px;
-    width: 1280px;
-    height: 48PX;
-  }
-body{ /*text body*/
-    
-    background-color: #84A5B6;
 
-}*/
+#contenido li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    border: solid 1px #037e8c;
+    width: 150px;
+}
 
-
+@media screen and (min-width:801px){
+    header nav{
+        display:block !important
+    }
+}
