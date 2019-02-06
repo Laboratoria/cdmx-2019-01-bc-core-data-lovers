@@ -102,28 +102,30 @@ const print =(name,img,title) => {
         
   
   const support =document.getElementById('support');
-  const rol = document.getElementsByClassName("rolPersonajes");
-    
-            for( let i= 0; i<rol.length;i++){
-              rol[i].addEventListener("click",() => {
-                let rolId = rol[i].id;
-                let nuevoArreglo = [];
-                const arrayData = Object.values(dataLol);
-                arrayData.forEach(element => {
-                  const roles = element.tags[0];
-                  if(roles === rolId ){
-                    nuevoArreglo.push(element);
-                    
-                  }
-                   console.log(nuevoArreglo);
-                });
-          }); 
-                }
-             
+ 
+
+  for ( let i=0; i<rol.length; i++){
+    rol[i].addEventListener('click', () => {
+      let rolId = rol[i].id;
+
     
 
+        let arr=[];
+        const dataToArray = Object.values(dataLol);
+        dataToArray.forEach(element => {
+          const roles = element.tags[0];
+          if (roles === rolId){
+            arr.push(element);
+          }
+          });
+          
+          console.log(arr);
+        })}
+
+    
 
 
+//Funcion para imprimir//
 
     
       //const filtroSupport = Object.values(dataLol)
