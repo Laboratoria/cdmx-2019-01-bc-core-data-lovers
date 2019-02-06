@@ -1,5 +1,7 @@
 # Data Lovers
 
+Historia de usuario 1: como ciudadana(o) estadounidense quiero una aplicación que me permita saber cuál es el modo de transporte más seguro e inseguro para trasladarme en la ciudad.
+
 ## Índice
 
 - [Preámbulo](#preámbulo)
