@@ -44,6 +44,7 @@ header nav ul li{
 header nav ul li a{
     color: #FFF;
     padding: 20px;
+  
     display: block;
     text-decoration: none;
 }
@@ -109,4 +110,14 @@ background: #eee;
     header nav{
         display:block !important
     }
+
+    header nav ul li a{
+        color: #FFF;
+        padding: 20px;
+        padding-left: 100px;
+        padding-right: 64px;
+        display: block;
+        text-decoration: none;
+}
+
 }
