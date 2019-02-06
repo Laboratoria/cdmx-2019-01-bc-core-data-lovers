@@ -1,6 +1,8 @@
 //Declaración de variables para manipular la data
 const pokemones = document.getElementById('pokemones');
+var POKEMON = POKEMON;
 const dataPokemon = POKEMON.pokemon;
+
 
 //Declaración para el boton filtrar
 const btnFilterBy = document.getElementById('btnFilterBy');
@@ -19,29 +21,30 @@ btnStart.addEventListener("click", () => {
     
 })
 
-//Función para filtrar
+//Di y Fa: Boton que muestra los pokemones filtrados y oculta todos
 btnFilterBy.addEventListener("click",() =>{
-    pokemones.classList.add('hide');
-    filtered_out.classList.remove('hide');
+    pokemones.style.display="none";
+    filtered_out.style.display = "block";  
 });
 
+//Di: Botón que regresa a la pantalla que muestra todos los pokemones
 toReturn.addEventListener("click", () =>{
-    filtered_out.classList.add('hide');
-    pokemones.classList.remove('hide');
+    filtered_out.style.display = "none"
+    pokemones.style.display = "block";
 })
 
-//Función que imprime los datos que son llamados y la imagen de los pokemones
+//Di: Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
 const toPrint = (namePokemon,imagePokemon,typePokemon,weaknessesPokemon,candyPokemon,eggPokemon) =>{
     let visualPokemon = `<button id="btnPokemon" class="divPokemon ${typePokemon[0]}"><p class="name ">${namePokemon}</p><br><img src="${imagePokemon}">
     </button>`;
     
     /*<p class="details"><br>Type: ${typePokemon}<br>Weaknesses: ${weaknessesPokemon}<br>
-    Candy: ${candyPokemon} <br> ${eggPokemon}</p>`;*/
-    pokemones.insertAdjacentHTML("beforeend",visualPokemon);    
+    <p class="name">Candy: ${candyPokemon} </p><br> ${eggPokemon}</p>`;*/
+    pokemones.insertAdjacentHTML("beforeend",visualPokemon);  
 };
 
 //Por cada elemento del arreglo muestra los datos llamados
-dataPokemon.forEach(element =>{
+dataPokemon.forEach(element => {
     let imagePokemon = element.img;
     let namePokemon = element.name;
     let typePokemon = element.type;
@@ -52,18 +55,25 @@ dataPokemon.forEach(element =>{
     toPrint(namePokemon,imagePokemon,typePokemon,weaknessesPokemon, candyPokemon,eggPokemon);
 });
 
-const toPrintFilterOut = (namePokemon,typePokemon,imagePokemon) => {
-    let visualPokemon = `<section id="filtered_out" class="divPokemon"><p class="name">${namePokemon}</p><br>
-    <img src="${imagePokemon}"><br><p class="details">Type: ${typePokemon}</p></section>`;
-    filtered_out.insertAdjacentHTML("beforeend",visualPokemon); 
-}; 
+/*Di y Fa: Función que filtra por tipo de Pokemón: Agua. Almacena en una variable los 
+elementos de la data que tiene agua*/
+const filterWater = dataPokemon.filter(pokemon => pokemon.type.includes("Water"));
 
-dataPokemon.forEach(element =>{
+const toPrintFilter = (namePokemon,imagePokemon,typePokemon) =>{
+    let visualPokemonWater = `<button id="btnPokemon" class="divPokemon ${typePokemon[0]}">
+    <p class="name ">${namePokemon}</p><br><img src="${imagePokemon}">
+    </button>`;
+    
+    filtered_out.insertAdjacentHTML("beforeend",visualPokemonWater);    
+};
+
+//Por cada elemento del arreglo muestra los datos llamados
+filterWater.forEach(element => {
     let namePokemon = element.name;
     let imagePokemon = element.img;
     let typePokemon = element.type;
-    
-    toPrintFilterOut(namePokemon,typePokemon,imagePokemon);
+
+    toPrintFilter(namePokemon,imagePokemon,typePokemon);
 });
 
 

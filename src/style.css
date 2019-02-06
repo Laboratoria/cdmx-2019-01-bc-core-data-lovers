@@ -6,28 +6,30 @@ img{
     width: 70%;
 }
 
-#pokemones{
+
+#btnPokemon{
+    width: 25%;
+}
+
+#pokemones { 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
-#btnPokemon{
-    width: 25%;
-}
 .divPokemon{
     position: relative;
     z-index: 5;
-    border: 5px solid  gray;
+    border: 1px solid  gray;
     border-radius: 10px;
     color: white;   
      /*Cambie el tamaño del div solo para mejor visualizacion,pero si no te acomoda vuelvelo a reconfigurar*/
-    
     }
 
 .divPokemon::before{
-    border: 3px solid gray;
+    margin: 10px;
+    border: 1px solid gray;
     border-radius: 10px;
     content: "";
     position: absolute;
@@ -37,7 +39,7 @@ img{
     left: 0;
     right: 0;
     background-color: gray;
-    opacity: 0.9;
+    opacity: 0.3;
 }
 
 .details{
@@ -84,13 +86,4 @@ img{
     width:35%;
 }
 
-
-.Grass{
-    
-    background: red;
-}
-
-.Fire{
-    background: blue;
-}
 

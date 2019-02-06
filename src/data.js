@@ -3,9 +3,7 @@
 
 /*const example = () => {
   return 'example';
-};*/
-
-
+};
 
 
 const filter = () => {
@@ -25,3 +23,4 @@ window.filter = filter
 window.order = order;
 window.find = find;
 
+*/
