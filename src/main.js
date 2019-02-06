@@ -3,37 +3,49 @@ const pokeballPage=document.getElementById('pokeball-page');
 const pokemonPage=document.getElementById('pokemon-page');
 const pokeballButton=document.getElementById('pokeball-button');
 const printList = document.getElementById('print-list');
-const sort = document.getElementById('sort');
+const filterType = document.getElementById('filter');
 
-const sortear = () => {
-    orderName.sort()
-    //console.log(event.target.value)
-}
-console.log(sortear)
+let orderName=[];
 
+//const resultOrderName= orderName.sort();
+//console.log(resultOrderName);
+
+//console.log
+//function ejercicio2(){
+  //  let prueba=(orderName.sort((a, b)=>{return a.toLowerCase().localeCompare(b.toLowerCase());}))
+//console.log(prueba)
+//};
 
 pokeballButton.addEventListener('click',()=> {
  pokeballPage.classList.add('hideElement');    
  pokemonPage.classList.remove('hideElement');
 });
 
-const print=(name,type,img) => {
-    let result = `<div class=fua> <img src="${img}">  <p>${name}</p> <p>Tipo: ${type}</p></div>`
+const print=(toPrint) => {
+   toPrint.forEach(element => {
+    let result = `<div class=fua><img src="${element.img}">  <p>${element.name}</p> <p>Tipo: ${element.type}</p></div>`
     printList.insertAdjacentHTML("beforeend",result);
+   });
     return result;
 };
 
-let orderName=[];
-let orderNamesi=[];
-data.forEach(element => {
-    let name=element.name;
-    let type=element.type;
-    let img=element.img;
-    orderName.push(name);
-    print(name,type,img);
-});
+
+const procesarData = (data) => {
+        const toPrint = window.pokesaurius.typeFilter(data)
+        print(toPrint)
+    }
 // console.log(typeof orderName);   
-console.log(orderName)
 
 
- sort.addEventListener('change', sortear)
+filterType.addEventListener('change',()=>{
+    console.log(newData)
+    let userChoice= event.target.value;
+    console.log(userChoice);
+    const tipoFiltrado= window.pokesaurius.typeFilter(userChoice);
+ });
+
+ procesarData(data)
+
+
+
+ 

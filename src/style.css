@@ -20,6 +20,7 @@ body{
 display: inline-block;
 width: 33%;
 background: #C2FAB9;
+border: 5px solid #FFBA5c;
 }
 
 .pokeball-page{
