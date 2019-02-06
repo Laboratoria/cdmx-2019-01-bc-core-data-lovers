@@ -6,26 +6,47 @@ const datalol = LOL.data;
 const tank = document.getElementById('tank');
 const rol = document.getElementsByClassName('rol');
 
+for(let i = 0; i<rol.length; i++){
+    rol[i].addEventListener('click', () => {
+        let buscado = rol[i].id
+    })
+}
+console.log('funciona')
+
+const filtrarRol = () => {
+    let arr =[];
+    const filtrotank = Object.values(datalol)
+    filtrotank.forEach(element => {
+      const roles = element.tags[0];
+      if(roles === "Assassin"){
+        arr.push(element)
+      }
+      
+    });
+    console.log(arr)
+  }
+
+
 //const filtrarRol = () => {
   //  for(let i = 0; i<rol.length; i++)
 
 
-const filtrarRol = () => {
+/*const filtrarRol = () => {
     const filtrotank = Object.values(datalol)
     filtrotank.forEach(element => {
         const roles = element.tags[0];
         if(roles === "Tank"){
-            console.log(element);
+            // console.log(element);
 
         }
         
     });
-}
+}*/
 
 tank.addEventListener('click', filtrarRol)
 
 const roles = document.getElementById("roles").value;
-/*trae el div imprimir roles para identificarlo e imprimir*/
+//*trae el div imprimir roles para identificarlo e imprimir
 const imprimirRoles = document.getElementById("imprimirRoles")
 const mostrar = document.getElementById("mostrar")
 
@@ -34,7 +55,8 @@ mostrar.addEventListener("click",() =>{
     menu.classList.toggle("mostrar");
 });
 
-/*esta función imprimir los tags de los personales*/
+
+//esta función imprimir los tags de los personales*/
 let tags = "";
 const print =(name,imga,title) =>{
     let result = `<div class="cuadro"><img class="imagen" src="${imga}"> ${name} ${title}</div>`; 
