@@ -1,7 +1,5 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
 window.lol = {
- mostrardata: (datalol) => {
+ iterarData: (datalol) => {
    let datos = []
    for (const key in datalol) {
   if (datalol.hasOwnProperty(key)) {
@@ -10,22 +8,18 @@ window.lol = {
       name: element.name,
       tag: element.tags[0],
       imga: element.img,
-      title: element.title
+      title: element.title,
     }
-    // let name = element.name;
-    // let tag = element.tags[0];
-    // let imga = element.img;
-    // let title = element.title;
     datos.push(obj)
-    // print(name,imga,title);
    }
   }
   return datos
  },
 
 filtroDataRoles: (rolId, arrayData ) =>{  
-     filtrado = arrayData.filter(element => element.tags[0] === rolId);
-      return filtrado
+     filtradoPorRoles = arrayData.filter(element => element.tags[0] === rolId);
+
+      return filtradoPorRoles
     },
  
 }
