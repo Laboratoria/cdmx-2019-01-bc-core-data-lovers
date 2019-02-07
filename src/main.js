@@ -44,6 +44,9 @@ mostrar.addEventListener("click",() =>{
 
 /*esta función imprimir los tags de los personales*/
 //let tags = "";
+const result = window.lol.mostrardata(datalol)
+// console.log(result)
+
 const print =(result) =>{
     result.forEach(champ => {
 let pintar = `<div class="cuadro"><img class="imagen" src="${champ.imga}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`; 
@@ -53,21 +56,19 @@ imprimirRoles.insertAdjacentHTML("beforeend", pintar);
     // imprimirRoles.insertAdjacentHTML("beforeend",result);
 }
 
+print(result)
+const arrayData = Object.values(datalol)
+
 for(let i= 0; i<rol.length;i++){
     rol[i].addEventListener("click",() => {
       let rolId = rol[i].id;
-      const arrayData = Object.values(datalol)
       window.lol.filtroDataRoles(rolId, arrayData)
  
     })
 }
 
+//const filterDataRoles = window.lol.filtroDataRoles(rolId, arrayData)
 
-
-
-const result = window.lol.mostrardata(datalol)
-// console.log(result)
-print(result)
 
 // for (const key in datalol) {
 //     if (datalol.hasOwnProperty(key)) {

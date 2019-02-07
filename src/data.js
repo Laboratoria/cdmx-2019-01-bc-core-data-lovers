@@ -23,7 +23,7 @@ window.lol = {
   return datos
  },
 
-filtroDataRoles: (rolId, arrayData) =>{
+filtroDataRoles: (rolId, arrayData ) =>{
   /*for( let i= 0; i<rol.length;i++){
     rol[i].addEventListener("click",() => {
       let rolId = rol[i].id;
@@ -34,7 +34,7 @@ filtroDataRoles: (rolId, arrayData) =>{
      let imga = element.img;
      let title = element.title;
      //print(name,ima,tag);*/
-     return fitrado
-},
+      return filtrado
+    },
  
 }
