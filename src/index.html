@@ -16,7 +16,7 @@
 <body>
   <header>
   </header>
-  <div id="welcome" class="container-fluid wellcomeBackground">
+  <section id="welcome" class="container-fluid wellcomeBackground">
     <!--Faby:Este div contiene la imagen de inicio de pantalla-->
     <div class="row">
       <div class="col-3">
@@ -33,9 +33,9 @@
       </div>
       <!--Fa:Cierre del div donde esta el logo y el boton-->
     </div>
-  </div>
+  </section><!--Se quedan las sections que se pusieron-->
   <!--Cierre del div container-fluid-->
-  <div id="theme" class="pokemonBackground hide">
+  <section id="theme" class="pokemonBackground hide">
     <!--Fa:Este div visualiza el fondo en la seccion de los pokemon-->
     <div class="logfixed">
       <!--Div de boton filtrar -Estos cambios se quedan-->
@@ -43,7 +43,7 @@
         <div class="col-3">
           <!--Div para crear espacio-->
         </div>
-        <div class="col-6"><img id="toReturn" class="widthLog1" src="images/International_Pokémon_logo.svg.png" alt=""></div>
+        <div class="col-6"><img id="toReturn" class="widthLogData" src="images/International_Pokémon_logo.svg.png" alt=""></div>
         <div class="col-3"><button id="btnFilterBy" class="btn-warning btn-lg">FILTRAR</button></div>
       </div>
     </div>
@@ -51,10 +51,14 @@
 
     <div id="pokemones" class="hide">
     </div>
-  </div>
+  </section>
   <!--Cierre del Div donde se visualiza el fondo-->
-  <div id="filtered_out" class="hide pokemonBackground center">
-  </div>
+
+  <section class="pokemonBackground">
+      <div id="filtered_out" class="hide container center">
+      </div>
+    </section>
+  
 
 
 
@@ -69,4 +73,4 @@
   <footer></footer>
 </body>
 
-</html>
+</html>x
