@@ -91,63 +91,6 @@ resultFilter.map((pokemon) => {
 
 
 
-
-
- // output.innerHTML= resultFilter;
- /*const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
-  let nombrePokemon = `<p> <img src="${imagen}">Nombre:${nombre2}
-  <br> Su Id es :${id}</br>
-  <br> Su candy es :${candy}</br>
-  <br> Su altura es :${altura}</br>
-  <br> Su peso es :${peso}</br>
-  <br> debilidades :${debilidades}</br>
-  </p>`;
-  pokes.insertAdjacentHTML("beforeend",nombrePokemon);*/
-
-/*resultFilter.forEach(elemento => {
-  let imagen = elemento.img;
-  let nombre2 = elemento.name;
-  let id = elemento.id;
-  let candy = elemento.candy;
-  let altura = elemento.height;
-  let peso =elemento.weight;
-  let debilidades =elemento.weaknesses;
-  imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);*/
-
-
- /*
-
- const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
-  let nombrePokemon = `<p> <img src="${imagen}">Nombre:${nombre2}
-  <br> Su Id es :${id}</br>
-  <br> Su candy es :${candy}</br>
-  <br> Su altura es :${altura}</br>
-  <br> Su peso es :${peso}</br>
-  <br> debilidades :${debilidades}</br>
-  </p>`;
-  pokes.insertAdjacentHTML("beforeend",nombrePokemon);
-};
-datapokes.forEach(elemento => {
-  let imagen = elemento.img;
-  let nombre2 = elemento.name;
-  let id = elemento.id;
-  let candy = elemento.candy;
-  let altura = elemento.height;
-  let peso =elemento.weight;
-  let debilidades =elemento.weaknesses;
-  imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
-
-
-
-
-
-
-*/
-
-
-
-
-
  /*imprimir(resultFilter);*/
 
  /*let newArr2 = datapokes.filter(pokemon => pokemon.type.includes("Water"));
