@@ -1,12 +1,15 @@
+//let POKEMON = POKEMON;
+let dataPokemon = POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
+const searchCoincidence = document.getElementById('search-coincidences');
 
 const printPokemon = (nombre, imagen) => {
   let nombrePokemon = `<div class="divPokemon"><img src="${imagen}"><br>${nombre}</div>`;
   pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
 
-const allData = window.showAllData();
-const dataByType = window.filterByType('Poison');
+const allData = window.showAllData(dataPokemon);
+
 //console.log(dataByType);
 const showList = (pokemonList) => {
   pokemones.innerHTML="";
@@ -21,7 +24,7 @@ const showList = (pokemonList) => {
 const buttonsCollection = document.getElementsByClassName("typesPokemon");
 const buttonsArray = Array.from(buttonsCollection)
 
-console.log(buttonsArray)
+//console.log(buttonsArray)
 
 // Función que genere el tipo de Pokemon de acuerdo al click del botón que seleccionó el usuario
 const getTypePokemon = (arrayButtons) => {
@@ -31,15 +34,26 @@ const getTypePokemon = (arrayButtons) => {
           //console.log(event.target.name);
           //console.log(window.filterByType(event.target.name));
           // Invocar una función que pinte Pokemon
-          showList(window.filterByType(event.target.name));
+          showList(window.filterByType(dataPokemon,event.target.name));
         })
       })
 }
 
 getTypePokemon(buttonsArray)
 
-// INvoco una función que cuando le ponga un tipo de Pokemon me retorne un arreglo de Pokemons filtrados por ese tipo.
-// window.filterByType(getTypePokemon())
+// filterCoincidence obtiene las coincidencias letra por letra
+
+const filterCoincidence = () => {
+  searchCoincidence.addEventListener('keyup', () => {
+    let searchValue = document.getElementById('search-coincidences').value;
+    console.log(searchValue);
+    showList(window.filterByLetter(dataPokemon,searchValue));
+  });
+}
+
+//funcion para ordenar la dataByType
+
+
 
 
 //esta parte obtiene la ubicacion de la pagina y dependiendo de ésta ejecuta las funciones
@@ -51,6 +65,13 @@ if (ubication.includes('index.html')) {
 else if (ubication.includes('typePokemon.html')) {
  // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
   //showList(allData);
+  filterCoincidence();
+
+}else if (ubication.includes('orderPokemon.html')) {
+  const orderNameRadio = document.getElementById('asc-name');
+  orderNameRadio.addEventListener('click',()=>{
+    showList(window.sortData(dataPokemon,'name','asc'));
+  });
 
 }
 
