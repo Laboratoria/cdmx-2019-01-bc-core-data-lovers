@@ -23,7 +23,17 @@ pokeballButton.addEventListener('click',()=> {
 
 const print=(toPrint) => {
    toPrint.forEach(element => {
-    let result = `<div class=fua><img src="${element.img}">  <p>${element.name}</p> <p>Tipo: ${element.type}</p></div>`
+    let result = `<div class="wrapper">
+    <div class="pokemon-cart"> <!--body-->
+      <div class="pokemon-cart-image">
+        <img src="${element.img}">
+      </div>
+      <div class="box-cart">
+        <p>Número:${element.num}</p>
+        <p>${element.name}</p>
+      </div>
+    </div>
+      </div>`
     printList.insertAdjacentHTML("beforeend",result);
    });
     return result;
