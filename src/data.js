@@ -48,7 +48,7 @@ console.log(levelOfInstruction)*/
 
 
 
-const dataMex = WORLDBANK.MEX.indicators;
+/*const dataMex = WORLDBANK.MEX.indicators;
   console.log(dataMex)
 
 const dataEducacion = () => {
@@ -57,7 +57,7 @@ const dataEducation = dataMex.forEach (element => {
   let indicatorName = element.indicatorName;
   console.log("indicatorName")
  });  
-}
+}*/
 
 
 
@@ -105,3 +105,12 @@ dataEducacion.forEach (element => {
   let indicadorName = element.indicatorName;
   print(indicadorName)
 });*/
+
+window.dataBase = {
+  dataFunction : (data) => {
+    console.log(data.MEX.indicatorSource);
+    
+
+  }
+
+}
