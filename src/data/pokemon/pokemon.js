@@ -3,7 +3,7 @@ var POKEMON = {
     "id": 1,
     "num": "001",
     "name": "Bulbasaur",
-    "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
+    "img": "https://orig00.deviantart.net/8984/f/2014/081/6/b/bulbasaur_2_by_gloomymyth-d7b5myd.gif",
     "type": [
       "Grass",
       "Poison"
@@ -34,7 +34,7 @@ var POKEMON = {
     "id": 2,
     "num": "002",
     "name": "Ivysaur",
-    "img": "http://www.serebii.net/pokemongo/pokemon/002.png",
+    "img": "https://vignette.wikia.nocookie.net/pokesprites/images/2/2e/Ivysaur_XY_Attack_2.gif/revision/latest?cb=20140212131214",
     "type": [
       "Grass",
       "Poison"
@@ -69,7 +69,7 @@ var POKEMON = {
     "id": 3,
     "num": "003",
     "name": "Venusaur",
-    "img": "http://www.serebii.net/pokemongo/pokemon/003.png",
+    "img": "https://media.redadn.es/smilies/pkg/003M.gif",
     "type": [
       "Grass",
       "Poison"
@@ -99,7 +99,7 @@ var POKEMON = {
     "id": 4,
     "num": "004",
     "name": "Charmander",
-    "img": "http://www.serebii.net/pokemongo/pokemon/004.png",
+    "img": "http://66.media.tumblr.com/47da3979705788ae2b5bb057a1c69892/tumblr_mx8x86CRQK1qm4353o2_250.gif",
     "type": [
       "Fire"
     ],
@@ -128,7 +128,7 @@ var POKEMON = {
     "id": 5,
     "num": "005",
     "name": "Charmeleon",
-    "img": "http://www.serebii.net/pokemongo/pokemon/005.png",
+    "img": "https://orig00.deviantart.net/c4b7/f/2014/081/0/e/charmeleon_3_by_gloomymyth-d7b5ppb.gif",
     "type": [
       "Fire"
     ],
@@ -158,7 +158,7 @@ var POKEMON = {
     "id": 6,
     "num": "006",
     "name": "Charizard",
-    "img": "http://www.serebii.net/pokemongo/pokemon/006.png",
+    "img": "https://vignette.wikia.nocookie.net/pokemon-adventure-challenge/images/f/f6/Charizard.gif/revision/latest?cb=20140308174128",
     "type": [
       "Fire",
       "Flying"
@@ -187,7 +187,7 @@ var POKEMON = {
     "id": 7,
     "num": "007",
     "name": "Squirtle",
-    "img": "http://www.serebii.net/pokemongo/pokemon/007.png",
+    "img": "https://media.giphy.com/media/b9jywFA3cuBXO/200.gif",
     "type": [
       "Water"
     ],
@@ -215,7 +215,7 @@ var POKEMON = {
     "id": 8,
     "num": "008",
     "name": "Wartortle",
-    "img": "http://www.serebii.net/pokemongo/pokemon/008.png",
+    "img": "https://vignette.wikia.nocookie.net/pokpiruleta/images/a/a0/Wartortle_XY.gif/revision/latest?cb=20140624162904&path-prefix=es",
     "type": [
       "Water"
     ],
@@ -244,7 +244,7 @@ var POKEMON = {
     "id": 9,
     "num": "009",
     "name": "Blastoise",
-    "img": "http://www.serebii.net/pokemongo/pokemon/009.png",
+    "img": "https://vignette.wikia.nocookie.net/pokemon-adventure-challenge/images/4/4a/Blastoise.gif/revision/latest?cb=20140308181128",
     "type": [
       "Water"
     ],
@@ -271,7 +271,7 @@ var POKEMON = {
     "id": 10,
     "num": "010",
     "name": "Caterpie",
-    "img": "http://www.serebii.net/pokemongo/pokemon/010.png",
+    "img": "https://vignette.wikia.nocookie.net/pokeminds/images/d/df/Caterpie_XY.gif/revision/latest?cb=20140103011300&path-prefix=es",
     "type": [
       "Bug"
     ],
@@ -300,7 +300,7 @@ var POKEMON = {
     "id": 11,
     "num": "011",
     "name": "Metapod",
-    "img": "http://www.serebii.net/pokemongo/pokemon/011.png",
+    "img": "http://rs77.pbsrc.com/albums/j61/Black_kitsune_Rioku/Pokemon%20Platinum%20Animated%20Sprites/Metapodplatinum.gif~c200",
     "type": [
       "Bug"
     ],
@@ -333,7 +333,7 @@ var POKEMON = {
     "id": 12,
     "num": "012",
     "name": "Butterfree",
-    "img": "http://www.serebii.net/pokemongo/pokemon/012.png",
+    "img": "https://vignette.wikia.nocookie.net/pokemon-adventure-challenge/images/2/26/Butterfree.gif/revision/latest?cb=20140309005135",
     "type": [
       "Bug",
       "Flying"
@@ -364,7 +364,7 @@ var POKEMON = {
     "id": 13,
     "num": "013",
     "name": "Weedle",
-    "img": "http://www.serebii.net/pokemongo/pokemon/013.png",
+    "img": "https://vignette.wikia.nocookie.net/roblox-pokemon-adventures/images/a/a6/Weedle-2.gif/revision/latest?cb=20171231055311&path-prefix=pt-br",
     "type": [
       "Bug",
       "Poison"
@@ -398,7 +398,7 @@ var POKEMON = {
     "id": 14,
     "num": "014",
     "name": "Kakuna",
-    "img": "http://www.serebii.net/pokemongo/pokemon/014.png",
+    "img": "https://vignette.wikia.nocookie.net/pokeminds/images/5/55/Kakuna_XY.gif/revision/latest?cb=20140103174525&path-prefix=es",
     "type": [
       "Bug",
       "Poison"
@@ -433,7 +433,7 @@ var POKEMON = {
     "id": 15,
     "num": "015",
     "name": "Beedrill",
-    "img": "http://www.serebii.net/pokemongo/pokemon/015.png",
+    "img": "https://66.media.tumblr.com/2d04eb6ba4f9c2c0957a4070f8181835/tumblr_inline_pk22eglgKA1swxvdg_100.gif",
     "type": [
       "Bug",
       "Poison"
@@ -525,7 +525,7 @@ var POKEMON = {
     "id": 18,
     "num": "018",
     "name": "Pidgeot",
-    "img": "http://www.serebii.net/pokemongo/pokemon/018.png",
+    "img": "https://projectpokemon.org/images/normal-sprite/pidgeot.gif",
     "type": [
       "Normal",
       "Flying"
@@ -553,7 +553,7 @@ var POKEMON = {
     "id": 19,
     "num": "019",
     "name": "Rattata",
-    "img": "http://www.serebii.net/pokemongo/pokemon/019.png",
+    "img": "http://rs248.pbsrc.com/albums/gg199/alex061095/Pokemon%20Sprites/rattata.gif~c200",
     "type": [
       "Normal"
     ],
@@ -580,7 +580,7 @@ var POKEMON = {
     "id": 20,
     "num": "020",
     "name": "Raticate",
-    "img": "http://www.serebii.net/pokemongo/pokemon/020.png",
+    "img": "https://www.pkparaiso.com/imagenes/sol-luna/sprites/animados-shiny/raticate-alola.gif",
     "type": [
       "Normal"
     ],
@@ -632,7 +632,7 @@ var POKEMON = {
     "id": 22,
     "num": "022",
     "name": "Fearow",
-    "img": "http://www.serebii.net/pokemongo/pokemon/022.png",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/e/e2/latest/20140111112720/Fearow_XY.gif",
     "type": [
       "Normal",
       "Flying"
@@ -657,7 +657,7 @@ var POKEMON = {
     "id": 23,
     "num": "023",
     "name": "Ekans",
-    "img": "http://www.serebii.net/pokemongo/pokemon/023.png",
+    "img": "http://jeusking.weebly.com/uploads/7/6/4/1/76417551/ekans-tounge-flick-animation4792830047-iaza_1.gif",
     "type": [
       "Poison"
     ],
@@ -685,7 +685,7 @@ var POKEMON = {
     "id": 24,
     "num": "024",
     "name": "Arbok",
-    "img": "http://www.serebii.net/pokemongo/pokemon/024.png",
+    "img": "https://vignette.wikia.nocookie.net/pokevocaloid/images/a/a6/Arbok_NB.gif/revision/latest?cb=20130722053544&path-prefix=es",
     "type": [
       "Poison"
     ],
@@ -709,7 +709,7 @@ var POKEMON = {
     "id": 25,
     "num": "025",
     "name": "Pikachu",
-    "img": "http://www.serebii.net/pokemongo/pokemon/025.png",
+    "img": "https://files.pokefans.net/sprites/xy/animationen/pikachu-4.gif",
     "type": [
       "Electric"
     ],
@@ -733,7 +733,7 @@ var POKEMON = {
     "id": 26,
     "num": "026",
     "name": "Raichu",
-    "img": "http://www.serebii.net/pokemongo/pokemon/026.png",
+    "img": "https://vignette.wikia.nocookie.net/pokemon-adventure-challenge/images/5/51/Raichu.gif/revision/latest?cb=20140308172624",
     "type": [
       "Electric"
     ],
@@ -782,7 +782,7 @@ var POKEMON = {
     "id": 28,
     "num": "028",
     "name": "Sandslash",
-    "img": "http://www.serebii.net/pokemongo/pokemon/028.png",
+    "img": "http://rs344.pbsrc.com/albums/p343/gotta_catch_em_all/Original%20151/028.gif~c200",
     "type": [
       "Ground"
     ],
