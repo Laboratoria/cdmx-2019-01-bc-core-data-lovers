@@ -1,8 +1,7 @@
 //Declarando las variables que enlazan los elementos HTML mediante el DOM
 const start = document.getElementById('start');
 const championList = document.getElementById('champion-list');
-const imprimirLista = document.getElementById('imprimir-lista');
-const sq = document.getElementById('sq');
+const cardSummary = document.getElementById('card-summary');
 const rol = document.getElementsByClassName('rol');
 //Declarando las variables que enlazan los botones del HTML mediante el DOM
 const startButton = document.getElementById('start-button');
@@ -13,21 +12,32 @@ const arrayData = Object.values(lolData);
 startButton.addEventListener('click', () => {
   start.classList.add('hide');
   championList.classList.remove('hide');
-  const toPrint = window.lol.showData(lolData);
+  const arr = window.lol.showData(lolData);
+  print(arr);
 });
 
 //Función para imprimir la data en el HTML
-const print = (img, name, tags, tags2) => {
-  let result = `<div class="champion"> <img src="${img}">
-  <h3> ${name} </h3> <div class="tags"> <p> ${tags} </p> <p> ${tags2} </p> </div></div>`;
-  sq.insertAdjacentHTML("beforeend", result);
+const print = (arr) => {
+  console.log(arr)
+  arr.forEach(champ => {
+    let result = `<div class="champion"> <img src="${champ.img}">
+    <h3> ${champ.name} </h3> <div class="tags"> <p> ${champ.primaryRol} </p> <p> ${champ.secondaryRol} </p> </div></div>`;
+    cardSummary.insertAdjacentHTML("beforeend", result);
+  })
 }
 
-const toPrint = window.lol.searchData(rol, arrayData);
 
+const selectRol = () => {
+  for (let i = 0; i < rol.length; i++) {
+    rol[i].addEventListener("click", () => {
+      let rolId = rol[i].id;
+      console.log(rolId);
+    })
+  }
+}
+selectRol();
 
-
-
+const toPrint = window.lol.filterByRol(rol, arrayData);
 
 /*
 tank.addEventListener('click', () => {

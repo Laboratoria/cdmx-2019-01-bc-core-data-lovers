@@ -1,23 +1,26 @@
 window.lol = {
+  //Funcion que recorre un objeto que contiene 4 indicadores y se convierte en un arreglo
   showData: (lolData) => {
+    let arr = [];
     for (const key in lolData) {
       if (lolData.hasOwnProperty(key)) {
         const element = lolData[key];
-        let img = element.splash;
-        let name = element.name;
-        let tags = element.tags;
-        let tags2 = element.tags;
-        if (typeof tags2[1] == "undefined") {
-          tags2[1] = "";
+        obj = {
+          img: element.splash,
+          name: element.name,
+          primaryRol: element.tags[0],
+          secondaryRol: element.tags[1]
         }
-        print(img, name, tags[0], tags2[1]);
+        if (!element.tags[1]){
+          obj.secondaryRol = "";
+        }
       }
+      arr.push(obj)
     }
+    return arr
   },
-  searchData: (rol, arrayData) => {
-    for (let i = 0; i < rol.length; i++) {
-      rol[i].addEventListener("click", () => {
-        let rolId = rol[i].id;
+
+  filterByRol: (rolId, arrayData) => {
 
         let newArray = [];
         arrayData.forEach(element => {
@@ -34,12 +37,10 @@ window.lol = {
             print(img, name, tags, tags2);
           }
         });
-      })
-    }
-  }
+      }
+
   //esta llave cierra window.lol
 }
-
 
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
