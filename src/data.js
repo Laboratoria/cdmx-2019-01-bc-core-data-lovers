@@ -68,6 +68,20 @@ window.printPokemon = {
     filterPokemonByType: (dataPokemon)=>{
       dataPokemon.filter(pokemon => pokemon.type)
     },
+
+    sortByHeight: (arrayPokemonData) => {
+      const pokemonSortedData = arrayPokemonData.sort((a, b) =>{
+        if (a.height > b.height) {
+          return 1
+        };
+        if (a.height < b.height) {
+          return -1
+        } else {
+          return 0;
+        }
+      })
+      return pokemonSortedData;
+    }
   
 }
  
