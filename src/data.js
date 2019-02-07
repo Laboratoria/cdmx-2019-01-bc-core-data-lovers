@@ -1,20 +1,14 @@
 window.data = {
+  
+  consult: (yearValue, userValue) => {
+const injuriesby = INJURIES;
+    //traer data de injuries del año
+  //  console.log(injuriesby[1].Year);
 
-  consultYear: (yearValue, userValue) => {
-    const injuriesby = INJURIES;
-    let found = injuriesby.find(element => element.Year == yearValue)
-    console.log(found)
-    
-      //injuriesby.forEach(element => {
-      //console.log(Object.keys(element))
-      //let year = element.Year;
-      //let total = element.Total_Injured_Persons;
-      //let moto = element.Total_Injured_Persons_Motorcyclists;
-      //let bike = element.Total_Injured_Persons_Pedalcyclists;
-      //let walk = element.Total_Injured_Persons_Pedestrians;
-      //let transit = element.Total_Injured_Persons_Transit_Total;
+    let found = injuriesby.find(element => element.Year === yearValue);
+let result = found.Total_Injured_Persons;
+console.log(result);
 
-      //ConsoleLog si muestra todos los elementos console.log(total)
-    }
+  }
+};
 
-  };

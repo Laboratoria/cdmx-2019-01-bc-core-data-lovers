@@ -45,27 +45,31 @@
       <h2 id="knowMore"> CONOCE MÁS </h2>
       <img src="images/peaton.png" alt="PuntoMuerto" class="image">
       <form class="select">
-        <select id="yearbttn" name="year">
+        <select id="yearbttn" name="year" class = "year">
           <option selected value="0"> AÑO </option>
-          <option value="2001-01-04">2001</option>
-          <option value="2002-01-04">2002</option>
-          <option value="2003-01-04">2003</option>
-          <option value="2004-01-04">2004</option>
+          <option class="year" value="2001-01-04">2001</option>
+          <option class="year" value="2002-01-04">2002</option>
+          <option class="year" value="2003-01-04">2003</option>
+          <option class="year" value="2004-01-04">2004</option>
         </select>
         <select id="user" name="user">
           <option selected value="0"> USUARIO </option>
+          
           <option value="Total_Injured_Persons_Motorcyclists">Motociclista</option>
           <option value="Total_Injured_Persons_Pedestrians">Peaton</option>
           <option value="Total_Injured_Persons_Pedalcyclists">Ciclista</option>
           <option value="Total_Injured_Persons_Transit_Total">Conductor</option>
           <option value="todos">TODOS</option>
+
         </select>
         <input id="search" type="button" value="CONSULTA">
       </form>
     </section>
-  
+
   <section id="result" class="result">
 </section>
+
+    <section id="result" class="result">
 
     <section class="photos">
       <img src="images/cros.png" alt="PuntoMuerto" class="image">
@@ -87,7 +91,7 @@
   </div>
 
   <script src="./data/injuries/injuries.js"></script>
-  
+
   <script src="main.js"></script>
   <script src="data.js"></script>
 </body>
