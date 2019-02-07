@@ -1,5 +1,5 @@
 window.data = {
-
+  
   consult: (yearValue, userValue) => {
 const injuriesby = INJURIES;
     //traer data de injuries del año
@@ -11,3 +11,4 @@ console.log(result);
 
   }
 };
+
