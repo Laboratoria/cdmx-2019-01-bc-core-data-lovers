@@ -8,7 +8,7 @@ img{
 
 
 #btnPokemon{
-    width: 25%;
+    width: 24%;
 }
 
 #pokemones { 
@@ -19,28 +19,11 @@ img{
 }
 
 .divPokemon{
-    position: relative;
-    z-index: 5;
-    border: 1px solid  gray;
+    text-align: center;
+    margin: 1.5px;
     border-radius: 10px;
     color: white;   
-     /*Cambie el tamaño del div solo para mejor visualizacion,pero si no te acomoda vuelvelo a reconfigurar*/
     }
-
-.divPokemon::before{
-    margin: 10px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: gray;
-    opacity: 0.3;
-}
 
 .details{
     color: black;
@@ -48,6 +31,8 @@ img{
 }
 
 .name{
+    border-radius: 25px;
+    background-color: rgba(27, 27, 27, 0.9);
     font-size: 2em;
 }
 
@@ -87,51 +72,70 @@ img{
     width:35%;
 }
 
+
+/*Aqui comienzan los fondos de los tipos de pokemones*/
 .Water{
     background-color: rgba(0, 139, 253, 0.4);
+    border: 10px solid rgba(0, 63, 114, 0.986);
 }
 
 .Fire{
     background-color: rgba(245, 0, 0, 0.4);
+    border: 10px solid rgb(133, 0, 0);
 }
 
 .Grass{
     background-color: rgba(0, 248, 0, 0.4);
+    border: 10px solid rgb(0, 71, 0);
 }
 
 .Bug{
     background-color: rgba(145, 255, 0, 0.4);
+    border: 10px solid rgb(63, 110, 1);
 }
 
 .Normal{
     background-color: rgba(151, 124, 1, 0.4);
+    border: 10px solid rgb(87, 71, 1);
 }
 
 .Poison{
     background-color: rgba(57, 0, 148, 0.6);
+    border: 10px solid rgb(42, 0, 109);
 }
 
 .Electric{
     background-color: rgba(255, 255, 0, 0.7);
+    border: 10px solid rgb(224, 224, 2);
 }
 
 .Ground{
     background-color: rgba(219, 106, 0, 0.4);
+    border: 10px solid rgb(145, 70, 0);
 }
 
 .Fighting{
-    background: -webkit-linear-gradient(left, rgba(98,125,77,0.4) 0%, rgba(31,59,8,0.4  ) 100%);
+    background: -webkit-linear-gradient(left, rgba(98,125,77,0.4) 0%, rgba(31,59,8,0.4) 100%);
+    border-top: 10px solid rgba(35, 53, 21, 0.822);
+    border-right: 10px solid rgba(35, 53, 21, 0.822);
+    border-bottom: 10px solid rgb(52, 71, 36);
+    border-left: 10px solid rgb(52, 71, 36);
+    border: 10px solid -webkit-linear-gradient(left, rgb(72, 94, 56) 0%, rgb(36, 68, 10) 100%);
 }
 
 .Psychic{
     background: -webkit-linear-gradient(left, rgba(52,91,247,0.5) 0%, rgba(52,91,247,0.53) 18%, rgba(145,26,204,0.55) 30%, rgba(245,12,152,0.59) 55%, rgba(117,24,240,0.63) 77%, rgba(85,0,130,0.65) 91%, rgba(85,0,130,0.67) 100%);
+    border-top: 10px solid rgb(63, 1, 97);
+    border-right: 10px solid rgb(63, 1, 97);
+    border-bottom: 10px solid rgb(31, 52, 136);
+    border-left: 10px solid rgb(31, 52, 136);
 }
 
 .Rock{
     background-color: rgba(94, 94, 94, 0.4);
+    border: 10px solid rgb(53, 53, 53);
 }
 
 .Ghost{
-    background: -webkit-linear-gradient(left, rgba(79,73,237,0.59) 0%, rgba(0,8,158,0.63) 46%, rgba(3,2,51,0.66) 74%, rgba(3,2,51,0.67) 84%, rgba(3,2,51,0.83) 100%);
+    background: -webkit-linear-gradient(left, rgba(6,0,179,0.59) 0%, rgba(0,8,158,0.63) 46%, rgba(3,2,51,0.66) 74%, rgba(3,2,51,0.67) 84%, rgba(3,2,51,0.83) 100%);
 }
-
