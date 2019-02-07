@@ -82,3 +82,43 @@ for(let i= 0; i<rol.length;i++){
 
 //     }
 // };
+
+
+// Cuando yo le de click al botón con ID de Tank,
+// obtener el nombre del rol
+// obtener el arreglo completo
+// Los inserto en filtroDataRoles para obtener el arreglo filtrado y lo asigno en una variable
+// Con un map recorro el arreglo de objetos y en cada uno voy sacando las características
+// y voy pintando
+
+
+const tankMike = document.getElementById("TankMike")
+
+tankMike.addEventListener("click", () =>{
+    const roleName = event.target.name;
+    const fullArray = arrayData;
+    const mikeSection = document.getElementById("mike");
+    const arrayRolesFiltered = window.lol.filtroDataRoles(roleName,arrayData);
+
+    mikeSection.innerHTML = "";
+
+    arrayRolesFiltered.map((character) =>{
+        mikeSection.innerHTML += `
+            <div>${character.name}</div>
+        `
+    })
+})
+
+/*
+arrayFiltered.map((character) => {
+    // Identifique donde ponerlo
+    const mike = document.getElementById("mike");
+    // Lo pinte
+    mike.innerHTML += `
+    <div>
+        <h1>${character.name}</h1>
+    </div>
+    `
+
+})
+*/
