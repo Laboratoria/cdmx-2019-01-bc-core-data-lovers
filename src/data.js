@@ -8,7 +8,7 @@ const injuriesby = INJURIES;
 //Te va a regresar el objeto del año que ingreso el usuario
     let yearFound = injuriesby.find(element => element.Year === yearValue);
 
-let result = yearfound.filter(Total_Injured_Persons;
+let result = yearfound.filter(Total_Injured_Persons);
 console.log(result);
 
   }
