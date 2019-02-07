@@ -23,13 +23,13 @@ const rol = document.getElementsByClassName('rol');
       //console.log(nuevoArreglo)
     })}*/
 
-    for( let i= 0; i<rol.length;i++){
-        rol[i].addEventListener("click",() => {
-          let rolId = rol[i].id;
-          const arrayData = Object.values(datalol);
-         filtrado = arrayData.filter(element => element.tags[0] === rolId);
-console.log(filtrado)
-    })};
+//     for( let i= 0; i<rol.length;i++){
+//         rol[i].addEventListener("click",() => {
+//           let rolId = rol[i].id;
+//           const arrayData = Object.values(datalol);
+//          filtrado = arrayData.filter(element => element.tags[0] === rolId);
+// console.log(filtrado)
+//     })};
 
 
 /*trae el div imprimir roles para identificarlo e imprimir*/
@@ -41,22 +41,43 @@ mostrar.addEventListener("click",() =>{
     menu.classList.toggle("mostrar");
 });
 
+
 /*esta función imprimir los tags de los personales*/
 //let tags = "";
-const print =(name,imga,title) =>{
-    let result = `<div class="cuadro"><img class="imagen" src="${imga}"> <div id="subtitulo"><h1 id="nombre">${name}</h1> <h2 id"titulo"> ${title}</h2></div></div>`; 
-    imprimirRoles.insertAdjacentHTML("beforeend",result);
+const print =(result) =>{
+    result.forEach(champ => {
+let pintar = `<div class="cuadro"><img class="imagen" src="${champ.imga}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`; 
+imprimirRoles.insertAdjacentHTML("beforeend", pintar);
+ });
+    // let result = `<div class="cuadro"><img class="imagen" src="${imga}"> <div id="subtitulo"><h1 id="nombre">${name}</h1> <h2 id"titulo"> ${title}</h2></div></div>`; 
+    // imprimirRoles.insertAdjacentHTML("beforeend",result);
 }
 
-for (const key in datalol) {
-    if (datalol.hasOwnProperty(key)) {
-      const element = datalol[key];
-      let name = element.name;
-      let tag = element.tags[0];
-      let imga = element.img;
-      let title = element.title;
-      let dato = [`${name}, ${tag}`]
-      print(name,imga,title);
+for(let i= 0; i<rol.length;i++){
+    rol[i].addEventListener("click",() => {
+      let rolId = rol[i].id;
+      const arrayData = Object.values(datalol)
+      window.lol.filtroDataRoles(rolId, arrayData)
+ 
+    })
+}
 
-    }
-};
+
+
+
+const result = window.lol.mostrardata(datalol)
+// console.log(result)
+print(result)
+
+// for (const key in datalol) {
+//     if (datalol.hasOwnProperty(key)) {
+//       const element = datalol[key];
+//       let name = element.name;
+//       let tag = element.tags[0];
+//       let imga = element.img;
+//       let title = element.title;
+//       let dato = [`${name}, ${tag}`]
+//       print(name,imga,title);
+
+//     }
+// };
