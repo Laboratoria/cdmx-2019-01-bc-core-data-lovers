@@ -1,3 +1,6 @@
+@import "https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins|Robot";
+@import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
+
 /************body*********/
 body {
   background: url("images/usa.png") no-repeat center top;
@@ -20,6 +23,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   color: #FFAD09;
   font-size: 400%;
+  text-align: center;
 }
 
 h2 {
@@ -29,8 +33,10 @@ h2 {
 }
 
 p {
-  display: inline-block;
+  font-family: 'Lato',sans-serif;
+  display: inline;
   color: #112659;
+  margin-right: 100px;
 }
 
 /************** menu ********/
@@ -67,7 +73,7 @@ p {
   list-style: none;
 }
 
-/**************** div ***********************/
+/**************** div  ***********************/
 
 .realB {
   display: block;
@@ -75,18 +81,39 @@ p {
   width: 90%;
 }
 
-.overBody {
-  display: block;
+.infoBody {
+  /* display: block; */
   margin-left: auto;
   width: 90%;
-  background: #037393;
-  text-align: center;
-  opacity: 0.5;
+  background-color: #037393;
+
 }
 
 #tableStructure {
   display: inline;
   margin-right: 10px;
+}
+
+#show,#hide {
+	display:none;
+}
+
+div#content {
+	display: block;
+
+}
+
+button#show:checked ~ div#content {
+	display:block;
+}
+
+button#hide:checked ~ div#content {
+	display:none;
+}
+
+#dataTable{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
 /********** iconos*****/
@@ -95,7 +122,7 @@ p {
   width: 120px;
   height: 120px;
   padding: 10px 16px;
-  font-size: 3em;
+  font-size: 2em;
   border-radius: 70px;
   border-width: 10px;
   background-color: transparent;
@@ -125,7 +152,7 @@ p {
 .motorcyclists_info, .pedestrians_info, .pedalcyclists_info, .busoccupants_info, .caroccupants_info {
   color: #fff;
   opacity: 0.8;
-  text-align: center;
+  text-align: left;
   height: 100vh;
   width: 20%;
   left: 80pxs;
@@ -133,7 +160,10 @@ p {
   padding-right: 20px;
   padding-top: 85px;
   position: absolute;
+  margin-top: 0;
 }
+
+/**************************************************/
 
 @media only screen  (max-width : 320px) {  
   .side_menu {
