@@ -13,17 +13,10 @@
       </div>
 
       <!--MENU-->
-     <div class="menu-mobile">
-         <div>
-           <span class="blanco"></span>
-         </div>
-         <form>
-          <div>
-            <input type="search" id="miBusqueda" name="q">
-            <button>Buscar</button>
-          </div>
-        </form>
-<p></p>
+      <div class="menu-mobile">
+        <div>
+          <span class="blanco"></span>
+        </div>
          <a href="#" id="menu">
            <i class="icon">MENÚ</i>
          </a>
@@ -39,14 +32,17 @@
        </nav>
     </header>
 
-    <section id="principal">
+    <section id="filter-section">
+      <p>Ordenar pokemones por nombre</p>
+      <input id="asc-name" type="radio" name="order-name">
+      <label for="asc-name">A-Z</label>
+      <input id="desc-name" type="radio" name="order-name">
+      <label for="desc-name">Z-A</label>
+    </section>
+    <section id="pokemones">
 
     </section>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
