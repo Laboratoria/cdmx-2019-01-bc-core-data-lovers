@@ -1,12 +1,7 @@
 require('../src/data.js');
 
 
-describe('buscar', () => {
+describe('filterData', () => {
   it('is a function', () => {
-    expect(typeof buscar).toBe('function');
-  });
-
-  it('returns `buscar`', () => {
-    expect(buscar()).toBe('buscar');
-  });
-});
+    expect(typeof filterData).toBe('function');
+  )};

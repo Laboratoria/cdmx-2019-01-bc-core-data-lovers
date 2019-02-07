@@ -9,8 +9,8 @@
 
    * {
     box-sizing: border-box;
-    background:black;
-    color:white;
+    color:black;
+    max-width: 100%;
    }
 
    h1{
@@ -30,7 +30,7 @@
      margin-left:0;
      width: 100% border #FF33C7 solid;
      font-family: 'Staatliches', cursive;
-     font-size: 100px;
+     font-size: 90px;
    }
    to {
      margin-left: 0%;
@@ -43,6 +43,7 @@
     margin: 1px 1px;
    border-radius: 5px;
    background: black;
+   max-width: 100%;
    }
    
     body{
@@ -54,11 +55,10 @@
 
 p{
     font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     max-width: 100%;        
-    height: auto; 
-    margin:0 auto; 
-    
+    height: auto;  
+    margin: 5px 5px;
   }
   
 
@@ -73,13 +73,17 @@ p{
     width: 90%;
 }
 ::placeholder{
-    font-size: 27px;
+    font-size: 20px;
 }
 #result {
   font-size: 20px;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
-
+.grid-images {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill, minmax(192px, 1fr) ) ;
+}
 
    
   
