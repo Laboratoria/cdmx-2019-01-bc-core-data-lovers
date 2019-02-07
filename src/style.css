@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Coiny|Libre+Barcode+128+Text|Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
@@ -5,9 +6,11 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Chewy');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
+
    * {
-        box-sizing: border-box;
-    
+    box-sizing: border-box;
+    background:black;
+    color:white;
    }
 
    h1{
@@ -35,31 +38,26 @@
    }
  
    }
-    h2{
-        background:red;  
-        color:white;  
-    }
+   button{
+    border-color:white;
+    margin: 1px 1px;
+   border-radius: 5px;
+   background: black;
+   }
+   
     body{
-        margin:0px;
-        padding: 0px;
+       
         background-position: center;
         text-align: center;   
     }
-    #filter{
-        border: solid #ccc;
-      
-}
+   
 
 p{
     font-family: 'Ubuntu Condensed', sans-serif;
-    
     font-size: 15px;
-    
     max-width: 100%;        
     height: auto; 
     margin:0 auto; 
-    border: 1px solid #ccc;
-    
     
   }
   
@@ -82,18 +80,6 @@ p{
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
- 
- @keyframes slidein {
-   from {
-     margin-left: 100%;
-     width: 300% border #FF33C7 20px solid;
-     font-family: 'Staatliches', cursive;
-     font-size: 100px;
-   }
-   to {
-     
-     width: 100%;
-   }
 
    
   
