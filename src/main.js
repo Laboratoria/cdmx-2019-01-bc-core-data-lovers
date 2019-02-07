@@ -136,7 +136,7 @@ pokemonsTall.forEach(element => {
 
 
 checkboxHeightAscending.addEventListener("click", () =>{
-const pokemonsSortHeight=pokemonData.sort((a,b)=>{
+/*const pokemonsSortHeight=pokemonData.sort((a,b)=>{
   if(a.height>b.height){
     return 1
   }
@@ -146,8 +146,9 @@ const pokemonsSortHeight=pokemonData.sort((a,b)=>{
   else{
     return 0
   }
-})
-  pokemonsSortHeight.forEach(element => {
+})*/
+const pokemonSortHeight=window.printPokemon.sortByHeight(pokemonData);
+  pokemonSortHeight.forEach(element => {
     let name = element.name;
     let img = element.img;
     let sortHeight = element.height;
@@ -157,7 +158,7 @@ const pokemonsSortHeight=pokemonData.sort((a,b)=>{
 
 checkboxWeightAscending.addEventListener("click", () => {
   const pokemonsSortWeight = pokemonData.sort((a, b) =>{
-    if ((parseInt(a.weight)) > (parseInt(b.weight))) {
+   if ((parseInt(a.weight)) > (parseInt(b.weight))) {
       return 1
     };
     if ((parseInt(a.weight)) < (parseInt(b.weight))) {
@@ -166,6 +167,7 @@ checkboxWeightAscending.addEventListener("click", () => {
       return 0;
     }
   })
+  
   pokemonsSortWeight.forEach(element => {
     let nameSortByWeight = element.name;
     let img = element.img;
