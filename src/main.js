@@ -15,6 +15,6 @@ const dataLiteracy = document.getElementById("dataLiteracy");*/
     dataLiteracy = document.write("Los datos son:");
 }*/
 
-
+database.dataFunction(WORLDBANK);
 
 

@@ -106,9 +106,10 @@ dataEducacion.forEach (element => {
   print(indicadorName)
 });*/
 
-window.dataBase = {
+window.database = {
   dataFunction : (data) => {
-    console.log(data.MEX.indicatorSource);
+    let datai = data.MEX.indicators;
+    console.log (datai)
     
 
   }
