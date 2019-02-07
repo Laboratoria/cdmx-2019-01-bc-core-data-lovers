@@ -1,26 +1,13 @@
 window.data = {
 
-  consult: (yearbutton, userbutton) => {
-    const injuriesby = INJURIES;
+  consult: (yearValue, userValue) => {
+const injuriesby = INJURIES;
+    //traer data de injuries del año
+  //  console.log(injuriesby[1].Year);
 
-    injuriesby.forEach(element => {
-
-      let year = element.Year;
-      let total = element.Total_Injured_Persons;
-      let moto = element.Total_Injured_Persons_Motorcyclists;
-      let bike = element.Total_Injured_Persons_Pedalcyclists;
-      let walk = element.Total_Injured_Persons_Pedestrians;
-      let transit = element.Total_Injured_Persons_Transit_Total;
-      if (year === yearbutton) {};
-
-
-
-      //Le digo qué quiero que imprima. Deben ir en orden.
-      printpage(year, total, moto, bike, walk, transit)
-      //ConsoleLog si muestra todos los elementos console.log(total)
-    });
+    let found = injuriesby.find(element => element.Year === yearValue);
+let result = found.Total_Injured_Persons;
+console.log(result);
 
   }
-
-}
-
+};
