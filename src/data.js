@@ -1,18 +1,7 @@
-
-window.datapokes = datapokes;
-/*const example= () => {
-  return 'example';
-};
-window.example = example;*/
-filterData: (data,sortBy,sortOrder)=>{
-  return
-};
-
-
-const datapokes = POKEMON.pokemon;
-
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
+
+//esto a esta funcionando
 window.data={ //cambia
 
 //funcion de filtrar
@@ -69,11 +58,9 @@ datapokes.forEach(elemento => {
 
 
 /*
-
 const pokes = document.getElementById("probando");
 const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
-  let nombrePokemon = 
-  `<p> <img src="${imagen}">
+  let nombrePokemon = `<p> <img src="${imagen}">
   <br>Nombre:${nombre2}</br>
   <br> Su Id es :${id}</br>
   <br> Su candy es :${candy}</br>
