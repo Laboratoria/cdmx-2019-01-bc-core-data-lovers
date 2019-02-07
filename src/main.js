@@ -35,11 +35,12 @@ toReturn.addEventListener("click", () =>{
 
 //Di: Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
 const toPrint = (namePokemon,imagePokemon,typePokemon,weaknessesPokemon,candyPokemon,eggPokemon) =>{
-    let visualPokemon = `<button id="btnPokemon" class="divPokemon ${typePokemon[0]}"><p class="name ">${namePokemon}</p><br><img src="${imagePokemon}">
-    <br><p class="details">Type: ${typePokemon}</p></button>`;
+    let visualPokemon = `<button id="btnPokemon" class="divPokemon ${typePokemon[0]}"><img src="${imagePokemon}">
+    <br><br><br><p class="name">${namePokemon}</p><br>
+    </button>`;
     
     /*<p class="details"><br>Type: ${typePokemon}<br>Weaknesses: ${weaknessesPokemon}<br>
-    <p class="name">Candy: ${candyPokemon} </p><br> ${eggPokemon}</p>`;*/
+    <p class="name">Type: ${typePokemon} Candy: ${candyPokemon} </p><br> ${eggPokemon}</p>`;*/
     pokemones.insertAdjacentHTML("beforeend",visualPokemon);  
 };
 
@@ -61,7 +62,7 @@ const filterWater = dataPokemon.filter(pokemon => pokemon.type.includes("Water")
 
 const toPrintFilter = (namePokemon,imagePokemon,typePokemon) =>{
     let visualPokemonWater = `<button id="btnPokemon" class="divPokemon ${typePokemon[0]}">
-    <p class="name ">${namePokemon}</p><br><img src="${imagePokemon}">
+    <img src="${imagePokemon}"><br><br><br><p class="name ">${namePokemon}</p>
     </button>`;
     
     filtered_out.insertAdjacentHTML("beforeend",visualPokemonWater);    
