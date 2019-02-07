@@ -3,7 +3,6 @@
 
 
 <head>
-
   <meta charset="utf-8">
   <title>Pikapedia</title>
   <link rel="stylesheet" href="style.css" />
@@ -11,6 +10,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
     </header>
 
     <div> <button id="enterToPikapedia">ENTRAR</button></div>
-    <figure><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" id="detectivePikachu"></figure>
+    <figure class="probando"><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" id="detectivePikachu"></figure>
 
 
   </section>
@@ -32,7 +33,6 @@
   <section id="pageKanto" class="hide">
     <nav>
       <ol>
-
         <button id="btn1"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
         <button id="btn2"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
         <button id="buttonSearchPokemon"><i class="fas fa-search"></i> BUSCAR POKÉMON </button>
@@ -40,81 +40,58 @@
         <button id="buttonBack"><i class="fas fa-undo-alt"></i> VOLVER </button>
       </ol>
     </nav>
+
     <main class="welcomeMessage"><img src="https://fontmeme.com/permalink/190201/e3023a41d60c4c0dc0c6150069296ce1.png"></main>
 
     <article id="total-data" class="pokemones"></article>
   </section>
+  
   <!-- PÁGINA 3 -->
   <section id="filterPage" class="hide">
 
+      
+      <nav> 
+          <ol>
+            <button class = "Button" id="btn1"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
+            <button class = "Button" id="btn2"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
+            <button class = "Button" id="buttonSearchPokemon"><i class="fas fa-search"></i> BUSCAR POKÉMON </button>
+            <button class = "Button" id="filterButton"><i class="fas fa-filter"></i>FILTRAR POKÉMON </button>
+            <button class = "Button" id="buttonBackFilterPage"><i class="fas fa-undo-alt"></i> VOLVER </button>
+          </ol>
+       </nav>
+       <div class="checkbox">
+         <div> <i class="fas fa-align-left"></i></div>
+        <label><input type="checkbox" id="checkboxWeightLight" value="first_checkbox"> Filtrar Pokémon ligero </label><br>
+        <label><input type="checkbox" id="checkboxWeightHeavy" value="first_checkbox"> Filtrar Pokémon por Pesado</label><br>
+        <label><input type="checkbox" id="checkboxWeightAscending" value="first_checkbox"> Filtrar Pokémon por Peso de modo ascendete</label><br>
+        <label><input type="checkbox" id="checkboxWeightDescending" value="first_checkbox"> Filtrar Pokémon por Peso de modo descendiente </label><br>
+        <label><input type="checkbox" id="checkboxHeightSmall" value="first_checkbox"> Filtrar Pokémon Pequeño </label><br>
+        <label><input type="checkbox" id="checkboxHeightMedium" value="first_checkbox"> Filtrar Pokémon Medianos </label><br>
+        <label><input type="checkbox" id="checkboxHeightTall" value="first_checkbox"> Filtrar Pokémon Altos </label><br>
+        <label><input type="checkbox" id="checkboxHeightAscending" value="first_checkbox"> Filtrar Pokémon por Altura de modo ascendete</label><br>
+        <label><input type="checkbox" id="checkboxTypeFilter" value="first_checkbox"> Filtrar Pokémon por Tipo</label><br>
+         
 
 
-
-    <nav>
-      <ol>
-        <button id="btn1"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
-        <button id="btn2"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
-        <button id="buttonSearchPokemon"><i class="fas fa-search"></i> BUSCAR POKÉMON </button>
-        <button id="filterButton"><i class="fas fa-filter"></i>FILTRAR POKÉMON </button>
-        <button id="buttonBackFilterPage"><i class="fas fa-undo-alt"></i> VOLVER </button>
-      </ol>
-    </nav>
-
-    <div class="checkbox">
-      <label><input type="checkbox" id="checkboxWeightLight">FILTRAR POKÉMON LIGERO</label><br>
-      <input type="checkbox" id="checkboxWeightHeavy"> <label for="cbox2">FILTRAR POKÉMON PESADO</label> <br>
-      <input type="checkbox" id="checkboxWeightAscending"> <label for="cbox2">FILTRAR POKÉMON POR PESO DE MODO
-        ASCENDENTE</label> <br>
-      <input type="checkbox" id="checkboxWeightDescending">FILTRAR POKÉMON POR PESO DE MODO DESCENDIENTE</label><br>
-      <input type="checkbox" id="checkboxHeightSmall"> <label for="cbox2">FILTRAR POKÉMON PEQUEÑO</label> <br>
-      <input type="checkbox" id="checkboxHeightMedium"> <label for="cbox2">FILTRAR POKÉMON MEDIANO</label> <br>
-      <input type="checkbox" id="checkboxHeightTall"> <label for="cbox2">FILTRAR POKÉMON ALTO</label> <br>
-      <input type="checkbox" id="checkboxHeightAscending"><label for="cbox2">FILTRAR POKÉMON POR ALTURA DE MODO
-        ASCENDENTE</label><br>
-      <input type="checkbox" id="checkboxHeightDescending"><label for="cbox2">FILTRAR POKÉMON POR ALTURA DE MODO
-        DESCENDENTE</label><br>
-      <input type="checkbox" id="checkboxTypePage"><label for="cbox2">FILTRAR POKÉMON POR TIPO</label> 
-    </div>
-
-
-
-
-
-
-
-
-    <main>
-      <figure class="titlepokemonLightght"><img src="https://fontmeme.com/permalink/190203/0bf66c3b9788fe67f0e1c3679e5dab96.png">
-      </figure>
-      <div id="Pokemon-light" class="pokemones"></div>
-    </main>
-    <main>
-      <figure class="titlePokemonHeavy"><img src="https://fontmeme.com/permalink/190203/8a6b09e6db28df09ff8fb961695f29c7.png"></figure>
-      <div id="Pokemon-Heavy" class="pokemones">
-        <div>
-    </main>
-    <main>
-      <figure class="titlePokemonSmall"><img src="https://fontmeme.com/permalink/190203/a0562d229bbeaecef3c3fc949e3ff120.png"></figure>
-      <div id="pokemon-Small" class="pokemones">
-        <div>
-    </main>
-    <main>
-      <figure class="titlePokemonMedium"><img src="https://fontmeme.com/permalink/190203/3f194b32dd436edafea146e2961ab2f5.png"></figure>
-      <div id="pokemon-Medium" class="pokemones"></div>
-    </main>
-    <main>
-      <figure class="titlePokemonTall"> <img src="https://fontmeme.com/permalink/190203/d429df87d8776f1400f4c43682fb301f.png"></figure>
-      <div id="pokemon-Tall" class="pokemones"></div>
-    </main>
-    <main>
-      <figure class="titlePokemonSortByHeight"><img src="https://fontmeme.com/permalink/190204/985e8f0128da248c5c2bf7fc9d477d67.png"></figure>
-      <div id="pokemon-Sort-Height" class="pokemones"></div>
-    </main>
-    <main>
-      <figure class="titlePokemonSortByWeight"><img src="https://fontmeme.com/permalink/190204/0d834d09366f54a173c57761e696eb24.png"></figure>
-      <div id="pokemon-Sort-Weight" class="pokemones"></div>
-    </main>
-    <!----<main id="pokemonTypeAll" class="pokemones"></main>-->
+      </div>
+  
+  
+        </div>
+  <main><figure class="titlepokemonLightght"><img src="https://fontmeme.com/permalink/190203/0bf66c3b9788fe67f0e1c3679e5dab96.png"> </figure>
+      <div id="Pokemon-light" class="pokemones"></div></main>
+  <main><figure class="titlePokemonHeavy"><img src="https://fontmeme.com/permalink/190203/8a6b09e6db28df09ff8fb961695f29c7.png"></figure>
+      <div id="Pokemon-Heavy" class="pokemones"><div></main>
+  <main> <figure class="titlePokemonSmall"><img src="https://fontmeme.com/permalink/190203/a0562d229bbeaecef3c3fc949e3ff120.png"></figure>
+     <div id="pokemon-Small" class="pokemones"><div></main>
+  <main><figure class="titlePokemonMedium"><img src="https://fontmeme.com/permalink/190203/3f194b32dd436edafea146e2961ab2f5.png"></figure>
+     <div id="pokemon-Medium" class="pokemones"></div></main>  
+  <main><figure class="titlePokemonTall"> <img src="https://fontmeme.com/permalink/190203/d429df87d8776f1400f4c43682fb301f.png"></figure>
+    <div id="pokemon-Tall" class="pokemones"></div> </main>
+  <main><figure class="titlePokemonSortByHeight"><img src="https://fontmeme.com/permalink/190204/985e8f0128da248c5c2bf7fc9d477d67.png"></figure>
+    <div id="pokemon-Sort-Height" class="pokemones"></div></main>
+  <main><figure class="titlePokemonSortByWeight"><img src="https://fontmeme.com/permalink/190204/0d834d09366f54a173c57761e696eb24.png"></figure>
+    <div id="pokemon-Sort-Weight" class="pokemones"></div></main>
+  
 
 
   </section>
@@ -122,6 +99,8 @@
   <section id="searchPage" class="hide">
 
   </section>
+
+
     <!-- PÁGINA 5 -->
     <section id="stadisticsPage" class="hide">
     </section>
@@ -132,17 +111,28 @@
     <!--PÁGINA 7-->
     <section id="typePokemonPage" class="hide">
       <main id="pokemonTypeAll" class="pokemones">
-        <button id="buttonPokemonFire" >Fire</button>
-        <button id="buttonPokemonGrass">Grass</button>
-        <button id="buttonPokemonIce">Ice</button>
-        <button id="buttonPokemonPoison">Poison</button>
-        <button id="buttonPokemonFlying">Flying</button>
-        <button id="buttonPokemonPsychic">Psychic</button>
-        <button id="buttonPokemonWater" ><figure><img src="C:\Users\Est1401\Downloads\tipos/recortado2.png" class="agua"></figure> 
-         </button>
+        <button id="buttonPokemonFire" ><i class="fas fa-fire-alt"></i> Fire</button>
+        <button id="buttonPokemonGrass"><i class="fas fa-leaf"></i> Grass</button>
+        <button id="buttonPokemonIce"><i class="fas fa-icicles"></i> Ice</button>
+        <button id="buttonPokemonPoison"><i class="fas fa-skull-crossbones"></i> Poison</button>
+        <button id="buttonPokemonFlying"><i class="fas fa-feather"></i> Flying</button>
+        <button id="buttonPokemonPsychic"><i class="fas fa-eye"></i> Psychic</button>
+        <button id="buttonPokemonWater" ><i class="fas fa-water"></i> Water</button>
+         <nav>
+            <ol>
+              <button class="Button" id = "ButtonGround"><i class="fas fa-globe-americas"></i> Ground </button>
+              <button class="Button" id = "ButtonRock"> Rock</button>
+              <button class="Button" id = "ButtonElectric"><i class="fas fa-bolt"></i> Electric</button>
+              <button class="Button" id = "ButtonBug"><i class="fas fa-bug"></i> Bug</button>
+              <button class="Button" id = "ButtonNormal"><i class="fas fa-star"></i> Normal</button>
+              <button class="Button" id = "ButtonFighting"> <i class="fas fa-hand-rock"></i> Fighting </button>
+              <button class="Button" id = "ButtonDragon"><i class="fas fa-dragon"></i> Dragon</button>
+            </ol> 
+        </nav>
       </main>
     </section>
   <script src="./data/pokemon/pokemon.js"></script>
+
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>

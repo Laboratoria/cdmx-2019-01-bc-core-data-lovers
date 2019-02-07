@@ -11,6 +11,17 @@
 .show{
     display:contents;
 }
+
+/*#enterPage{
+    width:80%;
+    max-width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+}*/
+
+
+
+
 .titleWeb, .titlepokemonLightght, .titlePokemonHeavy,
 .titlePokemonSmall, .titlePokemonMedium, .titlePokemonTall,
 .titlePokemonSortByHeight, .titlePokemonSortByWeight{
@@ -44,12 +55,15 @@
         position: relative;
         top: 20px;
         left: 430px;
-
         }
 
 
 #btn1,#btn2,#buttonSearchPokemon,#filterButton,
-#buttonBack,#buttonBackFilterPage {
+#buttonBack,#buttonBackFilterPage,#ButtonGround,
+#ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
+#ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
+#buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
+#buttonPokemonPsychic, #buttonPokemonWater{
     background-color:#00CED1;
     border: none; 
     color: white; 
@@ -59,10 +73,16 @@
     cursor: pointer;
     border-radius: 5px;
     margin:5px;
+    
   }
   
-  #btn1:hover, #btn2:hover,#buttonSearchPokemon:hover, #btn3:hover,
-  #filterButton:hover,  #buttonBack:hover {
+  #btn1:hover, #btn2:hover, #btn3:hover,
+  #filterButton:hover,  #buttonBack:hover, #buttonSearchPokemon:hover,
+  #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
+  #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
+  #buttonPokemonPsychic:hover, #buttonPokemonWater:hover,
+  #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
+  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover {
     background-color: RoyalBlue;
   }      
 
@@ -71,6 +91,7 @@
    font-size: 30px;
    font-family: 'Love Ya Like A Sister', cursive;
    text-align: center;
+
 }
 
 .pokemones{
@@ -78,6 +99,7 @@
     color:white;
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 20px;
+ 
     
 }
 
@@ -94,13 +116,13 @@ p{
    position: relative;
    left:540px;
 }
-#buttonPokemonWater{
-  font-size: 15px;
-  font-family: monospace;
-  border-radius: 200px;
-  border:0;
-  width: 195px;
-  height:195px;
-  background-color:#2980B9;
 
+
+ .checkbox {
+    width: 30%;
+    height: auto;
+    background-color: #00CED1;
+    float: left;
+    font-family:'Love Ya Like A Sister', cursive;
+    
 }
