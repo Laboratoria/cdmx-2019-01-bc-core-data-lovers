@@ -1,12 +1,12 @@
 require('../src/data.js');
 
 
-describe('buscar', () => {
+describe('showme', () => {
   it('is a function', () => {
-    expect(typeof buscar).toBe('function');
+    expect(typeof showme).toBe('showme');
   });
 
-  it('returns `buscar`', () => {
-    expect(buscar()).toBe('buscar');
+  it('returns `showme`', () => {
+    expect(showme()).toBe('showme');
   });
 });
