@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Montserrat" rel="stylesheet">
+</head>
+
+<!-----PAGE1----->
+
+<body id="general">
+  
+  
+  <section id="section-1">
+      <header class="center" id="header">
+          <figure id=logo class="logo"><img  src="./imagenes/Loco completo.jpg" ></figure>
+          <nav id=bar class= bar><img src="./imagenes/navegador.jpg"></nav>
+         <button id="¿Quiénes somos?" class="header">¿Quiénes somos?</button>
+          <button id="¿Qué hacemos?" class="header">¿Qué hacemos?</button>
+          <button id="Contacto" class="header">Contacto</button>
+        
+        </header>
+    <figure id="mainFigure" class="mainFigure"> <img src= "./imagenes/imgEstudiantes.jpg" > </figure>
+    <article class="tableIndicator">
+      <h2>País: México</h2>
+      <p>Elige el indicador que deseas explorar</p>
+      <h3>Educativo</h3>
+      <button class="elements" id="education" value="educación"> Educación
+      </button>
+      <h3>Laboral</h3>
+      <button class="elements" id="laboral" value="laboral"> Laboral
+      </button>
+      <h3>Demográfico</h3>
+      <button class="elements" id="demographic" value="población"> Demográfico </button>
+     <select> <option id="indicator"></option> </select>
+    </article>
+  </section>
+
+  <!----Page 2--->
+  <section   id="section-2">
+    <header>
+      <figure id="image-logo"><img src="./imagenes/Logo completo vertical.jpg" alt=""></figure>
+      <h1>Indicador</h1>
+    </header>
+    <article>
+      <h2 id="indicator-name"></h2>
+      <p  id="indicator-result"></p>
+    </article>
+    <button class="button" id="startButton">Volver a inicio</button>
+
+  </section>
+
+  <!--FOOTER-->
+  <footer id="footer"></footer>
+
+  <div id="root"></div>
+
+  <script src="./data/worldbank/worldbank.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
