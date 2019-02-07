@@ -62,7 +62,7 @@ const arrayData = Object.values(datalol)
 for(let i= 0; i<rol.length;i++){
     rol[i].addEventListener("click",() => {
       let rolId = rol[i].id;
-      const mikeSection = document.getElementById("mike");
+      const mikeSection = document.getElementById("imprimirRoles");
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, arrayData);
       
       mikeSection.innerHTML = "";
