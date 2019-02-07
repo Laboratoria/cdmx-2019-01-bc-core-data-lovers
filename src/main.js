@@ -20,11 +20,45 @@
 
 // console.log(filteredaccess);
 // indicator.insertAdjacentHTML("beforeend", filteredaccess);
-const navMenu = document.getElementById("nav-menu");
 
-function navOcultar(){
-navMenu.classList.toggle("ocultar");
-};
+// function navOcultar(){
+// navMenu.classList.toggle("ocultar");
+// };
+// const para desplegar menu
+const navIcon = document.getElementById("nav-icon");
+const navMenu = document.getElementById("nav-menu");
+// const para opciones de menu 
+const btnAbout = document.getElementById("btn-about");
+const btnNews = document.getElementById("btn-news");
+const btnFilters = document.getElementById("btn-general-filter");
+//para informacion mostrada 
+const news = document.getElementById("news");
+const about = document.getElementById("about");
+const filters = document.getElementById("general-filter");
+//evento para ocultar y mostrar elementos
+navIcon.addEventListener('click', () =>{
+  navMenu.classList.toggle('ocultar');
+});
+btnAbout.addEventListener('click', () =>{
+  about.classList.remove('ocultar');
+  filters.classList.add('ocultar');
+  navMenu.classList.add('ocultar');
+  news.classList.remove('mostrar-news');
+});
+btnNews.addEventListener('click', () =>{
+  about.classList.add('ocultar');
+  filters.classList.add('ocultar');
+  navMenu.classList.add('ocultar');
+  news.classList.add('mostrar-news');
+});
+btnFilters.addEventListener('click', () =>{
+  about.classList.add('ocultar');
+  filters.classList.remove('ocultar');
+  navMenu.classList.add('ocultar');
+  news.classList.remove('mostrar-news');
+});
+
+
 
 //acceder a la data de cada pais
 const ciudadesMex = WORLDBANK.MEX.indicators;
@@ -35,7 +69,7 @@ const listQuestion = document.getElementById("list-question");
 document.getElementById('btn_mex').addEventListener('click', () =>{
   limpiarSelect()//limpiar un select
   setearCiudad('ciudadesMex')
-  listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona una pregunta</option>');
+  listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
   ciudadesMex.forEach(ciudad =>{//elemento
     //inserta options en el select 
     listQuestion.insertAdjacentHTML('beforeend',`<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
@@ -49,12 +83,12 @@ listQuestion.addEventListener("change", () =>{
   let selectQuestion = listQuestion.options[listQuestion.selectedIndex].text;
   let countrySelect = listQuestion.value;
   let country = listQuestion.dataset.ciudad;
-  let  tabla = '';
+  //let  tabla = '';
   if(country == 'ciudadesMex' ){
     ciudadesMex.forEach(ciudad =>{
       if(ciudad.indicatorCode == countrySelect){
         console.log(ciudad.data);
-        let resultado = (ciudad.data);
+        //let resultado = (ciudad.data);
         //let resultado= JSON.stringify(ciudad.data);
         //indicator.insertAdjacentHTML("beforeend", resultado);
         for(let resultado in ciudad.data){
