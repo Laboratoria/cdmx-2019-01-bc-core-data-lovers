@@ -46,13 +46,17 @@ console.log(levelOfInstruction)*/
 
 // recorrer elementos (indicador, dato y año) 
 
-const dataEducacion = () => {
-  const dataMex = WORLDBANK.MEX.indicators;
+
+
+const dataMex = WORLDBANK.MEX.indicators;
   console.log(dataMex)
-  const dataEducation = dataMex.forEach (element => {
+
+const dataEducacion = () => {
+  
+const dataEducation = dataMex.forEach (element => {
   let indicatorName = element.indicatorName;
   console.log("indicatorName")
- });
+ });  
 }
 
 
