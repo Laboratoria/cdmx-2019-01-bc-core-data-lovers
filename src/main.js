@@ -8,6 +8,7 @@ const selOption = document.getElementById('filtrar-pais');
 const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
+let objectOrder=[];
 let contador=0;
 
 const mostrarMenu = () =>{//Funcion mantiene activo o desactivo el menu, segun el valor del contador
@@ -59,12 +60,32 @@ const filtraIndPais = () =>{
 
 selOption.addEventListener('change',filtraIndPais); //funcion recorre el objeto
 
+
 const recorrerObjeto = (pais)=>{
+  
 let respuesta="";
  for (let i in pais) //for iteracon cada elemento del objeto
   {
     respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
   }
   document.getElementById('contenido').innerHTML = respuesta;   
- return respuesta
+ return respuesta;
 }
+
+const prtOrder=(orderObj)=>{
+    let respOrder="";    
+    for (i in orderObj)
+     {
+        respOrder+="<li>"+"<b>"+orderObj[i][0]+":  "+"</b>"+parseFloat(orderObj[i][1]).toFixed(2)+"%"+"</li>"+"<br>";
+     }     
+    document.getElementById('contenido').innerHTML = respOrder;
+    return  respOrder;
+    }
+
+const orderByAscent = () =>{
+    let order= orderAscDat.value;
+    console.log(order);
+    let orderObj = window.orderByAsc(order)
+    prtOrder(orderObj)
+}
+orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
