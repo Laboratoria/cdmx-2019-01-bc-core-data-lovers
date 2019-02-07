@@ -134,3 +134,18 @@ p {
   padding-top: 85px;
   position: absolute;
 }
+
+@media only screen  (max-width : 320px) {  
+  .side_menu {
+    background: #112659;
+    color: #fff;
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    height: 10%;
+  }
+}  

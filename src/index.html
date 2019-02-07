@@ -9,7 +9,8 @@
   <link rel="icon" href="images/favicon (2).ico">
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins|Roboto" rel="stylesheet">
   <!--link que enlaza íconos de fontawesome-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
 
 </head>
 
@@ -18,44 +19,48 @@
   <!--<script src="./data/injuries/injuries.js"></script>-->
 
 
-<div class="realB">
-  <!--<section1 id="principalpage" class=hide>-->
+  <div class="realB">
+    <!--<section1 id="principalpage" class=hide>-->
 
-  <h1>Injured persons by<br>transportation mode</h1>
+    <h1>Injured persons by<br>transportation mode</h1>
 
-  <h2>in United States of America</h2>
-  <a href="pages/page1.html"><button class="fas fa-walking" id="pedestrians"></button></a>
-  <a href="pages/page2.html"><button class="fas fa-bicycle" id="pedalcyclists"></button></a>
-  <a href="pages/page3.html"><button class="fas fa-bus" id="bus_occupants"></button></a>
-  <br>
-  <br>
-  <a href="pages/page4.html"><button class="fas fa-car" id="car_occupants"></button></a>
-  <a href="pages/page5.html"><button class="fas fa-motorcycle" id="motorcyclists"></button></a>
-</div>
+    <h2>in United States of America</h2>
+    <nav id="buttons_by_mode">
+    <!--con el id quie darle una función para que todos los botones de modo de transporte tengan evento de click-->
+        <a href="pages/page1.html"><button value="Total_Injured_Persons_Pedestrians" class="fas fa-walking" id="pedestrianspage" ></button></a>
+        <a href="pages/page2.html"><button value="Total_Injured_Persons_Pedalcyclists" class="fas fa-bicycle" id="pedalcyclistspage"></button></a>
+        <a href="pages/page3.html"><button value="Total_Injured_Persons_Bus_Occupants" class="fas fa-bus" id="busoccupantspage"></button></a>
+        <br>
+        <br>
+        <a href="pages/page4.html"><button value="Total_Injured_Persons_Passenger_Car_Occupants" class="fas fa-car" id="caroccupantspage"></button></a>
+        <a href="pages/page5.html"><button value="Total_Injured_Persons_Motorcyclists" class="fas fa-motorcycle" id="motorcyclistspage"></button></a>
+    </nav>
+    
+  </div>
   <!--  </section1>-->
-<div class="overBody">
-  <h1 class="motorcyclists_info" id="titleToSearch">Motorcyclists</h1>
-  <!--<p>This is de number of injuries at year for this transport mode since 2001 to 2015</p>-->
+  <div class="overBody">
+    <h1 class="motorcyclists_info" id="titleToSearch">Motorcyclists</h1>
+    <!--<p>This is de number of injuries at year for this transport mode since 2001 to 2015</p>-->
 
-  <table class="fas fa-motorcycle" id="tableStructure">
-    <thead>
-      <tr>
-        <td>Years</td>
-        <td>Injuries</td>
-      </tr>
-    </thead>
-    <tbody id="dataTable">
-    </tbody>
-  </table>
-</div>
+    <table class="fas fa-motorcycle" id="tableStructure">
+      <thead>
+        <tr>
+          <td>Years</td>
+          <td>Injuries</td>
+        </tr>
+      </thead>
+      <tbody id="dataTable">
+      </tbody>
+    </table>
+  </div>
 
-<div class="side_menu">
-  <ul>
+  <div class="side_menu">
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
-  </ul>
-</div>
+    </ul>
+  </div>
 
 
   <!--
@@ -71,4 +76,5 @@
 <script src="./data/injuries/injuries.js"></script>
 <script src="data.js"></script>
 <script src="main.js"></script>
+
 </html>
