@@ -2,14 +2,14 @@ window.data = {
 
 //     show:(data, type) => {
 
-//         const imprimir = (nombre,imagen,id) =>{
+        // const imprimir = (nombre,imagen,id) =>{
 
-//         const pokemons = document.getElementById("pokemons");
+        // const pokemons = document.getElementById("pokemons");
 
-//         let nombrePokemon = `<div class="divPokemon"><figure class="imgPokemon"><img src="${imagen}"></figure>
-//                             <p class="namePokemon"> ${nombre}</p><br><p class="idPokemon"> Número: ${num}</p></div>`;
+        // let nombrePokemon = `<div class="divPokemon"><figure class="imgPokemon"><img src="${imagen}"></figure>
+        //                     <p class="namePokemon"> ${nombre}</p><br><p class="idPokemon"> Número: ${num}</p></div>`;
 
-//         pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
+        // pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
 
 
 

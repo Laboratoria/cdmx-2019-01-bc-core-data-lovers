@@ -20,7 +20,8 @@ const obtenerTipo = (arregloNuevo) => {
       const getTypePokemon = event.target.id;
       
       const arregloFiltrado = window.data.filterPokemon(dataPokemon,getTypePokemon);
-      console.log(arregloFiltrado); 
+      
+      imprimir(arregloFiltrado);
     })
   });
 
@@ -28,85 +29,15 @@ const obtenerTipo = (arregloNuevo) => {
 
 obtenerTipo(buttonTypes);
 
+const imprimir = (obtenerTipo) =>{
 
+     const pokemons = document.getElementById("pokemons");
+      pokemons.innerHTML="";
 
+      obtenerTipo.map((dataPokemon) => {
 
+   pokemons.innerHTML+= `<div class="divPokemon"><figure class="imgPokemon"><img src="${dataPokemon.img}"></figure>
+                       <p class="namePokemon"> ${dataPokemon.name}</p><br><p class="idPokemon"> Número: ${dataPokemon.type}</p></div>`;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById("showPokemons").addEventListener("click", ()=> {
-//     window.pokemon.show(dataPokemon);
-//     document.getElementById("aparicion").style.display="none";
-//   })
-
-
-
-
-
-// document.getElementById("agua").addEventListener("click", () => {
-//   const agua = document.getElementById("water");
-// let typePokemon = POKEMON.pokemon;
-// // const result = window.pokemon.show(typePokemon);
-// const pokemonAgua = window.pokemon.imprim(typePokemon);
-// pokemonAgua.forEach( element => {
-//   let tipoPokemon = `<div><p class="tipooPokemon"> ${element.type}</p></div>
-//   <div class="divPokemon"><figure class="imgPokemon"><img src="${element.img}"></figure>`;
-//   agua.insertAdjacentHTML("beforeend", tipoPokemon);
-
-// })
-// })
-
-// document.getElementById("fire").addEventListener("click", () => {
-
-//   const fuego = document.getElementById("water");
-// let typePoke = POKEMON.pokemon;
-// // const result = window.pokemon.show(typePokemon);
-// const pokemonFuego = window.pokemon.impri(typePoke);
-// pokemonFuego.forEach( element => {
-//   let tipoPoke = `<div><p class="tipooPokemon"> ${element.type}</p></div>
-//   <div class="divPokemon"><figure class="imgPokemon"><img src="${element.img}"></figure>`;
-//   fuego.insertAdjacentHTML("beforeend", tipoPoke);
-
-// })
-// })
-
-// document.getElementById("grass").addEventListener("click", () => {
-
-//   const grass = document.getElementById("water");
-// let typePoke = POKEMON.pokemon;
-// // const result = window.pokemon.show(typePokemon);
-// const pokemonFuego = window.pokemon.impr(typePoke);
-// pokemonFuego.forEach( element => {
-//   let tipoPoke = `<div><p class="tipooPokemon"> ${element.type}</p></div>
-//   <div class="divPokemon"><figure class="imgPokemon"><img src="${element.img}"></figure>`;
-//   grass.insertAdjacentHTML("beforeend", tipoPoke);
-
-// })
-// })
+  
+})}
