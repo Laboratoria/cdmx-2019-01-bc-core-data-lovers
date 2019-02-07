@@ -12,8 +12,8 @@ img{
     height: 350px;
 }
 
-#pokemones { 
-    padding-top: 10%;
+#pokemones, #filtered_out { /*Agregue*/
+    padding-top:15%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -66,11 +66,10 @@ img{
 
 /*Fa:Imagen de fondo de la pagina principal*/
 .pokemonBackground{
-    background-image: url('https://img.freepik.com/foto-gratis/pintura-cae-sobre-fondo-negro_23-2147798308.jpg?size=626&ext=jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image:url("./images/Teselia_N2B2.png");
     background-attachment: fixed;
-    
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 
@@ -79,35 +78,43 @@ img{
     width:35%;
 }
 
+.logfixed{ /*<------ Esto si, dejalo*/
+    background-color: black;
+    width:97%;
+    margin-left:1.5%;
+    position: fixed;
+    border-radius:25px;
+}
 
-/*Aqui comienzan los fondos de los tipos de pokemones*/
+
+/*Aqui comienzan los fondos de los tipos de pokemones-- Y se cambio la opacidad*/
 .Water{
-    background-color: rgba(0, 139, 253, 0.4);
+    background-color: rgba(0, 139, 253, 0.7);
     border: 10px solid rgba(0, 63, 114, 0.986);
 }
 
 .Fire{
-    background-color: rgba(245, 0, 0, 0.4);
+    background-color: rgba(245, 0, 0, 0.7);
     border: 10px solid rgb(133, 0, 0);
 }
 
 .Grass{
-    background-color: rgba(0, 248, 0, 0.4);
+    background-color: rgba(0, 248, 0, 0.7);
     border: 10px solid rgb(0, 71, 0);
 }
 
 .Bug{
-    background-color: rgba(145, 255, 0, 0.4);
+    background-color: rgba(145, 255, 0, 0.7);
     border: 10px solid rgb(63, 110, 1);
 }
 
 .Normal{
-    background-color: rgba(151, 124, 1, 0.4);
+    background-color: rgba(151, 124, 1, 0.7);
     border: 10px solid rgb(87, 71, 1);
 }
 
 .Poison{
-    background-color: rgba(57, 0, 148, 0.6);
+    background-color: rgba(57, 0, 148, 0.7);
     border: 10px solid rgb(42, 0, 109);
 }
 
@@ -117,12 +124,12 @@ img{
 }
 
 .Ground{
-    background-color: rgba(219, 106, 0, 0.4);
+    background-color: rgba(219, 106, 0, 0.7);
     border: 10px solid rgb(145, 70, 0);
 }
 
 .Fighting{
-    background: -webkit-linear-gradient(left, rgba(98,125,77,0.4) 0%, rgba(31,59,8,0.4) 100%);
+    background: -webkit-linear-gradient(left, rgba(98,125,77,0.7) 0%, rgba(31,59,8,0.7) 100%);
     border-top: 10px solid rgba(35, 53, 21, 0.822);
     border-right: 10px solid rgba(35, 53, 21, 0.822);
     border-bottom: 10px solid rgb(52, 71, 36);
@@ -131,7 +138,7 @@ img{
 }
 
 .Psychic{
-    background: -webkit-linear-gradient(left, rgba(52,91,247,0.5) 0%, rgba(52,91,247,0.53) 18%, rgba(145,26,204,0.55) 30%, rgba(245,12,152,0.59) 55%, rgba(117,24,240,0.63) 77%, rgba(85,0,130,0.65) 91%, rgba(85,0,130,0.67) 100%);
+    background: -webkit-linear-gradient(left, rgba(52,91,247,0.7) 0%, rgba(52,91,247,0.7) 18%, rgba(145,26,204,0.7) 30%, rgba(245,12,152,0.7) 55%, rgba(117,24,240,0.7) 77%, rgba(85,0,130,0.7) 91%, rgba(85,0,130,0.7) 100%);
     border-top: 10px solid rgb(63, 1, 97);
     border-right: 10px solid rgb(63, 1, 97);
     border-bottom: 10px solid rgb(31, 52, 136);
@@ -139,10 +146,10 @@ img{
 }
 
 .Rock{
-    background-color: rgba(94, 94, 94, 0.4);
+    background-color: rgba(94, 94, 94, 0.7);
     border: 10px solid rgb(53, 53, 53);
 }
 
 .Ghost{
-    background: -webkit-linear-gradient(left, rgba(6,0,179,0.59) 0%, rgba(0,8,158,0.63) 46%, rgba(3,2,51,0.66) 74%, rgba(3,2,51,0.67) 84%, rgba(3,2,51,0.83) 100%);
+    background: -webkit-linear-gradient(left, rgba(6,0,179,0.7) 0%, rgba(0,8,158,0.7) 46%, rgba(3,2,51,0.7) 74%, rgba(3,2,51,0.7) 84%, rgba(3,2,51,0.7) 100%);
 }
