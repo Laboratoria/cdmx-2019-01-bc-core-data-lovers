@@ -10,12 +10,17 @@ window.buscar = buscar;*/
 };
 
 window.example = example;*/
+
+
+const datapokes = POKEMON.pokemon;
 /*En esta seccion estoy extrayendo datos especificos de la data*/
 /*const datapokes = POKEMON.pokemon;
 
+
 const pokes = document.getElementById("probando");
-const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
-  let nombrePokemon = `<p> <img src="${imagen}">Nombre:${nombre2}
+/*const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
+  let nombrePokemon = `<p> <img src="${imagen}">
+  <br>Nombre:${nombre2}</br>
   <br> Su Id es :${id}</br>
   <br> Su candy es :${candy}</br>
   <br> Su altura es :${altura}</br>
@@ -36,6 +41,7 @@ datapokes.forEach(elemento => {
 });*/
 /*En esta Seccion estoy trabajando en la seccion de busqueda*/
 
+/*function searching() {
 /*
 function searching() {
   document.getElementById("result").innerHTML = '';
@@ -64,6 +70,9 @@ function searching() {
       }
     }
   }
+
+}*/
+
 }
 */
 /*Probando filter*/
@@ -99,3 +108,14 @@ resultFilter.map((pokemon) => {
  let newArr3 = datapokes.filter(pokemon => pokemon.name.includes("Pikachu"));
  console.log(newArr3);*/
 
+
+const pokes=document.getElementById("probando");
+const filterElement=filterElement.filter(pokemon => pokemon.type.includes("Fire"));
+resultFilter.map((pokemon)=> { 
+pokes.innerHTML +=`
+<article id="${pokemon.id}">
+<p>${pokemon.name}</p>
+<img src="${pokemon.img}"/>
+</article>
+`
+})
