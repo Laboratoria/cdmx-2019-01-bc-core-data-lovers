@@ -43,18 +43,6 @@ for (const key in dataLol) {
     const menu = document.getElementById('menu')
     const cerrar = document.getElementById('cerrar')
     
-
-   /*esta función imprime los nombres de los personajes*/
-   /*let imprimirImagen = "";
-            const printImg = (img)=>{
-            let resultImg = `<img class= "listaCampeones" src="${img}">`;
-            es.insertAdjacentHTML("beforeend",resultImg);}
-
-    let imprimirDatos = "";
-        const print = (datos)=>{
-        let result = `<div class ="lista"> ${datos} </div>`;
-        es.insertAdjacentHTML("beforeend",result);}*/
-
   //Funcion de botones
 
    inicio.onclick = ()=>{
@@ -69,46 +57,37 @@ for (const key in dataLol) {
   
 
 // Pintar en HTML
-const print =(name,img,title) => {
- let nameList = `<div class="nameList"><img class="lolIcons" src="${img}"><div id="letras"><h1 id= "nombre" >${name}</h1> <p id="titulo">${title}</p></div></div>`;
- es.insertAdjacentHTML("beforeend",nameList)}
-    
-   /* const buscadora =() => {*/
-        for(const key in dataLol){
-            if(dataLol.hasOwnProperty(key)){
-            const element = dataLol[key];
-            let name = element.name;
-            let tag = element.tags[0];
-            let img = element.img;
-            let title = element.title;
-            let datos = [`${name}  ${title} ${tag}`]
-            /*print (datos);
-            printImg(img);*/
-            print(name, img, title)
 
-            console.log(name);}}
-        
   
-  const support =document.getElementById('support');
   const rol = document.getElementsByClassName("rolPersonajes");
+  const result = window.lol.iterarData(dataLol)
+
+  const print =(result) => {
+    result.forEach(champ => {
+    let nameList = `<div class="nameList"><img class="lolIcons" src="${champ.img}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;
+    es.insertAdjacentHTML("beforeend",nameList);});}
+
+               print(result)
+   
+   //este hay que subirlo porque es global 
+ const dataToArray = Object.values(dataLol);     
 
   for ( let i=0; i<rol.length; i++){
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
+      const printSection = document.getElementById("es");
+      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataToArray);
 
+      printSection.innerHTML = "";
+
+      arrayRolesFiltered.map((character) => {
+        printSection.innerHTML += `<div class="nameList"><img class="lolIcons" src="${character.img}"><div id="letras"><h1 id= "nombre" >${character.name}</h1> <p id="titulo">${character.title}</p></div></div>`;
+      })
+    })}
     
 
-        let arr=[];
-        const dataToArray = Object.values(dataLol);
-        dataToArray.forEach(element => {
-          const roles = element.tags[0];
-          if (roles === rolId){
-            arr.push(element);
-          }
-          });
-          
-          console.log(arr);
-        })}
+
+
 
     
 
@@ -126,3 +105,10 @@ const print =(name,img,title) => {
             }
 
             support.addEventListener('click',filtroPorRol)*/
+
+            //cuando yo eliga un rol en mi lista dentro del menu desplegable, con la clase de rol
+            // obtener el class (nombre)
+            //obener el arreglo completo
+            // lo inserto en filtroDataRoles para obtener el arreglo filtrado y lo asigno a una variable
+            //con un map recorro el arreglo de objetos y en cadauno voy sacando las caracteristicas
+            // y boy pintando
