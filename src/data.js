@@ -23,17 +23,8 @@ window.lol = {
   return datos
  },
 
-filtroDataRoles: (rolId, arrayData ) =>{
-  /*for( let i= 0; i<rol.length;i++){
-    rol[i].addEventListener("click",() => {
-      let rolId = rol[i].id;
-      const arrayData = Object.values(datalol);*/
+filtroDataRoles: (rolId, arrayData ) =>{  
      filtrado = arrayData.filter(element => element.tags[0] === rolId);
-     /*let name = element.name;
-     let tag = element.tags[0];
-     let imga = element.img;
-     let title = element.title;
-     //print(name,ima,tag);*/
       return filtrado
     },
  

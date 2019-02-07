@@ -62,8 +62,16 @@ const arrayData = Object.values(datalol)
 for(let i= 0; i<rol.length;i++){
     rol[i].addEventListener("click",() => {
       let rolId = rol[i].id;
-      window.lol.filtroDataRoles(rolId, arrayData)
- 
+      const mikeSection = document.getElementById("mike");
+      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, arrayData);
+      
+      mikeSection.innerHTML = "";
+
+    arrayRolesFiltered.map((character) =>{
+        mikeSection.innerHTML += `<div class="cuadro"><img class="imagen" src="${character.img}"> <div id="subtitulo"><h1 id="nombre">${character.name}</h1> <h2 id"titulo"> ${character.title}</h2></div></div>`;
+
+    })
+
     })
 }
 
@@ -92,7 +100,7 @@ for(let i= 0; i<rol.length;i++){
 // y voy pintando
 
 
-const tankMike = document.getElementById("TankMike")
+/*const tankMike = document.getElementById("TankMike")
 
 tankMike.addEventListener("click", () =>{
     const roleName = event.target.name;
@@ -107,7 +115,7 @@ tankMike.addEventListener("click", () =>{
             <div>${character.name}</div>
         `
     })
-})
+})*/
 
 /*
 arrayFiltered.map((character) => {
