@@ -11,8 +11,8 @@ window.buscar = buscar;*/
 
 window.example = example;*/
 
-const datapokes = POKEMON.pokemon;
-const pokes = document.getElementById("probando");
+/*const datapokes = POKEMON.pokemon;
+const pokes = document.getElementById("probando");*/
 /*const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   let nombrePokemon = `<p> <img src="${imagen}">
   <br>Nombre:${nombre2}</br>
