@@ -8,7 +8,9 @@
 body{
     background:  #E9ECF4;
 }
-
+#root{
+    height: 100%;
+}
 .contenedor{
     width: 100vw;
     height: 100vh;
@@ -29,21 +31,17 @@ body{
     display: block;
 }
 
-.fua{
-display: inline-block;
-width: 33%;
-background: #C2FAB9;
-border: 5px solid #FFBA5c;
-}
-
-
-
 header{
     position: fixed;
 width: 100%;
 background: #976DD0;
 height: 4em;
 color:whitesmoke;
+}
+
+.contenido{
+    background: #C2FAB9;
+    padding-top: 8%;
 }
 
 .textfiltertop{
@@ -58,3 +56,25 @@ footer{
     background: #976DD0;
 
 }
+.wrapper{
+    display: inline-block;
+    background:#FFD185;
+    padding-bottom:10px;
+    width:130px;
+    height:160px;
+    border-radius:14px;
+    border: 3px solid #FFBA5C;
+  }
+  
+  .pokemon-cart-image{
+    background:#EAFEE6;
+    border-top-left-radius:14px;
+    border-top-right-radius:14px;
+    right:30px;
+    
+  }
+  .box-cart{
+   font-size:14px; 
+   text-align:center;
+   margin-top: 9px;
+  }
