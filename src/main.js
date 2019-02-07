@@ -36,7 +36,7 @@ toReturn.addEventListener("click", () =>{
 //Di: Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
 const toPrint = (namePokemon,imagePokemon,typePokemon,weaknessesPokemon,candyPokemon,eggPokemon) =>{
     let visualPokemon = `<button id="btnPokemon" class="divPokemon ${typePokemon[0]}"><p class="name ">${namePokemon}</p><br><img src="${imagePokemon}">
-    </button>`;
+    <br><p class="details">Type: ${typePokemon}</p></button>`;
     
     /*<p class="details"><br>Type: ${typePokemon}<br>Weaknesses: ${weaknessesPokemon}<br>
     <p class="name">Candy: ${candyPokemon} </p><br> ${eggPokemon}</p>`;*/
