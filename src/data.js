@@ -8,10 +8,6 @@ const injuriesby = INJURIES;
     let found = injuriesby.find(element => element.Year === "1965-01-04");
 console.log(found);
 
-
-
-
-
  injuriesby.forEach(element => {
 //
 //       let year = element.Year;
