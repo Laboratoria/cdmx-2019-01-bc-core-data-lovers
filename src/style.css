@@ -32,9 +32,9 @@ body{
 }
 
 header{
-    position: fixed;
+position: fixed;
 width: 100%;
-background: #976DD0;
+background:#C2FAB9;
 height: 4em;
 color:whitesmoke;
 }
