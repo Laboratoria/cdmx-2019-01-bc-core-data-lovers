@@ -12,6 +12,14 @@
        width: 25%;
        margin-right: 0%;
     }
+
+    .header{
+      background-color: #F75A5A;
+      padding: 1%;
+      font-size: 10pt;
+      font-family: 'Montserrat', sans-serif;
+
+    }
      
     .bar{
        width: 3%;
@@ -72,4 +80,18 @@
         width: 70%;
         margin-left: 15%;
      }
+
+     /* pantallas teléfonos móviles
+     @media only screen and (max-width: 600px){
+
+     }
+
+     pantallas tablets
+     @media only screen and (min-width: 768px){
+
+     }
     
+     pantalla desktops
+     @media only screen and (min-width: 1200px) {
+        
+     }
