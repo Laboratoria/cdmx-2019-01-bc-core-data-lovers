@@ -1,46 +1,63 @@
-
-//mostrar y ocultar pagina home page con pagina principal de la información de los cuatro países
+//boton para entrar a la pagína donde se generar la filtración y se mostra la data 
 const botonInfo = document.getElementById('botonInfo');
-const botonMexico = document.getElementById('botonMexico');
-const botonChile = document.getElementById('botonChile');
-const botonPeru = document.getElementById('botonPeru');
-const botonBrasil = document.getElementById('botonBrasil');
 
+//constantes de cada section para que se muestran y ocultan creando la simulación de pagínas
 const root = document.getElementById('root');
 const informate = document.getElementById('informate');
-const pagMex = document.getElementById('pagMex');
-const pagChile = document.getElementById('pagChile');
-const pagPeru = document.getElementById('pagPeru');
-const pagBrasil = document.getElementById('pagBrasil');
 
+//constantes para seleccionar el país y se dispare el evento al seleccionar uno   
+const selectorPais = document.getElementById('selectorPais');
+const selectMex = document.getElementById('selectorPais');
+const selectPeru = document.getElementById('selectorPais');
+const selectBrasil = document.getElementById('selectorPais');
 
+//const para cada pais en el selector 
 
+const dataMEX = WORLDBANK.MEX.indicators;
+const indicatorMex = document.getElementById("selectMex");
+
+const dataPER = WORLDBANK.PER.indicators;
+const indicatorPeru = document.getElementById("selectPeru");
+
+const dataBRA = WORLDBANK.BRA.indicators;
+const indicatorBrasil = document.getElementById("selectBrasil");
+
+//función que dispara el evento de mostrar y ocultar la pagina root a la pagina informate 
 botonInfo.addEventListener('click', () => {
   root.classList.add('hideElement');
   informate.classList.remove('hideElement');
+
+
+  //const print = (year) => {
+  //let resultMex = `<h4>${year}</h4>`
+  //indicator.insertAdjacentHTML("beforeend", resultMex);
+  //};
+
+});
+//Impresión Database México
+selectMex.addEventListener('change', () => {
+  dataMEX.forEach(function (dataMEX) {
+    console.log(dataMEX);
+    if (dataMEX >= 1)
+      console.log(dataMEX);
+  });
 });
 
-botonMexico.addEventListener('click', () => {
-  informate.classList.add('hideElement');
-  pagMex.classList.remove('hideElement');
-});
-
-botonChile.addEventListener('click', () => {
-  informate.classList.add('hideElement');
-  pagChile.classList.remove('hideElement');
-});
-
-botonPeru.addEventListener('click', () => {
-  informate.classList.add('hideElement');
-  pagPeru.classList.remove('hideElement');
-});
-
-botonBrasil.addEventListener('click', () => {
-  informate.classList.add('hideElement');
-  pagBrasil.classList.remove('hideElement');
+//Impresión de Database Perú
+selectPeru.addEventListener('change', () => {
+  dataPER.forEach(function (dataPER) {
+    console.log(dataPER);
+    if (dataPER >= 1)
+      console.log(dataPER);
+  });
 })
 
-
-
-
-
+//Impresión de Database Brasil
+selectBrasil.addEventListener('change', () => {
+  dataBRA.forEach(function (dataBRA) {
+    console.log(dataBRA);
+     if (dataBRA >= 1)
+    console.log(dataBRA);
+   
+  });
+})
