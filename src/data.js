@@ -1,8 +1,7 @@
 window.data = {
 
-  consult: (yearValue, userValue) => {
+  consultYear: (yearValue, userValue) => {
     const injuriesby = INJURIES;
-
     injuriesby.forEach(element => {
       //console.log(Object.keys(element))
       let year = element.Year;
@@ -12,18 +11,11 @@ window.data = {
       let walk = element.Total_Injured_Persons_Pedestrians;
       let transit = element.Total_Injured_Persons_Transit_Total;
       if (year == yearValue) {
-       document.write(`<b>Año:</b> <i>${yearValue}</i> <br><b>Total de heridos en Moto ${moto};</i>`)
+        resultesecc.innerHTML = `<b>Durante</b> <i>${year.substr(0,4)}</i> <br><b>Total de heridos en ese año fue:</b> <i>${total}; <b>en moto:</b> ${moto}, <b>en bici:</b> ${bike}, <b>en transito:</b> ${transit}</i>`
       };
-      
-    
-
-
-
-
+      console.log(year)
       //ConsoleLog si muestra todos los elementos console.log(total)
     });
 
   }
-
 }
-
