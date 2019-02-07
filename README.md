@@ -297,7 +297,7 @@ Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
 scripts (como `src/data.js` o `src/main.js`).
 
 ### `src/main.js`
-
+ 
 Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
 mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
 interacción con el DOM. Operaciones como creación de nodos, registro de
