@@ -94,7 +94,27 @@ pokemonsLight.forEach(element => {
 checkboxWeightHeavy.addEventListener("click",() =>{
   const pokemonsHeavy = pokemonData.filter(pokemon => parseInt(pokemon.weight) > 30);
 pokemonsHeavy.forEach(element => {
-  let nameHeavy = element.name;
+  let name = element.name;
+  let img = element.img;
+  let weight = element.weight;
+  window.printPokemon.printPokemonWeight(name, img, weight);
+});
+});
+
+checkboxHeightSmall.addEventListener("click", () =>{
+  const pokemonsSmall = pokemonData.filter(pokemon => (parseInt(pokemon.height) < 1.00));
+pokemonsSmall.forEach(element => {
+  let name = element.name;
+  let img = element.img;
+  let height = element.height;
+  window.printPokemon.printPokemonHeight(name, img, height);
+});
+});
+
+checkboxHeightMedium.addEventListener("click", () =>{
+  const pokemosMedium = pokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.00) && (parseInt(pokemon.height) <= 1.80));
+pokemosMedium.forEach(element => {
+  let nameMedium = element.name;
   let img = element.img;
   let weightHeavy = element.weight;
   window.printPokemon.printPokemonWeight(nameHeavy, img, weightHeavy);
@@ -103,22 +123,12 @@ pokemonsHeavy.forEach(element => {
 
 
 checkboxHeightAscending.addEventListener("click", () =>{
-const pokemonsSortHeight=pokemonData.sort((a,b)=>{
-  if(a.height>b.height){
-    return 1
-  }
-  if(a.height<b.height){
-    return -1
-  }
-  else{
-    return 0
-  }
-})
-  pokemonsSortHeight.forEach(element => {
+const pokemonSortHeight= window.printPokemon.sortByHeight(pokemonData);
+  pokemonSortHeight.forEach(element => {
     let name = element.name;
     let img = element.img;
     let sortHeight = element.height;
-    window.printPokemon.printPokemonSortByHeight(name, img, sortHeight);
+    window.printPokemon.sortByHeight(name, img, sortHeight);
   })
 });
 
@@ -282,7 +292,8 @@ console.log(pokemonsSortHeightDescending);*/
 function filtrar(id_tipo) {
   
   if (id_tipo == 1) { //tipo fuego
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Fire"));
+    const pokemonType=window.printPokemon.filterPokemonByType()
+    pokemonType.includes("Fire");
     pokemonType.forEach(element => {
       let namePokemonFire = element.name;
       let img = element.img;
@@ -396,6 +407,7 @@ function filtrar(id_tipo) {
     })
   }
 }
+
 
 
 
