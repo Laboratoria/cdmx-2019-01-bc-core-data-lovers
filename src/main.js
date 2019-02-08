@@ -18,7 +18,6 @@ startButton.addEventListener('click', () => {
 //Función para imprimir la data en el HTML
 const print = (arr) => {
   cardSummary.innerHTML = "";
-  console.log(arr)
   arr.forEach(champ => {
     let result = `<div class="champion"> <img src="${champ.splash}">
     <h3> ${champ.name} </h3> <div class="tags"> <p> ${champ.primaryRol} </p> <p> ${champ.secondaryRol} </p> </div></div>`;
@@ -30,7 +29,6 @@ const selectRol = () => {
   for (let i = 0; i < rol.length; i++) {
     rol[i].addEventListener("click", () => {
       let rolId = rol[i].id;
-      console.log(rolId);
       const arr = window.lol.showData(lolData);
       const arrayFiltered = window.lol.filterByRol(rolId, arr);
       print(arrayFiltered);

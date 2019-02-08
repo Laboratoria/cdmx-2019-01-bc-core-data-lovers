@@ -20,9 +20,9 @@ window.lol = {
     return arr;
   },
 
-  filterByRol: (rolId, arrayData) =>
-    filtering = arrayData.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId),
-
+  filterByRol: (rolId, arr) =>
+    filtering = arr.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId),
+    
   orderByAttack: () => {
 
   }
