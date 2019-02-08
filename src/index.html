@@ -5,17 +5,57 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <title>Data Lovers</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width", user-scalable="no", initial-scale="1.0", maximun-scale= "1.0", minium-scale= "1.0">
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
 
-  <header>
-    <!--MENU & SEARCH -->
+
+
+<body>
+  
+  <header class="header">
+     <div clas="container">
+       <figure>
+         <img id="logo" src= ""  alt= "logoX">
+       </figure>
+          <nav class= "navMenu">
+          <a href="#">Abcedef</a>
+          <a href="#">Bdefghij</a>
+          <a href="#">Cdefghijk</a>
+          <a href="#">Defghijkl</a>
+        
+            </nav>
+  
+        </div>
   </header>
+
+
+
+  
+   
+ 
+    <section>
+        <img class="mySlides" src="assets/images/267.jpg" style="width:100%">
+        <img class="mySlides" src="assets/images/aaa.jpg" style="width:100%">
+        <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg" style="width:100%">
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <section id=initialPage>
 
     <p>Las mujeres y las niñas cumplen
@@ -34,60 +74,68 @@
     </footer>
 
     </section >
-   
-    <section id= secondPage >
-     <figure>
-       <!--PICTURE-->
-     </figure>
-     <button id= option> LABORAL</button>
-     <button id= option>  DEMOGRÁFICO</button>
 
 
-  </section>
+  <section Id=secondPage>
 
-  <section Id=thirdPage>
+    <div class= "indicatorSelect" style= "width:200px;">
+      <select id= "indicatorFilter" name="idicatorFilter">
+        <option value= "Empleo de tiempo parcial, mujeres (% del total de mujeres empleadas)"> "Empleo de tiempo parcial, mujeres. </option>
+        <option value= "1"> Indicador 1 </option>
+        <option value= "2"> Indicador 2 </option>
+        <option value= "3"> Indicador 3 </option>
+        <option value= "4"> Indicador 4 </option>
+        <option value= "5"> Indicador 5 </option>
+        <option value= "6"> Indicador 6 </option>
+      </select>
 
+    </div> 
+
+
+
+
+
+     
 
      <div>
     <figure>
      
-      <!--SELECTION RADIO-->
+
       MEXICO
-      <button id="Mexico"><img src="./assets/images/mex.png"></button>
+      <br>
+      <button><img src="./assets/images/mex.png" width="50"  height="50"class=flag> </button>
     </figure>
+
     <figure>
-       
-        <!--SELECTION RADIO-->
-        CHILE
-       <button id="Chile"><img src="./assets/images/chile.png"></button>
+     
+        CHILE 
+        <br>
+       <button> <img src="./assets/images/chile.png" width="50"  height="50"class=flag> </button>
       </figure>
+
       <figure>
+     
+       BRAZIL 
+       <br>
+       <button><img src="./assets/images/brazil.png" width="50"  height="50"class=flag> </button>
         
-          <!--SELECTION RADIO-->
-       BRAZIL   
-       <button id="Brasil"><img src="./assets/images/brazil.png"></button>
+        </figure>    
         
-        </figure>        
+        
         <figure>
-           
-            <!--SELECTION RADIO-->
+
 
             PERU  
-         <button id="Peru"><img src="./assets/images/peru.png"> </button>
+            <br>
+            <button><img src="./assets/images/peru.png" width="50"  height="50" class=flag>  </button>
            
           </figure>
         </div>
 
 
-      <form> 
-     
-
-       <!--PRINT INDICATORS RADIO-->
-       </form> 
-
    </section>
 
-   <section id=fourthPage> 
+   <section id=thirdPage> 
 
      <!--PRINT INDICATOR CHOSEN-->
      <!---DATES PER YEAR-->
@@ -106,6 +154,8 @@
     </table>
      
    </section>
+
+  
 
    
    
