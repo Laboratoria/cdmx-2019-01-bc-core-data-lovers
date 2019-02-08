@@ -7,7 +7,7 @@ window.lol = {
     for(const key in dataLol){
       if(dataLol.hasOwnProperty(key)){
       const element = dataLol[key];
-      let objetoVacio ={
+      let objetoVacio = {
       name: element.name,
       tag: element.tags[0],
       img: element.img,
