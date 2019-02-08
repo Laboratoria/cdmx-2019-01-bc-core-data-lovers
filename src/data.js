@@ -1,6 +1,5 @@
 //window es un objeto global que contiene la funcion consult. 
 window.data = {
-
   consult: (yearValue, userValue) => {
     const injuriesby = INJURIES;
     //Usamos FIND para buscar el año dentro del objeto.
@@ -16,5 +15,7 @@ window.data = {
     }
     //let result = found.Total_Injured_Persons;
     //console.log(result);
+
   }
+ }
 };
