@@ -3,7 +3,7 @@ const datalol = LOL.data;
 const rol = document.getElementsByClassName('rol');
 const imprimirRoles = document.getElementById("imprimirRoles")  /*trae el div imprimir roles para identificarlo e imprimir*/
 const mostrar = document.getElementById("mostrar")
-const arrayData = Object.values(datalol)
+//const arrayData = Object.values(datalol)
 
 
 
