@@ -38,5 +38,3 @@ const selectRol = () => {
 
 selectRol();
 
-
-
