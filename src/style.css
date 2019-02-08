@@ -9,7 +9,6 @@ img{
 
 #btnPokemon{
     width: 24%;
-    height: 350px;
 }
 
 #pokemones, #filtered_out { /*Agregue*/
@@ -70,11 +69,11 @@ img{
     background-attachment: fixed;
     background-repeat:no-repeat;
     background-size: cover;
+
 }
 
-
 /*Fa:Tamaño para el logo de la pagina principal*/
-.widthLogData{
+.widthLogData{ /* <-----**A este le cambimos el nombre*/
     width:35%;
 }
 
@@ -153,3 +152,28 @@ img{
 .Ghost{
     background: -webkit-linear-gradient(left, rgba(6,0,179,0.7) 0%, rgba(0,8,158,0.7) 46%, rgba(3,2,51,0.7) 74%, rgba(3,2,51,0.7) 84%, rgba(3,2,51,0.7) 100%);
 }
+
+/*Fa---Aquí comienzan los breakpoints*/
+@media (max-width: 576px) { 
+.wellcomeBackground{
+    background-image:url(./images/pokeball_inicio_mobile.jpg);
+    background-size: cover;
+    height: 100vh; 
+ }
+
+ .widthLog{
+    width:130%;
+    padding-top:15%; 
+} 
+
+.widthButton{
+    width: 50%;
+}
+
+.name{
+    border-radius: 25px;
+    background-color: rgba(27, 27, 27, 0.9);
+    font-size: 1em;
+}
+
+}/* <----Cierre del @Media de 576px*/
