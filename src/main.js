@@ -170,4 +170,3 @@ indicator.addEventListener("change", ()=> {
 // let educationData = dataMex.find(element => {
 //   element.indicatorName == /educación/i.test
 // })
-// console.log(educationData);
