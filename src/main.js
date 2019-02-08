@@ -2,37 +2,8 @@
 //const WORLDBANK = WORLDBANK;
 const dataMex = WORLDBANK.MEX.indicators;
 let filteredIndicators = [];
-//filtra los datos por botones
 
 
-// const filterFunction = (dataMex, wordToCompare) => {
-//   if (wordToCompare === 'educación') {
-//     dataMex.forEach((element) => {
-//       /educación/i.test(element.indicatorName)
-//       filteredIndicators.push(element);
-//     })
-//   } else if (wordToCompare === 'laboral'){
-//     dataMex.forEach((element) => {
-//       /laboral/i.test(element.indicatorName)
-//       filteredIndicators.push(element);
-//     } )
-//   } else if (wordToCompare === 'población'){
-//     dataMex.forEach((element) => {
-//       /población/i.test(element.indicatorName)
-//       filteredIndicators.push(element);
-//     })
-//   }
-//   return filteredIndicators;
-// }
-
-
-// console.log(populationIndicators);
-
-//filtrar base de datos, para seleccionar indicadores que contengan la palabra "educación"
-// let wordToCompare = "";
-// const educationButton = document.getElementById('education');
-// const laboralButton = document.getElementById('laboral');
-// const demographicButton = document.getElementById ('demographic');
 const elements = document.getElementsByClassName('elements')
 // const print = (indicatorName, indicatorCode) => {
 //     let result = `<li value = "${indicatorCode}" > ${indicatorName} </li>`
@@ -154,7 +125,9 @@ const typeIndicator = () => {
 
 for(let i = 0; i<elements.length; i++){
   elements[i].addEventListener('click', () => {
-    let valElement = elements[i].value
-    window.worldBank.filter(dataMex, valElement)
+    let valElement = elements[i].value;
+    window.worldBank.filter(dataMex, valElement);
   })
 }
+
+const indicator= document.getElementById("indicator").innerHTML(window.worldBank.filter);
