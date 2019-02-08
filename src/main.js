@@ -47,6 +47,7 @@ const buttonPokemonWater=document.getElementById('buttonPokemonWater');
 const typePokemonPage=document.getElementById('typePokemonPage');
 
 
+
 //Botón de entrada
 enterToPikapedia.addEventListener("click", () => {
 
@@ -81,18 +82,16 @@ checkboxTypeFilter.addEventListener("click", () =>{
 });
 
 checkboxWeightLight.addEventListener("click",()=>{
-  const pokemonsLight = pokemonData.filter(pokemon => (parseInt(pokemon.weight) < 30));
-pokemonsLight.forEach(element => {
+  const pokemonsLight =window.printPokemon.filterByWeightLight(pokemonData);
+ pokemonsLight.forEach(element => {
   let name = element.name;
   let img = element.img;
   let weight = element.weight;
   window.printPokemon.printPokemonWeight(name, img, weight);
 });
-
 });
-
 checkboxWeightHeavy.addEventListener("click",() =>{
-  const pokemonsHeavy = pokemonData.filter(pokemon => parseInt(pokemon.weight) > 30);
+  const pokemonsHeavy = window.printPokemon.filterByWeightHeavy(pokemonData);
 pokemonsHeavy.forEach(element => {
   let name = element.name;
   let img = element.img;
@@ -102,7 +101,7 @@ pokemonsHeavy.forEach(element => {
 });
 
 checkboxHeightSmall.addEventListener("click", () =>{
-  const pokemonsSmall = pokemonData.filter(pokemon => (parseInt(pokemon.height) < 1.00));
+  const pokemonsSmall = window.printPokemon.filterByHeightSmall(pokemonData);
 pokemonsSmall.forEach(element => {
   let name = element.name;
   let img = element.img;
@@ -112,84 +111,51 @@ pokemonsSmall.forEach(element => {
 });
 
 checkboxHeightMedium.addEventListener("click", () =>{
-  const pokemosMedium = pokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.00) && (parseInt(pokemon.height) <= 1.80));
-pokemosMedium.forEach(element => {
-  let nameMedium = element.name;
-  let img = element.img;
-  let weightHeavy = element.weight;
-  window.printPokemon.printPokemonWeight(nameHeavy, img, weightHeavy);
-});
-});
-
-
-checkboxHeightAscending.addEventListener("click", () =>{
-const pokemonSortHeight= window.printPokemon.sortByHeight(pokemonData);
-  pokemonSortHeight.forEach(element => {
-    let name = element.name;
-    let img = element.img;
-    let sortHeight = element.height;
-    window.printPokemon.sortByHeight(name, img, sortHeight);
-  })
-});
-
-checkboxWeightAscending.addEventListener("click",() =>{
-  const pokemonsSortWeight = pokemonData.sort((a, b) =>{
-    if ((parseInt(a.weight)) > (parseInt(b.weight))) {
-      return 1
-    };
-    if ((parseInt(a.weight)) < (parseInt(b.weight))) {
-      return -1
-    } else {
-      return 0;
-    }
-  })
-  pokemonsSortWeight.forEach(element => {
-    let name = element.name;
-    let img = element.img;
-    let sortWeight = element.weight;
-    window.printPokemon.printPokemonSortByWeight(name, img, sortWeight);
-  })
-
- });
-
-
-
-
-
-
-
-checkboxHeightSmall.addEventListener("click", () =>{
-  const pokemonsSmall = pokemonData.filter(pokemon => (parseInt(pokemon.height) < 1.00))
-pokemonsSmall.forEach(element => {
+  const pokemonMedium = window.printPokemon.filterByHeightMedium(pokemonData);
+pokemonMedium.forEach(element => {
   let name = element.name;
   let img = element.img;
   let height = element.height;
   window.printPokemon.printPokemonHeight(name, img, height);
 });
-
- });
-
- checkboxHeightMedium.addEventListener("click", () =>{
-  const pokemosMedium = pokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.00) && (parseInt(pokemon.height) <= 1.80));
-pokemosMedium.forEach(element => {
-  let nameMedium = element.name;
-  let img = element.img;
-  let heightMedium = element.height;
-  window.printPokemon.printPokemonHeight(nameMedium, img, heightMedium);
 });
 
- });
-
- checkboxHeightTall.addEventListener("click", ()=>{
-  const pokemonsTall = pokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.80))
+checkboxHeightTall.addEventListener("click", ()=>{
+  const pokemonsTall = window.printPokemon.filterByHeightTall(pokemonData);
 pokemonsTall.forEach(element => {
-  let nameTall = element.name;
+  let name = element.name;
   let img = element.img;
-  let heightTall = element.height;
-  window.printPokemon.printPokemonHeight(nameTall, img, heightTall);
+  let height = element.height;
+  window.printPokemon.printPokemonHeight(name, img, height);
+});
 });
 
- });
+
+checkboxHeightAscending.addEventListener("click", () =>{
+const pokemonSortHeight=window.printPokemon.sortByHeight(pokemonData);
+  pokemonSortHeight.forEach(element => {
+    let name = element.name;
+    let img = element.img;
+    let sortHeight = element.height;
+    window.printPokemon.printPokemonSortByHeight(name, img, sortHeight);
+  });
+  });
+
+checkboxWeightAscending.addEventListener("click", () => {
+  const pokemonSortWeight = window.printPokemon.sortByWeight(pokemonData);
+  pokemonSortWeight.forEach(element => {
+    let name= element.name;
+    let img = element.img;
+    let sortWeight = element.weight;
+    window.printPokemon.printPokemonSortByWeight(name, img, sortWeight);
+  });
+});
+
+
+/*checkboxTotalHeightPokemon.addEventListener("click",()=>{
+  const totalHeightPokemon= window.printPokemon.totalHeightPokemon(pokemonData);
+
+} )*/
 
 
 buttonPokemonFire.addEventListener("click", () => {
@@ -247,9 +213,6 @@ ButtonDragon.addEventListener("click", () => {
   filtrar(14);
 })
 
-
-
-
 pokemonData.forEach(element => {
   let num = element.num;
   let name = element.name;
@@ -271,24 +234,16 @@ pokemonData.forEach(element => {
 });
 
 
+//Función para ordenar los pokémons por peso
 
 
-
-
-
-
-
- /*
-
+ 
+/*
 //Función para ordenar los pokémons de manera descendente. (falta imprimirlos)
 pokemonsSortHeightDescending=pokemonsSortHeight.reverse();
-console.log(pokemonsSortHeightDescending);*/
-
-
-
-
-
-//retorna los tipos de pokemones gaby 
+console.log(pokemonsSortHeightDescending);
+*/
+ 
 function filtrar(id_tipo) {
   
   if (id_tipo == 1) { //tipo fuego
@@ -306,7 +261,7 @@ function filtrar(id_tipo) {
       let namePokemonGrass = element.name;
       let typePokemonGrass = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonGrass, img, typePokemonGrass)
+      window.printPokemon.printAll(namePokemonGrass, img, typePokemonGrass);
     })
 
   } else if (id_tipo == 3) { //tipo ice
@@ -395,7 +350,7 @@ function filtrar(id_tipo) {
       let namePokemonFighting = element.name;
       let typePokemonFighting = element.type;
       let img = element.img;
-    window.printPokemon.printAll(namePokemonFighting, img, typePokemonFighting)
+      window.printPokemon.printAll(namePokemonFighting, img, typePokemonFighting)
     })
   } else if (id_tipo == 14) { //tipo Fairy
     const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Dragon"));
@@ -413,22 +368,6 @@ function filtrar(id_tipo) {
 
 
 
-/*const pokemonsSortHeight=pokemonData.sort(pokemon=>(parseInt(pokemon.height)), function(a, b){return a - b})
-pokemonsSortHeight.forEach(element=>{
-  let heightSort=element.height;
-  let img=element.img;
-  print7(heightSort, img);
-})
-
-
-
-
-/*
-pokemonData.sort(function(a, b){return a - b}).forEach(element =>{ 
-  let nameSort=element.name;
-  let img=element.img;
-  print7(nameSort, img)}
-  );
 
 
 
@@ -441,28 +380,55 @@ pokemonData.sort(function(a, b){return a - b}).forEach(element =>{
 
 
 
- /*
-const search= PokemonData(element => {
-  let nameSearch = element.name
-  
-
-element => {
-  let num = element.num;
-  let name = element.name;
 
 
 
 
 
 
-const pokemons=pokemonData.map( pokemons=> `${pokemons.name} ${pokemons.num} ${pokemons.type} `);
-print(pokemons)
-console.log(pokemons);*/
 
-/*pokemonData.forEach(element =>{
-  let pokemonsLight=parseInt(element.weight);
-  if (pokemonsLight<30);{
-  print2(pokemonsLight)
+
+
+
+
+
+
+
+//Funciones para computar las alturas y los pesos
+
+const totalSumPokemonHeight= pokemonData.reduce((total,currentValue, index,array)=>{
+    total += parseFloat(currentValue.height);
+  if (index===array.lenght -1){
+     return total/array.lenght
+  } else{
+    return total
   }
-  console.log(pokemonsLight);
-})*/
+
+}, 0)
+console.log(totalSumPokemonHeight);
+
+const totalSumPokemon= pokemonData.reduce((total,currentValue, index,array)=>{
+  total += parseFloat(currentValue.weight);
+if (index===array.lenght -1){
+   return total/array.lenght
+} else{
+  return total
+}
+
+}, 0)
+console.log(totalSumPokemon);
+
+
+const totalWeightPokemon2= pokemonData.reduce((total, pokemonData)=>
+  total +=parseFloat(pokemonData.weight), 0, )
+
+  console.log(totalWeightPokemon2)
+ 
+const totalHeightPokemon2= pokemonData.reduce((total, pokemonData)=>
+  total +=parseFloat(pokemonData.height), 0, )
+
+  console.log(totalHeightPokemon2)
+ 
+
+
+

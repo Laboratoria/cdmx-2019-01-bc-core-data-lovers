@@ -4,21 +4,24 @@
 /*const example = () => {
   return 'example';
 };
-
 window.example = example;*/
-const dataPokemon=POKEMON.pokemon;
+const dataPokemon = POKEMON.pokemon;
 
 window.printPokemon = {
-  printAll:(namePokemonAll, img, typePokemonAll) => {
-      let resultTypeAll = `<h1>${namePokemonAll}</h1>
+  printAll: (namePokemonAll, img, typePokemonAll) => {
+    let resultTypeAll = `<h1>${namePokemonAll}</h1>
        <div><img src=${img}></div>
        <p>Type: ${typePokemonAll}</p>`;
-       pokemonTypeAll.insertAdjacentHTML("beforeend",resultTypeAll);
-    },
+    pokemonTypeAll.insertAdjacentHTML("beforeend", resultTypeAll);
+  },
+
   
-    printData :(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
-      spawn_time, multipliers, weaknesses, next_evolution, ) => {
-      let result = `<h1>${num}</h1> 
+  
+
+
+  printData: (num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
+    spawn_time, multipliers, weaknesses, next_evolution, ) => {
+    let result = `<h1>${num}</h1> 
             <h2>${name}</h2>
             <div><img src=${img}></div>
             <p> TYPE : ${type}</p>
@@ -33,66 +36,87 @@ window.printPokemon = {
             <p>MULTIPLIERS: ${multipliers}</p>
             <p>WEAKNESSES: ${weaknesses}</p>
             <p>NEXT EVOLUTION: ${next_evolution}</p>`;
-      totalData.insertAdjacentHTML("beforeend", result);
-    
+    totalData.insertAdjacentHTML("beforeend", result);
+
   },
 
-    printPokemonWeight: (name, img, weight) => {
-      let resultLight = `<h1 class="nameLight">${name}</h1>
+  printPokemonWeight: (name, img, weight) => {
+    let resultLight = `<h1 class="nameLight">${name}</h1>
        <div><img src=${img}></div>
        <p class="pokemonWeightLight">WEIGHT: ${weight}</p>`;
-      pokemonLight.insertAdjacentHTML("beforeend", resultLight);
-    },
+    pokemonLight.insertAdjacentHTML("beforeend", resultLight);
+  },
 
-    printPokemonHeight: (name, img, height) => {
-      let resultSmall = `<h1>${name}</h1>
+  printPokemonHeight: (name, img, height) => {
+    let resultSmall = `<h1>${name}</h1>
        <div><img src=${img}></div>
        <p>HEIGHT: ${height}</p>`;
-      pokemonSm.insertAdjacentHTML("beforeend", resultSmall);
-    },
+    pokemonSm.insertAdjacentHTML("beforeend", resultSmall);
+  },
 
-    printPokemonSortByHeight:  (name, img, sortHeight) => {
-      let resultSort = `<h1>${name}</h1>
+  printPokemonSortByHeight: (name, img, sortHeight) => {
+    let resultSort = `<h1>${name}</h1>
        <div><img src=${img}></div>
        <p>HEIGHT: ${sortHeight}</p>`;
-      pokemonSortHeight.insertAdjacentHTML('beforeend', resultSort);
-    },
-
-    printPokemonSortByWeight:  (name, img, sortWeight) => {
-      let resultSort = `<h1>${name}</h1>
+    pokemonSortHeight.insertAdjacentHTML('beforeend', resultSort);
+  },
+  printPokemonSortByWeight: (name, img, sortWeight) => {
+    let resultSort = `<h1>${name}</h1>
       <div><img src=${img}></div>
       <p>WEIGHT: ${sortWeight}</p>`;
-      pokemonSortWeight.insertAdjacentHTML('beforeend', resultSort);
-    },
-
-    filterPokemonByType: (dataPokemon)=>{
-      dataPokemon.filter(pokemon => pokemon.type)
-    },
-   sortByHeight:(arrayPokemonData)=>{
-   const pokemonSortedData= arrayPokemonData.sort((a,b)=>{
-      if(a.height>b.height){
+    pokemonSortWeight.insertAdjacentHTML('beforeend', resultSort);
+  },
+  sortByHeight: (arrayPokemonData) => {
+    const pokemonSortedData = arrayPokemonData.sort((a, b) => {
+      if (a.height > b.height) {
         return 1
       };
-      if(a.height<b.height){
+      if (a.height < b.height) {
         return -1
-      }
-      else{
-        return 0
+      } else {
+        return 0;
       }
     })
     return pokemonSortedData;
-    }
-  }
-  
-   
+  },
+  sortByWeight: (arrayPokemonData) => {
+    const pokemonSortedData = arrayPokemonData.sort((a, b) => {
+      if ((parseFloat(a.weight)) > (parseFloat(b.weight))) {
+        return 1
+      };
+      if ((parseFloat(a.weight)) < (parseFloat(b.weight))) {
+        return -1
+      } else {
+        return 0;
+      }
+    })
+    return pokemonSortedData;
 
+  },
+  filterByWeightLight: (arrayPokemonData) => {
+    const pokemonFilteredData = arrayPokemonData.filter(pokemon => (parseInt(pokemon.weight) < 30));
+    return pokemonFilteredData;
+  },
+  filterByWeightHeavy: (arrayPokemonData) => {
+    const pokemonFilteredData = arrayPokemonData.filter(pokemon => (parseInt(pokemon.weight) > 30));
+    return pokemonFilteredData;
+  },
+  filterByHeightSmall: (arrayPokemonData)=>{
+   const pokemonFilteredData =arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) < 1.00));
+   return pokemonFilteredData;
 
-
-
-
-
-
-     
-   
-
- 
+  },
+  filterByHeightMedium: (arrayPokemonData)=>{
+   const pokemonFilteredData=arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.00) && (parseInt(pokemon.height) <= 1.80));
+   return pokemonFilteredData;
+  },
+  filterByHeightTall: (arrayPokemonData)=>{
+    const pokemonFilteredData=arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.80));
+    return pokemonFilteredData;
+  },
+  totalHeight:(arrayPokemonData)=>{
+    const pokemontotalHeight=arrayPokemonData.reduce((total, pokemonData)=>
+    total +=parseFloat(pokemonData.weight), 0, )
+    return pokemontotalHeight;
+  },
+}
