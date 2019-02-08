@@ -1,7 +1,3 @@
-//cambio de pantallas
-function changeOptions() {
-    document.getElementById("start").style.display="none"
-    document.getElementById("options").style.display="block"
 
 const data = POKEMON.pokemon;
 const finalResult = document.getElementById('root');
@@ -55,9 +51,6 @@ const printGrass = (name, imagen, type, id) => {
   finalResult.innerHTML += grass;
 };   
 
-function changeType () {
-    document.getElementById("options").style.display="none"
-    document.getElementById("finalResult").style.display="block"
 butGrass.addEventListener("click", filterGrass);
 function filterGrass() {
   typeGrass.forEach(data => {
@@ -69,9 +62,6 @@ function filterGrass() {
   });
 }
 
-function changeWeaknesses () {
-    document.getElementById("options").style.display="none"
-    document.getElementById("finalResult").style.display="block"
 //Filtra e imprime Electric
 const typeElectric = data.filter(data => data.type.includes("Electric"));
 const printElectric = (name, imagen, type, id) => {
@@ -96,9 +86,6 @@ const printIce = (name, imagen, type, id) => {
   finalResult.innerHTML += ice;
 };   
 
-function changeHome () {
-    document.getElementById("finalResult").style.display="none"
-    document.getElementById("options").style.display="block"
 butIce.addEventListener("click", filterIce);
 function filterIce() {
   typeIce.forEach(data => {
@@ -177,19 +164,3 @@ function filterFlying() {
     printFlying(name, imagen, type, id);
   });
 }
-
-//obteniendo data
-const data = POKEMON.pokemon;
-
-data.forEach(element => {
-let picture = element.img;
-var image = document.createElement("img");
-image.src= picture
-document.body.appendChild(image); 
-document.write("<br>" + 'Nombre: ' + element.name + '<br>');
-document.write('Número ' + element.num + "<br>");
-document.write('Tipo: ' + element.type + "<br>");
-document.write('Peso: ' + element.weight + "<br>");
-document.write('Altura: ' + element.height + "<br>");
-document.write('Debilidades: ' + element.weaknesses + "<br><br>");
-});
