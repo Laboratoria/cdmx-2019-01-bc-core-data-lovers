@@ -16,7 +16,7 @@ const print=(data) => {
     let result = `<div class="wrapper">
     <div class="pokemon-cart"> <!--body-->
       <div class="pokemon-cart-image">
-        <img src="${element.img}" class="pokemon-cart-image-size">
+        <img src="${element.img}">
       </div>
       <div class="box-cart">
         <p>Número:${element.num}</p>
@@ -42,22 +42,22 @@ const pokemonType=(arrayButtons)=> {
 
 pokemonType(buttonType)
 
-yv
+
 
 
 
 //const procesarData = (data) => {
-        //const toPrint = window.pokesaurius.typeFilter(data)
-        //print(toPrint)
-    //}
-// console.log(typeof orderName);   
+  //      const toPrint = window.pokesaurius.typeFilter(data)
+    //    print(toPrint)
+  //  }
+ //console.log(typeof orderName);   
 
 
 //filterType.addEventListener('click',()=>{
-    //console.log(newData)
-    //let userChoice= event.target.value;
-    //console.log(userChoice);
-    //const tipoFiltrado= window.pokesaurius.typeFilter(userChoice);
+  //  console.log(newData)
+  //  let userChoice= event.target.value;
+  //  console.log(userChoice);
+  //  const tipoFiltrado= window.pokesaurius.typeFilter(userChoice);
  //});
 
  //procesarData(data)
