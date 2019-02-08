@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 // Estoy creando la funcion de mi boton GO, para que al darle click me pinte el resultado del input en pantalla 2
 const btngetName = document.getElementById('next');
 const trainerName = document.getElementById('nombre');
@@ -38,3 +40,4 @@ nombre.addEventListener("click", ()=>{
   pantalla1.classList.add('hide');
   pantalla2.classList.remove('hide');
 })
+>>>>>>> 087b6b4f9d17d9d9c7d5f1c22c7ec3600bf28782
