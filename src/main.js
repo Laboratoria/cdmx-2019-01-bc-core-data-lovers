@@ -3,9 +3,7 @@ const pokeballPage=document.getElementById('pokeball-page');
 const pokemonPage=document.getElementById('pokemon-page');
 const pokeballButton=document.getElementById('pokeball-button');
 const printList = document.getElementById('print-list');
-const filterType = document.getElementById('filter');
-const botonFilter=Array.from(document.getElementsByClassName("boton-filter"));//clase exclusi va para js
-
+const buttonType=document.getElementsByClassName('type-button');
 
 
 pokeballButton.addEventListener('click',()=> {
@@ -13,8 +11,8 @@ pokeballButton.addEventListener('click',()=> {
  pokemonPage.classList.remove('hideElement');
 });
 
-const print=(toPrint) => {
-   toPrint.forEach(element => {
+const print=(data) => {
+   data.forEach(element => {
     let result = `<div class="wrapper">
     <div class="pokemon-cart"> <!--body-->
       <div class="pokemon-cart-image">
@@ -31,38 +29,38 @@ const print=(toPrint) => {
     return result;
 };
 
-//const typePokemon=(arrayButtons)=> {
-  //  arrayButtons.map((buttonType)=> {
-    //    buttonType.addEventListener('click', (event)=>{ //event accede a las propiedades de un boton
-      //  const buttonType= event.target.id; //target accede a los elementos de un boton
-        //const finalArrayPokemon=window.pokesaurius.typeFilter(data,buttonType);
-        //print(finalArrayPokemon) ;
-       // })
-    //})
-//}
+const pokemonType=(arrayButtons)=> {
+  arrayButtons.map(buttonType => {
+  buttonType.addEventListener('click',(event) =>{
+  const buttonType=event.target.id;
+  console.log(buttonType);
+  const newData= window.pokesaurius.filterType(pokemon,buttonType);
+  return print(newData)
+    });
+  });
+};
 
-//typePokemon(botonFilter);
-
-
-
+pokemonType(buttonType)
 
 
 
-const procesarData = (data) => {
-        const toPrint = window.pokesaurius.typeFilter(data)
-        print(toPrint)
-    }
-// console.log(typeof orderName);   
 
 
-filterType.addEventListener('change',()=>{
-    console.log(newData)
-    let userChoice= event.target.value;
-    console.log(userChoice);
-    const tipoFiltrado= window.pokesaurius.typeFilter(userChoice);
- });
+//const procesarData = (data) => {
+  //      const toPrint = window.pokesaurius.typeFilter(data)
+    //    print(toPrint)
+  //  }
+ //console.log(typeof orderName);   
 
- procesarData(data)
+
+//filterType.addEventListener('click',()=>{
+  //  console.log(newData)
+  //  let userChoice= event.target.value;
+  //  console.log(userChoice);
+  //  const tipoFiltrado= window.pokesaurius.typeFilter(userChoice);
+ //});
+
+ //procesarData(data)
 
 
 

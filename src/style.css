@@ -1,80 +1,208 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
 }
-.hideElement{
-    display:none;
+
+.hideElement {
+  display: none;
 }
-body{
-    background:  #E9ECF4;
+
+body {
+  background: #E9ECF4;
+  font-family: 'Lato', sans-serif;
+  
 }
+
 #root{
-    height: 100%;
-}
-.contenedor{
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    background: #C2FAB9;
-    position: fixed;
+  width: 80%;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
-.img{
-    margin: 30% auto 0;
-    display: block;
+.contenedor {
+  height: 100%;
+  background: #C2FAB9;
 }
 
-.poke-button{
-    background: #C2FAB9;
-    border: none;
+
+header {
+    width: 80%;
+    max-width: 1000px;
+  border-radius: 4px;
+  position: fixed;
+  height: 13%;
+  color: whitesmoke;
+}
+
+.imgchico {
+    width: 200px;
     margin: auto;
     display: block;
 }
 
-header{
-position: fixed;
-width: 100%;
-background:#C2FAB9;
-height: 4em;
-color:whitesmoke;
-}
-
-.contenido{
-    background: #C2FAB9;
-    padding-top: 8%;
-}
-
-.textfiltertop{
-    background: #5A6978;
-}
-
-footer{
-    position: fixed;
-    bottom: 0%;
-    height: 3em;
-    width: 100%;
-    background: #976DD0;
-
-}
-.wrapper{
-    display: inline-block;
-    background:#FFD185;
-    padding-bottom:10px;
-    width:130px;
-    height:160px;
-    border-radius:14px;
-    border: 3px solid #FFBA5C;
-  }
+nav {
+  background: #12203E;
+  margin: auto;
+  border-radius: 10px;
+  width: 90%;
+  height: 40%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
   
-  .pokemon-cart-image{
-    background:#EAFEE6;
-    border-top-left-radius:14px;
-    border-top-right-radius:14px;
-    right:30px;
-    
+}
+
+.text-page {
+    color: wheat;
+    display: inline-block;
+    margin-top: 4px;;
+    margin-left: 3%;
+}
+.name-search{
+    background: #37486B;
+    margin-left: 50%;
+    width: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    color: wheat;
+    display: inline-block;
+}
+
+
+.contenido {
+    background: #5AC6BB;
+    width: 68.5%;
+    margin-top: 14%;
+    margin-left: 4%;
+    margin-bottom: 15%;
+  padding-top: 3%;
+  padding-left: 2%;
+  border-radius: 14px;
+   float: left;
+}
+
+aside{
+    background: #5AC6BB;
+    width: 20%;
+    margin-top: 14%;
+    margin-left: 2%;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 14px;
+    float: left;
+    box-sizing: border-box;
+    color: wheat;
+    font-size: 20px;
+  font-weight: bold;
+    text-align: center;
+}
+
+.type-button {
+    background: #B5F4ED;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #12203E;
+    display: inline-block;
   }
-  .box-cart{
-   font-size:14px; 
-   text-align:center;
-   margin-top: 9px;
+
+footer {
+    background: #976DD0;
+    border-radius: 8px;
+  position: fixed;
+  bottom: 0%;
+  width: 60%;
+  margin-left: 3%;
+  display: block;
+  height: 80px;
+  text-align: center;
   }
+
+  .imgpokebolachica{
+      margin-top: 10px;
+    padding-top: 5px;
+    display: inline-block;
+  }
+
+.wrapper {
+  display: inline-block;
+  background: #FFD185;
+  margin: 9px 15px;
+  padding-bottom: 10px;
+  width: 130px;
+  height: 160px;
+  border-radius: 14px;
+  border: 3px solid #FFBA5C;
+}
+
+.pokemon-cart-image {
+  background: #EAFEE6;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  right: 30px;
+}
+
+.box-cart {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.text-footer{
+    color: wheat;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+.img {
+  margin: auto;
+  padding-top: 30%;
+  display: block;
+}
+
+.poke-button {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.poke-button:hover {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -6,38 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+  crossorigin="anonymous">
 </head>
 
 <body>
-
+ 
   <div id="root">
     <section id="pokeball-page" class="contenedor">
-      <img src="./assets/pokemon logo sin bola2cm.png" alt="" class="img">
-      <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-plus-nograss_boton.png"></button>
-    </section>
+      <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img">
+      <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-button.png"></button>
 
-    <section id="pokemon-page" class="hideElement contenedor">
-      <header>
+      <header class="header">
         <div>
-          <img src="./assets/pokemon logo sin bola1cm.png" alt="Logo-Pokesaurius">
+          <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="imgchico">
         </div>
         <nav>
-        <li>COLECCIÓN 150/150</li>
-        <button id="sort-number" class="button" >Por Número</button>
+        <p class="text-page">COLECCIÓN 150/150</p>
+        <input type="text" id="name-search" class="name-search" placeholder="Búsqueda por nombre">
         </nav>
       </header>
 
-      <section>
+      <main class="contenido">
+
+          <div class="wrapper">
+              <div class="pokemon-cart"> <!--body-->
+                <div class="pokemon-cart-image">
+                  <img src="${element.img}">
+                </div>
+                <div class="box-cart">
+                  <p>Número:${element.num}</p>
+                  <p>${element.name}</p>
+                </div>
+              </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="pokemon-cart"> <!--body-->
+                      <div class="pokemon-cart-image">
+                        <img src="${element.img}">
+                      </div>
+                      <div class="box-cart">
+                        <p>Número:${element.num}</p>
+                        <p>${element.name}</p>
+                      </div>
+                    </div>
+                      </div>
+
+                      <div class="wrapper">
+                          <div class="pokemon-cart"> <!--body-->
+                            <div class="pokemon-cart-image">
+                              <img src="${element.img}">
+                            </div>
+                            <div class="box-cart">
+                              <p>Número:${element.num}</p>
+                              <p>${element.name}</p>
+                            </div>
+                          </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="pokemon-cart"> <!--body-->
+                                  <div class="pokemon-cart-image">
+                                    <img src="${element.img}">
+                                  </div>
+                                  <div class="box-cart">
+                                    <p>Número:${element.num}</p>
+                                    <p>${element.name}</p>
+                                  </div>
+                                </div>
+                                  </div>
+
+                                  <div class="wrapper">
+                                      <div class="pokemon-cart"> <!--body-->
+                                        <div class="pokemon-cart-image">
+                                          <img src="${element.img}">
+                                        </div>
+                                        <div class="box-cart">
+                                          <p>Número:${element.num}</p>
+                                          <p>${element.name}</p>
+                                        </div>
+                                      </div>
+                                        </div>
+
+
+        
       <article id="print-list">
         <img src="">
       </article>
-      </section>
+      </main>
+
+      <aside class="type-search">
+          <h3>Tipo</h3>
+          <button class="type-button" id="Grass">Planta</button>
+          <button class="type-button" id="Poison">Veneno</button>
+          <button class="type-button" id="Fire">Fuego</button>
+          <button class="type-button" id="Ice">Hielo</button>
+          <button class="type-button" id= "Flying">Volador</button>
+          <button class="type-button" id= "Psiquic">Psíquico</button>
+          <button class="type-button" id= "Water" >Agua</button>
+          <button class="type-button" id= "Ground">Tierra</button>
+          <button class="type-button" id= "Rock">Roca</button>
+          <button class="type-button" id= "Electric">Eléctrico</button>
+          <button class="type-button" id= "Bug">Bicho</button>
+          <button class="type-button" id= "Normal">Normal</button>
+        </aside>
 
       <footer id="busqueda">
-        <p>Introduce nombre</p>
-        <select id="filter" name="order">
-            <option value="number">Número</option>
-          </select>
+        <img src="./assets/poke-ball-button_1cm.png"  alt="" class="imgpokebolachica">
+        <p class="text-footer">Todos los derechos reservados</p>
       </footer>
     </section>
 
