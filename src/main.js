@@ -1,20 +1,5 @@
-
-const principalpage = document.getElementById('principalpage');
-const pedestrianspage = document.getElementById('pedestrianspage');
-const pedalcyclistspage = document.getElementById('pedalcyclistspage');
-const busoccupantspage = document.getElementById('busoccupantspage');
-const caroccupantspage = document.getElementById('caroccupantspage');
-const motorcyclistspage = document.getElementById('motorcyclistspage');
-
-const pedestrian_data = () => {
-    page1.classList.add('hide');
-    page2.classList.remove('hide');
-  }
-//función Elena 
-
 let tableToPrint = document.getElementById('dataTable');
 //get the data showThePanel (this is only used if we preffer to show the panel via javascrip and not in the css)
-
 
 
 //First we need to declare our buttons
@@ -108,7 +93,6 @@ function printTheData(accidentsByYear){
 
 function printDataInHTML(year, number){
   tableToPrint.insertAdjacentHTML('beforeend', `<tr><td>${year}</td><td>${number}</td></tr>`);
-
 }
 /*openMenuButton.addEventListener('click', ()=>{
   openNav();
@@ -134,8 +118,6 @@ function printDataInHTML(year, number){
 /*function openNav() {
   document.getElementById("side_menu").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("side_menu").style.width = "0";
 }*/
-
