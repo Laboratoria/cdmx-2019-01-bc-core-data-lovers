@@ -17,7 +17,7 @@ for( let i = 0; i < bottonstByMode.length; i++){
   bottonstByMode[i].addEventListener('click', function (e) {
     const accidentsData = getNeededData(e.target.name);
     //Display the information panel (this is only used if we preffer to show the panel via javascrip and not in the css)
-    showThePanel();
+    //showThePanel();
     //Print in the information pnale all the information
     printTheData(accidentsData);
   });
@@ -83,7 +83,7 @@ console.log(fieldToSearch)
 //function showThePanel(){
   //open the data Panel
 
-}
+
 
 function printTheData(accidentsByYear){
   accidentsByYear.forEach(element => {
