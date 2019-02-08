@@ -81,22 +81,79 @@ checkboxTypeFilter.addEventListener("click", () =>{
 
 });
 
+const printPokemonWeight= (name, img, weight) => {
+  let resultLight = `<h1 class="nameLight">${name}</h1>
+   <div><img src=${img}></div>
+   <p class="pokemonWeightLight">WEIGHT: ${weight}</p>`; 
+   pokemonLight.insertAdjacentHTML("beforeend", resultLight);
+};
+
+const printPokemonHeight= (name, img, height) => {
+  let resultSmall = `<h1>${name}</h1>
+   <div><img src=${img}></div>
+   <p>HEIGHT: ${height}</p>`;
+  pokemonSm.insertAdjacentHTML("beforeend", resultSmall);
+};
+
+const printPokemonSortByHeight=  (name, img, sortHeight) => {
+  let resultSort = `<h1>${name}</h1>
+   <div><img src=${img}></div>
+   <p>HEIGHT: ${sortHeight}</p>`;
+  pokemonSortHeight.insertAdjacentHTML('beforeend', resultSort);
+};
+
+const printPokemonSortByWeight=  (name, img, sortWeight) => {
+  let resultSort = `<h1>${name}</h1>
+  <div><img src=${img}></div>
+  <p>WEIGHT: ${sortWeight}</p>`;
+  pokemonSortWeight.insertAdjacentHTML('beforeend', resultSort);
+};
+
+const printData = (num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
+  spawn_time, multipliers, weaknesses, next_evolution, ) => {
+  let result = `<h1>${num}</h1> 
+        <h2>${name}</h2>
+        <div><img src=${img}></div>
+        <p> TYPE : ${type}</p>
+        <p> HEIGHT : ${height}</p>
+        <p> WEIGHT: ${weight}</p>
+        <p>CANDY: ${candy}</p>
+        <p>CANDY COUNT: ${candy_count}</p>
+        <p>EGG: ${egg}</p>
+        <p>SPAWN CHANCE: ${spawn_chance}</p>
+        <p>AVERANGE SPAWNS: ${avg_spawns}</p>
+        <p>SPAWN TIME: ${spawn_time}</p>
+        <p>MULTIPLIERS: ${multipliers}</p>
+        <p>WEAKNESSES: ${weaknesses}</p>
+        <p>NEXT EVOLUTION: ${next_evolution}</p>`;
+  totalData.insertAdjacentHTML("beforeend", result);
+
+};
+
+const printAll=(namePokemonAll, img, typePokemonAll) => {
+  let resultTypeAll = `<h1>${namePokemonAll}</h1>
+   <div><img src=${img}></div>
+   <p>Type: ${typePokemonAll}</p>`;
+   pokemonTypeAll.insertAdjacentHTML("beforeend",resultTypeAll);
+};
+
 checkboxWeightLight.addEventListener("click",()=>{
-  const pokemonsLight =window.printPokemon.filterByWeightLight(pokemonData);
+  const pokemonsLight = window.printPokemon.filterByWeight(pokemonData);
  pokemonsLight.forEach(element => {
   let name = element.name;
   let img = element.img;
   let weight = element.weight;
-  window.printPokemon.printPokemonWeight(name, img, weight);
+  printPokemonWeight(name, img, weight);
+  
 });
 });
 checkboxWeightHeavy.addEventListener("click",() =>{
-  const pokemonsHeavy = window.printPokemon.filterByWeightHeavy(pokemonData);
+  const pokemonsHeavy = window.printPokemon.filterByWeight(pokemonData);
 pokemonsHeavy.forEach(element => {
   let name = element.name;
   let img = element.img;
   let weight = element.weight;
-  window.printPokemon.printPokemonWeight(name, img, weight);
+  printPokemonWeight(name, img, weight);
 });
 });
 
@@ -106,27 +163,27 @@ pokemonsSmall.forEach(element => {
   let name = element.name;
   let img = element.img;
   let height = element.height;
-  window.printPokemon.printPokemonHeight(name, img, height);
+  printPokemonHeight(name, img, height);
 });
 });
 
 checkboxHeightMedium.addEventListener("click", () =>{
-  const pokemonMedium = window.printPokemon.filterByHeightMedium(pokemonData);
-pokemonMedium.forEach(element => {
-  let name = element.name;
+  const pokemosMedium = window.printPokemon.filterByHeightMedium(pokemonData);
+pokemosMedium.forEach(element => {
+  let nameMedium = element.name;
   let img = element.img;
-  let height = element.height;
-  window.printPokemon.printPokemonHeight(name, img, height);
+  let heightMedium = element.height;
+  printPokemonHeight(nameMedium, img, heightMedium);
 });
 });
 
 checkboxHeightTall.addEventListener("click", ()=>{
-  const pokemonsTall = window.printPokemon.filterByHeightTall(pokemonData);
+  const pokemonsTall =window.printPokemon.filterByHeightTall(pokemonData);
 pokemonsTall.forEach(element => {
   let name = element.name;
   let img = element.img;
-  let height = element.height;
-  window.printPokemon.printPokemonHeight(name, img, height);
+  let heightTall = element.height;
+  printPokemonHeight(nameTall, img, heightTall);
 });
 });
 
@@ -137,17 +194,18 @@ const pokemonSortHeight=window.printPokemon.sortByHeight(pokemonData);
     let name = element.name;
     let img = element.img;
     let sortHeight = element.height;
-    window.printPokemon.printPokemonSortByHeight(name, img, sortHeight);
+    printPokemonSortByHeight(name, img, sortHeight);
   });
   });
 
 checkboxWeightAscending.addEventListener("click", () => {
-  const pokemonSortWeight = window.printPokemon.sortByWeight(pokemonData);
-  pokemonSortWeight.forEach(element => {
-    let name= element.name;
+
+  const pokemonsSortWeight=window.printPokemon.SortByWeight(pokemonData);
+  pokemonsSortWeight.forEach(element => {
+    let nameSortByWeight = element.name;
     let img = element.img;
-    let sortWeight = element.weight;
-    window.printPokemon.printPokemonSortByWeight(name, img, sortWeight);
+    let weightSort = element.weight;
+    printPokemonSortByWeight(nameSortByWeight, img, weightSort);
   });
 });
 
@@ -229,7 +287,7 @@ pokemonData.forEach(element => {
   let multipliers = element.multipliers;
   let weaknesses = element.weaknesses;
   let next_evolution = element.next_evolution;
-  window.printPokemon.printData(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
+  printData(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
     weaknesses, next_evolution);
 });
 
@@ -247,119 +305,132 @@ console.log(pokemonsSortHeightDescending);
 function filtrar(id_tipo) {
   
   if (id_tipo == 1) { //tipo fuego
-    const pokemonType=window.printPokemon.filterPokemonByType()
-    pokemonType.includes("Fire");
+    const fireType= "Fire";
+    const pokemonType=window.printPokemon.pokemonFilterType(pokemonData,fireType);
     pokemonType.forEach(element => {
       let namePokemonFire = element.name;
       let img = element.img;
       let typePokemonFire = element.type;
-      window.printPokemon.printAll(namePokemonFire,img,typePokemonFire);
+      printAll(namePokemonFire,img,typePokemonFire);
   });   
 }else if(id_tipo==2){//tipo grass
-    const pokemonType= pokemonData.filter(pokemon => pokemon.type.includes("Grass"));
+    const grassType ="Grass";
+    const pokemonType= window.printPokemon.pokemonFilterType(pokemonData,grassType);
     pokemonType.forEach(element =>{
       let namePokemonGrass = element.name;
       let typePokemonGrass = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonGrass, img, typePokemonGrass);
-    })
+      printAll(namePokemonGrass, img, typePokemonGrass);
+    });
 
   } else if (id_tipo == 3) { //tipo ice
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Ice"));
+    const iceType="Ice";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,iceType);
     pokemonType.forEach(element => {
       let namePokemonIce = element.name;
       let typePokemonIce = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonIce, img, typePokemonIce)
-    })
+      printAll(namePokemonIce, img, typePokemonIce)
+    });
   } else if (id_tipo == 4) { //tipo poison
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Poison"));
+    const poisonType="Poison";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,poisonType);
     pokemonType.forEach(element => {
       let namePokemonPoison = element.name;
       let typePokemonPoison = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonPoison, img, typePokemonPoison)
-    })
+      printAll(namePokemonPoison, img, typePokemonPoison)
+    });
   } else if (id_tipo == 5) { //tipo Flying
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Flying"));
+    const FlyingType="Flying";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,FlyingType);
     pokemonType.forEach(element => {
       let namePokemonFlying = element.name;
       let typePokemonFlying = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonFlying, img, typePokemonFlying)
-    })
+      printAll(namePokemonFlying, img, typePokemonFlying)
+    });
   } else if (id_tipo == 6) { //tipo psychic
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Psychic"));
+    const psychicType="Psychic";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,psychicType);
     pokemonType.forEach(element => {
       let namePokemonPsychic = element.name;
       let typePokemonPsychic = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonPsychic, img, typePokemonPsychic)
-    })
+      printAll(namePokemonPsychic, img, typePokemonPsychic)
+    });
   } else if (id_tipo == 7) { //tipo water
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Water"));
+    const waterType="Water";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,waterType);
     pokemonType.forEach(element => {
       let namePokemonWater = element.name;
       let typePokemonWater = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonWater, img, typePokemonWater)
-    })
+      printAll(namePokemonWater, img, typePokemonWater)
+    });
   } else if (id_tipo == 8) { //tipo Ground
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Ground"));
+    const groundType="Ground";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,groundType);
     pokemonType.forEach(element => {
       let namePokemonGround = element.name;
       let typePokemonGround = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonGround, img, typePokemonGround)
-    })
+      printAll(namePokemonGround, img, typePokemonGround)
+    });
   } else if (id_tipo == 9) { //tipo Rock
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Rock"));
+    const rockType="Rock";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,rockType);
     pokemonType.forEach(element => {
       let namePokemonRock = element.name;
       let typePokemonRock = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonRock, img, typePokemonRock)
-    })
+      printAll(namePokemonRock, img, typePokemonRock)
+    });
   } else if (id_tipo == 10) { //tipo Electric
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Electric"));
+    const electricType="Electric";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,electricType);
     pokemonType.forEach(element => {
       let namePokemonElectric = element.name;
       let typePokemonElectric = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonElectric, img, typePokemonElectric)
-    })
+      printAll(namePokemonElectric, img, typePokemonElectric)
+    });
   } else if (id_tipo == 11) { //tipo Bug
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Bug"));
+    const bugType="Bug";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,bugType);
     pokemonType.forEach(element => {
       let namePokemonBug = element.name;
       let typePokemonBug = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonBug, img, typePokemonBug)
-    })
+      printAll(namePokemonBug, img, typePokemonBug)
+    });
   } else if (id_tipo == 12) { //tipo Normal
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Normal"));
+    const normalType= "Normal";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,normalType);
     pokemonType.forEach(element => {
       let namePokemonNormal = element.name;
       let typePokemonNormal = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonNormal, img, typePokemonNormal)
-    })
+      printAll(namePokemonNormal, img, typePokemonNormal)
+    });
   } else if (id_tipo == 13) { //tipo Fighting
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Fighting"));
+    const fightingType="Fighting";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,fightingType);
     pokemonType.forEach(element => {
       let namePokemonFighting = element.name;
       let typePokemonFighting = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonFighting, img, typePokemonFighting)
-    })
-  } else if (id_tipo == 14) { //tipo Fairy
-    const pokemonType = pokemonData.filter(pokemon => pokemon.type.includes("Dragon"));
+      printAll(namePokemonFighting, img, typePokemonFighting)
+    });
+  } else if (id_tipo == 14) { //tipo Dragon
+    const dragonType="Dragon";
+    const pokemonType = window.printPokemon.pokemonFilterType(pokemonData,dragonType);
     pokemonType.forEach(element => {
       let namePokemonDragon = element.name;
       let typePokemonDragon = element.type;
       let img = element.img;
-      window.printPokemon.printAll(namePokemonDragon, img, typePokemonDragon)
-    })
+      printAll(namePokemonDragon, img, typePokemonDragon)
+    });
   }
 }
 
