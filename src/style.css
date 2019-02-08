@@ -7,14 +7,14 @@ img{
 }
 
 
-#btnPokemon{
+.btnPokemon{
     width: 24%;
     height: 350px;
 }
 
 #pokemones, #filtered_out { /*Agregue*/
     padding-top:15%;
-    display: flex;
+    margin-left: 1.5%; 
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -78,12 +78,13 @@ img{
     width:35%;
 }
 
-.logfixed{ /*<------ Esto si, dejalo*/
+.logfixed{ 
     background-color: black;
     width:97%;
     margin-left:1.5%;
     position: fixed;
-    border-radius:25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 
