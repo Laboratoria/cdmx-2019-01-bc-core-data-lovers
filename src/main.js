@@ -31,17 +31,17 @@ const print=(toPrint) => {
     return result;
 };
 
-const typePokemon=(arrayButtons)=> {
-    arrayButtons.map((buttonType)=> {
-        buttonType.addEventListener('click', (event)=>{ //event accede a las propiedades de un boton
-        const buttonType= event.target.id; //target accede a los elementos de un boton
-        const finalArrayPokemon=window.pokesaurius.typeFilter(data,buttonType);
-        print(finalArrayPokemon)
-        })
-    })
-}
+//const typePokemon=(arrayButtons)=> {
+  //  arrayButtons.map((buttonType)=> {
+    //    buttonType.addEventListener('click', (event)=>{ //event accede a las propiedades de un boton
+      //  const buttonType= event.target.id; //target accede a los elementos de un boton
+        //const finalArrayPokemon=window.pokesaurius.typeFilter(data,buttonType);
+        //print(finalArrayPokemon) ;
+       // })
+    //})
+//}
 
-typePokemon(botonFilter);
+//typePokemon(botonFilter);
 
 
 
