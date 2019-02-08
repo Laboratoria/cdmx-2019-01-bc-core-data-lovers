@@ -5,22 +5,20 @@ const filtroPais = (selectPais, indicador) =>{
     let indicadorFiltro;
     
     const pais =  baseDatos[selectPais].indicators;
-    console.log(pais);
+    //console.log(pais);
     const nomIndicador = pais.filter(element=>{ //Funcion filtro selecciona el objeto del pais "MEX" que tiene el elmento indicatorName : Poblacion Total de mujeres
       return element.indicatorName === indicador;
     })
-    console.log(nomIndicador); 
+    //console.log(nomIndicador); 
     indicadorFiltro=nomIndicador;
     
-    console.log(indicadorFiltro); 
+    //console.log(indicadorFiltro); 
     indicadorFiltro.forEach(element => { //forEach recorre arreglo de Indicadores,obteniendo solo la data del elemnto que le pasa el filtro anterior 
      let datosIndicador = element.data;
-    console.log(datosIndicador); 
+    //console.log(datosIndicador); 
     enviaIndicador= datosIndicador; 
     })  
     return enviaIndicador;
   } 
-
-
 
   window.filtroPais = filtroPais;
