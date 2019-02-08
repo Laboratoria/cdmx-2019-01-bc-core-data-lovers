@@ -90,14 +90,14 @@ for (const key in dataLol) {
 
 
     
-      const filtroSupport = Object.values(dataLol)
-          filtroSupport.forEach(element => {
-         const roles = element.tags[0];
-          *if (roles === "Support"){
-              console.log(element);}
-            });
+      //const filtroSupport = Object.values(dataLol)
+          //filtroSupport.forEach(element => {
+         //const roles = element.tags[0];
+          //*if (roles === "Support"){
+            //  console.log(element);}
+            //});
               
-            }
+            //}
 
             support.addEventListener('click',filtroPorRol)*/
 
