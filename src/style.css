@@ -1,123 +1,208 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.hideElement{
-    display:none;
-}
-body{
-    background:  #E9ECF4;
-}
-#root{
-    width: 80vw;
-    height: 100vh;
-    margin: 0 auto;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.contenedor{
-    height: 100%;
-    background: #C2FAB9;
-    }
-
-.img{
-    margin: auto;
-    padding-top: 30%;
-    display: block;
+.hideElement {
+  display: none;
 }
 
-.poke-button{
-    background: #C2FAB9;
-    border: none;
-    margin: auto;
-    display: block;
-}
-
-.poke-button:hover{
-    background: #C2FAB9;
-    border: none;
-    margin: auto;
-    display: block;
-    animation: pulse 1s infinite;
-    animation-timing-function: linear;
-}
-@keyframes pulse {
-    0%{transform: scale(1);}
-    50%{transform: scale(1.1);}
-    100%{transform: scale(1);}
-    }
-
-header{
-position: fixed;
-width: 80%;
-height: 13%;
-color:whitesmoke;
-}
-
-.imgchico{
-    margin: auto;
-    display: block;
-}
-
-nav{
-    background:#09415f;
-    margin: auto;
-    border-radius: 10px; 
-    width: 90%;
-    height: 40%;
-    padding: 10px;
-    }
-
-.type-search{
-    background: #C34;
-    padding-top: 15%;
-}
-
-.type-button{
-    background: #3ba7e1;
-    border: none;
-    font-size: 20px;
-    color: black;
-    display: inline-block;    
-}
-
-.contenido{
-    background: #C2FAB9;
-    padding-top: 15%;
-}
-
-.textfiltertop{
-    background: #5A6978;
-}
-
-footer{
-    position: fixed;
-    bottom: 0%;
-    width: 80%;
-    height: 80px;
-    background: #976DD0;
-}
-
-  .wrapper{
-    display: inline-block;
-    background:#FFD185;
-    margin: 10px 15px;
-    padding-bottom:10px;
-    width:130px;
-    height:160px;
-    border-radius:14px;
-    border: 3px solid #FFBA5C;
-  }
+body {
+  background: #E9ECF4;
+  font-family: 'Lato', sans-serif;
   
-  .pokemon-cart-image{
-    background:#EAFEE6;
-    border-top-left-radius:14px;
-    border-top-right-radius:14px;
-    right:30px;
-  }
-  .box-cart{
-   font-size:14px; 
-   text-align:center;
-   margin-top: 9px;
-  }
+}
+
+#root{
+  width: 80%;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.contenedor {
+  height: 100%;
+  background: #C2FAB9;
+}
 
 
+header {
+    width: 80%;
+    max-width: 1000px;
+  border-radius: 4px;
+  position: fixed;
+  height: 13%;
+  color: whitesmoke;
+}
+
+.imgchico {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+nav {
+  background: #12203E;
+  margin: auto;
+  border-radius: 10px;
+  width: 90%;
+  height: 40%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  
+}
+
+.text-page {
+    color: wheat;
+    display: inline-block;
+    margin-top: 4px;;
+    margin-left: 3%;
+}
+.name-search{
+    background: #37486B;
+    margin-left: 50%;
+    width: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    color: wheat;
+    display: inline-block;
+}
+
+
+.contenido {
+    background: #5AC6BB;
+    width: 68.5%;
+    margin-top: 14%;
+    margin-left: 4%;
+    margin-bottom: 15%;
+  padding-top: 3%;
+  padding-left: 2%;
+  border-radius: 14px;
+   float: left;
+}
+
+aside{
+    background: #5AC6BB;
+    width: 20%;
+    margin-top: 14%;
+    margin-left: 2%;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 14px;
+    float: left;
+    box-sizing: border-box;
+    color: wheat;
+    font-size: 20px;
+  font-weight: bold;
+    text-align: center;
+}
+
+.type-button {
+    background: #B5F4ED;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #12203E;
+    display: inline-block;
+  }
+
+footer {
+    background: #976DD0;
+    border-radius: 8px;
+  position: fixed;
+  bottom: 0%;
+  width: 60%;
+  margin-left: 3%;
+  display: block;
+  height: 80px;
+  text-align: center;
+  }
+
+  .imgpokebolachica{
+      margin-top: 10px;
+    padding-top: 5px;
+    display: inline-block;
+  }
+
+.wrapper {
+  display: inline-block;
+  background: #FFD185;
+  margin: 9px 15px;
+  padding-bottom: 10px;
+  width: 130px;
+  height: 160px;
+  border-radius: 14px;
+  border: 3px solid #FFBA5C;
+}
+
+.pokemon-cart-image {
+  background: #EAFEE6;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  right: 30px;
+}
+
+.box-cart {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.text-footer{
+    color: wheat;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+.img {
+  margin: auto;
+  padding-top: 30%;
+  display: block;
+}
+
+.poke-button {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.poke-button:hover {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
