@@ -10,7 +10,12 @@ const butFight= document.getElementById ('Fighting');
 const butGround = document.getElementById ('Ground');
 const butFly = document.getElementById ('Flying');
 const butPoison= document.getElementById ('Poison');
-
+const butPsychic= document.getElementById('Psychic');
+const butBug= document.getElementById('Bug');
+const butRock= document.getElementById('Rock');
+const butGhost= document.getElementById('Ghost');
+const butDragon= document.getElementById('Dragon');
+const butDark= document.getElementById('Dark');
 
 // Filtra fuego
 const typeFire = data.filter(data => data.type.includes("Fire"));
@@ -164,5 +169,96 @@ function filterFlying() {
     printFlying(name, imagen, type, id);
   });
 }
+
+//Psychic
+const typePsychic = data.filter(data => data.type.includes("Psychic"));
+const printPyschic = (name, imagen, type, id) => {
+  let psychic = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  finalResult.innerHTML += psychic;
+};   
+
+butPsychic.addEventListener("click", filterPsychic);
+function filterPsychic() {
+  typePsychic.forEach(data => {
+    let name = data.name;
+    let imagen = data.img;
+    let type = data.type;
+    let id = data.id;
+    printPyschic(name, imagen, type, id);
+  });
+}
+
+//Bug
+const typeBug = data.filter(data => data.type.includes("Bug"));
+const printBug = (name, imagen, type, id) => {
+  let bug = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  finalResult.innerHTML += bug;
+};   
+
+butBug.addEventListener("click", filterBug);
+function filterBug() {
+  typeBug.forEach(data => {
+    let name = data.name;
+    let imagen = data.img;
+    let type = data.type;
+    let id = data.id;
+    printBug(name, imagen, type, id);
+  });
+}
+
+//Rock
+const typeRock = data.filter(data => data.type.includes("Rock"));
+const printRock = (name, imagen, type, id) => {
+  let rock = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  finalResult.innerHTML += rock;
+};   
+
+butRock.addEventListener("click", filterRock);
+function filterRock() {
+  typeRock.forEach(data => {
+    let name = data.name;
+    let imagen = data.img;
+    let type = data.type;
+    let id = data.id;
+    printRock(name, imagen, type, id);
+  });
+}
+
+//Ghost
+const typeGhost = data.filter(data => data.type.includes("Ghost"));
+const printGhost = (name, imagen, type, id) => {
+  let ghost = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  finalResult.innerHTML += ghost;
+};   
+
+butGhost.addEventListener("click", filterGhost);
+function filterGhost() {
+  typeGhost.forEach(data => {
+    let name = data.name;
+    let imagen = data.img;
+    let type = data.type;
+    let id = data.id;
+    printGhost(name, imagen, type, id);
+  });
+}
+
+//Dragon
+const typeDragon = data.filter(data => data.type.includes("Dragon"));
+const printDragon = (name, imagen, type, id) => {
+  let dragon = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  finalResult.innerHTML += dragon;
+};   
+
+butDragon.addEventListener("click", filterDragon);
+function filterDragon() {
+  typeDragon.forEach(data => {
+    let name = data.name;
+    let imagen = data.img;
+    let type = data.type;
+    let id = data.id;
+    printDragon(name, imagen, type, id);
+  });
+}
+
 
 
