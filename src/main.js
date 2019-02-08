@@ -41,7 +41,7 @@ for (const key in dataLol) {
     //Variable class del menu//
     const rol= document.getElementsByClassName("rolPersonajes");
 
-    
+   
     
 
 
@@ -49,6 +49,8 @@ for (const key in dataLol) {
     const inicio = document.getElementById('inicio')
     const menu = document.getElementById('menu')
     const cerrar = document.getElementById('cerrar')
+    
+
     
 
    /*esta función imprime los nombres de los personajes*/
@@ -66,8 +68,11 @@ for (const key in dataLol) {
 
    inicio.onclick = ()=>{
      document.getElementById("primera-pantalla").style.display = 'none';
-     document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';};
+     document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';
+     
   
+   
+    
    menu.onclick = ()=> {
       document.getElementById("mySidenav").style.width = "250px";};
 
@@ -82,9 +87,9 @@ for (const key in dataLol) {
 // Pintar en HTML
 const print =(name,img,title) => {
  let nameList = `<div class="nameList"><img class="lolIcons" src="${img}"><div id="letras"><h1 id= "nombre" >${name}</h1> <p id="titulo">${title}</p></div></div>`;
- es.insertAdjacentHTML("beforeend",nameList)}
+ es.insertAdjacentHTML("beforeend",nameList);}
     
-   /* const buscadora =() => {*/
+   //const buscadora =() => {
         for(const key in dataLol){
             if(dataLol.hasOwnProperty(key)){
             const element = dataLol[key];
@@ -97,22 +102,25 @@ const print =(name,img,title) => {
             printImg(img);*/
             print(name, img, title)
 
-            //console.log(name);
-          }};
+             console.log(name);
+          }}; 
         
-  
+        
   const support =document.getElementById('support');
    
+//const showD ata = window.lol.showData
 
-
-    for ( let i=0; i<rol.length; i++) {
+    for ( let i=0; i<rol.length; i++) {                                        
       rol[i].addEventListener('click', () => {
         let rolId = rol[i].id;
         const dataToArray = Object.values(dataLol); 
         filtrado =dataToArray.filter(element => element.tags[0]===rolId);
       console.log(filtrado);
-      })}; 
-
+      })
+    
+    
+    }; 
+  }
       
     
 
@@ -156,4 +164,5 @@ const print =(name,img,title) => {
               
             }
 
-            support.addEventListener('click',filtroPorRol)*/
+          support.addEventListener('click',filtroPorRol)*/
+ 
