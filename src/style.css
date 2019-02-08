@@ -14,9 +14,9 @@ span {
   cursor: pointer;
 }
 
-table {
+/* table {
   border-spacing: 0.5%;
-}
+} */
 
 /**********fonts***********/
 h1 {
@@ -92,6 +92,8 @@ p {
 #tableStructure {
   display: inline;
   margin-right: 10px;
+  border-spacing: 10px;
+  border-color: #222;
 }
 
 #show,#hide {
