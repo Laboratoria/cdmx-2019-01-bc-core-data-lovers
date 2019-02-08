@@ -3,26 +3,16 @@ const pokeballPage=document.getElementById('pokeball-page');
 const pokemonPage=document.getElementById('pokemon-page');
 const pokeballButton=document.getElementById('pokeball-button');
 const printList = document.getElementById('print-list');
-const filterType = document.getElementById('filter');
+const buttonType=document.getElementsByClassName('type-button');
 
-let orderName=[];
-
-//const resultOrderName= orderName.sort();
-//console.log(resultOrderName);
-
-//console.log
-//function ejercicio2(){
-  //  let prueba=(orderName.sort((a, b)=>{return a.toLowerCase().localeCompare(b.toLowerCase());}))
-//console.log(prueba)
-//};
 
 pokeballButton.addEventListener('click',()=> {
  pokeballPage.classList.add('hideElement');    
  pokemonPage.classList.remove('hideElement');
 });
 
-const print=(toPrint) => {
-   toPrint.forEach(element => {
+const print=(data) => {
+   data.forEach(element => {
     let result = `<div class="wrapper">
     <div class="pokemon-cart"> <!--body-->
       <div class="pokemon-cart-image">
@@ -39,22 +29,38 @@ const print=(toPrint) => {
     return result;
 };
 
+const pokemonType=(arrayButtons)=> {
+  arrayButtons.map(buttonType => {
+  buttonType.addEventListener('click',(event) =>{
+  const buttonType=event.target.id;
+  console.log(buttonType);
+  const newData= window.pokesaurius.filterType(pokemon,buttonType);
+  return print(newData)
+    });
+  });
+};
 
-const procesarData = (data) => {
-        const toPrint = window.pokesaurius.typeFilter(data)
-        print(toPrint)
-    }
-// console.log(typeof orderName);   
+pokemonType(buttonType)
 
 
-filterType.addEventListener('change',()=>{
-    console.log(newData)
-    let userChoice= event.target.value;
-    console.log(userChoice);
-    const tipoFiltrado= window.pokesaurius.typeFilter(userChoice);
- });
 
- procesarData(data)
+
+
+//const procesarData = (data) => {
+  //      const toPrint = window.pokesaurius.typeFilter(data)
+    //    print(toPrint)
+  //  }
+ //console.log(typeof orderName);   
+
+
+//filterType.addEventListener('click',()=>{
+  //  console.log(newData)
+  //  let userChoice= event.target.value;
+  //  console.log(userChoice);
+  //  const tipoFiltrado= window.pokesaurius.typeFilter(userChoice);
+ //});
+
+ //procesarData(data)
 
 
 
