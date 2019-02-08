@@ -2,14 +2,14 @@
 let enviaIndicador;
 let orderByObject=[];
 
-window.worlBank = {
+window.worldBank ={
 
-  filtroPais : (baseDatos,selectPais, indicador) =>{ 
+filtroPais: (baseDatos, selectPais, indicador) =>{ 
     //let enviaIndicador;
     let indicadorFiltro;
     
     const pais =  baseDatos[selectPais].indicators;
-    console.log(pais);
+    //console.log(pais);
     const nomIndicador = pais.filter(element=>{ //Funcion filtro selecciona el objeto del pais "MEX" que tiene el elmento indicatorName : Poblacion Total de mujeres
       return element.indicatorName === indicador;
     })
@@ -23,17 +23,16 @@ window.worlBank = {
     enviaIndicador= datosIndicador; 
     })  
     return enviaIndicador;
-  }, 
+  },
 
-
-orderByAsc : (order) =>{
+ orderByAsc: (order) =>{
   for (let i in enviaIndicador) {
     orderByObject.push([i, enviaIndicador[i]]);
   }
   if (order === "asc"){
     orderByObject.sort(function(a, b) {
       //  console.log(a[1] - b[1])
-      console.log(orderByObject)
+      //console.log(orderByObject)
 
       return a[1] - b[1];
       
@@ -41,13 +40,11 @@ orderByAsc : (order) =>{
   }else if (order === "desc")
   {
       orderByObject.sort(function(a, b) {
-        console.log(orderByObject)
+        //console.log(orderByObject)
           return b[1] - a[1];
       
        });
   }
   return orderByObject;
 }
-
-}//fin window
-
+}//fin de window
