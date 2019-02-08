@@ -40,6 +40,7 @@ selectRol();
 
 
 
+<<<<<<< HEAD
 // const orderByAttack = {lolData.info.attack};
 // numbers.sort(compare = (a, b)=>  {
 //   return a - b;
@@ -78,6 +79,8 @@ tank.addEventListener('click', () => {
 });*/
 
 
+=======
+>>>>>>> origin/master
 //Apartir de aquí inicia la iteración de los objetos desde lol.js
 /*const search = document.getElementById('search')
 const buscadora = () => {
