@@ -1,6 +1,3 @@
-
-const POKEMON = POKEMON;
-
 //cambio de pantallas
 function changeOptions() {
     document.getElementById("start").style.display="none"
@@ -22,19 +19,26 @@ function changeHome () {
     document.getElementById("options").style.display="block"
 }
 
+const data = POKEMON.pokemon;
+let dataName = []; //se puede crear manualmente
+
 //obteniendo data
 
 const data = POKEMON.pokemon;
 
-data.forEach(element => {
-let picture = element.img;
-var image = document.createElement("img");
-image.src= picture
-document.body.appendChild(image); 
-document.write("<br>" + 'Nombre: ' + element.name + '<br>');
-document.write('Número ' + element.num + "<br>");
-document.write('Tipo: ' + element.type + "<br>");
-document.write('Peso: ' + element.weight + "<br>");
-document.write('Altura: ' + element.height + "<br>");
-document.write('Debilidades: ' + element.weaknesses + "<br><br>");
+
+
+data.forEach(element => { //recorrer el objeto POKEMON y obtener los nombres
+    let namee = element.name //guardar los nombres en variables
+    dataName.push(namee) //agregarlos al array vacío
 });
+
+//creando menú a partir de los datos de un array
+let menuType = document.getElementById('Type'); //en esta parte del html se creará el menú o lista
+for (let i= 0; i<dataName.length; i++) { //bucle que recorre el array que contiene los nombres 
+    let menu = document.createElement('option') //metodo create element option guar
+    menu.innerHTML = dataName[i]; //imprime cada elemento del array
+    menu.value = dataName[i];
+    menuType.appendChild(menu);
+}
+

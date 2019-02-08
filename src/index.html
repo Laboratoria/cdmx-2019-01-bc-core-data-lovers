@@ -2,27 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Pokedex</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image" href="./favicon.png">
   </head>
   <body>
-      <section id= "start" class = "pokedex" >
-        <button type = "button" id= "buttonStart" onclick="changeOptions()">______</button>
+    <section id = "start" class = "hide">
+      <div id = "buttonContainer">
+        <button  id= "startPokemon" class = "start">S T A R T</button>
+      </div>
+        
     </section>
-    <section id = "options" class = "pokedexFilter">
-        <button type = "button" id= "buttonType" onclick="changeType()">______</button>
-        <button type = "button" id= "buttonWeaknesses" onclick="changeWeaknesses()">______</button>
-    </section>
-    <section id = "finalResult" class = "pokedexFinal">
-        <button type = "button" id= "buttonHome" onclick="changeHome()">______</button><hi>   </hi>
-    </section>
-   
-    <div id="root"></div>
+    
+      <section id= "options" class = "pokedex" >
+        <div id = "optionsContainer">
+            <button type = "button" id= "Fire" class = "typeChart hide">Fuego</button>
+            <button type = "button" id= "Normal" class = "typeChart hide">Normal</button>
+            <button type = "button" id= "Grass" class = "typeChart hide" >Hierba</button>
+            <button type = "button" id= "Ice"  class = "typeChart hide">Hielo</button>
+            <button type = "button" id= "Electric"  class = "typeChart hide">Eléctrico</button>
+            <button type = "button" id= "Fighting" class = "typeChart hide" >Pelea</button>
+            <button type = "button" id= "Poison"  class = "typeChart hide">Veneno</button>
+            <button type = "button" id= "Ground" class = "typeChart hide">Tierra</button>
+            <button type = "button" id= "Flying" class = "typeChart hide">Volador</button>
+        </div>
+      </section>
+   <section id = "rootContainer">
+      <div id = "root" class = "hide">
+      
+        </div>
+   </section>
+    
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
-
-
-
