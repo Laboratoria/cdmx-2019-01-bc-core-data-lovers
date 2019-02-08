@@ -1,23 +1,30 @@
 window.pokemon = {
 
-  show:(dataPokemon) => {
+  show:(data) => {
 
-    const imprimir = (namePokemon,imagenPokemon) =>{
+    const imprimir = (nombre,imagen) =>{
 
-      const pokemon = document.getElementById('pokemon');
-      let namePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
-      pokemon.insertAdjacentHTML("beforeend",namePokemon);
+      const pokemons = document.getElementById("pokemons");
+      let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
+      pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
 
     }
 
-    data.forEach(element => {
-        let namePokemon = element.name;
-        let imagenPokemon = element.img;
-        imprimir(namePokemon, imagenPokemon)
+    data.forEach(elemento =>{
+      let nombre = elemento.name;
+      let imagen = elemento.img;
+      imprimir(nombre, imagen);
 
-});
+    })
+      return imprimir;
+    }
+  }
 
-  return imprimir;
 
-}
-}
+
+
+//const example = () => {
+  //return 'example';
+//};
+
+//window.example = example;
