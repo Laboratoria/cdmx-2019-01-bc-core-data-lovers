@@ -80,7 +80,7 @@ console.log(fieldToSearch)
 }
 
 //(this is only used if we preffer to show the panel via javascrip and not in the css)
-function showThePanel(){
+//function showThePanel(){
   //open the data Panel
 
 }
