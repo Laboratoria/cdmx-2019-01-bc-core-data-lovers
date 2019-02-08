@@ -12,6 +12,12 @@ const selectMex = document.getElementById('selectorPais');
 const selectPeru = document.getElementById('selectorPais');
 const selectBrasil = document.getElementById('selectorPais');
 
+
+//const para cada pais en el selector 
+
+
+
+
 //const para cada pais en el selector 
 
 const dataMEX = WORLDBANK.MEX.indicators;
@@ -29,12 +35,7 @@ botonInfo.addEventListener('click', () => {
   informate.classList.remove('hideElement');
 
 
-  //const print = (year) => {
-  //let resultMex = `<h4>${year}</h4>`
-  //indicator.insertAdjacentHTML("beforeend", resultMex);
-  //};
 
-});
 //Impresión Database México
 selectMex.addEventListener('change', () => {
   let enclick = selectMex.value;
@@ -55,29 +56,6 @@ selectMex.addEventListener('change', () => {
         }
       }
 
-  }
 
-  //   // console.log(dataMEX);
-  //   if (dataMEX >= 1)
-  //     console.log(dataMEX);
-});
-
-//Impresión de Database Perú
-selectPeru.addEventListener('change', () => {
-  dataPER.forEach(function (dataPER) {
-    // console.log(dataPER);
-    if (dataPER >= 1)
-      console.log(dataPER);
-  });
-  
 })
 
-//Impresión de Database Brasil
-selectBrasil.addEventListener('change', () => {
-  dataBRA.forEach(function (dataBRA) {
-    // console.log(dataBRA);
-     if (dataBRA >= 1)
-    console.log(dataBRA);
-   
-  });
-})
