@@ -10,9 +10,10 @@ window.example = example;
 window.worldBank = {
   filter : (data, palabraComp) => {
     data.forEach(element => {
-      let indicator = element.indicatorName;
       if((new RegExp(palabraComp, "i")).test(element.indicatorName)){
-        console.log(element.indicatorName );
+        
+        filteredIndicators.push(element);
+        return filteredIndicators;
         
       }
     });

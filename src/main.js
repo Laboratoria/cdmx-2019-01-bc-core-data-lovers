@@ -3,12 +3,49 @@
 const dataMex = WORLDBANK.MEX.indicators;
 let filteredIndicators = [];
 
+const indicator = document.getElementById('indicator');
 
 const elements = document.getElementsByClassName('elements')
-// const print = (indicatorName, indicatorCode) => {
-//     let result = `<li value = "${indicatorCode}" > ${indicatorName} </li>`
-//     indicator.insertAdjacentHTML('beforeend', result);
+
+
+//Ponemos valore inicial en el select
+indicator.insertAdjacentHTML("beforeend", '<option value="">Selecciona un indicador</option>');
+
+//función que imprime nombres de los indicadores en el select
+const print = (indicatorName, indicatorCode) => {
+  let result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`
+    indicator.insertAdjacentHTML('beforeend', result);
+}
+
+
+//evento click en los botones
+let indicatorName = '';
+let indicatorCode = '';
+
+for(let i = 0; i<elements.length; i++){
+  elements[i].addEventListener('click', () => {
+    document.getElementById('indicator').innerHTML = '';
+    let valElement = elements[i].value;
+    window.worldBank.filter(dataMex, valElement);
+    filteredIndicators.forEach(element => {
+      let indicatorName = element.indicatorName;
+      let indicatorCode = element.indicatorCode;
+      
+      print(indicatorName, indicatorCode);
+    })
+    
+  })
+}
+
+
+//evento de click
+// const typeIndicator = () => {
+//   button.addEventListener ('click', () => {
+//      console.log(button.value);
+//   } )
 // }
+
+
 
 //   educationButton.addEventListener('click',()=>{
 //   wordToCompare = educationButton.value;
@@ -23,11 +60,6 @@ const elements = document.getElementsByClassName('elements')
 
 
 
-const typeIndicator = () => {
-  button.addEventListener ('click', () => {
-     console.log(button.value);
-  } )
-}
 
 
 
@@ -121,11 +153,3 @@ const typeIndicator = () => {
 //   element.indicatorName == /educación/i.test
 // })
 // console.log(educationData);
-
-
-for(let i = 0; i<elements.length; i++){
-  elements[i].addEventListener('click', () => {
-    let valElement = elements[i].value;
-    window.worldBank.filter(dataMex, valElement);
-  })
-}
