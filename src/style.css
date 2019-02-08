@@ -9,18 +9,19 @@ body{
     background:  #E9ECF4;
 }
 #root{
-    height: 100%;
-}
-.contenedor{
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     margin: 0 auto;
-    background: #C2FAB9;
-    position: fixed;
 }
 
+.contenedor{
+    height: 100%;
+    background: #C2FAB9;
+    }
+
 .img{
-    margin: 30% auto 0;
+    margin: auto;
+    padding-top: 30%;
     display: block;
 }
 
@@ -31,17 +32,57 @@ body{
     display: block;
 }
 
+.poke-button:hover{
+    background: #C2FAB9;
+    border: none;
+    margin: auto;
+    display: block;
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+}
+@keyframes pulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+    }
+
 header{
 position: fixed;
-width: 100%;
-background:#C2FAB9;
-height: 4em;
+width: 80%;
+height: 13%;
 color:whitesmoke;
+}
+
+.imgchico{
+    margin: auto;
+    display: block;
+}
+
+nav{
+    background:#09415f;
+    margin: auto;
+    border-radius: 10px; 
+    width: 90%;
+    height: 40%;
+    padding: 10px;
+    }
+
+.type-search{
+    background: #C34;
+    padding-top: 15%;
+}
+
+.type-button{
+    background: #3ba7e1;
+    border: none;
+    font-size: 20px;
+    color: black;
+    display: inline-block;    
 }
 
 .contenido{
     background: #C2FAB9;
-    padding-top: 8%;
+    padding-top: 15%;
 }
 
 .textfiltertop{
@@ -51,14 +92,15 @@ color:whitesmoke;
 footer{
     position: fixed;
     bottom: 0%;
-    height: 3em;
-    width: 100%;
+    width: 80%;
+    height: 80px;
     background: #976DD0;
-
 }
-.wrapper{
+
+  .wrapper{
     display: inline-block;
     background:#FFD185;
+    margin: 10px 15px;
     padding-bottom:10px;
     width:130px;
     height:160px;
@@ -71,10 +113,11 @@ footer{
     border-top-left-radius:14px;
     border-top-right-radius:14px;
     right:30px;
-    
   }
   .box-cart{
    font-size:14px; 
    text-align:center;
    margin-top: 9px;
   }
+
+
