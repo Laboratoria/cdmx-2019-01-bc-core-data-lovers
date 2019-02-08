@@ -1,29 +1,10 @@
-//const dataMexico = WORLDBANK.MEX.indicators;
-//console.log(dataMexico);
-// const indicator =  document.getElementById("information-filter-inner");
-// const print = (indicatorName) => {
-//    if(indicatorName === "Transición a la escuela secundaria, mujeres (%)"){
-//     console.log(indicatorName);
-//     indicator.insertAdjacentHTML("beforeend", indicatorName);
-//    } 
-//   //let resultado = `<p>${indicatorName}</p>`
-//   //indicator.insertAdjacentHTML("beforeend",resultado);
+// function limpiarSelect(){
+//   listQuestion.innerHTML = "";
+// }
+// function setearCiudad(ciudad){
+//   listQuestion.dataset.ciudad =  ciudad;
 // }
 
-// dataMexico.forEach(element =>{
-//   let indicatorName = element.indicatorName;
-//   print(indicatorName);
-// })
-
-// const filtered = dataMexico.filter(element => element.indicatorName === "Prevalencia de anemia entre mujeres no embarazadas (% de mujeres entre 15-49 años)")
-// const filteredaccess = filtered;
-
-// console.log(filteredaccess);
-// indicator.insertAdjacentHTML("beforeend", filteredaccess);
-
-// function navOcultar(){
-// navMenu.classList.toggle("ocultar");
-// };
 // const para desplegar menu
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
@@ -36,29 +17,27 @@ const news = document.getElementById("news");
 const about = document.getElementById("about");
 const filters = document.getElementById("general-filter");
 //evento para ocultar y mostrar elementos
-navIcon.addEventListener('click', () =>{
+navIcon.addEventListener('click', () => {
   navMenu.classList.toggle('ocultar');
 });
-btnAbout.addEventListener('click', () =>{
+btnAbout.addEventListener('click', () => {
   about.classList.remove('ocultar');
   filters.classList.add('ocultar');
   navMenu.classList.add('ocultar');
   news.classList.remove('mostrar-news');
 });
-btnNews.addEventListener('click', () =>{
+btnNews.addEventListener('click', () => {
   about.classList.add('ocultar');
   filters.classList.add('ocultar');
   navMenu.classList.add('ocultar');
   news.classList.add('mostrar-news');
 });
-btnFilters.addEventListener('click', () =>{
+btnFilters.addEventListener('click', () => {
   about.classList.add('ocultar');
   filters.classList.remove('ocultar');
   navMenu.classList.add('ocultar');
   news.classList.remove('mostrar-news');
 });
-
-
 
 //acceder a la data de cada pais
 const ciudadesMex = WORLDBANK.MEX.indicators;
@@ -66,48 +45,77 @@ const ciudadesMex = WORLDBANK.MEX.indicators;
 const indicator = document.getElementById("information-filter-inner");
 const listQuestion = document.getElementById("list-question");
 //datos en select para mexico
-document.getElementById('btn_mex').addEventListener('click', () =>{
-  limpiarSelect()//limpiar un select
-  setearCiudad('ciudadesMex')
+document.getElementById('btn_mex').addEventListener('click', () => {
+  listQuestion.innerHTML = "";//limpiar un select
+  listQuestion.dataset.ciudad = 'ciudadesMex'; //setearCiudad('ciudadesMex')
   listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
-  ciudadesMex.forEach(ciudad =>{//elemento
+  ciudadesMex.forEach(ciudad => {//elemento
     //inserta options en el select 
-    listQuestion.insertAdjacentHTML('beforeend',`<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
+    listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
   });
 });
 
 //filtrar 
-listQuestion.addEventListener("change", () =>{
+listQuestion.addEventListener("change", () => {
   indicator.innerHTML = "";
-  console.log(indicator)
-  let selectQuestion = listQuestion.options[listQuestion.selectedIndex].text;
-  let countrySelect = listQuestion.value;
-  let country = listQuestion.dataset.ciudad;
-  //let  tabla = '';
-  if(country == 'ciudadesMex' ){
-    ciudadesMex.forEach(ciudad =>{
-      if(ciudad.indicatorCode == countrySelect){
-        console.log(ciudad.data);
-        //let resultado = (ciudad.data);
-        //let resultado= JSON.stringify(ciudad.data);
-        //indicator.insertAdjacentHTML("beforeend", resultado);
-        for(let resultado in ciudad.data){
-          
-          //tabla = `<p>Año: ${resultado} = ${ciudad.data[resultado] || 0} %</p>` 
-          let parrafo = document.createElement('p');
-          parrafo.innerHTML = `Año: ${resultado} = ${ciudad.data[resultado] || 0} `
-          //indicator.insertAdjacentHTML("beforebegin", tabla);
-          indicator.appendChild(parrafo);
-        }
-      }
-    });
+ 
+  //let selectQuestion = listQuestion.options[listQuestion.selectedIndex].text;
+  const resultado = window.WorldBank.filterCountry(ciudadesMex, listQuestion)
+  console.log(resultado)
+  for (let resultadoAño in resultado) {
+    let parrafo = document.createElement('p');
+    parrafo.innerHTML = `Año: ${resultadoAño} = ${resultado[resultadoAño] || 0} `
+    indicator.appendChild(parrafo);
   }
+
+  // indicator.innerHTML = "";
+  // let selectQuestion = listQuestion.options[listQuestion.selectedIndex].text;
+  // let countrySelect = listQuestion.value;
+  // let country = listQuestion.dataset.ciudad;
+
+  // if(country == 'ciudadesMex' ){
+  //   ciudadesMex.forEach(ciudad =>{
+  //     if(ciudad.indicatorCode == countrySelect){
+  //       console.log(ciudad.data);
+  //       for(let resultado in ciudad.data){
+
+  //         let parrafo = document.createElement('p');
+  //         parrafo.innerHTML = `Año: ${resultado} = ${ciudad.data[resultado] || 0} `
+
+  //         indicator.appendChild(parrafo);
+  //       }
+  //     }
+  //   });
+  // }
 });
 
-function limpiarSelect(){
-  listQuestion.innerHTML = "";
-}
-function setearCiudad(ciudad){
-  listQuestion.dataset.ciudad =  ciudad;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+// for(let i = 0; i<elements.length ; i++){
+// elements[i].addEventListener("click", () => {
+//   let valElement = elements[i].value
+//   window.worldbank.filterData(ciudadesMex, valElement)
+//   )};
+// }
+
+
+
+const bra = document.getElementById('BRA');
+const indicador = document.getElementById('indicador');
+
+bra.addEventListener('click', () => {
+  const res = window.prueba.myfuncion()
+  indicador.innerHTML = res
+  alert("si")
+});
