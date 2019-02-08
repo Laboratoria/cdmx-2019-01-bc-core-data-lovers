@@ -1,84 +1,66 @@
 
-.inicio {
-    display: inline-block;    
-    text-align: center;
-    background-color: red;
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-}
- 
-.pokedex {
-    background-image: url(./start.png);
-    height: -webkit-fill-available;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-   }
-   
-   .pokedexFilter {
-    background-image: url(./options.png);
-    height: -webkit-fill-available;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-   }
-   
-   .pokedexFinal {
-    background-image: url(./result.png);
-    height: -webkit-fill-available;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-   }
-
-   #buttonStart {
-    margin-top: 150%;
-    margin-left: 37%;
-    padding: 2px;
-    text-align: center;
-    font-size: 448%;
-    background: transparent;
-    background-image: url(./botonStart.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color:transparent;
-    border:0;
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');   
+*{
+    padding: 0vw;
+    margin:0vw;
+    font-family: 'Special Elite', cursive;
 }
 
-#buttonType {
-    margin-top: 68%;
-    margin-left: 20%;
-    font-size: 212%;
-    background: transparent;
-    border: 0;
-    color: transparent;
+#start {
+   background-image: url(./start.png);
+   height: -webkit-fill-available;
+   width: 100vw;
+   background-repeat: no-repeat;
+   background-size: 100vW;
+  }
+  #buttonContainer {
+      display: inline-block;
+      padding: 41vw;
+      height: 59vw;
+      width: 60vw;
+      margin-top: 39vw;
+      margin-left: 0vw;
+      
+  }
+  #startPokemon  {
+   background-color: transparent;
+   border: none;
+   color: white;
+   font-size: 4vw;
 }
-
-#buttonWeaknesses {
-    background: transparent;
-    border: 0;
-    margin-left: 39%;
-    font-size: 209%;
-    color: transparent;
+.typeChart  {
+   background-color: #0763db;
+   border: none;
+   padding: 2vw;
+   margin: 1vw;
+   font-size: 4vw;
 }
-
-    #buttonHome{
-    margin-top: 15%;
-    margin-left: 8%;
-    font-size: 236%;
-    color: transparent;
-    background: transparent;
-    border: 0;
+  #options {
+   background-image: url(./options.png);
+   height: -webkit-fill-available;
+   width: 100vw;
+   background-repeat: no-repeat;
+   background-size: 100vw;
+  }
+  #optionsContainer {
+   display: inline-block;
+   height: 28vw;
+   width: 70vw;
+   margin-top: 70vw;
+   margin-left: 18vw;
 }
-   .pokedexFilter, .pokedexFinal {
-       display: none;   
-   }
+  
+  #rootContainer {
+   background-image: url(./result.png);
+   height: -webkit-fill-available;
+   width: 100vw;
+   background-repeat: no-repeat;
+   background-size: 100vw;
+  }
+ #root {
+   display: inline-block;
+   height: 91vw;
+   width: 71vw;
+   margin-top: 50vw;
+   margin-left: 11vw;
+}
