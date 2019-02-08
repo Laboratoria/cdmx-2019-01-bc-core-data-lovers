@@ -1,6 +1,9 @@
 # Data Lovers
 
-Historia de usuario 1: como ciudadana(o) estadounidense quiero una aplicación que me permita saber cuál es el modo de transporte más seguro e inseguro para trasladarme en la ciudad.
+Historia de usuario 1: 
+1. saber el número de lesionados(as) por modo de transporte del año 2001 al 2016. 
+
+2. como ciudadana(o) estadounidense quiero una aplicación que me permita comparar por año el número de lesionados en los cinco diferentes modos de transportes urbanos. 
 
 ## Índice
 
