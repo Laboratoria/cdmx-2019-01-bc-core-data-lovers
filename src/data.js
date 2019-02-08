@@ -1,14 +1,20 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+
 window.pokesaurius = {
-  typeFilter: (data)=>{   
-    // data.forEach((element,i) => {
-    // let name=element.name;
-    // let type=element.type;
-    // let img=element.img;
-    // orderName.push(name);
-    let dataFil = [];
-    data.forEach(pokemon => {
+  typeFilter: (data,optionFilter)=>{   
+    
+    let arrayPokemon= data;
+    const arrayFilteredPokemons= arrayPokemon.filter( () => data.type.includes(optionFilter))
+    return arrayFilteredPokemons;
+
+  },
+
+//includes busca un srting en especifico
+
+
+
+
+
+/*data.forEach(pokemon => {
       if(pokemon.type[0] === 'Ice' || pokemon.type[1] === 'Ice'|| pokemon.type[2] === 'Ice'  ){
         dataFil.push(pokemon)
       }
@@ -24,5 +30,6 @@ return dataFil
   //     return arrayType;
   //   });
   // }
-  } 
-
+  }
+ }; 
+};*/
