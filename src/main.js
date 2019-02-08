@@ -90,10 +90,10 @@ for (const key in dataLol) {
 
 
     
-      //const filtroSupport = Object.values(dataLol)
-        //    filtroSupport.forEach(element => {
-          //  const roles = element.tags[0];
-          /*if (roles === "Support"){
+      const filtroSupport = Object.values(dataLol)
+          filtroSupport.forEach(element => {
+         const roles = element.tags[0];
+          *if (roles === "Support"){
               console.log(element);}
             });
               
@@ -109,3 +109,4 @@ for (const key in dataLol) {
             //con un map recorro el arreglo de objetos y en cadauno voy sacando las caracteristicas
             // y boy pintando
 
+          } //Necesito hacer mas cambios"
