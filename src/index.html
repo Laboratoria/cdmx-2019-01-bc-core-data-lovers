@@ -1,117 +1,161 @@
-<!--va la página que se mostrará al usuario-->
-
-
 <!DOCTYPE html>
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <title>Data Lovers</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width", user-scalable="no", initial-scale="1.0", maximun-scale= "1.0", minium-scale= "1.0">
   <link rel="stylesheet" href="style.css" />
 </head>
 
+
+
+
 <body>
-
-  <header>
-    <!--MENU & SEARCH -->
+  
+  <header class="header">
+     <div clas="container">
+       <figure>
+         <img id="logo" src= ""  alt= "logoX">
+       </figure>
+          <nav class= "navMenu">
+          <a href="#">Abcedef</a>
+          <a href="#">Bdefghij</a>
+          <a href="#">Cdefghijk</a>
+          <a href="#">Defghijkl</a>
+        
+            </nav>
+  
+        </div>
   </header>
-  <section id=initialPage>
 
-    <p>Las mujeres y las niñas cumplen
-      una función única como impulsoras del crecimiento y el progreso, y son
-      poderosas agentes de cambio. </p>
 
-     <button class=region> ÁFRICA</button>
-     <button class=region> ESTE DE ASIA Y PACÍFICO</button>
-     <button class=region> EUROPA Y ASIA CENTRAL</button>
-     <button class=region> LATINOAMERICA Y CARIBE</button>
-     <button class=region>MEDIO ESTE Y NORTE DE ÁFRICA </button>
-     <button class=region> SUR DE ASIA</button>
+
+  
    
+ 
+    <section>
+
+        <img class="mySlides" src="assets/images/267.jpg" style="width:100%">
+        <img class="mySlides" src="assets/images/aaa.jpg" style="width:100%">
+       
+        <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg" style="width:100%">
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id=initialPage>
+    <h1>Brecha de género</h1>
+    <h3>Estadísticas laborales</h3>
+    <p>Género se refiera a los conceptos sociales de las funciones, comportamientos, actividades y atributos que cada sociedad considera apropiados para los hombres y las mujeres</p>
+    <p>La brecha de género es:</p>
+
+    <button class=region> ÁFRICA</button>
+    <button class=region> ESTE DE ASIA Y PACÍFICO</button>
+    <button class=region> EUROPA Y ASIA CENTRAL</button>
+    <button class=region> LATINOAMERICA Y CARIBE</button>
+    <button class=region>MEDIO ESTE Y NORTE DE ÁFRICA </button>
+    <button class=region> SUR DE ASIA</button>
+
     <footer>
       <!---WB & HFS & ONU ICON -->
     </footer>
 
-    </section >
-   
-    <section id= secondPage >
-     <figure>
-       <!--PICTURE-->
-     </figure>
-     <button id= option> LABORAL</button>
-     <button id= option>  DEMOGRÁFICO</button>
-
-
+    
   </section>
 
-  <section Id=thirdPage>
+  <section id=secondPage>
 
 
-     <div>
-    <figure>
+
+
+    <div>
+
+      <select id="selects">
+
+        <option class="indicatorGroup">Seleccionar un indicador</option>
+        <option value="Desempleo total" class="indicatorGroup">Desempleo, total (% de participación total en la fuerza
+          laboral) (estimación nacional)</option>
+        <option value="Desempleo mujeres" class="indicatorGroup">Desempleo, mujeres (% de participación femenina en la
+          fuerza laboral) (estimación nacional)</option>
+        <option value="Desempleo hombres" class="indicatorGroup">Desempleo, varones (% de participación masculina en la
+          fuerza laboral) (estimación nacional)</option>
+        <option value="Participación en la fuerza laboral total" class="indicatorGroup"> Tasa de participación en la
+          fuerza laboral, total (% de la población total mayor de 15 años) (estimación nacional)</option>
+        <option value="Participación en la fuerza laboral mujeres" class="indicatorGroup">Tasa de participación en la
+          fuerza laboral, varones (% de la población masculina mayor de 15 años) (estimación nacional)</option>
+        <option value="Participación en la fuerza laboral hombres" class="indicatorGroup">Tasa de participación en la
+          fuerza laboral, mujeres (% de la población femenina mayor de 15 años) (estimación nacional)</option>
+      </select>
+
+      <p>Selecciona un país</p>
+
+   
+   
      
-      <!--SELECTION RADIO-->
+
       MEXICO
-      <button id="Mexico"><img src="./assets/images/mex.png"></button>
-    </figure>
-    <figure>
-       
-        <!--SELECTION RADIO-->
-        CHILE
-       <button id="Chile"><img src="./assets/images/chile.png"></button>
-      </figure>
-      <figure>
+      <br>
+      <button class="country" value="mexico" ><img src="./assets/images/mex.png" width="50"  height="50"> </button>
+  
+     
+        CHILE 
+        <br>
+       <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50"  height="50"> </button>
+     
+
+      
+     
+       BRAZIL 
+       <br>
+       <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50"  height="50"> </button>
         
-          <!--SELECTION RADIO-->
-       BRAZIL   
-       <button id="Brasil"><img src="./assets/images/brazil.png"></button>
         
-        </figure>        
-        <figure>
-           
-            <!--SELECTION RADIO-->
+
 
             PERU  
-         <button id="Peru"><img src="./assets/images/peru.png"> </button>
+            <br>
+            <button class="country" value="peru"><img src="./assets/images/peru.png" width="50"  height="50" >  </button>
            
-          </figure>
+          
         </div>
 
 
-      <form> 
-     
-
-       <!--PRINT INDICATORS RADIO-->
-       </form> 
-
    </section>
 
-   <section id=fourthPage> 
+   <section id=thirdPage> 
 
      <!--PRINT INDICATOR CHOSEN-->
      <!---DATES PER YEAR-->
      <!--GRAPHIC REPRESENTATION-->
      <!--STADISTIC CALCULATOR-->
 
-     <table>
-      <caption></caption>
-      <thead>
-      </thead>
-      <tbody>
-        <tr>
-          <td id="year"></td>
-        </tr>
-      </tbody>
-    </table>
-     
-   </section>
+ 
+    <p id="years"></p>
+  
+  
 
+  </section>
    
    
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
 
-  </body>
+
+
+
+</body>
+
 </html>
