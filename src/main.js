@@ -146,9 +146,7 @@ checkboxWeightLight.addEventListener("click",()=>{
   printPokemonWeight(name, img, weight);
   
 });
-
 });
-
 checkboxWeightHeavy.addEventListener("click",() =>{
   const pokemonsHeavy = window.printPokemon.filterByWeight(pokemonData);
 pokemonsHeavy.forEach(element => {
@@ -182,14 +180,12 @@ pokemosMedium.forEach(element => {
 checkboxHeightTall.addEventListener("click", ()=>{
   const pokemonsTall =window.printPokemon.filterByHeightTall(pokemonData);
 pokemonsTall.forEach(element => {
-  let nameTall = element.name;
+  let name = element.name;
   let img = element.img;
   let heightTall = element.height;
   printPokemonHeight(nameTall, img, heightTall);
 });
 });
-
-
 
 
 checkboxHeightAscending.addEventListener("click", () =>{
@@ -214,6 +210,10 @@ checkboxWeightAscending.addEventListener("click", () => {
 });
 
 
+/*checkboxTotalHeightPokemon.addEventListener("click",()=>{
+  const totalHeightPokemon= window.printPokemon.totalHeightPokemon(pokemonData);
+
+} )*/
 
 
 buttonPokemonFire.addEventListener("click", () => {
@@ -300,15 +300,8 @@ pokemonData.forEach(element => {
 //Función para ordenar los pokémons de manera descendente. (falta imprimirlos)
 pokemonsSortHeightDescending=pokemonsSortHeight.reverse();
 console.log(pokemonsSortHeightDescending);
-
-
 */
  
-
-
-
-
-//retorna los tipos de pokemones gaby 
 function filtrar(id_tipo) {
   
   if (id_tipo == 1) { //tipo fuego
@@ -446,22 +439,6 @@ function filtrar(id_tipo) {
 
 
 
-/*const pokemonsSortHeight=pokemonData.sort(pokemon=>(parseInt(pokemon.height)), function(a, b){return a - b})
-pokemonsSortHeight.forEach(element=>{
-  let heightSort=element.height;
-  let img=element.img;
-  print7(heightSort, img);
-})
-
-
-
-
-/*
-pokemonData.sort(function(a, b){return a - b}).forEach(element =>{ 
-  let nameSort=element.name;
-  let img=element.img;
-  print7(nameSort, img)}
-  );
 
 
 
@@ -474,28 +451,55 @@ pokemonData.sort(function(a, b){return a - b}).forEach(element =>{
 
 
 
- /*
-const search= PokemonData(element => {
-  let nameSearch = element.name
-  
-
-element => {
-  let num = element.num;
-  let name = element.name;
 
 
 
 
 
 
-const pokemons=pokemonData.map( pokemons=> `${pokemons.name} ${pokemons.num} ${pokemons.type} `);
-print(pokemons)
-console.log(pokemons);*/
 
-/*pokemonData.forEach(element =>{
-  let pokemonsLight=parseInt(element.weight);
-  if (pokemonsLight<30);{
-  print2(pokemonsLight)
+
+
+
+
+
+
+
+//Funciones para computar las alturas y los pesos
+
+const totalSumPokemonHeight= pokemonData.reduce((total,currentValue, index,array)=>{
+    total += parseFloat(currentValue.height);
+  if (index===array.lenght -1){
+     return total/array.lenght
+  } else{
+    return total
   }
-  console.log(pokemonsLight);
-})*/
+
+}, 0)
+console.log(totalSumPokemonHeight);
+
+const totalSumPokemon= pokemonData.reduce((total,currentValue, index,array)=>{
+  total += parseFloat(currentValue.weight);
+if (index===array.lenght -1){
+   return total/array.lenght
+} else{
+  return total
+}
+
+}, 0)
+console.log(totalSumPokemon);
+
+
+const totalWeightPokemon2= pokemonData.reduce((total, pokemonData)=>
+  total +=parseFloat(pokemonData.weight), 0, )
+
+  console.log(totalWeightPokemon2)
+ 
+const totalHeightPokemon2= pokemonData.reduce((total, pokemonData)=>
+  total +=parseFloat(pokemonData.height), 0, )
+
+  console.log(totalHeightPokemon2)
+ 
+
+
+

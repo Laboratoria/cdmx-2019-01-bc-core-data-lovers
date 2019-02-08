@@ -4,7 +4,6 @@
 /*const example = () => {
   return 'example';
 };
-
 window.example = example;*/
 
 // window.printPokemon = {
@@ -74,8 +73,14 @@ window.printPokemon = {
 
     
   },
-
   pokemonFilterType: (arrayPokemonData,string)=>{
    return pokemonfilter =arrayPokemonData.filter(pokemon => pokemon.type.includes(string));
-  }  
+  }, 
+
+
+  totalHeight:(arrayPokemonData)=>{
+    const pokemontotalHeight=arrayPokemonData.reduce((total, pokemonData)=>
+    total +=parseFloat(pokemonData.weight), 0, )
+    return pokemontotalHeight;
+  },
 }

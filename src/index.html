@@ -3,7 +3,6 @@
 
 
 <head>
-
   <meta charset="utf-8">
   <title>Pikapedia</title>
   <link rel="stylesheet" href="style.css" />
@@ -11,6 +10,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
     </header>
 
     <div> <button id="enterToPikapedia">ENTRAR</button></div>
-    <figure><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" id="detectivePikachu"></figure>
+    <figure class="probando"><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" id="detectivePikachu"></figure>
 
 
   </section>
@@ -32,7 +33,6 @@
   <section id="pageKanto" class="hide">
     <nav>
       <ol>
-
         <button id="btn1"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
         <button id="btn2"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
         <button id="buttonSearchPokemon"><i class="fas fa-search"></i> BUSCAR POKÉMON </button>
@@ -40,6 +40,7 @@
         <button id="buttonBack"><i class="fas fa-undo-alt"></i> VOLVER </button>
       </ol>
     </nav>
+
     <main class="welcomeMessage"><img src="https://fontmeme.com/permalink/190201/e3023a41d60c4c0dc0c6150069296ce1.png"></main>
 
     <article id="total-data" class="pokemones"></article>
@@ -69,12 +70,7 @@
         <label><input type="checkbox" id="checkboxHeightTall" value="first_checkbox"> Filtrar Pokémon Altos </label><br>
         <label><input type="checkbox" id="checkboxHeightAscending" value="first_checkbox"> Filtrar Pokémon por Altura de modo ascendete</label><br>
         <label><input type="checkbox" id="checkboxTypeFilter" value="first_checkbox"> Filtrar Pokémon por Tipo</label><br>
-         
-
-
-      </div>
-  
-  
+        </div>
         </div>
   <main><figure class="titlepokemonLightght"><img src="https://fontmeme.com/permalink/190203/0bf66c3b9788fe67f0e1c3679e5dab96.png"> </figure>
       <div id="Pokemon-light" class="pokemones"></div></main>
@@ -110,22 +106,24 @@
     <!--PÁGINA 7-->
     <section id="typePokemonPage" class="hide">
       <main id="pokemonTypeAll" class="pokemones">
-        <button id="buttonPokemonFire" > <i class="fas fa-fire-alt"></i> Fire</button>
-        <button id="buttonPokemonGrass"> <i class="fas fa-leaf"></i> Grass</button>
-        <button id="buttonPokemonIce"> <i class="fas fa-icicles"></i> Ice</button>
-        <button id="buttonPokemonPoison"> <i class="fas fa-skull-crossbones"></i> Poison</button>
-        <button id="buttonPokemonFlying"> <i class="fas fa-feather"></i> Flying</button>
-        <button id="buttonPokemonPsychic"> <i class="fas fa-eye"></i> Psychic</button>
-        <button id="buttonPokemonWater" ><i class="fas fa-water"></i> Water </button>
-        <button class="Button" id = "ButtonGround"><i class="fas fa-globe-americas"></i> Ground </button>
-        <button class="Button" id = "ButtonRock"> Rock</button>
-        <button class="Button" id = "ButtonElectric"><i class="fas fa-bolt"></i> Electric</button>
-        <button class="Button" id = "ButtonBug"><i class="fas fa-bug"></i> Bug</button>
-        <button class="Button" id = "ButtonNormal"> <i class="fas fa-star"></i> Normal</button>
-        <button class="Button" id = "ButtonFighting"> <i class="fas fa-hand-rock"></i> Fighting </button>
-        <button class="Button" id = "ButtonDragon"><i class="fas fa-dragon"></i> Dragon</button><br>
-            
-        
+        <button id="buttonPokemonFire" ><i class="fas fa-fire-alt"></i> Fire</button>
+        <button id="buttonPokemonGrass"><i class="fas fa-leaf"></i> Grass</button>
+        <button id="buttonPokemonIce"><i class="fas fa-icicles"></i> Ice</button>
+        <button id="buttonPokemonPoison"><i class="fas fa-skull-crossbones"></i> Poison</button>
+        <button id="buttonPokemonFlying"><i class="fas fa-feather"></i> Flying</button>
+        <button id="buttonPokemonPsychic"><i class="fas fa-eye"></i> Psychic</button>
+        <button id="buttonPokemonWater" ><i class="fas fa-water"></i> Water</button>
+         <nav>
+            <ol>
+              <button class="Button" id = "ButtonGround"><i class="fas fa-globe-americas"></i> Ground </button>
+              <button class="Button" id = "ButtonRock"> Rock</button>
+              <button class="Button" id = "ButtonElectric"><i class="fas fa-bolt"></i> Electric</button>
+              <button class="Button" id = "ButtonBug"><i class="fas fa-bug"></i> Bug</button>
+              <button class="Button" id = "ButtonNormal"><i class="fas fa-star"></i> Normal</button>
+              <button class="Button" id = "ButtonFighting"> <i class="fas fa-hand-rock"></i> Fighting </button>
+              <button class="Button" id = "ButtonDragon"><i class="fas fa-dragon"></i> Dragon</button>
+            </ol> 
+        </nav>
       </main>
     </section>
   <script src="./data/pokemon/pokemon.js"></script>
