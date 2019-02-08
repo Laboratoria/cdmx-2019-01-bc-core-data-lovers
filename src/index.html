@@ -12,22 +12,35 @@
 
   <div id="root">
     <section id="pokeball-page" class="contenedor">
-      <img src="./assets/pokemon logo sin bola2cm.png" alt="" class="img">
-      <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-plus-nograss_boton.png"></button>
+      <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img">
+      <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-button.png"></button>
     </section>
 
-    <section id="pokemon-page" class="hideElement">
+    <section id="pokemon-page" class="hideElement contenedor">
       <header>
         <div>
-          <img src="./assets/pokemon logo sin bola1cm.png" alt="Logo-Pokesaurius">
+          <img src="./assets/pokesaurius_logo_1cm.png" alt="Logo-Pokesaurius" class="imgchico">
         </div>
         <nav>
         <li>COLECCIÓN 150/150</li>
-        <button id="sort-number" class="button" >Por Número</button>
+        <button id="filter">Búsqueda avanzada</button>
         </nav>
       </header>
-
-      <section>
+<section class="type-search">
+  <button class="type-button" id="Grass">Planta</button>
+  <button class="type-button" id="Poison">Veneno</button>
+  <button class="type-button" id="Fire">Fuego</button>
+  <button class="type-button" id="Ice">Hielo</button>
+  <button class="type-button" id= "Flying">Volador</button>
+  <button class="type-button" id= "Psiquic">Psíquico</button>
+  <button class="type-button" id= "Water" >Agua</button>
+  <button class="type-button" id= "Ground">Tierra</button>
+  <button class="type-button" id= "Rock">Roca</button>
+  <button class="type-button" id= "Electric">Eléctrico</button>
+  <button class="type-button" id= "Bug">Bicho</button>
+  <button class="type-button" id= "Normal">Normal</button>
+</section>
+      <section class="contenido">
       <article id="print-list">
         <img src="">
       </article>
@@ -35,9 +48,7 @@
 
       <footer id="busqueda">
         <p>Introduce nombre</p>
-        <select id="filter" name="order">
-            <option value="number">Número</option>
-          </select>
+        
       </footer>
     </section>
 
