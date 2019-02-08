@@ -1,9 +1,8 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+
 window.pokesaurius = {
-  typeFilter: (data,buttonType)=>{   
-    const filterPokemonType= data.filter(data.type.includes(buttonType)
-    )
-   return typeFilter
-  } 
+  typeFilter: (data, pokemonElegido) => {
+    const filterPokemonType = data.filter(data => data.type.includes(pokemonElegido));
+    // console.log(filterPokemonType)
+    return filterPokemonType
+  }
 }
