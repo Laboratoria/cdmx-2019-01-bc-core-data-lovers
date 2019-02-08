@@ -68,11 +68,25 @@ else if (ubication.includes('typePokemon.html')) {
   filterCoincidence();
 
 }else if (ubication.includes('orderPokemon.html')) {
-  const orderNameRadio = document.getElementById('asc-name');
+  /*const orderNameRadio = document.getElementById('asc-name');
   orderNameRadio.addEventListener('click',()=>{
     showList(window.sortData(dataPokemon,'name','asc'));
-  });
-
+  });*/
+  const orderRadio = document.getElementsByName("order-name");
+  console.log(orderRadio);
+  const arrayRadio = Array.from(orderRadio)
+  console.log(arrayRadio);
+  const getOrderPokemon = (optionsRadio) => {
+    optionsRadio.map(radio => {
+      radio.addEventListener("click",() =>{
+        if(radio.checked === true){
+          let idRadio = radio.id.split('-');
+          showList(window.sortData(dataPokemon,idRadio[1],idRadio[0]));
+        }
+      });
+    });
+  }
+  getOrderPokemon(arrayRadio);
 }
 
 
