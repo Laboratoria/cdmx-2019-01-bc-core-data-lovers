@@ -1,4 +1,4 @@
-const baseDatos =  WORLDBANK;
+const baseDatos =  window.WORLDBANK;
 const buttonMenu= document.getElementById('showMenu');
 const menuList= document.getElementById('menuList');
 const box2= document.getElementById('box2');
