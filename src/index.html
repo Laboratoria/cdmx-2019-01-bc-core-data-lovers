@@ -4,28 +4,59 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+
+      </head>
   <body>
+   
+    <div class="opacity">
+      <header>
+        <h1>http://oi65.tinypic.com/nbdlr5.jpg</h1>
+      </header> 
 
-    <header>
-      <h1>Pokedext website</h1>
-    </header> 
-
+      
+      
+      
     <!--Obteniendo nombre y boton siguiemnte-->
     <section id="getName">
-      <form>
+     <!-- <form>
         <label for="nombre">¿Cuál es tu nombre?:</label>
         <input type="text" id="nombre" placeholder="Escribe tu nombre">
       </form>
       <button type="submit" id="next">Siguiente</button>
-    </section>
+    </section>-->
 
     <!--Boton que muestra los Pokemones-->
     <section id="main" class="displayNone">
       <h1 id="pokemons"></h1>
       <button type="submit" id="showPokemons">Pokémons Ordenados </button>
     </section>
+    </div>
 
+    <p>Selecciona tu Pokémon de preferncia por Elemento</p>
+     <!--selector-->
+     <select id="mySelect" onchange="myFuncion ()">
+       <option value="Normal">Normal</option>
+       <option value="Fire">Fuego</option>
+       <option value="Water">Agua</option>
+       <option value="Grass">Hierba</option>
+       <option value="Electric">Electrico</option>
+       <option value="Ice">Hielo</option>
+       <option value="Fighting">Pelea</option>
+       <option value="Posion">Veneno</option>
+       <option value="Ground">Tierra</option>
+       <option value="Flying">Volador</option>
+       <option value="Psychic">Psíquico</option>
+       <option value="Bug">Bicho</option>
+       <option value="Rock">Roca</option>
+       <option value="Ghost">Fantasma</option>
+       <option value="Dragon">Dragon</option>
+     </select>
+    
+   </div>
+
+
+      
+    
     <div id="root"></div>
     
     
@@ -34,5 +65,4 @@
     <script src="main.js"></script>
   </body>
 </html>
-<p></p>
 
