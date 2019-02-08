@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <!--primera pantalla-->
+  <section id="inicio">
+    <div id="primera-pantalla">
+      <figure id="logo-lol"></figure>
+      <span class="blinke"> Click anywhere...</span>
+
+      <!-- <button id="inicio" class>Bienvenidos</button>-->
+    </div>
+  </section>
+
+
+  <!--lista de campeones-->
+  <section id="fondo-de-lista-de-campeones" class="hidden">
+    <header>
+      <i id="menu" class="fas fa-bars" onclick="openNav()"></i>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a class="closebtn" id="cerrar">&times;</a>
+      <p class="titulo">Filtrar Campeones</p>
+      <p class="titulo">ROL</p>
+
+      <a id="Support" class="rolPersonajes" href="#">Soporte</a>
+      <a id="Assassin" class="rolPersonajes" href="#">Asesino</a>
+      <a id="Marksman" class="rolPersonajes" href="#">Tirador</a>
+      <a id="Fighter" class="rolPersonajes" href="#">Luchador</a>
+      <a id="Mage" class="rolPersonajes" href="#">Mago</a>
+      <a id="Tank" class="rolPersonajes" href="#">Tanque</a>
+      <a id="byname" class="rolPersonajes" href="#">Por Nombre</a>
+
+    </div>
+    <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
+
+    <div id="es"></div>
+  </section>
+<section id="printed">
+
+  
+
+</section>
+
+  <script src="./data/lol/lol.js"></script>
+  <script src="main.js"></script>
+  <script src="data.js"></script>
+
+
+</body>
+
 </html>

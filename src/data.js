@@ -1,8 +1,24 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const example = () => {
-  return 'example';
-};
+window.lol = {
+  iterarData: (dataLol) => {
+    let datos =[]
+    for(const key in dataLol){
+      if(dataLol.hasOwnProperty(key)){
+      const element = dataLol[key];
+      let objetoVacio ={
+      name: element.name,
+      tag: element.tags[0],
+      img: element.img,
+      title: element.title,}
+    datos.push(objetoVacio)
+  }
+}
+return datos },
 
-window.example = example;
+filtroDataRoles: (rolId, dataToArray) => {
+  filtradoPorRoles = dataToArray.filter(element => element.tags[0] === rolId);
+  return filtradoPorRoles
+},
+}
