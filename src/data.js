@@ -106,12 +106,29 @@ dataEducacion.forEach (element => {
   print(indicadorName)
 });*/
 
-window.database = {
+
+//Función para extraer los datos de WORLDBANK A
+/*window.database = {
   dataFunction : (data) => {
-    let datai = data.MEX.indicators;
-    console.log (datai)
-    
+    let dataMex = data.MEX.indicators;
+    dataMex.forEach (element => {
+      let year = element.data;
+      let indicatorName = element.indicatorName;
+      for (data in year) {
+        console.log (indicatorName,`${data} - ${year[data]}`)}
+  })
+}
+};*/
+
+//Función para 
+window.database = {
+  dataFunction : (arrayWORLDBANK, select) => {
+    let dataMex = arrayWORLDBANK.MEX.indicators; //Indicadores de México
+    let mexFilt = dataMex.filter (function(elemento){ //Filtrar por categoría
+      
+      
+    }
+
 
   }
-
 }

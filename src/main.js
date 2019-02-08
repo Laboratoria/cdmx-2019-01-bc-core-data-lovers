@@ -15,6 +15,22 @@ const dataLiteracy = document.getElementById("dataLiteracy");*/
     dataLiteracy = document.write("Los datos son:");
 }*/
 
-database.dataFunction(WORLDBANK);
+//Traer base de datos A
+const dataOrigin = database.dataFunction(WORLDBANK);
+
+
+//Traer datos B
+//const dataMex = literacyData.dataFunction(WORLDBANK.MEX.indicators);
+
+//Elementos DOM
+const literacy = document.getElementById("literacy");
+const levelOfInstruction = document.getElementById("levelOfInstruction");
+const schoolRegistration = document.getElementById("schoolRegistration");
+const literacyOptions = document.getElementById("literacyOptions");
+const levelOfInstructionOptions = document.getElementById("levelOfInstructionOptions");
+const schoolRegistrationOptions = document.getElementById("schoolRegistrationOptions");
+
+
+
 
 
