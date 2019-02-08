@@ -87,9 +87,11 @@ const selectByRol = () => {
 
             support.addEventListener('click',filtroPorRol)*/
 
+
             //cuando yo eliga un rol en mi lista dentro del menu desplegable, con la clase de rol
             // obtener el class (nombre)
             //obener el arreglo completo
             // lo inserto en filtroDataRoles para obtener el arreglo filtrado y lo asigno a una variable
             //con un map recorro el arreglo de objetos y en cadauno voy sacando las caracteristicas
             // y boy pintando
+
