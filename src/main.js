@@ -1,3 +1,4 @@
+const baseDatos =  WORLDBANK;
 const buttonMenu= document.getElementById('showMenu');
 const menuList= document.getElementById('menuList');
 const box2= document.getElementById('box2');
@@ -48,13 +49,12 @@ const muestra_indicador = () =>{// funcion muestra apartado indicador
 buttonIndicador.addEventListener('click', muestra_indicador);
 
 
-
 const filtraIndPais = () =>{
     contenido.style.display= 'block';
     let select= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
     let indicador = nameIndicators.value;
     //console.log(select);
-     let pais = window.filtroPais(select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
+     let pais = window.worlBank.filtroPais(baseDatos,select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
      recorrerObjeto (pais); 
 }
 
@@ -85,7 +85,7 @@ const prtOrder=(orderObj)=>{
 const orderByAscent = () =>{
     let order= orderAscDat.value;
     console.log(order);
-    let orderObj = window.orderByAsc(order)
+    let orderObj = wwindow.worlBank.orderByAsc(order)
     prtOrder(orderObj)
 }
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/

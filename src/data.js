@@ -1,8 +1,10 @@
-const baseDatos =  WORLDBANK;
+
 let enviaIndicador;
 let orderByObject=[];
- 
-const filtroPais = (selectPais, indicador) =>{ 
+
+window.worlBank = {
+
+  filtroPais : (baseDatos,selectPais, indicador) =>{ 
     //let enviaIndicador;
     let indicadorFiltro;
     
@@ -21,10 +23,10 @@ const filtroPais = (selectPais, indicador) =>{
     enviaIndicador= datosIndicador; 
     })  
     return enviaIndicador;
-  } 
-window.filtroPais = filtroPais;
+  }, 
 
-const orderByAsc = (order) =>{
+
+orderByAsc : (order) =>{
   for (let i in enviaIndicador) {
     orderByObject.push([i, enviaIndicador[i]]);
   }
@@ -46,4 +48,6 @@ const orderByAsc = (order) =>{
   }
   return orderByObject;
 }
-window.orderByAsc= orderByAsc;
+
+}//fin window
+
