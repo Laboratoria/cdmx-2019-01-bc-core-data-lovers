@@ -1,29 +1,42 @@
-//Traer elementos del data
-const database = WORLDBANK.MEX.indicators;
+//Traer elementos del DOM
+/*const indicador = document.getElementById("indicador");
 
-//Filtrar indicadores de alfabetización.
-const literacy = (select) => {
-  let userIndicator;
-  if (select === "adultWomen"){
-      let literacyIndicator = database.filter (element => {
-      return element.indicatorName === "Tasa de alfabetización, mujeres adultas (% de mujeres de 15 años o más)";
-    })
-    literacyIndicator.forEach(element => {
-      let indicatorData = element.data;
-      userIndicator = indicatorData;
-    })
-  } else if (select === "youngWomen"){
-     let literacyIndicator = database.filter (element => {
-     return element.indicatorName === "Tasa de alfabetización, mujeres jóvenes (% de mujeres entre 15 y 24 años)";
-  })
-    literacyIndicator.forEach(element => {
-    let indicatorData = element.data;
-    userIndicator = indicatorData;
-    }) 
-  }
-  return userIndicator;
+// función para imprimir elementos en el html
+const print = (dataEducation) => {
+  let result = `<h5> ${dataEducation} </h5>`
+  indicador.insertAdjacentHTML("beforeend", result)
+  print(dataEducation)
 };
 
-window.literacy = literacy;
+// extraer elementos
+dataEducacion.forEach (element => {
+  let indicadorName = element.indicatorName;
+  print(indicadorName)
+});*/
 
 
+//Función para extraer los datos de WORLDBANK A
+/*window.database = {
+  dataFunction : (data) => {
+    let dataMex = data.MEX.indicators;
+    dataMex.forEach (element => {
+      let year = element.data;
+      let indicatorName = element.indicatorName;
+      for (data in year) {
+        console.log (indicatorName,`${data} - ${year[data]}`)}
+  })
+}
+};*/
+
+//Función para filtrar
+window.database = {
+  dataFunction : (arrayWORLDBANK, select) => {
+    let dataMex = arrayWORLDBANK.MEX.indicators; //Indicadores de México
+    let mexFilt = dataMex.filter (function(elemento){ //Filtrar por categoría
+      
+      
+    }
+
+
+  }
+}

@@ -3,74 +3,69 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-
 <!-------------Welcome screen------------->
-<span class="container">
- <span class="checkbox-container">
-   <input class="checkbox-trigger" type="checkbox" />
-   <span class="menu-content">
+ <div class="screen" id="welcome-screen">
+  <title>MexEduca</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ </div>
+ <header>
+   <article>
+     <h1>MexEduca</h1>
+     <figure><img src="imagen/learning.png" alt="leyendo"></figure>
+   </article>
+   <nav>
      <ul>
-       <li><a href="" target="_blank">HOME</a></li>
-       <li><a href="" target="_blank">HANGMAN</a></li>
-       <li><a href="" target="_blank">MEMORY</a></li>
-     </ul>
-     <span class="hamburger-menu"></span>
-   </span>
- </span>
-</span>
-<div class="screen" id="welcome-screen">
- <title>MexEduca</title>
- <link rel="stylesheet" href="style.css" />
- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
- <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+         <li>¿Quiénes somos?</li>
+         <li>¿Por qué hablar de la educación en mujeres?</li>
+      </ul>
+   </nav>
+ </header>
  </head>
 
  <body>
-  <div id="page1">
-   <header>
-     <nav>
-         <img class="log1" src="imagenes/learning.png" alt="login">
-         <h1><span class="logo" id="log">MexEduca</span></h1>
-     </nav>
-    </header>
-     <img class="img1" src="imagenes/graduadas.jpg" alt="gradu">
-     <h2>índices educativos en México</h2>
-     <h3>Sección mujeres</h3>
-     <button class="btn0" value="mostrar" onclick="myFunction()">Entrar</button>
-    </div>
-</div>
-<!--------------categorias------------------------->
-
-<div class="category" id="page2">
- <section class="categorías">
-   <h2>Categorías</h2>
-   <button id="aLearn" class="btn3" onclick="functionA()">Alfabetización<br>Ver datos</button>
-   <h3>¿Qué es?</h3>
-   <p>Es la habilidad mínima de leer y escribir una lengua específica, como así también una forma de entender o concebir el uso de
-      la lectura y la escritura en la vida diaria.</p>
-   <img class="img3" src="imagenes/alfabeto.jpg" alt="alfabetización">
- </section>
-</div>
-
-<div id="results">
- <section class="resultados">
-   <h4>Resultados</h4>
-   <fieldset>
-     Para : <select name="alfabetización" id="alfabetización">
-       <option value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
-       <option value="adultWomen">Mujeres adultas (15 años o más)</option>
-     </select>
-   </fieldset>
-   <h5 id="indicador"></h5>
- </section>
-</div>
+   <section>
+     <button id="literacy">Alfabetización</button>
+     <fieldset>
+      Para : <select name="literacyMex" id="literacyOptions">
+        <option value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
+        <option value="adultWomen">Mujeres adultas (15 años o más)</option>
+       </select>
+      </fieldset>
+   </section>
 
 
+   <section>
+      <button id="levelOfInstruction">Nivel de instrucción</button>
+      <fieldset>
+          Para : <select name="levelInstruction" id="levelOfInstructionOptions">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="licenciatura">Licenciatura</option>
+            <option value="maestria">Maestría</option>
+            <option value="doctorado">Doctorado</option>
+          </select>
+        </fieldset>  
+   </section>
 
+   <section>
+      <button id="schoolRegistration">Inscripción escolar</button>
+      <fieldset>
+          Para : <select name="schoolRegis" id="schoolRegistrationOptions">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+          </select>
+        </fieldset>
+   </section>
 
+   <section>
+     <article>
+       <h2>Resultados</h2>
+       <h5></h5>
+     </article>
+   </section>
 
-
-<div id="root"></div>
 <!-- <script src="./data/injuries/injuries.js"></script> -->
 <!-- <script src="./data/pokemon/pokemon.js"></script> -->
 <!-- <script src="./data/steam/steam.js"></script> -->
