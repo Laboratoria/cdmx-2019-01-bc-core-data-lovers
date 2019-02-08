@@ -5,64 +5,59 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
 
-      </head>
-  <body>
-   
-    <div class="opacity">
+    <!--Pantalla uno-->
+    <!--Obteniendo nombre y boton siguiente para pintarlo en pantalla 2-->
+    <div id="pantalla1" class= "pokebola">
       <header>
-        <h1>http://oi65.tinypic.com/nbdlr5.jpg</h1>
-      </header> 
-
-      
-      
-      
-    <!--Obteniendo nombre y boton siguiemnte-->
-    <section id="getName">
-     <!-- <form>
-        <label for="nombre">¿Cuál es tu nombre?:</label>
-        <input type="text" id="nombre" placeholder="Escribe tu nombre">
-      </form>
-      <button type="submit" id="next">Siguiente</button>
-    </section>-->
-
-    <!--Boton que muestra los Pokemones-->
-    <section id="main" class="displayNone">
-      <h1 id="pokemons"></h1>
-      <button type="submit" id="showPokemons">Pokémons Ordenados </button>
-    </section>
+      <h1>Pokedext website</h1>
+      </header>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre">
+      <button type="submit" id="next"> GO </button>
     </div>
 
-    <p>Selecciona tu Pokémon de preferncia por Elemento</p>
-     <!--selector-->
-     <select id="mySelect" onchange="myFuncion ()">
-       <option value="Normal">Normal</option>
-       <option value="Fire">Fuego</option>
-       <option value="Water">Agua</option>
-       <option value="Grass">Hierba</option>
-       <option value="Electric">Electrico</option>
-       <option value="Ice">Hielo</option>
-       <option value="Fighting">Pelea</option>
-       <option value="Posion">Veneno</option>
-       <option value="Ground">Tierra</option>
-       <option value="Flying">Volador</option>
-       <option value="Psychic">Psíquico</option>
-       <option value="Bug">Bicho</option>
-       <option value="Rock">Roca</option>
-       <option value="Ghost">Fantasma</option>
-       <option value="Dragon">Dragon</option>
-     </select>
-    
-   </div>
+    <!--Pantalla dos-->
+    <!--Boton que muestra los Pokemones-->
+    <div id="pantalla2" class="hide">
+      <h1 id="pokemons"></h1>
+    <!-- Barra de menu-->
+      <nav class= "topnav">
+        <ul>
+          <li> <a href="index.html"> Inicio </a> </li>
+          <li> <a href="#"> Pokelist </a> </li>
+          <li> <a href="#"> Estadisticas </a> </li>
+          <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Elementos</a>
+    <div class="dropdown-content">
+      <a href="#">Fuego</a>
+      <a href="#">Aire</a>
+      <a href="#">Agua</a>
+      <a href="#">Planta</a>
+      <a href="#">Electrico</a>
+      <a href="#">Psiquico</a>
+    </div>
+  </li>
+  </ul>
+  </nav>
+  <!-- Boton de que imprime la data de Pokemones -->
+      <button type="submit" id="showPokemons">Pokémons Ordenados </button>
+  <!-- search para traer data-->
+      <input type="text"  value="search"> <br>
+  <!-- Letrero de Bienvenida que al darle click en pantalla 1, me lo pinta en pantalla 2-->
+      <span id= "nombre-bienvenido"> </span>
+
+    </div>
 
 
       
     
     <div id="root"></div>
-    
-    
-    <script src="./data/pokemon/pokemon.js"></script> 
+
+    <!-- <script src="./data/injuries/injuries.js"></script> -->
+     <script src="./data/pokemon/pokemon.js"></script>
+    <!-- <script src="./data/steams/steam.js"></script> -->
+
+    <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
-
