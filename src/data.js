@@ -9,7 +9,10 @@ window.lol = {
           splash: element.splash,
           name: element.name,
           primaryRol: element.tags[0],
-          secondaryRol: element.tags[1]
+          secondaryRol: element.tags[1],
+          attack: element.attack,
+          defense: element.defense,
+          magic: element.magic
         }
         if (!element.tags[1]){
           obj.secondaryRol = "";
@@ -22,7 +25,7 @@ window.lol = {
 
   filterByRol: (rolId, arr) =>
     filtering = arr.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId),
-    
+  //Aquí inicia la función para ordenar por ataque
   orderByAttack: () => {
 
   }
