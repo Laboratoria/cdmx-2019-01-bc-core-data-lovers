@@ -129,3 +129,5 @@ for(let i = 0; i<elements.length; i++){
     window.worldBank.filter(dataMex, valElement);
   })
 }
+
+const indicator= document.getElementById("indicator").innerHTML(window.worldBank.filter);
