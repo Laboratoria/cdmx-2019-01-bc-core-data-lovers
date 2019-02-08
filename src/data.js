@@ -6,7 +6,7 @@ window.lol = {
       if (lolData.hasOwnProperty(key)) {
         const element = lolData[key];
         obj = {
-          img: element.splash,
+          splash: element.splash,
           name: element.name,
           primaryRol: element.tags[0],
           secondaryRol: element.tags[1]
@@ -17,30 +17,19 @@ window.lol = {
       }
       arr.push(obj)
     }
-    return arr
+    return arr;
   },
 
-  filterByRol: (rolId, arrayData) => {
+  filterByRol: (rolId, arrayData) =>
+    filtering = arrayData.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId),
 
-        let newArray = [];
-        arrayData.forEach(element => {
-          let img = element.splash;
-          let name = element.name;
-          const tags = element.tags[0];
-          const tags2 = element.tags[1];
-          if (tags === rolId) {
-            newArray.push(element);
-            print(img, name, tags, tags2);
-          }
-          if (tags2 === rolId) {
-            newArray.push(element);
-            print(img, name, tags, tags2);
-          }
-        });
-      }
+  orderByAttack: () => {
 
+  }
   //esta llave cierra window.lol
 }
+
+
 
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
