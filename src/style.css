@@ -132,3 +132,8 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
+
+.fas:hover + .sidenav{
+  height: 120px;
+  padding-top: 1em;
+}
