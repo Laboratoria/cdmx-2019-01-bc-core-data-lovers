@@ -1,3 +1,4 @@
+const baseDatos =  WORLDBANK;
 const buttonMenu= document.getElementById('showMenu');
 const menuList= document.getElementById('menuList');
 const box2= document.getElementById('box2');
@@ -8,7 +9,6 @@ const selOption = document.getElementById('filtrar-pais');
 const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
-let objectOrder=[];
 let contador=0;
 
 const mostrarMenu = () =>{//Funcion mantiene activo o desactivo el menu, segun el valor del contador
@@ -54,7 +54,7 @@ const filtraIndPais = () =>{
     let select= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
     let indicador = nameIndicators.value;
     //console.log(select);
-     let pais = window.filtroPais(select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
+     let pais = window.worldBank.filtroPais(baseDatos,select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
      recorrerObjeto (pais); 
 }
 
@@ -74,7 +74,7 @@ let respuesta="";
 
 const prtOrder=(orderObj)=>{
     let respOrder="";    
-    for (i in orderObj)
+    for (let i in orderObj)
      {
         respOrder+="<li>"+"<b>"+orderObj[i][0]+":  "+"</b>"+parseFloat(orderObj[i][1]).toFixed(2)+"%"+"</li>"+"<br>";
      }     
@@ -84,8 +84,8 @@ const prtOrder=(orderObj)=>{
 
 const orderByAscent = () =>{
     let order= orderAscDat.value;
-    console.log(order);
-    let orderObj = window.orderByAsc(order)
+    //console.log(order);
+    let orderObj = window.worldBank.orderByAsc(order)
     prtOrder(orderObj)
 }
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/

@@ -63,10 +63,13 @@ section{
 
 #filtrar-indicador{
     padding-left: 2%;
-    width:35%;
+    width:37.5%;
 
     }
-
+#maxMin{
+    padding-left: 2%;
+    width:25%;
+}
 .selectors{
 border: 5px inset #1C6EA4;
 border-radius: 32px 1px 32px 0px;
@@ -110,7 +113,12 @@ font-weight: bold;
     margin-top: 5%;
     margin-bottom: 5%;
 } 
-
+#maxMin{
+    padding-left: 5%;
+    width:100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 header nav{
     width: 80%;
     height: 100%;
