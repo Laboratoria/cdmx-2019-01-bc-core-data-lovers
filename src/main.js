@@ -30,13 +30,31 @@ for(let i = 0; i<elements.length; i++){
     filteredIndicators.forEach(element => {
       let indicatorName = element.indicatorName;
       let indicatorCode = element.indicatorCode;
-      
       print(indicatorName, indicatorCode);
     })
-    
   })
 }
 
+
+
+//función para imprimir datos de variable en el html
+indicator.addEventListener("change", ()=> {
+  document.getElementById('indicator-name').innerHTML = '';
+  document.getElementById('indicator-result').innerHTML='';
+  let indicatorSelect = indicator.value;
+  filteredIndicators.forEach( element => {
+    if(element.indicatorCode == indicatorSelect){
+      let indicatorName = element.indicatorName;
+      let year = element.data;
+      console.log(element.data);
+      for (let data in year) {
+        indicatorResult = `<ol>${data} = ${year[data]}</ol>`;
+        document.getElementById('indicator-name').innerHTML = indicatorName + ':';
+        document.getElementById('indicator-result').insertAdjacentHTML('beforeend', indicatorResult);
+      }
+    }
+  })
+})
 
 //evento de click
 // const typeIndicator = () => {
