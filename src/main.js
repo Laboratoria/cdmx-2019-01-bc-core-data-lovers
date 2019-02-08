@@ -1,3 +1,4 @@
+const baseDatos =  window.WORLDBANK;
 const buttonMenu= document.getElementById('showMenu');
 const menuList= document.getElementById('menuList');
 const box2= document.getElementById('box2');
@@ -53,17 +54,38 @@ const filtraIndPais = () =>{
     let select= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
     let indicador = nameIndicators.value;
     //console.log(select);
-     let pais = window.filtroPais(select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
+     let pais = window.worldBank.filtroPais(baseDatos,select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
      recorrerObjeto (pais); 
 }
 
 selOption.addEventListener('change',filtraIndPais); //funcion recorre el objeto
+
+
 const recorrerObjeto = (pais)=>{
+  
 let respuesta="";
  for (let i in pais) //for iteracon cada elemento del objeto
   {
     respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
   }
   document.getElementById('contenido').innerHTML = respuesta;   
- return respuesta
+ return respuesta;
 }
+
+const prtOrder=(orderObj)=>{
+    let respOrder="";    
+    for (let i in orderObj)
+     {
+        respOrder+="<li>"+"<b>"+orderObj[i][0]+":  "+"</b>"+parseFloat(orderObj[i][1]).toFixed(2)+"%"+"</li>"+"<br>";
+     }     
+    document.getElementById('contenido').innerHTML = respOrder;
+    return  respOrder;
+    }
+
+const orderByAscent = () =>{
+    let order= orderAscDat.value;
+    //console.log(order);
+    let orderObj = window.worldBank.orderByAsc(order)
+    prtOrder(orderObj)
+}
+orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
