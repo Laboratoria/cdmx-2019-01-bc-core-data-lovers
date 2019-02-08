@@ -2,7 +2,6 @@ let tableToPrint = document.getElementById('dataTable');
 //get the data showThePanel (this is only used if we preffer to show the panel via javascrip and not in the css)
 
 
-
 //First we need to declare our buttons
 let buttonPedestrians =  document.getElementById('pedestrians-show');
 let buttonPedalcyclists =  document.getElementById('pedalcyclists-show');
@@ -94,7 +93,6 @@ function printTheData(accidentsByYear){
 
 function printDataInHTML(year, number){
   tableToPrint.insertAdjacentHTML('beforeend', `<tr><td>${year}</td><td>${number}</td></tr>`);
-
 }
 /*openMenuButton.addEventListener('click', ()=>{
   openNav();
@@ -120,8 +118,6 @@ function printDataInHTML(year, number){
 /*function openNav() {
   document.getElementById("side_menu").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("side_menu").style.width = "0";
 }*/
-
