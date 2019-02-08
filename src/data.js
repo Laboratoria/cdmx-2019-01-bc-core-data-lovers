@@ -9,7 +9,7 @@ window.pokesaurius = {
     // orderName.push(name);
     let dataFil = [];
     data.forEach(pokemon => {
-      if(pokemon.type[0] === 'Fire' || pokemon.type[1] === 'Fire'|| pokemon.type[2] === 'Water'  ){
+      if(pokemon.type[0] === 'Ice' || pokemon.type[1] === 'Ice'|| pokemon.type[2] === 'Ice'  ){
         dataFil.push(pokemon)
       }
     });
