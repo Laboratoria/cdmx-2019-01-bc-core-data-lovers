@@ -38,6 +38,13 @@ for (const key in dataLol) {
     /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
     const es = document.getElementById('es')
 
+    //Variable class del menu//
+    const rol= document.getElementsByClassName("rolPersonajes");
+
+    
+    
+
+
     /* Variales botones*/
     const inicio = document.getElementById('inicio')
     const menu = document.getElementById('menu')
@@ -56,10 +63,10 @@ for (const key in dataLol) {
         document.getElementById("mySidenav").style.width = "0px";};
   
 
-// Pintar en HTML
 
-  
-  const rol = document.getElementsByClassName("rolPersonajes");
+
+
+
   const result = window.lol.iterarData(dataLol)
 
   const print =(result) => {
@@ -106,9 +113,11 @@ for (const key in dataLol) {
 
             support.addEventListener('click',filtroPorRol)*/
 
+
             //cuando yo eliga un rol en mi lista dentro del menu desplegable, con la clase de rol
             // obtener el class (nombre)
             //obener el arreglo completo
             // lo inserto en filtroDataRoles para obtener el arreglo filtrado y lo asigno a una variable
             //con un map recorro el arreglo de objetos y en cadauno voy sacando las caracteristicas
             // y boy pintando
+
