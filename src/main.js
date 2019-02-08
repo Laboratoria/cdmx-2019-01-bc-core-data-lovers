@@ -82,25 +82,6 @@ for (const key in dataLol) {
    //este hay que subirlo porque es global 
  const dataToArray = Object.values(dataLol);     
 
-  for ( let i=0; i<rol.length; i++){
-    rol[i].addEventListener('click', () => {
-      let rolId = rol[i].id;
-      const printSection = document.getElementById("es");
-      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataToArray);
-
-      printSection.innerHTML = "";
-
-      arrayRolesFiltered.map((character) => {
-        printSection.innerHTML += `<div class="nameList"><img class="lolIcons" src="${character.img}"><div id="letras"><h1 id= "nombre" >${character.name}</h1> <p id="titulo">${character.title}</p></div></div>`;
-      })
-    })}
-    
-
-
-
-
-          return arr;
-        })} */
  
     
 
