@@ -13,32 +13,27 @@ mostrar.addEventListener("click",() =>{
     menu.classList.toggle("mostrar");
 });
 
-const result = window.lol.iterarData(datalol)
+// const result = window.lol.iterarData(datalol)
 // console.log(result)
 
-const print =(result) =>{
-    result.forEach(champ => {
-let pintar = `<div class="cuadro"><img class="imagen" src="${champ.imga}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`; 
+const print = (datosArr) =>{
+    imprimirRoles.innerHTML = "";
+    datosArr.forEach(champ => {
+let pintar = `<div class="cuadro"><img class="imagen" src="${champ.splash}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`; 
 imprimirRoles.insertAdjacentHTML("beforeend", pintar);
- });
+ })
 
 }
-print(result)
 
-for(let i= 0; i<rol.length;i++){
+const selectRol = () =>{
+    for(let i= 0; i<rol.length;i++){
     rol[i].addEventListener("click",() => {
       let rolId = rol[i].id;
-      const printSection = document.getElementById("imprimirRoles");
-      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, arrayData);
-      
-      printSection.innerHTML = "";
-
-    arrayRolesFiltered.map((character) =>{
-        printSection.innerHTML += `<div class="cuadro"><img class="imagen" src="${character.img}"> <div id="subtitulo"><h1 id="nombre">${character.name}</h1> <h2 id"titulo"> ${character.title}</h2></div></div>`;
-
+      const datosArr = window.lol.iterarData(datalol);
+      //const printSection = document.getElementById("imprimirRoles");
+      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datosArr);
+      print(arrayRolesFiltered);
     })
-
-    })
+  }
 }
-
-
+selectRol();

@@ -1,23 +1,23 @@
 window.lol = {
  iterarData: (datalol) => {
-   let datos = []
+   let datosArr = []
    for (const key in datalol) {
   if (datalol.hasOwnProperty(key)) {
     const element = datalol[key];
     let obj = {
       name: element.name,
       tag: element.tags[0],
-      imga: element.img,
+      splash: element.splash,
       title: element.title,
     }
-    datos.push(obj)
+    datosArr.push(obj)
    }
   }
-  return datos
+  return datosArr
  },
 
-filtroDataRoles: (rolId, arrayData ) =>{  
-     filtradoPorRoles = arrayData.filter(element => element.tags[0] === rolId);
+filtroDataRoles: (rolId, datosArr ) =>{  
+     filtradoPorRoles = datosArr.filter(element => element.tag === rolId);
 
       return filtradoPorRoles
     },
