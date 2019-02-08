@@ -1,6 +1,3 @@
-//Arreglo de años
-const arrayYears = Array.from(document.getElementsByClassName("year"));
-console.log(arrayYears);
 //Constante de la sección know del HTML
 const knowsecc = document.getElementById("know");
 //Declaramos input del año
@@ -11,7 +8,7 @@ let userbutton = document.getElementById("user");
 let searchbutton = document.getElementById("search");
 
 //Constante de la sección know del HTML
-const resultesecc = document.getElementById("result");
+const resultsecc = document.getElementById("result");
 
 
 searchbutton.addEventListener("click", ()=>{
