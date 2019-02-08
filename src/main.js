@@ -8,7 +8,7 @@ const sectionName = document.getElementById('pantalla1');
 
 btngetName.addEventListener ("click",() => {
 const name = trainerName.value;
-bienvenido.innerHTML = '¡Hola entrenador '  +  name  +' bienvenido';
+bienvenido.innerHTML = '¡Hola entrenador '  +  name  +' Bienvenido!';
 sectionName.style.display ="none";
 
   })
