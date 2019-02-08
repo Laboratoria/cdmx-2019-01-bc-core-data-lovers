@@ -72,7 +72,7 @@ else if (ubication.includes('typePokemon.html')) {
   orderNameRadio.addEventListener('click',()=>{
     showList(window.sortData(dataPokemon,'name','asc'));
   });*/
-  const orderRadio = document.getElementsByName("order-name");
+  const orderRadio = document.getElementsByName("order");
   console.log(orderRadio);
   const arrayRadio = Array.from(orderRadio)
   console.log(arrayRadio);
