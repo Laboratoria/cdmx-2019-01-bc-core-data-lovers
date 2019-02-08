@@ -1,17 +1,3 @@
-
-const principalpage = document.getElementById('principalpage');
-const pedestrianspage = document.getElementById('pedestrianspage');
-const pedalcyclistspage = document.getElementById('pedalcyclistspage');
-const busoccupantspage = document.getElementById('busoccupantspage');
-const caroccupantspage = document.getElementById('caroccupantspage');
-const motorcyclistspage = document.getElementById('motorcyclistspage');
-
-const pedestrian_data = () => {
-    page1.classList.add('hide');
-    page2.classList.remove('hide');
-  }
-//función Elena 
-
 let tableToPrint = document.getElementById('dataTable');
 //get the data showThePanel (this is only used if we preffer to show the panel via javascrip and not in the css)
 
@@ -95,7 +81,7 @@ console.log(fieldToSearch)
 }
 
 //(this is only used if we preffer to show the panel via javascrip and not in the css)
-function showThePanel(){
+//function showThePanel(){
   //open the data Panel
 
 }
