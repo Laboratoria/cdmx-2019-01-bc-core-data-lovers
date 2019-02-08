@@ -64,13 +64,9 @@ header nav{
     
 }
 
-.indicatorSelect{
-  position:relative;
-  font-family:helvetica;
-  
-}
 
-#flag {
+
+#country {
  
     background-color: Transparent;
     background-repeat:no-repeat;

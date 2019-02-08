@@ -1,4 +1,5 @@
-const dataWB= window.WORLDBANK;
-const indicatorFilter= document.getElementbyId (indicatorFilter);
-
-
+  const table= document.getElementById("years");
+  const printing= (years) => {
+    let printedResult= `<p>${years}</p>`;
+    table.insertAdjacentHTML("beforeend", printedResult);
+  }
