@@ -14,9 +14,9 @@ const resultsecc = document.getElementById("result");
 searchbutton.addEventListener("click", ()=>{
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
-
+  const result = window.data.consult(yearValue,userValue)
   //console.log(yearValue, userValue);
-  resultsecc.innerHTML=window.data.consult(yearValue, userValue);
+  resultsecc.innerHTML=result;
 })
 
 
