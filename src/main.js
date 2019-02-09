@@ -5,6 +5,10 @@ const cardSummary = document.getElementById('card-summary');
 const rol = document.getElementsByClassName('rol');
 //Declarando las variables que enlazan los botones del HTML mediante el DOM
 const startButton = document.getElementById('start-button');
+const attack = document.getElementById('attack');
+const magic = document.getElementById('magic');
+const defense = document.getElementById('defense');
+const back = document.getElementById('back');
 
 const lolData = LOL.data;
 //Evento del boton Comenzar
@@ -25,6 +29,7 @@ const print = (arr) => {
   })
 }
 
+//Esta función es para seleccionar el rol por el cual se va a filtrar
 const selectRol = () => {
   for (let i = 0; i < rol.length; i++) {
     rol[i].addEventListener("click", () => {
@@ -38,3 +43,25 @@ const selectRol = () => {
 
 selectRol();
 
+attack.addEventListener('click', () => {
+  const arr = window.lol.showData(lolData);
+  const attackSort = window.lol.sorterByAttack(arr);
+  print(attackSort);
+});
+
+magic.addEventListener('click', () => {
+  const arr = window.lol.showData(lolData);
+  const magicSort = window.lol.sorterByMagic(arr);
+  print(magicSort);
+});
+
+defense.addEventListener('click', () => {
+  const arr = window.lol.showData(lolData);
+  const defenseSort = window.lol.sorterByDefense(arr);
+  print(defenseSort);
+});
+
+back.addEventListener('click', () => {
+  championList.classList.add('hide');
+  start.classList.remove('hide');
+});
