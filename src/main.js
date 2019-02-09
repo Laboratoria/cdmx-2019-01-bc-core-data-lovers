@@ -9,6 +9,11 @@ const selOption = document.getElementById('filtrar-pais');
 const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
+const btgrafica = document.getElementById('btgrafica');
+let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
+let valorAnioX=[];
+let valorPorcentajeY=[];
+let pais;
 let contador=0;
 
 const mostrarMenu = () =>{//Funcion mantiene activo o desactivo el menu, segun el valor del contador
@@ -48,13 +53,12 @@ const muestra_indicador = () =>{// funcion muestra apartado indicador
 buttonIndicador.addEventListener('click', muestra_indicador);
 
 
-
 const filtraIndPais = () =>{
     contenido.style.display= 'block';
     let select= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
     let indicador = nameIndicators.value;
     //console.log(select);
-     let pais = window.worldBank.filtroPais(baseDatos,select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
+     pais = window.worldBank.filtroPais(baseDatos,select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
      recorrerObjeto (pais); 
 }
 
@@ -67,7 +71,19 @@ let respuesta="";
  for (let i in pais) //for iteracon cada elemento del objeto
   {
     respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
-  }
+ }
+
+for (let i in pais) {//recorre objeto para pasar el año a nuevo arrego de eje X
+    valorAnioX.push(i);
+ }
+  //graficaX(valorAnioX)//llama funcion para asignar valores al eje X de la grafica
+
+
+ for (let j in pais) {//recorre objeto para pasar el año a nuevo arrego de eje Y
+    valorPorcentajeY.push(pais[j]);
+ }
+ // graficaY(valorPorcentajeY)//llama funcion para asignar valores al eje Y de la grafica
+ 
   document.getElementById('contenido').innerHTML = respuesta;   
  return respuesta;
 }
@@ -91,14 +107,37 @@ const orderByAscent = () =>{
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
 
 
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
+
+/*graficaX = (valorAnioX)=>{
+    console.log(myChart.config.data.labels +=valorAnioX)
+return myChart.config.data.labels=valorAnioX;
+           
+    //return myChart.config.data.labels=valorAnioX;;
+    }
+
+  graficaY = (valorPorcentajeY)=>{
+   /* for (let j in pais) {//recorre objeto para pasar el año a nuevo arrego de eje Y
+        valorPorcentajeY.push(pais[j]);
+    }
+    //console.log(myChart.config.data.datasets.data=valorPorcentajeY)
+     
+     return valorPorcentajeY;
+    
+  }    */ 
+
+
+console.log(valorAnioX);
+console.log(valorPorcentajeY);
+
+const VerGrafica=()=>{
+
+myChart= new Chart(ctx, { //funcion grafica
+    type: 'line',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: valorAnioX,
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Indicador Demografico (%)',
+            data: valorPorcentajeY,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -127,4 +166,9 @@ var myChart = new Chart(ctx, {
             }]
         }
     }
-});
+})
+
+}
+
+btgrafica.addEventListener('click',VerGrafica);
+  
