@@ -170,6 +170,8 @@ background: #eee;
     outline: 0;
     }
 
+
+
 @media screen and (min-width:801px){
     header nav{
         display:block !important
@@ -210,4 +212,18 @@ p{
     margin-left: 10%;
 }
 
+.grafica{
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
 
+.grafica-muestra{
+ border: 1px solid #037e8c;
+ }
+
+ #myChart{
+ width: 50%;
+ float: right;
+ }
