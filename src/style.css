@@ -144,14 +144,14 @@ footer {
   border: 3px solid #FFBA5C;
 }
 
-.pokemon-cart-image {
+.pokemon-card-image {
   background: #EAFEE6;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   right: 30px;
 }
 
-.box-cart {
+.box-card {
   font-size: 14px;
   text-align: center;
   margin-top: 9px;
