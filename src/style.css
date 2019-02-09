@@ -152,6 +152,7 @@ footer {
   background-color: black;
   padding: 25px;
   padding-top: 50px;
+  min-height: 100vh;
 }
 
 h3 {

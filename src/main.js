@@ -38,7 +38,7 @@ search.addEventListener('keyup', () => {
   const newArrayChamp = window.lol.showData(lolData);
   let filtered = window.lol.filterByName(name2, newArrayChamp);
   if (name2 == "" ) {
-    print(newArrayChamp)
+    print(newArrayChamp);
   } else {
   print(filtered);
 }
