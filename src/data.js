@@ -2,6 +2,7 @@
 let enviaIndicador;
 let orderByObject=[];
 
+
 window.worldBank ={
 
 filtroPais: (baseDatos, selectPais, indicador) =>{ 
@@ -47,4 +48,13 @@ filtroPais: (baseDatos, selectPais, indicador) =>{
   }
   return orderByObject;
 }
-}//fin de window
+
+/*grafica: ()=>{
+  for (let i in enviaIndicador) {
+    valorAnioX.push(i);
+    valorPorcentajeY.push([enviaIndicador[i]]);
+  }
+  return valorAnioX, valorPorcentajeY;
+  }*/
+
+} //fin de window
