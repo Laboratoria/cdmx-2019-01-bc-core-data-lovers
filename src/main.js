@@ -31,14 +31,17 @@ const print = (newArrayInfo) => {
   })
 }
 
-//Funcion para agregar el evento key up al input para filtrar por nombre 
+//Funcion para agregar el evento key up al input para filtrar por nombre
 search.addEventListener('keyup', () => {
-  let string = search.value;
+  let name2 = search.value;
   // let search3 = searchByName.toLowerCase();
   const newArrayChamp = window.lol.showData(lolData);
-  const nameFiltered = window.lol.filterByName(newArrayChamp);
-  print(arrayFiltered);
-
+  let filtered = window.lol.filterByName(name2, newArrayChamp);
+  if (name2 == "" ) {
+    print(newArrayChamp)
+  } else {
+  print(filtered);
+}
 })
 
 //Esta función es para seleccionar el rol por el cual se va a filtrar
