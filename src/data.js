@@ -1,11 +1,11 @@
 window.lol = {
-  //Funcion que recorre un objeto que contiene 4 indicadores y se convierte en un arreglo
+  //Funcion que recorre un objeto que contiene 7 indicadores y se convierte en un arreglo
   showData: (lolData) => {
-    let arr = [];
+    let newArrayInfo = [];
     for (const key in lolData) {
       if (lolData.hasOwnProperty(key)) {
         const element = lolData[key];
-        obj = {
+        champsInfo = {
           splash: element.splash,
           name: element.name,
           primaryRol: element.tags[0],
@@ -15,20 +15,20 @@ window.lol = {
           magic: element.info.magic
         }
         if (!element.tags[1]){
-          obj.secondaryRol = "";
+          champsInfo.secondaryRol = "";
         }
       }
-      arr.push(obj)
+      newArrayInfo.push(champsInfo);
     }
-    return arr;
+    return newArrayInfo;
   },
 
-  filterByRol: (rolId, arr) =>
-    filtering = arr.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId),
-  //Aquí inicia la función para ordenar por ataque
-
-  sorterByAttack: (arr) => {
-    const attackSorter = arr.sort((a, b) => {
+  filterByRol: (rolId, newArrayChamp) =>
+    filtering = newArrayChamp.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId),
+  
+    //Aquí inicia la función para ordenar por ataque
+  sorterByAttack: (newArrayChamp) => {
+    const attackSorter = newArrayChamp.sort((a, b) => {
       if (b.attack > a.attack){
         return 1;
       }
@@ -44,8 +44,8 @@ window.lol = {
 
   },
 
-sorterByMagic: (arr) => {
-  const magicSorter = arr.sort((a, b) => {
+sorterByMagic: (newArrayChamp) => {
+  const magicSorter = newArrayChamp.sort((a, b) => {
     if (b.magic > a.magic){
       return 1;
     }
@@ -59,8 +59,8 @@ sorterByMagic: (arr) => {
 return magicSorter;
 },
 
-sorterByDefense: (arr) => {
-  const defenseSorter = arr.sort((a, b) => {
+sorterByDefense: (newArrayChamp) => {
+  const defenseSorter = newArrayChamp.sort((a, b) => {
     if (b.defense > a.defense){
       return 1;
     }
@@ -74,8 +74,65 @@ sorterByDefense: (arr) => {
 return defenseSorter;
 },
   //esta llave cierra window.lol
+
+  filterByName: (newArrayChamp) => 
+    filtering = newArrayChamp.filter(element => element.name == name2 || element.secondaryRol == name2),
+
 }
 
+
+//Apartir de aquí inicia la iteración de los objetos desde lol.js
+
+/*const search = document.getElementById('search')
+const buscadora = () => {
+  console.log(search.value)
+  for (const key in dataLol) {
+    if (dataLol.hasOwnProperty(key)) {
+      const element = dataLol[key];
+      let name = element.name;
+      let tag = element.tags[0];
+      let img = element.img; for( let i= 0; i<rol.length;i++){
+              rol[i].addEventListener("click",() => {
+                let rolId = rol[i].id;
+                let nuevoArreglo = [];
+                const arrayData = Object.values(dataLol);
+                arrayData.forEach(element => {
+                  const roles = element.tags[0];
+                  if(roles === rolId ){
+                    nuevoArreglo.push(element);
+                  }
+                });
+                console.log(nuevoArreglo);
+              })}
+
+      if (search.value === 'A') {
+        console.log(name)
+      }
+      //console.log(element.info.defense)
+    }
+  }
+}
+
+search.addEventListener('keyup', buscadora)
+
+console.log(LOL.data.Aatrox)
+
+const dataLol = LOL.data
+for (const key in dataLol) {
+  if (dataLol.hasOwnProperty(key)) {
+    const element = dataLol[key];
+    let name = element.name;
+    let tag = element.tags[0];
+    let img = element.img;
+
+   //se usa para el buscado
+    if (search.value === 'A') {
+      console.log('encontrado')
+    }
+    //console.log(element.info.defense)
+  }
+}
+*/
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 /* const example = () => {

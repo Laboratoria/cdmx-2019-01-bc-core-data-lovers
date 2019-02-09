@@ -9,33 +9,45 @@ const attack = document.getElementById('attack');
 const magic = document.getElementById('magic');
 const defense = document.getElementById('defense');
 const back = document.getElementById('back');
+//Input para buscar por nombre
+let search = document.getElementById('search');
 
 const lolData = LOL.data;
 //Evento del boton Comenzar
 startButton.addEventListener('click', () => {
   start.classList.add('hide');
   championList.classList.remove('hide');
-  const arr = window.lol.showData(lolData);
-  print(arr);
+  const newArrayChamp = window.lol.showData(lolData);
+  print(newArrayChamp);
 });
 
 //Función para imprimir la data en el HTML
-const print = (arr) => {
+const print = (newArrayInfo) => {
   cardSummary.innerHTML = "";
-  arr.forEach(champ => {
+  newArrayInfo.forEach(champ => {
     let result = `<div class="champion"> <img src="${champ.splash}">
     <h3> ${champ.name} </h3> <div class="tags"> <p> ${champ.primaryRol} </p> <p> ${champ.secondaryRol} </p> </div></div>`;
     cardSummary.insertAdjacentHTML("beforeend", result);
   })
 }
 
+//Funcion para agregar el evento key up al input para filtrar por nombre 
+search.addEventListener('keyup', () => {
+  let string = search.value;
+  // let search3 = searchByName.toLowerCase();
+  const newArrayChamp = window.lol.showData(lolData);
+  const nameFiltered = window.lol.filterByName(newArrayChamp);
+  print(arrayFiltered);
+
+})
+
 //Esta función es para seleccionar el rol por el cual se va a filtrar
 const selectRol = () => {
   for (let i = 0; i < rol.length; i++) {
     rol[i].addEventListener("click", () => {
       let rolId = rol[i].id;
-      const arr = window.lol.showData(lolData);
-      const arrayFiltered = window.lol.filterByRol(rolId, arr);
+      const newArrayChamp = window.lol.showData(lolData);
+      const arrayFiltered = window.lol.filterByRol(rolId, newArrayChamp);
       print(arrayFiltered);
     })
   }
@@ -44,20 +56,20 @@ const selectRol = () => {
 selectRol();
 
 attack.addEventListener('click', () => {
-  const arr = window.lol.showData(lolData);
-  const attackSort = window.lol.sorterByAttack(arr);
+  const newArrayChamp = window.lol.showData(lolData);
+  const attackSort = window.lol.sorterByAttack(newArrayChamp);
   print(attackSort);
 });
 
 magic.addEventListener('click', () => {
-  const arr = window.lol.showData(lolData);
-  const magicSort = window.lol.sorterByMagic(arr);
+  const newArrayChamp = window.lol.showData(lolData);
+  const magicSort = window.lol.sorterByMagic(newArrayChamp);
   print(magicSort);
 });
 
 defense.addEventListener('click', () => {
-  const arr = window.lol.showData(lolData);
-  const defenseSort = window.lol.sorterByDefense(arr);
+  const newArrayChamp = window.lol.showData(lolData);
+  const defenseSort = window.lol.sorterByDefense(newArrayChamp);
   print(defenseSort);
 });
 
