@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Righteous');
+
 .divPokemon {
-  border: 1px solid black;
+  border: 2px solid #a9a9a9;
   width: 20%;
   margin: 1%;
   text-align: center;
-
+  font-family: 'Righteous', cursive;
+  border-radius: 1em;
 }
 
 #pokemones {
@@ -17,9 +20,18 @@
   background-image: url ('./assets/images/backInicio.jpg');
 }
 
+input[type=search]{
+    width: 50%;
+}
+
+#icon-lup {
+  width: 45%;
+  padding-left: 25%;
+}
+
 #search-section,
 #type-button {
-  margin: 1em;
+  margin: 1em 3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,28 +41,110 @@
   margin: 3%;
   display:flex;
   display-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 #order-section > section  {
-  margin-left: 10%;
+  margin: 0% 1%;
+  width: 30%
+}
+
+#normal{
+  background-image: url('./assets/images/Type_Normal.png');
+}
+
+#fire{
+  background-image: url('./assets/images/Type_Fuego.png');
+}
+
+#water{
+  background-image: url('./assets/images/Type_Agua.png');
+}
+
+#grass{
+  background-image: url('./assets/images/Type_Planta.png');
+}
+
+#electric{
+  background-image: url('./assets/images/Type_Eléctrico.png');
+}
+
+#ice{
+  background-image: url('./assets/images/Type_Hielo.png');
+}
+
+#fighting{
+  background-image: url('./assets/images/Type_Lucha.png');
+}
+
+#poison{
+  background-image: url('./assets/images/Type_Veneno.png');
+}
+
+#ground{
+  background-image: url('./assets/images/Type_Tierra.png');
+}
+
+#flying{
+  background-image: url('./assets/images/Type_Volador.png');
+}
+
+#psychic{
+  background-image: url('./assets/images/Type_Psíquico.png');
+}
+
+#bug{
+  background-image: url('./assets/images/Type_Bicho.png');
+}
+
+#rock{
+  background-image: url('./assets/images/Type_Roca.png');
+}
+
+#ghost{
+  background-image: url('./assets/images/Type_Fantasma.png');
+}
+
+#dragon{
+  background-image: url('./assets/images/Type_Dragón.png');
+}
+
+input[type=radio]{
+  margin-left: 20%;
+}
+
+label{
+  color: #eeaa78;
 }
 
 h2 {
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
+  color: #ff383f;
+  font-family: 'Courgette', cursive;
 }
 
+fieldset {
+  padding: 1em;
+  border-radius: 1em;
+  border: 2px solid #fece00;
+}
 
-
-#icon-lup {
-  width: 45%;
-  padding-left: 25%;
+legend{
+  font-size: 20px;
+  color: #e37222;
+  font-family: 'Courgette', cursive;
 }
 
 .typesPokemon {
   border-radius: 50%;
-  margin: 1%;
-  width: 15%;
+  margin: 0.5%;
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 /* MENU */
