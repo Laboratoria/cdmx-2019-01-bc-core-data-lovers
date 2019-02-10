@@ -131,6 +131,7 @@ footer {
   margin-top: 10px;
   padding-top: 5px;
   display: inline-block;
+  margin-left: 25%;
 }
 
 .wrapper {
@@ -196,4 +197,7 @@ footer {
   100% {
     transform: scale(1);
   }
+}
+.text-footer{
+    font-size: 10px;
 }
