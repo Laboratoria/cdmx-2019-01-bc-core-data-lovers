@@ -7,5 +7,16 @@
 
 window.example = example; 
 */
-
-const filter = () => {};
+window.worldBank = {
+  filter : (data, palabraComp) => {
+    data.forEach(element => {
+      if((new RegExp(palabraComp, "i")).test(element.indicatorName)){
+        
+        filteredIndicators.push(element);
+        return filteredIndicators;
+        
+      }
+    });
+  }
+  
+}
