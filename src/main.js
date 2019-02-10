@@ -9,7 +9,7 @@ const selOption = document.getElementById('filtrar-pais');
 const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
-//const btgrafica = document.getElementById('btgrafica');
+let buttonLimpiar = document.getElementById('limpiar');
 let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
@@ -88,7 +88,7 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
 }
 
 const prtOrder=(orderObj)=>{
-let respOrder="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>"; 
+let respOrder="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";;    
 for (let i in orderObj)
  {
   respOrder+="<li>"+"<b>"+orderObj[i][0]+":  "+"</b>"+parseFloat(orderObj[i][1]).toFixed(2)+"%"+"</li>"+"<br>";
@@ -106,8 +106,8 @@ const orderByAscent = () =>{
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
 
 
-//console.log(valorAnioX);
-//console.log(valorPorcentajeY);
+console.log(valorAnioX);
+console.log(valorPorcentajeY);
 
 const VerGrafica=()=>{
 
