@@ -1,24 +1,24 @@
-*{
-  text-align: center;
-}
-
 nav {
     display: block;
   }
 
   header{
     background: white;
-    display: inline-block;
     vertical-align: bottom;
   }
 
-  .menu{
+figure{
+  margin: 0%;
+}
+
+.menu{
     width: 10%;
     height: auto;
     vertical-align: top;
     padding: 2%;
     padding-top: 9%;
-    margin-left: 63%;
+    float: right;
+    margin: 0%;
 }
 
   .logo{
@@ -38,6 +38,13 @@ nav {
   font-family: sans-serif;
   padding: 7%;
 }
+
+.button{
+  margin: 5%;
+  padding: 2%;
+  text-align: center;
+}
+
 
 .total {
   background-color: #231f20;
@@ -100,9 +107,9 @@ p {
 
 .select {
   margin: 20%;
-
   margin-top: 4%;
   padding: 2%;
+  text-align: center;
 }
 
 .photos {
@@ -118,6 +125,7 @@ footer {
   background-color: #231f20;
   width: auto;
   height: 100%;
+  text-align: center;
 
 }
 
@@ -131,4 +139,65 @@ footer {
   width: 100%;
   vertical-align: bottom;
   margin-top: 8%;
+}
+
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  .logo{
+    width: 5%;
+    height: auto;
+    padding: 1%;
+}
+
+.menu{
+  width: 4%;
+  height: auto;
+  vertical-align: top;
+  padding: 2%;
+  float: right;
+}
+
+.icon {
+    width: 10%;
+
+}
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
 }
