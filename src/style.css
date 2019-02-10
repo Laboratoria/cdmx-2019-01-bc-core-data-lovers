@@ -188,6 +188,8 @@ footer {
   background: #976DD0;
   border: none;
   margin-top: 10px;
+  padding-top: 5px;
+  display: inline-block;
   margin-left: 50%;
   float: left;
 }
@@ -232,3 +234,46 @@ footer {
   margin-top: 9px;
 }
 
+.text-footer {
+  color: wheat;
+  display: inline-block;
+}
+
+.img {
+  margin: auto;
+  padding-top: 30%;
+  display: block;
+}
+
+.poke-button {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.poke-button:hover {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.text-footer{
+    font-size: 10px;
+}
