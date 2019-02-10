@@ -14,7 +14,7 @@ indicator.insertAdjacentHTML("beforeend", '<option value="">Selecciona un indica
 //función que imprime nombres de los indicadores en el select
 const print = (indicatorName, indicatorCode) => {
   let result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`
-    indicator.insertAdjacentHTML('beforeend', result);
+  indicator.insertAdjacentHTML('beforeend', result);
 }
 
 
@@ -22,9 +22,10 @@ const print = (indicatorName, indicatorCode) => {
 let indicatorName = '';
 let indicatorCode = '';
 
-for(let i = 0; i<elements.length; i++){
+for (let i = 0; i < elements.length; i++) {
   elements[i].addEventListener('click', () => {
     document.getElementById('indicator').innerHTML = '';
+    document.getElementById('indicator').style.display = 'block';
     let valElement = elements[i].value;
     window.worldBank.filter(dataMex, valElement);
     filteredIndicators.forEach(element => {
@@ -38,12 +39,13 @@ for(let i = 0; i<elements.length; i++){
 
 
 //función para imprimir datos de variable en el html
-indicator.addEventListener("change", ()=> {
+indicator.addEventListener("change", () => {
+  document.getElementById('section-2').style.display = 'block';
   document.getElementById('indicator-name').innerHTML = '';
-  document.getElementById('indicator-result').innerHTML='';
+  document.getElementById('indicator-result').innerHTML = '';
   let indicatorSelect = indicator.value;
-  filteredIndicators.forEach( element => {
-    if(element.indicatorCode == indicatorSelect){
+  filteredIndicators.forEach(element => {
+    if (element.indicatorCode == indicatorSelect) {
       let indicatorName = element.indicatorName;
       let year = element.data;
       console.log(element.data);
@@ -73,7 +75,7 @@ indicator.addEventListener("change", ()=> {
 //   let indicatorCode = element.indicatorCode;
 //   print(indicatorName, indicatorCode);
 //   })
-  
+
 // })
 
 
