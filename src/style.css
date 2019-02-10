@@ -2,19 +2,25 @@ nav {
   display: block;
 }
 
+
 header {
   background: white;
   display: inline-block;
   vertical-align: bottom;
 }
 
-.menu {
-  width: 10%;
-  height: auto;
-  vertical-align: top;
-  padding: 2%;
-  padding-top: 9%;
-  margin-left: 63%;
+figure{
+  margin: 0%;
+}
+
+.menu{
+    width: 10%;
+    height: auto;
+    vertical-align: top;
+    padding: 2%;
+    padding-top: 9%;
+    float: right;
+    margin: 0%;
 }
 
 .logo {
@@ -34,6 +40,13 @@ header {
   font-family: sans-serif;
   padding: 5%;
 }
+
+.button{
+  margin: 5%;
+  padding: 2%;
+  text-align: center;
+}
+
 
 .total {
   background-color: #231f20;
@@ -96,9 +109,9 @@ p {
 
 .select {
   margin: 20%;
-  text-align: center;
   margin-top: 4%;
   padding: 2%;
+  text-align: center;
 }
 
 .consult {
@@ -122,6 +135,7 @@ footer {
   background-color: #231f20;
   width: auto;
   height: 100%;
+  text-align: center;
 
 }
 
@@ -138,7 +152,8 @@ footer {
   margin-top: 8%;
 }
 
-/* 
+
+/*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
@@ -193,7 +208,6 @@ footer {
   .icon {
     display: inline-block;
     width: 10%;
-    height: auto;
     padding: 5%;
     margin-left: 3%;
   }
@@ -212,12 +226,12 @@ footer {
     padding-top: 8%;
     margin-left: 40%;
   }
-}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
+
 
 @media (min-width: 1025px) and (max-width: 1380px) {
   .menu {
@@ -262,16 +276,16 @@ footer {
     padding-top: 2%;
     float: right;
   }
-}
 
-/* 
+
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  .menu {
+
+   .menu {
     width: 5%;
     height: auto;
     vertical-align: top;
@@ -307,9 +321,7 @@ footer {
     margin-left: 3%;
   }
 
-}
-
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
@@ -351,4 +363,4 @@ footer {
     margin-left: 3%;
     text-align: center
   }
-}
+
