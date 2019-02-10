@@ -15,7 +15,8 @@ sectionName.style.display ="none";
 
 // Estoy dando la funcion a mi boton de que al darle click me esconda los elementos de la pantalla1
 document.getElementById("next").addEventListener("click", () =>{
-document.getElementById("getName").style.display="none";
+//document.getElementById("getName").style.display="none";
+//document.getElementById("getName").style.display="none";
 })
 
 // Estoy dando la funcionalidad a mi boton Pokemones ordenados, para que me pinte data
@@ -37,4 +38,8 @@ const pantalla2=document.getElementById('pantalla2');
 nombre.addEventListener("click", ()=>{
   pantalla1.classList.add('hide');
   pantalla2.classList.remove('hide');
+})
+const fire= document.getElementById('fire');
+fire.addEventListener("click", (e) =>{
+  alert("fuego 2");
 })
