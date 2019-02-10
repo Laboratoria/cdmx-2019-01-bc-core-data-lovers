@@ -31,32 +31,39 @@
          </ul>
        </nav>
     </header>
-    
+
     <h2>Ordenar Pokémones por:</h2>
     <section id="order-section">
-      <section>
-        <p>Nombre</p>
-        <input id="asc-name" type="radio" name="order">
-      <label for="asc-name">A-Z</label>
-      <input id="desc-name" type="radio" name="order">
-      <label for="desc-name">Z-A</label>
-    </section>
 
       <section>
-        <p>Peso</p>
-      <input id="asc-weight" type="radio" name="order">
-      <label for="asc-weight">Light</label>
-      <input id="desc-weight" type="radio" name="order">
-      <label for="desc-weight">Heavy</label>
+        <fieldset>
+          <legend>Nombre</legend>
+          <input id="asc-name" type="radio" name="order">
+          <label for="asc-name">A-Z</label><br>
+          <input id="desc-name" type="radio" name="order">
+          <label for="desc-name">Z-A</label>
+        </fieldset>
       </section>
 
       <section>
-        <p>Tamaño</p>
-      <input id="asc-height" type="radio" name="order">
-      <label for="asc-height">Small</label>
-      <input id="desc-height" type="radio" name="order">
-      <label for="desc-height">Big</label>
+        <fieldset>
+          <legend>Peso</legend>
+          <input id="asc-weight" type="radio" name="order">
+          <label for="asc-weight">Light</label><br>
+          <input id="desc-weight" type="radio" name="order">
+          <label for="desc-weight">Heavy</label>
+        </fieldset>
       </section>
+
+      <section>
+        <fieldset>
+          <legend>Tamaño</legend>
+          <input id="asc-height" type="radio" name="order">
+          <label for="asc-height">Small</label><br>
+          <input id="desc-height" type="radio" name="order">
+          <label for="desc-height">Big</label>
+        </fieldset>
+     </section>
 
     </section>
     <section id="pokemones">
