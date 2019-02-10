@@ -1,67 +1,82 @@
-HTML
 <!DOCTYPE html>
-<html>
-
-
+<html>s
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+  <meta name="viewport" content="width=device-width, initial-scale=0">
   <title>infemi</title>
   <link rel="stylesheet" href="style.css" />
-  <!--<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
 
+  <nav class="nav" id="Topnav">
+    <h1>Femeduca</h1>
+    <ul class="links">
+      <li><a href="#donations">Donaciones</a></li>
+      <li><a href="#impact">Impacto</a></li>
+      <li><a href="#commits">Compromiso</a></li>
+    </ul>
+  </nav> 
+
 <body>
-  <nav>
-    <div class="logo">
-      <h4> infemi</h4>
+    
+  <section id = "welcomePage" class = "welcome">
+    <div class = "text">
+    Adolescentes: derecho a la educación <br> y al bienestar futuro.<br>
+    <div id = "spaceforbutton"><button id = "informate" class = "Informate">Informate y participa</button> </div>
     </div>
+  </section>
 
-    <!--<ul class="links">
-
-
-      <li><a href="donations">Donaciones</a></li>
-      <li><a href="impact">Impacto</a></li>
-      <li><a href="commits">Compromiso</a></li>
-    </ul>-->
-
-
-    <!--<div class="burger"></div>
-    <div class="line 1"></div>
-    <div class="line 2"></div>
-    <div class="line 3"></div>-->
-
-  </nav>
-  <div id="root" class="showRoot">
-
-    <article>
-      <h1>
-        creando una comunidad de apoyo <br>a mujeres de latino america<br> a través de la información</br>
-      </h1>
-      <button id="botonInfo" class="info">Informate</button>
+  <section id="info" class="showPrincipal">
+    <article id = "instructions" class = "areaForText">
+     <h1>Las más escolarizadas, pero no las más educadas</h1>
+     A continuación presentaremos algunos datos estadísticos sobre la situación educativa de las mujeres en América Latina. Para ello se ha recurrido a información disponible en el Banco Mundial que aluden a la realidad regional. Sin embargo, somos conscientes de que esta información es escasa, fragmentaria y, en muchos casos, difícil o imposible de comparar. los datos estadísticos proporcionan la experiencia educativa de las mujeres. Indudablemente, el acceso a la educación, la permanencia y la movilidad a lo largo del sistema, son indicadores importantes de sus logros en el plano de la igualdad social.
     </article>
-
-  </div>
-
-
-  <div id="informate" class="showPrincipal">
-
-
-    <!--selector que permitira ver los cuatro pais y elegir uno como primer termino de filtración-->
-    <select id="selectorPais">
+        
+    <select id="countries" class= "fourCountries">
       <option>selecciona un pais</option>
-      <option value="MEX" id="selectMex">México</option>
-      <option value="PER" id="selectPeru">Perú</option>
-      <option value="BRA" id="selectBrasil">Brasil</option>
-      <option value="CHL" id="selectChile">Chile</option>
+      <option value="MEX" id="countries">México</option>
+      <option value="PER" id="countries">Perú</option>
+      <option value="BRA" id="countries">Brasil</option>
+      <option value="CHL" id="countries">Chile</option>
     </select>
     
+    <select id="GlobalEducation" class = "indicators">
+      <option value = "none">indicadores de educación a nivel secundaria</option>
+      <option value = "Educación de nivel secundario, alumnos (% de mujeres)">Educación a nivel secundario</option>
+      <option value = "Educación de nivel secundario, alumnos en programas vocacionales (% de mujeres)">Alumnas en programas Vocacionales</option>
+      <option value = "Inscripción escolar, nivel secundario, mujeres (% bruto)">Inscripción escolar a nivel secundario</option>  
+      <option value = "Población, mujeres (% del total)">Poblacion total de mujeres en latinoamerica</option>
+      <option value = "Adolescentes que no asisten a la escuela, mujeres (% de mujeres en edad de asistir al ciclo inferior de la escuela secundaria)">Adolescentes que no asisten a la escuela</option>
+    </select>
 
+     <select id="ageRange" class= "age">
+      <option>edad</option>
+      <option value="MEX" id="countries">México</option>
+     </select>
+    <article id = "graphics" class = "showingGraphics">
+      hola
+    </article>
+  </section>
 
-  </div>
+  <section id = "donations" class = "theDonations" >
+    donaciones
+    <h1>holi boli</h1>
+  </section>
 
+  <section id = "impact" class = "theImpact">
+    impacto
+  </section>
 
+  <section id = "commits" class = "theCommits" >
+   compromiso
+  </section>
 
+  <section id = "redes" class = "social" >
+    socialMedia
+  </section>
+    
 
 </body>
 
@@ -104,4 +119,3 @@ HTML
 <script src="main.js"></script>
 
 </html>
-<!--HOLA ESTE ES SOLO UN CAMBIO DE PRUEBA!!-->

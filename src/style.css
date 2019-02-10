@@ -1,119 +1,118 @@
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  font-family: 'Poppins', sans-serif;
+nav{
+ background-color: white;
+ opacity: 0.9;
+  filter: alpha(opacity=90);
+ margin-bottom: -1%;
 }
 
-.logo {
-  color: firebrick;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 22px;
-  text-decoration: none;
+
+
+ul {
+display: inline-block;
+padding-left: 43%;
+position: absolute;
+    left: -1%;
+    top: 0
 }
 
-.links {
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
+h1{
+font-family:'Quicksand', sans-serif;
+color: firebrick;
 
+
+}
+
+.links{
+   display: flex;
+   width: 60%;
+   justify-content: space-around;
+    
 }
 
 .links a {
-  color: gray;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-
-
-}
-
-.links li {
-  list-style: none;
-
+   color: gray;
+   text-decoration: none;
+   letter-spacing: 3px;
+   font-weight: bold;
+   font-size: 2vh;
+   font-family: 'Quicksand', sans-serif;
+ 
 
 }
 
-.burger {
-  display: none;
+.links li{
+   list-style: none;
+   
+
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: gray;
-  margin: 4px;
+
+
+.text{
+  padding-top: 9%;
+  padding-left: 1%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 7vh;
+  color: white;
+
 }
 
-@media screen and (max-width: 1024px) {
-  .links {
-    width: 58%;
-
-  }
+button#informate{
+  border-radius: 4px;
+  /*background-color: firebrick;*/
+  background-color:transparent;
+  color: white;
+  border: 2px solid firebrick;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
 }
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    display: flex;
-    background-color: gray;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
-  }
-
-  .link li {
-    opacity: 0;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .nav-active {
-    transform: translateX(0%)
-  }
+.button#informate:hover{
+background-color: black;
 }
-
-.body {
-  background-image: url("https://images.unsplash.com/photo-1498661367879-c2085689eed4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+#spaceforbutton{
+  padding: 4%;
+  padding-left: -4%;
+}
+.welcome{
+  background-image: url("https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.showPrincipal{
+background-color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+font-family: 'Karla', sans-serif;
+text-align: center;
+font-size: 2vh;
+padding-top: -53%;
+
 
 }
-
-article {
-  background-color: firebrick;
-  display: inline-block;
-  margin-top: 20%;
-  float: right;
-  font-family: 'Poppins', sans-serif;
-  height: 250px;
-  color: white;
+.areaForText{
+  padding-bottom: 5%;
+  padding-top: 2%;
 }
 
-@media (min-width: 200px) and (max-width: 500px) {
-  article {
-    display: none;
-  }
+<<<<<<< HEAD
+.showingGraphics{
+padding-top: 20%;
+background-color: red;
+margin-top: 8%;
 }
 
+ 
+.theDonations{
+background-color: orange;
+padding-bottom: 80%;
+   
+=======
 
 
 h1 {
@@ -131,23 +130,24 @@ h1 {
   background-position: center;
   opacity: 0.5;
   filter: alpha(opacity=50);
+>>>>>>> 404064f4229161b093184efee159f8509c56bf3f
 }
-  
-/*pagina raiz homepage*/
-.showRoot {
-  background-color: chartreuse;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+.theCommits{
+  background-color: yellow;
+  padding-bottom: 80%;
 }
-
-/*función para desaparecer los divs de cada país*/
-.hideElement {
-  display: none;
+.theImpact{
+  background-color: rgb(15, 158, 15);
+  padding-bottom: 80%;
+}
+.social{
+  background-color: gray;
+  padding-bottom: 10%;
 }
 
+<<<<<<< HEAD
+   
+=======
 
       
+>>>>>>> 404064f4229161b093184efee159f8509c56bf3f
