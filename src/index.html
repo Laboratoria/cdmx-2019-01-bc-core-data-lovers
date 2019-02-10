@@ -12,9 +12,11 @@
 
 <body>
   <div id="root">
-    <header><img src="images/logo.png" alt="PuntoMuerto" class="logo">
-      <img src="images/menu.png" class="menu"></header>
-
+    <header>
+      <figure>
+        <img src="images/logo.png" alt="PuntoMuerto" class="logo">
+        <img src="images/menu.png" class="menu"></header>
+      </figure>
 
     <section id="info" class="info">
       <p class="info">PUNTO MUERTO es una campaña que está orientada a la población
@@ -25,8 +27,9 @@
 
         Nos proponemos concientizar a la juventud de los riesgos a que
         se exponen y sus posibles consecuencias.</p>
-
-      <input type="button" value="CONSULTA"></input>
+        <div class="button">
+          <input type="button" value="CONSULTA"></input>
+      </div>
     </section>
 
     <section class="total">
@@ -62,7 +65,9 @@
           <option value="todos">TODOS</option>
 
         </select>
+        <div class="button">
         <input id="search" type="button" value="CONSULTA">
+      </div>
       </form>
     </section>
 

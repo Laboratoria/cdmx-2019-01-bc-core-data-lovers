@@ -6,11 +6,10 @@ let yearbutton = document.getElementById("yearbttn");
 let userbutton = document.getElementById("user");
 //Declaramos input del consulta
 let searchbutton = document.getElementById("search");
-
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
 
-//Al evento de click de toma el valor de Usuario y del Año. 
+//Al evento de click de toma el valor de Usuario y del Año.
 searchbutton.addEventListener("click", ()=>{
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
