@@ -16,23 +16,53 @@ body {
 }
 
 #root {
+  background:  #C2FAB9;
   width: 80%;
   max-width: 1000px;
   height: 100vh;
   margin: 0 auto;
 }
 
-.contenedor {
-  height: 100%;
+.img {
+  margin: auto;
+  padding-top: 30%;
+  display: block;
+}
+
+.poke-button {
   background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.poke-button:hover {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 header {
+  background: #C2FAB9;
   width: 80%;
   max-width: 1000px;
   border-radius: 4px;
   position: fixed;
-  height: 13%;
   color: whitesmoke;
 }
 
@@ -101,6 +131,10 @@ aside {
   text-align: center;
 }
 
+h3{
+  padding-bottom: 10px;
+}
+
 .type-button {
   background: #E6FDFB;
   border: none;
@@ -115,22 +149,63 @@ aside {
   display: inline-block;
 }
 
+.type-button:hover {
+  background: #5AC6BB;
+  border: 1px solid #E6FDFB;
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 5px; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: wheat;
+  display: inline-block;
+}
+
 footer {
+  background: #C2FAB9;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 0%;
+  height: 10%;
+  color: whitesmoke;
+}
+
+.footertext {
   background: #976DD0;
   border-radius: 8px;
   position: fixed;
   bottom: 0%;
-  width: 60%;
-  margin-left: 3%;
-  display: block;
-  height: 80px;
-  text-align: center;
+  width: 61%;
+  margin-left: 2.5%;
+  height: 10%;
 }
 
-.imgpokebolachica {
+.img-pokebola-chica {
+  background: #976DD0;
+  border: none;
   margin-top: 10px;
-  padding-top: 5px;
-  display: inline-block;
+  margin-left: 50%;
+  float: left;
+}
+
+.img-pokebola-chica:hover{
+  background: #976DD0;
+  border: none;
+  margin: 10px;
+  margin-left: 50%;
+  display: block;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+.text-footer {
+  color: wheat;
+  margin-top: 25px;
+  margin-left: 75%;
 }
 
 .wrapper {
@@ -157,43 +232,3 @@ footer {
   margin-top: 9px;
 }
 
-.text-footer {
-  color: wheat;
-  display: inline-block;
-}
-
-.img {
-  margin: auto;
-  padding-top: 30%;
-  display: block;
-}
-
-.poke-button {
-  background: #C2FAB9;
-  border: none;
-  margin: auto;
-  display: block;
-}
-
-.poke-button:hover {
-  background: #C2FAB9;
-  border: none;
-  margin: auto;
-  display: block;
-  animation: pulse 1s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
