@@ -1,67 +1,85 @@
-const botonMenu = document.getElementById('menuHide') ;
-const returnFilter = document.getElementById('returnFilter');
-const butWatter = document.getElementById('butWatter');
-const butElectric = document.getElementById('butElectric');
-const butFire = document.getElementById('butFire');
-const pokemon = POKEMON.pokemon;
+    const botonMenu = document.getElementById('menuHide') ;
+    const returnFilter = document.getElementById('returnFilter');
+    const botonFilter = Array.from(document.getElementsByClassName("boton-filter"));
+    const pokemon = POKEMON.pokemon;
 
 
-botonMenu.addEventListener("click", showFilter);
-function showFilter() {
-  let menushow = document.getElementById('menushow');
-  menushow.classList.toggle('mostrar');
-}
+    botonMenu.addEventListener("click", showfilter)
+    function showfilter(){
 
-//Funcion filtrado agua
-const typeWatter = pokemon.filter(pokemon => pokemon.type[0] === "Water");
+     let menuShow=document.getElementById('menuShow');
+     menuShow.classList.toggle("mostrar");
+     }
 
-const imprimir = (name, imagen) => {
-  let pokemonWater = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
-  returnFilter.innerHTML += pokemonWater;
-};
+       const allPokemons = (name, imagen, tipo, num) =>{
+    let  getAllPokemons = `
+      <div class="pokedex">
+      <p>N°${num}</p>
+        <img src="${imagen}"/>
+        <p >${name}</p>
+        <p class="tipoP">${tipo}</p>
 
-butWatter.addEventListener("click", filterTypeWatter);
-function filterTypeWatter(){
-typeWatter.forEach(pokemon =>{
-  let name = pokemon.name;
-  let imagen = pokemon.img;
-  imprimir(name,imagen);
-});
-}
+      </div>
+    `
+    returnFilter.innerHTML += getAllPokemons
+    };
+    pokemon.map(elementPokemon => {
+     let name = elementPokemon.name
+     let imagen = elementPokemon.img
+     let tipo = elementPokemon.type
+     let num = elementPokemon.num
+     allPokemons(name,imagen,tipo,num)
+    })
+    // Una función que me permita mostrar al inicio los 150 pokemons
+    // Cuando le de click, me abra el modal del POKEMON
+    // Trabajar el footer
+    // Verificar con tests que las funciones, funcionen
+    // Media Queries
+    // Y revise el checklist :P NO ME ACUERDO
 
-// Terminada llamado pokemon Water
 
-//Funcion filtro Electric
-const typeElectric = pokemon.filter(pokemon => pokemon.type[0] === "Electric");
+    const getTypePokemon = (arrayButtons) => {
+      arrayButtons.map((buttonType) => {
+        buttonType.addEventListener("click", (event) =>{
+          const buttonType = event.target.id;
+          const finalArrayPokemons = data.filterData(pokemon, buttonType)
+          console.log(finalArrayPokemons)
+          drawPokemon(finalArrayPokemons)
+        })
+      })
+    }
 
-const imprimirElectric = (name, imagen) => {
-  let pokemonElectric = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
-  returnFilter.innerHTML += pokemonElectric;
-};
+    getTypePokemon(botonFilter);
 
-butElectric.addEventListener("click", filterTypeElectric);
-function filterTypeElectric() {
-  typeElectric.forEach(pokemon => {
-    let name = pokemon.name;
-    let imagen = pokemon.img;
-    imprimirElectric(name, imagen);
-  });
-}
-// Terminada llamado pokemon Electric
 
-//Funcion filtro Fire
-const typeFire = pokemon.filter(pokemon => pokemon.type[0] === "Fire");
 
-const printFire = (name, imagen) => {
-  let pokemonFire = `<div class="pokedex"><img src="${imagen}"> ${name}</div>`;
-  returnFilter.innerHTML += pokemonFire;
-}
+    const drawPokemon = (arrayPokemons) => {
+        const sectionRoot = document.getElementById("returnFilter")
+        sectionRoot.innerHTML = "";
+        arrayPokemons.map((pokemon) => {
+          sectionRoot.innerHTML += `
+            <div class="pokedex">
+              <h1 class="tipoP">${pokemon.name}</h1>
+              <img src="${pokemon.img}"/>
+              <p>${pokemon.id}</h1>
+            </div>
+          `
+        })
+    }
 
-butFire.addEventListener("click", filterTypeFire);
-function filterTypeFire() {
-  typeFire.forEach(pokemon => {
-    let name = pokemon.name;
-    let imagen = pokemon.img;
-    printFire(name, imagen);
-  })
-}
+
+
+    // HOLI ACUERDENSE DE ESTO SI SUFREN... CARITA DE REGALO :)
+    // const suma = (numero1, numero2) => {
+    //   return numero1 + numero2
+    // }
+    //
+    // suma(2,3)
+    // suma(24,3341)
+    // suma(233,3)
+    // suma(212341,334)
+    //
+    //
+    //
+    //
+    //
