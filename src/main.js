@@ -1,70 +1,38 @@
-//const lol = LOL;
-//Convierte la base de datos en una variable 
+/*convierte la base de datos en una variable*/
+const datalol = LOL.data;
+const rol = document.getElementsByClassName('rol');
+const imprimirRoles = document.getElementById("imprimirRoles")  /*trae el div imprimir roles para identificarlo e imprimir*/
+const mostrar = document.getElementById("mostrar")
+//const arrayData = Object.values(datalol)
 
-const dataLol = LOL.data;
+mostrar.addEventListener("click",() =>{
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("mostrar");
+});
 
-const imprimirPersonajes = document.getElementById('imprimirPersonajes')
-//Funci{on para imprimir nombres
+// const result = window.lol.iterarData(datalol)
+// console.log(result)
 
-let name ="";
-const print=(name)=>{
-    let result = `<p>${name}</p>`
-    imprimirPersonajes.insertAdjacentHTML("beforeend", result);}
+const print = (datosArr) =>{
+    imprimirRoles.innerHTML = "";
+    datosArr.forEach(champ => {
+let pintar = `<div class="cuadro">
+<img class="imagen" src="${champ.splash}"> 
+<div id="subtitulo"><h2 id="nombre">${champ.name}</h2> <h1 id"titulo"> ${champ.title}</h1></div></div>`; 
+imprimirRoles.insertAdjacentHTML("beforeend", pintar);
+ })
 
-    for (const key in dataLol) {
-        if (dataLol.hasOwnProperty(key)) {
-          const element = dataLol[key];
-          let name = element.name;
-          let tag = element.tags[0];
-          let img = element.img;
+}
 
-print (name);
- console.log(name);}}
-
-
-
-
-
-
-/*console.log(lol);
- console.log(lol.data)
- console.log("++++++++++++++++++++++++")
-
-
-
- //
-const search = document.getElementById('search')
-const buscadora = () => {
-  console.log(search.value)
-  for (const key in dataLol) {
-    if (dataLol.hasOwnProperty(key)) {
-      const element = dataLol[key];
-      let name = element.name;
-      let tag = element.tags[0];
-      let img = element.img;
-  
-      if(search.value === 'A'){
-        console.log(name)
-      }
-  
-  
-      //console.log(element.info.defense)
-      
-    }
+const selectRol = () =>{
+    for(let i= 0; i<rol.length;i++){
+    rol[i].addEventListener("click",() => {
+      let rolId = rol[i].id;
+      const datosArr = window.lol.iterarData(datalol);
+      //const printSection = document.getElementById("imprimirRoles");
+      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datosArr);
+      print(arrayRolesFiltered);
+    })
   }
 }
-search.addEventListener('keyup', buscadora)
-console.log(LOL.data.Aatrox)
-const dataLol = LOL.data
-for (const key in dataLol) {
-  if (dataLol.hasOwnProperty(key)) {
-    const element = dataLol[key];
-    let name = element.name;
-    let tag = element.tags[0];
-    let img = element.img;
-    if(search.value === 'A'){
-      console.log('encontrado')
-    }
-  }} */
-
-  
+selectRol();

@@ -6,41 +6,51 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <!--<style>
-    @media screen and (max-width: 800px){
-      
-    }
- 
- </style> -->
-  </head>
-  <body>
-<section id="pantalla-uno" class="pantalla-uno">
-  <button id="boton-comenzar" class="boton-inicio">Comenzar</button>
-
-</section>
-
-<section id="pantalla-dos" class="pantalla-dos">
 <header>
-  <nav class="menu">
-    <ul class="menu">
-        <i class="fas fa-align-justify"></i>
+   
+  <!--<div class="contenedorboton"></div>-->
+  <input type="checkbox" id="btn-menu" class="mostrar">
+    <label for="btn-menu"><img src="assets/icono-menu.png" alt=""><i id="mostrar">
+    </label>    
+ <!-- <button class="mostrar"><i id="mostrar" class="fas fa-align-justify"></i></button> -->
+  
+  <nav id="menu" class="menu">
+    <div class="contenedor">
+    <ul class="menu"> 
+      <li><a href="#">Inicio</a></li>
       <li><a href="#">Campeones</a></li>
       <li><a href="#">Roles</a></li>
+      <ul>
+        <li ><a id="Tank" class="rol" href="#">Tank</a></li>
+        <li ><a id="Fighter" class="rol" href="#">Fighter</a></li>
+        <li ><a id="Mage" class="rol" href="#">Mage</a></li>
+        <li ><a id="Assassin" class="rol" href="#">Assassin</a></li>
+        <li ><a id="Marksman" class="rol" href="#">ADC</a></li>
+        <li ><a id="Support" class="rol" href="#">Support</a></li>
+      </ul>
+      <li><a href="#">Poderes</a></li>
     </ul>
   </nav>
+ </div>
+
+
 </header>
+<section>   
+  <input type="search" id="search" placeholder="Search..." />
+  <button type="button" class="botonBuscar">Buscar</button>
+
+</section> 
+<br>
+<br>
+<br>
+<br>
+
+  <div class="contenedorRoles">
+    <div id="imprimirRoles" class="imprimir-roles"></div>
+  </div>
 </section>
-
-<input type="text" class="search">
-<button type="button" class="botonBuscar">Buscar</button>
-
-
-<div id ="imprimirPersonajes"> </div>
-
-<section>
-
-
-</section>
+   
+ 
     <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <!-- <script <script src="./data/pokemon/pokemon.js"></script> -->
@@ -50,4 +60,3 @@
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
-</html>
