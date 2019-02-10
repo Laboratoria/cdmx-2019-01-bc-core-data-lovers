@@ -14,7 +14,8 @@
   //almacena en variable los id del primer evento de cambio de pantalla, la interacción para abrir y cerrar el menú
     const inicio = document.getElementById('inicio')
     const menu = document.getElementById('menu')
-    const cerrar = document.getElementById('cerrar')
+    const cerrar = document.getElementById('titleChampions')
+    
   
   //vuelve la base de datos a un arreglo
  const dataToArray = Object.values(dataLol); 
@@ -26,12 +27,16 @@
      document.getElementById("primera-pantalla").style.display = 'none';
      document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';};
 
-     // función del menú desplegable donde se encuentran los roles para filtrar  
-   menu.onclick = ()=> {
+     // función del menú desplegable donde se encuentran los roles para filtrar 
+     
+   menu.onmouseover = ()=> {
       document.getElementById("mySidenav").style.width = "250px";};
 
-   cerrar.onclick = ()=> {
+   showFirstChampionList.onmouseover = ()=> {
         document.getElementById("mySidenav").style.width = "0px";};
+
+   cerrar.onmouseover = ()=> {
+          document.getElementById("mySidenav").style.width = "0px";};
   
 
 
