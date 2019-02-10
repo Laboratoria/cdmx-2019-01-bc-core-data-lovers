@@ -204,6 +204,7 @@ footer {
     padding: 1%;
     text-align: center;
   }
+
   .redes {
 
     width: 20%;
@@ -218,7 +219,21 @@ footer {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .menu {
+    width: 6%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 8%;
+    margin-left: 63%;
+  }
+
+  .logo {
+    width: 8%;
+    height: auto;
+    padding: 3%;
+  }
 
   .info {
 
@@ -231,9 +246,22 @@ footer {
     text-align: center;
     font-family: sans-serif;
     padding: 2%;
+  }
 
-}
+  .logo {
+    width: 6%;
+    height: auto;
+    padding: 1%;
+  }
 
+  .menu {
+    width: 6%;
+    height: auto;
+    vertical-align: top;
+    padding: 2%;
+    padding-top: 2%;
+    float: right;
+  }
 }
 
 /* 
@@ -242,6 +270,21 @@ footer {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  
+  .menu {
+    width: 5%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 5%;
+    margin-left: 63%;
+}
+
+  .logo {
+    width: 8%;
+    height: auto;
+    padding: 3%;
+  }
 
   .info {
 
@@ -255,13 +298,14 @@ footer {
     font-family: sans-serif;
     padding: 2%;
   }
-    .icon {
-      display: inline-block;
-      width: 10%;
-      height: auto;
-      padding: 5%;
-      margin-left: 3%;
-    }
+
+  .icon {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    padding: 5%;
+    margin-left: 3%;
+  }
 
 }
 
@@ -270,7 +314,21 @@ footer {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
+  .menu {
+    width: 8%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 8%;
+    margin-left: 63%;
+  }
+
+  .logo {
+    width: 10%;
+    height: auto;
+    padding: 3%;
+  }
 
   .info {
 
@@ -284,11 +342,13 @@ footer {
     font-family: sans-serif;
     padding: 2%;
   }
-    .icon {
-      display: inline-block;
-      width: 10%;
-      height: auto;
-      padding: 5%;
-      margin-left: 3%;
-    }
+
+  .icon {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    padding: 5%;
+    margin-left: 3%;
+    text-align: center
+  }
 }

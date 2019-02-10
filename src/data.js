@@ -4,11 +4,12 @@ window.data = {
     const injuriesby = INJURIES;
     //Declaramos una variable vacía para guardar el resultado nuestras funciones
     let objResult = {
-      propYear: propYear ,
-      propUser: propUser
+      propYear: "",
+      propUser: ""
     };
-    
-   
+
+
+
     //Usamos FIND para buscar el año dentro del objeto.
     const yearFound = injuriesby.find(element => element.Year === yearValue);
     //Dentro de un ciclo FOR buscamos las Key y comparamos con el valor del Usuario. 
@@ -16,17 +17,15 @@ window.data = {
       if (yearFound.hasOwnProperty(key)) {
         const element = yearFound[key];
         if (key == userValue) {
-          yearResult = yearValue.substr(0,4);
+          yearResult = yearValue.substr(0, 4);
           userResult = element;
           objResult = {
-            propYear:yearResult,
-            propUser:userResult
+            propYear: yearResult,
+            propUser: userResult
           }
-          
+          console.log(objResult)
         } //for if If 
-        console.log(objResult)
       } //For IF
     } // For 
   } //Consult
-
 }; //window
