@@ -1,7 +1,5 @@
 *{
     margin: 0;
-   
-
 }
 body,html{
     margin: 0;
@@ -19,34 +17,14 @@ body,html{
     background-attachment: block;
 }
 
-.contenedorRoles{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.cuadro{
-    color: #ffffff; 
-    font-size: 18px; 
-    font-weight: 400; 
-    text-align: center; 
-    background: #9b7714; 
-    margin: 0 0 25px; 
-    overflow: hidden; 
-    padding: 20px; 
-    border-radius: 35px 0px 35px 0px; 
-    -moz-border-radius: 35px 0px 35px 0px; 
-    -webkit-border-radius: 35px 0px 35px 0px; 
-    border: 2px solid #4e3c08;
-}
+
+
 
 .button {
-    background-color: #9b8319;
+    background-color: #efc056;
     padding: 0;
     border-radius: 8px;
     font-size: 16px;
-}
-
-    
-#imprimirRoles{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 header{
@@ -69,7 +47,7 @@ header{
   
   header label:hover{
     cursor:pointer;
-    background: rgba(207, 159, 26, 0.7);
+    background: #efc056;
   }
    /*AquÃ­ toma su estuctura horizontal el menu*/
   .menu ul {
@@ -94,9 +72,37 @@ header{
   .menu li a {
     display: block;
     padding: 15px 20px;
-    color: rgb(211, 179, 90);
+    color: #efc056;
     text-decoration: none;
   }
+
+.contenedorRoles{
+    margin: 5px 5% 1em 7%;
+}
+
+.cuadro{
+    color: #3d3316; 
+    font-size: 55%; 
+    font-weight: 25%; 
+    text-align: center;
+    background: #efc056; 
+    margin: 0; 
+    overflow: hidden; 
+    padding: 2px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 1px solid #7a631c;
+    display: inline-block;
+    width: 22%;
+}
+
+.imagen{
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+
   
   @media only screen and (max-width: 600px) {
     header label{
@@ -105,7 +111,7 @@ header{
   
     .menu {
       position: absolute;
-      background: #4E94AB;
+      background: #efc056;
       width: 70%;
       margin-left:-70%;
       transition: all 0.3s;
@@ -131,6 +137,21 @@ header{
      #btn-menu:checked ~ .menu{
        margin: 0;
      }
-
+     .cuadro{
+        color: #3d3316; 
+        font-size: 50%; 
+        font-weight: 25%; 
+        text-align: center;
+        background: #efc056; 
+        margin: 0; 
+        overflow: hidden; 
+        padding: 2px; 
+        border-radius: 35px 0px 35px 0px; 
+        -moz-border-radius: 35px 0px 35px 0px; 
+        -webkit-border-radius: 35px 0px 35px 0px; 
+        border: 1px solid #7a631c;
+        display: inline-block;
+        width: 48%;
     
     }
+}
