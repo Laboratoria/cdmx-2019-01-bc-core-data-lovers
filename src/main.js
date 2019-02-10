@@ -1,4 +1,4 @@
-//Declaración de variables
+
 const data = POKEMON.pokemon;
 const finalResult = document.getElementById('root');
 const butFire = document.getElementById ('Fire');
@@ -20,8 +20,8 @@ const butDark= document.getElementById('Dark');
 // Filtra fuego
 const typeFire = data.filter(data => data.type.includes("Fire"));
 const printFire = (name, imagen, type, id) => {
-  let fire = `<button class="pokedex" style='width:250px; height:300px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
-   finalResult.innerHTML += fire;
+  let fire = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  finalResult.innerHTML += fire;
 };   
 butFire.addEventListener("click", filterFire);
 function filterFire() {
@@ -30,13 +30,13 @@ function filterFire() {
     let imagen = data.img;
     let type = data.type;
     let id = data.id;
-      printFire(name, imagen, type, id);
+    printFire(name, imagen, type, id);
   });
 }
 // filtra Normal
 const typeNormal = data.filter(data => data.type.includes("Normal"));
 const printNormal = (name, imagen, type, id) => {
-  let normal = `<button class="pokedex" style='width:250px; height:300px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let normal = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += normal;
 };   
 butNormal.addEventListener("click", filterNormal);
@@ -52,7 +52,7 @@ function filterNormal() {
 // filtra e imprime Grass
 const typeGrass = data.filter(data => data.type.includes("Grass"));
 const printGrass = (name, imagen, type, id) => {
-  let grass = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let grass = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += grass;
 };   
 
@@ -70,7 +70,7 @@ function filterGrass() {
 //Filtra e imprime Electric
 const typeElectric = data.filter(data => data.type.includes("Electric"));
 const printElectric = (name, imagen, type, id) => {
-  let electric = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let electric = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += electric;
 };   
 
@@ -87,7 +87,7 @@ function filterElectric() {
 // ICE
 const typeIce = data.filter(data => data.type.includes("Ice"));
 const printIce = (name, imagen, type, id) => {
-  let ice = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let ice = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += ice;
 };   
 
@@ -104,7 +104,7 @@ function filterIce() {
 // Pelea
 const typeFight = data.filter(data => data.type.includes("Fighting"));
 const printFigth = (name, imagen, type, id) => {
-  let Fighting = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let Fighting = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += Fighting;
 };   
 
@@ -121,7 +121,7 @@ function filterFight() {
 // Poison
 const typePoison = data.filter(data => data.type.includes("Poison"));
 const printPoison = (name, imagen, type, id) => {
-  let poison = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let poison = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += poison;
 };   
 
@@ -138,7 +138,7 @@ function filterPoison() {
 //Ground
 const typeGround = data.filter(data => data.type.includes("Ground"));
 const printGround = (name, imagen, type, id) => {
-  let ground = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let ground = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += ground;
 };   
 
@@ -155,7 +155,7 @@ function filterGround() {
 // Voladores
 const typeFlying = data.filter(data => data.type.includes("Flying"));
 const printFlying = (name, imagen, type, id) => {
-  let flying = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let flying = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += flying;
 };   
 
@@ -173,7 +173,7 @@ function filterFlying() {
 //Psychic
 const typePsychic = data.filter(data => data.type.includes("Psychic"));
 const printPyschic = (name, imagen, type, id) => {
-  let psychic = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let psychic = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += psychic;
 };   
 
@@ -191,7 +191,7 @@ function filterPsychic() {
 //Bug
 const typeBug = data.filter(data => data.type.includes("Bug"));
 const printBug = (name, imagen, type, id) => {
-  let bug = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let bug = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += bug;
 };   
 
@@ -209,7 +209,7 @@ function filterBug() {
 //Rock
 const typeRock = data.filter(data => data.type.includes("Rock"));
 const printRock = (name, imagen, type, id) => {
-  let rock = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let rock = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += rock;
 };   
 
@@ -227,7 +227,7 @@ function filterRock() {
 //Ghost
 const typeGhost = data.filter(data => data.type.includes("Ghost"));
 const printGhost = (name, imagen, type, id) => {
-  let ghost = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let ghost = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += ghost;
 };   
 
@@ -245,7 +245,7 @@ function filterGhost() {
 //Dragon
 const typeDragon = data.filter(data => data.type.includes("Dragon"));
 const printDragon = (name, imagen, type, id) => {
-  let dragon = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
+  let dragon = `<button class="pokedex" style='width:150px; height:200px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
   finalResult.innerHTML += dragon;
 };   
 
