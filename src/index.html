@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div id="inicio">
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <header>
+    <div id="inicio">
+    </div>
+
+    <!--MENU-->
+    <div class="menu-mobile">
+      <div>
+        <span class="blanco"></span>
       </div>
-
-      <!--MENU-->
-     <div class="menu-mobile">
-         <div>
-           <span class="blanco"></span>
-         </div>
-         <form>
-          <div>
-            <input type="search" id="miBusqueda" name="q">
-      
-            <button>Buscar</button>
-          </div>
-        </form>
-<p></p>
-         <a href="#" id="menu">
-           <i class="icon">MENÚ</i>
-         </a>
-       </div>
-       <nav>
-         <ul>
-           <li><a href="#inicio">Inicio</a></li>
-           <li><a href="typePokemon.html" target="_self">Pokemon por tipo</a></li>
-           <li><a href="orderPokemon.html">Búsqueda especial</a></li>
-           <li><a href="#Evolución">Evolución</a></li>
-           <li><a href="#Debilidades">Debilidades</a></li>
-         </ul>
-       </nav>
-    </header>
-
-    <section class="fondo">
-
-    </section>
+      <a href="#" id="menu">
+        <i class="icon"></i>
+        <figure id="lines-menu">
+          <img id="icon-menu" src="./assets/images/menu-icon-4.png">
+        </figure>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="typePokemon.html" target="_self">Pokémon por tipo</a></li>
+        <li><a href="orderPokemon.html">Búsqueda especial</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--BACK-->
+  <section class="fondo">
+    <figure id="back">
+      <img id="back-index" src="./assets/images/backInicio.jpg">
+    </figure>
+    <figure class="logo-poke">
+      <img id="pokemon-title" src="./assets/images/pokemon-logo.png">
+    </figure>
+  </section>
 
 
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
-  </html>
+
+  <script src="./data/pokemon/pokemon.js"></script>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
