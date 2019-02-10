@@ -31,12 +31,3 @@ window.WorldBank   ={
 
 
 
-
-window.prueba ={
-  myfuncion: (a , b)=>{
-   
-    let c = a + b;
-    return 1 , 2
-  }
-}
-
