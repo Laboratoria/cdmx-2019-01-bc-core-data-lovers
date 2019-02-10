@@ -81,6 +81,22 @@ width:18%;
 font-weight: bold;
 
 }
+.boton{
+    padding-right:1%; 
+    padding-left: 1%;
+    border: 5px inset #1C6EA4;
+    border-radius: 26px 26px 26px 26px;
+    height: 4.5%;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    transition-duration: 0.4s;
+
+}
+.boton:hover {
+    background-color:#235358; /* Green */
+    color: white;
+  }
 #order{
     display: inline-block;
 }
@@ -113,6 +129,14 @@ font-weight: bold;
     margin-top: 5%;
     margin-bottom: 5%;
 } 
+#btgrafica{
+    
+    padding-left: 5%;
+    width:100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+ 
+}
 #maxMin{
     padding-left: 5%;
     width:100%;
@@ -154,7 +178,26 @@ background: #eee;
     float: right;
     font-size: 75%;
 }
+.grafica{
+    box-sizing: border-box;
+    float: right;
+    width: 100%;
+    margin-right:12%; 
+    margin-top: 2.95%;
+    
 }
+
+.grafica-muestra{
+ border: 1px solid #f8fbfc;
+ }
+
+ #myChart{
+ width: 100%;
+ float: center;
+ }
+
+}
+
 .hide{
     display: none;
 }
@@ -170,6 +213,10 @@ background: #eee;
     outline: 0;
     }
 
+#myChart{
+  width: 100%;
+  height: 100%;
+}
 
 
 @media screen and (min-width:801px){
@@ -212,18 +259,26 @@ p{
     margin-left: 10%;
 }
 
+#btgrafica{
+    margin-right: 0%;
+    margin-left: 5%;
+   
+}
+
 .grafica{
     box-sizing: border-box;
     float: right;
-    width: 50%;
-    padding: 10px;
+    width: 40%;
+    margin-right:12%; 
+    margin-top: 2.95%;
+    
 }
 
 .grafica-muestra{
- border: 1px solid #037e8c;
+ border: 1px solid #f9fbfc;
  }
 
  #myChart{
- width: 50%;
+ width: 40%;
  float: right;
  }
