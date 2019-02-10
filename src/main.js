@@ -9,7 +9,7 @@ document.getElementById('informate').addEventListener ('click' , ( ) => {
 welcomePage.style.display = 'none';
 pageForData.style.display = 'block';  
 
-jumpto(anchor)() => {
+jumpto(anchor)(); {
 window.location.href = "#"+anchor;
 }
 });
