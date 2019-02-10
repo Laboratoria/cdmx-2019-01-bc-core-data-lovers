@@ -1,24 +1,24 @@
 const data= POKEMON.pokemon; //trae la data//
-const pokeballPage=document.getElementById('pokeball-page'); //pagina de inicio//
+const initialPage=document.getElementById('initial-page'); //pagina de inicio//
 const pokemonPage=document.getElementById('pokemon-page'); //página de pokemones//
 const pokeballButton=document.getElementById('pokeball-button'); 
 const printList = document.getElementById('print-list'); 
 const buttonType=document.getElementsByClassName('type-button'); 
+const imgPokebolaChica=document.getElementById('img-pokebola-chica'); 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
- pokeballPage.classList.add('hideElement');    
+ initialPage.classList.add('hideElement');    
  pokemonPage.classList.remove('hideElement');
 });
 
 const print=(data)=>{
 data.forEach(element => {
-  let name=element.name;
    let result = `<div class="wrapper">
    <div class="pokemon-cart"> 
-     <div class="pokemon-cart-image">
+     <div class="pokemon-card-image">
        <img src="${element.img}">
      </div>
-     <div class="box-cart">
+     <div class="box-card">
        <p>Número:${element.num}</p>
        <p>${element.name}</p>
      </div>
@@ -27,7 +27,6 @@ data.forEach(element => {
    printList.insertAdjacentHTML("beforeend",result);
    return print;
   });
-  
 };
 
 print(data)
@@ -41,3 +40,5 @@ for(let i = 0; i <buttonType.length; i++ ){
     print(pokemonFiltrados)
 })
 }
+
+
