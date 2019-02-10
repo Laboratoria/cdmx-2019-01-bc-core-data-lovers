@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div id="inicio">
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <header>
+    <div id="inicio">
+
+    </div>
+
+    <!--MENU-->
+    <div class="menu-mobile">
+      <div>
+        <span class="blanco"></span>
       </div>
+      <a href="#" id="menu">
+        <i class="icon"></i>
+        <figure id="lines-menu">
+          <img id="icon-menu" src="./assets/images/menu-icon-4.png">
+        </figure>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="typePokemon.html" target="_self">Pokémon por tipo</a></li>
+        <li><a href="orderPokemon.html">Búsqueda especial</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!--ORDER DATA-->
+  <h2>Ordenar Pokémones por:</h2>
+  <section id="order-section">
 
-      <!--MENU-->
-      <div class="menu-mobile">
-        <div>
-          <span class="blanco"></span>
-        </div>
-         <a href="#" id="menu">
-           <i class="icon">MENÚ</i>
-         </a>
-       </div>
-       <nav>
-         <ul>
-           <li><a href="index.html">Inicio</a></li>
-           <li><a href="typePokemon.html" target="_self">Pokemon por tipo</a></li>
-           <li><a href="orderPokemon.html">Búsqueda especial</a></li>
-           <li><a href="#Evolución">Evolución</a></li>
-           <li><a href="#Debilidades">Debilidades</a></li>
-         </ul>
-       </nav>
-    </header>
-
-    <h2>Ordenar Pokémones por:</h2>
-    <section id="order-section">
-
-      <section>
-        <fieldset>
-          <legend>Nombre</legend>
-          <input id="asc-name" type="radio" name="order">
-          <label for="asc-name">A-Z</label><br>
-          <input id="desc-name" type="radio" name="order">
-          <label for="desc-name">Z-A</label>
-        </fieldset>
-      </section>
-
-      <section>
-        <fieldset>
-          <legend>Peso</legend>
-          <input id="asc-weight" type="radio" name="order">
-          <label for="asc-weight">Light</label><br>
-          <input id="desc-weight" type="radio" name="order">
-          <label for="desc-weight">Heavy</label>
-        </fieldset>
-      </section>
-
-      <section>
-        <fieldset>
-          <legend>Tamaño</legend>
-          <input id="asc-height" type="radio" name="order">
-          <label for="asc-height">Small</label><br>
-          <input id="desc-height" type="radio" name="order">
-          <label for="desc-height">Big</label>
-        </fieldset>
-     </section>
-
+    <section>
+      <fieldset>
+        <legend>Nombre</legend>
+        <input id="asc-name" type="radio" name="order">
+        <label for="asc-name">A-Z</label><br>
+        <input id="desc-name" type="radio" name="order">
+        <label for="desc-name">Z-A</label>
+      </fieldset>
     </section>
-    <section id="pokemones">
 
+    <section>
+      <fieldset>
+        <legend>Peso</legend>
+        <input id="asc-weight" type="radio" name="order">
+        <label for="asc-weight">Light</label><br>
+        <input id="desc-weight" type="radio" name="order">
+        <label for="desc-weight">Heavy</label>
+      </fieldset>
     </section>
-    <script src="./data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
-  </html>
+
+    <section>
+      <fieldset>
+        <legend>Tamaño</legend>
+        <input id="asc-height" type="radio" name="order">
+        <label for="asc-height">Small</label><br>
+        <input id="desc-height" type="radio" name="order">
+        <label for="desc-height">Big</label>
+      </fieldset>
+    </section>
+
+  </section>
+  <section id="pokemones">
+    
+  </section>
+  
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
