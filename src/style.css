@@ -1,349 +1,130 @@
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  font-family: 'Poppins', sans-serif;
+nav{
+ background-color: white;
+ opacity: 0.9;
+  filter: alpha(opacity=90);
+ margin-bottom: -1%;
 }
 
-.logo {
-  color: firebrick;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 22px;
-  text-decoration: none;
+fa fa-bars{
+  
 }
 
-.links {
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
+ul {
+display: inline-block;
+padding-left: 43%;
+position: absolute;
+    left: -1%;
+    top: 0
+}
 
+h1{
+font-family:'Quicksand', sans-serif;
+color: firebrick;
+
+
+}
+
+.links{
+   display: flex;
+   width: 60%;
+   justify-content: space-around;
+    
 }
 
 .links a {
-  color: gray;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-
-
-}
-
-.links li {
-  list-style: none;
-
+   color: gray;
+   text-decoration: none;
+   letter-spacing: 3px;
+   font-weight: bold;
+   font-size: 2vh;
+   font-family: 'Quicksand', sans-serif;
+ 
 
 }
 
-.burger {
-  display: none;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: gray;
-  margin: 4px;
-}
-
-@media screen and (max-width: 1024px) {
-  .links {
-    width: 58%;
-
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    display: flex;
-    background-color: gray;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
-  }
-
-  .link li {
-    opacity: 0;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .nav-active {
-    transform: translateX(0%)
-  }
-}
-
-.body {
-  background-image: url("https://images.unsplash.com/photo-1498661367879-c2085689eed4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+.links li{
+   list-style: none;
+   
 
 }
 
-article {
-  background-color: firebrick;
-  display: inline-block;
-  margin-top: 20%;
-  float: right;
-  font-family: 'Poppins', sans-serif;
-  height: 250px;
+
+
+.text{
+  padding-top: 9%;
+  padding-left: 1%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 7vh;
   color: white;
+
 }
 
-@media (min-width: 200px) and (max-width: 500px) {
-  article {
-    display: none;
-  }
+button#informate{
+  border-radius: 4px;
+  /*background-color: firebrick;*/
+  background-color:transparent;
+  color: white;
+  border: 2px solid firebrick;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
+}
+.button#informate:hover{
+background-color: black;
+}
+#spaceforbutton{
+  padding: 4%;
+  padding-left: -4%;
+}
+.welcome{
+  background-image: url("https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.showPrincipal{
+background-color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+font-family: 'Karla', sans-serif;
+text-align: center;
+font-size: 2vh;
+padding-top: -53%;
+
+
+}
+.areaForText{
+  padding-bottom: 5%;
+  padding-top: 2%;
 }
 
+.showingGraphics{
+padding-top: 20%;
+background-color: red;
+margin-top: 8%;
+}
 
-/*paginas direccionadas a cada pais*/
-.show {
+ 
+.theDonations{
+background-color: orange;
+padding-bottom: 80%;
+   
+}
+.theCommits{
+  background-color: yellow;
+  padding-bottom: 80%;
+}
+.theImpact{
+  background-color: rgb(15, 158, 15);
+  padding-bottom: 80%;
+}
+.social{
   background-color: gray;
-  width: 100%;
-  height: 100vh;
-
+  padding-bottom: 10%;
 }
 
-/*pagina para filtrar por pais*/
-.showPrincipal {
-  background-image: url("imagenes/simbolo.jpg");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-  
-/*pagina raiz homepage*/
-.showRoot {
-  background-color: chartreuse;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-/*función para desaparecer los divs de cada país*/
-.hideElement {
-  display: none;
-}
-
-
-/* #pagMex {
-    background-image: url("imagenes/simbolo.jpg"); 
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center; 
-    opacity: 0.5;
-     filter: alpha(opacity=50);
-     display: none;
-  }      
- }*/
-
-    font-family: 'Poppins', sans-serif; 
-    
-  }
-     
-  /*hide and show*/
-  .hide{
-    display: none;
-  }
-    /*estilo de pagina dinamica de información
-    #women{
-        background-image: url("imagenes/fonditofinal.png");
-        background-repeat: no-repeat;
-        background-size: 105%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-style: bold;
-        text-align: center;
-      }
-      
-      h1{
-        color: white;
-      }
-      h2{
-        text-align: left;
-      }
-      
-      .boton1 {
-        position: relative;
-        top: 110px;
-        right: 50px;
-        display: inline-block;
-        color: white;
-        font-size: 20px;
-      }
-      
-      .boton1 .info {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center; 
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 2;
-        bottom: 150%;
-        left: 50%;
-        margin-left: -60px;
-      }
-      
-      .boton1 .info::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: black transparent transparent transparent;
-      }
-      
-      .boton1:hover .info {
-        visibility: visible;
-      }
-      
-      .boton2 {
-        position: relative;
-        top: 110px;
-        left: 180px;
-        display: inline-block;
-        color: red;
-        font-size: 20px;
-      }
-      
-      
-      .boton2 .info {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 2;
-        bottom: 150%;
-        left: 50%;
-        margin-left: -60px;
-      }
-      
-      .boton2 .info::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: black transparent transparent transparent;
-      }
-      
-      .boton2:hover .info {
-        visibility: visible;
-      }
-      
-      .boton3 {
-        position: relative;
-        top: 200px;
-        left: 250px;
-        display: inline-block;
-        color: blue;
-        font-size: 20px;
-      }
-      
-      
-      .boton3 .info {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 2;
-        bottom: 150%;
-        left: 50%;
-        margin-left: -60px;
-      }
-      
-      .boton3 .info::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: black transparent transparent transparent;
-      }
-      
-      .boton3:hover .info {
-        visibility: visible;
-      }
-      
-      .boton4 {
-        position: relative;
-        top: 110px;
-        left: -350px;
-        display: inline-block;
-        color: yellow;
-        font-size: 20px;
-      }
-      
-      
-      .boton4 .info {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 2;
-        bottom: 150%;
-        left: 50%;
-        margin-left: -60px;
-      }
-      
-      .boton4 .info::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: black transparent transparent transparent;
-      }
-      
-      .boton4:hover .info {
-        visibility: visible;
-      }*/
-      
+   
