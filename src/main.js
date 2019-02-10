@@ -6,7 +6,6 @@ let yearbutton = document.getElementById("yearbttn");
 let userbutton = document.getElementById("user");
 //Declaramos input del consulta
 let searchbutton = document.getElementById("search");
-
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
 
@@ -14,12 +13,8 @@ const resultsecc = document.getElementById("result");
 searchbutton.addEventListener("click", ()=>{
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
-  const result = window.data.consult(yearValue,userValue)
-  //console.log(yearValue, userValue);
-  resultsecc.innerHTML=result;
+  //const resultYear = window.data.consult(yearValue,userValue)
+  //const resultUser = window.data.consult(userValue)
+  //resultsecc.innerHTML= `<b>Año:</b> <i>${resultYear}</i><br><b>Total:</b> <i>${resultUser}</i>`
 })
-
-
-// const printpage = (year, total, moto, bike, walk, transit) => {
-//  let result = `<b>Año:</b> <i>${yearValue}</i> <br><b>Total de heridos en ${userValue};</i>`
-//  knowsecc.insertAdjacentHTML("beforeend", result);
+//<br><b>Total de heridos en ${userValue};</i>
