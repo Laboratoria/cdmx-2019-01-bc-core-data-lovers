@@ -1,9 +1,9 @@
 // require('../src/data.js');
 
 
-describe('pokemon', () => {
+describe('data', () => {
   it('is a function', () => {
-    expect(typeof pokemon).toBe('object');
+    expect(typeof data).toBe('object');
   });
 
   // it('returns `example`', () => {
