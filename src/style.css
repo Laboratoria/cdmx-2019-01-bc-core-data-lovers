@@ -1,4 +1,7 @@
-*{margin: 0;
+*{
+    margin: 0;
+   
+
 }
 body,html{
     margin: 0;
@@ -6,136 +9,128 @@ body,html{
     position: relative;
     width: 100%;
     height: 100%;
-}
-/*#pantalla-uno{
-    background-image: url("https://media.alienwarearena.com/media/wallpaper-9.jpg");
-    background-repeat: no-repeat;
+    font-family: adobe-garamond-pro,serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #cc9900;
+    background-image: url(http://i.imgur.com/hcYQ7nG.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-<<<<<<< HEAD
-}     
-.boton-inicio{
-    border: 1px solid #eeeeee;
-    border-radius:5px;
-    width: 200px;
-    height: 75px;
-    background-color: #efb810;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-attachment: block;
 }
-/* mi codigo
+
+.contenedorRoles{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cuadro{
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #9b7714; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #4e3c08;
+}
+
+.button {
+    background-color: #9b8319;
+    padding: 0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+    
+#imprimirRoles{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 header{
-width: 100%;
-background: #efb810;
-}
-
-#btn-menu{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5)
+  }
+  
+  #btn-menu{
     display: none;
-}
-
-header label {
-    display: block;
+  }
+  
+  /* Aqui vive el icono de menu"*/
+  header label{
+    display: none;
     width: 30px;
     height: 30px;
     padding: 10px;
-    border-right: 1px solid #fff;
-}
-
-header label:hover {
+    border-right: 1px solid rgb(131, 109, 13);
+  }
+  
+  header label:hover{
     cursor:pointer;
+    background: rgba(207, 159, 26, 0.7);
+  }
+   /*AquÃ­ toma su estuctura horizontal el menu*/
+  .menu ul {
+      margin:0;
+      list-style: none;
+      padding: 0;
+      display: flex; /*Hace que se ajuste al tamaÃ±o del navegador*/
+      /*justify-content: center; Aqui le da su alinacion*/
+      /*flex-direction: row;*/
+  }
+  
+  .menu li {
+    border-right: 1px solid #fff;
+    text-align: center;
+    flex-grow: 1; /*hace que crezca segun la pantalla*/
+  }
+  
+  .menu li:hover{
     background: rgba(0, 0, 0, 0.3);
-}
-
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.menu li:hover{
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.menu li a {
+  }
+  
+  .menu li a {
     display: block;
     padding: 15px 20px;
-    color: black;
+    color: rgb(211, 179, 90);
     text-decoration: none;
-}
- 
-@media (max-width:768px) {
+  }
+  
+  @media only screen and (max-width: 600px) {
     header label{
-        display: block;
+      display: block;
     }
-    .menu{
-        position: absolute;
-        background: #eeeeee;
-        width: 70%;
-        margin-left: -70%;
+  
+    .menu {
+      position: absolute;
+      background: #4E94AB;
+      width: 70%;
+      margin-left:-70%;
+      transition: all 0.3s;
     }
+  
     .menu ul {
-        flex-direction: column;
+      flex-direction : column;
     }
+  
     .menu li {
-        border-top: 1px solid #fff; 
-    }
-    #btn-menu:checked ~ .menu {
-        margin: 0;
-    }
-*/
-.pantalla-tres{
-    background: rgb(45, 45, 51);
-}
-=======
-}*/     
->>>>>>> upstream/master
-.cuadro{
-    margin: 5%;
-    background-color: rgb(9, 32, 66);
-    padding: 2%;
-    width: 80%;
-    max-width: 100%;
-    color: rgb(199, 173, 25);
-    font-size: 20px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: rgb(31, 161, 151);
-}
-/*img{
-    width: 10%;
-}*/
-/*nav{
-    width: 9em;
-    position: relative;
-    height: 8em;
-    top: -21px;
-    left: -143px;
-}
-nav.mostrar{
-    width: 9em;
-    position: relative;
-    height: 8em;
-    top: -21px;
-    left: 0px;
-}
-.contenedor{
-    position: relative;
-    top: 30px;
-}
-.contenedorboton{
-    z-index: 20px;
-<<<<<<< HEAD
-}
-=======
-}*/
+      border-top: 1px solid #fff;
+     }
+     #btn-menu .icon{
+       float: left; 
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box; 
+       text-align: left; 
+       z-index: 1;
 
->>>>>>> upstream/master
+     }
+
+     #btn-menu:checked ~ .menu{
+       margin: 0;
+     }
+
+    
+    }
