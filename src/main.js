@@ -4,6 +4,7 @@ const pokemonPage=document.getElementById('pokemon-page'); //página de pokemone
 const pokeballButton=document.getElementById('pokeball-button'); 
 const printList = document.getElementById('print-list'); 
 const buttonType=document.getElementsByClassName('type-button'); 
+const imgPokebolaChica=document.getElementById('img-pokebola-chica'); 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
  initialPage.classList.add('hideElement');    
@@ -12,7 +13,6 @@ pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
 
 const print=(data)=>{
 data.forEach(element => {
-  let name=element.name;
    let result = `<div class="wrapper">
    <div class="pokemon-cart"> 
      <div class="pokemon-card-image">
@@ -27,7 +27,6 @@ data.forEach(element => {
    printList.insertAdjacentHTML("beforeend",result);
    return print;
   });
-  
 };
 
 print(data)
@@ -41,3 +40,5 @@ for(let i = 0; i <buttonType.length; i++ ){
     print(pokemonFiltrados)
 })
 }
+
+

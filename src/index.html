@@ -11,16 +11,16 @@
 </head>
 
 <body>
- 
+
   <div id="root">
-    <section id="initial-page" class="contenedor">
+    <section id="initial-page">
       <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img">
       <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-button.png"></button>
   
     </section>
-    <section id= "pokemon-page" class="hideElement contenedor">
+    <section id="pokemon-page" class="hideElement">
 
-      <header class="header">
+      <header>
         <div>
           <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="imgchico">
         </div>
@@ -30,8 +30,8 @@
         </nav>
       </header>
 
-      <section class="contenido"> 
-      <article id="print-list">
+      <section class="contenido">
+        <article id="print-list">
           <img src="">
         </article>
       </section>
@@ -53,10 +53,13 @@
       </aside>
 
       <footer id="busqueda">
-        <img src="./assets/poke-ball-button_1cm.png" alt="" class="imgpokebolachica">
-        <p class="text-footer"></p>
+        <div class="footertext">
+        <button id="img-pokebola-chica"class="img-pokebola-chica"><img src="./assets/poke-ball-button_1cm.png"></button>
+        <p class="text-footer">Todos los derechos reservados</p>
+      </div>
+ 
       </footer>
-  </section> 
+    </section>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
@@ -65,7 +68,7 @@
     <script src="data.js"></script>
     <script src="main.js"></script>
 
-  </div>
+  </div> <!--termina div root-->
 </body>
 
 </html>
