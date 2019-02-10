@@ -10,42 +10,34 @@
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <img src="assets/img/POKEMON.png" class = "imgPokemon">
-    </header>
-      <section id="getName"> <!--Obtener nombre y boton siguiente-->
-        <h2 class = "cualEs">¿Cuál es tu Nombre?</h2>
-          <br>
-            <input type="text" placeholder="Esrcibe tu Nombre" class="WriteName" id="inputName">
-            <button type="submit" id="next" class="styleButtonNext">Siguiente</button>
-      </section>
+    <section id="main">
+      <header id="title">
+          <figure class = "imgPokemon"><img src="../src/assets/img/POKEMON.png" alt="Logo Pokemon"></figure>  
+      </header>
 
-    <section id="aparicion"> <!-- 1 qUE SALGA EL NOMBRE DE LA PERSONA-->
-      <h2 class="fontPokemon">Hola <p id = "NombreDeUsuario">(Nombre De Usuario)</p> Descubre tus Pokemones ordenados </h2>
-     <!--<button type="submit" id="neext" class="ok">Siguiente</button>-->
-      <button type="submit" id="showPokemons" class="styleButtonNext">VER</button>
+      <button type="submit" id="next" class="styleButtonNext">Entrar</button>
+
     </section>
-
-  <section id = "buttonsType">
-    <button type="button" class="typesPokemon" id = "Normal">Normal</button>
-    <button type="button" class="typesPokemon" id = "Fire">Fuego</button>
-    <button type="button" class="typesPokemon" id = "Water">Agua</button>
-    <button type="button" class="typesPokemon" id = "Grass">Hierba</button>
-    <button type="button" class="typesPokemon" id = "Electric">Electrico</button>
-    <button type="button" class="typesPokemon" id = "Ice">Hielo</button>
-    <button type="button" class="typesPokemon" id = "Fighting">Pelea</button>
-    <button type="button" class="typesPokemon" id = "Poison">Veneno</button>
-    <button type="button" class="typesPokemon" id = "Ground">Tierra</button>
-    <button type="button" class="typesPokemon" id = "Flying">Volador</button>
-    <button type="button" class="typesPokemon" id = "Psychic">Psiquico</button>
-    <button type="button" class="typesPokemon" id = "Bug">Bicho</button>
-    <button type="button" class="typesPokemon" id = "Rock">Roca</button>
-    <button type="button" class="typesPokemon" id = "Ghost">Fantasma</button>
-    <button type="button" class="typesPokemon" id = "Dragon">Dragon</button>
-    
-    
-  </section>
-
+    <section id="serch">
+      <nav id = "buttonsType">
+        <button type="button" class="typesPokemon" id = "Normal">Normal</button>
+        <button type="button" class="typesPokemon" id = "Fire">Fuego</button>
+        <button type="button" class="typesPokemon" id = "Water">Agua</button>
+        <button type="button" class="typesPokemon" id = "Grass">Hierba</button>
+        <button type="button" class="typesPokemon" id = "Electric">Electrico</button>
+        <button type="button" class="typesPokemon" id = "Ice">Hielo</button>
+        <button type="button" class="typesPokemon" id = "Fighting">Pelea</button>
+        <button type="button" class="typesPokemon" id = "Poison">Veneno</button>
+        <button type="button" class="typesPokemon" id = "Ground">Tierra</button>
+        <button type="button" class="typesPokemon" id = "Flying">Volador</button>
+        <button type="button" class="typesPokemon" id = "Psychic">Psiquico</button>
+        <button type="button" class="typesPokemon" id = "Bug">Bicho</button>
+        <button type="button" class="typesPokemon" id = "Rock">Roca</button>
+        <button type="button" class="typesPokemon" id = "Ghost">Fantasma</button>
+        <button type="button" class="typesPokemon" id = "Dragon">Dragon</button>  
+      </nav>
+      <h1 id="pokemons"></h1>
+    </section>
 <!-- <section id="water" change="change">
   <select class="" name="" >
     <option value="" id = "agua" >Agua</option>
@@ -57,7 +49,6 @@
 
 
 
-    <h1 id="pokemons"></h1>
 
     <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
