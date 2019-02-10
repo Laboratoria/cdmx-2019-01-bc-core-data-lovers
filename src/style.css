@@ -164,7 +164,7 @@ h3{
 }
 
 footer {
-  background: #C2FAB9;
+  background:#976DD0;
   width: 80%;
   max-width: 1000px;
   border-radius: 4px;
@@ -179,7 +179,7 @@ footer {
   border-radius: 8px;
   position: fixed;
   bottom: 0%;
-  width: 72.8%;
+  width: 65%;
   margin-left: 2.5%;
   height: 10%;
   
@@ -190,7 +190,6 @@ footer {
   border: none;
   margin-top: 10px;
   padding-top: 5px;
-  display: inline-block;
   margin-left: 50%;
   float: left;
 }
