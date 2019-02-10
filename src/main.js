@@ -13,12 +13,8 @@ const resultsecc = document.getElementById("result");
 searchbutton.addEventListener("click", ()=>{
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
-
-  //console.log(yearValue, userValue);
-  resultsecc.innerHTML=window.data.consult(yearValue, userValue);
+  //const resultYear = window.data.consult(yearValue,userValue)
+  //const resultUser = window.data.consult(userValue)
+  //resultsecc.innerHTML= `<b>Año:</b> <i>${resultYear}</i><br><b>Total:</b> <i>${resultUser}</i>`
 })
-
-
-// const printpage = (year, total, moto, bike, walk, transit) => {
-//  let result = `<b>Año:</b> <i>${yearValue}</i> <br><b>Total de heridos en ${userValue};</i>`
-//  knowsecc.insertAdjacentHTML("beforeend", result);
+//<br><b>Total de heridos en ${userValue};</i>

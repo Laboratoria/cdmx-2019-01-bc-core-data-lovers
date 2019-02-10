@@ -1,11 +1,13 @@
 nav {
-    display: block;
-  }
+  display: block;
+}
 
-  header{
-    background: white;
-    vertical-align: bottom;
-  }
+
+header {
+  background: white;
+  display: inline-block;
+  vertical-align: bottom;
+}
 
 figure{
   margin: 0%;
@@ -21,13 +23,13 @@ figure{
     margin: 0%;
 }
 
-  .logo{
-    width: 15%;
-    height: auto;
-    padding: 3%;
-  }
+.logo {
+  width: 15%;
+  height: auto;
+  padding: 3%;
+}
 
-.info{
+.info {
   background-color: #eb008b;
   width: auto;
   height: 100%;
@@ -36,7 +38,7 @@ figure{
   color: white;
   text-align: justify;
   font-family: sans-serif;
-  padding: 7%;
+  padding: 5%;
 }
 
 .button{
@@ -48,11 +50,11 @@ figure{
 
 .total {
   background-color: #231f20;
-width: auto;
-height: 100%;
-padding: 5%;
-color: #eb008b;
-display: block;
+  width: auto;
+  height: 100%;
+  padding: 5%;
+  color: #eb008b;
+  display: block;
 }
 
 h2 {
@@ -65,7 +67,7 @@ p {
   color: white;
   font-family: sans-serif;
   text-align: justify;
-  padding: 5%;
+  padding: 3%;
   font-size: 14px;
   margin: 0;
 }
@@ -112,6 +114,14 @@ p {
   text-align: center;
 }
 
+.consult {
+  margin: 2%;
+  text-align: center;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+
 .photos {
   background-color: #eb008b;
   width: auto;
@@ -133,6 +143,7 @@ footer {
   width: 55%;
   height: auto;
   padding-top: 8%;
+  margin-left: 22%;
 }
 
 .final {
@@ -149,34 +160,123 @@ footer {
 
 @media (min-width: 1281px) {
 
-  .logo{
-    width: 5%;
+  .logo {
+    width: 6%;
     height: auto;
     padding: 1%;
-}
+  }
 
-.menu{
-  width: 4%;
-  height: auto;
-  vertical-align: top;
-  padding: 2%;
-  float: right;
-}
+  .menu {
+    width: 6%;
+    height: auto;
+    vertical-align: top;
+    padding: 2%;
+    padding-top: 2%;
+    float: right;
+  }
 
-.icon {
+  .info {
+    background-color: #eb008b;
+    width: auto;
+    height: 100%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+  }
+
+  .total {
+    background-color: #231f20;
+    width: auto;
+    height: 100%;
+    padding: 1%;
+    color: #eb008b;
+    display: block;
+  }
+
+  p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1%;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .icon {
+    display: inline-block;
     width: 10%;
+    padding: 5%;
+    margin-left: 3%;
+  }
 
-}
-/*
+  .select {
+    margin: 10%;
+    margin-top: 4%;
+    padding: 1%;
+    text-align: center;
+  }
+
+  .redes {
+
+    width: 20%;
+    height: auto;
+    padding-top: 8%;
+    margin-left: 40%;
+  }
+
+/* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
 
-  //CSS
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .menu {
+    width: 6%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 8%;
+    margin-left: 63%;
+  }
 
-}
+  .logo {
+    width: 8%;
+    height: auto;
+    padding: 3%;
+  }
+
+  .info {
+
+    background-color: #eb008b;
+    width: auto;
+    height: 100%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+  }
+
+  .logo {
+    width: 6%;
+    height: auto;
+    padding: 1%;
+  }
+
+  .menu {
+    width: 6%;
+    height: auto;
+    vertical-align: top;
+    padding: 2%;
+    padding-top: 2%;
+    float: right;
+  }
+
 
 /*
   ##Device = Tablets, Ipads (portrait)
@@ -185,19 +285,82 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  //CSS
-
+   .menu {
+    width: 5%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 5%;
+    margin-left: 63%;
 }
 
+  .logo {
+    width: 8%;
+    height: auto;
+    padding: 3%;
+  }
 
+  .info {
+
+    background-color: #eb008b;
+    width: auto;
+    height: 100%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    padding: 5%;
+    margin-left: 3%;
+  }
 
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
+  .menu {
+    width: 8%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 8%;
+    margin-left: 63%;
+  }
 
-  //CSS
+  .logo {
+    width: 10%;
+    height: auto;
+    padding: 3%;
+  }
 
-}
+  .info {
+
+    background-color: #eb008b;
+    width: auto;
+    height: 100%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    padding: 5%;
+    margin-left: 3%;
+    text-align: center
+  }
+
