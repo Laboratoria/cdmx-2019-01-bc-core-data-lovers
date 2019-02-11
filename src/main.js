@@ -1,4 +1,4 @@
-
+//Declaración de variables
 const data = POKEMON.pokemon;
 const finalResult = document.getElementById('root');
 const butFire = document.getElementById ('Fire');
@@ -258,4 +258,8 @@ function filterDragon() {
     let id = data.id;
     printDragon(name, imagen, type, id);
   });
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
