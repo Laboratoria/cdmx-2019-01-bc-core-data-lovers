@@ -12,7 +12,8 @@ window.lol = {
           secondaryRol: element.tags[1],
           attack: element.info.attack,
           defense: element.info.defense,
-          magic: element.info.magic
+          magic: element.info.magic,
+          id: element.id
         }
         if (!element.tags[1]){
           champsInfo.secondaryRol = "";
@@ -74,8 +75,10 @@ return defenseSorter;
 },
   //esta llave cierra window.lol
 
-  filterByName: (name2, newArrayChamp) =>
-    filtering = newArrayChamp.filter(element => element.name[0] == name2[0]),
+  filterByName: (name2, newArrayChamp) => {
+    filtering = newArrayChamp.filter(element => (element.id.toLowerCase().match (name2.toLowerCase())));
+    return filtering;
+  }
 }
 
 // // esta es una función de ejemplo
