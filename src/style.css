@@ -24,8 +24,8 @@ main {
   margin-top: 70px;
 }
 
-section {
-  padding: 0;
+#home {
+  padding: 2px;
   height: 113vh;
   background: url(./assets/images/img_home_low.jpg);
   background-size: cover;
@@ -34,9 +34,8 @@ section {
 
 }
 
-button { 
-  
-  background-color: #FF3450; 
+button {
+  background-color: #FF3450;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   bottom: 27px;
   border-radius: 8px;
@@ -46,14 +45,30 @@ button {
   height: 50px;
   font-weight: bold;
   transform: translate(205px, 248px);
- 
+
   color: #fff;
 }
 
 
-#countries{
-  background:#F4F5F2;
+#countries {
+  padding: 4px;
+  background: #F4F5F2;
+  text-align: center;
+}
 
+#conferencias {
+  padding:6px;
+  background: #a5a5a5;
+  text-align: center;
+  color:#ffff
+}
+
+#contacto {
+  padding:6px;
+  background: #FF3450;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
 }
 
 #logo {
@@ -63,6 +78,18 @@ button {
   left: 14px;
   top: 17px;
 }
+
+#filtrar-pais {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  bottom: 27px;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(15, 15, 15);
+}
+
 
 /*#bars {
   width: 8%;
@@ -76,7 +103,7 @@ button {
 
 #text {
   position: relative;
-  
+
   width: 397px;
   height: 31px;
   left: 19px;
@@ -94,12 +121,17 @@ button {
 }
 
 #indicator {
+  padding: 50px;
   margin-top: -19px;
-  background-color: beige;
+  background: #F4F5F2;
 }
 
 nav {
   width: 100%;
+}
+
+li {
+  list-style: none;
 }
 
 nav ul {

@@ -18,8 +18,8 @@
       <nav class="navigation">
         <ul>
           <li><a href="#countries">Estadísticas</a></li>
-          <li><a href="#">Conferencias</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#conferencias" type="button" id="conf">Conferencias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -27,31 +27,75 @@
 
 
   <main class="main">
-    <section>
+    <section id="home">
       <div id="text">
         <p>Centro de investigación
           <br>para el Desarrollo
           <br>de la mujer
-          <br>en Latinoamérica.</p>
+          <br>en México.</p>
       </div>
     </section>
 
+    
     <section id="countries">
-      <button id="BRA" type="button" class="button" >Brasil</button>
-      <button id="CHL" type="button" class="button">Chile</button>
-      <button id="MEX" type="button" class="button">México</button>
-      <button id="PER" type="button" class="button">Perú</button>
-    </section>
+      <h2>Selecciona el indicador de tu interés.</h2>
+      <select id="filtrar-pais" name="paises">
+        <option value="value1">Indicador</option>
+        <option value="MEX">Inscripción escolar, nivel terciario, mujeres (% bruto)</option>
+        <option value="PER">Proporción de inscripciones de mujeres con respecto a varones en la educación terciaria (%)</option>
+        <option value="CHL">Desempleo, mujeres (% de participación femenina en la fuerza laboral) (estimación nacional)</option>
+        <option value="BRA">Personas desempleadas con educación avanzada, mujeres</option>
+      </select>
 
-    <section>
-      <div id="indicator">
+      <!--<section id="countries">
+      <button id="BRA" value="BRA" class="button" >Brasil</button>
+      <button id="CHL" value="CHL" class="button">Chile</button>
+      <button id="MEX" value="MEX" class="button">México</button>
+      <button id="PER" value="PER" class="button">Perú</button>
+    </section>-->
 
-      </div>
+      <section>
+        <div id="indicator">
+        </div>
+      </section>
 
-    </section>
+      <section id="conferencias">
+          <h2>Conoce nuestras conferencias.</h2>
+          <p>¿Quieres que tu audiencia VIBRE de emoción, ENCUENTRE las herramientas que necesita 
+            <br>para su vida o para su emprendimiento y, sobre todo, pase un MOMENTO increíble lleno de 
+            <br>dinamismo, motivación y conocimiento?
+            
+            <br>¡Entonces trabajemos juntos y hagamos de tu evento UN ÉXITO!
+            Mi experiencia como speaker abarca temas de Desarrollo Humano y Personal, 
+            <br>Emprendimiento, Empoderamiento Femenino, Marketing Digital y Negocios 
+            <br>Digitales, Liderazgo y Responsabilidad Social.
+          
+            <br>
+            Entre nuestros clientes se encuentran: la Universidad de Tamaulipas, la Universidad Politécnica del Valle de
+            México,la Procuraduría de Justicia del Estado de Veracruz, Grupo Bayer, Grupo Carvajal, 
+            <br>Young Living México, El sistema DIF del Estado de Hidalgo, CANACINTRA, la Universidad Politécnica del Valle de México, 
+          <br>el Instituto Tecnológico de Chilpancingo, Banco INVEX,
+            Bcysa Servicios Industriales, JR Consultores y Grupo MAP, entre otros.</p>
+        </section>
+    
+        <section id="contacto">
+          <h2>Para cualquier duda o información.</h2>
+          <p>
+            Si deseas contactarnos, puedes hacerlo de las siguientes maneras:
+            <br>
+            1. Envía un correo electrónico a:
+            info@promujer.org.mx
+            <br>
+            2. Llama al (55) 55530109, de 9 a 15 horas.
+            <br>
+            3. Síguenos en nuestra página de Facebook: ProMujer, o Twitter: @ProMujer.
+          </p>
+        </section>
+    
 
 
-    <div id="root"></div>
+
+      <div id="root"></div>
   </main>
 
 
