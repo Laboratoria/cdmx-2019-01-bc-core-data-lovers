@@ -11,24 +11,6 @@
   
 //   }
 
-
-// window.WorldBank   ={
-//   filterCountry: (countryMex, listQuestion) =>{
-//   let country = listQuestion.dataset.ciudad;
-//   let countrySelect = listQuestion.value;
-//     let result = {};
-//     if(country == 'ciudadesMex' ){
-//       countryMex.forEach(ciudad =>{
-//         if(ciudad.indicatorCode == countrySelect){
-//           result = ciudad.data
-//         }
-//       });
-//     }
-
-//     return result
-//       }
-      
-// }
 window.WorldBank   ={
   filterCountry: (data,listQuestion) =>{
     let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
