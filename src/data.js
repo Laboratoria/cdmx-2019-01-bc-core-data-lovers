@@ -11,7 +11,8 @@ window.lol = {
       name: element.name,
       tag: element.tags[0],
       img: element.img,
-      title: element.title,}
+      title: element.title,
+      splash:element.splash,}
     datos.push(objetoVacio)
   }
 }
