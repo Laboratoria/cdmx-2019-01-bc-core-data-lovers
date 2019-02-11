@@ -15,10 +15,22 @@
     <header>
       <figure>
         <img src="images/logo.png" alt="PuntoMuerto" class="logo">
-        <img src="images/menu.png" class="menu">
+        <input type="checkbox" class="checkbox" id="menu-toggle" name="abrir-cerrar" value="">
+
+          <img src="images/menu.png" class="menu">
+
+          <nav id="sidebar" class="sidebar">
+            <ul class="menu_list">
+              <li><a href="#" class="nav__item current">INFORMACIÓN</a></li>
+              <li><a href="#" class="nav__item">TOTAL</a></li>
+              <li><a href="#" class="nav__item">CONSULTA</a></li>
+              <li><a href="#" class="nav__item">GALERIA</a></li>
+              <li><a href="#" class="nav__item">FQA's</a></li>
+            </ul>
+          </nav>
+
       </figure>
     </header>
-
 
     <section id="info" class="info">
       <p class="info">PUNTO MUERTO es una campaña que está orientada a la población
@@ -26,11 +38,13 @@
         los mismos a la posibilidad de acceder a una licencia de conducir,
         y por ser este un momento propicio debido al inicio del aprendizaje
         y con posibilidad de condicionar conductas responsables.
-
         Nos proponemos concientizar a la juventud de los riesgos a que
         se exponen y sus posibles consecuencias.</p>
 
-      <input class="consult" type="button" value="CONSULTA"></input>
+        <div class="button">
+          <input type="button" value="CONSULTA" class="consulta"></input>
+      </div>
+
     </section>
 
     <section class="total">
@@ -64,7 +78,9 @@
           <option value="Total_Injured_Persons_Transit_Total">Conductor</option>
           <option value="todos">TODOS</option>
         </select>
+        <div class="button">
         <input id="search" type="button" value="CONSULTA">
+      </div>
       </form>
     </section>
 
