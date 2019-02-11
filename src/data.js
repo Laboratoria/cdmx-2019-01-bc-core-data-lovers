@@ -23,3 +23,7 @@ filtroDataRoles: (rolId, datosArr ) =>{
     },
  
 }
+/*filterBySearch: (datosArr, name) => {
+  const concidence = datosArr.filter(element => (element.name.toLowerCase().match(name.toLowerCase())));
+  //console.log(concidenc);
+}*/
