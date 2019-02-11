@@ -1,14 +1,8 @@
 //En este archivo esperamos que implementes las funciones detalladas en la sección de Pruebas Unitarias.
 
-
-
-
-
-
-
-
-
 const indicators = [{
+    
+    name:"Desempleo total",
     peru: WORLDBANK.PER.indicators[106],
     mexico: WORLDBANK.MEX.indicators[76],
     chile: WORLDBANK.CHL.indicators[106],
