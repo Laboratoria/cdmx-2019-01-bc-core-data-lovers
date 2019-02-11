@@ -31,4 +31,4 @@ window.data = {
 
 
 
-//console.log(years.get("2001-01-04").Total_Injured_Persons)
+//console.log(years.get("2001-01-04").Total_Injured_Persons);
