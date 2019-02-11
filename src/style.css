@@ -1,65 +1,66 @@
+
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');   
 *{
-    padding: 0vw;
-    margin:0vw;
-    font-family: 'Special Elite', cursive;
+   padding: 0vw;
+   margin:0vw;
+   font-family: 'Special Elite', cursive;
 }
 
 #start {
-   background-image: url(./start.png);
-   height: -webkit-fill-available;
-   width: 100vw;
-   background-repeat: no-repeat;
-   background-size: 100vW;
-  }
-  #buttonContainer {
-      display: inline-block;
-      padding: 41vw;
-      height: 59vw;
-      width: 60vw;
-      margin-top: 39vw;
-      margin-left: 0vw;
-      
-  }
-  #startPokemon  {
-   background-color: transparent;
-   border: none;
-   color: white;
-   font-size: 4vw;
+  background-image: url(./start.png);
+  height: -webkit-fill-available;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100vW;
+ }
+ #buttonContainer {
+     display: inline-block;
+     padding: 41vw;
+     height: 59vw;
+     width: 60vw;
+     margin-top: 39vw;
+     margin-left: 0vw;
+
+ }
+ #startPokemon  {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 4vw;
 }
 .typeChart  {
-   background-color: #0763db;
-   border: none;
-   padding: 2vw;
-   margin: 1vw;
-   font-size: 4vw;
+  background-color: #0763db;
+  border: none;
+  padding: 2vw;
+  margin: 1vw;
+  font-size: 4vw;
 }
-  #options {
-   background-image: url(./options.png);
-   height: -webkit-fill-available;
-   width: 100vw;
-   background-repeat: no-repeat;
-   background-size: 100vw;
-  }
-  #optionsContainer {
-   display: inline-block;
-   height: 28vw;
-   width: 70vw;
-   margin-top: 70vw;
-   margin-left: 18vw;
+ #options {
+  background-image: url(./options.png);
+  height: -webkit-fill-available;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+ }
+ #optionsContainer {
+  display: inline-block;
+  height: 28vw;
+  width: 70vw;
+  margin-top: 70vw;
+  margin-left: 18vw;
 }
-  
-  #rootContainer {
-   background-image: url(./result.png);
-   height: -webkit-fill-available;
-   width: 100vw;
-   background-repeat: no-repeat;
-   background-size: 100vw;
-  }
- #root {
-   display: inline-block;
-   height: 91vw;
-   width: 71vw;
-   margin-top: 50vw;
-   margin-left: 11vw;
+
+ #rootContainer {
+  background-image: url(./result.png);
+  height: -webkit-fill-available;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+ }
+#root {
+  display: inline-block;
+  height: 91vw;
+  width: 71vw;
+  margin-top: 50vw;
+  margin-left: 11vw;
 }
