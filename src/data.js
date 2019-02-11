@@ -15,11 +15,15 @@ window.lol = {
    }
    return datosArr
   },
- 
- filtroDataRoles: (rolId, datosArr ) =>{  
+  
+   filtroDataRoles: (rolId, datosArr ) =>{  
       filtradoPorRoles = datosArr.filter(element => element.tag === rolId);
  
        return filtradoPorRoles
      },
   
- }
+/*filterBySearch: (datosArr, name) => {
+  const concidence = datosArr.filter(element => (element.name.toLowerCase().match(name.toLowerCase())));
+  //console.log(concidenc);
+},*/
+
