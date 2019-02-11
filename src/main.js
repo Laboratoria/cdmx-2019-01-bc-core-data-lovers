@@ -38,7 +38,7 @@ toReturn.addEventListener("click", () =>{
 
 //Di: Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
 const toPrint = (namePokemon,imagePokemon,typePokemon,weaknessesPokemon,candyPokemon,eggPokemon) =>{
-    let visualPokemon = `<button id="btnShowDetails" class="divPokemon ${typePokemon[0]} btnPokemon" data-toggle="modal" data-target="#details">
+    let visualPokemon = `<button id="btnShowDetails" class="divPokemon btnPokemon ${typePokemon[0]}" data-toggle="modal" data-target="#details">
     <img src="${imagePokemon}">
     <br><br><br><p class="name">${namePokemon}</p><br>
     </button>`
@@ -79,7 +79,6 @@ const show = () =>{
             </div> <!--Cierra div para mostrar la info-->
         </div>
     </div>`
-
 }
 
 /*Di y Fa: Función que filtra por tipo de Pokemón: Agua. Almacena en una variable los 
