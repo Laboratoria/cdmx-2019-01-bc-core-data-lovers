@@ -10,10 +10,10 @@ window.example = example;*/
 
 
 
-//const database = WORLDBANK;
+const database = WORLDBANK;
 
-//Función para 
-window.databaseMexEducation = {
+//Función para extraer nombres de indicadores, funciona
+/*window.databaseMexEducation = {
  dataFunction : (WORLDBANK) => {
     const databaseMex = WORLDBANK.MEX.indicators; //Indicadores de México
     //console.log(databaseMex)
@@ -28,7 +28,14 @@ window.databaseMexEducation = {
    pal += indicatorName;
 })
 return pal
-}};
+}};*/
+
+//window.databaseLatam = {
+  //dataFunction : (WORLDBANK) => {
+    const databaseByCountry = WORLDBANK;
+    console.log(databaseByCountry)
+  //}
+//}
 
 
 

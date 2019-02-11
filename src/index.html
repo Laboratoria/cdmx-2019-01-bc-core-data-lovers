@@ -12,7 +12,7 @@
   <header>
     <nav role="navigation">
       <figure class="logo"><img src="imagen/learning.png" alt="leyendo"></figure>
-      <h1 class="title">MexEduca</h1>
+      <h1 class="title">Alfabetización en Latinoamérica</h1>
       <ul>
         <li><a href="imagen/Historia de usuario..png">¿Quiénes somos?</a></li>
         <li><a href="imagen/Historia de usuario. (1).png">¿Porqué MexEduca?</a></li>
@@ -23,9 +23,26 @@
 
 <body>
   <section>
-    <div class="inner"></div>
-    <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
+      <div class="inner"></div>
+      <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
+  </section>
+
+  <section>
+    <h3>Noticias</h3>
+
+  </section>
+
+  <section>
     <button class="btnliteracy" id="literacy">Alfabetización</button>
+    <fieldset>
+        Para : <select name="country" id="countriesOptions">
+            <option class="opt" value="MEX">México</option>
+            <option class="opt" value="CHIL">Chile</option>
+            <option class="opt" value="PER">Perú</option>
+            <option class="opt" value="BRA">Brasil</option>
+          </select>
+    </fieldset>
+
     <fieldset>
       Para : <select name="literacyMex" id="literacyOptions">
         <option class="opt" value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
@@ -34,40 +51,21 @@
     </fieldset>
   </section>
 
-
   <section>
-    <button class="btnlevel" id="levelOfInstruction">Nivel de instrucción</button>
-    <fieldset>
-      Para : <select class="slc" name="levelInstruction" id="levelOfInstructionOptions">
-        <option class="opt" value="primaria">Primaria</option>
-        <option class="opt" value="secundaria">Secundaria</option>
-        <option class="opt" value="licenciatura">Licenciatura</option>
-        <option class="opt" value="maestria">Maestría</option>
-        <option class="opt" value="doctorado">Doctorado</option>
-      </select>
-    </fieldset>
-  </section>
-
-  <section>
-    <button class="btnregistration" id="schoolRegistration">Inscripción escolar</button>
-    <fieldset>
-      Para : <select class="slc" name="schoolRegis" id="schoolRegistrationOptions">
-        <option class="opt" value="primaria">Primaria</option>
-        <option class="opt" value="secundaria">Secundaria</option>
-      </select>
-    </fieldset>
-    </div>
-  </section>
+      <article>
+        <h3>Datos</h3>
+        <h5 id="imprimiendo"></h5>
+      </article>
+    </section>
+  
   <footer>
+    <article>
+      <h4>Acerca de</h4>
+      <h4>Sitios de interés</h4>
+
+    </article>
 
   </footer>
-
-  <section>
-    <article>
-      <h2>Resultados</h2>
-      <h5 id="imprimiendo"></h5>
-    </article>
-  </section>
 
   <!-- <script src="./data/injuries/injuries.js"></script> -->
   <!-- <script src="./data/pokemon/pokemon.js"></script> -->
