@@ -1,7 +1,10 @@
 window.pokemon =
 
  show:(dataPokemon) =>{
+   const showPokemons= arrayPokemonData.sort((a,b)=> {
 
+     
+   }
 
 }
 
