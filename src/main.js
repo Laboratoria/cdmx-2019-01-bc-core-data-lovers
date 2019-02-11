@@ -8,9 +8,6 @@ const search = document.getElementById("search");
 //const searchValue = document.getElementById("search").value
 //const arrayData = Object.values(datalol)
 
-
-
-
 mostrar.addEventListener("click",() =>{
     const menu = document.getElementById("menu");
     menu.classList.toggle("mostrar");
@@ -22,7 +19,9 @@ mostrar.addEventListener("click",() =>{
 const print = (datosArr) =>{
     imprimirRoles.innerHTML = "";
     datosArr.forEach(champ => {
-let pintar = `<div class="cuadro"><img class="imagen" src="${champ.splash}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`; 
+let pintar = `<div class="cuadro">
+<img class="imagen" src="${champ.splash}"> 
+<div id="subtitulo"><h2 id="nombre">${champ.name}</h2> <h1 id"titulo"> ${champ.title}</h1></div></div>`; 
 imprimirRoles.insertAdjacentHTML("beforeend", pintar);
  })
 

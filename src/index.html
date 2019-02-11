@@ -6,16 +6,18 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  </head>
-  <body>
-
-<section id="pantalla-contenedor" class="pantalla-contenedor">
 <header>
-  <div class="contenedorboton"></div>
-  <button class="mostrar"><i id="mostrar" class="fas fa-align-justify"></i></button> 
+   
+  <!--<div class="contenedorboton"></div>-->
+  <input type="checkbox" id="btn-menu" class="mostrar">
+    <label for="btn-menu"><img src="assets/icono-menu.png" alt=""><i id="mostrar">
+    </label>    
+ <!-- <button class="mostrar"><i id="mostrar" class="fas fa-align-justify"></i></button> -->
+  
   <nav id="menu" class="menu">
     <div class="contenedor">
     <ul class="menu"> 
+      <li><a href="#">Inicio</a></li>
       <li><a href="#">Campeones</a></li>
       <li><a href="#">Roles</a></li>
       <ul>
@@ -29,18 +31,25 @@
       <li><a href="#">Poderes</a></li>
     </ul>
   </nav>
-  </div>
+ </div>
+
+
 </header>
-</section>
+<section>   
+  <input type="search" id="search" class="search" placeholder="Search..." />
+  <button type="button" id="search_button" class="search_button">Buscar</button>
+
+</section> 
+<br>
+<br>
+<br>
 <br>
 
-  <div id="imprimirRoles" class="imprimir-roles"></div>
+  <div class="contenedorRoles">
+    <div id="imprimirRoles" class="imprimir-roles"></div>
+  </div>
 </section>
-   
- <section>   
-    <input type="search" id="search" class="search">
-    <button type="button" id="search_button" class="search_button">Buscar</button>
-</section>
+    
     <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <!-- <script <script src="./data/pokemon/pokemon.js"></script> -->
@@ -50,4 +59,3 @@
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
-</html>
