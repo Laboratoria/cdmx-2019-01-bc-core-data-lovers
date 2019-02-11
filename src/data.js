@@ -22,9 +22,9 @@ window.lol = {
        return filtradoPorRoles
      },
   
-filterBySearch: (datosArr, name) => {
+filterBySearch: (name, datosArr) => {
   const concidence = datosArr.filter(element => (element.name.toLowerCase().match(name.toLowerCase())));
-  //console.log(concidenc);
+  return concidence;
 },
 
 }
