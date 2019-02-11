@@ -201,6 +201,13 @@ p {
   overflow: hidden;
 }
 
+@media (min-width:992px){
+  .champion {
+    width: 16%;
+    margin: 0 2% 2%;
+  }
+  }
+
 img {
   width: 100%;
   padding-top: 20px;
