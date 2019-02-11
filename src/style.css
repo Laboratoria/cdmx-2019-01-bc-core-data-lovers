@@ -17,12 +17,33 @@ body {
   position:fixed;
   height:50px;
   background-color: #111;
+  display:flex;
 }
 #showFirstChampionList{
   margin-top: 50px;
 }
 
+#iconGlass{
+  font-size:10px;
+  color:whitesmoke;
+  float:left;
+ 
+}
 
+#searchDiv{
+  margin-left: 80px;
+  margin-top: 15px;
+}
+#search{
+  position: relative;
+  background-color:rgb(37, 37, 37);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border-color:rgba(120, 90, 40);
+  color:white;
+  display:flex;
+}
 
 #titleChampions{
   margin-top: 100px;
