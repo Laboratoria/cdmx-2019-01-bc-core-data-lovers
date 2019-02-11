@@ -2,16 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Pokedex</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image" href="./favicon.png">
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <section id = "start" class = "hide">
+      <div id = "buttonContainer">
+        <button  id= "startPokemon" class = "start">S T A R T</button>
+      </div>
+        
+    </section>
+    
+      <section id= "options" class = "pokedex" >
+        <div id = "optionsContainer">
+            <button type = "button" id= "Fire" class = "typeChart hide">Fuego</button>
+            <button type = "button" id= "Normal" class = "typeChart hide">Normal</button>
+            <button type = "button" id= "Grass" class = "typeChart hide" >Hierba</button>
+            <button type = "button" id= "Ice"  class = "typeChart hide">Hielo</button>
+            <button type = "button" id= "Electric"  class = "typeChart hide">Eléctrico</button>
+            <button type = "button" id= "Fighting" class = "typeChart hide" >Pelea</button>
+            <button type = "button" id= "Poison"  class = "typeChart hide">Veneno</button>
+            <button type = "button" id= "Ground" class = "typeChart hide">Tierra</button>
+            <button type = "button" id= "Flying" class = "typeChart hide">Volador</button>
+            <button type = "button" id= "Psychic" class = "typeChart hide">Psíquico</button>
+            <button type = "button" id= "Bug" class = "typeChart hide">Bicho</button>
+            <button type = "button" id= "Rock" class = "typeChart hide">Roca</button>
+            <button type = "button" id= "Ghost" class = "typeChart hide">Fantasma</button>
+            <button type = "button" id= "Dragon" class = "typeChart hide">Dragón</button>
+       
+          </div id = "nextContainer">
+        <div><button type= "button" id = "nextPage" class = "hide">N E X T</button>
+        </div>
+      </section>
+
+   <section id = "rootContainer">
+      <div id = "root" class = "hide">
+      
+      </div>
+   </section>
+    
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
