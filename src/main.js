@@ -1,4 +1,6 @@
+
 const datapokemon= POKEMON.pokemon;
+/*En esta seccion estoy trayendo los elemneetos del html para que los botones de hagan su funcion*/
 const buttonTypes =Array.from( document.getElementsByClassName("typesPokemon"));
 
 const obtenerTipo =(arregloBotones) => {
