@@ -69,7 +69,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
-  left: 0px; 
+  left: 0px;
+  right: 0px;
 }
 
 #enlisted {
@@ -147,9 +148,13 @@ footer {
   font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2em;
   color: #efc056;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  background-color: black;
+  left: 0px;
+  height: 2.2em;
+  padding-top: 30px;
 }
 
 #champion-list {
