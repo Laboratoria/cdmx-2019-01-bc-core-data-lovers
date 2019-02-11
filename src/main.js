@@ -1,4 +1,4 @@
-//Declaración de variables
+
 const data = POKEMON.pokemon;
 const finalResult = document.getElementById('root');
 const butFire = document.getElementById ('Fire');
@@ -282,3 +282,4 @@ const dataMayor = data.sort(function (a, b) {
   
 });
 
+}
