@@ -4,7 +4,7 @@ const datosArr = window.lol.iterarData(datalol);
 const rol = document.getElementsByClassName('rol');
 const imprimirRoles = document.getElementById("imprimirRoles")  /*trae el div imprimir roles para identificarlo e imprimir*/
 const hamburguerButton = document.getElementById("hamburguerButton");
-const search = document.getElementById("search");
+let search = document.getElementById("search");
 const home = document.getElementById("home");
 const searchChampion = document.getElementById("searchChampion");
 //const search = document.getElementById("search").value
@@ -13,6 +13,7 @@ const searchChampion = document.getElementById("searchChampion");
 
 hamburguerButton.addEventListener("click",() =>{
     const menu = document.getElementById("menu");
+    const displayMenu= document.getElementById("btn-menu").style.display="block"
     menu.classList.toggle("hamburguerButton");
 });
 
@@ -28,6 +29,7 @@ const print = (datosArr) =>{
 let pintar = `<div class="cuadro"><img class="imagen" src="${champ.splash}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`; 
 imprimirRoles.insertAdjacentHTML("beforeend", pintar);
  })
+ 
 
 };
 //Función para desplegar los campeones filtrados por roles
@@ -47,15 +49,15 @@ selectRol();
 searchChampion.addEventListener("click",() =>{
   imprimirRoles.innerHTML = "";
   print(datosArr)
-});
+});  
 
 //Función para desplegar el campeon para se desea buscar
 const filterRolBySearch = () => {
   search.addEventListener("keyup", () => {
     let searchValue = search.value;
-    console.log(searchValue);
-    //const showSearch = window.lol.filterBySearch(datosArr,searchValue);
-    //print (showSearch);
+    //console.log(searchValue);
+    const showSearch = window.lol.filterBySearch(searchValue, datosArr);
+    print (showSearch);
   })
 };
-//filterRolBySearch ();
+filterRolBySearch ();
