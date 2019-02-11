@@ -4,7 +4,7 @@ const pokemonPage=document.getElementById('pokemon-page'); //página de pokemone
 const pokeballButton=document.getElementById('pokeball-button'); 
 const printList = document.getElementById('print-list'); 
 const buttonType=document.getElementsByClassName('type-button'); 
-const imgPokebolaChica=document.getElementById('img-pokebola-chica'); 
+const pokeButtonHome=document.getElementById('poke-button-home'); 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
  initialPage.classList.add('hideElement');    
@@ -32,13 +32,16 @@ data.forEach(element => {
 print(data)
 
 for(let i = 0; i <buttonType.length; i++ ){
-  // console.log(buttonType[i])
   buttonType[i].addEventListener('click',() => {
   let pokemonElegido = buttonType[i].id
   printList.innerHTML = '';
   const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido )
     print(pokemonFiltrados)
-})
-}
+});
+};
 
+pokeButtonHome.addEventListener('click',() => {
+    printList.innerHTML='';
+    print(data)
+});
 
