@@ -177,7 +177,7 @@ footer {
 .footertext {
   background: #976DD0;
   border-radius: 8px;
-  position: fixed;
+  
   bottom: 0%;
   width: 72.8%;
   margin-left: 2.5%;
@@ -190,7 +190,6 @@ footer {
   border: none;
   margin-top: 10px;
   padding-top: 5px;
-  display: inline-block;
   margin-left: 50%;
   float: left;
 }
@@ -209,6 +208,11 @@ footer {
   color: wheat;
   margin-top: 25px;
   margin-left: 75%;
+  position: fixed;
+  bottom: 0%;
+  width: 72.8%;
+  margin-left: 2.5%;
+  height: 10%;
 }
 
 .wrapper {
