@@ -81,11 +81,7 @@ text-align: center
 
 
 .styleButtonNext{
-/*
-    left: 45%;
-    top: 55%;
-    width: 10%;
-    height: 20%; */
+
     border-radius: 50% 50% 50% 50%;
     -moz-border-radius: 50% 50% 50% 50%;
     -webkit-border-radius: 50% 50% 50% 50%;
