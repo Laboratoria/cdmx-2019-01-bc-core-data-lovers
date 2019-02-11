@@ -1,10 +1,24 @@
+
+/* 
+--------------------------
+----ESTILOS GENERALES-----
+-------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');   
 *{
    padding: 0vw;
    margin:0vw;
    font-family: 'Special Elite', cursive;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   display: inline-block;
 }
+/* 
+--------------------------
+------ESTILOS MOBIL------
+-------------------------*/
 
+@media only screen and (max-width: 425px){
+  
 #start {
   background-image: url(./start.png);
   height: -webkit-fill-available;
@@ -56,10 +70,91 @@
   background-repeat: no-repeat;
   background-size: 100vw;
  }
+
+#nextContainer {
+  display: inline-block;
+  height: 57vw;
+  width: 66vw;
+}
+#nextPage {
+  margin-top: 46vw;
+  margin-left: 42vw;
+  background-color: transparent;
+  font-size: 5vw;
+  padding: 3vw;
+  color: white;
+  border: 0;
+}
 #root {
   display: inline-block;
   height: 91vw;
   width: 71vw;
-  margin-top: 50vw;
-  margin-left: 11vw;
+  margin-top: 55vw;
+  margin-left: 13vw;
+}
+}
+
+/* 
+--------------------------
+------ESTILOS DESKTOP-----
+-------------------------*/
+@media only screen and (min-width: 500px) {
+  body {
+    background-image: url(./background.png);
+     background-color: #2697FF;
+     BACKGROUND-REPEAT: NO-REPEAT;
+     BACKGROUND-SIZE: 100%;
+}
+
+#startPokemon {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+}
+.typeChart {
+  display: inline-block;
+  background-color: #0763db;
+  padding: 2%;
+  font-size: 79px;
+  margin: 1%;
+  background-attachment: fixed;
+  }
+#options {
+  width: 45vw;
+  height: 69vw;
+  background-attachment: fixed;
+  float: right;
+}
+
+#optionsContainer {
+  
+  width: 34vw;
+  height: 13vw;
+  margin-top: 33vw;
+  margin-left: 9vh;
+  background-attachment: fixed;
+  padding: 5%;
+  }
+  #rootContainer {
+    display: inline-block;
+    width: 41vw;
+    height: 69vw;
+    margin-left: 4vh;
+    background-attachment: fixed;
+}
+#root {
+  display: inline-block;
+  width: 28vw;
+  height: 46vh;
+  margin-top: 22vw;
+  padding: 2%;
+}
+}
+#nextPage {
+  background-color: transparent;
+  color: transparent;
+  border: 0;
+}
+head {
+  color: transparent;
 }
