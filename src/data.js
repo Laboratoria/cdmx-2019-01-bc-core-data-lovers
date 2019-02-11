@@ -10,11 +10,11 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 
-// var years = new Map();
-//
-// for (let injuriesByYear of INJURIES) {
-//   years.set(injuriesByYear.Year, injuriesByYear);
-// }
+ var years = new Map();
+ for (let injuriesByYear of INJURIES) {
+   years.set(injuriesByYear.Year, injuriesByYear);
+ }
+
 
 window.data = {
   getData: (dataToSearch) => {
