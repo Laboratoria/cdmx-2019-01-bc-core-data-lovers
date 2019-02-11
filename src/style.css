@@ -17,7 +17,7 @@
 ------ESTILOS MOBIL------
 -------------------------*/
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 600px){
   
 #start {
   background-image: url(./start.png);
@@ -98,7 +98,7 @@
 --------------------------
 ------ESTILOS DESKTOP-----
 -------------------------*/
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 601px) {
   body {
     background-image: url(./background.png);
      background-color: #2697FF;
@@ -115,26 +115,25 @@
   display: inline-block;
   background-color: #0763db;
   padding: 2%;
-  font-size: 79px;
-  margin: 1%;
+  font-size: 60px;
+  margin: 12px;
   background-attachment: fixed;
-  }
+}
 #options {
   width: 45vw;
   height: 69vw;
   background-attachment: fixed;
-  float: right;
+  margin-left: 57%;
 }
 
 #optionsContainer {
-  
-  width: 34vw;
-  height: 13vw;
-  margin-top: 33vw;
-  margin-left: 9vh;
+  width: 87%;
+  height: 27%;
+  margin-top: 74%;
+  margin-left: 9%;
   background-attachment: fixed;
-  padding: 5%;
-  }
+  /* padding: 5%; */
+}
   #rootContainer {
     display: inline-block;
     width: 41vw;
