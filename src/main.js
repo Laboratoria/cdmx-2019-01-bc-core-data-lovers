@@ -260,14 +260,7 @@ function filterDragon() {
     let id = data.id;
     printDragon(name, imagen, type, id);
   });
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> origin/master
-=======
-}
+
 // Muestra data de A-Z
 const dataMenor = data.sort(function (a, b) {
   if (a.name > b.name) {
@@ -290,4 +283,4 @@ const dataMayor = data.sort(function (a, b) {
 });
 
 }
->>>>>>> origin/rama-karen
+
