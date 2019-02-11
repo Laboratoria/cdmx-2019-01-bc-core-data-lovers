@@ -1,9 +1,8 @@
-let enviaIndicador=[];
-window.worldBank ={
+window.worldBank = {
 
   filtroPais: (baseDatos, selectPais, indicador) =>{ 
       
-      enviaIndicador=[];
+      let enviaIndicador=[];
       let indicadorFiltro;
       
       const pais =  baseDatos[selectPais].indicators;
@@ -23,12 +22,12 @@ window.worldBank ={
       return enviaIndicador;
     },
   
-   orderByAsc: (order) =>{//funcion orden ascendente y descendente
+   orderByAsc: (order,arrayOrder) =>{//funcion orden ascendente y descendente
    let orderByObject=[];
   
-    for (let i in enviaIndicador)
+    for (let i in arrayOrder)
     {
-      orderByObject.push([i, enviaIndicador[i]]);
+      orderByObject.push([i, arrayOrder[i]]);
     }
     if (order === "asc")
     {
