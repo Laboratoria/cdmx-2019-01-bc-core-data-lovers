@@ -82,13 +82,14 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
    {//recorre objeto para pasar el año a nuevo arrego de eje Y
   valorPorcentajeY.push(pais[j]);
  }
- document.getElementById('contenido').innerHTML = respuesta;   
+ document.getElementById('contenido').innerHTML = respuesta;
+ document.getElementById('graf').style.display='block';
  VerGrafica();
  return respuesta;
 }
 
 const prtOrder=(orderObj)=>{
-let respOrder="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";;    
+let respOrder="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";    
 for (let i in orderObj)
  {
   respOrder+="<li>"+"<b>"+orderObj[i][0]+":  "+"</b>"+parseFloat(orderObj[i][1]).toFixed(2)+"%"+"</li>"+"<br>";
@@ -106,9 +107,19 @@ const orderByAscent = () =>{
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
 
 
-console.log(valorAnioX);
-console.log(valorPorcentajeY);
+//console.log(valorAnioX);
+//console.log(valorPorcentajeY);
 
+const limpiar = () => {
+    document.getElementById('filtrar-pais').value = '';
+    document.getElementById('filtrar-indicador').value = '';
+    document.getElementById('order').value = '';
+    document.getElementById('contenido').innerHTML = '';
+    document.getElementById('graf').style.display='none';
+  }
+  
+  buttonLimpiar.addEventListener('click', limpiar)
+//console.log(limpiar);
 const VerGrafica=()=>{
 
 myChart= new Chart(ctx, { //funcion grafica

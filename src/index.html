@@ -43,7 +43,7 @@
     <p>Para consultar la información, seleccione el indicador de su interés y el país del cual desea realizar la consulta.</p>
 <section id="selectorBox">
     <select id="filtrar-indicador" name= "indicators" class="selectors">
-        <option value= "value1"> Indicador</option>
+        <option value="" disabled selected>Indicador</option>
         <option value= "Población de 80 años en adelante, mujeres (% de la población femenina)">Población de 80 años en adelante</option>
         <option value= "Población de 75 a 79 años, mujeres (% de la población femenina)">Población de 75 a 79 años</option>
         <option value= "Población de 70 a 74 años, mujeres (% de la población femenina)">Población de 70 a 74 años</option>     
@@ -66,7 +66,7 @@
 
   
   <select id="filtrar-pais" name="paises" class="selectors" >
-    <option value= "value1"> País</option>
+      <option value="" disabled selected>País</option>
     <option value= "MEX">México</option>
     <option value= "PER">Perú</option>
     <option value= "CHL">Chile</option>
@@ -74,19 +74,22 @@
   </select>
 
   <select id="order" class="selectors">
-    <option value= "value1"> Ordenar</option>
+      <option value="" disabled selected>Ordenar</option>
     <option value= "asc"> Ascendente</option>
     <option value= "desc"> Descendente</option>     
   </select>
 
- <!-- <input id="limpiar" type="button" class="boton" value="Limpiar">-->
+ <input id="limpiar" type="button" class="boton" value="Limpiar">
  
 </section>
-<div class="grafica">
+<section id="graf">
+  <div class="grafica">
     <canvas id="myChart" width="20" height="20" class="grafica-muestra">  
  
      </canvas>
 </div>
+</section>
+
 
 </section>
 
