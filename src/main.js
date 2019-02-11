@@ -28,31 +28,27 @@ function myFunction() {
 //const originDatabase = databaseMexEducation.dataFunction(WORLDBANK);
 
 
-//Elementos DOM
-const database = WORLDBANK;
-const literacy = document.getElementById("literacy");
-const levelOfInstruction = document.getElementById("levelOfInstruction");
-const schoolRegistration = document.getElementById("schoolRegistration");
-const literacyOptions = document.getElementById("literacyOptions");
-const levelOfInstructionOptions = document.getElementById("levelOfInstructionOptions");
-const schoolRegistrationOptions = document.getElementById("schoolRegistrationOptions");
+//Elementos DOM-funciona
+/*const database = WORLDBANK;
 
-const prueba = () => {
-    let text = "texto de inicio";
-    print(text)
-}
-//console.log(prueba) //ejemplo John
+const literacy = document.getElementById("literacy");
+const literacyOptions = document.getElementById("literacyOptions");
+const countriesOptions = document.getElementById("countriesOptions");
+console.log(literacy, literacyOptions, countriesOptions)
+
+
+//ejemplo John
 
 const ejecutable = () => {
     const result = window.databaseMexEducation.dataFunction(database);
     print(result);
 }
 
-literacy.addEventListener("click", ejecutable)
+literacyOptions.addEventListener("change", ejecutable)
 
 const print = (papintar) => {
 imprimiendo.innerHTML = papintar
-}
+}*/
 
 
 //Eventos
