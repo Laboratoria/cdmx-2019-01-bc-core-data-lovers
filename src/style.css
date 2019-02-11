@@ -15,6 +15,12 @@
 html,body{
     margin:0;
     height:100%;
+    
+}
+.styleP {
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    font-size: 2vw;
 }
 
 .divPokemon{
@@ -75,11 +81,7 @@ text-align: center
 
 
 .styleButtonNext{
-/*
-    left: 45%;
-    top: 55%;
-    width: 10%;
-    height: 20%; */
+
     border-radius: 50% 50% 50% 50%;
     -moz-border-radius: 50% 50% 50% 50%;
     -webkit-border-radius: 50% 50% 50% 50%;
