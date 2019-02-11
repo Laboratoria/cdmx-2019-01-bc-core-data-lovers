@@ -1,3 +1,4 @@
+
 // Estoy creando la funcion de mi boton GO, para que al darle click me pinte el resultado del input en pantalla 2
 const btngetName = document.getElementById('next');
 const trainerName = document.getElementById('nombre');
@@ -6,7 +7,7 @@ const sectionName = document.getElementById('pantalla1');
 
 btngetName.addEventListener ("click",() => {
 const name = trainerName.value;
-bienvenido.innerHTML = '¡Hola entrenador '  +  name  +' bienvenido';
+bienvenido.innerHTML = '¡Hola entrenador '  +  name  +' Bienvenido!';
 sectionName.style.display ="none";
 
   })
