@@ -1,4 +1,5 @@
 
+
 // Estoy creando la funcion de mi boton GO, para que al darle click me pinte el resultado del input en pantalla 2
 const btngetName = document.getElementById('next');
 const trainerName = document.getElementById('nombre');
@@ -10,7 +11,7 @@ const name = trainerName.value;
 bienvenido.innerHTML = '¡Hola entrenador '  +  name  +' Bienvenido!';
 sectionName.style.display ="none";
 
-  })
+ })
 
 
 
@@ -22,8 +23,8 @@ document.getElementById("getName").style.display="none";
 
 // Estoy dando la funcionalidad a mi boton Pokemones ordenados, para que me pinte data
 document.getElementById("showPokemons").addEventListener("click", ()=> {
-    const dataPokemon = POKEMON.pokemon;
-    window.pokemon.show(dataPokemon);
+   const dataPokemon = POKEMON.pokemon;
+   window.pokemon.show(dataPokemon);
 })
 
 // Estoy dando funcionalidad a mi boton de Pekemones ordenados, que me esconda la pantalla, 1 a la 2.
@@ -37,9 +38,10 @@ const pantalla1=document.getElementById('pantalla1');
 const pantalla2=document.getElementById('pantalla2');
 
 nombre.addEventListener("click", ()=>{
-  pantalla1.classList.add('hide');
-  pantalla2.classList.remove('hide');
-});
+
+// pantalla1.classList.add('hide');
+// pantalla2.classList.remove('hide');
+
 
 
 const dataPokemon = (name,img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
@@ -82,4 +84,3 @@ data.forEach(element =>{
  let weaknesses = element.weaknesses;
  data(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
   weaknesses, );
-});

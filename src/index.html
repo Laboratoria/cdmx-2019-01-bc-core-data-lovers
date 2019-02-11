@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Poke Lovers</title>
     <link rel="stylesheet" href="style.css" />
+     <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
   </head>
   <body>
 
@@ -11,16 +13,26 @@
     <!--Obteniendo nombre y boton siguiente para pintarlo en pantalla 2-->
     <div id="pantalla1" class= "pokebola">
       <header>
-      <h1>Pokedext website</h1>
+        <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/190211/66212bef18f1889a2bb8dd6f4096808c.png" alt="fuente-pokemon" border="0"></a>
+    <!--<h1>Pokedext website</h1>-->
       </header>
+
+
+
+
+
       <input type="text" id="nombre" placeholder="Escribe tu nombre">
-      <button type="submit" id="next"> GO </button>
+      <button type="submit" id="next" class= "styleBtn"> GO </button>
     </div>
 
     <!--Pantalla dos-->
     <!--Boton que muestra los Pokemones-->
     <div id="pantalla2" class="hide">
       <h1 id="pokemons"></h1>
+
+
+
+
     <!-- Barra de menu-->
       <nav class= "topnav">
         <ul>
@@ -41,7 +53,11 @@
   </ul>
   </nav>
   <!-- Boton de que imprime la data de Pokemones -->
+<<<<<<< HEAD
     <!--  <button type="submit" id="showPokemons">Pokémons Ordenados </button>-->
+=======
+      <!--<button type="submit" id="showPokemons">Pokémons Ordenados </button>-->
+>>>>>>> 649f76c2b3efc964e9c913f3f2fed3899ebda098
   <!-- search para traer data-->
       <input type="text"  value="search"> <br>
   <!-- Letrero de Bienvenida que al darle click en pantalla 1, me lo pinta en pantalla 2-->
@@ -49,8 +65,21 @@
 
     </div>
 
-
     <div id="root"></div>
+
+
+
+
+
+  <!--<main class = "contenido">
+
+    <p>
+      BIENVENIDO A LA REGIÓN KANTO
+    </p>
+
+
+  </main>-->
+
 
     <!-- <script src="./data/injuries/injuries.js"></script> -->
      <script src="./data/pokemon/pokemon.js"></script>
