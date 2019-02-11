@@ -26,6 +26,8 @@ btnAbout.addEventListener('click', () => {
   navMenu.classList.add('ocultar');
   news.classList.remove('mostrar-news');
 });
+//comentario
+
 btnNews.addEventListener('click', () => {
   about.classList.add('ocultar');
   filters.classList.add('ocultar');
