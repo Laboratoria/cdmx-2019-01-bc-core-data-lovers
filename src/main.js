@@ -15,6 +15,9 @@
     const inicio = document.getElementById('inicio')
     const menu = document.getElementById('menu')
     const cerrar = document.getElementById('titleChampions')
+
+  //almacena el valor del input para la busqueda por nombre
+  const searchInput = document.getElementById("searchInput")
     
   
   //vuelve la base de datos a un arreglo
@@ -74,6 +77,13 @@ const selectByRol = () => {
       
 
   
+const searchByName = () => {
+  searchInput.addEventListener("keyup", ()=>{
+    let searchValue = searchInput.value;
+    const showSearch = window.lol.filterByName(searchValue,dataToArray);
+    print(showSearch);
+  })};
+ searchByName();
 
     
 
