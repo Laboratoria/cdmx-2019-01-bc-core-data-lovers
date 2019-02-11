@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>s
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0">
-  <title>infemi</title>
+  <title>Femeduca</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -13,7 +13,6 @@
   <nav class="nav" id="Topnav">
     <h1>Femeduca</h1>
     <ul class="links">
-      <li><a href="#donations">Donaciones</a></li>
       <li><a href="#impact">Impacto</a></li>
       <li><a href="#commits">Compromiso</a></li>
     </ul>
@@ -33,40 +32,46 @@
      <h1>Las más escolarizadas, pero no las más educadas</h1>
      A continuación presentaremos algunos datos estadísticos sobre la situación educativa de las mujeres en América Latina. Para ello se ha recurrido a información disponible en el Banco Mundial que aluden a la realidad regional. Sin embargo, somos conscientes de que esta información es escasa, fragmentaria y, en muchos casos, difícil o imposible de comparar. los datos estadísticos proporcionan la experiencia educativa de las mujeres. Indudablemente, el acceso a la educación, la permanencia y la movilidad a lo largo del sistema, son indicadores importantes de sus logros en el plano de la igualdad social.
     </article>
+    <p>indicador <b>Población mujeres (% del total),</b> seleccione País del que desea mostrar los datos.</p>
+    <p id="nom-indicador" class="hide"></p> 
         
-    <select id="countries" class= "fourCountries">
+    <select id="country-filter" name= "countries">
       <option>selecciona un pais</option>
-      <option value="MEX" id="countries">México</option>
-      <option value="PER" id="countries">Perú</option>
-      <option value="BRA" id="countries">Brasil</option>
-      <option value="CHL" id="countries">Chile</option>
+      <option value="MEX" >México</option>
+      <option value="PER" >Perú</option>
+      <option value="BRA" >Brasil</option>
+      <option value="CHL" >Chile</option>
     </select>
     
-    <select id="GlobalEducation" class = "indicators">
+    <!--<select id="filter-for-indicators" name= "indicator" class = "selection">
       <option value = "none">indicadores de educación a nivel secundaria</option>
       <option value = "Educación de nivel secundario, alumnos (% de mujeres)">Educación a nivel secundario</option>
       <option value = "Educación de nivel secundario, alumnos en programas vocacionales (% de mujeres)">Alumnas en programas Vocacionales</option>
-      <option value = "Inscripción escolar, nivel secundario, mujeres (% bruto)">Inscripción escolar a nivel secundario</option>  
+      <option value = "Inscripción escolar, nivel secundario, mujeres (% bruto)">Inscripción escolar a nivel secundaria</option>  
       <option value = "Población, mujeres (% del total)">Poblacion total de mujeres en latinoamerica</option>
       <option value = "Adolescentes que no asisten a la escuela, mujeres (% de mujeres en edad de asistir al ciclo inferior de la escuela secundaria)">Adolescentes que no asisten a la escuela</option>
-    </select>
+    </select>-->
 
-     <select id="ageRange" class= "age">
-      <option>edad</option>
-      <option value="MEX" id="countries">México</option>
-     </select>
-    <article id = "graphics" class = "showingGraphics">
-      hola
-    </article>
+     
+    
+   
+<section id="show-content"> </section>
   </section>
 
-  <section id = "donations" class = "theDonations" >
-    donaciones
-    <h1>holi boli</h1>
-  </section>
+
 
   <section id = "impact" class = "theImpact">
-    impacto
+      <div class="container">
+          <img src="imagenes/testimonio-kim-1.jpg" alt="Avatar" style="width:90px">
+          <p><span>Maria Luisa.</span> Chile.</p>
+          <p>"Nunca pense tener la oportunidad de verdaderamente estudiar, aun que tengo a mi hijo se que puedo ser como las mujeres que nos ayudaron"</p>
+        </div>
+        
+        <div class="container">
+          <img src="imagenes/images.jpg" alt="Avatar" style="width:90px">
+          <p><span > Antonieta Flores</span> Hidalgo, México</p>
+          <p>"Vinieron muchas maestras que nos enseñaron a leer"</p>
+        </div>
   </section>
 
   <section id = "commits" class = "theCommits" >

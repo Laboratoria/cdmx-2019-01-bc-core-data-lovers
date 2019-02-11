@@ -1,153 +1,157 @@
 nav{
- background-color: white;
- opacity: 0.9;
-  filter: alpha(opacity=90);
- margin-bottom: -1%;
-}
-
-
-
-ul {
-display: inline-block;
-padding-left: 43%;
-position: absolute;
-    left: -1%;
-    top: 0
-}
-
-h1{
-font-family:'Quicksand', sans-serif;
-color: firebrick;
-
-
-}
-
-.links{
-   display: flex;
-   width: 60%;
-   justify-content: space-around;
+  background-color: white;
+  opacity: 0.9;
+   filter: alpha(opacity=90);
+  margin-bottom: -1%;
+ }
+ 
+ 
+ ul {
+ display: inline-block;
+ padding-left: 47%;
+ position: absolute;
+     left: -1%;
+     top: 0
+ }
+ 
+ h1{
+ font-family:'Quicksand', sans-serif;
+ color: firebrick;
+ 
+ }
+ 
+ .links{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+     
+ }
+ 
+ .links a {
+    color: gray;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 2vh;
+    font-family: 'Quicksand', sans-serif;
+  
+ 
+ }
+ 
+ .links li{
+    list-style: none;
     
-}
-
-.links a {
-   color: gray;
-   text-decoration: none;
-   letter-spacing: 3px;
-   font-weight: bold;
-   font-size: 2vh;
+ 
+ }
+ 
+ 
+ .text{
+   padding-top: 9%;
+   padding-left: 1%;
    font-family: 'Quicksand', sans-serif;
+   font-size: 7vh;
+   color: white;
  
-
-}
-
-.links li{
-   list-style: none;
-   
-
-}
-
-
-
-.text{
-  padding-top: 9%;
-  padding-left: 1%;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 7vh;
-  color: white;
-
-}
-
-button#informate{
-  border-radius: 4px;
-  /*background-color: firebrick;*/
-  background-color:transparent;
-  color: white;
-  border: 2px solid firebrick;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px 24px;
-  border-radius: 8px;
-}
-.button#informate:hover{
-background-color: black;
-}
-#spaceforbutton{
-  padding: 4%;
-  padding-left: -4%;
-}
-.welcome{
-  background-image: url("https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.showPrincipal{
-background-color: white;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-font-family: 'Karla', sans-serif;
-text-align: center;
-font-size: 2vh;
-padding-top: -53%;
-
-
-}
-.areaForText{
-  padding-bottom: 5%;
-  padding-top: 2%;
-}
-
-<<<<<<< HEAD
-.showingGraphics{
-padding-top: 20%;
-background-color: red;
-margin-top: 8%;
-}
-
+ }
  
-.theDonations{
-background-color: orange;
-padding-bottom: 80%;
-   
-=======
+ button#informate{
+   border-radius: 4px;
+   /*background-color: firebrick;*/
+   background-color:transparent;
+   color: white;
+   border: 2px solid firebrick;
+   text-align: center;
+   font-size: 16px;
+   padding: 10px 24px;
+   border-radius: 8px;
+ }
+ .button#informate:hover{
+ background-color: black;
+ }
+ #spaceforbutton{
+   padding: 4%;
+   padding-left: -4%;
+ }
+ .welcome{
+   background-image: url("https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   opacity: 0.9;
+   filter: alpha(opacity=90);
+ }
+ .showPrincipal{
+ background-color: white;
+   opacity: 0.9;
+   filter: alpha(opacity=90);
+ font-family: 'Karla', sans-serif;
+ text-align: center;
+ font-size: 2vh;
+ padding-top: -53%;
+ 
+ }
+ .areaForText{
+   padding-bottom: 5%;
+   padding-top: 2%;
+ }
+ 
+ #show-content{
+ padding-bottom: 50%;
+ }
+ 
+ .theCommits{
+   background-color: yellow;
+   padding-bottom: 60%;
+ }
+ .theImpact{
+   background-color: white;
+   padding-bottom: 30%;
+ }
 
-
-h1 {
-  margin: 0%;
+.container {
+  border: 2px solid #ccc;
+  background-color: firebrick;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
 }
 
 
-
-/*pagina para filtrar por pais*/
-.showPrincipal {
-  background-image: url("imagenes/simbolo.jpg");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
->>>>>>> 404064f4229161b093184efee159f8509c56bf3f
-}
-.theCommits{
-  background-color: yellow;
-  padding-bottom: 80%;
-}
-.theImpact{
-  background-color: rgb(15, 158, 15);
-  padding-bottom: 80%;
-}
-.social{
-  background-color: gray;
-  padding-bottom: 10%;
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-<<<<<<< HEAD
-   
-=======
 
-      
->>>>>>> 404064f4229161b093184efee159f8509c56bf3f
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 40%;
+}
+
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+ .social{
+   background-color: gray;
+   padding-bottom: 10%;
+ }
+ 
+ 
