@@ -29,6 +29,95 @@ figure{
   padding: 3%;
 }
 
+.sidebar {
+  position: absolute;
+width: 200px;
+height: 100vh;
+top: 0;
+right: -205px;
+padding-top: 47px;
+background-color: rgba(29, 33, 32, 1);
+border-left: 4px solid rgb(235, 0, 139);
+transition: all .5s ease;
+}
+
+.menu_list{
+  list-style: none;
+}
+
+.nav__item {
+     display:block;
+     width:70%;
+     margin:0 auto;
+     line-height:4;
+     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+     border-bottom:.5px solid rgba(59, 62, 61, 1);
+     border-top:.5px solid rgba(59, 62, 61, 1);
+     background-color:transparent;
+     color:rgba(221, 231, 228, 1);
+   }
+
+   .current:before {
+     content: "";
+     width: 0;
+     height: 0;
+     position: absolute;
+     border-top: 17px solid transparent;
+     border-left: 15px solid #1D2120;
+     border-bottom: 17px solid transparent;
+     top: 12px;
+     right: 166px;
+     z-index: 4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementos*/
+  }
+
+  .current:after {
+    content: "";
+    width: -33px;
+    height: -1px;
+    position: absolute; /*Le damos al after una posición absoluta relativa al li que lo contiene*/
+    border-top: 16.5px solid transparent;
+    border-left: 17px solid rgb(235, 0, 139);
+    border-bottom: 17px solid transparent;
+    top: 12.5px;
+    right: 161px;
+    z-index: 1; /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
+  }
+
+.menu-toogle {
+    position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+    width: 35px;
+    line-height:1.1;
+    text-align:center;
+    top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+    left: 8px;
+    border-radius:3px;
+    background-color: #142b25;
+    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+    z-index:10;
+  }
+
+  .menu-toogle::before {
+     content:"☰";
+     font-size:32px;
+     color:white;
+   }
+
+   .checkbox {
+     display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+   }
+   .checkbox:checked ~ .nav {
+     left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+     position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+   }
+   .checkbox:checked ~ .main-w {
+     margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+   }
+   .checkbox:checked ~ .menu-toogle {
+     left:208px;
+     position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+   }
+
+
 .info {
   background-color: #eb008b;
   width: auto;
@@ -143,7 +232,6 @@ footer {
   width: 55%;
   height: auto;
   padding-top: 8%;
-  margin-left: 22%;
 }
 
 .final {
@@ -224,10 +312,9 @@ footer {
     width: 20%;
     height: auto;
     padding-top: 8%;
-    margin-left: 40%;
   }
 
-/* 
+/*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
@@ -363,4 +450,3 @@ footer {
     margin-left: 3%;
     text-align: center
   }
-
