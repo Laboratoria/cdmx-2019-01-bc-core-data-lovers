@@ -2,61 +2,129 @@
 <html lang="en" dir="ltr">
 
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Data Lovers</title>
- <link rel="stylesheet" href="style.css">
- <link rel="icon" href="images/favicon (2).ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon (2).ico">
 </head>
 
 <body>
- <div id="root"></div>
- <!--<script src="./data/injuries/injuries.js"></script>-->
+  <div id="root"></div>
+  <!--<script src="./data/injuries/injuries.js"></script>-->
+  <header id"realB">
+    <!--<section1 id="principalpage" class=hide>-->
+    <h1>Injured persons by<br>transportation mode</h1>
+    <h2>in United States of America</h2>
+  </header>
 
+  <!-- <section name buttons>
+    <button class="fas fa-walking button-transport" id="pedestrians-show" name="Total_Injured_Persons_Pedestrians"></button>
+    <button class="fas fa-bicycle button-transport" id="pedalcyclists-show" name="Total_Injured_Persons_Pedalcyclists"></button>
+    <button class="fas fa-bus button-transport" id="bus_occupants-show" name="Total_Injured_Persons_Bus_Occupants"></button>
+    <br>
+    <br>
+    <button class="fas fa-car button-transport" id="car_occupants-show" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
+    <button class="fas fa-motorcycle button-transport" id="motorcyclists-show" name="Total_Injured_Persons_Motorcyclists"></button>
+  </section> -->
 
-<div id"realB">
- <!--<section1 id="principalpage" class=hide>-->
-  <h1>Injured persons by<br>transportation mode</h1>
+  <section class="infoBody" id="content">
+    <h1 id="titleToSearch">Pedestrians</h1>
+    <p>This is de number of injuries at year for this transport mode since 2001 to 2015</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <table class="fas fa-walking" id="tableStructure">
+      <thead>
+        <tr>
+          <td>Years</td>
+          <td>Injuries</td>
+        </tr>
+      </thead>
+      <tbody class="dataTable">
+      </tbody>
+    </table>
+  </section>
 
+  <section class="infoBody" id="content">
+    <h1 id="titleToSearch">Pedalcyclists</h1>
+    <p>This is the number of injuries at year for this transport mode since 2001 to 2015</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <table class="fas fa-bicycle" id="tableStructure">
+      <thead>
+        <tr>
+          <td>Years</td>
+          <td>Injuries</td>
+        </tr>
+      </thead>
+      <tbody class="dataTable">
+      </tbody>
+    </table>
+  </section>
 
- <h2>in United States of America</h2>
- <button class="fas fa-walking button-transport" id="pedestrians-show" name="Total_Injured_Persons_Pedestrians"></button>
- <button class="fas fa-bicycle button-transport" id="pedalcyclists-show" name="Total_Injured_Persons_Pedalcyclists"></button>
- <button class="fas fa-bus button-transport" id="bus_occupants-show" name="Total_Injured_Persons_Bus_Occupants"></button>
- <br>
- <br>
- <button class="fas fa-car button-transport" id="car_occupants-show" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
- <button class="fas fa-motorcycle button-transport" id="motorcyclists-show" name="Total_Injured_Persons_Motorcyclists"></button>
-</div>
+  <section class="infoBody" id="content">
+    <h1 id="titleToSearch">Bus occupants</h1>
+    <p>This is the number of injuries at year for this transport mode since 2001 to 2015</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <table class="fas fa-bus" id="tableStructure">
+      <thead>
+        <tr>
+          <td>Years</td>
+          <td>Injuries</td>
+        </tr>
+      </thead>
+      <tbody class="dataTable">
+      </tbody>
+    </table>
+  </section>
 
+  <section class="infoBody" id="content">
+    <h1 id="titleToSearch">Car occupants</h1>
+    <p>This is the number of injuries at year for this transport mode since 2001 to 2015</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <table class="fas fa-car" id="tableStructure">
+      <thead>
+        <tr>
+          <td>Years</td>
+          <td>Injuries</td>
+        </tr>
+      </thead>
+      <tbody class="dataTable">
+      </tbody>
+    </table>
+  </section>
 
- <!--  <informacion por elemento>-->
-<div class="infoBody" id="content">
+  <section class="infoBody" id="content">
+    <h1 id="titleToSearch">Motorcyclists</h1>
+    <p>This is the number of injuries at year for this transport mode since 2001 to 2015</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <table class="fas fa-motorcycle" id="tableStructure">
+      <thead>
+        <tr>
+          <td>Years</td>
+          <td>Injuries</td>
+        </tr>
+      </thead>
+      <tbody class="dataTable">
+      </tbody>
+    </table>
+  </section>
 
-  <h1 id="titleToSearch">Motorcyclists</h1>
-  <p>This is the number of injuries at year for this transport mode since 2001 to 2015</p>
-
-  <table class="fas fa-motorcycle" id="tableStructure">
-    <thead>
-      <tr>
-        <td>Years</td>
-        <td>Injuries</td>
-      </tr>
-    </thead>
-    <tbody id="dataTable">
-    </tbody>
-  </table>
-
-</div>
-
-<nav class="side_menu">
- <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Contact</a></li>
- </ul>
-</nav>
-
+  <nav class="side_menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <button class="fas fa-walking button-transport" id="pedestrians-show" name="Total_Injured_Persons_Pedestrians"></button>
+      <button class="fas fa-bicycle button-transport" id="pedalcyclists-show" name="Total_Injured_Persons_Pedalcyclists"></button>
+      <button class="fas fa-bus button-transport" id="bus_occupants-show" name="Total_Injured_Persons_Bus_Occupants"></button>
+      <button class="fas fa-car button-transport" id="car_occupants-show" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
+      <button class="fas fa-motorcycle button-transport" id="motorcyclists-show" name="Total_Injured_Persons_Motorcyclists"></button>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
   <!--
   <section2 id="pedestrianspage" class=hide></section2>
@@ -65,11 +133,11 @@
   <section5 id="caroccupantspage" class=hide></section
   <section6 id="motorcyclistspage" class=hide></section6> -->
 
-
- <!--<script src="data.js"></script>-->
+  <!--<script src="data.js"></script>-->
 
 </body>
 <script src="./data/injuries/injuries.js"></script>
 <script src="data.js"></script>
 <script src="main.js"></script>
+
 </html>
