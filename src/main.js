@@ -7,6 +7,12 @@ document.getElementById("next").addEventListener("click", ()=>{
 const dataPokemon = POKEMON.pokemon;
 const buttonTypes = Array.from( document.getElementsByClassName("typesPokemon"));
 
+document.getElementById("showPokemons").addEventListener("click", ()=> {
+  
+  window.data.show(dataPokemon);
+
+})
+
 
 const obtenerTipo = (arregloBotones) => {
 
