@@ -16,7 +16,7 @@ span {
 }
 
 table {
-  border-spacing: 0.5%;
+  border-spacing: 5px;
 }
 
 /**********fonts***********/
@@ -112,9 +112,10 @@ section#content {
 /********** iconos*****/
 .fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car {
   color: white;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   padding: 10px 16px;
+  margin: 5px;
   font-size: 2em;
   border-radius: 70px;
   border-width: 8px;
