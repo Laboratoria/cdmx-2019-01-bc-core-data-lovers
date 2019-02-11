@@ -17,13 +17,13 @@
   <header class="header">
      <div clas="container">
        <figure>
-         <img id="logo" src= ""  alt= "logoX">
+         <img id="logo" src= "./assets/images/Logo Hipatia.png" style="width:14%" alt= "logoX">
        </figure>
           <nav class= "navMenu">
-          <a href="#">Abcedef</a>
-          <a href="#">Bdefghij</a>
-          <a href="#">Cdefghijk</a>
-          <a href="#">Defghijkl</a>
+          <a href="#">Contacto</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Indicadores</a>
+          <a href="#">Inicio</a>
         
             </nav>
   
@@ -36,51 +36,58 @@
    
  
     <section>
-
+         <div id= "Objetivo">
+           <p>
+              Mostrar y proporcionar datos estadísticos para el estudio y sensibilización social respecto a la desigualdad de género en el trabajo.
+              Los datos que se muestran en nuestra aplicación son tomados del Banco Mundial.
+           </p>
+         </div>
         <img class="mySlides" src="assets/images/267.jpg" style="width:100%">
         <img class="mySlides" src="assets/images/aaa.jpg" style="width:100%">
-       
-        <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg" style="width:100%">
+       <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg" style="width:100%">
+
       </section>
 
 
+  <section id="contenedor-descripcion">
+
+
+    <h1 class="titulo" id= "descripcion-titulo" >Brecha de género</h1>
+   
+    <p>Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en la mayor parte del mundo, estas desigualdades han afectado a las mujeres. </p>
+      
+        <p>La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que prevalecen entre mujeres y hombres se asocian a la
+        histórica división del trabajo para el mercado y el trabajo doméstico, o para la reproducción material de los hogares" (Instituto Nacional de las Mujeres [INMUJERES], 2008) . </p>
+       
+        <p>El trabajo es una de las principales vías por las cuales las personas obtienen ingresos para su supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante el estudio de la desigualdad de género en el trabajo.</p>
+       
+        <p>Referencias:
+        INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.</p>
+
+        
 
 
 
 
-
-
-
-
-
-
-
-  <section id=initialPage>
-    <h1>Brecha de género</h1>
-    <h3>Estadísticas laborales</h3>
-    <p>Género se refiera a los conceptos sociales de las funciones, comportamientos, actividades y atributos que cada sociedad considera apropiados para los hombres y las mujeres</p>
-    <p>La brecha de género es:</p>
-
+    <!---
     <button class=region> ÁFRICA</button>
     <button class=region> ESTE DE ASIA Y PACÍFICO</button>
     <button class=region> EUROPA Y ASIA CENTRAL</button>
     <button class=region> LATINOAMERICA Y CARIBE</button>
     <button class=region>MEDIO ESTE Y NORTE DE ÁFRICA </button>
     <button class=region> SUR DE ASIA</button>
+       -->
 
-    <footer>
-      <!---WB & HFS & ONU ICON -->
-    </footer>
 
-    
+
   </section>
 
-  <section id=secondPage>
+  <section id="secondPage">
+     <div id="Estadisticas">
+      <h3>Estadísticas laborales</h3>
 
 
-
-
-    <div>
+    
 
       <select id="selects">
 
@@ -97,44 +104,54 @@
           fuerza laboral, varones (% de la población masculina mayor de 15 años) (estimación nacional)</option>
         <option value="Participación en la fuerza laboral hombres" class="indicatorGroup">Tasa de participación en la
           fuerza laboral, mujeres (% de la población femenina mayor de 15 años) (estimación nacional)</option>
+
+          
+         
       </select>
 
+      <br>
+      <br>
       <p>Selecciona un país</p>
 
-   
-   
-     
+    </div> 
 
-      MEXICO
-      <br>
+
+      <div class="contenedor-botones" >
+      
+        <ul>
+   
+      <li style="list-style:none; float:left;" >
+          MEXICO
+          <br>
       <button class="country" value="mexico" ><img src="./assets/images/mex.png" width="50"  height="50"> </button>
-  
-     
+    </li>
+
+
+    <li style="list-style:none; float:left;">
         CHILE 
         <br>
-       <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50"  height="50"> </button>
-     
+       <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50"  height="50"> </button>      
+      </li>
 
-      
-     
+      <li style="list-style:none; float:left;">
        BRAZIL 
        <br>
        <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50"  height="50"> </button>
-        
-        
+      </li>
 
-
+       <li style="list-style:none; float:left;">
             PERU  
             <br>
             <button class="country" value="peru"><img src="./assets/images/peru.png" width="50"  height="50" >  </button>
-           
-          
+           </li>
+
+          </ul>
         </div>
 
 
    </section>
 
-   <section id=thirdPage> 
+   <section id="thirdPage"> 
 
      <!--PRINT INDICATOR CHOSEN-->
      <!---DATES PER YEAR-->
@@ -154,7 +171,9 @@
     <script src="main.js"></script>
 
 
+<footer class="footer">
 
+</footer>
 
 </body>
 
