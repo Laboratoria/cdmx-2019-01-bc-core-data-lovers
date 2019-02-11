@@ -1,42 +1,57 @@
-//Traer elementos del DOM
-/*const indicador = document.getElementById("indicador");
 
-// función para imprimir elementos en el html
-const print = (dataEducation) => {
-  let result = `<h5> ${dataEducation} </h5>`
-  indicador.insertAdjacentHTML("beforeend", result)
-  print(dataEducation)
+// esta es una función de ejemplo
+// puedes ver como agregamos la función a nuestro objeto global window
+
+/*const example = () => {
+  return 'example';
 };
 
-// extraer elementos
-dataEducacion.forEach (element => {
-  let indicadorName = element.indicatorName;
-  print(indicadorName)
-});*/
+window.example = example;*/
 
 
-//Función para extraer los datos de WORLDBANK A
-/*window.database = {
-  dataFunction : (data) => {
-    let dataMex = data.MEX.indicators;
-    dataMex.forEach (element => {
-      let year = element.data;
-      let indicatorName = element.indicatorName;
-      for (data in year) {
-        console.log (indicatorName,`${data} - ${year[data]}`)}
-  })
-}
-};*/
 
-//Función para filtrar
-window.database = {
-  dataFunction : (arrayWORLDBANK, select) => {
-    let dataMex = arrayWORLDBANK.MEX.indicators; //Indicadores de México
-    let mexFilt = dataMex.filter (function(elemento){ //Filtrar por categoría
-      
-      
-    }
+//const database = WORLDBANK;
+
+//Función para 
+window.databaseMexEducation = {
+ dataFunction : (WORLDBANK) => {
+    const databaseMex = WORLDBANK.MEX.indicators; //Indicadores de México
+    //console.log(databaseMex)
+    let pal = ""; // Espacio que recupera los datos
+
+    //extrae año-datos y nombre de indicador
+  let newArrayMexIndicator = databaseMex.map (function (indicator) {
+   let indicatorName = indicator.indicatorName;
+   //console.log(indicatorName)
+     //let data = indicator.data;
+  // pal += (`${indicatorName} + ${({data})}`);
+   pal += indicatorName;
+})
+return pal
+}};
 
 
-  }
-}
+
+
+
+
+//console.log(newArrayMexIndicator)
+
+    /*let indicatorsMexElected = databaseMex.filter(function (indicator) {
+      let indicadorName = newArrayMexIndicator;
+      let data = indicator.data;
+      let resultado = `${indicadorName} + ${data}`;
+      //console.log(resultado)
+     })*/
+   
+
+    //let newArrayMexIndicator = dataMex.map (indicator => //Nuevo array de datos México con data(año-datos) y nombre indicador
+       // return (indicator.data))
+    
+
+  // }
+ // }
+ 
+
+
+

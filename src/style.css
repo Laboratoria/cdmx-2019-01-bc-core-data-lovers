@@ -1,230 +1,162 @@
-body {
-  margin: 0;
-  font-family: 'PT Sans', sans-serif;
- }
- 
- h1 {
+
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1 {
   color: #57295F;
   background-repeat: no-repeat;
-  margin: 1%;
+  padding-top: 30%;
+  align-content: initial;
+  display: block;
+}
+.title {
+  padding-inline-start: 3%;
+  margin-top: 5%;
+}
+::selection {
+  background: #76448A;
+  color: #aaf;
+}
+.alternate ::selection {
+  background: #76448A;
+  color: #000;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 1500px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+.logo {
+  font-family: Montserrat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+.inner {
+  width: 100%;
+  position: static;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  width: 100%;
+  padding-top: 0px;
+  background: #fff;
+  transition: 0.7s all;
+  z-index: inherit 2;
+}
+header.alt-header {
+  background: #fff;
+}
+.alt-header a {
+  color: #000;
+}
+body.header-fixed header {
+  position: fixed;
+  top: 0px;
+  right: 2px;
+  padding-top: 0px;
+  width: 0%;
+  z-index: 2;
+}
+li {
+  list-style-type: square n;
+}
+nav {
+  overflow: hidden;
+  float: right;
+}
+nav ul {
+  float: right;
+}
+nav li {
+  display: inline-block;
+  float: left;
+}
+nav a {
   display: inline;
-  padding: 10%;
-  align-content: center;
-  border-left-width: 10%;
-  border-right-width: 10%;
- }
-
- h2 {
-   margin-top: 20%;
-   font-size: 140%;
- }
-
- h3, h2 {
-   margin-left: 4%;
- }
-
- .btn0 {
-  text-align: center;
-  display: inline-block;
-  margin-left: 30%;
-  margin-top: 20%;
-  padding: 3%;
-  padding-left: 15%;
-  padding-right: 15%;
-  background-color: #76448A;
-  border: none;
-  color:#F5EEF8;
-  font-size: 100%;
- }
-
- .btn0:hover {
-   background-color: #EAECEE;
- }
-
- .btn3{
-  text-align: center;
-  display: inline-block;
-  padding: 3%;
-  padding-left: 15%;
-  padding-right: 15%;
-  background-color: #76448A;
-  border: none;
-  color:#F5EEF8;
-  font-size: 100%;
- }
- 
- footer {
-  padding: 10%;
-  margin: 54%, 0%;
-  background-size: 10%;
-  border-image: 0mm;
- }
- 
- .image {
-  margin-left: 0%;
-  margin-right: 0%;
-  height: 1000%, 1000%;
-  max-width: 100%;
-  padding: 0%;
-  border-top-left-radius: 0%;
-  border-top-right-radius: 0%;
-  ;
- 
- }
- 
- .img1,
- .img2,
- .img3 {
+  color: black;
+  text-decoration: none;
+  transition: 0.4s all;
+  padding: 10px;
+}
+nav a:hover {
+  background: rgba(133, 60, 145, 0.97);
+  color: aliceblue;
+}
+.logo {
+  float: left;
+  line-height: 0px;
+  transition: 0.7s all;
+  align-content: flex-start;
+  margin: 3%;
+  display: inline;
+}
+.alt-header .logo {
+  color: #000;
+}
+body.header-fixed .logo {
+  font-size: 30px;
+}
+.alternate {
+  background: #000;
+  color: #fff;
+}
+section .inner {
+  padding-top: 100px;
+}
+.img1 {
   height: auto;
   max-width: 100%;
- }
- 
- .screen {
-  box-sizing: border-box;
-  margin-left: 0%;
   padding: 0%;
-  max-width: auto;
- 
- }
- 
- .logo {
-  display: inline;
-  text-align: center;
- }
- 
- .log1 {
-  display: inline-block;
-  background-size: 20%;
-  padding-inline-start: 20%;
-  margin-top: 2%;
- }
- 
- /*HAMBURGER MENU CSS*/
- .checkbox-container {
-  display: inline-block;
-  float: left;
-  width: 0%;
-  height: 50px;
-  position: relative;
-  background: white;
- }
- 
- .checkbox-trigger {
-  opacity: 0;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 0px;
-  cursor: pointer;
-  z-index: 5;
- }
- 
- .hamburger-menu,
- .hamburger-menu::before,
- .hamburger-menu::after {
-  display: block;
-  position: absolute;
-  background: black;
-  width: 40px;
-  height: 4px;
-  margin: 1.3em 3em;
-  transition: background 0.3s;
- }
- 
- .hamburger-menu::before,
- .hamburger-menu::after {
-  content: '';
-  position: absolute;
-  margin: -0.7em 0 0;
- }
- 
- .hamburger-menu::after {
-  margin-top: 0.7em;
- }
- 
- .hamburger-menu {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  margin-top: 2em;
-  margin-right: 0.35em;
-  margin-left: 0.35em;
-  margin-bottom: 1.45em;
- }
- 
- .checkbox-trigger:checked {
-  left: 152px;
- }
- 
- .checkbox-trigger:checked+.menu-content ul {
-  width: 150px;
-  height: 150px;
+  margin: 20%, 0%;
+  border-image: 0mm;
   ;
-  transition: width 0.7s ease 0.3s, height 0.3s ease;
- }
- 
- .menu-content {
-  display: flex;
-  background: auto;
-  color: black;
-  float: left;
- }
- 
- .menu-content ul {
-  display: block;
-  padding-left: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin: 0;
-  width: 0px;
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.3s ease 0.7s, width 0.7s ease;
- }
- 
- .menu-content ul li {
-  list-style: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  cursor: pointer;
-  text-align: center;
-  font-family: Helvetica;
-  transition: color 0.5s, background 0.5s;
- }
- 
- .menu-content ul li a {
-  color: #57295F;
-  text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 50px;
-  padding-right: 80px;
- }
- 
- .menu-content ul li a:hover {
-  color: white;
-  background: black;
- }
- 
- .menu-content ul li:hover {
-  color: white;
-  background: black;
- }
+}
+.img4 {
+  background-image: url(imagenes/geome.jpg) min-height: 5vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btnliteracy,
+.btnlevel,
+.btnregistration {
+  background-color: rgba(133, 60, 145, 0.97);
+  width: 40%;
+  height: 60%;
+  align-content: center;
+  color: #fff;
+  font-family: Montserrat;
+  size: 10%;
+}
+.slc {}
+.opt {
+  background-color: rgba(133, 60, 145, 0.97);
+  width: 40%;
+  height: 60%;
+  color: #fff;
+  font-family: Montserrat;
+  size: 10%;
+  opacity: ;
+  align-content: inline-block;
+}
 
- .category{
-   display: block;
-   margin-top: 2%;
-   margin-bottom: 2%;
-   padding-top: 2%;
- }
-
- p{
-   padding: 9%;
-   text-align: justify;
- }
-
- .resultados{
-   display: block;
-   margin-top: 3%;
-   padding-top: 10%;
- }

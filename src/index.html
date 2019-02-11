@@ -2,77 +2,81 @@
 <html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<!-------------Welcome screen------------->
- <div class="screen" id="welcome-screen">
+  <meta charset="utf-8">
+  <!-------------Welcome screen------------->
   <title>MexEduca</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- </div>
- <header>
-   <article>
-     <h1>MexEduca</h1>
-     <figure><img src="imagen/learning.png" alt="leyendo"></figure>
-   </article>
-   <nav>
-     <ul>
-         <li>¿Quiénes somos?</li>
-         <li>¿Por qué hablar de la educación en mujeres?</li>
+  </div>
+  <header>
+    <nav role="navigation">
+      <figure class="logo"><img src="imagen/learning.png" alt="leyendo"></figure>
+      <h1 class="title">MexEduca</h1>
+      <ul>
+        <li><a href="imagen/Historia de usuario..png">¿Quiénes somos?</a></li>
+        <li><a href="imagen/Historia de usuario. (1).png">¿Porqué MexEduca?</a></li>
       </ul>
-   </nav>
- </header>
- </head>
+    </nav>
+  </header>
+</head>
 
- <body>
-   <section>
-     <button id="literacy">Alfabetización</button>
-     <fieldset>
+<body>
+  <section>
+    <div class="inner"></div>
+    <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
+    <button class="btnliteracy" id="literacy">Alfabetización</button>
+    <fieldset>
       Para : <select name="literacyMex" id="literacyOptions">
-        <option value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
-        <option value="adultWomen">Mujeres adultas (15 años o más)</option>
-       </select>
-      </fieldset>
-   </section>
+        <option class="opt" value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
+        <option class="opt" value="adultWomen">Mujeres adultas (15 años o más)</option>
+      </select>
+    </fieldset>
+  </section>
 
 
-   <section>
-      <button id="levelOfInstruction">Nivel de instrucción</button>
-      <fieldset>
-          Para : <select name="levelInstruction" id="levelOfInstructionOptions">
-            <option value="primaria">Primaria</option>
-            <option value="secundaria">Secundaria</option>
-            <option value="licenciatura">Licenciatura</option>
-            <option value="maestria">Maestría</option>
-            <option value="doctorado">Doctorado</option>
-          </select>
-        </fieldset>  
-   </section>
+  <section>
+    <button class="btnlevel" id="levelOfInstruction">Nivel de instrucción</button>
+    <fieldset>
+      Para : <select class="slc" name="levelInstruction" id="levelOfInstructionOptions">
+        <option class="opt" value="primaria">Primaria</option>
+        <option class="opt" value="secundaria">Secundaria</option>
+        <option class="opt" value="licenciatura">Licenciatura</option>
+        <option class="opt" value="maestria">Maestría</option>
+        <option class="opt" value="doctorado">Doctorado</option>
+      </select>
+    </fieldset>
+  </section>
 
-   <section>
-      <button id="schoolRegistration">Inscripción escolar</button>
-      <fieldset>
-          Para : <select name="schoolRegis" id="schoolRegistrationOptions">
-            <option value="primaria">Primaria</option>
-            <option value="secundaria">Secundaria</option>
-          </select>
-        </fieldset>
-   </section>
+  <section>
+    <button class="btnregistration" id="schoolRegistration">Inscripción escolar</button>
+    <fieldset>
+      Para : <select class="slc" name="schoolRegis" id="schoolRegistrationOptions">
+        <option class="opt" value="primaria">Primaria</option>
+        <option class="opt" value="secundaria">Secundaria</option>
+      </select>
+    </fieldset>
+    </div>
+  </section>
+  <footer>
 
-   <section>
-     <article>
-       <h2>Resultados</h2>
-       <h5></h5>
-     </article>
-   </section>
+  </footer>
 
-<!-- <script src="./data/injuries/injuries.js"></script> -->
-<!-- <script src="./data/pokemon/pokemon.js"></script> -->
-<!-- <script src="./data/steam/steam.js"></script> -->
-<script src="./data/worldbank/worldbank.js"></script>
-<!-- <script src="./data/lol/lol.js"></script> -->
-<script src="data.js"></script>
-<script src="main.js"></script>
+  <section>
+    <article>
+      <h2>Resultados</h2>
+      <h5 id="imprimiendo"></h5>
+    </article>
+  </section>
+
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+
 </body>
 
 </html>
