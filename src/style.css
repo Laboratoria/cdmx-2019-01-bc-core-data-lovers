@@ -1,0 +1,160 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1 {
+  color: #57295F;
+  background-repeat: no-repeat;
+  padding-top: 30%;
+  align-content: initial;
+  display: block;
+}
+.title {
+  padding-inline-start: 3%;
+  margin-top: 5%;
+}
+::selection {
+  background: #76448A;
+  color: #aaf;
+}
+.alternate ::selection {
+  background: #76448A;
+  color: #000;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 1500px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+.logo {
+  font-family: Montserrat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+.inner {
+  width: 100%;
+  position: static;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  width: 100%;
+  padding-top: 0px;
+  background: #fff;
+  transition: 0.7s all;
+  z-index: inherit 2;
+}
+header.alt-header {
+  background: #fff;
+}
+.alt-header a {
+  color: #000;
+}
+body.header-fixed header {
+  position: fixed;
+  top: 0px;
+  right: 2px;
+  padding-top: 0px;
+  width: 0%;
+  z-index: 2;
+}
+li {
+  list-style-type: square n;
+}
+nav {
+  overflow: hidden;
+  float: right;
+}
+nav ul {
+  float: right;
+}
+nav li {
+  display: inline-block;
+  float: left;
+}
+nav a {
+  display: inline;
+  color: black;
+  text-decoration: none;
+  transition: 0.4s all;
+  padding: 10px;
+}
+nav a:hover {
+  background: rgba(133, 60, 145, 0.97);
+  color: aliceblue;
+}
+.logo {
+  float: left;
+  line-height: 0px;
+  transition: 0.7s all;
+  align-content: flex-start;
+  margin: 3%;
+  display: inline;
+}
+.alt-header .logo {
+  color: #000;
+}
+body.header-fixed .logo {
+  font-size: 30px;
+}
+.alternate {
+  background: #000;
+  color: #fff;
+}
+section .inner {
+  padding-top: 100px;
+}
+.img1 {
+  height: auto;
+  max-width: 100%;
+  padding: 0%;
+  margin: 20%, 0%;
+  border-image: 0mm;
+  ;
+}
+.img4 {
+  background-image: url(imagenes/geome.jpg) min-height: 5vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btnliteracy,
+.btnlevel,
+.btnregistration {
+  background-color: rgba(133, 60, 145, 0.97);
+  width: 40%;
+  height: 60%;
+  align-content: center;
+  color: #fff;
+  font-family: Montserrat;
+  size: 10%;
+}
+.slc {}
+.opt {
+  background-color: rgba(133, 60, 145, 0.97);
+  width: 40%;
+  height: 60%;
+  color: #fff;
+  font-family: Montserrat;
+  size: 10%;
+  opacity: ;
+  align-content: inline-block;
+}
+

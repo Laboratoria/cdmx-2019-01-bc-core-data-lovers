@@ -7,128 +7,49 @@
 
 window.example = example;*/
 
-// Traer elementos del data
-//const dataMex = WORLDBANK.MEX.indicators;
-//console.log(database)
 
-/*const literacy = (select) => {
-  let userIndicator;
-  if (select === "adultWomen"){
-      let literacyIndicator = database.filter (element => {
-      return element.indicatorName === "Tasa de alfabetización, mujeres adultas (% de mujeres de 15 años o más)";
-    })
-    literacyIndicator.forEach(element => {
-      let indicatorData = element.data;
-      userIndicator = indicatorData;
-    })
-  } else if (select === "youngWomen"){
-     let literacyIndicator = database.filter (element => {
-     return element.indicatorName === "Tasa de alfabetización, mujeres jóvenes (% de mujeres entre 15 y 24 años)";
-  })
-    literacyIndicator.forEach(element => {
-    let indicatorData = element.data;
-    userIndicator = indicatorData;
-    }) 
-  }
-  return userIndicator;
-};
-
-window.literacy = literacy;*/
-
-
-
-/*const levelOfInstruction = dataMex.filter(function(){
-  let indicatorCode = element.indicatorCode
-  return indicatorCode.data
-})
-console.log(levelOfInstruction)*/
-
-
-// recorrer elementos (indicador, dato y año) 
-
-
-
-/*const dataMex = WORLDBANK.MEX.indicators;
-  console.log(dataMex)
-
-const dataEducacion = () => {
-  
-const dataEducation = dataMex.forEach (element => {
-  let indicatorName = element.indicatorName;
-  console.log("indicatorName")
- });  
-}*/
-
-
-
-/*const dataEducation = dataMex.forEach (element => {
-  let year = element.data
-  let indicatorName = element.indicatorName;
-  for (data in year) {
-    console.log(indicatorName,`year.${data} - ${year[data]}`)
-  }
-});*/
-
-
-
-/*const instruction = dataMex.map ((data) => return(data.year))*/
-
-
-
-/*const levelOfInstruction = (option) => {
-  let instruction = dataMex.filter (
-    dataMex => dataMex.indicatorName == data
-  )
-  console.log(levelOfInstruction)
-}*/
-//const levelOfInstruction = dataMex.filter(element(indicatorCode[WORLDBANK["SE.TER.CUAT.BA.FE.ZS"]])) 
- // console.log(levelOfInstruction)
-
-
-
-/*const levelOfInstruction = dataMex.map(dataMex => 
-  `${dataMex.alfabetismo} ${dataMex.educacion}`);
-  console.log(levelOfInstruction) */ 
-
-//Traer elementos del DOM
-/*const indicador = document.getElementById("indicador");
-
-// función para imprimir elementos en el html
-const print = (dataEducation) => {
-  let result = `<h5> ${dataEducation} </h5>`
-  indicador.insertAdjacentHTML("beforeend", result)
-  print(dataEducation)
-};
-
-// extraer elementos
-dataEducacion.forEach (element => {
-  let indicadorName = element.indicatorName;
-  print(indicadorName)
-});*/
-
-
-//Función para extraer los datos de WORLDBANK A
-/*window.database = {
-  dataFunction : (data) => {
-    let dataMex = data.MEX.indicators;
-    dataMex.forEach (element => {
-      let year = element.data;
-      let indicatorName = element.indicatorName;
-      for (data in year) {
-        console.log (indicatorName,`${data} - ${year[data]}`)}
-  })
-}
-};*/
+//const database = WORLDBANK;
 
 //Función para 
-window.database = {
-  dataFunction : (arrayWORLDBANK, select) => {
-    let dataMex = arrayWORLDBANK.MEX.indicators; //Indicadores de México
-    let mexFilt = dataMex.filter (function(elemento){ //Filtrar por categoría
-      
-      
-    }
+window.databaseMexEducation = {
+ dataFunction : (WORLDBANK) => {
+    const databaseMex = WORLDBANK.MEX.indicators; //Indicadores de México
+    //console.log(databaseMex)
+    let pal = ""; // Espacio que recupera los datos
+
+    //extrae año-datos y nombre de indicador
+  let newArrayMexIndicator = databaseMex.map (function (indicator) {
+   let indicatorName = indicator.indicatorName;
+   //console.log(indicatorName)
+     //let data = indicator.data;
+  // pal += (`${indicatorName} + ${({data})}`);
+   pal += indicatorName;
+})
+return pal
+}};
 
 
-  }
-}
+
+
+
+
+//console.log(newArrayMexIndicator)
+
+    /*let indicatorsMexElected = databaseMex.filter(function (indicator) {
+      let indicadorName = newArrayMexIndicator;
+      let data = indicator.data;
+      let resultado = `${indicadorName} + ${data}`;
+      //console.log(resultado)
+     })*/
+   
+
+    //let newArrayMexIndicator = dataMex.map (indicator => //Nuevo array de datos México con data(año-datos) y nombre indicador
+       // return (indicator.data))
+    
+
+  // }
+ // }
+ 
+
+
+
