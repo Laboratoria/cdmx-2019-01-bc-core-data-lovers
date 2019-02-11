@@ -1,9 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,600i,700,800,900|Montserrat:400,500,500i,700,800,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+ 
+ body{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+ }
+ 
+ header{
+  width: 100%;
+  height: 8%;
+  background: #F6F6F6;
+  color: #212121;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+ }
+
+ header .container {
+  display: table; 
+}
+ 
+.container {
+  width: 100%;
+  margin: auto;
+  
+}
+#menu-bar {
+  display: none;
+}
+
+/* Icono del memmmnu: */
+header label { 
+  float: right;
+  font-size: 28px; 
+  margin: 6px 10;
+  cursor: pointer;
+}
+
+#logo {
+  float: left; 
+  position:absolute; 
+  height: 30px;
+  left: 16px;
+  top: 14px;
+} 
+
+.menu {
+  position: absolute;
+  top: 380%;
+  left: 0;
+  width: 100%;
+  height:100vh;
+  background: #FF3450;
+  transition: all 0.5s;
+  transform: translate(-100%);
+}
+
+.menu li a{
+  display: block;
+  top: 20%;
+  color: #fff;
+  height: 50%;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a:hover {
+  border-bottom: 2px solid rgba(250, 191, 191, 0.4);
+}
+
+#icon-menu:checked ~ .menu {   
+transform: translateX(0%);
+}
+
+section{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#banner{
+  margin-top: 30px;
+  position: relative;
+}
+
+
+#banner img {
+  height: 600px; 
+} 
+
+#banner .container_text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+}
+
+#banner h1 {
+  font-size: 25px;
+}
+
+#banner h2 {
+  text-align: center;
+  top: 50%;
+  padding: 2em;
+  font-size: 18px;
+}
+.btn {
+  top: 50%;
+  width: 50%;
+  height: 60%;
+  font-size: 15px;     
+  border-style: none;
+  background: #FF3450;
+  color: #fff;
+  transition: all 80ms;
+}
+
+.btn :hover{
+  background: #CD1F53;
+  transition: all 80ms;
+  cursor: pointer;  
+  box-shadow: 0px 0px 20px grey;
+}
+
+.btn :active{
+  background: #F62657;
+  transition: all 80ms;
+  color: rgba(225, 0, 30, 0.4);
+  transform: scale(0.9);
+}
+
+
+.btn-país {
+  margin-bottom: 1em;
+  top: 80%;
+  width: 70%;
+  height: 150%;
+  font-size: 15px;     
+  border-style: none;
+  background: #A5A5A5;
+  color: #fff;
+  transition: all 80ms;
+  flex-wrap: wrap;
+}
+
+.btn-país :hover {
+  background: #FF3450;
+  transition: all 80ms;
+  cursor: pointer;  
+  box-shadow: 0px 0px 20px grey;
+}
+
+
+.btn-país:active{
+  background: #F62657;
+  transition: all 80ms;
+  color: rgba(225, 0, 30, 0.4);
+  transform: scale(0.9);
+  color: #fff;
+}
+
+
+
+/* / {
+  font-family: "family=Montserrat";
+}
+
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  
-}
+  width: 100%;  
+} */
+
+/* #logo {
+  position:absolute;
+  height: 45px;
+  left: 25px;
+  top: 35px;
+} 
 
 header {
   position: fixed;
@@ -13,69 +196,109 @@ header {
   top: 0px;
   background: #F4F5F2;
   background-size: cover;
+} 
+
+#btn-menu {
+ display: none; 
 }
 
-main{
-  margin-top: 70px;
-}
+header label {
+  display: none; 
+  width: 5px;
+  height: 5px;
+  padding: 20px; 
+  border-left: 1px;
+} */
 
+/* header label:hover {
+cursor: pointer;
+background: rgba(0,0,0,0.3);
+} */
+
+/* .menu ul{
+width: 10%;
+text-align: right;
+display: inline-block;
+list-style: none;
+display: flex; 
+box-sizing: border-box;
+cursor: pointer;
+color: rgb(255, 88, 88);
+
+} */
+
+/* .menu li{
+  border-left: 1px: 
+} */
+
+/* .menu li a{
+display: block;
+padding: 15px 20px;
+color:black;
+text-decoration: none;
+} */ 
+
+/* @media (max-width:768px){
+
+    header label{
+      width: 20%;
+      display: block;
+    }
+
+    .menu{
+      text-align: right;
+      width: 100%;
+      background: white;
+      margin-left: 0%;
+      transition: all 1s;
+    } */
+
+    /* .menu ul{
+      flex-direction: column;
+    }
+
+    .menu li {
+      border-top: 1px;
+    } */
+
+    /* #btn menu:checked~.menu {
+      menu: 0:
+
+    }
+}   */
+
+/* 
 section {
-  padding: 0;
+  padding: 20px;
   height: 113vh;
-  background: url(./assets/images/img_home_low.jpg);
+  background: url(./assets/images/img_home_low.jpg) no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-
 }
-
-
-#logo {
-  position:absolute;
-  width: 43%;
-  height: 60px;
-  left: 14px;
-  top: 17px;
-}
-
-/*#bars {
-  width: 8%;
-  height: 30px;
-  left: 330px;
-  margin-left: 54%;
-  margin-top: 4%;
-  top: 30px;
-
-}*/
 
 #text{
  position: relative;
   width: 397px;
   height: 31px;
-  left: 19px;
+  left: 25px;
   top: 101px;
-  
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  font-size: 1.3em;
+  font-size: 2.2em;
   text-transform: uppercase;
-  
   color: #FFFFFF;
-  
   mix-blend-mode: normal;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-}
-
+} */
+/* 
 #indicator{
   margin-top: -19px;
-  background-color: beige;
-  
+  background-color:#F4F5F2;
 }
+  
 nav {
   width: 100%;
-}
+} 
 
 nav ul {
   list-style: none;
@@ -86,20 +309,29 @@ nav ul {
   text-align: right;
   margin: 0;
   transition: 1s;
-}
+} */
 
-nav ul li {
+/* nav ul li {
   display: inline-block;
   padding: 20px;
-}
-
+  top: 0px;
+} */
+/* 
 nav ul li a {
+  margin: 0;
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
 
-/*.menu-icon {
+nav ul li:hover {
+  background: #FF3450;
+  color: white; 
+  height: 8vh; */
+/* 
+}
+
+.menu-icon {
   width: 100%;
   background: #000;
   text-align: right;
@@ -108,17 +340,15 @@ nav ul li a {
   cursor: pointer;
   color: #fff;
   display: inline-block;
-}*/
+}
 
-
-
-/*@media(max-width: 580px) {
+*@media(max-width: 580px) {
   .logo {
     position: fixed;
     top: 0;
     margin-top: 16 px;
-  }
-
+  } */
+/* 
   nav ul {
     max-height: 0px;
     background: #000;
@@ -130,9 +360,9 @@ nav ul li a {
 
   .showing {
     max-height: 20em;
-  }
+  } */
 
-  nav ul li {
+  /* nav ul li {
     box-sizing: border-box;
     width: 100%;
     padding: 24px 0;
@@ -142,5 +372,5 @@ nav ul li a {
   .menu-icon {
     display: block;
     height: 10vh;
-  }*/
+  } */
 
