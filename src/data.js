@@ -11,10 +11,10 @@ window.data = {
         if (key == userValue) {
           yearResult = yearValue.substr(0, 4);
           userResult = element;
+          console.log(element)
         } //for if If 
       } //For IF
     } // For
-    console.log(yearResult, userResult)
     return [yearResult, userResult]
   } //Consult
 }; //window

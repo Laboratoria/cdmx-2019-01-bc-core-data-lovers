@@ -10,9 +10,11 @@ let searchbutton = document.getElementById("search");
 const resultsecc = document.getElementById("result");
 
 searchbutton.addEventListener("click", () => {
-      let yearValue = yearbutton.value;
-      let userValue = userbutton.value;
-      //Al evento de click de toma el valor de Usuario y del Año
-      //const resultYear = window.data.consult(yearValue, userValue)
-      resultsecc.innerHTML = `<b>Año:</b> <i>${yearValue}</i><br>`
+  let yearValue = yearbutton.value;
+  let userValue = userbutton.value;
+  //Al evento de click de toma el valor de Usuario y del Año
+  //const resultYear = window.data.consult(yearValue, userValue)
+  
+  resultsecc.innerHTML = `<b>Año:</b><i>${yearValue.substr(0, 4)}</i><br>`
+
 })
