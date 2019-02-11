@@ -115,40 +115,39 @@
   display: inline-block;
   background-color: #0763db;
   padding: 2%;
-  font-size: 60px;
-  margin: 12px;
+  font-size: 2vw;
+  margin: 1%;
   background-attachment: fixed;
 }
 #options {
+  float: right;
   width: 45vw;
   height: 69vw;
   background-attachment: fixed;
-  margin-left: 57%;
 }
 
 #optionsContainer {
-  width: 87%;
+  width: 74%;
   height: 27%;
   margin-top: 74%;
-  margin-left: 9%;
+  margin-left: 17%;
   background-attachment: fixed;
-  /* padding: 5%; */
 }
-  #rootContainer {
-    display: inline-block;
-    width: 41vw;
-    height: 69vw;
-    margin-left: 4vh;
-    background-attachment: fixed;
+#rootContainer {
+  display: inline-block;
+  width: 51vw;
+  height: 68vw;
+  background-attachment: fixed;
 }
 #root {
   display: inline-block;
-  width: 28vw;
-  height: 46vh;
+  width: 27vw;
+  height: 35vh;
   margin-top: 22vw;
   padding: 2%;
+  margin-left: 11%;
 }
-}
+
 #nextPage {
   background-color: transparent;
   color: transparent;

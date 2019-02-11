@@ -18,6 +18,7 @@ const butDragon= document.getElementById('Dragon');
 const butDark= document.getElementById('Dark');
 const butAscend= document.getElementById('ascendente');
 const butDescend= document.getElementById('descendente');
+const cleanButton = document.getElementById('limpiar');
 
 // Filtra fuego
 const typeFire = data.filter(data => data.type.includes("Fire"));
@@ -271,14 +272,9 @@ const dataMenor = data.sort(function (a, b) {
   }
 
 });
-// Muestra data de Z-A
-const dataMayor = data.sort(function (a, b) {
-  if (b.name > a.name ) {
-    return 1;
-  }
-  else if (b.name <  a.name) {
-    return -1;
-  }
-  
-});
 
+const clean = () => {
+  document.getElementById('root').innerHTML = '';
+}
+ 
+cleanButton.addEventListener('click', clean)
