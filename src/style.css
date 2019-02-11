@@ -147,6 +147,9 @@ footer {
   font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2em;
   color: #efc056;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #champion-list {
