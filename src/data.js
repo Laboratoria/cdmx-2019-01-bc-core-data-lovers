@@ -1,28 +1,29 @@
 window.data = {
-
-//     show:(data, type) => {
-
-        // const imprimir = (nombre,imagen,id) =>{
-
-        // const pokemons = document.getElementById("pokemons");
-
-        // let nombrePokemon = `<div class="divPokemon"><figure class="imgPokemon"><img src="${imagen}"></figure>
-        //                     <p class="namePokemon"> ${nombre}</p><br><p class="idPokemon"> Número: ${num}</p></div>`;
-
-        // pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
-
-
-
-//         };
-//     data.forEach(element =>{
-
-//         let nombre = element.name;
-//         let imagen = element.img;
-//         let num = element.num;
-//         imprimir(nombre, imagen, num);
-
-//      })
-//     return imprimir;
+    //
+    // show:(data, type) => {
+    //
+    //     const imprimir = (nombre,imagen,id) =>{
+    //
+    //     const pokemons = document.getElementById("pokemons");
+    //
+    //     let nombrePokemon = `<div class="divPokemon"><figure class="imgPokemon"><img src="${imagen}"></figure>
+    //                         <p class="namePokemon"> ${nombre}</p><br><p class="idPokemon"> Número: ${num.id}</p></div>`;
+    //
+    //     pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
+    //
+    //
+    //
+    //     };
+    // data.forEach(element =>{
+    //
+    //     let nombre = element.name;
+    //     let imagen = element.img;
+    //     let id = element.id;
+    //
+    //     imprimir(nombre, imagen, id);
+    //
+    //  })
+    // return imprimir;
 
 
 
@@ -34,12 +35,12 @@ filterPokemon:(dataPokemon,types) =>{
     // const tipoElegido = types;
 
     const arrayFilter = dataPokemon.filter(dataPokemon => dataPokemon.type.includes(types));
-    
+
     return arrayFilter;
 
 }
 
-    
+
 
 }
 

@@ -23,19 +23,35 @@ html,body{
     background-size: cover;
     background-position: center center;
     width: 300px;
-    height: 200px;
-    font-family: Pokemon-Solid;
+    height: 218px;
+    /* font-family: Pokemon-Solid; */
     color: rgb(65, 37, 43);
     display: inline-block;
-    padding: 2%;
-    margin: 2%;
+    padding: 0;
+    margin: 3%;
     border-radius: 10%;
-    font-size: 63%;
-}
-.divPokemon figure img{
-    display: inline-block;
-    position: absolute;
 
+}
+
+.namePokemon{
+  font-size: 63%;
+  letter-spacing: 1px;
+margin-top: 50%;
+margin-left:10%;
+margin-bottom: 60%;
+font-family: 'Indie Flower', cursive;
+
+}
+
+
+.divPokemon img{
+/* margin-top: 40%;
+margin right: : 50%; */
+position:absolute;
+   height:50%;
+   width:100%;
+   top:70px;
+   left:10px;
 }
 .divPokemon p{
     display: inline-block;
@@ -47,8 +63,19 @@ html,body{
     display: inline-flex;
     margin: 0%;
 }
+
+.namePokemon{
+margin-top: 20%;
+
+text-align: center
+
+
+}
+
+
+
 .styleButtonNext{
-/*     
+/*
     left: 45%;
     top: 55%;
     width: 10%;
@@ -89,7 +116,7 @@ html,body{
     width: 100%;
     height: 100%;
     display: inline-block;
-    
+
 }
 
 #serch{
@@ -110,4 +137,3 @@ html,body{
     width: 40%;
     display: inline-block;
 }
-
