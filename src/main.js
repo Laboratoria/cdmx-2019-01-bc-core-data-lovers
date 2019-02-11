@@ -16,6 +16,8 @@ const butRock= document.getElementById('Rock');
 const butGhost= document.getElementById('Ghost');
 const butDragon= document.getElementById('Dragon');
 const butDark= document.getElementById('Dark');
+const butAscend= document.getElementById('ascendente');
+const butDescend= document.getElementById('descendente');
 
 // Filtra fuego
 const typeFire = data.filter(data => data.type.includes("Fire"));
@@ -259,7 +261,33 @@ function filterDragon() {
     printDragon(name, imagen, type, id);
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> origin/master
+=======
+}
+// Muestra data de A-Z
+const dataMenor = data.sort(function (a, b) {
+  if (a.name > b.name) {
+    return 1;
+  }
+  else if (a.name < b.name) {
+    return -1;
+  }
+
+});
+// Muestra data de Z-A
+const dataMayor = data.sort(function (a, b) {
+  if (b.name > a.name ) {
+    return 1;
+  }
+  else if (b.name <  a.name) {
+    return -1;
+  }
+  
+});
+
+}
+>>>>>>> origin/rama-karen
