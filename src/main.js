@@ -54,7 +54,7 @@ const listQuestion = document.getElementById("list-question");
 //datos en select para mexico
 document.getElementById('btn_mex').addEventListener('click', () => {
   listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'ciudadesMex'; // setear ciudad que se va  filtrar al hacer click
+  listQuestion.dataset.ciudad = 'ciudadesMex'; // setear ciudad que se va  filtrar al hacer click (aqui toma los atributos del data)
   // insertamos una opcion por default
   listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
   countryMex.forEach(ciudad => {//elemento
@@ -102,6 +102,27 @@ listQuestion.addEventListener("change", () => {
     parrafo.innerHTML = `Año: ${resultadoAño} = ${resultado[resultadoAño] || 0} ` //imprimimos el año y numeros
     indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
   }
+  //----------------
+  //funcion busqueda por palabra
+  //const button = document.getElementById("buscar");
+  button.addEventListener("click",()=>{
+    
+    let buscar= document.getElementById("buscar");
+    console.log(buscar)
+    //console.log(buscar)
+  });
+    //let enlace= window.filter.searchingWord(buscar);
+//llamado.innerHTML= enlace;
+
+
+ //searchingWord: (buscar)=>{
+  //const print = (indicatorName) => {
+    //if(indicatorName.indexOf('buscar')!=-1){
+     //console.log(indicatorName);
+     //indicator.insertAdjacentHTML("beforeend", indicatorName);
+    //}
+//-------------------------------
+
 
   // indicator.innerHTML = "";
   // let selectQuestion = listQuestion.options[listQuestion.selectedIndex].text;
