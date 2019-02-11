@@ -90,7 +90,7 @@ text-align: center
     font-family: Pokemon-Solid;
     color: rgb(12, 10, 1);
     font-size: 2vw;
-    padding: 5% 5%;
+    padding: 20px 30px 20px 30px;
 }
 
 .styleButtonNext:hover{
@@ -137,3 +137,4 @@ text-align: center
     width: 40%;
     display: inline-block;
 }
+
