@@ -1,7 +1,11 @@
+
+
+
 //Declaración de variables para manipular la data
 const pokemones = document.getElementById('pokemones');
 var POKEMON;
 const dataPokemon = POKEMON.pokemon;
+const root = document.getElementById("root");
 
 //Declaración para el boton filtrar
 const btnFilterBy = document.getElementById('btnFilterBy');
@@ -24,6 +28,7 @@ btnFilterBy.addEventListener("click", () => {
   pokemones.style.display = "none";
   filtered_out.style.display = "block";
 });
+
 
 //Di: Botón que regresa a la pantalla que muestra todos los pokemones
 toReturn.addEventListener("click", () => {

@@ -47,12 +47,12 @@ img{
 
 /*Fa: Estilo para el logo de Pokemon de la pantalla de inicio*/
 .widthLog{
-    width:75%;
-    padding-top:15%; 
+    width: 50%;
+    padding-top: 3%; 
 } 
 
 .widthButton{
-    width: 25%;
+    width: 15%;
 }
 
 .center{
@@ -156,26 +156,134 @@ img{
 }
 
 /*Fa---Aquí comienzan los breakpoints*/
-@media (max-width: 576px) { 
+@media (max-width: 1024px) { 
 .wellcomeBackground{
-    background-image:url(./images/pokeball_inicio_mobile.jpg);
+    background-image:url(./images/pokeball_wellcome.jpg);
     background-size: cover;
     height: 100vh; 
  }
+img{
+    size: auto;
+}
+ 
+.btnPokemon{
+    width: 47%;
+    height: 450px;
+}
 
  .widthLog{
-    width:130%;
-    padding-top:15%; 
+    width: 52%;
+    padding-top:4%; 
 } 
 
 .widthButton{
-    width: 50%;
+    margin-top: 3%;
+    width: 15%;
 }
 
 .name{
     border-radius: 25px;
     background-color: rgba(27, 27, 27, 0.9);
-    font-size: 1em;
+    font-size: 2em;
 }
 
-}/* <----Cierre del @Media de 576px*/
+}/* <----Cierre del @Media de 1024px*/
+
+@media (max-width: 768px) { 
+    .wellcomeBackground{
+        background-image:url(./images/pokeball_inicio_mobile.jpg);
+        background-size: cover;
+        height: 100vh; 
+     }
+
+    img{
+        width: auto;
+    }
+     
+    .btnPokemon{
+        width: 32%;
+        height: 230px;
+    }
+    
+     .widthLog{
+        width: 70%;
+        padding-top:6%;
+    } 
+    
+    .widthButton{
+        width: 20%;
+    }
+    
+    .name{
+        border-radius: 25px;
+        background-color: rgba(27, 27, 27, 0.9);
+        font-size: 1em;
+    }
+    
+    }/* <----Cierre del @Media de 768px*/
+
+    @media (max-width: 480px) { 
+    .wellcomeBackground{
+        background-image:url(./images/pokeball_inicio_mobile.jpg);
+        background-size: cover;
+        height: 100vh; 
+     }
+    
+    img{
+        width: auto;
+    }
+     
+    .btnPokemon{
+        width: 32%;
+        height: 230px;
+    }
+    
+     .widthLog{
+        width: 70%;
+        padding-top:5%;
+    } 
+    
+    .widthButton{
+        width: 20%;
+    }
+    
+    .name{
+        border-radius: 25px;
+        background-color: rgba(27, 27, 27, 0.9);
+        font-size: 1em;
+    }
+    
+    }/* <----Cierre del @Media de 480px*/
+
+    @media (max-width: 376px) { 
+        .wellcomeBackground{
+            background-image:url(./images/pokeball_inicio_mobile.jpg);
+            background-size: cover;
+            height: 100vh; 
+        }
+
+        img{
+            width: auto;
+        }
+         
+        .btnPokemon{
+            width: 47%;
+            height: 230px;
+        }
+        
+         .widthLog{
+            width: 95%;
+            padding-top:10%;
+        } 
+        
+        .widthButton{
+            width: 30%;
+        }
+        
+        .name{
+            border-radius: 25px;
+            background-color: rgba(27, 27, 27, 0.9);
+            font-size: 1em;
+        }
+        
+        }/* <----Cierre del @Media de 430px*/
