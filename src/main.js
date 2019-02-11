@@ -18,11 +18,11 @@ startButton.addEventListener('click', () => {
   start.classList.add('hide');
   championList.classList.remove('hide');
   const newArrayChamp = window.lol.showData(lolData);
-  print(newArrayChamp);
+  printData(newArrayChamp);
 });
 
 //Función para imprimir la data en el HTML
-const print = (newArrayInfo) => {
+const printData = (newArrayInfo) => {
   cardSummary.innerHTML = "";
   newArrayInfo.forEach(champ => {
     let result = `<div class="champion"> <img src="${champ.splash}">
@@ -38,9 +38,9 @@ search.addEventListener('keyup', () => {
   const newArrayChamp = window.lol.showData(lolData);
   let filtered = window.lol.filterByName(name2, newArrayChamp);
   if (name2 == "" ) {
-    print(newArrayChamp);
+    printData(newArrayChamp);
   } else {
-  print(filtered);
+      printData(filtering);
 }
 })
 
@@ -51,7 +51,7 @@ const selectRol = () => {
       let rolId = rol[i].id;
       const newArrayChamp = window.lol.showData(lolData);
       const arrayFiltered = window.lol.filterByRol(rolId, newArrayChamp);
-      print(arrayFiltered);
+      printData(arrayFiltered);
     })
   }
 }
@@ -61,19 +61,19 @@ selectRol();
 attack.addEventListener('click', () => {
   const newArrayChamp = window.lol.showData(lolData);
   const attackSort = window.lol.sorterByAttack(newArrayChamp);
-  print(attackSort);
+  printData(attackSort);
 });
 
 magic.addEventListener('click', () => {
   const newArrayChamp = window.lol.showData(lolData);
   const magicSort = window.lol.sorterByMagic(newArrayChamp);
-  print(magicSort);
+  printData(magicSort);
 });
 
 defense.addEventListener('click', () => {
   const newArrayChamp = window.lol.showData(lolData);
   const defenseSort = window.lol.sorterByDefense(newArrayChamp);
-  print(defenseSort);
+  printData(defenseSort);
 });
 
 back.addEventListener('click', () => {

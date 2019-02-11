@@ -73,12 +73,20 @@ sorterByDefense: (newArrayChamp) => {
  });
 return defenseSorter;
 },
-  //esta llave cierra window.lol
 
   filterByName: (name2, newArrayChamp) => {
-    filtering = newArrayChamp.filter(element => (element.id.toLowerCase().match (name2.toLowerCase())));
+  //   name2 = name2.toLowerCase()
+  //   for( champ2 of newArrayChamp) {
+  //     let champName = champ2.id.toLowerCase();
+  //       if(champName.indexOf(name2) != -1){
+  //         return champ2;
+  //       }
+  //   }
+      filtering = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
     return filtering;
   }
+//esta llave cierra window.lol
+
 }
 
 // // esta es una función de ejemplo
