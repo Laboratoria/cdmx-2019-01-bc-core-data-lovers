@@ -1,168 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>ProMujer</title>
-        <meta charset="utf-8">
+       <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="assets/fontello.css">
-      </head>
-      
-      <body> 
-        <header>
-            <div class="container">
-              <img id="logo" src="assets/images/logo_proMujer.png" alt="Logo ProMujer">
-              <input type="checkbox" id="icon-menu">
+      <title>ProMujer</title> 
+      <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="assets/fontello.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" href="fonts.css">
+      </head> 
+        **
+             <input type="checkbox" id="icon-menu">
               <label class="icon-menu" for="icon-menu"></label>
-              <nav class="menu">
-                <li><a href="#">Inicio</a></li> 
-                <li><a href="#">Estadísticas</a></li>
-                <li><a href="#">Conferencias</a></li>
-                <li><a href="#">Contacto</a></li>
-              </nav>
-            </div>
-        </header>
-        <main>
-          <section id="banner">
-            <img src="assets/images/img_home_low.jpg">
-            <div class="container_text">
-                <h1>Somos un centro de investigación que busca mejorar la vida de las mujeres en America Latina.</h1><br><br>
-                <p>Soñamos con un país con acceso a la educación y a un trabajo digno.</p>
-              </div>
-              <section id=btn-Estadísticas>
-                  <h2> Conoce los niveles de educación de las mujeres en América Latina. </h2>
-                  <input type="button" class="btn" value=Estadísticas>
-                </section>
-          </section>
-
-          <section id=btnPaíses>
-              <h3> Selecciona un país: </h3>
-            <input type="button" class="btn-país" value=Brasil>
-            <input type="button" class="btn-país" value=Chile>
-            <input type="button" class="btn-país" value=México>
-            <input type="button" class="btn-país" value=Perú> 
-          </section>
-
-        </main>
-
-<!-- 
-        <script src="./data/injuries/injuries.js"></script> -->
-        <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-        <!-- <script src="./data/steam/steam.js"></script> -->
-        <script src="./data/worldbank/worldbank.js"></script>
-        <!-- <script src="./data/lol/lol.js"></script> -->
-        <script src="data.js"></script>
-        <script src="main.js"></script>
-      
-      </body>
-      
-      </html>
-      
-      
-
-
-
-      
-<!-- 
-<figure class="logo">
-              <img id="logo" src="assets/images/logo_proMujer.png" alt="Logo ProMujer">
-            </figure>
-              
-            <nav class="menu"> 
-            
-                <label for="btn-menu"><img src="assets/images/menu.png" alt="IconMenu"></label>
-              <ul>
-                <li><a href="#">Estadísticas</a></li>
-                <li><a href="#">Conferencias</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </nav>
-        </header>
-      
-        <main class="main">
-          <section>
-            <div id="text">
-              <p>Centro de investigación
-                <br>para el Desarrollo
-                <br>de la mujer
-                <br>en Latinoamérica.</p>
-            </div>
-          </section>
-      
-          <section>
-            <div id="indicator">
-      
-            </div>
-          </section>
-      
-          <div id="root"></div>
-        </main> -->
-<!-- 
-  <script src="./data/injuries/injuries.js"></script>
-  <script src="./data/pokemon/pokemon.js"></script>
-  <script src="./data/steam/steam.js"></script> -->
-  <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-  <!-- <script src="./data/lol/lol.js"></script> -->
-  <!-- <script src="data.js"></script>
-  <script src="main.js"></script> -->
-
-<!-- </body>
-
-</html>  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
-  <title>ProMujer</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="fonts.css">
-    
-</head>
-
+  <label for="btn-menu"><img src="assets/images/menu.png" alt="IconMenu"></label>
+     **
 <body>
   <header class="header">
+    <div class="container">
       <figure class="logo">
         <img id="logo" src="assets/images/logo_proMujer.png" alt="Logo ProMujer">
       </figure>
         
-      <nav class="menu"> 
-      
-          <label for="btn-menu"><img src="assets/images/menu.png" alt="IconMenu"></label>
+      <nav class="navigation"> 
         <ul>
-          <li><a href="#">Estadísticas</a></li>
-          <li><a href="#">Conferencias</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#countries">Estadísticas</a></li>
+          <li><a href="#conferencias" type="button" id="conf">Conferencias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
   </header>
 
   <main class="main">
-    <section>
+    <section id="home">
       <div id="text">
         <p>Centro de investigación
           <br>para el Desarrollo
           <br>de la mujer
-          <br>en Latinoamérica.</p>
+          <br>en México.</p>
       </div>
     </section>
 
-    <section>
-      <div id="indicator">
+    
+    <section id="countries">
+      <h2>Selecciona el indicador de tu interés.</h2>
+      <select id="filtrar-pais" name="paises">
+        <option value="value1">Indicador</option>
+        <option value="MEX">Inscripción escolar, nivel terciario, mujeres (% bruto)</option>
+        <option value="PER">Proporción de inscripciones de mujeres con respecto a varones en la educación terciaria (%)</option>
+        <option value="CHL">Desempleo, mujeres (% de participación femenina en la fuerza laboral) (estimación nacional)</option>
+        <option value="BRA">Personas desempleadas con educación avanzada, mujeres</option>
+      </select>
 
-      </div>
-    </section>
+      <!--<section id="countries">
+      <button id="BRA" value="BRA" class="button" >Brasil</button>
+      <button id="CHL" value="CHL" class="button">Chile</button>
+      <button id="MEX" value="MEX" class="button">México</button>
+      <button id="PER" value="PER" class="button">Perú</button>
+    </section>-->
 
-    <div id="root"></div>
-  </main> -->
+      <section>
+        <div id="indicator">
+        </div>
+      </section>
+
+      <section id="conferencias">
+          <h2>Conoce nuestras conferencias.</h2>
+          <p>¿Quieres que tu audiencia VIBRE de emoción, ENCUENTRE las herramientas que necesita 
+            <br>para su vida o para su emprendimiento y, sobre todo, pase un MOMENTO increíble lleno de 
+            <br>dinamismo, motivación y conocimiento?
+            
+            <br>¡Entonces trabajemos juntos y hagamos de tu evento UN ÉXITO!
+            Mi experiencia como speaker abarca temas de Desarrollo Humano y Personal, 
+            <br>Emprendimiento, Empoderamiento Femenino, Marketing Digital y Negocios 
+            <br>Digitales, Liderazgo y Responsabilidad Social.
+          
+            <br>
+            Entre nuestros clientes se encuentran: la Universidad de Tamaulipas, la Universidad Politécnica del Valle de
+            México,la Procuraduría de Justicia del Estado de Veracruz, Grupo Bayer, Grupo Carvajal, 
+            <br>Young Living México, El sistema DIF del Estado de Hidalgo, CANACINTRA, la Universidad Politécnica del Valle de México, 
+          <br>el Instituto Tecnológico de Chilpancingo, Banco INVEX,
+            Bcysa Servicios Industriales, JR Consultores y Grupo MAP, entre otros.</p>
+        </section>
+    
+        <section id="contacto">
+          <h2>Para cualquier duda o información.</h2>
+          <p>
+            Si deseas contactarnos, puedes hacerlo de las siguientes maneras:
+            <br>
+            1. Envía un correo electrónico a:
+            info@promujer.org.mx
+            <br>
+            2. Llama al (55) 55530109, de 9 a 15 horas.
+            <br>
+            3. Síguenos en nuestra página de Facebook: ProMujer, o Twitter: @ProMujer.
+          </p>
+        </section>
+   
+      <div id="root"></div>
+  </main>
+
+
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
+
