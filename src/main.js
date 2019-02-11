@@ -15,6 +15,8 @@ searchbutton.addEventListener("click", ()=>{
   let userValue = userbutton.value;
   //const resultYear = window.data.consult(yearValue,userValue)
   //const resultUser = window.data.consult(userValue)
-resultsecc.innerHTML= window.data.consult(yearValue,userValue)
+resultData= window.data.consult(yearValue, userValue);
+resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`
+console.log();
 })
 //<br><b>Total de heridos en ${userValue};</i>

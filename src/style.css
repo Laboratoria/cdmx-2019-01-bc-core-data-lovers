@@ -6,7 +6,10 @@ nav {
 header {
   background: white;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 figure{
@@ -97,7 +100,7 @@ transition: all .5s ease;
   }
 
   .menu-toogle::before {
-     content:"☰";
+     content:;
      font-size:32px;
      color:white;
    }

@@ -3,7 +3,7 @@ window.data = {
   consult: (yearValue, userValue) => {
     const injuriesby = INJURIES;
 
-    //Variables que guardan en resultado de la busqueda
+//Variables que guardan en resultado de la busqueda
     let yearResult = " ";
     let userResult = " ";
 
