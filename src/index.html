@@ -43,7 +43,7 @@
     <p>Para consultar la información, seleccione el indicador de su interés y el país del cual desea realizar la consulta.</p>
 <section id="selectorBox">
     <select id="filtrar-indicador" name= "indicators" class="selectors">
-        <option value= "value1"> Indicador</option>
+        <option value="" disabled selected>Indicador</option>
         <option value= "Población de 80 años en adelante, mujeres (% de la población femenina)">Población de 80 años en adelante</option>
         <option value= "Población de 75 a 79 años, mujeres (% de la población femenina)">Población de 75 a 79 años</option>
         <option value= "Población de 70 a 74 años, mujeres (% de la población femenina)">Población de 70 a 74 años</option>     
@@ -66,7 +66,7 @@
 
   
   <select id="filtrar-pais" name="paises" class="selectors" >
-    <option value= "value1"> País</option>
+      <option value="" disabled selected>País</option>
     <option value= "MEX">México</option>
     <option value= "PER">Perú</option>
     <option value= "CHL">Chile</option>
@@ -74,19 +74,37 @@
   </select>
 
   <select id="order" class="selectors">
-    <option value= "value1"> Ordenar</option>
+      <option value="" disabled selected>Ordenar</option>
     <option value= "asc"> Ascendente</option>
     <option value= "desc"> Descendente</option>     
   </select>
-</section>
-</section>
-<section id="contenido">  
+
+ <input id="limpiar" type="button" class="boton" value="Limpiar">
  
 </section>
+<section id="graf">
+  <div class="grafica">
+    <canvas id="myChart" width="20" height="20" class="grafica-muestra">  
+ 
+     </canvas>
+</div>
+</section>
+
+
+</section>
+
+<section id="contenido">  
+  
+
+</section>
+
+
+
 <!-- <script src="./data/injuries/injuries.js"></script> -->
   <!-- <script src="./data/pokemon/pokemon.js"></script> -->
   <!-- <script src="./data/steam/steam.js"></script> -->
   <script src="./data/worldbank/worldbank.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
   <!-- <script src="./data/lol/lol.js"></script> -->
   <script src="data.js"></script>
 <script src="main.js"></script>
