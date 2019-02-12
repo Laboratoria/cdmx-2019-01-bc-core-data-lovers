@@ -33,7 +33,7 @@ figure{
 }
 
 .sidebar {
-  position: absolute;
+position: absolute;
 width: 200px;
 height: 100vh;
 top: 0;
@@ -88,13 +88,12 @@ transition: all .5s ease;
 
 .menu-toogle {
     position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
-    width: 35px;
     line-height:1.1;
     text-align:center;
     top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
-    left: 8px;
+    right: 8px;
     border-radius:3px;
-    background-color: #142b25;
+    background-color: transparent;
     transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
     z-index:10;
   }
@@ -106,17 +105,18 @@ transition: all .5s ease;
    }
 
    .checkbox {
-     display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+     float: right;
+      /*Ocultamos el checkbox pues no nos interesa que se vea*/
    }
-   .checkbox:checked ~ .nav {
-     left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+   .checkbox:checked ~ .sidebar {
+     right:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
      position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
    }
    .checkbox:checked ~ .main-w {
-     margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+     margin-right:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
    }
    .checkbox:checked ~ .menu-toogle {
-     left:208px;
+     right:208px;
      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
    }
 
@@ -126,7 +126,7 @@ transition: all .5s ease;
   width: auto;
   height: 100%;
   margin-block-end: 0%;
-  margin-block-start: 0%;
+  margin-block-start: 15%;
   color: white;
   text-align: justify;
   font-family: sans-serif;
@@ -213,6 +213,11 @@ p {
   padding: 1%;
 }
 
+.result{
+  text-align: center;
+  font-family: sans-serif;
+  margin-block-end: 20%;
+}
 
 .photos {
   background-color: #eb008b;
@@ -229,6 +234,13 @@ footer {
   height: 100%;
   text-align: center;
 
+}
+
+#footer{
+  font-size: 60%;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 8%;
 }
 
 .redes {
