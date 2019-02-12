@@ -1,4 +1,5 @@
-const data= POKEMON.pokemon; //trae la data//
+
+const data= window.POKEMON.pokemon; //trae la data//
 const initialPage=document.getElementById('initial-page'); //pagina de inicio//
 const pokemonPage=document.getElementById('pokemon-page'); //página de pokemones//
 const pokeballButton=document.getElementById('pokeball-button'); 
@@ -35,10 +36,10 @@ for(let i = 0; i <buttonType.length; i++ ){
   buttonType[i].addEventListener('click',() => {
   let pokemonElegido = buttonType[i].id
   printList.innerHTML = '';
-  const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido )
+  const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido);
     print(pokemonFiltrados)
 });
-};
+}
 
 pokeButtonHome.addEventListener('click',() => {
     printList.innerHTML='';
