@@ -10,7 +10,7 @@ const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
-//let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
+/*let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica*///comentar grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
 let pais;
@@ -57,10 +57,10 @@ const filtraIndPais = () =>{
     valorAnioX=[]; //inicializa los arreglo eje X para el pintado de la grafica
     valorPorcentajeY=[]; //inicializa los arreglo eje Y para el pintado de la grafica
     contenido.style.display= 'block';
-    let select= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
+    let selectPais= selOption.value; //Select optiene el valor de cada value "MEX", "PER","BRA","CHL"
     let indicador = nameIndicators.value;
     //console.log(select);
-     pais = window.worldBank.filtroPais(baseDatos,select,indicador); //Se llama la funcion window.filtroPais con el valor de selec
+     pais = window.worldBank.filtroPais(baseDatos,selectPais,indicador); //Se llama la funcion window.filtroPais con el valor de selec
      recorrerObjeto (pais); 
 }
 selOption.addEventListener('change',filtraIndPais); //funcion recorre el objeto
@@ -83,8 +83,9 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
    valorPorcentajeY.push(pais[j]);
   }
  document.getElementById('contenido').innerHTML = respuesta;
- document.getElementById('graf').style.display='block';
- //VerGrafica();
+
+/* document.getElementById('graf').style.display='block';//comentar grafica
+ VerGrafica();*/
  return respuesta;
 }
 
@@ -103,6 +104,7 @@ const orderByAscent = () =>{
     let order= orderAscDat.value;
     //console.log(order);
     let orderObj = window.worldBank.orderByAsc(order,arrayOrder)
+    //console.log(orderObj);
     prtOrder(orderObj)
 }
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
@@ -119,7 +121,9 @@ const limpiar = () => {
 //console.log(limpiar);
 
 
-/*console.log(valorAnioX);
+
+/*console.log(valorAnioX);  //comentar grafica
+
 console.log(valorPorcentajeY);
 
 const VerGrafica=()=>{
@@ -132,6 +136,7 @@ const VerGrafica=()=>{
                 label: 'Indicador Demografico (%)',
                 data: valorPorcentajeY,
                 backgroundColor: [
+
                     'rgba(77, 169, 197, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
@@ -140,6 +145,7 @@ const VerGrafica=()=>{
                     'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
+
                     'rgba(11,68,85,1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
