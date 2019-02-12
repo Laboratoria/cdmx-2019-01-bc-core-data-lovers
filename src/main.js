@@ -5,6 +5,7 @@ document.getElementById("next").addEventListener("click", ()=>{
 })
 
 
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -16,21 +17,28 @@ function myFunction() {
 
 
 
+
+ var POKEMON;
+
 const dataPokemon = POKEMON.pokemon;
-const buttonTypes = Array.from( document.getElementsByClassName("typesPokemon"));
+const buttonTypes = Array.from( document.getElementsByClassName("bottonPokemons"));
 
 document.getElementById("showPokemons").addEventListener("click", ()=> {
 
+
   window.data.show(dataPokemon);
+=======
+  
+  imprimir(dataPokemon);
 
 })
 
 
 const obtenerTipo = (arregloBotones) => {
 
-  arregloBotones.map((tipoPokemon) => {
+  arregloBotones.map((tipo) => {
 
-      tipoPokemon.addEventListener("click", (event) =>{
+      tipo.addEventListener("click", (event) =>{
 
 
       const getTypePokemon = event.target.id;
@@ -54,7 +62,10 @@ const imprimir = (obtenerTipo) =>{
       obtenerTipo.map((dataPokemon) => {
 
    pokemons.innerHTML+= `<div class="divPokemon" "><figure class="imgPokemon"><img src="${dataPokemon.img}"></figure>
-                       <p class="namePokemon" id="nameCenter"> ${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+                       <p class="namePokemon" id="nameCenter"> Nombre:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
 
 
 })}
+
+
+

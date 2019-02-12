@@ -132,7 +132,7 @@ margin-right: -40px;
 
 .divPokemon{
     position: relative;
-    background-image: url(../src/assets/img/pokedex1.jpg);
+    background-image: url(../src/assets/img/pokedex1.png);
     background-size: cover;
     background-position: center center;
     width: 300px;
@@ -185,21 +185,19 @@ text-align: center
 
 }
 
-
-
 .styleButtonNext{
-
-    border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    border: 3% groove #000000;
-    cursor:pointer;
-    -webkit-transition-duration: 0.10s;
-    transition-duration: 0.4s;
-    font-family: Pokemon-Solid;
-    color: rgb(12, 10, 1);
-    font-size: 2vw;
-    padding: 20px 30px 20px 30px;
+  
+  border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border: 3% groove #000000;
+  cursor:pointer;
+  -webkit-transition-duration: 0.10s;
+  transition-duration: 0.4s;
+  font-family: Pokemon-Solid;
+  color: rgb(12, 10, 1);
+  font-size: 2vw;
+  padding: 20px ;
 }
 
 .styleButtonNext:hover{
@@ -246,3 +244,5 @@ text-align: center
     width: 40%;
     display: inline-block;
 }
+
+

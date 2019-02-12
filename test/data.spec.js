@@ -1,12 +1,15 @@
-// require('../src/data.js');
-
+require('../src/data.js');
 
 describe('data', () => {
-  it('is a function', () => {
-    expect(typeof data).toBe('object');
+  it('is a object', () => {
+    expect(typeof window.data).toBe('object');
   });
-
-  // it('returns `example`', () => {
-  //   expect(example()).toBe('example');
-  // });
 });
+
+describe('filterPokemon', () => {
+  it('is a function', () => {
+    expect(typeof window.data.filterPokemon).toBe('function');
+  });
+});
+
+
