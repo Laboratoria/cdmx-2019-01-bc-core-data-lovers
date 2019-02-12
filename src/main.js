@@ -1,5 +1,7 @@
-//Declaración de variables
+//Declarar objeto de la data
 const data = POKEMON.pokemon; 
+
+// Declara array de botones y espacio a imprimir 
 const buttonFilter = Array.from(document.getElementsByClassName("boton-typeChart"));
 const optionsContainer = document.getElementById('optionsContainer');
 
