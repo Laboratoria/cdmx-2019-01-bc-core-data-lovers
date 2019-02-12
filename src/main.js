@@ -6,9 +6,11 @@ let userbutton = document.getElementById("user");
 let searchbutton = document.getElementById("search");
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
+//Constante que contiene la data
+const injuriesBy = window.INJURIES;
+
 //Al evento de click de toma el valor de Usuario y del Año.
 searchbutton.addEventListener("click", ()=>{
-  const injuriesBy = window.INJURIES;
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
   //const resultYear = window.data.consult(yearValue,userValue)
