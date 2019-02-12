@@ -12,7 +12,7 @@ const back = document.getElementById('back');
 //Input para buscar por nombre
 let search = document.getElementById('search');
 
-const lolData = LOL.data;
+const lolData = window.LOL.data;
 //Evento del boton Comenzar
 startButton.addEventListener('click', () => {
   start.classList.add('hide');
