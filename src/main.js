@@ -7,6 +7,7 @@ const buttonType=document.getElementsByClassName('type-button');
 const pokeButtonHome=document.getElementById('poke-button-home'); 
 
 
+
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
  initialPage.classList.add('hideElement');    
  pokemonPage.classList.remove('hideElement');
@@ -51,85 +52,32 @@ for(let i = 0; i <buttonType.length; i++ ){
 
 
 
+const ascendente=document.getElementById('Ascendente');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const typeSortButton=document.getElementsByClassName('type-sort-button');//lo agregue 110219
-const ascendente=document.getElementById('Ascendente');//lo agregue 110219
-//const mayor=document.getElementById('Mayor');
 //data.name=undefined
 
-//lo agregue 110219
-let nameSortAscend=[];
-ascendente.addEventListener('click',() =>{
-  data.forEach(element => {
-    nameSortAscend.push(element.name)
-   });
-   //console.log(nameSortAscend.sort())
- })
+
+
  
-// let ordenarCandies = candies.sort((a,b)=>{
-// if(a.candy_count>b.candy_count){
-//   return 1;
-// }if(a.candy_count<b.candy_count){
-//   return -1;
-// } return 0;
-// });
-
-// console.log(ordenarCandies)
 
 
 
-// mayor.addEventListener('click',() =>{
-//   data.forEach(element => {
-//    // console.log(element.candy_count)
-//    });
-   
- 
-//  })
+let ordenarNombre=[];
+ordenarNombre = data.sort((a,b)=>{
+if(a.name>b.name){
+  return 1;
+}if(a.name<b.name){
+  return -1;
+} return 0;
+});
+
+console.log(ordenarNombre)
+
+
+
+
  
   
 
