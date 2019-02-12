@@ -4,26 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Sidenav.init(elems);
 });
 /*convierte la base de datos en una variable*/
-const datalol = LOL.data;
+const datalol = window.LOL.data;
 const datosArr = window.lol.iterarData(datalol);
 const rol = document.getElementsByClassName('rol');
 const imprimirRoles = document.getElementById("imprimirRoles")  /*trae el div imprimir roles para identificarlo e imprimir*/
-const hamburguerButton = document.getElementById("hamburguerButton");
 let search = document.getElementById("search");
 const home = document.getElementById("home");
 const homeB = document.getElementById("home-b");
 const searchChampion = document.getElementById("searchChampion");
 const searchChampionB = document.getElementById("searchChampion-b");
 
-//const search = document.getElementById("search").value
-//const arrayData = Object.values(datalol)
-// hamburguerButton.addEventListener("click",() =>{
-//     const menu = document.getElementById("menu");
-//     const displayMenu= document.getElementById("btn-menu").style.display="block";
-//     menu.classList.toggle("hamburguerButton");
-// });
-
-//regresar a home limpiando el contenido antes mostrado
 const cleanHome = () =>{
   imprimirRoles.innerHTML = "";
 }; 

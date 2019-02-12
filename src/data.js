@@ -17,7 +17,7 @@ window.lol = {
   },
   
    filtroDataRoles: (rolId, datosArr ) =>{  
-      filtradoPorRoles = datosArr.filter(element => element.tag === rolId);
+      const filtradoPorRoles = datosArr.filter(element => element.tag === rolId);
  
        return filtradoPorRoles
      },
