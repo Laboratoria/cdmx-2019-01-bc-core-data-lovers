@@ -9,9 +9,11 @@
 
    * {
     box-sizing: border-box;
-    background:black;
-    color:white;
+    text-align: center;
+    background: black;
+    color: white;
    }
+
 
    h1{
     font-family: 'Staatliches', cursive;
@@ -38,30 +40,30 @@
    }
  
    }
-   button{
-    border-color:white;
-    margin: 1px 1px;
-   border-radius: 5px;
-   background: black;
+   .buttonsType{
+    border-color:black;
+    margin: 3px 3px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
    }
    
     body{
-       
         background-position: center;
-        text-align: center;   
+        text-align: center;
+
     }
    
 
-p{
+    p{
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 30px;
     max-width: 100%;        
     height: auto; 
     margin:0 auto; 
-    
+        border-radius: 10px white;
+        padding-top: 20px;
   }
-  
-
 #busqueda {
   font-family: 'Ubuntu Condensed', sans-serif;
   border: solid 2px;
@@ -70,15 +72,21 @@ p{
   -webkit-border-radius: 10px;
   border-radius: 10px;
     height: 0 auto;
-    width: 90%;
+   
 }
 ::placeholder{
-    font-size: 27px;
+    font-size: 20px;
 }
 #result {
   font-size: 20px;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
+.grid-img{
+    display: grid;
+    grid-gap: 1px 1px;
+    grid-template-columns: repeat(auto-fill, minmax(191px, 1fr) ) ;
+}
+
 
 button{
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -90,6 +98,7 @@ button{
     width: 0 auto;
 
 }
+
 
 
 
