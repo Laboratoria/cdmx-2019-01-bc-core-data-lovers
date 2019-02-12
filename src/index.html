@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--Agregue mas instrucciones para responsive-->
 
   <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
   <!--Faby:Este link es de la librería de Bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -41,16 +39,17 @@
       <!--Div de boton filtrar -Estos cambios se quedan-->
       <div class="row space">
         <div class="col-3">
-          <!--Div para crear espacio-->
+          <!--Div para crear espa cio-->
         </div>
         <div class="col-6"><img id="toReturn" class="widthLogData" src="images/International_Pokémon_logo.svg.png" alt=""></div>
-        <div class="col-3"><button id="btnFilterBy" class="btn-warning btn-lg">FILTRAR</button></div>
+        <div class="col-3"><button id="Water" class="btn-warning btn-lg filterData">FILTRAR</button></div>
       </div>
     </div>
     <!---Cierre de Div de Boton filtrar-->
 
     <div id="pokemones" class="hide">
     </div>
+    <div id="infoPokemon"></div>
   </section>
   <!--Cierre del Div donde se visualiza el fondo-->
   <section class="pokemonBackground">
@@ -61,16 +60,14 @@
 
 
 
-
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"></script>
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
   <!--Faby:Estos también son links de Bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
   <footer></footer>
 </body>
 
