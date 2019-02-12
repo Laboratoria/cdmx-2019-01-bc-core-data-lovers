@@ -4,11 +4,23 @@ document.getElementById("next").addEventListener("click", ()=>{
     document.getElementById("main").style.display="none";
 })
 
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
 const dataPokemon = POKEMON.pokemon;
 const buttonTypes = Array.from( document.getElementsByClassName("typesPokemon"));
 
 document.getElementById("showPokemons").addEventListener("click", ()=> {
-  
+
   window.data.show(dataPokemon);
 
 })
