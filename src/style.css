@@ -159,9 +159,17 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: black;
-  left: 0px;
+  left: -24px;
   height: 2.2em;
   padding-top: 30px;
+}
+
+#footer-lens {
+  width: 4%;
+  position: absolute;
+  margin-top: -2%;
+  margin-left: 1%;
+  ;
 }
 
 #champion-list {
