@@ -18,8 +18,6 @@ const arrayPokemon= dataPokemon ;
 
 
 
-
-
 /*
 
 
