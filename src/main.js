@@ -6,29 +6,12 @@ const contentByMode = Array.from(document.getElementsByClassName('infoBody'));
 const tableByMode = Array.from(document.getElementsByClassName('dataTable'));
 let printOnce = [];
 
-
-//Comprobamos que nos "jala" la data del modo que seleccionamos
-//console.log(bottonstByMode[1]);
-
 for (let i = 0; i < bottonstByMode.length; i++) {
   printOnce.push(true);
   bottonstByMode[i].addEventListener('click', function(e) {
-
     const accidentsData = getNeededData(e.target.name);
     hideAllContent();
     //Display the information panel (this is only used if we preffer to show the panel via javascrip and not in the css)
-
-// Declaramos las variables de la sección de Year
-let selectedYear = document.getElementById('selected_year');
-let visualizeData = document.getElementById('visualize_data');
-let resultGraphic = document.getElementById('result_graphic');
-//Función para que al evento de click sobre el botón de Visualize Data
-visualizeData.addEventListener("click", () => {
-  let yearValue = selectedYear.value;
-  //let visualizeValue = visualizeData.value;
-  const resultData = window.data.consult(yearValue);
-  console.log(resultData);
-
     showThePanel();
     contentByMode[i].style.display = 'block';
     //Print in the information panel all the information
@@ -43,3 +26,23 @@ function hideAllContent() {
   }
 }
 
+function getNeededData(fieldToSearch) {
+  return window.data.getData(fieldToSearch);
+
+}
+//(this is only used if we preffer to show the panel via javascrip and not in the css)
+function showThePanel() {
+  //open the data Panel
+}
+
+function printTheData(accidentsByYear, tableToPrint, canPrint) {
+  accidentsByYear.forEach(element => {
+    printDataInHTML(element.year, element.number, tableToPrint, canPrint);
+  });
+}
+
+function printDataInHTML(year, number, tableToPrint, canPrint) {
+  if (canPrint) {
+    tableToPrint.insertAdjacentHTML('beforeend', `<tr><td>${year}</td><td>${number}</td></tr>`);
+  }
+}

@@ -19,16 +19,9 @@ window.data = {
     }
     return dataToReturn;
   }      
-      }
-    }
-  }
 };
 //función para obtener arreglo por año
 let years = new Map();
 for (const injuriesByYear of INJURIES) {
   console.log(injuriesByYear)
 }
-
-
-
-
