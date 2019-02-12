@@ -1,4 +1,4 @@
-//let POKEMON = POKEMON;
+let POKEMON = POKEMON;
 let dataPokemon = POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const searchCoincidence = document.getElementById('search-coincidences');
@@ -8,9 +8,9 @@ const printPokemon = (nombre, imagen) => {
   pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
 
-const allData = window.showAllData(dataPokemon);
+//const allData = window.showAllData(dataPokemon);
 
-//console.log(dataByType);
+
 const showList = (pokemonList) => {
   pokemones.innerHTML="";
   pokemonList.forEach(element => {
@@ -46,23 +46,16 @@ getTypePokemon(buttonsArray)
 const filterCoincidence = () => {
   searchCoincidence.addEventListener('keyup', () => {
     let searchValue = document.getElementById('search-coincidences').value;
-    console.log(searchValue);
     showList(window.filterByLetter(dataPokemon,searchValue));
   });
 }
 
 //funcion para ordenar la dataByType
 
-
-
-
 //esta parte obtiene la ubicacion de la pagina y dependiendo de ésta ejecuta las funciones
 let ubication = location.href;
 
-if (ubication.includes('index.html')) {
-
-}
-else if (ubication.includes('typePokemon.html')) {
+if (ubication.includes('typePokemon.html')) {
  // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
   //showList(allData);
   filterCoincidence();
@@ -73,9 +66,7 @@ else if (ubication.includes('typePokemon.html')) {
     showList(window.sortData(dataPokemon,'name','asc'));
   });*/
   const orderRadio = document.getElementsByName("order");
-  console.log(orderRadio);
-  const arrayRadio = Array.from(orderRadio)
-  console.log(arrayRadio);
+  const arrayRadio = Array.from(orderRadio);
   const getOrderPokemon = (optionsRadio) => {
     optionsRadio.map(radio => {
       radio.addEventListener("click",() =>{
