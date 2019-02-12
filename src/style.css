@@ -14,22 +14,23 @@ body,html{
   background-image: url(http://i.imgur.com/hcYQ7nG.jpg);
   background-size: cover;
   background-position: center center;
-  background-attachment: block;
+  background-attachment: fixed;
 }
-
-
-
-
 .button {
   background-color: #efc056;
   padding: 0;
   border-radius: 8px;
   font-size: 16px;
 }
-
+.menu{
+  background-color: #1a1a1f;
+}
+.menu ul{
+  font-size: 15px;
+  color: #e6bd38;
+}
 header{
   width: 100%;
-  background: rgba(0, 0, 0, 0.5)
 }
 .sidenav-trigger{
   display: none;
@@ -41,7 +42,7 @@ header{
 
 .cuadro{
   color: #3d3316; 
-  font-size: 55%; 
+  font-size: 30%; 
   font-weight: 25%; 
   text-align: center;
   background: #efc056; 
@@ -55,7 +56,13 @@ header{
   display: inline-block;
   width: 22%;
 }
+.cuadro h1{
+  font-size: 25px;
+}
 
+.cuadro h2{
+  font-size: 15px;
+}
 .imagen{
   width: 100%;
   padding-top: 20px;

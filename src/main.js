@@ -1,9 +1,9 @@
-/*convierte la base de datos en una variable*/
+
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
 });
-
+/*convierte la base de datos en una variable*/
 const datalol = LOL.data;
 const datosArr = window.lol.iterarData(datalol);
 const rol = document.getElementsByClassName('rol');
@@ -17,8 +17,6 @@ const searchChampionB = document.getElementById("searchChampion-b");
 
 //const search = document.getElementById("search").value
 //const arrayData = Object.values(datalol)
-
-
 // hamburguerButton.addEventListener("click",() =>{
 //     const menu = document.getElementById("menu");
 //     const displayMenu= document.getElementById("btn-menu").style.display="block";
@@ -62,7 +60,6 @@ const printChamp = ()=> {
     imprimirRoles.innerHTML = "";
     print(datosArr)
 }
-
 searchChampion.addEventListener("click", printChamp); 
 searchChampionB.addEventListener("click", printChamp); 
 
