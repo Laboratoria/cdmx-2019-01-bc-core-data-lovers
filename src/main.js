@@ -99,16 +99,35 @@ listQuestion.addEventListener("change", () => {
   //console.log(resultado)
   for (let resultadoAño in resultado) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
     let parrafo = document.createElement('p');// creamos un elemento p temporal ira grafica
-    parrafo.innerHTML = `Año: ${resultadoAño} = ${resultado[resultadoAño] || 0} ` //imprimimos el año y numeros
+    parrafo.innerHTML = `Año: ${resultadoAño} = ${resultado[resultadoAño] || "n/a"} ` //imprimimos el año y numeros
     indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
   }
   //----------------
   //funcion busqueda por palabra
+  const llamado = document.getElementById("buscar");
+        
+  document.addEventListener("click",()=>{
+        let texto= document.getElementById("mySearch");
+        let num=document.getElementById("numero");
+        let enlace= window.cipher.encode(num,texto);
+  llamado.innerHTML= enlace;
+  });
+
+  //const search= document.getElementById("busca");
+  //button.addEventListener("click",()=>{
+  //function scout() {
+    //let porPalabra = document.getElementById("mySearch").placeholder;
+    //porPalabra.innerHTML = porPalabra;
+    //console.log(hola)}
   //const button = document.getElementById("buscar");
-  button.addEventListener("click",()=>{
+  //button.addEventListener("click",()=>{
+    //function scoutfor() {
+      //var x = document.getElementById("buscar").placeholder;
+      //document.getElementById("demo").innerHTML =;
     
-    let buscar= document.getElementById("buscar");
-    console.log(buscar)
+    //let buscar= document.getElementById("buscar");
+    
+    //console.log(buscar)
     //console.log(buscar)
   });
     //let enlace= window.filter.searchingWord(buscar);
@@ -139,12 +158,9 @@ listQuestion.addEventListener("change", () => {
   //         parrafo.innerHTML = `Año: ${resultado} = ${ciudad.data[resultado] || 0} `
 
   //         indicator.appendChild(parrafo);
-  //       }
-  //     }
-  //   });
-  // }
+  
 
-});
+
 
 
 
@@ -152,5 +168,4 @@ listQuestion.addEventListener("change", () => {
 // elements[i].addEventListener("click", () => {
 //   let valElement = elements[i].value
 //   window.worldbank.filterData(ciudadesMex, valElement)
-//   )};
-// }
+
