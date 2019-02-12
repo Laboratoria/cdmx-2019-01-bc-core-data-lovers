@@ -10,7 +10,7 @@ const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
-let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
+//let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
 let pais;
@@ -84,8 +84,8 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
  }
  document.getElementById('contenido').innerHTML = respuesta;
  document.getElementById('graf').style.display='block';
- VerGrafica();
- return respuesta;
+ //VerGrafica();
+ //return respuesta;
 }
 
 const prtOrder=(orderObj)=>{
@@ -120,7 +120,7 @@ const limpiar = () => {
   
   buttonLimpiar.addEventListener('click', limpiar)
 //console.log(limpiar);
-const VerGrafica=()=>{
+/*const VerGrafica=()=>{
 
 myChart= new Chart(ctx, { //funcion grafica
     type: 'line',
@@ -157,6 +157,6 @@ myChart= new Chart(ctx, { //funcion grafica
             }]
         }
     }
-})
+})*/
 
-}
+
