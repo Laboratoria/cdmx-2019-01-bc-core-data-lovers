@@ -86,7 +86,7 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
  document.getElementById('graf').style.display='block';
  //VerGrafica();
  //return respuesta;
-}
+//}
 
 const prtOrder=(orderObj)=>{
 let respOrder="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";    
@@ -99,9 +99,10 @@ for (let i in orderObj)
 }
 
 const orderByAscent = () =>{
+    let arrayOrder=pais;
     let order= orderAscDat.value;
     //console.log(order);
-    let orderObj = window.worldBank.orderByAsc(order)
+    let orderObj = window.worldBank.orderByAsc(order,arrayOrder)
     prtOrder(orderObj)
 }
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
@@ -120,13 +121,13 @@ const limpiar = () => {
   
   buttonLimpiar.addEventListener('click', limpiar)
 //console.log(limpiar);
-/*const VerGrafica=()=>{
+/*const VerGrafica = () => {
 
-myChart= new Chart(ctx, { //funcion grafica
+const myChart = new Chart(ctx, { //funcion grafica
     type: 'line',
     data: {
         labels: valorAnioX,
-        datasets: [{
+        datasmyChartets: [{
             label: 'Indicador Demografico (%)',
             data: valorPorcentajeY,
             backgroundColor: [
@@ -160,3 +161,6 @@ myChart= new Chart(ctx, { //funcion grafica
 })*/
 
 
+
+
+}

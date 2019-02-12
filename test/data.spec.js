@@ -20,3 +20,7 @@ describe ('es una función llamada OrderByAsc', () => {
 expect(typeof window.worldBank.orderByAsc).toBe('function');
   });
 });
+const orderByObject = require('./data');
+test('la lista contiene el año 2016', () => {
+  expect(orderByObject()).toContain('2016');
+});
