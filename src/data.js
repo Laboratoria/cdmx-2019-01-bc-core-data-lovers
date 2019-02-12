@@ -1,42 +1,37 @@
-window.pokemon =
+window.pokemon = {
+  filterPokemons:(dataPokemon, elementPokemon ) =>{
+    // const arr = [];
+    // console.log(dataPokemon[0].type[0])
+    // console.log(dataPokemon)
+    dataPokemon.forEach(pokemon => {
+      let typePokemon = pokemon.type[0]
+      if( typePokemon === elementPokemon ){
+        console.log(pokemon)
+      }
+    })
 
-<<<<<<< HEAD
- show:(dataPokemon) =>{
-   const showPokemons= arrayPokemonData.sort((a,b)=> {
-
-     
-   }
-=======
-
-
-
-  data.forEach(element =>{
-   let num = element.num;
-   let name = element.name;
-   let img = element.img;
-   let type = element.type;
-   let height = element.height;
-   let weight = element.weight;
-   let candy = element.candy;
-   let candy_count= element.candy_count;
-   let egg = element.egg;
-   let spawn_chance = element.spawn_chance;
-   let avg_spawns = element.avg_spawns;
-   let spawn_time = element.spawn_time;
-   let multipliers = element.multipliers;
-   let weaknesses = element.weaknesses;
-   data(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
-    weaknesses, );
-  });
->>>>>>> 649f76c2b3efc964e9c913f3f2fed3899ebda098
-
+      // const showPokemons= arrayPokemonData.sort((a,b)=>
+      }
+      // return arr
 }
-
-
-}
-
 //const example = () => {
   //return 'example';
 //};
 
 //window.example = example;
+
+// let namePokemon = `<div class="container"> <h1> num </h1> <h2> ${name} </h2>;
+//  <div> <img = class "imageBox" src =${img}> </div>
+// <p> TYPE: ${type} </p>
+//  <p>HEIGHT:${height}</p>
+//  <p>WEIGHT:${weight}</p>
+//  <p>CANDY:${candy}</p>
+//  <p>CANDY COUNT:$ {candy_count}</p>
+//  <p>EGG: ${egg}</p>
+//  <p>SPAWN CHANCE: $ {spawn_chance}</p>
+//  <p>AVERANGE SPAWNS: $ {avg_spawns}</p>
+//  <p>SPAWN TIME:${spawn_time}</p>
+//  <p>MULTIPLIERS:${multipliers}</p>
+//  <p>WEAKNESSES:${weaknesses}</p>`
+//  pokemons.insertAdjacentHTML("beforeend",namePokemon);
+// };
