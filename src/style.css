@@ -58,7 +58,7 @@
         }
 
 
-#btn1,#btn2,#buttonSearchPokemon,#filterButton,
+#btn1,#buttonStadisticsPage,#buttonSearchPokemon,#filterButton,
 #buttonBack,#buttonBackFilterPage,#ButtonGround,
 #ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
 #ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
@@ -76,7 +76,7 @@
     
   }
   
-  #btn1:hover, #btn2:hover, #btn3:hover,
+  #btn1:hover, #buttonStadisticsPage:hover, #btn3:hover,
   #filterButton:hover,  #buttonBack:hover, #buttonSearchPokemon:hover,
   #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
   #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
@@ -95,7 +95,6 @@
 }
 
 .pokemones{
-    text-align: center;
     color:white;
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 20px;
@@ -105,7 +104,8 @@
 
 h1,h2{
     color:#FFDE00;
-    display: inline-block;
+    text-align: center;
+
 }
 p{
    color: white;
@@ -113,8 +113,9 @@ p{
    background:#8A2BE2;
    width: 270px;
    margin:0px;
-   position: relative;
    left:540px;
+   padding: 1px;
+   text-align: center;
 }
 
 
@@ -125,4 +126,15 @@ p{
     float: left;
     font-family:'Love Ya Like A Sister', cursive;
     
+}
+
+.card{
+    display:inline-block;
+    border: solid white;
+    margin: 1%;
+}
+.imageCard{
+    position: relative;
+    left: 25%;
+
 }

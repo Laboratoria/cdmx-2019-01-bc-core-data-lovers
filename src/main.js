@@ -10,6 +10,7 @@ const pokemonLight = document.getElementById("Pokemon-light");
 const pokemonHe = document.getElementById("Pokemon-Heavy");
 const pokemonData = POKEMON.pokemon;
 const buttonBack = document.getElementById("buttonBack");
+const buttonStadisticsPage = document.getElementById("buttonStadisticsPage");
 const pokemonSm = document.getElementById('pokemon-Small');
 const pokemonMedium = document.getElementById('pokemon-Medium');
 const pokemonTall = document.getElementById('pokemon-Tall');
@@ -81,6 +82,15 @@ checkboxTypeFilter.addEventListener("click", () =>{
 
 });
 
+buttonStadisticsPage.addEventListener("click", () => {
+  pageKanto.classList.add("hide");
+  stadisticsPage.classList.remove("hide");
+  const totalWeight= window.printPokemon.totalWeight(pokemonData);
+  stadisticsPage.innerHTML=totalWeight;
+  
+ });
+
+
 const printPokemonWeight= (name, img, weight) => {
   let resultLight = `<h1 class="nameLight">${name}</h1>
    <div><img src=${img}></div>
@@ -111,9 +121,9 @@ const printPokemonSortByWeight=  (name, img, sortWeight) => {
 
 const printData = (num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
   spawn_time, multipliers, weaknesses, next_evolution, ) => {
-  let result = `<h1>${num}</h1> 
+  let result = `<div class = "card" ><h1>${num}</h1> 
         <h2>${name}</h2>
-        <div><img src=${img}></div>
+        <div><img class="imageCard" src=${img}></div>
         <p> TYPE : ${type}</p>
         <p> HEIGHT : ${height}</p>
         <p> WEIGHT: ${weight}</p>
@@ -124,8 +134,7 @@ const printData = (num, name, img, type, height, weight, candy, candy_count, egg
         <p>AVERANGE SPAWNS: ${avg_spawns}</p>
         <p>SPAWN TIME: ${spawn_time}</p>
         <p>MULTIPLIERS: ${multipliers}</p>
-        <p>WEAKNESSES: ${weaknesses}</p>
-        <p>NEXT EVOLUTION: ${next_evolution}</p>`;
+        <p>WEAKNESSES: ${weaknesses}</p></div>`;
   totalData.insertAdjacentHTML("beforeend", result);
 
 };
@@ -137,6 +146,7 @@ const printAll=(namePokemonAll, img, typePokemonAll) => {
    pokemonTypeAll.insertAdjacentHTML("beforeend",resultTypeAll);
 };
 
+
 checkboxWeightLight.addEventListener("click",()=>{
   const pokemonsLight = window.printPokemon.filterByWeight(pokemonData);
  pokemonsLight.forEach(element => {
@@ -144,7 +154,6 @@ checkboxWeightLight.addEventListener("click",()=>{
   let img = element.img;
   let weight = element.weight;
   printPokemonWeight(name, img, weight);
-  
 });
 });
 checkboxWeightHeavy.addEventListener("click",() =>{
@@ -465,40 +474,13 @@ function filtrar(id_tipo) {
 
 
 
-//Funciones para computar las alturas y los pesos
-
-const totalSumPokemonHeight= pokemonData.reduce((total,currentValue, index,array)=>{
-    total += parseFloat(currentValue.height);
-  if (index===array.lenght -1){
-     return total/array.lenght
-  } else{
-    return total
-  }
-
-}, 0)
-console.log(totalSumPokemonHeight);
-
-const totalSumPokemon= pokemonData.reduce((total,currentValue, index,array)=>{
-  total += parseFloat(currentValue.weight);
-if (index===array.lenght -1){
-   return total/array.lenght
-} else{
-  return total
-}
-
-}, 0)
-console.log(totalSumPokemon);
 
 
-const totalWeightPokemon2= pokemonData.reduce((total, pokemonData)=>
-  total +=parseFloat(pokemonData.weight), 0, )
 
-  console.log(totalWeightPokemon2)
+
+
  
-const totalHeightPokemon2= pokemonData.reduce((total, pokemonData)=>
-  total +=parseFloat(pokemonData.height), 0, )
 
-  console.log(totalHeightPokemon2)
  
 
 

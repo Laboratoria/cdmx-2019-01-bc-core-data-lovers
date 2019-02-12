@@ -22,7 +22,7 @@ window.printPokemon = {
       } else {
         return 0;
       }
-    })
+    });
   },
   SortByWeight: (arrayPokemonData) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) =>{
@@ -38,21 +38,13 @@ window.printPokemon = {
     return pokemonSortedData;
   },
   filterByWeight: (arrayPokemonData) => {
-     const  pokemonFilteredData = arrayPokemonData.filter(pokemon=> {
-      if (parseInt (pokemon.weight) < 30) {
-          return pokemon;
-        } else if (parseInt(pokemon.weight) > 30) {
-          return pokemon;
-        }
-      
-    });
-    return pokemonFilteredData
+    return pokemonFilteredLight = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight)<30);
   },
   
 
- /* filterByHeightHeavy: (arrayPokemonData) => {
+  filterByHeightHeavy: (arrayPokemonData) => {
     return pokemonFilteredHeavy = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) > 30);
-  },*/
+  },
 
 
   filterByHeightSmall: (arrayPokemonData) => {
@@ -83,4 +75,12 @@ window.printPokemon = {
     total +=parseFloat(pokemonData.weight), 0, )
     return pokemontotalHeight;
   },
+
+   totalWeight:(arrayPokemonData) =>{
+     const totalWeightPokemon= arrayPokemonData.reduce((total, pokemonData)=>
+     total +=parseFloat(pokemonData.weight), 0, )
+
+      return totalWeightPokemon
+   },
+
 }
