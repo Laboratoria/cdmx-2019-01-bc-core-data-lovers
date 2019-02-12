@@ -50,7 +50,7 @@ const selectRol = () => {
     rol[i].addEventListener("click", () => {
       let rolId = rol[i].id;
       const newArrayChamp = window.lol.showData(lolData);
-      const arrayFiltered = window.lol.filterByRol(rolId, newArrayChamp);
+      const arrayFiltered = window.lol.filterByRol(newArrayChamp, rolId);
       printData(arrayFiltered);
     })
   }

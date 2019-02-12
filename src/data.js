@@ -2,7 +2,7 @@ window.lol = {
   //Funcion que recorre un objeto que contiene 7 indicadores y se convierte en un arreglo
   showData: (lolData) => {
     let newArrayInfo = [];
-    let champsInfo = {}; 
+    let champsInfo = {};
     for (const key in lolData) {
       if (lolData.hasOwnProperty(key)) {
         const element = lolData[key];
@@ -25,7 +25,7 @@ window.lol = {
     return newArrayInfo;
   },
 
-  filterByRol: (rolId, newArrayChamp) => {
+  filterByRol: (newArrayChamp, rolId) => {
     const filtering = newArrayChamp.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId);
     return filtering;
 },
