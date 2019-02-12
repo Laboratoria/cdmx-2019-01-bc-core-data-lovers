@@ -13,8 +13,9 @@
         <img class="icon-logo" src="./images/logo.svg" alt="nav">
       </section>
       <section class="header-right">
-            <a  id="nav-icon"  class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>
+            <a  id="nav-icon"  class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>  
       </section>
+<<<<<<< HEAD
       <nav id="nav-menu" class="nav-menu ocultar">
           <ul>
             <li id="btn-about" class="item-menu">Acerca de</li>
@@ -29,8 +30,16 @@
           <button onclick="myFunction()">Buscar</button>
           <p id="busca"></p>
           </div>
-    </header>
-    <main class="container">
+        </header>
+    <nav id="nav-menu" class="nav-menu ocultar">
+            <ul>
+              <li id="btn-about" class="item-menu">Acerca de</li>
+              <li id="btn-news" class="item-menu">Noticias</li>
+              <li id="btn-general-filter" class="item-menu">Indicadores genero femenino</li>
+              <li id="" class="item-menu">Contacto</li>
+            </ul>
+          </nav>
+    <main id="container" class="container">
         <section id="news" class="news ocultar mostrar-news">
           <article class="news-mexico">
               <h2>El Banco Mundial en Mexico</h2>
@@ -65,10 +74,10 @@
                 <h1 >Indicadores genero femenino</h1>
             </article>
             <article class="information-filter">
-            <a class="btn_mex search-country" id="btn_mex" data-ciudad="ciudadesMex">México</a>
-            <a class="btn_per search-country" id="btn_per" data-ciudad="ciudadesPeru">Peru</a>
-            <a class="btn_bra search-country" id="btn_bra" data-ciudad="ciudadesBrasil">Brasil</a>
-            <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="ciudadesChile">Chile</a>
+            <a class="btn_mex search-country" id="MEX" data-ciudad="MEX">México</a>
+            <a class="btn_per search-country" id="btn_per" data-ciudad="PER">Peru</a>
+            <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA">Brasil</a>
+            <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL">Chile</a>
             </article>  
             <article> 
                 <a id="educacion" class="typeTheme" >Educacion</a> 
@@ -77,9 +86,15 @@
                 <select id="list-question" class="list-question">
                     <option value="valor" >Selecciona un pais</option>
                 </select>
-                <select >
-                    <option value="az">a-z</option> 
-                    <option value="za">z-a</option>
+                <h2>Mostrar año</h2>
+                <select id="order-year" >
+                    <option value="">Mayor</option> 
+                    <option value="">Menor</option>
+                </select>
+                <h2>Mostrar valor</h2>
+                <select  id="order-valor">
+                    <option value="">Valor mayor</option> 
+                    <option value="">Valor menor</option>
                 </select>
             </article>
             <article id="information-filter-inner" class="" >
