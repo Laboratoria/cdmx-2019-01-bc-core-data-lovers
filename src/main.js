@@ -1,4 +1,5 @@
-const data= POKEMON.pokemon; //trae la data//
+
+const data= window.POKEMON.pokemon; //trae la data//
 const initialPage=document.getElementById('initial-page'); //pagina de inicio//
 const pokemonPage=document.getElementById('pokemon-page'); //página de pokemones//
 const pokeballButton=document.getElementById('pokeball-button'); 
@@ -41,107 +42,10 @@ for(let i = 0; i <buttonType.length; i++ ){
   let pokemonElegido = buttonType[i].id
   
   printList.innerHTML = '';
-  const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido )
+  const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido);
     print(pokemonFiltrados)
 });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const typeSortButton=document.getElementsByClassName('type-sort-button');//lo agregue 110219
-const ascendente=document.getElementById('Ascendente');//lo agregue 110219
-//const mayor=document.getElementById('Mayor');
-//data.name=undefined
-
-//lo agregue 110219
-let nameSortAscend=[];
-ascendente.addEventListener('click',() =>{
-  data.forEach(element => {
-    nameSortAscend.push(element.name)
-   });
-   //console.log(nameSortAscend.sort())
- })
- 
-// let ordenarCandies = candies.sort((a,b)=>{
-// if(a.candy_count>b.candy_count){
-//   return 1;
-// }if(a.candy_count<b.candy_count){
-//   return -1;
-// } return 0;
-// });
-
-// console.log(ordenarCandies)
-
-
-
-// mayor.addEventListener('click',() =>{
-//   data.forEach(element => {
-//    // console.log(element.candy_count)
-//    });
-   
- 
-//  })
- 
-  
-
-
-
-//let candy = data.candy_count
-//console.log(candy)
-//const pokemonOrdenados = window.pokesaurius.typeSort(data,ordenElegido)
-
-
-
-
 //bolahome ya estaba
 pokeButtonHome.addEventListener('click',() => {
     printList.innerHTML='';
