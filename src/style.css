@@ -112,6 +112,7 @@ nav {
   padding-top: 3%;
   padding-left: 2%;
   border-radius: 14px;
+  box-sizing: border-box;
   float: left;
 }
 
@@ -129,6 +130,10 @@ aside {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+.li>.li{
+  list-style: none;
 }
 
 h3{
@@ -177,7 +182,7 @@ footer {
 .footertext {
   background: #976DD0;
   border-radius: 8px;
-  position: fixed;
+  
   bottom: 0%;
   width: 65%;
   margin-left: 2.5%;
@@ -204,11 +209,6 @@ footer {
   animation-timing-function: linear;
 }
 
-.text-footer {
-  color: wheat;
-  margin-top: 25px;
-  margin-left: 75%;
-}
 
 .wrapper {
   display: inline-block;
@@ -276,4 +276,22 @@ footer {
 }
 .text-footer{
     font-size: 10px;
+}
+
+@media screen and (max-width: 1024px){
+  
+}
+
+@media screen and (max-width: 768px){
+  #root {
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px){
+  #root {
+    width: 100%; 
+  }
 }
