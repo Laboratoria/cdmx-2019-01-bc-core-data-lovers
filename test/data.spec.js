@@ -101,6 +101,7 @@ const venusaur=pokemonPrueba[2];
 
 
 describe('pokesaurius', () => {
+
   it('is an object', () => {
       expect(typeof window.pokesaurius).toBe('object');
   })
@@ -120,6 +121,7 @@ describe('pokesaurius', () => {
   })
 })
 )
+
 
 
 
