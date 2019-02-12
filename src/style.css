@@ -15,9 +15,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+#pokemon-page{
+background: #12203E;
+}
+
 #root {
   background:  #C2FAB9;
   width: 80%;
+  
   max-width: 1000px;
   height: 100vh;
   margin: 0 auto;
@@ -112,6 +117,7 @@ nav {
   padding-top: 3%;
   padding-left: 2%;
   border-radius: 14px;
+  box-sizing: border-box;
   float: left;
 }
 
@@ -129,6 +135,10 @@ aside {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+.li>.li{
+  list-style: none;
 }
 
 h3{
@@ -172,12 +182,14 @@ footer {
   bottom: 0%;
   height: 10%;
   color: whitesmoke;
+  float: left;
+  box-sizing: border-box;
 }
 
 .footertext {
   background: #976DD0;
   border-radius: 8px;
-  position: fixed;
+  
   bottom: 0%;
   width: 65%;
   margin-left: 2.5%;
@@ -204,11 +216,6 @@ footer {
   animation-timing-function: linear;
 }
 
-.text-footer {
-  color: wheat;
-  margin-top: 25px;
-  margin-left: 75%;
-}
 
 .wrapper {
   display: inline-block;
@@ -276,4 +283,29 @@ footer {
 }
 .text-footer{
     font-size: 10px;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+  #root {
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+  .contenido {
+    
+    width: 100%;
+}
+}
+
+@media screen and (min-width: 375px) and (max-width: 780px){
+  #root {
+    width: 100%; 
+  }
+}
+
+@media screen and (max-width: 375px){
+  #root {
+    width: 100%; 
+  }
 }

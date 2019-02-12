@@ -4,7 +4,9 @@ window.pokesaurius = {
   typeFilter: (data, pokemonElegido) => {
    const filterPokemonType = data.filter(element => element.type.includes(pokemonElegido));
    return filterPokemonType
+
   },
+}
 
 
 
@@ -13,6 +15,36 @@ window.pokesaurius = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //typeSort:(data, ordenElegido) => {    
+  //}
+
+  // nameSort: (data) => {
+  //   const sortPokemonName = elementSort.sort();
+  //   console.log(sortPokemonName)
+
+  // }
 
 
 
