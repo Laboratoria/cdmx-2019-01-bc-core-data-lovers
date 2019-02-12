@@ -1,5 +1,5 @@
 const getData = require('../src/data.js');
-const INJURIES = {
+const INJURIES = [{
   "Total_Injured_Persons": 3061790,
   "Total_Injured_Persons_Highway": 2125184,
   "Total_Injured_Persons_Bus_Occupants": 15427,
@@ -8,7 +8,7 @@ const INJURIES = {
   "Total_Injured_Persons_Pedalcyclists": 45277,
   "Total_Injured_Persons_Pedestrians": 77619,
   "Year": "2001-01-04"
-}
+}]
 
 describe('getData', () => {
   it('is a object', () => {
