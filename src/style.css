@@ -52,6 +52,9 @@ body {
   justify-content: center;
 }
 
+
+  
+
 #logo-lol {
 display:flex;
 justify-content: center;
@@ -185,6 +188,10 @@ figure img{
 /*Media Query Desktop*/
 @media only screen  and (min-width : 768px) {
 
+.blinke {
+  font-size: 200%;
+  }
+
 .bigImg{
     display:block;
     width: 70%;
@@ -224,4 +231,26 @@ justify-content:center;
     height: 8%;
   }
 
+  .fas{
+  font-size: 200%;
+  margin-top:5%;
+  }
+
+  .sidenav a{
+    font-size: 200%;
+    padding-left:10%;
+  }
+
+  .titulo{
+    font-size: 150%;
+    padding: 5%;
+    
+}
+#titleChampions{
+  margin-top: 20%;
+  font-size: 120%;
+}
+#showFirstChampionList{
+  margin-top: 7%;
+}
 }

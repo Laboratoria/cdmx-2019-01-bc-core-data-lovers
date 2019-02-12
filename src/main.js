@@ -70,7 +70,8 @@ const selectByRol = () => {
   for ( let i=0; i<rol.length; i++){
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
-
+      document.getElementById("mySidenav").style.width = "0%";
+  
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataToArray);
       print(arrayRolesFiltered);})}}
     selectByRol();
