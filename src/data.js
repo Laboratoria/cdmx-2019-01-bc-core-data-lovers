@@ -17,14 +17,14 @@ window.lol = {
     datos.push(objetoVacio)
   }
 }
-return datos},
+return datos }, 
 
 filtroDataRoles: (rolId, dataToArray) => {
   filtradoPorRoles = dataToArray.filter(element => element.tags[0] === rolId);
   return filtradoPorRoles
 },
-
 filterByName: (name,datos) => {
+
  const search = datos.filter(element => (element.name.toLowerCase().match(name.toLowerCase())));
  return search;
 },
