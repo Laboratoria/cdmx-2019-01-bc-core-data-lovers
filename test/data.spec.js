@@ -32,6 +32,7 @@ describe('example', () => {
     expect(example()).toBe('example');
   });
 });*/
+
 const dataPokemonTest = [{
   "id": 1,
   "num": "001",
@@ -157,27 +158,108 @@ const dataPokemonTest = [{
     "num": "006",
     "name": "Charizard"
   }]
-} ];
+} ]; 
 
+describe ('data', () => {
 
-describe('filterByType',() => {
-const processedFilterType = window.filterByType (dataPokemonTest, 'Grass');
-//const expected = ['Grass'];
-  test('debería ser una funcion', ()=>{
-    expect(typeof filterByType).toBe('function');
+  test('debería ser un objeto', () => {
+    expect(typeof data).toBe('object');
   });
 
-  test('debería regresar un arreglo con los pokemones coincidan el tipo Fire', ()=>{
-    processedFilterType.forEach((elemento) => {
+  describe ('showAllData', () => {
+    
+    test('debería ser una función', () => {
+      expect (typeof window.data.showAllData).toBe('function');
+    });
 
-      elemento.type.forEach((elementType) => {
-        expect(elementType).toContain('Grass');
-      })
-    })
+    const processedData = window.data.showAllData(dataPokemonTest);
+    test('deberia retornar un arreglo con todos los pokémones', () => {
+      expect(processedData).toHaveLength(4);
+    });
+  }); 
+
+  describe ('filterByType', () => {
+    test('debería ser una funcion', ()=>{
+      expect(typeof window.data.filterByType).toBe('function');
+    });
+
+    test('debería regresar un arreglo con los pokémones que correspondan con el tipo Poison', () => {
+      const processedDataFilter = window.data.filterByType(dataPokemonTest, 'Poison');
+      processedDataFilter.forEach(element => {
+        expect (element.type).toEqual(expect.arrayContaining(['Poison']));
+
+      });
+    });
 
   });
+
+  describe('filterByLetter',() => { 
+    const processedFilterLetter = window.data.filterByLetter (dataPokemonTest, 'C');
+  
+    test('debería ser una funcion', () => {
+      expect(typeof window.data.filterByLetter).toBe('function');
+    });
+  
+    test('debería regresar un arreglo con los pokémones cuyo nombre coincidan con la C', () => {
+      processedFilterLetter.forEach(element => {
+        expect(element.name).toMatch('C');
+      });
+    });
+
+    test('debería regresar un arreglo con el pokémon cuyo nombre coincidan con Ivysaur', () => {
+      window.data.filterByLetter(dataPokemonTest, 'Ivysaur').forEach(element => {
+        expect(element.name).toMatch('Ivysaur');
+      });
+    });
+  
+  });
+  
+  describe('sortData',() => {
+    test('debería ser una funcion', () => {
+      expect(typeof window.data.sortData).toBe('function');
+    });
+  });
+
+  describe('computeStats', () => {
+    test('debería ser una funcion', () => {
+      expect(typeof window.data.computeStats).toBe('function');
+    });
+    test('debería regresar el valor mínimo para candy_count', () => {
+      expect(window.data.computeStats(dataPokemonTest)).toBe(25);
+    });
+    test('debería regresar el valor máximo para candy_count', () => {
+      expect(window.data.computeStats(dataPokemonTest)).toBe(100);
+    });
+  });
+
 
 });
+
+
+
+/*
+  describe('filterByType',() => {
+  const processedFilterType = window.filterByType (dataPokemonTest, 'Grass');
+  //const expected = ['Grass'];
+    test('debería ser una funcion', ()=>{
+      expect(typeof filterByType).toBe('function');
+    });
+  
+    test('debería regresar un arreglo con los pokemones coincidan el tipo Fire', ()=>{
+      processedFilterType.forEach((elemento) => {
+  
+        elemento.type.forEach((elementType) => {
+          expect(elementType).toContain('Grass');
+        })
+      })
+  
+    });
+  
+  });  */  
+
+
+
+/*
 
 describe('filterByLetter',() => { 
   const processedFilterLetter = window.filterByLetter (dataPokemonTest, 'C');
@@ -212,7 +294,7 @@ describe('sortData',() => {
     /*test('debería retornar un arreglo ordenado de forma descendente por nombre', ()=>{
     expect(processedDescName[0].name).toBe('Venusaur');
     expect(processedDescName[3].name).toBe('Bulbasaur');
-  });*/
+  });
   });
 
   describe("Sort by Height", () => {
@@ -227,7 +309,7 @@ describe('sortData',() => {
     /*test('debería retornar un arreglo ordenado de forma descendente por altura', ()=>{
       expect(processedDescHeight[0].height).toBe('2.01 m');
       expect(processedDescHeight[3].height).toBe('0.61 m');
-    });*/
+    });
   });
 
   describe("Sort by Weight", () => {
@@ -243,6 +325,7 @@ describe('sortData',() => {
     /*test('debería retornar una arreglo ordenado de forma descendente por peso', ()=>{
       expect(processedDescWeight[0].weight).toBe('100.0 kg');
       expect(processedDescWeight[3].weight).toBe('6.9 kg');
-    });*/
+    });
   }); 
 });
+*/

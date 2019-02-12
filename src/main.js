@@ -7,7 +7,6 @@ const printPokemon = (nombre, imagen) => {
   let nombrePokemon = `<div class="divPokemon"><img src="${imagen}"><br>${nombre}</div>`;
   pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
-
 //const allData = window.showAllData(dataPokemon);
 
 
@@ -34,7 +33,7 @@ const getTypePokemon = (arrayButtons) => {
           //console.log(event.target.name);
           //console.log(window.filterByType(event.target.name));
           // Invocar una función que pinte Pokemon
-          showList(window.filterByType(dataPokemon,event.target.name));
+          showList(window.data.filterByType(dataPokemon,event.target.name));
         })
       })
 }
@@ -46,7 +45,7 @@ getTypePokemon(buttonsArray)
 const filterCoincidence = () => {
   searchCoincidence.addEventListener('keyup', () => {
     let searchValue = document.getElementById('search-coincidences').value;
-    showList(window.filterByLetter(dataPokemon,searchValue));
+    showList(window.data.filterByLetter(dataPokemon,searchValue));
   });
 }
 
@@ -72,7 +71,7 @@ if (ubication.includes('typePokemon.html')) {
       radio.addEventListener("click",() =>{
         if(radio.checked === true){
           let idRadio = radio.id.split('-');
-          showList(window.sortData(dataPokemon,idRadio[1],idRadio[0]));
+          showList(window.data.sortData(dataPokemon,idRadio[1],idRadio[0]));
         }
       });
     });

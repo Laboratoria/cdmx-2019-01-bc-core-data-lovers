@@ -1,30 +1,63 @@
-const filter = () => {
+
+window.data = {
+  
+  showAllData: (dataPokemon) => {
+    //const completeData = dataPokemon.map(({name,img}) => [name, img]);
+    const completeData = dataPokemon.map(({id,name,img}) => ({id,name,img}));
+    return completeData;
+  },
+   
+  filterByType: (dataPokemon,category) => {
+    const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
+    return filteredData;
+  },
+
+  filterByLetter: (dataPokemon, name) => {
+    const concidence = dataPokemon.filter(data => (data.name.toLowerCase().match(name.toLowerCase())));
+    return concidence;
+  },
+
+  sortData: (data,sortBy,sortOrder) => {  
+    
+    switch (sortBy) {
+      case 'name':
+        if (sortOrder == 'asc') {
+          return data.sort((a, b) => (a.name > b.name) ? 1 : -1);
+        }
+        else if (sortOrder == 'desc') {
+          return data.sort((a, b) => (a.name > b.name) ? -1 : 1);
+        }
+        break;
+      case 'height':
+        if (sortOrder === 'asc') {
+          return data.sort((a, b) => (a.height > b.height) ? 1 : -1);
+        }
+        else if (sortOrder === 'desc') {
+          return data.sort((a, b) => (a.height > b.height) ? -1 : 1);
+        }
+        break;
+      case 'weight':
+        if (sortOrder === 'asc') {
+          return data.sort((a, b) => (a.weight > b.weight) ? 1 : -1);
+        }
+        else if (sortOrder === 'desc') {
+          return data.sort((a, b) => (a.weight > b.weight) ? -1 : 1);
+        }
+        break;
+      
+    }
+  },
+
+  computeStats: (data) => {
+    const newArray = data.map(({candy_count}) => [candy_count]);
+    const minimum = Math.max(newArray);
+    return parseInt(minimum);
+
+  }
+
 
 };
 
-window.filter = filter;
-
-/*const showAllData = (dataPokemon) => {
-  //const completeData = dataPokemon.map(({name,img}) => [name, img]);
-  const completeData = dataPokemon.map(({id,name,img}) => ({id,name,img}));
-  return completeData;
-};
-window.showAllData = showAllData; */
-
-const filterByType = (dataPokemon,category) => {
-  const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
-  return filteredData;
- 
-};
-
-window.filterByType = filterByType;
-
-const filterByLetter = (dataPokemon, name) => {
-  const concidence = dataPokemon.filter(data => (data.name.toLowerCase().match(name.toLowerCase())));
-  return concidence;
-}
-
-window.filterByLetter = filterByLetter;
 
 /*
 const sortData = (orderData,sortBy,sortOrder) => {  
@@ -54,40 +87,6 @@ const sortData = (orderData,sortBy,sortOrder) => {
     );
 
   } */
-
-  switch (sortBy) {
-    case 'name':
-      if (sortOrder == 'asc') {
-        let newArray = [];
-        newArray = data.sort((a, b) => (a.name > b.name) ? 1 : -1);
-        return newArray;
-      }
-      else if (sortOrder == 'desc') {
-        let newArray = [];
-        newArray = data.sort((a, b) => (a.name > b.name) ? -1 : 1);
-        return newArray;
-      }
-      break;
-    case 'height':
-      if (sortOrder === 'asc') {
-        return data.sort((a, b) => (a.height > b.height) ? 1 : -1);
-      }
-      else if (sortOrder === 'desc') {
-        return data.sort((a, b) => (a.height > b.height) ? -1 : 1);
-      }
-      break;
-    case 'weight':
-      if (sortOrder === 'asc') {
-        return data.sort((a, b) => (a.weight > b.weight) ? 1 : -1);
-      }
-      else if (sortOrder === 'desc') {
-        return data.sort((a, b) => (a.weight > b.weight) ? -1 : 1);
-      }
-      break;
-    default:
-      break;
-  }
-}
 
 /*
 const sortDataNew = (data, sortBy, sortOrder) => {
