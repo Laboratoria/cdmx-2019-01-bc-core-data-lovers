@@ -220,5 +220,8 @@ justify-content:center;
 
   }
 
+  #mainHeader{
+    height: 8%;
+  }
 
 }
