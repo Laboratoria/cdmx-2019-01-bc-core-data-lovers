@@ -97,7 +97,7 @@ const pokemonPrueba= [
 }]
 
 const ivysaur= pokemonPrueba[0];
-const venusaur=pokemonPrueba[2];
+const charmander=pokemonPrueba[2];
 
 
 describe('pokesaurius', () => {
@@ -116,7 +116,7 @@ describe('pokesaurius', () => {
   })
 
   it('Deberia devolver el array de Charmander si ingresamos tipo Water',()=>{
-    expect(window.pokesaurius.typeFilter(pokemonPrueba,'Fire')[0]).toEqual(venusaur)
+    expect(window.pokesaurius.typeFilter(pokemonPrueba,'Fire')[0]).toEqual(charmander)
   })
 })
 )
