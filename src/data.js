@@ -12,6 +12,7 @@ window.lol = {
       tag: element.tags[0],
       img: element.img,
       title: element.title,
+      id: element.id,
       splash:element.splash,}
     datos.push(objetoVacio)
   }
@@ -25,5 +26,10 @@ filtroDataRoles: (rolId, dataToArray) => {
 
 filterByName: (name,datos) => {
  const search = datos.filter(element => (element.name.toLowerCase().match(name.toLowerCase())));
- return search;}
-}
+ return search;
+},
+
+/*characterSelection: (id,datos) => {
+  const characterOnClick = datos.filter(element => element.id === id);
+  return characterOnClick;
+}*/}
