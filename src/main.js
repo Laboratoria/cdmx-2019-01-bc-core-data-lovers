@@ -33,7 +33,7 @@
      // función del menú desplegable donde se encuentran los roles para filtrar 
      
    menu.onmouseover = ()=> {
-      document.getElementById("mySidenav").style.width = "250px";};
+      document.getElementById("mySidenav").style.width = "75%";};
 
    showFirstChampionList.onmouseover = ()=> {
         document.getElementById("mySidenav").style.width = "0px";};
@@ -52,7 +52,7 @@
   const print = (datos) => {
     showFirstChampionList.innerHTML = "";
     datos.forEach(champ => {
-    let nameList = `<div class="nameList"><img class="lolIcons" src="${champ.img}"><img class="lolIcons" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;
+    let nameList = `<div class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;
     showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
 
                print(datos)
@@ -70,7 +70,8 @@ const selectByRol = () => {
   for ( let i=0; i<rol.length; i++){
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
-
+      document.getElementById("mySidenav").style.width = "0%";
+  
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataToArray);
       print(arrayRolesFiltered);})}}
     selectByRol();
