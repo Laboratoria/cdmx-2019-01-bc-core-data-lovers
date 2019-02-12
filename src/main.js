@@ -8,6 +8,7 @@ const buttonType=document.getElementsByClassName('type-button');
 const pokeButtonHome=document.getElementById('poke-button-home'); 
 
 
+
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
  initialPage.classList.add('hideElement');    
  pokemonPage.classList.remove('hideElement');
@@ -46,6 +47,7 @@ for(let i = 0; i <buttonType.length; i++ ){
     print(pokemonFiltrados)
 });
 }
+
 //bolahome ya estaba
 pokeButtonHome.addEventListener('click',() => {
     printList.innerHTML='';
