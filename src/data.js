@@ -4,6 +4,27 @@
 //esto a esta funcionando al 100
 window.data={ //cambia
 
+//funcion de filtrar
+filterData:(dataPokemon,types) =>{
+const arrayPokemon= dataPokemon ;
+  const arrayFilter = arrayPokemon.filter(arrayPokemon => arrayPokemon.type.includes(types));
+  return arrayFilter;
+}
+
+}
+
+
+
+
+
+
+/*
+
+
+
+let mostrar = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
+ 
+
   //funcion de filtrar
   filterData:(dataPokemon,types) =>{
   const arrayPokemon= dataPokemon ;
@@ -50,6 +71,7 @@ window.data={ //cambia
   /*
   const pokes = document.getElementById("probando");
   const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
+
     let nombrePokemon = `<p> <img src="${imagen}">
     <br>Nombre:${nombre2}</br>
     <br> Su Id es :${id}</br>
