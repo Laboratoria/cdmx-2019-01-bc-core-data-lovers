@@ -1,82 +1,125 @@
-const filter = () => {
 
-};
+window.data = {
+  
+  showAllData: (dataPokemon) => {
+    //const completeData = dataPokemon.map(({name,img}) => [name, img]);
+    const completeData = dataPokemon.map(({id,name,img}) => ({id,name,img}));
+    return completeData;
+  },
+   
+  filterByType: (dataPokemon,category) => {
+    const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
+    return filteredData;
+  },
 
-window.filter = filter;
+  filterByLetter: (dataPokemon, name) => {
+    const concidence = dataPokemon.filter(data => (data.name.toLowerCase().match(name.toLowerCase())));
+    return concidence;
+  },
 
-const showAllData = (dataPokemon) => {
-  //const completeData = dataPokemon.map(({name,img}) => [name, img]);
-  const completeData = dataPokemon.map(({id,name,img}) => ({id,name,img}));
-  return completeData;
-};
+  sortData: (data,sortBy,sortOrder) => {  
+    
+    switch (sortBy) {
+      case 'name':
+        if (sortOrder == 'asc') {
+          return data.sort((a, b) => (a.name > b.name) ? 1 : -1);
+        }
+        else if (sortOrder == 'desc') {
+          return data.sort((a, b) => (a.name > b.name) ? -1 : 1);
+        }
+        break;
+      case 'height':
+        if (sortOrder === 'asc') {
+          return data.sort((a, b) => (a.height > b.height) ? 1 : -1);
+        }
+        else if (sortOrder === 'desc') {
+          return data.sort((a, b) => (a.height > b.height) ? -1 : 1);
+        }
+        break;
+      case 'weight':
+        if (sortOrder === 'asc') {
+          return data.sort((a, b) => (a.weight > b.weight) ? 1 : -1);
+        }
+        else if (sortOrder === 'desc') {
+          return data.sort((a, b) => (a.weight > b.weight) ? -1 : 1);
+        }
+        break;
+      
+    }
+  },
 
-window.showAllData = showAllData;
-
-const filterByType = (dataPokemon,category) => {
-  const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
-  //const filteredData = dataPokemon.filter(data =>(data.spawn_chance > 1));
-  console.log(filteredData)
-  return filteredData;
-  /*const pokemonList = [];
-  dataPokemon.forEach(element => {
-    element.type.forEach(elemenType => {
-      if(elemenType === category){
-        let objectPokemon = {};
-        objectPokemon.id = element.id;
-        objectPokemon.name = element.name;
-        objectPokemon.img = element.img;
-        pokemonList.push(objectPokemon);
+  computeStats: (data) => {
+    let arrayCandys = [];
+    data.forEach(element => {
+      if(element.candy_count > 0){
+            
+        arrayCandys.push(element.candy_count)
+               
       }
     });
-  });
-  return pokemonList;*/
+    console.log(arrayCandys);
+    const suma = arrayCandys.reduce((prev, next) => prev + next);
+    const promedio = suma / arrayCandys.length;
+    console.log(promedio);
+    //const minimum = Math.max(arrayCandys);
+    return minimum;
+
+  }
+
+
 };
 
-window.filterByType = filterByType;
 
-const filterByLetter = (dataPokemon, name) => {
-  const concidence = dataPokemon.filter(data => (data.name.toLowerCase().match(name.toLowerCase())));
-  console.log(concidence);
-  return concidence;
-}
+/*
+const sortData = (orderData,sortBy,sortOrder) => {  
+      /*"pretest": "npm run eslint && npm run htmlhint",
+  if (sortOrder === 'asc') {
+    
+    return data.sort((a, b) => {
+      if (a[sortBy] > b[sortBy]) {
+        return 1;
+      }
+      if (a[sortBy] <  b[sortBy]) {
+        return -1;
+      }
+      return 0;
+    }
+    );
+  } else {
+    return data.sort((a, b) => {
+      if (a[sortBy] > b[sortBy]) {
+        return -1;
+      }
+      if (a[sortBy] < b[sortBy]) {
+        return 1;
+      }
+      return 0;
+    }
+    );
 
-window.filterByLetter = filterByLetter;
+  } */
 
-
-
-const sortData = (data,sortBy,sortOrder) =>{
-  let orderData = [];
-  switch (sortBy) {
-    case 'name':
-      if (sortOrder === 'asc') {
-        orderData = data.sort((a, b) => (a.name > b.name) ? 1 : -1);
+/*
+const sortDataNew = (data, sortBy, sortOrder) => {
+  const arr = data;
+  for(let i = 0; i < arr.length; i++) {
+      for(let j = i + 1; j < arr.length; j++) {
+        if (sortOrder  === 'asc') {
+          if (arr[i][sortBy] > arr[j][sortBy]) {
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;            }
+        } else {
+          if (arr[i][sortBy] < arr[j][sortBy]) {
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;   
+          }
+        }
       }
-      else if (sortOrder === 'desc') {
-        console.log(sortBy);
-        orderData = data.sort((a, b) => (a.name > b.name) ? -1 : 1);
-      }
-      break;
-    case 'height':
-      if (sortOrder === 'asc') {
-        orderData = data.sort((a, b) => (a.height > b.height) ? 1 : -1);
-      }
-      else if (sortOrder === 'desc') {
-        console.log(sortBy);
-        orderData = data.sort((a, b) => (a.height > b.height) ? -1 : 1);
-      }
-      break;
-    case 'weight':
-      if (sortOrder === 'asc') {
-        orderData = data.sort((a, b) => (a.weight > b.weight) ? 1 : -1);
-      }
-      else if (sortOrder === 'desc') {
-        console.log(sortBy);
-        orderData = data.sort((a, b) => (a.weight > b.weight) ? -1 : 1);
-      }
-      break;
   }
-  console.log(orderData);
-  return orderData;
-}
-
+  return arr;
+};
+window.sortDataNew =sortDataNew;
 window.sortData = sortData;
+*/

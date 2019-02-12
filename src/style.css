@@ -243,3 +243,14 @@ nav li a {
 ul li:hover {
   background: rgb(255, 215, 54);
 }
+
+
+@media (max-width: 450px){
+
+.menu-mobile {
+
+  background-color: red;
+
+
+}
+}
