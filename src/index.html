@@ -20,13 +20,16 @@
 
 
  <h2>in United States of America</h2>
- <button class="fas fa-walking button-transport" id="pedestrians-show" name="Total_Injured_Persons_Pedestrians"></button>
+
+
+ <button href="#Home"  class="fas fa-walking button-transport" id="pedestrians-show" name="Total_Injured_Persons_Pedestrians"></button>
  <button class="fas fa-bicycle button-transport" id="pedalcyclists-show" name="Total_Injured_Persons_Pedalcyclists"></button>
  <button class="fas fa-bus button-transport" id="bus_occupants-show" name="Total_Injured_Persons_Bus_Occupants"></button>
  <br>
  <br>
  <button class="fas fa-car button-transport" id="car_occupants-show" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
  <button class="fas fa-motorcycle button-transport" id="motorcyclists-show" name="Total_Injured_Persons_Motorcyclists"></button>
+ <button class="year_button" id="year_section" name="Year" onclick="myFunction()">VIEW DATA BY YEAR</button>
 </div>
 
 
@@ -64,6 +67,31 @@
   <section4 id="busoccupantspage" class=hide></section4>
   <section5 id="caroccupantspage" class=hide></section
   <section6 id="motorcyclistspage" class=hide></section6> -->
+  <section7 id="year_section" class="slideshow-area">
+      <select id="selected_year" name="year" class="select_year">
+          <option selected value="0"> YEAR </option>
+          <option class="year" value="2001-01-04">2001</option>
+          <option class="year" value="2002-01-04">2002</option>
+          <option class="year" value="2003-01-04">2003</option>
+          <option class="year" value="2004-01-04">2004</option>
+          <option class="year" value="2005-01-04">2005</option>
+          <option class="year" value="2006-01-04">2006</option>
+          <option class="year" value="2007-01-04">2007</option>
+          <option class="year" value="2008-01-04">2008</option>
+          <option class="year" value="2009-01-04">2009</option>
+          <option class="year" value="2010-01-04">2010</option>
+          <option class="year" value="2011-01-04">2011</option>
+          <option class="year" value="2012-01-04">2012</option>
+          <option class="year" value="2013-01-04">2013</option>
+          <option class="year" value="2014-01-04">2014</option>
+          <option class="year" value="2015-01-04">2015</option>
+          <option class="year" value="2016-01-04">2016</option>
+        </select>
+      
+        <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE DATA</button>
+  </section7>
+  <section8 id="result_graphic" class="result_graphic">
+  </section8>
 
 
  <!--<script src="data.js"></script>-->

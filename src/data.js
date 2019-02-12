@@ -26,9 +26,16 @@ window.data = {
       });
     }
     return dataToReturn;
+  }      
+      }
+    }
   }
 };
+//función para obtener arreglo por año
+let years = new Map();
+for (const injuriesByYear of INJURIES) {
+  console.log(injuriesByYear)
+}
 
 
 
-//console.log(years.get("2001-01-04").Total_Injured_Persons)

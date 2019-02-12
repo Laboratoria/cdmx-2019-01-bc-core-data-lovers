@@ -90,3 +90,26 @@ La data proporcionada para este ejercicio es un archivo JSON que debemos impleme
 
 ![sketch_lowfidelity](https://raw.githubusercontent.com/UnaTal/cdmx-2019-01-bc-core-data-lovers/ramaTalia/src/images/sketch_lowfidelity)
 
+##Implementación
+
+Los recursos utilizados en la implementación del proyecto utilizamos:
+
+- CSS para realizar el diseño y estilo de la página
+- Realizamos investigación sobre cómo manejar Fetch, JSON. Todo esto de la mano de las sesiones de Office Hours con los coaches.
+- Procesadores de texto Atom y Visual Studio Code.
+- LMS de Laboratoria
+- Figma para sketches de alta fidelidad. 
+
+##Experiencia de usuario
+
+MENU: El menú sidebar es sencillo y collapsable en dispositivos móviles, permite tener acceso a los distintos modos de transporte.
+
+BOTONES: Colocamos la información destacada a primera vista y en una misma página para que pueda hacer scroll libremente o hacer desplazamiento a la información que sea de su interés.
+
+RESPONSIVE: Ya que es información que en ciertos usuarios convendría tenerse a la mano, la aplicación puede visualizarse tanto en dispositivos móviles como en desktop. Sin embargo, fue inicialmente pensada para tener una mejor visualización desde un dispositivo de escritorio.
+
+Elena Hernández
+Filósofa
+
+Talía González y González
+Diseñadora Industrial Laboratoria 7ta Generación Sede CDMX
