@@ -43,6 +43,13 @@ h2 {
   float: right;
 }
 
+@media (min-width:992px) {
+  .logo2 {
+    width: 15%;
+    padding: 12px;
+  }
+}
+
 .start {
   margin-top: 100px;
   border-radius: 20px;
@@ -79,6 +86,7 @@ header {
   font-size: 3em;
   display: inline-block;
 }
+
 
 ul {
   list-style: none;
@@ -142,12 +150,30 @@ ul {
   margin-bottom: 22px;
 }
 
+@media (min-width:992px) {
+  #search {
+    margin-top: 8%;
+    width: 40%;
+    height: 50px;
+    font-size: 1.8em;
+  }
+}
+
 #input-lens {
   width: 5%;
   position: absolute;
   margin-top: -12%;
   margin-left: 72%;
 }
+
+@media (min-width:992px) {
+  #input-lens {
+    width: 2%;
+    margin-top: -6.3%;
+    margin-left: 64%;
+  }
+}
+
 
 footer {
   text-align: center;
@@ -181,26 +207,37 @@ footer {
 h3 {
   color: white;
   font-size: 2.7em;
-  display: flex;
-  justify-content: center;
   color: #efc056;
   position: absolute;
   transform: translate(0, -58px);
   background-color: rgba(29, 33, 40, 0.5);
   width: 29%;
+  text-align: center;
+}
+
+@media (min-width:992px) {
+  h3 {
+    font-size: 2em;
+    width: 15.5%;
+    transform: translate(0, -50px);    
+    padding-bottom: 10px;
+  }
 }
 
 p {
-  width: 280px;
-  color: white;
   font-size: 2.5em;
-  display: flex;
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  justify-content: center;
   color: #efc056;
+}
+
+@media (min-width:992px) {
+  p {
+    font-size: 2em;
+    
+  }
 }
 
 .square {
@@ -235,4 +272,26 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   height: 80px;
+  text-align: center;
+}
+
+@media (min-width:992px) {
+  #enlisted {
+    width: 5%;  
+    padding-bottom: 0px;
+    padding-left: 25px; 
+    padding-top: 2px;
+  }
+}
+
+@media (min-width:992px) {
+  ul {
+    padding: 0px;
+  }
+}
+
+@media (min-width:992px) {
+  .drop-down li {
+    padding: 0px 0px;
+  }
 }
