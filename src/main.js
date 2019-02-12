@@ -1,4 +1,5 @@
-const data= POKEMON.pokemon; //trae la data//
+
+const data= window.POKEMON.pokemon; //trae la data//
 const initialPage=document.getElementById('initial-page'); //pagina de inicio//
 const pokemonPage=document.getElementById('pokemon-page'); //página de pokemones//
 const pokeballButton=document.getElementById('pokeball-button'); 
@@ -42,53 +43,10 @@ for(let i = 0; i <buttonType.length; i++ ){
   let pokemonElegido = buttonType[i].id
   
   printList.innerHTML = '';
-  const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido )
+  const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido);
     print(pokemonFiltrados)
 });
 }
-
-
-
-
-
-
-const ascendente=document.getElementById('Ascendente');
-
-
-
-//data.name=undefined
-
-
-
- 
-
-
-
-let ordenarNombre=[];
-ordenarNombre = data.sort((a,b)=>{
-if(a.name>b.name){
-  return 1;
-}if(a.name<b.name){
-  return -1;
-} return 0;
-});
-
-console.log(ordenarNombre)
-
-
-
-
- 
-  
-
-
-
-//let candy = data.candy_count
-//console.log(candy)
-//const pokemonOrdenados = window.pokesaurius.typeSort(data,ordenElegido)
-
-
-
 
 //bolahome ya estaba
 pokeButtonHome.addEventListener('click',() => {

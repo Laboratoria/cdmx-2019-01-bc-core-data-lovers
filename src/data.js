@@ -1,13 +1,12 @@
 
 window.pokesaurius = {
+  
   typeFilter: (data, pokemonElegido) => {
-    const filterPokemonType = data.filter(data => data.type.includes(pokemonElegido));
-    return filterPokemonType
+   const filterPokemonType = data.filter(element => element.type.includes(pokemonElegido));
+   return filterPokemonType
+
   },
-
-
-
-
+}
 
 
 
@@ -53,4 +52,12 @@ window.pokesaurius = {
 
 
 
-}
+
+  //promedio : (peso)=>{
+   //for(let i=0; i< peso.length; i++){
+    // const sumWeight=
+   //}
+
+//}
+
+};
