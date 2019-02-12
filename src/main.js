@@ -5,10 +5,9 @@
 //   listQuestion.dataset.ciudad =  ciudad;
 // }
 
- const para desplegar menu
+// const para desplegar menu
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
-const container = document.getElementById("container");
 // const para opciones de menu 
 const btnAbout = document.getElementById("btn-about");
 const btnNews = document.getElementById("btn-news");
@@ -20,10 +19,7 @@ const filters = document.getElementById("general-filter");
 //evento para ocultar y mostrar elementos
 navIcon.addEventListener('click', () => {
   navMenu.classList.toggle('ocultar');
-  
 });
-
-
 btnAbout.addEventListener('click', () => {
   about.classList.remove('ocultar');
   filters.classList.add('ocultar');
@@ -46,24 +42,20 @@ btnFilters.addEventListener('click', () => {
 });
 
 //acceder a la data de cada pais
-const data = WORLDBANK;
+var WORLDBANK;
 const countryMex = WORLDBANK.MEX.indicators;
 const countryPer = WORLDBANK.PER.indicators;
 const countryBra= WORLDBANK.BRA.indicators;
-const countryChl= WORLDBANK.CHL.indicators;
+
 
 // section donde esta la informacion y el select
 const indicator = document.getElementById("information-filter-inner");
 const listQuestion = document.getElementById("list-question");
 
 //datos en select para mexico
-document.getElementById('MEX').addEventListener('click', () => {
+document.getElementById('btn_mex').addEventListener('click', () => {
   listQuestion.innerHTML = "";//limpiar un select
- HEAD
   listQuestion.dataset.ciudad = 'ciudadesMex'; // setear ciudad que se va  filtrar al hacer click (aqui toma los atributos del data)
-
-  listQuestion.dataset.ciudad = 'MEX'; // setear ciudad que se va  filtrar al hacer click
-
   // insertamos una opcion por default
   listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
   countryMex.forEach(ciudad => {//elemento
@@ -74,17 +66,16 @@ document.getElementById('MEX').addEventListener('click', () => {
 
 document.getElementById('btn_per').addEventListener('click', () => {
   listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'PER'; 
+  listQuestion.dataset.ciudad = 'ciudadesPeru'; 
   listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
   countryPer.forEach(ciudad => {//elemento
-    console.log(ciudad)
     listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
   });
 });
 
 document.getElementById('btn_bra').addEventListener('click', () => {
   listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'BRA'; 
+  listQuestion.dataset.ciudad = 'ciudadesBrasil'; 
   listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
   countryBra.forEach(ciudad => {//elemento
     listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
@@ -93,7 +84,7 @@ document.getElementById('btn_bra').addEventListener('click', () => {
 
 document.getElementById('btn_Chl').addEventListener('click', () => {
   listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'CHL'; 
+  listQuestion.dataset.ciudad = 'ciudadesChile'; 
   listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
   countryBra.forEach(ciudad => {//elemento
     listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
@@ -105,44 +96,18 @@ document.getElementById('btn_Chl').addEventListener('click', () => {
 listQuestion.addEventListener("change", () => {
   indicator.innerHTML = "";//Limpiar funcion
   //listQuestion.options[listQuestion.selectedIndex].text;
-  const resultado = window.WorldBank.filterCountry(data, listQuestion)//Datos de data.js
+  const resultado = window.WorldBank.filterCountry(countryMex, listQuestion)//Datos de data.js
   //console.log(resultado)
   for (let resultadoAño in resultado) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
     let parrafo = document.createElement('p');// creamos un elemento p temporal ira grafica
-    parrafo.innerHTML = `Año: ${resultadoAño} = ${resultado[resultadoAño] || "n/a"} ` //imprimimos el año y numeros
+    parrafo.innerHTML = `Año: ${resultadoAño} = ${resultado[resultadoAño] || 0} ` //imprimimos el año y numeros
     indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
   }
   //----------------
   //funcion busqueda por palabra
-  const llamado = document.getElementById("buscar");
-        
-  document.addEventListener("click",()=>{
-        let texto= document.getElementById("mySearch");
-        let num=document.getElementById("numero");
-        let enlace= window.cipher.encode(num,texto);
-  llamado.innerHTML= enlace;
-  });
-
-  //const search= document.getElementById("busca");
-  //button.addEventListener("click",()=>{
-  //function scout() {
-    //let porPalabra = document.getElementById("mySearch").placeholder;
-    //porPalabra.innerHTML = porPalabra;
-    //console.log(hola)}
   //const button = document.getElementById("buscar");
-  //button.addEventListener("click",()=>{
-    //function scoutfor() {
-      //var x = document.getElementById("buscar").placeholder;
-      //document.getElementById("demo").innerHTML =;
-    
-    //let buscar= document.getElementById("buscar");
-    
+  
     //console.log(buscar)
-    //console.log(buscar)
-  });
-    //let enlace= window.filter.searchingWord(buscar);
-//llamado.innerHTML= enlace;
-
 
  //searchingWord: (buscar)=>{
   //const print = (indicatorName) => {
@@ -168,16 +133,18 @@ listQuestion.addEventListener("change", () => {
   //         parrafo.innerHTML = `Año: ${resultado} = ${ciudad.data[resultado] || 0} `
 
   //         indicator.appendChild(parrafo);
-  
+  //       }
+  //     }
+  //   });
+  // }
 
-
-
-
+});
 
 
 
 // for(let i = 0; i<elements.length ; i++){
 // elements[i].addEventListener("click", () => {
 //   let valElement = elements[i].value
-//   window.worldbank.filterData(ciudadesMex, valElement)*/
-
+//   window.worldbank.filterData(ciudadesMex, valElement)
+//   )};
+// }

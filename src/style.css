@@ -46,10 +46,7 @@ body{
     background: #4d4d4d;
     margin-top: 20px;
     text-align: center;
-    padding: 0 10px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    padding: 0 10px; 
 }
 .nav-menu ul{
     line-height: 3rem;
@@ -69,9 +66,7 @@ body{
 }
 .container{
     padding: 5px 15px;
-
 }
-
 .news{
     width: 100%;
 }
@@ -145,12 +140,9 @@ footer{
     background-color: #333333;;
     height:50px;;
 }
-
-
 .title-footer{
     font-size: .6em;
     color: #fff;
     line-height: 50px;
     text-align: center;
 }
-
