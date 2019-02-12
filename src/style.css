@@ -169,11 +169,10 @@ ul {
 @media (min-width:992px) {
   #input-lens {
     width: 2%;
-    margin-top: -6.3%;
-    margin-left: 64%;
+    margin-top: -6.8%;
+    margin-left: 63%;
   }
 }
-
 
 footer {
   text-align: center;
@@ -190,11 +189,29 @@ footer {
   padding-top: 30px;
 }
 
+#separator {
+  height: 100px;
+}
+
+@media (min-width:992px) {
+  footer {
+    font-size: 1em;
+    padding-top: 16px;
+  }
+}
+
 #footer-lens {
   width: 4%;
   position: absolute;
   margin-top: -3%;
   margin-left: 4%;
+}
+
+@media (min-width:992px) {
+  #footer-lens {
+    width: 2%;
+    margin-top: -2%;
+  }
 }
 
 #champion-list {
