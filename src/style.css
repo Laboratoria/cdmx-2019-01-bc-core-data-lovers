@@ -1,5 +1,3 @@
-
-
 *,
 *:before,
 *:after {
@@ -22,6 +20,7 @@ h1 {
   background: #76448A;
   color: #aaf;
 }
+
 .alternate ::selection {
   background: #76448A;
   color: #000;
@@ -87,6 +86,7 @@ nav {
 }
 nav ul {
   float: right;
+
 }
 nav li {
   display: inline-block;
@@ -159,4 +159,3 @@ section .inner {
   opacity: ;
   align-content: inline-block;
 }
-
