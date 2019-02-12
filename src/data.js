@@ -19,7 +19,7 @@ window.data = {
   /*Di y Fa: Función que filtra por tipo de Pokemón: Agua. Almacena en una variable los 
   elementos de la data que tiene agua*/
   toPrintFilter: (namePokemon, imagePokemon, typePokemon) => {
-    let visualPokemonWater = `<button class="btnPokemon divPokemon ${typePokemon[0]}">
+    let visualPokemonWater = `<button class="btnPokemon divPokemon ${typePokemon[0]} col-2">
     <img src="${imagePokemon}"><br><br><br><p class="name">${namePokemon}</p>
     </button>`;
 
