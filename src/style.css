@@ -134,11 +134,6 @@ footer{
   
 }
 
-#years{
-    display: inline-block;
-    list-style: none;
-    padding: 5px;
-    border: solid 1px rgb(243, 148, 39);
-    width: 150px;
-
+table, td{
+  border: 1px solid black;
 }

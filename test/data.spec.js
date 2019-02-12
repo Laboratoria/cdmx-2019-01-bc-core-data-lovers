@@ -1,9 +1,9 @@
 require('../src/data.js');
 
 
-describe('example', () => {
+describe('filter', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filter).toBe('function');
   });
 
   it('returns `example`', () => {
