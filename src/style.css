@@ -142,6 +142,13 @@ ul {
   margin-bottom: 50px;
 }
 
+#input-lens {
+  width: 5%;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 72%;
+}
+
 footer {
   text-align: center;
   text-decoration: none;
@@ -201,12 +208,12 @@ p {
   overflow: hidden;
 }
 
-@media (min-width:992px){
+@media (min-width:992px) {
   .champion {
     width: 16%;
     margin: 0 2% 2%;
   }
-  }
+}
 
 img {
   width: 100%;
