@@ -1,13 +1,12 @@
-
-const datapokemon= POKEMON.pokemon;
+const datapokemon = POKEMON.pokemon;
 /*En esta seccion estoy trayendo los elemneetos del html para que los botones de hagan su funcion*/
-const buttonTypes =Array.from( document.getElementsByClassName("typesPokemon"));
+const buttonTypes = Array.from(document.getElementsByClassName("typesPokemon"));
 
-const obtenerTipo =(arregloBotones) => {
-  arregloBotones.map((tipoPokemon) =>{
-    tipoPokemon.addEventListener("click",(event)=>{
+const obtenerTipo = (arregloBotones) => {
+  arregloBotones.map((tipoPokemon) => {
+    tipoPokemon.addEventListener("click", (event) => {
       const getTypePokemon = event.target.id;
-      const arregloFiltrado =window.data.filterData(datapokemon,getTypePokemon);
+      const arregloFiltrado = window.data.filterData(datapokemon, getTypePokemon);
       imprimir(arregloFiltrado);
     })
   });
@@ -15,12 +14,12 @@ const obtenerTipo =(arregloBotones) => {
 
 obtenerTipo(buttonTypes);
 
-const imprimir =(obtenerTipo) =>{
+const imprimir = (obtenerTipo) => {
   const pokemons = document.getElementById("probando");
-  pokemons.innerHTML="";
+  pokemons.innerHTML = "";
 
-  obtenerTipo.map((datapokemon) =>{
-pokemons.innerHTML+= `<p> <img src="${datapokemon.img}">
+  obtenerTipo.map((datapokemon) => {
+    pokemons.innerHTML += `<p> <img src="${datapokemon.img}">
 <br>Nombre:${datapokemon.name}</br>
 <br> Su Id es :${datapokemon.id}</br>
 <br> Su candy es :${datapokemon.candy}</br>
@@ -29,13 +28,41 @@ pokemons.innerHTML+= `<p> <img src="${datapokemon.img}">
 <br> debilidades :${datapokemon.weaknesses}</br>
 </p>`
   })
-  
+
 }
 
 
 
+/*ordenando pokemon*/
 
- 
+/*
+filterCoincidence();
+
+}else if (ubication.includes('orderPokemon.html')) {
+  const orderRdio = document.getElementById("order");
+  alert('funciono');
+  console.log(orderRdio);
+  const arrayRadio = Array.from(orderRadio)
+  console.log(arrayRadio);
+  const getOrderPokemon = (optionsRadio) => {
+    optionsRadio.map(radio => {
+      radio.addEventListener("click", () => {
+        if (radio.checked === true) {
+          let idRadio = radio.id.split('-');
+          showList(window.sortData(dataPokemon, idRadio[1], idRadio[0]));
+        }
+      });
+    });
+  }
+  getOrderPokemon(arrayRadio);
+}*/
+
+
+
+
+
+
+
 
 
 
