@@ -13,17 +13,21 @@
     <header>
       <figure>
         <img src="images/logo.png" alt="PuntoMuerto" class="logo">
-        <input type="checkbox" class="checkbox" id="menu-toggle" name="abrir-cerrar" value="">
-        <img src="images/menu.png" class="menu">
-        <nav id="sidebar" class="sidebar">
-          <ul class="menu_list">
-            <li><a href="#" class="nav__item current">INFORMACIÓN</a></li>
-            <li><a href="#" class="nav__item">TOTAL</a></li>
-            <li><a href="#" class="nav__item">CONSULTA</a></li>
-            <li><a href="#" class="nav__item">GALERIA</a></li>
-            <li><a href="#" class="nav__item">FQA's</a></li>
-          </ul>
-        </nav>
+        <!--<input type="checkbox" class="checkbox" id="menu-toggle" name="abrir-cerrar" value="">-->
+        <label for="menu-toogle" class="menu-toogle checkbox" id="menu-toggle">
+          <img src="images/menu.png"  class="menu">
+        </label>
+<!--<img src="images/menu.png" class="menu-toogle" id = "menu">-->
+          <nav class="sidebar">
+            <ul class="menu_list">
+              <li><a href="#" class="nav__item current">INFORMACIÓN</a></li>
+              <li><a href="#" class="nav__item">TOTAL</a></li>
+              <li><a href="#" class="nav__item">CONSULTA</a></li>
+              <li><a href="#" class="nav__item">GALERIA</a></li>
+              <li><a href="#" class="nav__item">FQA's</a></li>
+            </ul>
+          </nav>
+
       </figure>
     </header>
 
@@ -36,18 +40,19 @@
         Nos proponemos concientizar a la juventud de los riesgos a que
         se exponen y sus posibles consecuencias.</p>
 
-      <div class="button">
-        <input type="button" value="CONSULTA" class="consulta"></input>
+        <div class="button">
+          <input type="button" value="CONOCE MÁS" class="consulta" id="consulta">
       </div>
 
     </section>
 
     <section class="total">
       <h2> TOTAL DE HERIDOS </h2>
-      <p>Tan solo en el 2016, 50 por ciento de los percances automovilísticos
+      <p>Tan solo en el 2015, 50% de los percances automovilísticos
         se relaciona con el consumo de alcohol y se dan
         principalmente entre jóvenes.</p>
       <p id="totalInjured"> 2’443,175 </p>
+
       <img src="images/car.png" alt="PuntoMuerto" class="icon">
       <img src="images/crossing.png" alt="PuntoMuerto" class="icon">
       <img src="images/moto.png" alt="PuntoMuerto" class="icon">
@@ -56,6 +61,7 @@
 
     <section id="know" class="know">
       <h2 id="knowMore"> CONOCE MÁS </h2>
+      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
       <form class="select">
         <select id="yearbttn" name="year" class="year">
           <option selected value="0"> AÑO </option>
@@ -63,15 +69,26 @@
           <option class="year" value="2002-01-04">2002</option>
           <option class="year" value="2003-01-04">2003</option>
           <option class="year" value="2004-01-04">2004</option>
+          <option class="year" value="2005-01-04">2005</option>
+          <option class="year" value="2006-01-04">2006</option>
+          <option class="year" value="2007-01-04">2007</option>
+          <option class="year" value="2008-01-04">2008</option>
+          <option class="year" value="2009-01-04">2009</option>
+          <option class="year" value="2010-01-04">2010</option>
+          <option class="year" value="2011-01-04">2011</option>
+          <option class="year" value="2012-01-04">2012</option>
+          <option class="year" value="2013-01-04">2013</option>
+          <option class="year" value="2014-01-04">2014</option>
+          <option class="year" value="2015-01-04">2015</option>
         </select>
         <select id="user" name="user">
-          <option selected value="0"> USUARIO </option>
+          <option selected value="0"> HERIDOS </option>
 
           <option value="Total_Injured_Persons_Motorcyclists">Motociclista</option>
           <option value="Total_Injured_Persons_Pedestrians">Peaton</option>
           <option value="Total_Injured_Persons_Pedalcyclists">Ciclista</option>
           <option value="Total_Injured_Persons_Transit_Total">Conductor</option>
-          <option value="todos">TODOS</option>
+          <option value="Total_Injured_Persons">TODOS</option>
         </select>
         <div class="button">
           <input id="search" type="button" value="CONSULTA">
@@ -79,27 +96,26 @@
       </form>
     </section>
 
-    <section id="result" class="result">
-    </section>
-
-    <section id="result" class="result">
+    <section id="result" class="result"></section>
 
       <section class="photos">
-        <img src="images/peaton.png" alt="PuntoMuerto" class="image">
-        <!--<img src="images/cros.png" alt="PuntoMuerto" class="image">
-        <img src="images/incident.png" alt="PuntoMuerto" class="image">-->
+        <img src="images/way.png" alt="PuntoMuerto" class="image">
+       <img src="images/cros.png" alt="PuntoMuerto" class="image">
+        <img src="images/incident.png" alt="PuntoMuerto" class="image">
         <h2> FQA </h2>
-        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-          sed diam nonummy nibh euismod tincidunt
-          <br>
-          ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-          minim veniam, quis nostrud exerci tation<br>
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-          consequat. Duis autem vel eudolore eu feug </p>
+        <p> <b> ¿Qué es punto muerto?</b> </p>
+        <p> <b> ¿A quién se dirige esta campaña? </b></p>
+        <p><b> ¿Qué medidas puedo realizar para evitar accidentes?</b> </p>
+        <p> <b> ¿De dónde son los datos que consulto?</b> </p>
+        <p><b> ¿Qué medidas debo tomar si soy peaton? </b></p>
       </section>
+
       <footer>
-        <img src="images/redes.png" alt="PuntoMuerto" class="redes">
+        <figure>
+        <!--<img src="images/redes.png" alt="PuntoMuerto" class="redes">-->
+        <p id="footer"> Página hecha por Hame E. y Andie C. </p>
         <img src="images/final.png" alt="PuntoMuerto" class="final">
+      </figure>
       </footer>
   </div>
 

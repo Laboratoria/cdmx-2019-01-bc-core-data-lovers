@@ -1,4 +1,4 @@
-var INJURIES = [{
+window.INJURIES = [{
 
         "Total_Injured_Persons": null,
         "Total_Injured_Persons_Air": null,
