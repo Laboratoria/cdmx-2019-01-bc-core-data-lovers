@@ -1,4 +1,4 @@
-var INJURIES = [{
+window.INJURIES = [{
   "Total_Injured_Persons": 3061790,
   "Total_Injured_Persons_Highway": 2125184,
   "Total_Injured_Persons_Bus_Occupants": 15427,

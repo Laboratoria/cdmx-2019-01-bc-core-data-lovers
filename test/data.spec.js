@@ -1,12 +1,17 @@
-require('../src/data.js');
+const getData = require('../src/data.js');
 
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('getData', () => {
+  it('is a object', () => {
+    expect(typeof getData).toBe('object');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  describe('data.getData', () => {
+    it('is a function',() => {
+      expect(typeof window.data.getData).toBe('function');
+    });
   });
+
+   it('should return Year', () => {
+    expect(window.data.getData('Total_Injured_Persons_Pedestrians')['0']).toEqual('2001');
+   });
 });

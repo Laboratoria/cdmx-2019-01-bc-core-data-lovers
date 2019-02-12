@@ -2,6 +2,11 @@
 @import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
 
 /************body*********/
+article {
+  width: 50%;
+  display: inline-flex;
+}
+
 body {
   background: url("images/usa.png") no-repeat center top fixed;
   background-size: 80%;
@@ -35,9 +40,7 @@ h2 {
 
 p {
   font-family: 'Lato',sans-serif;
-  display:inline-block;
   color: #112659;
-  margin-right: 100px;
 }
 
 /************** menu ********/
@@ -46,7 +49,7 @@ p {
   color: #fff;
   position: fixed;
   font-family: 'Montserrat', sans-serif;
-  font-size: 100%;
+  font-size: 90%;
   text-align: center;
   bottom: 0;
   left: 0;
@@ -95,16 +98,12 @@ p {
   font-size: 20px;
 }
 
-#tableStructure {
+.tableStructure {
   display: inline;
   margin-right: 10px;
 }
 
-#show,#hide {
-	display:none;
-}
-
-section#content {
+section.content {
 	display: none;
 
 }
@@ -116,7 +115,7 @@ section#content {
   height: 80px;
   padding: 10px 16px;
   margin: 5px;
-  font-size: 2em;
+  font-size: 200%;
   border-radius: 70px;
   border-width: 8px;
   background-color: transparent;
@@ -141,20 +140,6 @@ section#content {
 
 .fa-car, .caroccupants_info {
   background-color: darkmagenta;
-}
-
-.motorcyclists_info, .pedestrians_info, .pedalcyclists_info, .busoccupants_info, .caroccupants_info {
-  color: #fff;
-  opacity: 0.8;
-  text-align: left;
-  height: 100vh;
-  width: 20%;
-  left: 80pxs;
-  padding-left: 20%;
-  padding-right: 20px;
-  padding-top: 85px;
-  position: absolute;
-  margin-top: 0;
 }
 
 
