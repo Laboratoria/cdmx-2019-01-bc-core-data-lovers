@@ -1,8 +1,8 @@
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
-});
+});*/
 /*convierte la base de datos en una variable*/
 const datalol = window.LOL.data;
 const datosArr = window.lol.iterarData(datalol);
