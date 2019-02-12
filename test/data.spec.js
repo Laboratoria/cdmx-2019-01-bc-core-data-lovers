@@ -1,8 +1,7 @@
 require('../src/data.js');
 
-
 describe('data', () => {
-  it('is a object', () => {
+  it('Debería devolver un objeto', () => {
     expect(typeof data).toBe('object');
   });
 
