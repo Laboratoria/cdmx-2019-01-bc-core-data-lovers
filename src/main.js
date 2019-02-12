@@ -40,7 +40,7 @@ search.addEventListener('keyup', () => {
   if (name2 == "" ) {
     printData(newArrayChamp);
   } else {
-      printData(filtering);
+      printData(filtered);
 }
 })
 

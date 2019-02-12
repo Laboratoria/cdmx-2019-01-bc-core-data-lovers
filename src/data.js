@@ -5,7 +5,7 @@ window.lol = {
     for (const key in lolData) {
       if (lolData.hasOwnProperty(key)) {
         const element = lolData[key];
-        champsInfo = {
+        let champsInfo = {
           splash: element.splash,
           name: element.name,
           primaryRol: element.tags[0],
@@ -24,9 +24,10 @@ window.lol = {
     return newArrayInfo;
   },
 
-  filterByRol: (rolId, newArrayChamp) =>
-    filtering = newArrayChamp.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId),
-
+  filterByRol: (rolId, newArrayChamp) => {
+    const filtering = newArrayChamp.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId);
+    return filtering;
+},
     //Aquí inicia la función para ordenar por ataque
   sorterByAttack: (newArrayChamp) => {
     const attackSorter = newArrayChamp.sort((a, b) => {
@@ -75,15 +76,8 @@ return defenseSorter;
 },
 
   filterByName: (name2, newArrayChamp) => {
-  //   name2 = name2.toLowerCase()
-  //   for( champ2 of newArrayChamp) {
-  //     let champName = champ2.id.toLowerCase();
-  //       if(champName.indexOf(name2) != -1){
-  //         return champ2;
-  //       }
-  //   }
-      filtering = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
-    return filtering;
+      const filteringName = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
+    return filteringName;
   }
 //esta llave cierra window.lol
 
