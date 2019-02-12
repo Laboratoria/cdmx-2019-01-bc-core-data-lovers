@@ -1,14 +1,14 @@
 global.window=global;
-const {filterData} = require('../src/data.js');
-const dataPokemon = require('../src/data/pokemon/pokemon');
+ require('../src/data.js');
+require('../src/data/pokemon/pokemon');
 
-describe("filterData", () => {
+describe("data", () => {
   it('is a function', () => {
-    expect(typeof filterData).toBe("function");
+    expect(typeof window.data).toBe("object");
   });
   
 
   it('returns filterData', () => {
-    expect(filterData(dataPokemon, ['Ghost']).length).toBe(3);
+   
   });
 });

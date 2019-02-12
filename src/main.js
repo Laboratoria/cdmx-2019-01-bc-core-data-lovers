@@ -1,4 +1,4 @@
-const datapokemon = POKEMON.pokemon;
+const datapokemon = window.POKEMON.pokemon;
 /*En esta seccion estoy trayendo los elemneetos del html para que los botones de hagan su funcion*/
 const buttonTypes = Array.from(document.getElementsByClassName("typesPokemon"));
 
@@ -29,7 +29,7 @@ const imprimir = (obtenerTipo) => {
 </p>`
   })
 
-}
+};
 
 
 
@@ -41,6 +41,7 @@ filterCoincidence();
 }else if (ubication.includes('orderPokemon.html')) {
   const orderRdio = document.getElementById("order");
   alert('funciono');
+  
   console.log(orderRdio);
   const arrayRadio = Array.from(orderRadio)
   console.log(arrayRadio);

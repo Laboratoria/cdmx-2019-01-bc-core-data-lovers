@@ -1,4 +1,4 @@
-var POKEMON = {
+window.POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",
@@ -870,7 +870,7 @@ var POKEMON = {
     "id": 31,
     "num": "031",
     "name": "Nidoqueen",
-    "img": "http://www.serebii.net/pokemongo/pokemon/031.png",
+    "img": "https://vignette.wikia.nocookie.net/pokeespectaculos/images/9/9e/Nidoqueen_NB.gif/revision/latest?cb=20110703212810&path-prefix=es",
     "type": [
       "Poison",
       "Ground"
@@ -1017,7 +1017,7 @@ var POKEMON = {
     "id": 36,
     "num": "036",
     "name": "Clefable",
-    "img": "http://www.serebii.net/pokemongo/pokemon/036.png",
+    "img": "https://www.google.com/search?q=Clefairy+gif&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjOgvGi67bgAhVI4qwKHaybC50Q_AUIDigB&biw=1213&bih=589#imgdii=yPGv2O6LEHqY2M:&imgrc=Nrj05eJZ437CeM:http://www.serebii.net/pokemongo/pokemon/036.png",
     "type": [
       "Normal"
     ],
@@ -1069,7 +1069,7 @@ var POKEMON = {
     "id": 38,
     "num": "038",
     "name": "Ninetales",
-    "img": "http://www.serebii.net/pokemongo/pokemon/038.png",
+    "img": "https://vignette.wikia.nocookie.net/pokemon-adventure-challenge/images/0/0b/Ninetales.gif/revision/latest?cb=20140308225754",
     "type": [
       "Fire"
     ],
@@ -1094,7 +1094,7 @@ var POKEMON = {
     "id": 39,
     "num": "039",
     "name": "Jigglypuff",
-    "img": "http://www.serebii.net/pokemongo/pokemon/039.png",
+    "img": "https://vignette.wikia.nocookie.net/pokpiruleta/images/9/9b/Jigglypuff_XY.gif/revision/latest?cb=20140626130414&path-prefix=es",
     "type": [
       "Normal"
     ],
@@ -1118,7 +1118,7 @@ var POKEMON = {
     "id": 40,
     "num": "040",
     "name": "Wigglytuff",
-    "img": "http://www.serebii.net/pokemongo/pokemon/040.png",
+    "img": "https://media.pokemoncentral.it/wiki/c/c9/Sprxymsh040.gif",
     "type": [
       "Normal"
     ],
@@ -1141,7 +1141,7 @@ var POKEMON = {
     "id": 41,
     "num": "041",
     "name": "Zubat",
-    "img": "http://www.serebii.net/pokemongo/pokemon/041.png",
+    "img": "https://vignette.wikia.nocookie.net/pokpiruleta/images/b/bb/Zubat_XY.gif/revision/latest?cb=20140624202829&path-prefix=es",
     "type": [
       "Poison",
       "Flying"
@@ -1172,7 +1172,7 @@ var POKEMON = {
     "id": 42,
     "num": "042",
     "name": "Golbat",
-    "img": "http://www.serebii.net/pokemongo/pokemon/042.png",
+    "img": "https://vignette.wikia.nocookie.net/pokemon-fano/images/c/c8/Golbat_XY.gif/revision/latest?cb=20140521024340",
     "type": [
       "Poison",
       "Flying"
@@ -1382,7 +1382,7 @@ var POKEMON = {
     "id": 49,
     "num": "049",
     "name": "Venomoth",
-    "img": "http://www.serebii.net/pokemongo/pokemon/049.png",
+    "img": "https://www.google.com/search?q=Venonat+gifs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjgweep77bgAhVBS60KHfs7C2IQ_AUIDigB&biw=1209&bih=589#imgrc=PRNRvbRPRDad1M:",
     "type": [
       "Bug",
       "Poison"
@@ -3564,7 +3564,7 @@ var POKEMON = {
     "id": 131,
     "num": "131",
     "name": "Lapras",
-    "img": "http://www.serebii.net/pokemongo/pokemon/131.png",
+    "img": "https://vignette.wikia.nocookie.net/pokecreated/images/3/34/Lapras_XY.gif/revision/latest?cb=20140412181306&path-prefix=es",
     "type": [
       "Water",
       "Ice"
@@ -3639,7 +3639,7 @@ var POKEMON = {
     "id": 134,
     "num": "134",
     "name": "Vaporeon",
-    "img": "http://www.serebii.net/pokemongo/pokemon/134.png",
+    "img": "https://vignette.wikia.nocookie.net/pokecreated/images/1/15/Vaporeon_XY.gif/revision/latest?cb=20140412221400&path-prefix=es",
     "type": [
       "Water"
     ],
