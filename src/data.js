@@ -16,7 +16,7 @@ window.worldBank = {
       // console.log(indicadorFiltro); 
       indicadorFiltro.forEach(element => { //forEach recorre arreglo de Indicadores,obteniendo solo la data del elemnto que le pasa el filtro anterior 
        let datosIndicador = element.data;
-      // console.log(datosIndicador); 
+      //console.log(datosIndicador); 
       enviaIndicador= datosIndicador; 
       })  
       return enviaIndicador;
