@@ -1,4 +1,9 @@
 /*convierte la base de datos en una variable*/
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+});
+
 const datalol = LOL.data;
 const datosArr = window.lol.iterarData(datalol);
 const rol = document.getElementsByClassName('rol');
@@ -6,21 +11,28 @@ const imprimirRoles = document.getElementById("imprimirRoles")  /*trae el div im
 const hamburguerButton = document.getElementById("hamburguerButton");
 let search = document.getElementById("search");
 const home = document.getElementById("home");
+const homeB = document.getElementById("home-b");
 const searchChampion = document.getElementById("searchChampion");
+const searchChampionB = document.getElementById("searchChampion-b");
+
 //const search = document.getElementById("search").value
 //const arrayData = Object.values(datalol)
 
 
-hamburguerButton.addEventListener("click",() =>{
-    const menu = document.getElementById("menu");
-    const displayMenu= document.getElementById("btn-menu").style.display="block"
-    menu.classList.toggle("hamburguerButton");
-});
+// hamburguerButton.addEventListener("click",() =>{
+//     const menu = document.getElementById("menu");
+//     const displayMenu= document.getElementById("btn-menu").style.display="block";
+//     menu.classList.toggle("hamburguerButton");
+// });
 
 //regresar a home limpiando el contenido antes mostrado
-home.addEventListener("click",() =>{
+const cleanHome = () =>{
   imprimirRoles.innerHTML = "";
-});
+}; 
+  
+home.addEventListener("click", cleanHome);
+homeB.addEventListener("click", cleanHome);
+ 
 
 //función para pintar los campeones acorde a las propiedades seleccionadas
 const print = (datosArr) =>{
@@ -46,10 +58,13 @@ const selectRol = () =>{
 selectRol();
 
 //Función para limpiar contenido antes mostrado y desplegar todos los campeones para realizar busqueda específica 
-searchChampion.addEventListener("click",() =>{
-  imprimirRoles.innerHTML = "";
-  print(datosArr)
-});  
+const printChamp = ()=> {
+    imprimirRoles.innerHTML = "";
+    print(datosArr)
+}
+
+searchChampion.addEventListener("click", printChamp); 
+searchChampionB.addEventListener("click", printChamp); 
 
 //Función para desplegar el campeon para se desea buscar
 const filterRolBySearch = () => {
