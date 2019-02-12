@@ -41,7 +41,7 @@
   color: white;
   font-size: 4vw;
 }
-.typeChart  {
+.boton-typeChart  {
   background-color: #0763db;
   border: none;
   padding: 2vw;
@@ -111,7 +111,7 @@
   background-color: transparent;
   border: none;
 }
-.typeChart {
+.boton-typeChart {
   display: inline-block;
   background-color: #0763db;
   padding: 2%;
