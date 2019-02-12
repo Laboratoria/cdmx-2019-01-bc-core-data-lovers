@@ -49,9 +49,20 @@ window.data = {
   },
 
   computeStats: (data) => {
-    const newArray = data.map(({candy_count}) => [candy_count]);
-    const minimum = Math.max(newArray);
-    return parseInt(minimum);
+    let arrayCandys = [];
+    data.forEach(element => {
+      if(element.candy_count > 0){
+            
+        arrayCandys.push(element.candy_count)
+               
+      }
+    });
+    console.log(arrayCandys);
+    const suma = arrayCandys.reduce((prev, next) => prev + next);
+    const promedio = suma / arrayCandys.length;
+    console.log(promedio);
+    //const minimum = Math.max(arrayCandys);
+    return minimum;
 
   }
 

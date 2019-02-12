@@ -1,4 +1,4 @@
-let POKEMON = POKEMON;
+//let POKEMON = POKEMON;
 let dataPokemon = POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const searchCoincidence = document.getElementById('search-coincidences');
@@ -58,6 +58,7 @@ if (ubication.includes('typePokemon.html')) {
  // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
   //showList(allData);
   filterCoincidence();
+  window.data.computeStats(dataPokemon);
 
 }else if (ubication.includes('orderPokemon.html')) {
   /*const orderNameRadio = document.getElementById('asc-name');

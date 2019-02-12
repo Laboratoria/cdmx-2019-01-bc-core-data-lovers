@@ -161,7 +161,6 @@ const dataPokemonTest = [{
 } ]; 
 
 describe ('data', () => {
-
   test('debería ser un objeto', () => {
     expect(typeof data).toBe('object');
   });
