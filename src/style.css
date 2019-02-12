@@ -93,6 +93,7 @@ figure img{
 .titulo{
   font-size: 20px;
   color: rgb(240, 236, 228);
+  width: max-content;
 }
 .hidden {
   display: none;
@@ -176,3 +177,48 @@ figure img{
 }
 
 
+.bigImg{
+  display:none;
+}
+  
+
+/*Media Query Desktop*/
+@media only screen  and (min-width : 768px) {
+
+.bigImg{
+    display:block;
+    width: 70%;
+    height: 110%;
+    margin-right:5%;
+    margin-left: -8%
+
+
+  }  
+
+.lolIcons {
+    
+    display:none;
+  } 
+  
+  #showFirstChampionList{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+  }
+  
+  .nameList{
+    width: 30%;
+   margin-right: 15px;
+   margin-left:15px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   display: flex;
+justify-content:center;
+
+  }
+
+
+}
