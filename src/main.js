@@ -5,7 +5,7 @@ const data = POKEMON.pokemon;
 const buttonFilter = Array.from(document.getElementsByClassName("boton-typeChart"));
 const optionsContainer = document.getElementById('optionsContainer');
 
-
+//Hola
 
 const gettingType = (arrayofButtons) => {
   arrayofButtons.map((buttonSelected) => {
