@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/rama-karenina
 /* 
 --------------------------
 ----ESTILOS GENERALES-----
@@ -17,7 +20,7 @@
 ------ESTILOS MOBIL------
 -------------------------*/
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 600px){
   
 #start {
   background-image: url(./start.png);
@@ -41,7 +44,7 @@
   color: white;
   font-size: 4vw;
 }
-.typeChart  {
+.boton-typeChart  {
   background-color: #0763db;
   border: none;
   padding: 2vw;
@@ -98,7 +101,7 @@
 --------------------------
 ------ESTILOS DESKTOP-----
 -------------------------*/
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 601px) {
   body {
     background-image: url(./background.png);
      background-color: #2697FF;
@@ -111,45 +114,43 @@
   background-color: transparent;
   border: none;
 }
-.typeChart {
+.boton-typeChart {
   display: inline-block;
   background-color: #0763db;
   padding: 2%;
-  font-size: 79px;
+  font-size: 2vw;
   margin: 1%;
   background-attachment: fixed;
-  }
+}
 #options {
+  float: right;
   width: 45vw;
   height: 69vw;
   background-attachment: fixed;
-  float: right;
 }
 
 #optionsContainer {
-  
-  width: 34vw;
-  height: 13vw;
-  margin-top: 33vw;
-  margin-left: 9vh;
+  width: 74%;
+  height: 27%;
+  margin-top: 74%;
+  margin-left: 17%;
   background-attachment: fixed;
-  padding: 5%;
-  }
-  #rootContainer {
-    display: inline-block;
-    width: 41vw;
-    height: 69vw;
-    margin-left: 4vh;
-    background-attachment: fixed;
+}
+#rootContainer {
+  display: inline-block;
+  width: 51vw;
+  height: 68vw;
+  background-attachment: fixed;
 }
 #root {
   display: inline-block;
-  width: 28vw;
-  height: 46vh;
+  width: 27vw;
+  height: 35vh;
   margin-top: 22vw;
   padding: 2%;
+  margin-left: 11%;
 }
-}
+
 #nextPage {
   background-color: transparent;
   color: transparent;
@@ -157,4 +158,5 @@
 }
 head {
   color: transparent;
+}
 }

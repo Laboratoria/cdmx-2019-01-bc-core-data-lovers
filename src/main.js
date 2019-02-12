@@ -1,6 +1,53 @@
-//Declaración de variables
-const data = POKEMON.pokemon;
-const finalResult = document.getElementById('root');
+//Declarar objeto de la data
+const data = POKEMON.pokemon; 
+
+// Declara array de botones y espacio a imprimir 
+const buttonFilter = Array.from(document.getElementsByClassName("boton-typeChart"));
+const optionsContainer = document.getElementById('optionsContainer');
+
+//Hola
+
+const gettingType = (arrayofButtons) => {
+  arrayofButtons.map((buttonSelected) => {
+    buttonSelected.addEventListener("click", (event) =>{
+      const buttonType = event.target.id;
+      const dataFiltered = allPokemon.dataFiltered(data, buttonType)
+      printResult(dataFiltered)
+    })
+  });
+};
+
+gettingType(buttonFilter);
+
+const printResult =(getType) =>{
+  const finalResult = document.getElementById('root');
+  finalResult.innerHTML="";
+  getType.map(data =>{
+   finalResult.innerHTML+= `<button class="pokedex"  style='width:250px; height:350px'>
+    <img src="${data.img}">
+    <br>Nùmero: ${data.id} 
+    <br> Nombre: ${data.name} 
+    <br> Tipo: ${data.type}</button>`;
+})
+  
+}
+
+// Muestra data de A-Z
+const dataMenor = data.sort(function (a, b) {
+  if (a.name > b.name) {
+    return 1;
+  }
+  else if (a.name < b.name) {
+    return -1;
+  }
+
+});
+
+
+
+
+/*
+
 const butFire = document.getElementById ('Fire');
 const butNormal = document.getElementById ('Normal');
 const butGrass = document.getElementById ('Grass');
@@ -16,6 +63,9 @@ const butRock= document.getElementById('Rock');
 const butGhost= document.getElementById('Ghost');
 const butDragon= document.getElementById('Dragon');
 const butDark= document.getElementById('Dark');
+const butAscend= document.getElementById('ascendente');
+const butDescend= document.getElementById('descendente');
+
 
 // Filtra fuego
 const typeFire = data.filter(data => data.type.includes("Fire"));
@@ -242,7 +292,6 @@ function filterGhost() {
   });
 }
 
-//Dragon
 const typeDragon = data.filter(data => data.type.includes("Dragon"));
 const printDragon = (name, imagen, type, id) => {
   let dragon = `<button class="pokedex"  style='width:250px; height:350px'><img src="${imagen}"><br>Nùmero: ${id} <br> Nombre: ${name} <br> Tipo: ${type}</button>`;
@@ -259,3 +308,6 @@ function filterDragon() {
     printDragon(name, imagen, type, id);
   });
 }
+*/
+
+//}
