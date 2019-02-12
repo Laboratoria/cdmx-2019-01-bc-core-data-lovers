@@ -1,11 +1,3 @@
-//get the data showThePanel (this is only used if we preffer to show the panel via javascrip and not in the css)
-//First we need to declare our buttons
-// let buttonPedestrians =  document.getElementById('pedestrians-show');
-// let buttonPedalcyclists =  document.getElementById('pedalcyclists-show');
-// let buttonBus_occupants =  document.getElementById('bus_occupants-show');
-// let buttonCar_occupants =  document.getElementById('car_occupants-show');
-// let buttonMotorcycle =  document.getElementById('motorcyclists-show');
-// let content = document.getElementById('content');
 
 // const dataToSearch = window.INJURIES;
 const bottonstByMode = Array.from(document.getElementsByClassName('button-transport'));
