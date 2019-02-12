@@ -16,6 +16,9 @@
     const menu = document.getElementById('menu')
     const cerrar = document.getElementById('titleChampions')
 
+  //Trae los divs de cada personaje
+  const character = document.getElementById('character')
+
   //almacena el valor del input para la busqueda por nombre
   const searchInput = document.getElementById("searchInput")
     
@@ -52,11 +55,12 @@
   const print = (datos) => {
     showFirstChampionList.innerHTML = "";
     datos.forEach(champ => {
-    let nameList = `<div class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;
-    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
+
+    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="lolIcons" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
 
                print(datos)
    
+               
     
 //toma el id de las "a" del menu desplegable
 //las itera, a cada una le asigna un addEventListener
@@ -87,25 +91,32 @@ const searchByName = () => {
  searchByName();
 
     
+//selecciona un personaje dando click
+//el click ejecuta la función que abre la info del personaje
+//el click almacena el id del personaje que se seleccionó
+//una función busca en el array los datos del personaje
+//la función borra el contenido anterior
+//la función extrae los elementos del personaje
+//una función de impresión específica imprime los datos completos en la tarjeta del personaje
+
+/*const characterSheet = () => {
+  character.addEventListener('click', ()=>{
+  const openCharacterSheet = window.lol.characterSelection(dataToArray);
+ console.log (openCharacterSheet);})}
+ characterSheet();*/
 
 
+ //const characterSheet = () => {
+  /*for ( let i=0; i<showFirstChampionList.length; i++){
+    showFirstChampionList[i].addEventListener('click', () => {
+      let characterName = showFirstChampionList[i].id;
+      console.log(characterName);})}
+    //  const characterDetail = window.lol.characterSelection(characterName,dataToArray);
+    //  console.log(characterDetail);})}}*/
 
 
-    
-      //const filtroSupport = Object.values(dataLol)
-        //    filtroSupport.forEach(element => {
-          //  const roles = element.tags[0];
-          /*if (roles === "Support"){
-              console.log(element);}
-            });
-              
-            }
-            support.addEventListener('click',filtroPorRol)*/
+    let aatrox = document.getElementById("Aatrox")
+    aatrox.addEventListener('click', () => { 
+      console.log('sí funciono');
 
-
-            //cuando yo eliga un rol en mi lista dentro del menu desplegable, con la clase de rol
-            // obtener el class (nombre)
-            //obener el arreglo completo
-            // lo inserto en filtroDataRoles para obtener el arreglo filtrado y lo asigno a una variable
-            //con un map recorro el arreglo de objetos y en cadauno voy sacando las caracteristicas
-            // y boy pintando
+    })
