@@ -27,7 +27,7 @@ window.lol = {
   filterByRol: (rolId, newArrayChamp) => {
     const filtering = newArrayChamp.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId);
     return filtering;
-}
+},
     //Aquí inicia la función para ordenar por ataque
   sorterByAttack: (newArrayChamp) => {
     const attackSorter = newArrayChamp.sort((a, b) => {
