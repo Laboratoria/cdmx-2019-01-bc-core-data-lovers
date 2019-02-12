@@ -52,8 +52,9 @@ html,body{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #bbb;
   color: black;
+
 }
 
 /* Add an active class to highlight the current page */
@@ -89,11 +90,18 @@ html,body{
 }
 
 
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .topnav a.icon
+
+           {
+
     float: right;
     display: block;
+    width: 0px;
+margin-right: -40px;
   }
 }
 
@@ -101,13 +109,15 @@ html,body{
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    /* position:absolute;
-    left:100%;
-    top: 100px;
-     */
+    position:relative;
+    left:400px;
+    top: -193px;
+
+
   }
 
-  .topnav .icon{
+  .topnav.responsive .active{
+    margin-right: -40px;
 
 
   }
@@ -117,7 +127,6 @@ html,body{
     text-align: left;
   }
 }
-
 
 
 
