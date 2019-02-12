@@ -98,12 +98,12 @@ p {
   font-size: 20px;
 }
 
-#tableStructure {
+.tableStructure {
   display: inline;
   margin-right: 10px;
 }
 
-section#content {
+section.content {
 	display: none;
 
 }
