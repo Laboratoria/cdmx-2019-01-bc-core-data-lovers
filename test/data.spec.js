@@ -1,4 +1,5 @@
 
+
 require ('../src/data');// ubicacion del archivo data funcion pura
 require ('../src/data/worldbank/worldbank.js');// ubicacion de la data a testear
 
@@ -192,12 +193,14 @@ const arrayOrder2= [["1960", 18.5496992049305],
 ["2017", 8.69935421988486]];
 
 describe ('es un Objeto llamado WorldBank', () => {// test si es un objeto
+
   it ('is an object', () => { 
 expect(typeof window.worldBank).toBe('object');
   });
 });
 
 describe('es una función llamada filtroPaís', () => {// test si es funcion filtro pais
+
   it('is a function', () => {
     expect(typeof window.worldBank.filtroPais).toBe('function');
   });
@@ -209,8 +212,10 @@ expect(typeof window.worldBank.orderByAsc).toBe('function');
   });
 });
 
+
 it('Debe regresar las datos del Indicador y Pais que selecciona el usuario', ()=>{//Test de funcion Filtro, 
   expect(window.worldBank.filtroPais(baseDatos,'MEX','Población de 0 a 4 años, mujeres (% de la población femenina)')).toEqual(baseDatos.MEX.indicators[0].data);
+
 });
 
 it('Dede ordenar de forma ascendente la data', ()=>{
@@ -219,5 +224,3 @@ it('Dede ordenar de forma ascendente la data', ()=>{
 it('Dede ordenar de forma descendente la data', ()=>{
   expect(window.worldBank.orderByAsc('desc',arrayObject)).toEqual(arrayOrder2);
 });
-
-

@@ -83,6 +83,7 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
    valorPorcentajeY.push(pais[j]);
   }
  document.getElementById('contenido').innerHTML = respuesta;
+
 /* document.getElementById('graf').style.display='block';//comentar grafica
  VerGrafica();*/
  return respuesta;
@@ -120,7 +121,9 @@ const limpiar = () => {
 //console.log(limpiar);
 
 
+
 /*console.log(valorAnioX);  //comentar grafica
+
 console.log(valorPorcentajeY);
 
 const VerGrafica=()=>{
@@ -133,7 +136,8 @@ const VerGrafica=()=>{
                 label: 'Indicador Demografico (%)',
                 data: valorPorcentajeY,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
+
+                    'rgba(77, 169, 197, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
@@ -141,7 +145,8 @@ const VerGrafica=()=>{
                     'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
+
+                    'rgba(11,68,85,1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
