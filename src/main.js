@@ -6,7 +6,7 @@ document.getElementById("next").addEventListener("click", ()=>{
  var POKEMON;
 const dataPokemon = POKEMON.pokemon;
 const buttonTypes = Array.from( document.getElementsByClassName("bottonPokemons"));
-
+console.log(buttonTypes);
 document.getElementById("showPokemons").addEventListener("click", ()=> {
   
   imprimir(dataPokemon);
@@ -23,7 +23,7 @@ const obtenerTipo = (arregloBotones) => {
 
       const getTypePokemon = event.target.id;
 
-
+        console.log(getTypePokemon);
       const arregloFiltrado = window.data.filterPokemon(dataPokemon,getTypePokemon);
 
       imprimir(arregloFiltrado);
