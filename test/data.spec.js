@@ -1,4 +1,3 @@
-
 require ('../src/data');
 const baseDatos={"MEX": {
   "indicators": [
