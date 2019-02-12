@@ -1,88 +1,81 @@
 <!DOCTYPE html>
 <html>
-<html lang="es" <head>
-<meta charset="utf-8">
-
-<!-------------Welcome screen------------->
-<span class="container">
-  <span class="checkbox-container">
-    <input class="checkbox-trigger" type="checkbox" />
-    <span class="menu-content">
-      <ul>
-        <li><a href=" target=" _blank">HOME</a></li>
-        <li><a href="" target="_blank">HANGMAN</a></li>
-        <li><a href="" target="_blank">MEMORY</a></li>
-      </ul>
-      <span class="hamburger-menu"></span>
-    </span>
-  </span>
-</span>
-<div class="screen" id="welcome-screen">
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <!-------------Welcome screen------------->
   <title>MexEduca</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  </head>
+  </div>
+  <header>
+    <nav role="navigation">
+      <figure class="logo"><img src="imagen/learning.png" alt="leyendo"></figure>
+      <h1 class="title">Alfabetización en Latinoamérica</h1>
+      <ul>
+        <li><a href="imagen/Historia de usuario..png">¿Quiénes somos?</a></li>
+        <li><a href="imagen/Historia de usuario. (1).png">¿Porqué MexEduca?</a></li>
+      </ul>
+    </nav>
+  </header>
+</head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="page1">
-          <img class="log1" src="imagenes/learning.png" alt="login">
-          <h1><span class="logo" id="log">MexEduca</span></h1>
-          <img class="img1" src="imagenes/graduadas.jpg" alt="back">
-      </nav>
-      <h3>Indices educativos en México</h3>
-      <h4>Sección mujeres</h4>
-      <button value="mostrar" onclick="myFunction()">entrar</button>
-    </header>
-</div>
-<!--------------categorias------------------------->
-
-<div class="category" id="page2">
-  <section class="categorías">
-    <h2>Categorías</h2>
-    <button id="nLearn" class="btn2" onclick="functionN()">Nivel educativo</button>
-    <button id="aLearn" class="btn3" onclick="functionA()">Alfabetización</button>
+<body>
+  <section>
+      <div class="inner"></div>
+      <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
   </section>
-</div>
 
-<div id="results">
-  <section class="resultados">
-    <h4>Nivel educativo</h4>
+  <section>
+    <h3>Noticias</h3>
+
+  </section>
+
+  <section>
+    <button class="btnliteracy" id="literacy">Alfabetización</button>
     <fieldset>
-      Para : <select name="nivelEstudios" id="nivelEstudios">
-        <option value="primaria">Primaria</option>
-        <option value="secundaria">Secundaria</option>
-        <option value="licenciatura">Licenciatura</option>
-        <option value="maestria">Maestría</option>
-        <option value="doctorado">Doctorado</option>
-      </select>
-      De : <input type="number"> A: <input type="number">
+        Para : <select name="country" id="countriesOptions">
+            <option class="opt" value="MEX">México</option>
+            <option class="opt" value="CHIL">Chile</option>
+            <option class="opt" value="PER">Perú</option>
+            <option class="opt" value="BRA">Brasil</option>
+          </select>
     </fieldset>
-    <h5 id="indicador"></h5>
 
+    <fieldset>
+      Para : <select name="literacyMex" id="literacyOptions">
+        <option class="opt" value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
+        <option class="opt" value="adultWomen">Mujeres adultas (15 años o más)</option>
+      </select>
+    </fieldset>
   </section>
-</div>
+
+  <section>
+      <article>
+        <h3>Datos</h3>
+        <h5 id="imprimiendo"></h5>
+      </article>
+    </section>
+  
+  <footer>
+    <article>
+      <h4>Acerca de</h4>
+      <h4>Sitios de interés</h4>
 
 
-<footer>
-  <img src="" alt="">
-</footer>
+    </article>
 
-</div>
+  </footer>
 
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 
-
-
-
-<div id="root"></div>
-<!-- <script src="./data/injuries/injuries.js"></script> -->
-<!-- <script src="./data/pokemon/pokemon.js"></script> -->
-<!-- <script src="./data/steam/steam.js"></script> -->
-<script src="./data/worldbank/worldbank.js"></script>
-<!-- <script src="./data/lol/lol.js"></script> -->
-<script src="data.js"></script>
-<script src="main.js"></script>
 </body>
 
 </html>

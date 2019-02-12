@@ -1,3 +1,4 @@
+
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
@@ -8,22 +9,51 @@
 window.example = example;*/
 
 
-//Traer array
 
-const dataEducacion = WORLDBANK.MEX.indicators;
-console.log(dataEducacion)
+const database = WORLDBANK;
 
-// Enlazar elementos del DOM
-const indicador = document.getElementById("indicador");
+//Función para extraer nombres de indicadores, funciona
+window.databaseMexEducation = {
+ dataFunction : (WORLDBANK) => {
+    const databaseMex = WORLDBANK.MEX.indicators; //Indicadores de México
+    //console.log(databaseMex)
+    let pal = ""; // Espacio que recupera los datos
 
-// función para imprimir elementos en el html
-const print = (indicadorName) => {
-  let result = `<h5> ${indicadorName} </h5>`
-  indicador.insertAdjacentHTML("beforeend", result)
-};
+    //extrae año-datos y nombre de indicador
+  let newArrayMexIndicator = databaseMex.map (function (indicator) {
+   let indicatorName = indicator.indicatorName;
+   //console.log(indicatorName)
+     //let data = indicator.data;
+  // pal += (`${indicatorName} + ${({data})}`);
+   pal += indicatorName;
+})
+return pal
+}};
 
-// extraer elementos
-dataEducacion.forEach (element => {
-  let indicadorName = element.indicatorName;
-  print(indicadorName)
-});
+
+
+
+
+
+
+
+//console.log(newArrayMexIndicator)
+
+    /*let indicatorsMexElected = databaseMex.filter(function (indicator) {
+      let indicadorName = newArrayMexIndicator;
+      let data = indicator.data;
+      let resultado = `${indicadorName} + ${data}`;
+      //console.log(resultado)
+     })*/
+   
+
+    //let newArrayMexIndicator = dataMex.map (indicator => //Nuevo array de datos México con data(año-datos) y nombre indicador
+       // return (indicator.data))
+    
+
+  // }
+ // }
+ 
+
+
+
