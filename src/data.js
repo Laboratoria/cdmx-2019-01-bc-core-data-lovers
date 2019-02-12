@@ -5,7 +5,7 @@ window.lol = {
     for (const key in lolData) {
       if (lolData.hasOwnProperty(key)) {
         const element = lolData[key];
-        let champsInfo = {
+        champsInfo = {
           splash: element.splash,
           name: element.name,
           primaryRol: element.tags[0],
