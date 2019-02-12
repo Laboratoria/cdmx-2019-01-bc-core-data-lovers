@@ -5,7 +5,7 @@
 //   listQuestion.dataset.ciudad =  ciudad;
 // }
 
-// const para desplegar menu
+ const para desplegar menu
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
 const container = document.getElementById("container");
@@ -179,5 +179,5 @@ listQuestion.addEventListener("change", () => {
 // for(let i = 0; i<elements.length ; i++){
 // elements[i].addEventListener("click", () => {
 //   let valElement = elements[i].value
-//   window.worldbank.filterData(ciudadesMex, valElement)
+//   window.worldbank.filterData(ciudadesMex, valElement)*/
 

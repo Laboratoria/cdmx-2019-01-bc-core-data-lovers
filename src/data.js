@@ -1,3 +1,5 @@
+
+
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 // window.WorldBank = {
@@ -11,15 +13,31 @@
   
 //   }
 
-window.WorldBank   ={
-  filterCountry: (data,listQuestion) =>{
+
+
+
+/*const filter = (data, textFilter)=>{
+  console.log(data, textFilter);
+  const filtrado = datafilter(element {
+    if (element.name.idexOf(textFilter = (){
+    
+    return element
+    )
+  })
+  
+return filtrado;
+  }
+  window.filter =filter; 
+
+  filterCountry: 
+  (data,listQuestion) =>{
     let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
     let paisElegido = data[country].indicators
   let countrySelect = listQuestion.value; //obtenemos el valor que tiene de la pregunta
     let result = {}; //declaramos una variable vacia  para que aqui almacene el resultado
     // if(country === 'ciudadesMex'){ // comparamos la data-ciudad que sea igual a la que seleccionamos
       paisElegido.forEach(ciudad =>{ //  seleccionamos la idicadores de mexico 
-        if(ciudad.indicatorCode == countrySelect){ //si el codigo y el select son iguales
+  //     if(ciudad.indicatorCode == countrySelect){ si el codigo y el select son iguales
           result = ciudad.data //retornamos la data años y numeros 
         }
       });
@@ -115,4 +133,4 @@ var WORLDBANK = {
         "indicatorCode": "SL.TLF.PART.FE.ZS"
       }]
   }
-}
+}*/
