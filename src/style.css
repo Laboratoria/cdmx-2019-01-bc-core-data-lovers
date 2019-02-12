@@ -109,7 +109,7 @@ section.content {
 }
 
 /********** iconos*****/
-.fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car {
+.fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car, .year_button {
   color: white;
   width: 80px;
   height: 80px;
@@ -143,6 +143,14 @@ section.content {
 }
 
 
+.year_button {
+  font-size: 10%;
+}
+
+/*year section styles*/
+.slideshow-area {
+  background: cyan; 
+}
 /**************************************************/
 @@media (max-width:768px) {
 
