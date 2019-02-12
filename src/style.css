@@ -112,6 +112,7 @@ nav {
   padding-top: 3%;
   padding-left: 2%;
   border-radius: 14px;
+  box-sizing: border-box;
   float: left;
 }
 
@@ -129,6 +130,10 @@ aside {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+.li>.li{
+  list-style: none;
 }
 
 h3{
@@ -164,7 +169,7 @@ h3{
 }
 
 footer {
-  background: #C2FAB9;
+  background:#976DD0;
   width: 80%;
   max-width: 1000px;
   border-radius: 4px;
@@ -177,17 +182,19 @@ footer {
 .footertext {
   background: #976DD0;
   border-radius: 8px;
-  position: fixed;
+  
   bottom: 0%;
-  width: 61%;
+  width: 65%;
   margin-left: 2.5%;
   height: 10%;
+  
 }
 
 .img-pokebola-chica {
   background: #976DD0;
   border: none;
   margin-top: 10px;
+  padding-top: 5px;
   margin-left: 50%;
   float: left;
 }
@@ -202,11 +209,6 @@ footer {
   animation-timing-function: linear;
 }
 
-.text-footer {
-  color: wheat;
-  margin-top: 25px;
-  margin-left: 75%;
-}
 
 .wrapper {
   display: inline-block;
@@ -232,3 +234,64 @@ footer {
   margin-top: 9px;
 }
 
+.text-footer {
+  color: wheat;
+  display: inline-block;
+}
+
+.img {
+  margin: auto;
+  padding-top: 30%;
+  display: block;
+}
+
+.poke-button {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.poke-button:hover {
+  background: #C2FAB9;
+  border: none;
+  margin: auto;
+  display: block;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.text-footer{
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1024px){
+  
+}
+
+@media screen and (max-width: 768px){
+  #root {
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px){
+  #root {
+    width: 100%; 
+  }
+}
