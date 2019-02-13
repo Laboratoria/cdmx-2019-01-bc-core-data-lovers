@@ -32,8 +32,11 @@ img{
     }
 
 .details{
-    color: black;
+    color: white;
     font-size: 1.5em;
+}
+table, tr, td{
+    border: 3px solid white;
 }
 
 .name{
@@ -76,6 +79,17 @@ img{
     background-size: cover;
 
 }
+
+.imgModal{
+    width: 200px;
+}
+
+.bigModal{
+    background-color: black;
+    width: 130%;
+}
+
+
 
 /*Fa:Tamaño para el logo de la pagina principal*/
 .widthLogData{ /* <-----**A este le cambimos el nombre*/

@@ -50,7 +50,7 @@ toReturn.addEventListener("click", () => {
 
       <div class="modal fade" id="pokemon${dataPokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
-              <div class="modal-content">
+              <div class="modal-content bigModal">
                   <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
@@ -61,7 +61,7 @@ toReturn.addEventListener("click", () => {
                     <table style="width:100%" class="details">
                       <tr>
   	                    <td>Type:${dataPokemon.type}</td>
-                        <th rowspan="4"><img class="" src="${dataPokemon.img}"></th>
+                        <th rowspan="10"><img class="imgModal" src="${dataPokemon.img}"></th>
                       </tr>
                       <tr>
                         <td>Height:${dataPokemon.height}</td>
@@ -73,13 +73,27 @@ toReturn.addEventListener("click", () => {
                         <td>Candy:${dataPokemon.candy} </td>
                       </tr>
                       <tr>
-                        <td>weaknesses: ${dataPokemon.weaknesses}</td>
+                        <td>Weaknesses: ${dataPokemon.weaknesses}</td>
                       </tr>
                       <tr>
-                        <td>55577855</td>
-                       </tr>
+                        <td>Candy Count: ${dataPokemon.candy_count}</td>
+                      </tr>
+                      <tr>
+                        <td>Spawn Time: ${dataPokemon.spawn_time}</td>
+                      </tr>
+                      <tr>
+                      <th colspan="2">
+                        <table>
+                          <tr>
+                            <td><button>Hola1</button></td>
+                            <td><button>Hola2</button></td>
+                            <td><button>Hola3</button></td>
+                          </tr>
+                        </table>
+                       </th>  
+                      </tr> 
   
-                      </table>
+                    </table>
                   </div>
               </div>
           </div>
