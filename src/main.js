@@ -10,7 +10,7 @@ const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
-/*let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica*///comentar grafica
+let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
 let pais;
@@ -83,8 +83,8 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
    valorPorcentajeY.push(pais[j]);
   }
  document.getElementById('contenido').innerHTML = respuesta;
-/* document.getElementById('graf').style.display='block';//comentar grafica
- VerGrafica();*/
+ document.getElementById('graf').style.display='block';//comentar grafica
+ DatGraph();
  return respuesta;
 }
 
@@ -120,46 +120,14 @@ const limpiar = () => {
 //console.log(limpiar);
 
 
-/*console.log(valorAnioX);  //comentar grafica
-console.log(valorPorcentajeY);
 
-const VerGrafica=()=>{
+const DatGraph = () =>{//funcion llenado de grafica con arrayX y arrayY
+let arrayYear = valorAnioX;
+let arrayValors = valorPorcentajeY;
 
-    myChart= new Chart(ctx, { //funcion grafica
-        type: 'line',
-        data: {
-            labels: valorAnioX,
-            datasets: [{
-                label: 'Indicador Demografico (%)',
-                data: valorPorcentajeY,
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    })
-    
-    }*/
+let almacenaGraf= window.worldBank.VerGrafica(arrayYear,arrayValors)
+return almacenaGraf;
+
+}
+
+
