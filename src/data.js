@@ -49,7 +49,7 @@ window.worldBank = {
 
   VerGrafica: (arrayYear,arrayValors)=>{//funcion grafica
 
-    myChart= new Chart(ctx, { 
+    new window.Chart(ctx, { 
         type: 'line',
         data: {
             labels: arrayYear,
