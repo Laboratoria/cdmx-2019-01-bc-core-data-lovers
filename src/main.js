@@ -3,15 +3,7 @@ const datalol = LOL.data;
 const rol = document.getElementsByClassName('rol');
 const imprimirRoles = document.getElementById("imprimirRoles")  /*trae el div imprimir roles para identificarlo e imprimir*/
 const mostrar = document.getElementById("mostrar")
-//const arrayData = Object.values(datalol)
 
-mostrar.addEventListener("click",() =>{
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("mostrar");
-});
-
-// const result = window.lol.iterarData(datalol)
-// console.log(result)
 
 const print = (datosArr) =>{
     imprimirRoles.innerHTML = "";
