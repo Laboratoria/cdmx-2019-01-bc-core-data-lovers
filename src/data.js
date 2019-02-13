@@ -1,14 +1,11 @@
 window.pokemon = {
   filterPokemons:(dataPokemon, elementPokemon ) =>{
-    // const arr = [];
-    // console.log(dataPokemon[0].type[0])
-    // console.log(dataPokemon)
-    dataPokemon.forEach(pokemon => {
+    return dataPokemon.filter(pokemon => {
       let typePokemon = pokemon.type[0]
       if( typePokemon === elementPokemon ){
-        console.log(pokemon)
+        return true;
       }
-    })
+    });
 
       // const showPokemons= arrayPokemonData.sort((a,b)=>
       }
