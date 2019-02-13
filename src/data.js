@@ -11,11 +11,11 @@
   
 //   }
 
-window.WorldBank   ={
+window.WorldBank = {
   filterCountry: (data,listQuestion) =>{
     let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
-    let paisElegido = data[country].indicators
-  let countrySelect = listQuestion.value; //obtenemos el valor que tiene de la pregunta
+    let paisElegido = data[country].indicators // entrams a la data de cada pais y los indicadores
+    let countrySelect = listQuestion.value; //obtenemos el valor que tiene de la pregunta
     let result = {}; //declaramos una variable vacia  para que aqui almacene el resultado
     // if(country === 'ciudadesMex'){ // comparamos la data-ciudad que sea igual a la que seleccionamos
       paisElegido.forEach(ciudad =>{ //  seleccionamos la idicadores de mexico 
@@ -23,56 +23,74 @@ window.WorldBank   ={
           result = ciudad.data //retornamos la data años y numeros 
         }
       });
-    // }
-    // }else if(country == 'ciudadesPeru'){
-    //   countryPer.forEach(ciudad =>{
-    //     if(ciudad.indicatorCode == countrySelect){
-    //       result = ciudad.data
-    //       //console.log(result)
-    //     }
-    //   });  
-    // }else if(country == 'ciudadesBrasil' ){
-    //   countryBra.forEach(ciudad =>{
-    //     if(ciudad.indicatorCode == countrySelect){
-    //       result = ciudad.data
-    //     }
-    //   }); 
-    // }
-    // else if(country == 'ciudadesChile' ){
-    //   countryChl.forEach(ciudad =>{
-    //     if(ciudad.indicatorCode == countrySelect){
-    //       result = ciudad.data
-    //     }
-    //   });
-    // }
     console.log(result)
     return result //retorna a la variable vacia que declaramos al inicio
-  } ,
+  },
+  // order numbers en mayor, menor, asc, desc
+  orderData: (data, sortBy, sortOrder) =>{
+    let orderDataYear = {}; // empty array
+    let unorderDataYear = data; // object data
 
-
-  orderData: (data, sortBy, sortOrder) => {
-  let orderData= [];
-  switch(sortBy){
-    case'years':
-      if(sortOrder === 'mayor'){
-        orderData = data.sort((a,b ) => (a.years > b.years)? 1 : -1);
-        console.log (orderData);
-      }
-      else if(sortOrder === 'menor'){
-        orderData = data.sort((a,b)=>(a.years > b.years)? -1 : 1);
-      }
-      break;
-      case'numbers':
-      if(sortOrder === 'asc'){
-        orderData = data.sort((a,b ) => (a.num > b.num)? 1 : -1);
-      }
-      else if(sortOrder === 'desc'){
-        orderData = data.sort((a,b)=>(a.num> b.num)? -1 : 1);
-      }
-      break;
+    switch(sortBy){
+        case "years": { 
+          console.log("order by years");
+          if(sortOrder === 'asc'){ 
+            // menor a mayor
+            orderDataYear = Object.keys(unorderDataYear).sort((a,b) => a - b)
+            //orderDataYear = Object.keys(unorderDataYear).sort((a,b ) => (a > b)? 1 : -1)
+          }else if(sortOrder === 'desc'){
+            orderDataYear = Object.keys(unorderDataYear).sort((a,b) => b - a)
+          }
+          return orderDataYear;
+          break; 
+        }
+        case "values": { 
+          console.log("order by values");
+          if(sortOrder === 'asc'){  // menor a mayor
+            orderDataYear = Object.keys(unorderDataYear).sort((a,b) => unorderDataYear[a] - unorderDataYear[b] )
+          }
+          else if(sortOrder === 'desc'){
+            console.log("desc");// mayor a menor
+            orderDataYear = Object.keys(unorderDataYear).sort((a,b) => unorderDataYear[b] - unorderDataYear[a] )
+          }
+          console.log(orderDataYear);
+          return orderDataYear;
+          
+          break; 
+        }
+    }
   }
-  return orderData;
-},
+  
+
+
+  // orderData: (data, sortBy, sortOrder) => {
+  // let orderData = [];
+  // switch(sortBy){
+  //   case'years':
+  //     if(sortOrder === 'mayor'){
+  //       orderData = data.sort((a,b ) => (a.years > b.years)? 1 : -1);
+  //       console.log (orderData);
+  //     }
+  //     else if(sortOrder === 'menor'){
+  //       orderData = data.sort((a,b)=>(a.years > b.years)? -1 : 1);
+  //     }
+  //     // break;
+  //     case'numbers':
+  //     if(sortOrder === 'asc'){
+  //       orderData = data.sort((a,b ) => (a.num > b.num)? 1 : -1);
+  //     }
+  //     else if(sortOrder === 'desc'){
+  //       orderData = data.sort((a,b)=>(a.num> b.num)? -1 : 1);
+  //     }
+  //     break;
+  // }
+  // return orderData;
+
+  
+}
+
+function compareNumbers(a, b) {
+  return b-a;
 }
   
 // sort 
@@ -84,17 +102,17 @@ var pokemons = [
   { name:'abra', level: 150 } 
 ];
 const countryM = WORLDBANK.MEX.indicators;
-// var numbers = [2, 34, 10, 2, 5, 1];
-// console.log(countryM.sort(function (prev, next) {
-//   if (prev.name > next.name) {
-//     return 1;
-//   }
-//   if (prev.name < next.name) {
-//     return -1;
-//   }
-//   return 0;
-// //  return prev.level - next.level;
-// }));
+var numbers = [2, 34, 10, 2, 5, 1];
+console.log(countryM.sort(function (prev, next) {
+  if (prev.name > next.name) {
+    return 1;
+  }
+  if (prev.name < next.name) {
+    return -1;
+  }
+  return 0;
+//  return prev.level - next.level;
+}));
 
 var WORLDBANK = {
   "PER": {

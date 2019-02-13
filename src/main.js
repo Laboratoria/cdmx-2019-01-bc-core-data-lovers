@@ -45,6 +45,7 @@ btnFilters.addEventListener('click', () => {
 
 //acceder a la data de cada pais
 const data = WORLDBANK;
+
 const countryMex = WORLDBANK.MEX.indicators;
 const countryPer = WORLDBANK.PER.indicators;
 const countryBra= WORLDBANK.BRA.indicators;
@@ -54,88 +55,59 @@ const countryChl= WORLDBANK.CHL.indicators;
 const indicator = document.getElementById("information-filter-inner");
 const listQuestion = document.getElementById("list-question");
 
-//datos en select para mexico
-document.getElementById('MEX').addEventListener('click', () => {
-  listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'MEX'; // setear ciudad que se va  filtrar al hacer click
-  // insertamos una opcion por default
-  listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
-  countryMex.forEach(ciudad => {//elemento
-    //Informacion de indicator name del select al dar click
-    listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
-  });
-});
-
-document.getElementById('btn_per').addEventListener('click', () => {
-  listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'PER'; 
-  listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
-  countryPer.forEach(ciudad => {//elemento
-    console.log(ciudad)
-    listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
-  });
-});
-
-document.getElementById('btn_bra').addEventListener('click', () => {
-  listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'BRA'; 
-  listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
-  countryBra.forEach(ciudad => {//elemento
-    listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
-  });
-});
-
-document.getElementById('btn_Chl').addEventListener('click', () => {
-  listQuestion.innerHTML = "";//limpiar un select
-  listQuestion.dataset.ciudad = 'CHL'; 
-  listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>');
-  countryBra.forEach(ciudad => {//elemento
-    listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
-  });
-});
-
+// ejecutar el llenado del selector dependiendo del país
+const buttonTypes = Array.from(document.getElementsByClassName('search-country'));
+//console.log(buttonTypes);
+for (let boton in buttonTypes){
+  buttonTypes[boton].addEventListener('click',(e) =>{
+    e.preventDefault() //e.target()
+    let paisElegido = data[e.target.dataset.ciudad].indicators;
+    listQuestion.innerHTML = "";
+    listQuestion.dataset.ciudad = e.target.dataset.ciudad;
+    listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>'); 
+    paisElegido.forEach( ciudad => {
+      listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
+    });
+  })
+}
 
 //filtrar 
 listQuestion.addEventListener("change", () => {
   indicator.innerHTML = "";//Limpiar funcion
-  //listQuestion.options[listQuestion.selectedIndex].text;
   const resultado = window.WorldBank.filterCountry(data, listQuestion)//Datos de data.js
-  //console.log(resultado)
-  for (let resultadoAño in resultado) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
-    let parrafo = document.createElement('p');// creamos un elemento p temporal ira grafica
-    parrafo.innerHTML = `Año: ${resultadoAño} = ${resultado[resultadoAño] || 0} ` //imprimimos el año y numeros
-    indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
+  for (let resultYear in resultado) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
+    indicator.insertAdjacentHTML('beforeend', `<p><b>Año</b>: ${resultYear} => ${resultado[resultYear] || 0}</p>`);
   }
-
-  // indicator.innerHTML = "";
-  // let selectQuestion = listQuestion.options[listQuestion.selectedIndex].text;
-  // let countrySelect = listQuestion.value;
-  // let country = listQuestion.dataset.ciudad;
-
-  // if(country == 'ciudadesMex' ){
-  //   ciudadesMex.forEach(ciudad =>{
-  //     if(ciudad.indicatorCode == countrySelect){
-  //       console.log(ciudad.data);
-  //       for(let resultado in ciudad.data){
-
-  //         let parrafo = document.createElement('p');
-  //         parrafo.innerHTML = `Año: ${resultado} = ${ciudad.data[resultado] || 0} `
-
-  //         indicator.appendChild(parrafo);
-  //       }
-  //     }
-  //   });
-  // }
-
 });
+const radioFilters = Array.from(document.getElementsByClassName('radio__filter'));
+//console.log(radioFilters)
+for (let radioItem in radioFilters){
+  radioFilters[radioItem].addEventListener('change',(e) =>{
+    e.preventDefault() //e.target()
+    indicator.innerHTML = "";//Limpiar funcion
+    
+    const resultado = window.WorldBank.filterCountry(data, listQuestion)//Datos de data.js
+    const resultadoOrder = window.WorldBank.orderData(resultado, e.target.dataset.sortby, e.target.dataset.sortorder)//Datos de data.js
+
+    for (let resultadoYear in resultadoOrder) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
+      let parrafo = document.createElement('p'); // creamos un elemento p temporal ira grafica
+      parrafo.innerHTML = `<b>Año</b>: ${resultadoOrder[resultadoYear]} => ${resultado[resultadoOrder[resultadoYear]] || 0} ` //imprimimos el año y numeros
+      indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
+    }
+  })
+}
+
+// on radio filters change 
+// const radioYearMayor = document.getElementById("asc");
+// radioYearMayor.addEventListener("change", () => {
+//   indicator.innerHTML = "";//Limpiar funcion
+//   const resultado = window.WorldBank.filterCountry(data, listQuestion)//Datos de data.js
+//   const resultadoOrder = window.WorldBank.orderData(resultado, 'years', 'asc')//Datos de data.js
+//   for (let resultadoYear in resultadoOrder) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
+//     let parrafo = document.createElement('p');// creamos un elemento p temporal ira grafica
+//     parrafo.innerHTML = `<b>Año</b>: ${resultadoOrder[resultadoYear]} => ${resultado[resultadoOrder[resultadoYear]] || 0} ` //imprimimos el año y numeros
+//     indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
+//   }
+// })
 
 
-
-
-
-// for(let i = 0; i<elements.length ; i++){
-// elements[i].addEventListener("click", () => {
-//   let valElement = elements[i].value
-//   window.worldbank.filterData(ciudadesMex, valElement)
-//   )};
-// }
