@@ -1,4 +1,10 @@
 //En este archivo esperamos que implementes las funciones detalladas en la sección de Pruebas Unitarias.
+// la funciones puras reciben una data retornan información y no dependen de lo que esta afuera.
+const dataPer=WORLDBANK.PER.indicators.map (indicatorPer => `${indicatorPer.indicatorName}`); 
+const indicatorPer= dataPer.filter( element=> element [106])
+ 
+console.log (indicatorPer)
+
 
 const indicators = [{
     
@@ -54,7 +60,7 @@ selects.addEventListener('change', () => {
   for (let i = 0; i < indicators.length; i++) {
     if (selectVal === indicators[i].name) {
       chosenIndicator = indicators[i];
-      console.log(chosenIndicator);
+      //console.log(chosenIndicator);
     }
   }
 })
