@@ -2,21 +2,35 @@ require('../src/data.js');
 
 
 
-describe('Filtra todos los personajes que sean support', () => {
-  test('solo muestra los soportes', () => {
-    expect(filtroDataRoles).toContain('Support');
-  })
+describe('iterarData', ()=>{
+  it('is a function',() => {
+    expect(typeof window.lol.iterarData).toBe('function');
+  
+ 
+ });
+ 
+ });
 
 
-
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('filtroDataRoles', ()=>{
+  it('is a function',() => {
+    expect(typeof window.lol.filtroDataRoles).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
+
+    it('Deberia devolver el obj Alistar si es igual a Tank',()=>{
+      expect(window.lol.filtroDataRoles('Tank',window.lol.dataToArray )).toEqual(window.dataToArray.Alistar.tags[0])
+    })
+ });
+
+
+
+
+describe('filterByName', ()=>{
+ it('is a function',() => {
+   expect(typeof window.lol.filterByName).toBe('function');
 });
-}
+
+})
+
+

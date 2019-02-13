@@ -21,6 +21,7 @@ return datos },
 
 filtroDataRoles: (rolId, dataToArray) => {
   const filtradoPorRoles = dataToArray.filter(element => element.tags[0] === rolId);
+  
   return filtradoPorRoles;
 },
 filterByName: (name,datos) => {
@@ -33,3 +34,4 @@ filterByName: (name,datos) => {
   const characterOnClick = datos.filter(element => element.id === id);
   return characterOnClick;
 }*/}
+

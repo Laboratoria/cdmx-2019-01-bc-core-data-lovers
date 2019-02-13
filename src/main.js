@@ -17,7 +17,7 @@
     const cerrar = document.getElementById('titleChampions')
 
   //Trae los divs de cada personaje
-  const character = document.getElementById('character')
+  //const character = document.getElementById('character')
 
   //almacena el valor del input para la busqueda por nombre
   const searchInput = document.getElementById("searchInput")
@@ -75,7 +75,7 @@ const selectByRol = () => {
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
       document.getElementById("mySidenav").style.width = "0%";
-  
+      
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataToArray);
       print(arrayRolesFiltered);})}}
     selectByRol();
@@ -115,8 +115,8 @@ const searchByName = () => {
     //  console.log(characterDetail);})}}*/
 
 
-    let aatrox = document.getElementById("Aatrox")
-    aatrox.addEventListener('click', () => { 
-      console.log('sí funciono');
+    //let aatrox = document.getElementById("Aatrox")
+    //aatrox.addEventListener('click', () => { 
+     // console.log('sí funciono');
 
-    })
+    //})
