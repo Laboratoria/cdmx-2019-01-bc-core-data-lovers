@@ -5,14 +5,14 @@
 4 verbose run-script [ 'pretest', 'test', 'posttest' ]
 5 info lifecycle data-lovers@1.0.0~pretest: data-lovers@1.0.0
 6 verbose lifecycle data-lovers@1.0.0~pretest: unsafe-perm in lifecycle true
-7 verbose lifecycle data-lovers@1.0.0~pretest: PATH: /usr/share/npm/bin/node-gyp-bin:/home/laboratoria134-am/Documentos/Laboratoria/cdmx-2019-01-bc-core-data-lovers/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-8 verbose lifecycle data-lovers@1.0.0~pretest: CWD: /home/laboratoria134-am/Documentos/Laboratoria/cdmx-2019-01-bc-core-data-lovers
+7 verbose lifecycle data-lovers@1.0.0~pretest: PATH: /usr/share/npm/bin/node-gyp-bin:/home/diana/Documents/laboratoria/Proyectos/cdmx-2019-01-bc-core-data-lovers/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+8 verbose lifecycle data-lovers@1.0.0~pretest: CWD: /home/diana/Documents/laboratoria/Proyectos/cdmx-2019-01-bc-core-data-lovers
 9 silly lifecycle data-lovers@1.0.0~pretest: Args: [ '-c', 'npm run eslint && npm run htmlhint' ]
 10 silly lifecycle data-lovers@1.0.0~pretest: Returned: code: 0  signal: null
 11 info lifecycle data-lovers@1.0.0~test: data-lovers@1.0.0
 12 verbose lifecycle data-lovers@1.0.0~test: unsafe-perm in lifecycle true
-13 verbose lifecycle data-lovers@1.0.0~test: PATH: /usr/share/npm/bin/node-gyp-bin:/home/laboratoria134-am/Documentos/Laboratoria/cdmx-2019-01-bc-core-data-lovers/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-14 verbose lifecycle data-lovers@1.0.0~test: CWD: /home/laboratoria134-am/Documentos/Laboratoria/cdmx-2019-01-bc-core-data-lovers
+13 verbose lifecycle data-lovers@1.0.0~test: PATH: /usr/share/npm/bin/node-gyp-bin:/home/diana/Documents/laboratoria/Proyectos/cdmx-2019-01-bc-core-data-lovers/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+14 verbose lifecycle data-lovers@1.0.0~test: CWD: /home/diana/Documents/laboratoria/Proyectos/cdmx-2019-01-bc-core-data-lovers
 15 silly lifecycle data-lovers@1.0.0~test: Args: [ '-c', 'jest' ]
 16 silly lifecycle data-lovers@1.0.0~test: Returned: code: 1  signal: null
 17 info lifecycle data-lovers@1.0.0~test: Failed to exec test script
@@ -27,7 +27,7 @@
 18 verbose stack     at maybeClose (internal/child_process.js:925:16)
 18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
 19 verbose pkgid data-lovers@1.0.0
-20 verbose cwd /home/laboratoria134-am/Documentos/Laboratoria/cdmx-2019-01-bc-core-data-lovers
+20 verbose cwd /home/diana/Documents/laboratoria/Proyectos/cdmx-2019-01-bc-core-data-lovers
 21 error Linux 4.15.0-45-generic
 22 error argv "/usr/bin/node" "/usr/bin/npm" "run" "test"
 23 error node v8.10.0

@@ -1,37 +1,4 @@
 require('../src/data.js');
-/*const dataEstudent = [
-  {
-    nombre:'Silvana',
-    edad:'32',
-    altura:'1.69'
-  },
-  {
-    nombre:'Jonh',
-    edad:'33',
-    altura:'1.80'
-  },
-  {
-    nombre:'Mike',
-    edad:'30',
-    altura:'1.70'
-  },
-  {
-    nombre:'Dení',
-    edad:'35',
-    altura:'1.50'
-  },
-]
-
-/*
-describe('example', () => {
-  test('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  test('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});*/
 
 const dataPokemonTest = [{
   "id": 1,
@@ -158,15 +125,16 @@ const dataPokemonTest = [{
     "num": "006",
     "name": "Charizard"
   }]
-} ]; 
+} ];
 
 describe ('data', () => {
+
   test('debería ser un objeto', () => {
     expect(typeof data).toBe('object');
   });
 
   describe ('showAllData', () => {
-    
+
     test('debería ser una función', () => {
       expect (typeof window.data.showAllData).toBe('function');
     });
@@ -175,9 +143,10 @@ describe ('data', () => {
     test('deberia retornar un arreglo con todos los pokémones', () => {
       expect(processedData).toHaveLength(4);
     });
-  }); 
+  });
 
   describe ('filterByType', () => {
+
     test('debería ser una funcion', ()=>{
       expect(typeof window.data.filterByType).toBe('function');
     });
@@ -186,19 +155,17 @@ describe ('data', () => {
       const processedDataFilter = window.data.filterByType(dataPokemonTest, 'Poison');
       processedDataFilter.forEach(element => {
         expect (element.type).toEqual(expect.arrayContaining(['Poison']));
-
       });
     });
-
   });
 
-  describe('filterByLetter',() => { 
+  describe('filterByLetter',() => {
     const processedFilterLetter = window.data.filterByLetter (dataPokemonTest, 'C');
-  
+
     test('debería ser una funcion', () => {
       expect(typeof window.data.filterByLetter).toBe('function');
     });
-  
+
     test('debería regresar un arreglo con los pokémones cuyo nombre coincidan con la C', () => {
       processedFilterLetter.forEach(element => {
         expect(element.name).toMatch('C');
@@ -210,12 +177,43 @@ describe ('data', () => {
         expect(element.name).toMatch('Ivysaur');
       });
     });
-  
+
   });
-  
+
   describe('sortData',() => {
+
     test('debería ser una funcion', () => {
       expect(typeof window.data.sortData).toBe('function');
+    });
+
+    test('debería retornar un arreglo ordenado de forma ascendente por nombre', () => {
+      expect(window.data.sortData(dataPokemonTest, 'name', 'asc' )[0].name).toBe('Bulbasaur');
+      expect(window.data.sortData(dataPokemonTest, 'name', 'asc' )[3].name).toBe('Venusaur');
+    });
+
+    test('deberia retornar un arreglo ordenado de forma descendente por nombre',() => {
+      expect(window.data.sortData(dataPokemonTest, 'name', 'desc')[0].name).toBe('Venusaur');
+      expect(window.data.sortData(dataPokemonTest, 'name', 'desc')[3].name).toBe('Bulbasaur');
+    });
+
+    test('debería retornar un arreglo ordenado de forma ascendente por altura', ()=>{
+      expect(window.data.sortData(dataPokemonTest, 'height', 'asc')[0].height).toBe(0.61);
+      expect(window.data.sortData(dataPokemonTest, 'height', 'asc')[3].height).toBe(2.01);
+    });
+
+    test('debería retornar un arreglo ordenado de forma descendente por altura', ()=>{
+      expect(window.data.sortData(dataPokemonTest, 'height', 'desc')[0].height).toBe(2.01);
+      expect(window.data.sortData(dataPokemonTest, 'height', 'desc')[3].height).toBe(0.61);
+    });
+
+    test('debería retornar una arreglo ordenado de forma ascendente por peso', ()=>{
+      expect(window.data.sortData(dataPokemonTest, 'weight', 'asc')[0].weight).toBe(6.9);
+      expect(window.data.sortData(dataPokemonTest, 'weight', 'asc')[3].weight).toBe(100.0);
+    });
+
+    test('debería retornar una arreglo ordenado de forma descendente por peso', ()=>{
+      expect(window.data.sortData(dataPokemonTest, 'weight', 'desc')[0].weight).toBe(100.0);
+      expect(window.data.sortData(dataPokemonTest, 'weight', 'desc')[3].weight).toBe(6.9);
     });
   });
 
@@ -230,101 +228,4 @@ describe ('data', () => {
       expect(window.data.computeStats(dataPokemonTest)).toBe(100);
     });
   });
-
-
 });
-
-
-
-/*
-  describe('filterByType',() => {
-  const processedFilterType = window.filterByType (dataPokemonTest, 'Grass');
-  //const expected = ['Grass'];
-    test('debería ser una funcion', ()=>{
-      expect(typeof filterByType).toBe('function');
-    });
-  
-    test('debería regresar un arreglo con los pokemones coincidan el tipo Fire', ()=>{
-      processedFilterType.forEach((elemento) => {
-  
-        elemento.type.forEach((elementType) => {
-          expect(elementType).toContain('Grass');
-        })
-      })
-  
-    });
-  
-  });  */  
-
-
-
-/*
-
-describe('filterByLetter',() => { 
-  const processedFilterLetter = window.filterByLetter (dataPokemonTest, 'C');
-
-  test('debería ser una funcion', ()=>{
-    expect(typeof filterByLetter).toBe('function');
-  });
-
-  test('debería regresar un arreglo con los pokemones cuyo nombre coincidan con la C', ()=>{
-    expect(processedFilterLetter[0].name).toBe('Charmander');
-  });
-
-});
-
-describe('sortData',() => {
-  //const processedDescName = window.sortData(dataPokemonTest, 'name', 'desc' );
-  //const processedDescHeight = window.sortData (dataPokemonTest, 'height', 'desc');
-  //const processedDescWeight = window.sortData (dataPokemonTest, 'weight', 'desc'); 
-  test('debería ser una funcion', ()=>{
-    expect(typeof sortData).toBe('function');
-  });
-
-  describe("Sort by Name", () => {
-    const processedAscName = window.sortDataNew(dataPokemonTest, 'name', 'asc');
-    
-    test('debería retornar una arreglo ordenado de forma ascendente por nombre', ()=>{
-      console.log(processedAscName)
-      expect(processedAscName[0].name).toBe('Bulbasaur');
-      expect(processedAscName[3].name).toBe('Venusaur');
-    }); 
-    
-    test('debería retornar un arreglo ordenado de forma descendente por nombre', ()=>{
-    expect(processedDescName[0].name).toBe('Venusaur');
-    expect(processedDescName[3].name).toBe('Bulbasaur');
-  });
-  });
-
-  describe("Sort by Height", () => {
-    const processedAscHeight = window.sortDataNew(dataPokemonTest, 'height', 'asc');
-    
-    test('debería retornar un arreglo ordenado de forma ascendente por altura', ()=>{
-      console.log(processedAscHeight);
-      expect(processedAscHeight[0].height).toBe('0.61 m');
-      expect(processedAscHeight[3].height).toBe('2.01 m');
-    });
-       
-    test('debería retornar un arreglo ordenado de forma descendente por altura', ()=>{
-      expect(processedDescHeight[0].height).toBe('2.01 m');
-      expect(processedDescHeight[3].height).toBe('0.61 m');
-    });
-  });
-
-  describe("Sort by Weight", () => {
-    const processedAscWeight = window.sortDataNew(dataPokemonTest, 'weight', 'asc');
-    
-    test('debería retornar una arreglo ordenado de forma ascendente por peso', ()=>{
-      console.log(processedAscWeight);
-
-      expect(processedAscWeight[0].weight).toBe('6.9 kg');
-      expect(processedAscWeight[3].weight).toBe('100.0 kg');
-    });
-    
-    test('debería retornar una arreglo ordenado de forma descendente por peso', ()=>{
-      expect(processedDescWeight[0].weight).toBe('100.0 kg');
-      expect(processedDescWeight[3].weight).toBe('6.9 kg');
-    });
-  }); 
-});
-*/

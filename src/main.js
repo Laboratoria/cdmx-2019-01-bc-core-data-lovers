@@ -1,4 +1,4 @@
-var POKEMON;
+//let POKEMON;
 let dataPokemon = POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const searchCoincidence = document.getElementById('search-coincidences');
@@ -72,6 +72,7 @@ if (ubication.includes('typePokemon.html')) {
       radio.addEventListener("click",() =>{
         if(radio.checked === true){
           let idRadio = radio.id.split('-');
+          //console.log(window.data.sortData(dataPokemon,idRadio[1],idRadio[0]));
           showList(window.data.sortData(dataPokemon,idRadio[1],idRadio[0]));
         }
       });
