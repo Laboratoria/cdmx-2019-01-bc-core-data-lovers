@@ -36,19 +36,15 @@ const buttonPokemonFlying = document.getElementById('buttonPokemonFlying');
 const buttonPokemonPsychic = document.getElementById('buttonPokemonPsychic');
 const buttonPokemonWater = document.getElementById('buttonPokemonWater');
 const typePokemonPage = document.getElementById('typePokemonPage');
+const printPokemonFilter=document.getElementById('printPokemonFilter');
+const checkboxTypeFilter=document.getElementById('checkboxTypeFilter');
+const titlePokemonLight=document.getElementById('titlePokemonLight');
+const titlePokemonHeavy=document.getElementById('titlePokemonHeavy');
+const titlePokemonSmall=document.getElementById('titlePokemonSmall');
+const titlePokemonMedium=document.getElementById('titlePokemonMedium');
 const titlePokemonTall=document.getElementById('titlePokemonTall');
-const printPokemonFilter=document.getElementById('printPokemonFilter')
-const aboutPikapediaPage = document.getElementById("aboutPikapediaPage");
-const titlePokemonLight = document.getElementById("titlePokemonLight");
-const titlePokemonHeavy = document.getElementById("titlePokemonHeavy");
-const titlePokemonSmall = document.getElementById("titlePokemonSmall");
-const titlePokemonMedium = document.getElementById("titlePokemonMedium");
-const titlePokemonSortByHeight = document.getElementById("titlePokemonSortByHeight");
-const titlePokemonSortByWeight = document.getElementById("titlePokemonSortByWeight");
-const buttonSearchPokemonOnFilter = document.getElementById("buttonSearchPokemonOnFilter");
-const buttonBackPageKanto = document.getElementById("buttonBackPageKanto");
-
-
+const titlePokemonSortByHeight=document.getElementById('titlePokemonSortByHeight');
+const titlePokemonSortByWeight=document.getElementById('titlePokemonSortByWeight');
 
 //Botón de entrada
 enterToPikapedia.addEventListener("click", () => {
@@ -100,11 +96,14 @@ buttonBackPageKanto.addEventListener("click", () => {
   pageKanto.classList.remove("hide");
 });
 
-
+buttonAboutPikapedia.addEventListener("click", ()=>{
+  pageKanto.classList.add('hide');
+  aboutPikapediaPage.classList.remove('hide');
+});
 const printPokemon= (name, img, quality) => {
   let resultPokemonPrint = `<div class="filterCard"><h1>${name}</h1>
    <div><img src=${img}></div>
-   <p> ${quality}</p></div>`;
+   <p class='quality'> ${quality}</p></div>`;
   printPokemonFilter.insertAdjacentHTML("beforeend", resultPokemonPrint);
 };
 
@@ -425,3 +424,5 @@ function filtrar(id_tipo) {
     });
   }
 }
+
+
