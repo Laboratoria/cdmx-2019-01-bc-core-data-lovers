@@ -1,178 +1,182 @@
-const indicators = [{
+var WORLDBANK;
+const perIndicators=WORLDBANK.PER.indicators;
+const mexIndicators=WORLDBANK.MEX.indicators;
+const chlIndicators=WORLDBANK.CHL.indicators;
+const braIndicators=WORLDBANK.BRA.indicators;
 
-    name: "Desempleo total",
-    peru: WORLDBANK.PER.indicators[106],
-    mexico: WORLDBANK.MEX.indicators[76],
-    chile: WORLDBANK.CHL.indicators[106],
-    brasil: WORLDBANK.BRA.indicators[76]
-  },
-  {
-    name: "Desempleo mujeres",
-    peru: WORLDBANK.PER.indicators[109],
-    chile: WORLDBANK.CHL.indicators[109],
-    mexico: WORLDBANK.MEX.indicators[79],
-    brasil: WORLDBANK.BRA.indicators[79]
-  },
-  {
-    name: "Desempleo hombres",
-    peru: WORLDBANK.PER.indicators[107],
-    chile: WORLDBANK.CHL.indicators[107],
-    mexico: WORLDBANK.MEX.indicators[77],
-    brasil: WORLDBANK.BRA.indicators[77]
-  },
-  {
-    name: "Participación en la fuerza laboral total",
-    peru: WORLDBANK.PER.indicators[4],
-    chile: WORLDBANK.CHL.indicators[4],
-    mexico: WORLDBANK.MEX.indicators[103],
-    brasil: WORLDBANK.BRA.indicators[103]
-  },
-  {
-    name: "Participación en la fuerza laboral mujeres",
-    peru: WORLDBANK.PER.indicators[9],
-    chile: WORLDBANK.CHL.indicators[9],
-    mexico: WORLDBANK.MEX.indicators[108],
-    brasil: WORLDBANK.BRA.indicators[108]
-  },
-  {
-    name: "Participación en la fuerza laboral hombres",
-    peru: WORLDBANK.PER.indicators[5],
-    chile: WORLDBANK.CHL.indicators[5],
-    mexico: WORLDBANK.MEX.indicators[104],
-    brasil: WORLDBANK.BRA.indicators[104]
-  },
-  {
-    name: "Desempleo total de jovenes",
-    peru: WORLDBANK.PER.indicators[114],
-    chile: WORLDBANK.CHL.indicators[114],
-    mexico: WORLDBANK.MEX.indicators[84],
-    brasil: WORLDBANK.BRA.indicators[84]
-  },
-  {
-    name: "Desempleo total de jovenes mujeres",
-    peru: WORLDBANK.PER.indicators[117],
-    chile: WORLDBANK.CHL.indicators[117],
-    mexico: WORLDBANK.MEX.indicators[87],
-    brasil: WORLDBANK.BRA.indicators[87]
-  },
-  {
-    name: "Desempleo total de jovenes varones",
-    peru: WORLDBANK.PER.indicators[115],
-    chile: WORLDBANK.CHL.indicators[115],
-    mexico: WORLDBANK.MEX.indicators[85],
-    brasil: WORLDBANK.BRA.indicators[85]
-  },
-  {
-    name: "Proporcion de mujeres y hombres en la fuerza laboral",
-    peru: WORLDBANK.PER.indicators[7],
-    chile: WORLDBANK.CHL.indicators[7],
-    mexico: WORLDBANK.MEX.indicators[106],
-    brasil: WORLDBANK.BRA.indicators[106]
-  },
-  {
-    name: "Participacion en la fuerza laboral de 15 a 24 años",
-    peru: WORLDBANK.PER.indicators[20],
-    chile: WORLDBANK.CHL.indicators[20],
-    mexico: WORLDBANK.MEX.indicators[119],
-    brasil: WORLDBANK.BRA.indicators[119]
-  },
-  {
-    name: "Participacion en la fuerza laboral de 15 a 24 años, mujeres",
-    peru: WORLDBANK.PER.indicators[24],
-    chile: WORLDBANK.CHL.indicators[24],
-    mexico: WORLDBANK.MEX.indicators[123],
-    brasil: WORLDBANK.BRA.indicators[123]
-  },
-  {
-    name: "Participacion en la fuerza laboral de 15 a 24 años, varones",
-    peru: WORLDBANK.PER.indicators[22],
-    chile: WORLDBANK.CHL.indicators[22],
-    mexico: WORLDBANK.MEX.indicators[121],
-    brasil: WORLDBANK.BRA.indicators[121]
-  },
-  {
-    name: "Fuerza laboral con educación básica",
-    peru: WORLDBANK.PER.indicators[10],
-    chile: WORLDBANK.CHL.indicators[10],
-    mexico: WORLDBANK.MEX.indicators[109],
-    brasil: WORLDBANK.BRA.indicators[109]
-  },
-  {
-    name: "Fuerza laboral con educación básica, mujeres",
-    peru: WORLDBANK.PER.indicators[12],
-    chile: WORLDBANK.CHL.indicators[12],
-    mexico: WORLDBANK.MEX.indicators[111],
-    brasil: WORLDBANK.BRA.indicators[111]
-  },
-  {
-    name: "Fuerza laboral con educación básica, varones",
-    peru: WORLDBANK.PER.indicators[11],
-    chile: WORLDBANK.CHL.indicators[11],
-    mexico: WORLDBANK.MEX.indicators[110],
-    brasil: WORLDBANK.BRA.indicators[110]
-  },
-  {
-    name: "Fuerza laboral con educación intermedia",
-    peru: WORLDBANK.PER.indicators[1],
-    chile: WORLDBANK.CHL.indicators[1],
-    mexico: WORLDBANK.MEX.indicators[100],
-    brasil: WORLDBANK.BRA.indicators[100]
-  },
-  {
-    name: "Fuerza laboral con educación intermedia, mujeres",
-    peru: WORLDBANK.PER.indicators[3],
-    chile: WORLDBANK.CHL.indicators[3],
-    mexico: WORLDBANK.MEX.indicators[102],
-    brasil: WORLDBANK.BRA.indicators[102]
-  },
-  {
-    name: "Fuerza laboral con educación intermedia, varones",
-    peru: WORLDBANK.PER.indicators[2],
-    chile: WORLDBANK.CHL.indicators[2],
-    mexico: WORLDBANK.MEX.indicators[101],
-    brasil: WORLDBANK.BRA.indicators[101]
-  },
-  {
-    name: "Fuerza laboral con educación avanzada",
-    peru: WORLDBANK.PER.indicators[13],
-    chile: WORLDBANK.CHL.indicators[13],
-    mexico: WORLDBANK.MEX.indicators[112],
-    brasil: WORLDBANK.BRA.indicators[112]
-  },
-  {
-    name: "Fuerza laboral con educación avanzada, mujeres",
-    peru: WORLDBANK.PER.indicators[15],
-    chile: WORLDBANK.CHL.indicators[15],
-    mexico: WORLDBANK.MEX.indicators[114],
-    brasil: WORLDBANK.BRA.indicators[114]
-  },
-  {
-    name: "Fuerza laboral con educación avanzada, varones",
-    peru: WORLDBANK.PER.indicators[14],
-    chile: WORLDBANK.CHL.indicators[14],
-    mexico: WORLDBANK.MEX.indicators[113],
-    brasil: WORLDBANK.BRA.indicators[113]
-  },
+const indicators = [{
+  name: "Desempleo total",
+  peru: perIndicators[106],
+  mexico: mexIndicators[76],
+  chile: chlIndicators[106],
+  brasil: braIndicators[76]
+},
+{
+  name: "Desempleo mujeres",
+  peru: perIndicators[109],
+  chile: chlIndicators[109],
+  mexico: mexIndicators[79],
+  brasil: braIndicators[79]
+},
+{
+  name: "Desempleo hombres",
+  peru: perIndicators[107],
+  chile: chlIndicators[107],
+  mexico: mexIndicators[77],
+  brasil: braIndicators[77]
+},
+{
+  name: "Participación en la fuerza laboral total",
+  peru: perIndicators[4],
+  chile: chlIndicators[4],
+  mexico: mexIndicators[103],
+  brasil: braIndicators[103]
+},
+{
+  name: "Participación en la fuerza laboral mujeres",
+  peru: perIndicators[9],
+  chile: chlIndicators[9],
+  mexico: mexIndicators[108],
+  brasil: braIndicators[108]
+},
+{
+  name: "Participación en la fuerza laboral hombres",
+  peru: perIndicators[5],
+  chile: chlIndicators[5],
+  mexico: mexIndicators[104],
+  brasil: braIndicators[104]
+},
+{
+  name: "Desempleo total de jovenes",
+  peru: perIndicators[114],
+  chile: chlIndicators[114],
+  mexico: mexIndicators[84],
+  brasil: braIndicators[84]
+},
+{
+  name: "Desempleo total de jovenes mujeres",
+  peru: perIndicators[117],
+  chile: chlIndicators[117],
+  mexico: mexIndicators[87],
+  brasil: braIndicators[87]
+},
+{
+  name: "Desempleo total de jovenes varones",
+  peru: perIndicators[115],
+  chile: chlIndicators[115],
+  mexico: mexIndicators[85],
+  brasil: braIndicators[85]
+},
+{
+  name: "Proporcion de mujeres y hombres en la fuerza laboral",
+  peru: perIndicators[7],
+  chile: chlIndicators[7],
+  mexico: mexIndicators[106],
+  brasil: braIndicators[106]
+},
+{
+  name: "Participacion en la fuerza laboral de 15 a 24 años",
+  peru: perIndicators[20],
+  chile: chlIndicators[20],
+  mexico: mexIndicators[119],
+  brasil: braIndicators[119]
+},
+{
+  name: "Participacion en la fuerza laboral de 15 a 24 años, mujeres",
+  peru: perIndicators[24],
+  chile: chlIndicators[24],
+  mexico: mexIndicators[123],
+  brasil: braIndicators[123]
+},
+{
+  name: "Participacion en la fuerza laboral de 15 a 24 años, varones",
+  peru: perIndicators[22],
+  chile: chlIndicators[22],
+  mexico: mexIndicators[121],
+  brasil: braIndicators[121]
+},
+{
+  name: "Fuerza laboral con educación básica",
+  peru: perIndicators[10],
+  chile: chlIndicators[10],
+  mexico: mexIndicators[109],
+  brasil: braIndicators[109]
+},
+{
+  name: "Fuerza laboral con educación básica, mujeres",
+  peru: perIndicators[12],
+  chile: chlIndicators[12],
+  mexico: mexIndicators[111],
+  brasil: braIndicators[111]
+},
+{
+  name: "Fuerza laboral con educación básica, varones",
+  peru: perIndicators[11],
+  chile: chlIndicators[11],
+  mexico: mexIndicators[110],
+  brasil: braIndicators[110]
+},
+{
+  name: "Fuerza laboral con educación intermedia",
+  peru: perIndicators[1],
+  chile: chlIndicators[1],
+  mexico: mexIndicators[100],
+  brasil: braIndicators[100]
+},
+{
+  name: "Fuerza laboral con educación intermedia, mujeres",
+  peru: WORLDBANK.PER.indicators[3],
+  chile: WORLDBANK.CHL.indicators[3],
+  mexico: WORLDBANK.MEX.indicators[102],
+  brasil: WORLDBANK.BRA.indicators[102]
+},
+{
+  name: "Fuerza laboral con educación intermedia, varones",
+  peru: perIndicators[2],
+  chile: chlIndicators[2],
+  mexico: mexIndicators[101],
+  brasil: braIndicators[101]
+},
+{
+  name: "Fuerza laboral con educación avanzada",
+  peru: perIndicators[13],
+  chile: chlIndicators[13],
+  mexico: mexIndicators[112],
+  brasil: braIndicators[112]
+},
+{
+  name: "Fuerza laboral con educación avanzada, mujeres",
+  peru: perIndicators[15],
+  chile: chlIndicators[15],
+  mexico: mexIndicators[114],
+  brasil: braIndicators[114]
+},
+{
+  name: "Fuerza laboral con educación avanzada, varones",
+  peru: perIndicators[14],
+  chile: chlIndicators[14],
+  mexico: mexIndicators[113],
+  brasil: braIndicators[113]
+},
 ]
+
 const country = document.getElementsByClassName('country')
 const selects = document.getElementById('selects')
-
+let func={};
 //Guarda el valor del input select para poderlo usar en la función filter de data.js
 selects.addEventListener('change', () => {
   let selectVal = selects.value;
-  window.worldbank.filter(selectVal);
+  func= window.data.filter(indicators, selectVal);
 })
 
 //Recorre el array de botones de países y guarda el value del botón seleccionado
 for (let i = 0; i < country.length; i++) {
   country[i].addEventListener("click", () => {
     let countryValue = country[i].value
-//Llama al objeto seleccionado en la función filter de data.js    
-    let indicatorSelected=window.worldbank.filter(chosenIndicator);
 //Recorre el objeto del indicador seleccionado y guarda el objeto correspondiente al país seleccionado con los botones
-    for (let countryS in indicatorSelected) {
+    for (let countryS in func) {
       if (countryS === countryValue) {
-        const dataCountry = indicatorSelected[countryS].data;
+        const dataCountry = func[countryS].data;
 //Recorre la data del objeto del país seleccionado y pinta el año y el dato del indicador
         for (let year in dataCountry) {
             const years = `${year}`
@@ -193,3 +197,22 @@ const table = document.getElementById("table-indicators");
       cellYear.innerHTML = `${years}`;
       cellPercent.innerHTML = `${percent}`;
     }
+
+/*Slides
+
+let myIndex = 0
+carousel();
+
+function carousel() {
+  let i;
+  let x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 3000);
+}*/
