@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+   <title>P O K E D E X</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <title>Pokedex</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image" href="./favicon.png">
   </head>
   <body>
     <section id = "start" class = "hide">
       <div id = "buttonContainer">
-        <button  id= "startPokemon" class = "start">S T A R T</button>
+        <button  id= "startPokemon" class = "start" >S T A R T</button>
       </div>
         
     </section>
     
-      <section id= "options" class = "pokedex" >
+      <section id= "options" class = "pokedex hide" >
         <div id = "optionsContainer">
             <button type = "button" id= "Fire" class = "boton-typeChart">Fuego</button>
             <button type = "button" id= "Normal" class = "boton-typeChart">Normal</button>
@@ -33,14 +33,16 @@
             <button type = "button" id= "Dragon" class = "boton-typeChart">Dragón</button>
                   
           </div>
-        <div><button type= "button" id = "nextPage" class = "hide">N E X T</button>
+        <div><button type= "button" id = "nextPage" >S I G U I E N T E</button>
         </div>
       </section>
 
-   <section id = "rootContainer">
-      <div id = "root" class = "hide">
-      
+   <section id = "rootContainer" class="hide">
+      <div id = "root" >
+        <button type= "button" id = "regresar" >R E G R E S A R</button>
       </div>
+   
+      
    </section>
     
     <script src="./data/pokemon/pokemon.js"></script>
