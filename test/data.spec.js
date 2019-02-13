@@ -221,16 +221,16 @@ describe('data', () => {
   });
 
   it('Deberia devolver el arr con peso Ascendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"weight","asc")[0].weight).toEqual("39.5 kg");
+    expect(window.data.sortDataPokemon(dataBase,"weight","asc")[0].weight).toEqual("1.8 kg");
   });
   it('Deberia devolver el arr con peso Descendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"weight","dsc")[0].weight).toEqual("1.8 kg");
+    expect(window.data.sortDataPokemon(dataBase,"weight","dsc")[0].weight).toEqual("39.5 kg");
   });
   it('Deberia devolver el arr con Altura Ascendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"height","asc")[0].height).toEqual("1.50 m");
+    expect(window.data.sortDataPokemon(dataBase,"height","asc")[0].height).toEqual("0.30 m");
   });
   it('Deberia devolver el arr con Altura Descendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"height","dsc")[0].height).toEqual("0.30 m");
+    expect(window.data.sortDataPokemon(dataBase,"height","dsc")[0].height).toEqual("1.50 m");
   });
 });
 
