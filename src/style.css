@@ -46,6 +46,7 @@ transition: all .5s ease;
 
 .menu_list{
   list-style: none;
+  font-family: sans-serif;
 }
 
 .nav__item {
@@ -60,53 +61,27 @@ transition: all .5s ease;
      color:rgba(221, 231, 228, 1);
    }
 
-   .current:before {
-     content: "";
-     width: 0;
-     height: 0;
-     position: absolute;
-     border-top: 17px solid transparent;
-     border-left: 15px solid #1D2120;
-     border-bottom: 17px solid transparent;
-     top: 12px;
-     right: 166px;
-     z-index: 4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementos*/
-  }
-
-  .current:after {
-    content: "";
-    width: -33px;
-    height: -1px;
-    position: absolute; /*Le damos al after una posición absoluta relativa al li que lo contiene*/
-    border-top: 16.5px solid transparent;
-    border-left: 17px solid rgb(235, 0, 139);
-    border-bottom: 17px solid transparent;
-    top: 12.5px;
-    right: 161px;
-    z-index: 1; /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
-  }
-
 .menu-toogle {
-    position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
-    line-height:1.1;
-    text-align:center;
-    top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
-    right: 8px;
-    border-radius:3px;
-    background-color: transparent;
-    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
-    z-index:10;
+  position: absolute;
+  line-height: 1.5;
+  text-align: center;
+  top: 6.5px;
+  right: 9px;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: all .5s ease;
+  z-index: 10;
   }
 
   .menu-toogle::before {
-     content:;
-     font-size:32px;
-     color:white;
+    content: "☰";
+   font-size: 45px;
+   color: #eb008b;
    }
 
    .checkbox {
      float: right;
-      /*Ocultamos el checkbox pues no nos interesa que se vea*/
+      display: none;/*Ocultamos el checkbox pues no nos interesa que se vea*/
    }
    .checkbox:checked ~ .sidebar {
      right:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/

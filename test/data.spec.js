@@ -16,8 +16,5 @@ describe('DATA', () => {
     it('Debería devolver el año 2001 y 60236, al elegir 2001 y MOTOCICLISTAS', () =>{
       expect(window.data.consult(window.INJURIES,"2001-01-04","Total_Injured_Persons_Motorcyclists")).toEqual(["2001", 60236])
     });
-
-// describe('FIND', ()=>{});
-
-});
+  });
 });
