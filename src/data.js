@@ -47,9 +47,9 @@ window.worldBank = {
     return orderByObject;
   },
 
-  VerGrafica: (arrayYear,arrayValors)=>{
+  VerGrafica: (arrayYear,arrayValors)=>{//funcion grafica
 
-    myChart= new Chart(ctx, { //funcion grafica
+    myChart= new Chart(ctx, { 
         type: 'line',
         data: {
             labels: arrayYear,
@@ -57,7 +57,7 @@ window.worldBank = {
                 label: 'Indicador Demografico (%)',
                 data: arrayValors,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(77, 169, 197, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
@@ -65,7 +65,7 @@ window.worldBank = {
                     'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
+                    'rgba(11,68,85,1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
@@ -89,3 +89,6 @@ window.worldBank = {
     }
   
   } //fin de window
+
+
+
