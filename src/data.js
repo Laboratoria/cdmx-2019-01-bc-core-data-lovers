@@ -6,13 +6,12 @@
 };
 window.example = example;*/
 
-
 window.printPokemon = {
   sortByHeight: (arrayPokemonData) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
       if (a.height > b.height) {
         return 1;
-      };
+      }
       if (a.height < b.height) {
         return -1;
       } else {
@@ -25,7 +24,7 @@ window.printPokemon = {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
       if ((parseFloat(a.weight)) > (parseFloat(b.weight))) {
         return 1;
-      };
+      }
       if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
         return -1;
       } else {
@@ -63,18 +62,19 @@ window.printPokemon = {
 
 
   totalHeight: (arrayPokemonData) => {
-    const pokemontotalHeight = arrayPokemonData.reduce((total, pokemonData) =>
-      total += parseFloat(pokemonData.height), 0, );
+
+    const pokemontotalHeight = arrayPokemonData.reduce((total, pokemonData) =>{
+      total += parseFloat(pokemonData.height), 0
     return pokemontotalHeight;
-  },
+  });
+},
 
   totalWeight: (arrayPokemonData) => {
 
-    const totalWeightPokemon = arrayPokemonData.reduce((total, pokemonData) =>
-      total += parseFloat(pokemonData.weight), 0, )
+    const totalWeightPokemon = arrayPokemonData.reduce((total, pokemonData) =>{
+      total += parseFloat(pokemonData.weight), 0
     return totalWeightPokemon;
-
-  },
-
-
+  
+  });
+},
 }

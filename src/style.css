@@ -13,10 +13,7 @@
     display:contents;
 }
 
-
-
-
-.titleWeb, .titlepokemonLight,.titlePokemonHeavy,
+.titleWeb, .titlePokemonLight,.titlePokemonHeavy,
 .titlePokemonSmall, .titlePokemonMedium, .titlePokemonTall,
 .titlePokemonSortByHeight, .titlePokemonSortByWeight{
     top: 15px;
@@ -51,12 +48,14 @@
         }
 
 
-#btn1,#buttonStadisticsPage,#buttonSearchPokemon,#filterButton,
+#buttonAboutPikapedia,#buttonStadisticsPage,#buttonSearchPokemon,#filterButton,
 #buttonBack,#buttonBackFilterPage,#ButtonGround,
 #ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
 #ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
 #buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
-#buttonPokemonPsychic, #buttonPokemonWater{
+#buttonPokemonPsychic, #buttonPokemonWater, #buttonAboutPikapediaOnFilter,
+#buttonStadisticsPageOnFilter, #buttonSearchPokemonOnFilter,#filterButtonOnFilter,
+#buttonBackFilterPage {
     background-color:#00CED1;
     border: none; 
     color: white; 
@@ -69,13 +68,15 @@
     
   }
   
-  #btn1:hover, #buttonStadisticsPage:hover, #btn3:hover,
+  #buttonAboutPikapedia:hover, #buttonStadisticsPage:hover, #btn3:hover,
   #filterButton:hover,  #buttonBack:hover, #buttonSearchPokemon:hover,
   #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
   #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
   #buttonPokemonPsychic:hover, #buttonPokemonWater:hover,
   #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
-  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover {
+  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover,  #buttonAboutPikapediaOnFilter:hover,
+  #buttonStadisticsPageOnFilter:hover, #buttonSearchPokemonOnFilter:hover,#filterButtonOnFilter:hover,
+  #buttonBackFilterPage:hover {
     background-color: RoyalBlue;
   }      
 
@@ -90,14 +91,19 @@
     padding:4%;
     font-size: 20px;
 }
+
+.boxPokemones{
+    width: 70%;
+    position:relative;
+    left: 10%;
+}
 .pokemones{
-    color:white;
+    color: white;
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
     text-align: center;
-    
- 
-    
+    position: relative;
+    display: inline-block    
 }
 
 h1,h2{
@@ -107,22 +113,23 @@ h1,h2{
 p{
    color: white;
    font-size: 16px;
-   background:#8A2BE2;
+   background: #8E2DE2;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    width: 270px;
    margin:0px;
    left:540px;
    padding: 1px;
    text-align: center;
 }
-
-
  .checkbox {
-    width: 30%;
-    height: auto;
+    width: 25%;
+    height: 25%;
     font-family: 'Exo 2', sans-serif;
-    color:white;
-    font-size: 20px;
-    padding:2%;
+    color: white;
+    font-size: 18px;
+    padding: 1%;
+    margin: 2%;
     background: #8E2DE2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -131,19 +138,42 @@ p{
     display: inline-block;
     
  }
-.card, .filterCard, .typeCard{
+.card, .typeCard{
     display: inline-block;
     border: solid #FFDE00;
     margin: 1%;
    
 }
+.filterCard{
+    display: inline-block;
+    border: solid #FFDE00;
+    margin: 1%;
+    width: 18%;
+    position: relative;
+    left: 28%;
+    bottom: 330px;
+}
+
 .imageCard{
     position:relative;
-   
 }
 .namePokemonFilter{
     position: relative;
     display: inline-block;
-    bottom: 400px;
-    left: 16%;;
+    bottom: 300px;
+    left: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16%;
+}
+.quality{
+ color: white;
+   font-size: 16px;
+   background: #8E2DE2;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   width: 99%;
+   margin:0px;
+   padding: 1px;
+   text-align: center;
 }
