@@ -9,7 +9,13 @@ body {
   background-position: absolute;
 
 }
-
+#searchInput{
+  background-color:rgb(105, 102, 102);
+  border: 10px;
+  border-color:rgba(120, 90, 40);
+  
+ 
+}
 #mainHeader{
   width: 100%;
   left:0;
@@ -41,8 +47,9 @@ body {
 #searchDiv{
   margin-left: 80px;
   margin-top: 15px;
+  font-size: 50px;
 }
-#search{
+#searchInput{
   position: relative;
   background-color:rgb(37, 37, 37);
   -webkit-border-radius: 7px;
@@ -261,4 +268,18 @@ justify-content:center;
 #showFirstChampionList{
   margin-top: 5%;
 }
+
+#searchDiv{
+  margin-left: 60%;
+  margin-top: 4%;
+
+}
+
+#searchInput{
+  width: 150%;
+  display: inline-block;
+  
+}
+
+
 }

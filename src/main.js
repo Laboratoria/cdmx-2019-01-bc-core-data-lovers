@@ -1,5 +1,6 @@
 
 
+
     /* Convierte la base de datos en una variable*/
     const dataLol = window.LOL.data;
 
@@ -58,7 +59,7 @@
     showFirstChampionList.innerHTML = "";
     datos.forEach(champ => {
 
-    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="lolIcons" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
+    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
 
                print(datos)
    
