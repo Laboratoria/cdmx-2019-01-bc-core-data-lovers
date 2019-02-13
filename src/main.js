@@ -1,6 +1,5 @@
 
 
-    //const search = document.getElementById('search')
 
     /* Convierte la base de datos en una variable*/
     const dataLol = window.LOL.data;
@@ -10,6 +9,10 @@
 
  //Trae la class que contiene el rol de la lista del menú desplegable 
     const rol = document.getElementsByClassName("rolPersonajes");
+
+    //Trae cada personaje para la iteración por clase
+    const characterFromList = document.getElementsByClassName("nameList");
+
 
   //almacena en variable los id del primer evento de cambio de pantalla, la interacción para abrir y cerrar el menú
     const inicio = document.getElementById('inicio')
@@ -24,7 +27,7 @@
     
   
   //vuelve la base de datos a un arreglo
- const dataToArray = Object.values(dataLol); 
+ //const dataToArray = Object.values(dataLol); 
 
   //Funcion de botones
   //click que hace cambio de la primera pantalla a la lista de personajes
@@ -56,9 +59,9 @@
     showFirstChampionList.innerHTML = "";
     datos.forEach(champ => {
 
-    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
+    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
 
-               print(datos)
+               print(datos);
    
                
     
@@ -75,8 +78,8 @@ const selectByRol = () => {
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
       document.getElementById("mySidenav").style.width = "0%";
-      
-      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataToArray);
+  
+      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
       print(arrayRolesFiltered);})}}
     selectByRol();
       
@@ -85,7 +88,7 @@ const selectByRol = () => {
 const searchByName = () => {
   searchInput.addEventListener("keyup", ()=>{
     let searchValue = searchInput.value;
-    const showSearch = window.lol.filterByName(searchValue,dataToArray);
+    const showSearch = window.lol.filterByName(searchValue,datos);
     print(showSearch);
   })};
  searchByName();
@@ -119,4 +122,19 @@ const searchByName = () => {
     //aatrox.addEventListener('click', () => { 
      // console.log('sí funciono');
 
-    //})
+    
+
+
+    const characterSelection = () => {
+      for ( let i=0; i<characterFromList.length; i++){
+        characterFromList[i].addEventListener('click', () => {
+          let characterId = characterFromList[i].id;
+          console.log(characterId);})}}
+         
+         
+         
+          // const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
+          //print(arrayRolesFiltered);})}}
+
+         characterSelection()
+    
