@@ -52,6 +52,7 @@ const selectRol = () => {
       const newArrayChamp = window.lol.showData(lolData);
       const arrayFiltered = window.lol.filterByRol(newArrayChamp, rolId);
       printData(arrayFiltered);
+      
     })
   }
 }
