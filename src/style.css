@@ -125,6 +125,10 @@ header{
     .menu li {
       border-top: 1px solid #fff;
      }
+
+     .menu li a{
+       color: #000; 
+     }
      
      #btn-menu .icon{
        float: left; 
