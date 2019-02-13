@@ -1,4 +1,17 @@
 
+/* ----MEDIA QUERIES ---
+@media (max-width:992px){
+}
+@media (max-width:768px){
+}
+@media (max-width:576px){
+}
+
+
+
+
+
+
 header{
   position:fixed;
   width:100%;
@@ -40,9 +53,7 @@ header nav{
 
 #Objetivo{
   background-color:rgba(255, 255, 255, 0.281);
-  height: 150px;
-  width: 200px;
-  color: black;
+ color: black;
 }
 
 
@@ -134,11 +145,26 @@ footer{
   
 }
 
-#years{
-    display: inline-block;
-    list-style: none;
-    padding: 5px;
-    border: solid 1px rgb(243, 148, 39);
-    width: 150px;
-
+table, td{
+  border: 1px solid black;
 }
+*/
+
+/*  BREAKPOINTS- BOOSTRAP
+
+Extra small (xs) devices  (portrait phones, less than 576px)
+No media query since this is the default in Boostrap
+
+Small(sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+
+*/
