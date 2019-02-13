@@ -9,6 +9,7 @@ const root =  document.getElementById('root');
 const cajitas = document.getElementsByClassName('cajitas')
 const dataPokemon = POKEMON.pokemon;
 const Water = document.getElementById('Water');
+const Flying = document.getElementById('Flying')
 // const nombre= document.getElementById('next');
 // const pantalla1=document.getElementById('pantalla1');
 //
@@ -23,6 +24,7 @@ pantalla2.style.display  ="block"
  })
 
 const printData = (data) => {
+  root.innerHTML = '';
   data.forEach( pokemon => {
     let namePokemon = `<div class="tarjeta"> <h1> ${pokemon.num} </h1> <h2> ${pokemon.name} </h2>
     <div> <img = class "imageBox" src ="${pokemon.img}"> </div>
@@ -40,7 +42,7 @@ const printData = (data) => {
     `
     root.insertAdjacentHTML("beforeend",namePokemon);
 
-  })
+  })}
   // dataPokemon.forEach(element =>{
     //  let num = element.num;
     //  let name = element.name;
@@ -58,20 +60,24 @@ const printData = (data) => {
     //  let weaknesses = element.weaknesses;
     //  printPokemon(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers, weaknesses);
     // })
-}
 Water.addEventListener("click", ()=>{
-  const elementPokemon = "Water"
-  const pokemonType = window.pokemon.filterPokemons(dataPokemon,"Water")
-    printData(pokemonType);
+  let elementPokemon = "Water"
+    console.log(pokemonType)
 
 })
-//for(let i = 0; i< cajitas.length; i++){
-  //cajitas[i].addEventListener('click', () => {
-  //let elementPokemon = cajitas[i].id
 
 
 
 
+
+for (let i = 0; i< cajitas.length; i++){
+cajitas[i].addEventListener('click', () => {
+let elementPokemon = cajitas[i].id
+let pokemonType = window.pokemon.filterPokemons(dataPokemon,elementPokemon)
+printData(pokemonType);
+console.log (pokemonType);
+})
+}
 
 //showPokemons.addEventListener('click', printData  )
 
