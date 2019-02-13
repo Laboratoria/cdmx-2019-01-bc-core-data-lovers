@@ -290,7 +290,7 @@ describe('sortData',() => {
       expect(processedAscName[3].name).toBe('Venusaur');
     }); 
     
-    /*test('debería retornar un arreglo ordenado de forma descendente por nombre', ()=>{
+    test('debería retornar un arreglo ordenado de forma descendente por nombre', ()=>{
     expect(processedDescName[0].name).toBe('Venusaur');
     expect(processedDescName[3].name).toBe('Bulbasaur');
   });
@@ -305,7 +305,7 @@ describe('sortData',() => {
       expect(processedAscHeight[3].height).toBe('2.01 m');
     });
        
-    /*test('debería retornar un arreglo ordenado de forma descendente por altura', ()=>{
+    test('debería retornar un arreglo ordenado de forma descendente por altura', ()=>{
       expect(processedDescHeight[0].height).toBe('2.01 m');
       expect(processedDescHeight[3].height).toBe('0.61 m');
     });
@@ -321,7 +321,7 @@ describe('sortData',() => {
       expect(processedAscWeight[3].weight).toBe('100.0 kg');
     });
     
-    /*test('debería retornar una arreglo ordenado de forma descendente por peso', ()=>{
+    test('debería retornar una arreglo ordenado de forma descendente por peso', ()=>{
       expect(processedDescWeight[0].weight).toBe('100.0 kg');
       expect(processedDescWeight[3].weight).toBe('6.9 kg');
     });

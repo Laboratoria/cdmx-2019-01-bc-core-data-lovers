@@ -57,13 +57,14 @@ window.data = {
                
       }
     });
-    console.log(arrayCandys);
+    /*
+   // console.log(arrayCandys);
     const suma = arrayCandys.reduce((prev, next) => prev + next);
     const promedio = suma / arrayCandys.length;
-    console.log(promedio);
+    //console.log(promedio);
     //const minimum = Math.max(arrayCandys);
-    return minimum;
-
+    return promedio;
+*/
   }
 
 
