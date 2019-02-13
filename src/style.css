@@ -1,9 +1,9 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .map {
@@ -71,7 +71,7 @@ header {
   position: fixed;
   width: 100%;
   padding-top: 0px;
-  background: #fff;
+  background-color: salmon;
   transition: 0.7s all;
   z-index: inherit 2;
 }
@@ -180,7 +180,7 @@ section .inner {
 
 .slc {}
 
-.opt {
+.btnCountry {
   background-color: rgba(133, 60, 145, 0.97);
   width: 40%;
   height: 60%;
