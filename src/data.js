@@ -8,9 +8,10 @@ window.WorldBank = {
     data.forEach(objeto => {
       if(objeto.indicatorName === matchYear){
         newData = objeto.data; 
-        return newData
+       return newData
       }
     });
     return newData
   }
+
 }
