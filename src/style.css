@@ -1,6 +1,7 @@
 
-
 @import url('https://fonts.googleapis.com/css?family=Courgette|Righteous');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .divPokemon {
   border: 2px solid #99b89d;
@@ -9,9 +10,17 @@
   text-align: center;
   font-family: 'Righteous', cursive;
   border-radius: 1em;
+  
 }
 
-
+.fondo {
+background-image: url('./assets/images/backInicio.jpg');
+width: 100%;
+height: -webkit-fill-available;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
 
 #pokemones {
   display: flex;
@@ -20,17 +29,14 @@
   justify-content: center;
 }
 
-#back {
-  
+#logo-poke {
+  width: 100%;
   text-align: center;
-  background-color: #0c4fb4 ;
 }
+
 #pokemon-title {
-  width: 35%;
- margin-top: -500%;
- margin-left: 32%;
- margin-bottom: 43%;
-  
+  width: 50%;
+ margin-top: 5%;
 }
 
 input[type=search]{
@@ -164,9 +170,40 @@ legend{
   background-position: center;
 }
 
+/* Stats */
+#stats-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 10%;
+ 
+}
+
+#stats-table td, #stats-table th {
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+#stats-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#stats-table tr:hover {background-color: #ddd;}
+
+#stats-table th {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+  background-color: #d14f1f;
+  color: white;
+ 
+}
+
+#principal-stats{
+  display: flex;
+  justify-content: center;
+}
+
 /* MENU */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   margin: 0;
@@ -244,13 +281,60 @@ ul li:hover {
   background: rgb(255, 215, 54);
 }
 
+/* Desktop */
+@media only screen and (min-widh: 992px){
+  
+  .divPokemon {
+    /*position: relative;*/
+    width: 20%;
+    
+  }
+}
 
-@media (max-width: 450px){
+/* Tablets */
+@media only screen and (max-width: 768px) {
 
-.menu-mobile {
+  .menu-mobile {
 
-  background-color: red;
+    background-color: rgb(6, 90, 158);
+  }
+
+
+  .divPokemon {
+    
+    width: 32%;
+  }
+
 
 
 }
+
+/* Mobiles */
+@media only screen and (max-width: 576px) {
+
+.menu-mobile {
+  background-color: rgb(10, 113, 182);
+}
+
+
+.divPokemon {
+
+  width: 48%;
+  
+}
+
+#order-section {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* #pokemones {
+  width: 5%;
+  justify-content: center;
+} */
+
 }

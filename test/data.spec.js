@@ -222,10 +222,13 @@ describe ('data', () => {
       expect(typeof window.data.computeStats).toBe('function');
     });
     test('debería regresar el valor mínimo para candy_count', () => {
-      expect(window.data.computeStats(dataPokemonTest)).toBe(25);
+      expect(window.data.computeStats(dataPokemonTest,'candy_count').minimum).toBe(25);
     });
     test('debería regresar el valor máximo para candy_count', () => {
-      expect(window.data.computeStats(dataPokemonTest)).toBe(100);
+      expect(window.data.computeStats(dataPokemonTest, 'candy_count').maximum).toBe(100);
+    });
+    test('debería regresar el promedio para candy_count', () => {
+      expect(window.data.computeStats(dataPokemonTest, 'candy_count').average).toBe(50);
     });
   });
 });
