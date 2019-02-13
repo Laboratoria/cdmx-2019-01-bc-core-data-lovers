@@ -7,7 +7,7 @@
 window.example = example;*/
 
 window.printPokemon = {
-  sortByHeight: (arrayPokemonData) => {
+  sortByHeightAscending: (arrayPokemonData) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
       if (a.height > b.height) {
         return 1;
@@ -21,8 +21,23 @@ window.printPokemon = {
     return pokemonSortedData;
   },
 
+    sortByHeightDescending:(arrayPokemonData)=>{
+      const pokemonSortedData = arrayPokemonData.sort((a, b) => {
+        if (a.height > b.height) {
+          return -1;
+        }
+        if (a.height < b.height) {
+          return 1;
+        } else {
+          return 0;
+        }
+      })
+      return pokemonSortedData;
 
-  SortByWeight: (arrayPokemonData) => {
+    },
+
+
+  sortByWeightAscending: (arrayPokemonData) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
       if ((parseFloat(a.weight)) > (parseFloat(b.weight))) {
         return 1;
@@ -35,6 +50,22 @@ window.printPokemon = {
     });
     return pokemonSortedData;
   },
+
+  sortByWeightDescending:(arrayPokemonData) =>{
+    const pokemonSortedData = arrayPokemonData.sort((a, b) => {
+      if ((parseFloat(a.weight)) > (parseFloat(b.weight))) {
+        return -1;
+      }
+      if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    return pokemonSortedData;
+  },
+
+
   filterByWeightLight: (arrayPokemonData) => {
     const pokemonFilteredLight = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) < 30);
     return pokemonFilteredLight
@@ -64,20 +95,20 @@ window.printPokemon = {
   },
 
 
-  totalHeight: (arrayPokemonData) => {
+  averageHeight: (arrayPokemonData,numberOfPokemon) => {
 
-    const pokemontotalHeight = arrayPokemonData.reduce((total, pokemonData) =>{
-      total += parseFloat(pokemonData.height), 0
-    return pokemontotalHeight;
-  });
+    const pokemonAverageHeight = arrayPokemonData.reduce((total, pokemonData) =>{
+      return total += parseFloat(pokemonData.height)}, 0)/numberOfPokemon;
+    return pokemonAverageHeight;
+
 },
 
-  totalWeight: (arrayPokemonData) => {
+  totalWeight: (arrayPokemonData,numberOfPokemon) => {
 
-    const totalWeightPokemon = arrayPokemonData.reduce((total, pokemonData) =>{
-      total += parseFloat(pokemonData.weight), 0
-    return totalWeightPokemon;
+    const pokemonAverageWeightt = arrayPokemonData.reduce((total, pokemonData) =>{
+      return total += parseFloat(pokemonData.weight)}, 0)/numberOfPokemon;
+    return pokemonAverageWeightt;
   
-  });
+  
 },
 }
