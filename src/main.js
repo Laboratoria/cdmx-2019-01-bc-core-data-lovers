@@ -35,17 +35,20 @@ const printOption = (result) => {
 
 const printYears = (resultYear) => {
   let indicatorDataYear ="";
+  dataYear.innerHTML="";
   for (const key in resultYear) {
     if (resultYear.hasOwnProperty(key)) {
       let element = resultYear[key];
       const year = key;
       if (element !== "") {
         indicatorDataYear = `<p>Año: <span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`
-        dataYear.insertAdjacentHTML('beforeend', indicatorDataYear);   
+        dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);   
       }
-      
+        
     }
-
+    
   }
+  
+//return result
 //dataYear.innerHTML=indicatorDataYear;
 }

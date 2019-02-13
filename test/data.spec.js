@@ -1,4 +1,7 @@
 require('../src/data.js');
+const dataFile ={
+  
+}
 
 
 describe("WorldBank", () => {
