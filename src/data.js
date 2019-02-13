@@ -59,24 +59,21 @@ window.data = {
     }*/
   },
 
-  computeStats: (data) => {
+  computeStats: (data,valueItem) => {
     let arrayCandys = [];
+    let result = {};
     data.forEach(element => {
-      if(element.candy_count > 0){
-
-        arrayCandys.push(element.candy_count)
-
+      if(element[valueItem] > 0){
+        arrayCandys.push(element[valueItem])
       }
     });
-    //console.log(arrayCandys);
-    //const sum = arrayCandys.reduce((prev, next) => prev + next);
-    //const average = sum / arrayCandys.length;
-    //console.log(average);
-    const minimum = Math.min.apply(null,arrayCandys);
-    //const maximum = Math.max.apply(null,arrayCandys)
-    // console.log(minimum);
-    // console.log(maximum);
-    return minimum;
+    
+    const sum = arrayCandys.reduce((prev, next) => prev + next);
+    result.average = sum / arrayCandys.length;
+    result.minimum = Math.min.apply(null,arrayCandys);
+    result.maximum = Math.max.apply(null,arrayCandys);
+
+    return result;
 
   }
 };

@@ -58,7 +58,7 @@ if (ubication.includes('typePokemon.html')) {
  // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
   //showList(allData);
   filterCoincidence();
-  window.data.computeStats(dataPokemon);
+  
 
 }else if (ubication.includes('orderPokemon.html')) {
   /*const orderNameRadio = document.getElementById('asc-name');
@@ -79,8 +79,28 @@ if (ubication.includes('typePokemon.html')) {
     });
   }
   getOrderPokemon(arrayRadio);
+
+  showList(window.data.showAllData(dataPokemon));
+  
+} else if (ubication.includes('statsPokemon.html')){
+  const resultCandy = window.data.computeStats(dataPokemon, 'candy_count');
+  document.getElementById('max-candy').innerHTML= resultCandy.maximum;
+  document.getElementById('min-candy').innerHTML= resultCandy.minimum;
+  document.getElementById('avg-candy').innerHTML= resultCandy.average;
+
+  const resultSpawn = window.data.computeStats(dataPokemon, 'spawn_chance');
+  document.getElementById('max-spawn').innerHTML= resultSpawn.maximum;
+  document.getElementById('min-spawn').innerHTML= resultSpawn.minimum;
+  document.getElementById('avg-spawn').innerHTML= resultSpawn.average;
+
+  const resultAvg = window.data.computeStats(dataPokemon, 'avg_spawns');
+  document.getElementById('max-avg').innerHTML= resultAvg.maximum;
+  document.getElementById('min-avg').innerHTML= resultAvg.minimum;
+  document.getElementById('avg-avg').innerHTML= resultAvg.average;
+
 }
 
+ 
 
 //MENU
 let menu = document.querySelector('#menu');

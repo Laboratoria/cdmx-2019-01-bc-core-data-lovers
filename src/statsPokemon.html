@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="fondo">
+<body>
   <header>
-    <div id="inicio">
-    </div>
-
+    
     <!--MENU-->
     <div class="menu-mobile">
       <div>
@@ -34,12 +32,35 @@
       </ul>
     </nav>
   </header>
-  <!--BACK-->
-  <section>
-    
-    <figure id="logo-poke">
-      <img id="pokemon-title" src="./assets/images/pokemon-logo.png">
-    </figure>
+  
+  <section id="principal-stats">
+    <table id="stats-table">
+        <tr>
+          <th>Item</th>
+          <th>Máximo</th>
+          <th>Mínimo</th>
+          <th>Promedio</th>
+        </tr>
+        <tr>
+            <td>Candy Count</td>
+            <td id="max-candy"></td>
+            <td id="min-candy"></td>
+            <td id="avg-candy"></td>
+        </tr>
+        <tr>
+            <td>Spawn Chance</td>
+            <td id="max-spawn"></td>
+            <td id="min-spawn"></td>
+            <td id="avg-spawn"></td>
+        </tr>
+        <tr>
+            <td>Avg Spawns</td>
+            <td id="max-avg"></td>
+            <td id="min-avg"></td>
+            <td id="avg-avg"></td>
+        </tr>
+    </table>
+
   </section>
   
   <script src="./data/pokemon/pokemon.js"></script>

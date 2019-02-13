@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
-
-
 .divPokemon {
   border: 2px solid #99b89d;
   width: 20%;
@@ -21,6 +18,8 @@ background-image: url('./assets/images/backInicio.jpg');
 width: 100%;
 height: -webkit-fill-available;
 background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 #pokemones {
@@ -30,13 +29,14 @@ background-size: cover;
   justify-content: center;
 }
 
+#logo-poke {
+  width: 100%;
+  text-align: center;
+}
 
 #pokemon-title {
-  width: 35%;
- margin-top: -500%;
- margin-left: 32%;
- margin-bottom: 43%;
-  
+  width: 50%;
+ margin-top: 5%;
 }
 
 input[type=search]{
@@ -170,8 +170,40 @@ legend{
   background-position: center;
 }
 
-/* MENU */
+/* Stats */
+#stats-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 10%;
+ 
+}
 
+#stats-table td, #stats-table th {
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+#stats-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#stats-table tr:hover {background-color: #ddd;}
+
+#stats-table th {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+  background-color: #d14f1f;
+  color: white;
+ 
+}
+
+#principal-stats{
+  display: flex;
+  justify-content: center;
+}
+
+/* MENU */
 
 * {
   margin: 0;
@@ -259,24 +291,21 @@ ul li:hover {
   }
 }
 
-/* Tabletas */
+/* Tablets */
 @media only screen and (max-width: 768px) {
 
   .menu-mobile {
 
-    background-color: green;
+    background-color: rgb(6, 90, 158);
   }
 
-  #back {
-
-    background-color: green;
-  }
 
   .divPokemon {
     
     width: 32%;
-    
   }
+
+
 
 }
 
@@ -284,17 +313,23 @@ ul li:hover {
 @media only screen and (max-width: 576px) {
 
 .menu-mobile {
-  background-color: red;
+  background-color: rgb(10, 113, 182);
 }
 
-#inicio {
-  background-color: red;
-}
 
 .divPokemon {
 
   width: 48%;
   
+}
+
+#order-section {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* #pokemones {
