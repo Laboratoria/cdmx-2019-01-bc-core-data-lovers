@@ -1,15 +1,15 @@
 @font-face {
-    font-family: Pokemon-Hollow;
-    font-style: normal;
-    font-weight: normal;
-    src: url(assets/fonts/Pokemon\ Hollow.ttf);
+  font-family: Pokemon-Hollow;
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/Pokemon\ Hollow.ttf);
 }
 
 @font-face {
-    font-family: Pokemon-Solid;
-    font-style: normal;
-    font-weight: normal;
-    src: url(assets/fonts/Pokemon\ Solid.ttf);
+  font-family: Pokemon-Solid;
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/Pokemon\ Solid.ttf);
 }
 
 html,body{
@@ -147,12 +147,12 @@ margin-right: -40px;
 }
 
 .namePokemon{
-  font-size: 63%;
-  letter-spacing: 1px;
-margin-top: 50%;
-margin-left:10%;
-margin-bottom: 60%;
-font-family: 'Indie Flower', cursive;
+    font-size: 63%;
+    letter-spacing: 1px;
+    margin-top: 50%;
+    margin-left:10%;
+    margin-bottom: 60%;
+    font-family: 'Indie Flower', cursive;
 
 }
 

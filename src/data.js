@@ -4,9 +4,9 @@ filterPokemon:(dataPokemon,types) =>{
 
     // const arrayPokemon = dataPokemon;
     // const tipoElegido = types;
-
+    
     const arrayFilter = dataPokemon.filter(dataPokemon => dataPokemon.type.includes(types));
-
+    
     return arrayFilter;
 
 }
