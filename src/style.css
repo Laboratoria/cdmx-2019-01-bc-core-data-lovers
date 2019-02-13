@@ -10,6 +10,7 @@
    background-repeat: no-repeat;
    background-size: 100%;
    display: inline-block;
+   
 }
 /* 
 --------------------------
@@ -17,7 +18,18 @@
 -------------------------*/
 
 @media only screen and (max-width: 600px){
-  
+  title {
+    color: transparent;
+  }
+  #regresar {
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 100%;
+    float: right;
+    margin-top: -34%;
+}
 #start {
   background-image: url(./start.png);
   height: -webkit-fill-available;
@@ -90,6 +102,9 @@
   width: 71vw;
   margin-top: 55vw;
   margin-left: 13vw;
+}
+#options, #rootContainer {
+  display: none;
 }
 }
 
