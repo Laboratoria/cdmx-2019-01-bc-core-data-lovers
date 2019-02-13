@@ -2,14 +2,12 @@
   display:none;
 }
 
-
-
 body{
 
     background:url(http://oi65.tinypic.com/nbdlr5.jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
-    color:#fff;
+    color: blue;
     background-position:center;
   background-size: 100% 100%;
  background-color: white;
@@ -17,8 +15,8 @@ body{
 
 
 h1{
-    color:#FFFF00;
-    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#F7031D;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow';
     font-size: 100px;
     font-weight: bold;
     text-align: center;
@@ -26,9 +24,9 @@ h1{
     line-height: 50px;
     letter-spacing: 10px;
     /*word-spacing: 20px;*/
-    text-shadow: #BDBDBD 5px 5px 1px;
-    
+    text-shadow: #EED901 8px 8px 2px;
 }
+
 
 div{
     text-align: center;
@@ -159,10 +157,19 @@ span{
   font-size: 2em;
 }
 
+main{
 
+  color: #F4F6F7;
+  display: block;
+
+}
 
 /* gift de background  */
 
+<<<<<<< HEAD
 
 
 /*comentario karen 8 febrero
+=======
+}
+>>>>>>> 20413d79ef2bf20721451f70fe9f723417f55e08
