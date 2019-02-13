@@ -1,5 +1,5 @@
-require ('../src/data.js');
-require ('../src/data/worldbank/worldbank.js')
+require('../src/data.js');
+require('../src/data/worldbank/worldbank.js')
 
 
 describe('window.WorldBank deberia ser un objeto', () => {
@@ -8,12 +8,28 @@ describe('window.WorldBank deberia ser un objeto', () => {
  });
 });
 //hasta aqui todo bien
-describe('filterCountry should be a function', () => {
-  const result = {1960: "", 1961: "", 1962: "", 1963: "", 1964: "", 1965: "", 1966: "", 1967: "", 1968: "", 1969: "", 1970: "", 1971: "", 1972: "", 1973: "", 1974: "", 1975: "", 1976: "", 1977: "", 1978: "", 1979: "", 1980: "", 1981: "", 1982: "", 1983: "", 1984: "", 1985: "", 1986: "", 1987: "", 1988: "", 1989: "", 1990: 33.1, 1991: 31.8, 1992: 30.6, 1993: 29.4, 1994: 28.4, 1995: 27.5, 1996: 26.7, 1997: 25.9, 1998: 25.1, 1999: 24.3, 2000: 23.6, 2001: 22.9, 2002: 22.2, 2003: 21.5, 2004: 20.8, 2005: 20, 2006: 19.2, 2007: 18.2, 2008: 17.3, 2009: 16.4, 2010: 15.6, 2011: 14.9, 2012: 14.5, 2013: 14.2, 2014: 14, 2015: 14.1, 2016: 14.4, 2017: ""};
+describe('filterCountry, encargado de filtrar', () => {
+ const result = { 1960: "", 1961: "", 1962: "", 1963: "", 1964: "", 1965: "", 1966: "", 1967: "", 1968: "", 1969: "", 1970: "", 1971: "", 1972: "", 1973: "", 1974: "", 1975: "", 1976: "", 1977: "", 1978: "", 1979: "", 1980: "", 1981: "", 1982: "", 1983: "", 1984: "", 1985: "", 1986: "", 1987: "", 1988: "", 1989: "", 1990: 33.1, 1991: 31.8, 1992: 30.6, 1993: 29.4, 1994: 28.4, 1995: 27.5, 1996: 26.7, 1997: 25.9, 1998: 25.1, 1999: 24.3, 2000: 23.6, 2001: 22.9, 2002: 22.2, 2003: 21.5, 2004: 20.8, 2005: 20, 2006: 19.2, 2007: 18.2, 2008: 17.3, 2009: 16.4, 2010: 15.6, 2011: 14.9, 2012: 14.5, 2013: 14.2, 2014: 14, 2015: 14.1, 2016: 14.4, 2017: "" };
  it('is a function', () => {
    expect(typeof window.WorldBank.filterCountry).toBe('function');
  })
- it('Deberia devolver', () => {
+ it('Deberia devolver un arreglo de años que corresponde a result', () => {
    expect(window.WorldBank.filterCountry(window.WORLDBANK, "MEX", "SH.ANM.NPRG.ZS")).toEqual(result);
  })
+});
+
+describe('orderData', function () {
+ it('is a function', () => {
+   expect(typeof window.WorldBank.orderData).toBe('function');
  });
+
+ const data = { 1960: "", 1961: "", 1962: "", 1963: "", 1964: "", 1965: "", 1966: "", 1967: "", 1968: "", 1969: "", 1970: "", 1971: "", 1972: "", 1973: "", 1974: "", 1975: "", 1976: "", 1977: "", 1978: "", 1979: "", 1980: "", 1981: "", 1982: "", 1983: "", 1984: "", 1985: "", 1986: "", 1987: "", 1988: "", 1989: "", 1990: 33.1, 1991: 31.8, 1992: 30.6, 1993: 29.4, 1994: 28.4, 1995: 27.5, 1996: 26.7, 1997: 25.9, 1998: 25.1, 1999: 24.3, 2000: 23.6, 2001: 22.9, 2002: 22.2, 2003: 21.5, 2004: 20.8, 2005: 20, 2006: 19.2, 2007: 18.2, 2008: 17.3, 2009: 16.4, 2010: 15.6, 2011: 14.9, 2012: 14.5, 2013: 14.2, 2014: 14, 2015: 14.1, 2016: 14.4, 2017: "" };
+
+ it('Deberia de retornar un arreglo de orderDataYear ordenado de forma ascentente si le mando "asc" para Mexico', () => {
+   expect(window.WorldBank.orderData(data, "years", "asc")[0]).toEqual('1960');
+ });
+
+ it('Deberia de retornar un arreglo de orderDataYear ordenado de forma ascentente si le mando "desc" para Mexico', () => {
+   expect(window.WorldBank.orderData(data, "years", "desc")[0]).toEqual('2017');
+ });
+});

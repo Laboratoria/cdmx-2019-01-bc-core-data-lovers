@@ -10,7 +10,6 @@
 //     }
   
 //   }
-
 window.WorldBank = {
   filterCountry: (data, country, countrySelect) =>{
     //console.log(data,listQuestion)
@@ -61,4 +60,5 @@ window.WorldBank = {
         }
     }
   },  
+
  }

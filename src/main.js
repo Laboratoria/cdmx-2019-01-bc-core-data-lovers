@@ -67,6 +67,7 @@ for (let boton in buttonTypes){
     paisElegido.forEach( ciudad => {
     listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
     });
+
   })
 }
 
@@ -88,8 +89,9 @@ for (let radioItem in radioFilters){
   radioFilters[radioItem].addEventListener('change',(e) =>{
     e.preventDefault() //e.target()
     indicator.innerHTML = "";//Limpiar funcion
-    
-    const resultado = window.WorldBank.filterCountry(data, listQuestion)//Datos de data.js
+    let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
+    let countrySelect = listQuestion.value;
+    const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js
     const resultadoOrder = window.WorldBank.orderData(resultado, e.target.dataset.sortby, e.target.dataset.sortorder)//Datos de data.js
 
     for (let resultadoYear in resultadoOrder) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
@@ -99,6 +101,9 @@ for (let radioItem in radioFilters){
     }
   })
 }
+
+
+
 
 // on radio filters change 
 // const radioYearMayor = document.getElementById("asc");
