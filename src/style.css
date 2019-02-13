@@ -29,6 +29,14 @@ body {
   margin-top: 50px;
 }
 
+
+#welcomeMssg{
+  background-image: url(http://www.lol-wallpapers.com/wp-content/uploads/2017/01/Summoners-Rift-4-League-of-Legends-Artwork-Wallpaper-lol-1024x688.jpg);
+  width: 100%;
+  height: 100%; 
+  position: static;
+  opacity: 0.7;
+}
 #iconGlass{
   font-size:10px;
   color:whitesmoke;
@@ -53,7 +61,7 @@ body {
 }
 
 #titleChampions{
-  margin-top: 100px;
+  margin-top: 10px;
   color:white;
   display: flex;
   justify-content: center;
@@ -215,7 +223,7 @@ figure img{
   } 
   
   #showFirstChampionList{
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -258,7 +266,7 @@ justify-content:center;
   font-size: 120%;
 }
 #showFirstChampionList{
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 #searchDiv{
