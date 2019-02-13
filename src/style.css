@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
 
 
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
 
 :root {
     background:#2980B9;
@@ -12,22 +13,14 @@
     display:contents;
 }
 
-/*#enterPage{
-    width:80%;
-    max-width: 1000px;
-    margin:0 auto;
-    overflow: hidden;
-}*/
 
 
 
-
-.titleWeb, .titlepokemonLightght, .titlePokemonHeavy,
+.titleWeb, .titlePokemonLight,.titlePokemonHeavy,
 .titlePokemonSmall, .titlePokemonMedium, .titlePokemonTall,
 .titlePokemonSortByHeight, .titlePokemonSortByWeight{
-    position: relative;
     top: 15px;
-    text-align: center;
+   text-align: center;
 }
 #enterToPikapedia{
         background-color:#00CED1;
@@ -37,7 +30,7 @@
         text-decoration: none; 
         display: inline-block; 
         font-size: 22px; 
-        font-family: 'Love Ya Like A Sister', cursive;
+        font-family: 'Exo 2', sans-serif;
         border-radius: 5px;
         position:relative;
         cursor: pointer;
@@ -58,46 +51,53 @@
         }
 
 
-#btn1,#buttonStadisticsPage,#buttonSearchPokemon,#filterButton,
+#buttonAboutPikapedia,#buttonStadisticsPage,#buttonSearchPokemon,#filterButton,
 #buttonBack,#buttonBackFilterPage,#ButtonGround,
 #ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
 #ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
 #buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
-#buttonPokemonPsychic, #buttonPokemonWater{
+#buttonPokemonPsychic, #buttonPokemonWater, #buttonAboutPikapediaOnFilter,#buttonStadisticsPageOnFilter,
+#buttonSearchPokemonOnFilter,#filterButtonOnFilter,#buttonBackPageKanto{
     background-color:#00CED1;
     border: none; 
     color: white; 
     padding: 12px 35px; 
     font-size: 20px;
-    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: 'Exo 2', sans-serif;
     cursor: pointer;
     border-radius: 5px;
     margin:5px;
     
   }
   
-  #btn1:hover, #buttonStadisticsPage:hover, #btn3:hover,
+  #buttonAboutPikapedia:hover, #buttonStadisticsPage:hover, #btn3:hover,
   #filterButton:hover,  #buttonBack:hover, #buttonSearchPokemon:hover,
   #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
   #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
   #buttonPokemonPsychic:hover, #buttonPokemonWater:hover,
   #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
-  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover {
+  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover, #buttonAboutPikapediaOnFilter:hover,#buttonStadisticsPageOnFilter:hover,
+  #buttonSearchPokemonOnFilter:hover,#filterButtonOnFilter:hover,#buttonBackPageKanto:hover{
     background-color: RoyalBlue;
   }      
 
 .welcomeMessage{
    color:#FFDE00;
    font-size: 30px;
-   font-family: 'Love Ya Like A Sister', cursive;
+   font-family:'Exo 2', sans-serif;
    text-align: center;
 
 }
-
+.fa-align-left{
+    padding:4%;
+    font-size: 20px;
+}
 .pokemones{
     color:white;
-    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: 'Exo 2', sans-serif;
     font-size: 20px;
+    text-align: center;
+    
  
     
 }
@@ -105,7 +105,6 @@
 h1,h2{
     color:#FFDE00;
     text-align: center;
-
 }
 p{
    color: white;
@@ -122,19 +121,31 @@ p{
  .checkbox {
     width: 30%;
     height: auto;
-    background-color: #00CED1;
-    float: left;
-    font-family:'Love Ya Like A Sister', cursive;
+    font-family: 'Exo 2', sans-serif;
+    color:white;
+    font-size: 20px;
+    padding:2%;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    line-height: 2.1;
+    border-radius: 3%;
+    display: inline-block;
     
-}
-
-.card{
-    display:inline-block;
-    border: solid white;
+ }
+.card, .filterCard, .typeCard{
+    display: inline-block;
+    border: solid #FFDE00;
     margin: 1%;
+   
 }
 .imageCard{
+    position:relative;
+   
+}
+.namePokemonFilter{
     position: relative;
-    left: 25%;
-
+    display: inline-block;
+    bottom: 400px;
+    left: 16%;;
 }

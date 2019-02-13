@@ -6,81 +6,80 @@
 };
 window.example = example;*/
 
-// window.printPokemon = {
-
- 
-// }
 
 window.printPokemon = {
   sortByHeight: (arrayPokemonData) => {
-    return pokemonSortedData = arrayPokemonData.sort((a, b) =>{
+    const pokemonSortedData = arrayPokemonData.sort((a, b) => {
       if (a.height > b.height) {
-        return 1
-      };
+        return 1;
+      }
       if (a.height < b.height) {
-        return -1
+        return -1;
       } else {
         return 0;
       }
-    });
+    })
+    return pokemonSortedData;
   },
+
+
   SortByWeight: (arrayPokemonData) => {
-    const pokemonSortedData = arrayPokemonData.sort((a, b) =>{
-      if (parseFloat(a.weight) > parseFloat(b.weight)) {
-        return 1
-      };
-      if (a.weight < b.weight) {
-        return -1
+    const pokemonSortedData = arrayPokemonData.sort((a, b) => {
+      if ((parseFloat(a.weight)) > (parseFloat(b.weight))) {
+        return 1;
+      }
+      if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
+        return -1;
       } else {
         return 0;
       }
     });
     return pokemonSortedData;
   },
-  filterByWeight: (arrayPokemonData) => {
-    return pokemonFilteredLight = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight)<30);
+  filterByWeightLight: (arrayPokemonData) => {
+    const pokemonFilteredLight = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) < 30);
+    return pokemonFilteredLight
   },
-  
-
-  filterByHeightHeavy: (arrayPokemonData) => {
-    return pokemonFilteredHeavy = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) > 30);
+  filterByWeightHeavy: (arrayPokemonData) => {
+    const pokemonFilteredHeavy = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) > 30);
+    return pokemonFilteredHeavy
+    
   },
-
-
   filterByHeightSmall: (arrayPokemonData) => {
-    return pokemonFilteredSmall=arrayPokemonData.filter(pokemon => parseInt(pokemon.height) < 1.00);
-    
-    
+    const pokemonFilteredSmall = arrayPokemonData.filter(pokemon => parseInt(pokemon.height) < 1.00);
+    return pokemonFilteredSmall
+  },
+
+  filterByHeightMedium: (arrayPokemonData) => {
+    const pokemonFilteredMedium = arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.00) && (parseInt(pokemon.height) <= 1.80));
+    return pokemonFilteredMedium
+  },
+
+  filterByHeightTall: (arrayPokemonData) => {
+    const pokemonFilteredTall = arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.80));
+    return pokemonFilteredTall
+  },
+  pokemonFilterType: (arrayPokemonData, string) => {
+    const pokemonfilter = arrayPokemonData.filter(pokemon => pokemon.type.includes(string));
+    return pokemonfilter
   },
 
 
-  filterByHeightMedium: (arrayPokemonData)=>{
-    return pokemonFilteredMedium=arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.00) && (parseInt(pokemon.height) <= 1.80));
-
+  totalHeight: (arrayPokemonData) => {
+    const pokemontotalHeight = arrayPokemonData.reduce((total, pokemonData) => {
+      total += parseFloat(pokemonData.height), 0 
+      return pokemontotalHeight
+    });
     
   },
 
-  filterByHeightTall:(arrayPokemonData) => {
-    return pokemonFilteredTall=arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.80));
+  totalWeight: (arrayPokemonData) => {
 
-    
-  },
-  pokemonFilterType: (arrayPokemonData,string)=>{
-   return pokemonfilter =arrayPokemonData.filter(pokemon => pokemon.type.includes(string));
-  }, 
-
-
-  totalHeight:(arrayPokemonData)=>{
-    const pokemontotalHeight=arrayPokemonData.reduce((total, pokemonData)=>
-    total +=parseFloat(pokemonData.weight), 0, )
-    return pokemontotalHeight;
+    const totalWeightPokemon = arrayPokemonData.reduce((total, pokemonData) =>{
+      total += parseFloat(pokemonData.weight), 0
+      return totalWeightPokemon;
+    });
   },
 
-   totalWeight:(arrayPokemonData) =>{
-     const totalWeightPokemon= arrayPokemonData.reduce((total, pokemonData)=>
-     total +=parseFloat(pokemonData.weight), 0, )
-
-      return totalWeightPokemon
-   },
 
 }
