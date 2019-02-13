@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,20 @@
     <header>
       <figure>
         <img src="images/logo.png" alt="PuntoMuerto" class="logo">
-        <!--<input type="checkbox" class="checkbox" id="menu-toggle" name="abrir-cerrar" value="">-->
-        <label for="menu-toogle" class="menu-toogle checkbox" id="menu-toggle">
+        <input type="checkbox" class="checkbox" id="menu-toggle" name="abrir-cerrar" value="">
+        <!--  <label for="menu-toogle" class="menu-toogle checkbox" id="menu-toggle">
           <img src="images/menu.png"  class="menu">
-        </label>
-<!--<img src="images/menu.png" class="menu-toogle" id = "menu">-->
-          <nav class="sidebar">
-            <ul class="menu_list">
-              <li><a href="#" class="nav__item current">INFORMACIÓN</a></li>
-              <li><a href="#" class="nav__item">TOTAL</a></li>
-              <li><a href="#" class="nav__item">CONSULTA</a></li>
-              <li><a href="#" class="nav__item">GALERIA</a></li>
-              <li><a href="#" class="nav__item">FQA's</a></li>
-            </ul>
-          </nav>
+        </label>-->
+        <img src="images/menu.png" class="menu-toogle" id="menu">
+        <nav class="sidebar">
+          <ul class="menu_list">
+            <li><a href="#info" class="nav__item current">INFORMACIÓN</a></li>
+            <li><a href="#total" class="nav__item">TOTAL</a></li>
+            <li><a href="#know" class="nav__item">CONSULTA</a></li>
+            <li><a href="#photos" class="nav__item">GALERIA</a></li>
+            <li><a href="#fqa" class="nav__item">FQA's</a></li>
+          </ul>
+        </nav>
 
       </figure>
     </header>
@@ -40,13 +41,13 @@
         Nos proponemos concientizar a la juventud de los riesgos a que
         se exponen y sus posibles consecuencias.</p>
 
-        <div class="button">
-          <input type="button" value="CONOCE MÁS" class="consulta" id="consulta">
+      <div class="button">
+        <input type="button" value="CONOCE MÁS" class="button" id="consulta">
       </div>
 
     </section>
 
-    <section class="total">
+    <section id="total" class="total">
       <h2> TOTAL DE HERIDOS </h2>
       <p>Tan solo en el 2015, 50% de los percances automovilísticos
         se relaciona con el consumo de alcohol y se dan
@@ -80,6 +81,7 @@
           <option class="year" value="2013-01-04">2013</option>
           <option class="year" value="2014-01-04">2014</option>
           <option class="year" value="2015-01-04">2015</option>
+          <option class="year" value="01-04">TODOS</option>
         </select>
         <select id="user" name="user">
           <option selected value="0"> HERIDOS </option>
@@ -91,32 +93,32 @@
           <option value="Total_Injured_Persons">TODOS</option>
         </select>
         <div class="button">
-          <input id="search" type="button" value="CONSULTA">
+          <input id="search" class="button" type="button" value="CONSULTA">
         </div>
       </form>
     </section>
 
     <section id="result" class="result"></section>
 
-      <section class="photos">
-        <img src="images/way.png" alt="PuntoMuerto" class="image">
-       <img src="images/cros.png" alt="PuntoMuerto" class="image">
-        <img src="images/incident.png" alt="PuntoMuerto" class="image">
-        <h2> FQA </h2>
-        <p> <b> ¿Qué es punto muerto?</b> </p>
-        <p> <b> ¿A quién se dirige esta campaña? </b></p>
-        <p><b> ¿Qué medidas puedo realizar para evitar accidentes?</b> </p>
-        <p> <b> ¿De dónde son los datos que consulto?</b> </p>
-        <p><b> ¿Qué medidas debo tomar si soy peaton? </b></p>
-      </section>
+    <section id="photos" class="photos">
+      <img src="images/way.png" alt="PuntoMuerto" class="image">
+      <img src="images/cros.png" alt="PuntoMuerto" class="image">
+      <img src="images/incident.png" alt="PuntoMuerto" class="image">
+      <h2 id="fqa"> FQA </h2>
+      <p> <b> ¿Qué es punto muerto?</b> </p>
+      <p> <b> ¿A quién se dirige esta campaña? </b></p>
+      <p><b> ¿Qué medidas puedo realizar para evitar accidentes?</b> </p>
+      <p> <b> ¿De dónde son los datos que consulto?</b> </p>
+      <p><b> ¿Qué medidas debo tomar si soy peaton? </b></p>
+    </section>
 
-      <footer>
-        <figure>
+    <footer>
+      <figure>
         <!--<img src="images/redes.png" alt="PuntoMuerto" class="redes">-->
         <p id="footer"> Página hecha por Hame E. y Andie C. </p>
         <img src="images/final.png" alt="PuntoMuerto" class="final">
       </figure>
-      </footer>
+    </footer>
   </div>
 
   <script src="./data/injuries/injuries.js"></script>

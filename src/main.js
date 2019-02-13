@@ -9,12 +9,10 @@ const resultsecc = document.getElementById("result");
 //Constante que contiene la data
 const injuriesBy = window.INJURIES;
 
+//Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
-  //const resultYear = window.data.consult(yearValue,userValue)
-  //const resultUser = window.data.consult(userValue)
-const resultData= window.data.consult(injuriesBy, yearValue, userValue);
-resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
+  const resultData = window.data.consult(injuriesBy, yearValue, userValue);
+  resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
 });
-//<br><b>Total de heridos en ${userValue};</i>
