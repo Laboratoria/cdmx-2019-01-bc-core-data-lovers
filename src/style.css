@@ -83,12 +83,15 @@ img{
 }
 
 .logfixed{ 
-    background-color: black;
-    width:97%;
-    margin-left:1.5%;
+    width:100%;
     position: fixed;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+nav.navbar {
+    background-color: black;
+    border:0;
 }
 
 
