@@ -11,12 +11,14 @@ describe('Debería de ser una función',() => {
     expect(typeof window.lol.filtroDataRoles).toBe('function');
   });});
 
-  describe('Debería de ser una función',() => {
+describe('Debería de ser una función',() => {
     it('is a function', () =>{
       expect(typeof window.lol.iterarData).toBe('function');
     });});
 
-    var LOL = {
+describe('filtroDataRoles',() => {  
+
+    let muestra = {
       type: "champion",
       format: "standAloneComplex",
       version: "6.24.1",
@@ -124,10 +126,24 @@ describe('Debería de ser una función',() => {
             attackspeedoffset: -0.065,
             attackspeedperlevel: 2
           }
-        }, 
+        } 
        }
-      } 
+      }; 
 
-//it('Deberia devolver un arreglo de Aatrox cuando seleccione Fighter',() => {
-   /* expect(window.filter(datosArr,'Aatrox').toEqual({Aatrox})
-  )})})*/
+      let dataToArray = [];
+        for (const key in muestra.data) {
+       if (muestra.data.hasOwnProperty(key)) {
+         const element = muestra.data[key];
+         let objetoVacio = {
+           name: element.name,
+           tag: element.tags,
+           splash: element.splash,
+           title: element.title,
+         }
+         dataToArray.push(objetoVacio)
+        } 
+      }
+it('Should returns the objetc Aatrox if we select Tank',() => {
+    expect(window.lol.filtroDataRoles('Tank', dataToArray)[0]).toEqual(dataToArray[0]);
+  })
+});

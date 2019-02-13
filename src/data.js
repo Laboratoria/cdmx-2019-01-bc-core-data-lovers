@@ -6,7 +6,7 @@ window.lol = {
      const element = datalol[key];
      let obj = {
        name: element.name,
-       tag: element.tags[0],
+       tag: element.tags,
        splash: element.splash,
        title: element.title,
      }
@@ -17,7 +17,7 @@ window.lol = {
   },
   
    filtroDataRoles: (rolId, datosArr ) =>{  
-      const filtradoPorRoles = datosArr.filter(element => element.tag === rolId);
+      const filtradoPorRoles = datosArr.filter(element => element.tag[0] === rolId || element.tag[1] === rolId );
  
        return filtradoPorRoles
      },
@@ -28,3 +28,5 @@ filterBySearch: (name, datosArr) => {
 },
 
 }
+
+
