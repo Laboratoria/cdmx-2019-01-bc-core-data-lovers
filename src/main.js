@@ -12,7 +12,6 @@ for (let i = 0; i < bottonstByMode.length; i++) {
     const accidentsData = getNeededData(e.target.name);
     hideAllContent();
     //Display the information panel (this is only used if we preffer to show the panel via javascrip and not in the css)
-    showThePanel();
     contentByMode[i].style.display = 'block';
     //Print in the information panel all the information
     printTheData(accidentsData, tableByMode[i], printOnce[i]);
@@ -28,11 +27,6 @@ function hideAllContent() {
 
 function getNeededData(fieldToSearch) {
   return window.data.getData(fieldToSearch);
-
-}
-//(this is only used if we preffer to show the panel via javascrip and not in the css)
-function showThePanel() {
-  //open the data Panel
 }
 
 function printTheData(accidentsByYear, tableToPrint, canPrint) {

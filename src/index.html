@@ -13,9 +13,24 @@
   <div id="root"></div>
   <!--<script src="./data/injuries/injuries.js"></script>-->
   <header id="realB">
+    <!--menu responsive-->
+    <input type="checkbox" id="menu">
+    <label for="menu" class="fas fa-bars"></label>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <!--<section1 id="principalpage" class=hide>-->
     <h1>Injured persons by<br>transportation mode</h1>
     <h2>in United States of America</h2>
+    <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
+    <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
+    <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
+    <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
+    <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
   </header>
 
   <section class="infoBody content">
@@ -153,19 +168,6 @@
   </section>
   <section id="result_graphic" class="result_graphic">
   </section>
-
-  <nav class="side_menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
-      <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
-      <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
-      <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
-      <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
 
 </body>
 <script src="./data/injuries/injuries.js"></script>
