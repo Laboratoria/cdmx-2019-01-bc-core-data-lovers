@@ -1,20 +1,23 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
   <meta charset="utf-8">
   <title>Data Lovers</title>
+  
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minium-scale= 1.0">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 
-
-
 <body>
-  
-  <header class="header">
+   <!--
+
+ <header class="header">
      <div clas="container">
        <figure>
          <img id="logo" src= "./assets/images/Logo Hipatia.png" style="width:14%" alt= "logoX">
@@ -29,11 +32,33 @@
   
         </div>
   </header>
+-->
 
-
-
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class= "container-fluid"></div>
+  <a class="navbar-brand" href="#"> <img src="./assets/images/Logo Hipatia.png"style="width:40%" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="nav-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse"id="navbarResponsive">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="#">Inicio</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Indicadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+     </ul>
+  </div>
+</nav>
   
-   
+ <!--
  
     <section>
          <div id= "Objetivo">
@@ -48,34 +73,48 @@
 
       </section>
 
+-->
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+  <img class="mySlides" src="assets/images/267.jpg" style="width:100%">
+  <div class= "carousel-caption">
+    <h1 class="display-2">HIPATIA</h1>
+    <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+  </div>
+  <img class="mySlides" src="assets/images/aaa.jpg" style="width:100%">
+  <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg" style="width:100%"> 
+
+</div>
+
+<div class="container-fluid padding">
+<div class="row welcome text-center" >
+    <div class-= "col-12">
+      <h1 class="display-4">¿Qué es Hipatia Project?</h1>
+      <hr>
+</div>
+<div class-= "col-12">
+  <p class="lead">Es un repositorio de estadísticas sobre la brecha de género en el trabajo de Brasil, Chile, México y Perú. En él se pueden visualizar datos históricos de diferentes indicadores del Banco Mundial en tablas y gráficas. Además, se pueden descargar archivos en formato Excel y realizar algunos cálculos estadísticos.</p>
+</div>
+</div>
+</div>
+
+
+ <!---
 
   <section id="contenedor-descripcion">
 
 
-    <h1 class="titulo" id= "descripcion-titulo" >Brecha de género</h1>
+    <h1 class="titulo" id= "descripcion-titulo" >¿Qué es Hipatia Project?</h1>
    
-    <p>Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en la mayor parte del mundo, estas desigualdades han afectado a las mujeres. </p>
-      
-        <p>La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que prevalecen entre mujeres y hombres se asocian a la
-        histórica división del trabajo para el mercado y el trabajo doméstico, o para la reproducción material de los hogares" (Instituto Nacional de las Mujeres [INMUJERES], 2008) . </p>
-       
-        <p>El trabajo es una de las principales vías por las cuales las personas obtienen ingresos para su supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante el estudio de la desigualdad de género en el trabajo.</p>
-       
-        <p>Referencias:
-        INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.</p>
+   <p> Es un repositorio de estadísticas sobre la brecha de género en el trabajo de Brasil, Chile, México y Perú. En él se pueden visualizar datos históricos de diferentes indicadores del Banco Mundial en tablas y gráficas. Además, se pueden descargar archivos en formato Excel y realizar algunos cálculos estadísticos. </p>
+    
+/// NO OLVIDAR CONTENIDO
 
-        
-
-
-
-
-    <!---
-    <button class=region> ÁFRICA</button>
-    <button class=region> ESTE DE ASIA Y PACÍFICO</button>
-    <button class=region> EUROPA Y ASIA CENTRAL</button>
-    <button class=region> LATINOAMERICA Y CARIBE</button>
-    <button class=region>MEDIO ESTE Y NORTE DE ÁFRICA </button>
-    <button class=region> SUR DE ASIA</button>
+    <h3> Objetivo</h3>
+   
+    
+    <p>Mostrar datos estadísticos para el estudio y sensibilización social sobre la desigualdad de género en el trabajo, de forma accesible y amigable.   </p>
+   
        -->
 
 
@@ -129,6 +168,12 @@
     </div> 
 
 
+
+
+
+
+   <!--BOTONES 
+
       <div class="contenedor-botones" >
       
         <ul>
@@ -164,6 +209,43 @@
 
    </section>
 
+   -->
+   <!--botones banderas -->
+
+<div class= "container-fluid padding">
+  <div class= "row text-center padding">
+  <div class= "cl-xs-12 col-sm-6 col-md-4">
+
+    <ul>
+   
+      <li style="list-style:none" >
+          <h3>México</h3>   
+      <button class="country" value="mexico" ><img src="./assets/images/mex.png" width="50"  height="50"> </button>
+    </li>
+
+
+    <li style="list-style:none"  >   
+      <h3>CHILE</h3>
+       <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50"  height="50"> </button>      
+      </li>
+
+      <li style="list-style:none" >
+        <h3>Brasil</h3>
+     <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50"  height="50"> </button>
+      </li>
+
+       <li style="list-style:none" >
+          <h3>PERU</h3> 
+           <button class="country" value="peru"><img src="./assets/images/peru.png" width="50"  height="50" >  </button>
+           </li>
+
+          </ul>
+  </div>
+  </div>
+  <hr class= "my-4">
+</div>
+
+
    <section id="thirdPage"> 
 
      <!--PRINT INDICATOR CHOSEN-->
@@ -187,14 +269,105 @@
   
 
   </section>
-   
+  
+   <!---
+  <section id="contenedor-descripcion">
+
+
+    <h3>¿Qué es género?</h3>
+
+   <p> Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en la mayor parte del mundo, estas desigualdades han afectado a las mujeres.</p>
+
+<h3>Desigualdad de género </h3>
+
+<p>La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que prevalecen entre mujeres y hombres se asocian a la
+histórica división del trabajo para el mercado y el trabajo doméstico, o para la reproducción material de los hogares" (Instituto Nacional de las Mujeres [INMUJERES], 2008) . </p>
+
+<p>El trabajo es una de las principales vías por las cuales las personas obtienen ingresos para su supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante el estudio de la desigualdad de género en el trabajo.</p>
+
+
+  </section>
+
+-->
+
+<div class= "continer-fluid padding">
+  <div class="row padding">
+    <div class="col-lg-6">
+      <h2>¿Qué es género?</h2>
+      <p> Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en la mayor parte del mundo, estas desigualdades han afectado a las mujeres.</p>
+       
+      <h2>Desigualdad de género </h2>
+
+      <p>La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que prevalecen entre mujeres y hombres se asocian a la
+histórica división del trabajo para el mercado y el trabajo doméstico, o para la reproducción material de los hogares" (Instituto Nacional de las Mujeres [INMUJERES], 2008) . </p>
+  
+        <p>El trabajo es una de las principales vías por las cuales las personas obtienen ingresos para su supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante el estudio de la desigualdad de género en el trabajo.</p>
+
+    </div>
+    <div class="col-lg-6">
+      <img src="assets/images/aaa.jpg" class= "img flud">
+    </div>
+  </div>
+</div>
+
+
+<div class= "container-fluid padding">
+<div class="row text-center padding">
+  <div class="col-12">
+    <h2>Contacto</h2>
+  </div>
+  <div class="col-12 social padding">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+</div>
+
+
+
+
+
    
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
 
 
-<footer class="footer">
+<footer >
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="../src/assets/images/Logo Hipatia-01.png" style="width:20%">
+        <hr clas="light">
+        <p>55555-5555-55</p>
+        <p>1223@gmail.com</p>
+        <p>Insurgentes 19283</p>
+        <p>Ciudad de México</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Horarios</h5>
+        <hr class="light">
+        <p> Lunes: 9am-5pm</p>
+        <p> Sábado: 10am-5pm</p>
+        <p> Domingo: Cerrado</p>
+      </div>
+      <div class="col-md-4">
+          <hr class="light">
+          <h5>Paises</h5>
+          <hr class="light">
+          <p> Perú, Lima</p>
+          <p> Santiago, Chile</p>
+          <p> Sao Paulo, Brasil</p>
+        </div>
+        <div class="col-12">
+          <hr class="light">
+          <h5>&copy; www.hipatia.org</h5>
+        </div>
+    </div>
+  </div>
 
 </footer>
 

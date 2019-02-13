@@ -198,7 +198,7 @@ const table = document.getElementById("table-indicators");
       cellPercent.innerHTML = `${percent}`;
     }
 
-/*Slides
+//Slides
 
 let myIndex = 0
 carousel();
@@ -215,4 +215,4 @@ function carousel() {
   }
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 3000);
-}*/
+}
