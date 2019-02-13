@@ -37,6 +37,15 @@ h2 {
   color: #037393;
   font-size: 32px;
 }
+h3 {
+  font-family: 'Poppins',sans-serif;
+  color: dimgrey;
+  width: 55%;
+  margin: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+}
 
 p {
   font-family: 'Lato',sans-serif;
@@ -54,7 +63,7 @@ p {
   bottom: 0;
   left: 0;
   top: 0;
-  width: 10%;
+  width: 15%;
 }
 .side_menu a {
   margin: 15%;
@@ -65,10 +74,16 @@ p {
   border-radius: 2em;
   text-decoration: none;
   color: #fff;
+  border-color: #F9B53C;
 }
 
-.side_menu a:hover {
+.side_menu a:hover, .visualize_data_button:hover {
   background-color: #037393;
+}
+
+.fa-facebook-f, .fa-twitter {
+  font-size: 2em;
+  padding: .5em;
 }
 
 .side_menu ul {
@@ -109,7 +124,7 @@ section.content {
 }
 
 /********** iconos*****/
-.fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car, .year_button {
+.fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car, .datayear_button {
   color: white;
   width: 80px;
   height: 80px;
@@ -142,6 +157,11 @@ section.content {
   background-color: darkmagenta;
 }
 
+.datayear_button {
+  font-size: 10px;
+  font-family: Poppins, sans-serif;
+  padding: 3%;
+}
 
 .year_button {
   font-size: 10%;
@@ -149,14 +169,44 @@ section.content {
 
 /*year section styles*/
 .slideshow-area {
-  background: cyan; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.choose-year-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.year_button {
+  font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #112659;
+    overflow: hidden;
+    border-radius: .5em;
+    margin-top: 40%;
+  
+}
+
+.visualize_data_button {
+  align-content: center;
+  position: relative;
+  font-size: 1em;
+  padding: .5em;
+  background-color: #F9B53C;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 2em;
+  text-decoration: none;
+  color: #fff;
+  border-color: #F9B53C;
 }
 /**************************************************/
-@@media (max-width:768px) {
-
-  .side_menu{
-    display:
-
-  }
-
-}

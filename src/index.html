@@ -16,6 +16,7 @@
     <!--<section1 id="principalpage" class=hide>-->
     <h1>Injured persons by<br>transportation mode</h1>
     <h2>in United States of America</h2>
+    <h3>All cities all over the world recognized safety and security mobility in its goals, objectives and polices. Specific objectives were translated into performance criteria used to establish priorities for planned transportation improvements. A key way to measure safety is evaluating the total number of injured persons in each mode of transportation.</h3>
   </header>
 
   <section class="infoBody content">
@@ -128,28 +129,30 @@
     </article>
   </section>
   
-   <section7 id="year_section" class="slideshow-area">
-      <select id="selected_year" name="year" class="select_year">
-          <option selected value="0"> YEAR </option>
-          <option class="year" value="2001-01-04">2001</option>
-          <option class="year" value="2002-01-04">2002</option>
-          <option class="year" value="2003-01-04">2003</option>
-          <option class="year" value="2004-01-04">2004</option>
-          <option class="year" value="2005-01-04">2005</option>
-          <option class="year" value="2006-01-04">2006</option>
-          <option class="year" value="2007-01-04">2007</option>
-          <option class="year" value="2008-01-04">2008</option>
-          <option class="year" value="2009-01-04">2009</option>
-          <option class="year" value="2010-01-04">2010</option>
-          <option class="year" value="2011-01-04">2011</option>
-          <option class="year" value="2012-01-04">2012</option>
-          <option class="year" value="2013-01-04">2013</option>
-          <option class="year" value="2014-01-04">2014</option>
-          <option class="year" value="2015-01-04">2015</option>
-          <option class="year" value="2016-01-04">2016</option>
-        </select>
-      
-        <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE DATA</button>
+   <section7 id="year_section" class="infoBody content">
+     <div class="choose-year-button">
+        <select id="selected_year" class="year_button" name="year" class="select_year">
+            <option selected value="0"> Choose a year </option>
+            <option class="year" value="2001-01-04">2001</option>
+            <option class="year" value="2002-01-04">2002</option>
+            <option class="year" value="2003-01-04">2003</option>
+            <option class="year" value="2004-01-04">2004</option>
+            <option class="year" value="2005-01-04">2005</option>
+            <option class="year" value="2006-01-04">2006</option>
+            <option class="year" value="2007-01-04">2007</option>
+            <option class="year" value="2008-01-04">2008</option>
+            <option class="year" value="2009-01-04">2009</option>
+            <option class="year" value="2010-01-04">2010</option>
+            <option class="year" value="2011-01-04">2011</option>
+            <option class="year" value="2012-01-04">2012</option>
+            <option class="year" value="2013-01-04">2013</option>
+            <option class="year" value="2014-01-04">2014</option>
+            <option class="year" value="2015-01-04">2015</option>
+            <option class="year" value="2016-01-04">2016</option>
+          </select>
+          <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">Visualize Data</button>
+     </div>
+    
   </section7>
   <section8 id="result_graphic" class="result_graphic">
   </section8>
@@ -162,8 +165,12 @@
       <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
       <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
       <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
+      <button class="datayear_button" id="data_by_year" >Search data by year</button>
       <li><a href="#">About</a></li>
+      
       <li><a href="#">Contact</a></li>
+      <i class="fab fa-facebook-f"></i><br>
+      <i class="fab fa-twitter"></i>
     </ul>
   </nav>
 
