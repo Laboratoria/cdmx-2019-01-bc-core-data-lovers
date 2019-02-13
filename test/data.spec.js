@@ -1,39 +1,20 @@
 require('../src/data.js');
-
-
-/*describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-
-
-}); */
-
-
-
-
-
-
  
-describe ('filter', () => {
+describe ('filterData', () => {
   it('is a function', () =>{
-    expect(typeof filter).toBe ('function');
+    expect(typeof window.data.filterData).toBe('function');
   });
 })
 
-describe ('order', () =>{
+describe ('sortData', () =>{
   it('is a function', ()=>{
-    expect(typeof order).toBe('function');
+    expect(typeof window.data.sortData).toBe('function');
   });
   })
 
-describe ('find', () => {
+describe ('computeStats', () => {
   it('is a function',() =>{
-    expect (typeof find).toBe('function');
+    expect (typeof window.data.computeStats).toBe('function');
   });
 })
 

@@ -12,7 +12,7 @@ img{
     height: 350px;
 }
 
-#pokemones, #filtered_out { /*Agregue*/
+#pokemones, #filtered_out {
     padding-top:15%;
     margin-left: 1.5%; 
     flex-wrap: wrap;
