@@ -18,9 +18,8 @@ body{
     font-size: 0;
     min-height: 80px;
     background-color: #fff;
-    padding: 5px 15px;
+    padding: 5px 2rem;
     text-align: right;
-   
 }
 .header-left{
     float: left;
@@ -44,22 +43,21 @@ body{
 .nav-menu{
     cursor: pointer;
     background: #4d4d4d;
-    margin-top: 20px;
     text-align: center;
     padding: 0 10px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
 }
 .nav-menu ul{
     line-height: 3rem;
     color: #fff;
     padding-left:0; 
+    margin: 0;
     
 }
 .nav-menu ul>li:hover{
-    color:#ffdd00;
-  
+    color:#ffdd00; 
 }
 .item-menu{
     text-decoration: none;
@@ -68,10 +66,9 @@ body{
     border-bottom:1px solid #5a5a5a;
 }
 .container{
-    padding: 5px 15px;
-
+    padding: 1rem  1rem;
+    min-height: 82vh;
 }
-
 .news{
     width: 100%;
 }
@@ -86,14 +83,19 @@ height: auto;
     text-align: center;
 }
 .general-filter{
-    padding: 20px;
+    padding: 1.5rem 2rem;
     -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
 .title-indicadores>h1{
-    color:pink;
-    font-size: 1em;
+    color:#ffc0cb;
+    font-size: 2rem;
+    margin-top: 0;
+    font-size: 1rem;
 }
 .information-filter-inner{
     border: 1px solid black;
@@ -102,37 +104,74 @@ height: auto;
     display: flex;
     justify-content: space-around;
     margin: 30px 0;
+    display: inline-block;
+    width: 100%;
+    display: inline-block;
+        width: 100%;
 }
+
 .list-question{
     width: 100%;
-    font-size: .8em;
+    font-size: 1rem;
     color: #fff;
-    background: #808080;
+    background-color: #808080;
     width: 100%;
     height: 40px;
     outline: none;
+    margin-top: 1rem;
     border: 1px solid #808080;
 }
 .search-country{
     cursor: pointer;
-    width: 60px;
+    min-width: 70px;
     height: 50px;
     line-height: 50px;
     text-align: center;
+    padding-left: 52px;
+    padding-right: 1rem;
     text-transform: uppercase;
     text-decoration: none;
-    background-color:#ffdd00;
-    border: 1px solid #ffdd00; 
-    color:#fff;
-    font-size: .9em;
+    background-color:#f5f5f5;
+    border: 1px solid #002f54;
+    color:#002f54;
+    border-radius: 4px;
+    font-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    background-size: 30px;
+    transition: all linear 300ms;
+    -webkit-transition: all linear 300ms;
+    -moz-transition: all linear 300ms;
+    -ms-transition: all linear 300ms;
+    -o-transition: all linear 300ms;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    max-width: 200px;
+}
+.search-country.btn_mex{
+    background-image: url('images/icons/mexico.svg');
+}
+.search-country.btn_per{
+    background-image: url('images/icons/peru.svg');
+}
+.search-country.btn_bra{
+    background-image: url('images/icons/brazil.svg');
+}
+.search-country.btn_Chl{
+    background-image: url('images/icons/chile.svg');
 }
 .search-country:hover{
-    background-color:#fff;
-    border: 1px solid #ffdd00; 
-    color: #ffdd00;
-    -webkit-transition: all linear 250ms;
-    -o-transition: all linear 250ms;
-    transition: all linear 250ms;
+    background-color:#002f54;
+    border: 1px solid #002f54; 
+    color: #fff;
+    
 }
 .ocultar{
     display: none;
@@ -141,12 +180,9 @@ height: auto;
     display: block;
 }
 footer{
-    
     background-color: #333333;;
     height:50px;;
 }
-
-
 .title-footer{
     font-size: .6em;
     color: #fff;
@@ -154,3 +190,110 @@ footer{
     text-align: center;
 }
 
+/* filtros de ordenamiento */
+.order__filters{
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+}
+.order__filters .order__items{
+    display: inline-block;
+    font-size: 1rem;
+    width: 50%;
+    vertical-align: top;
+    text-align: center
+}
+.order__items.right{
+    border-right: 1px solid #585858;
+}
+/* custom checkbox */
+/* Customize the label (the container) */
+.container__check {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container__check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container__check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container__check input:checked ~ .checkmark {
+    background-color: #ab82ce;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container__check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container__check .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  .information__filtered{
+      margin-top: 2rem;
+  }
+  .information__filtered p{
+      background-color: #fff;
+      padding: .5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,.2);
+      transition: all linear .35s  ;
+      -webkit-transition: all linear .35s  ;
+      -moz-transition: all linear .35s  ;
+      -ms-transition: all linear .35s  ;
+      -o-transition: all linear .35s  ;
+}
+
+@media screen and (min-width: 640px){
+    .search-country{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        max-width: 200px;
+    }
+}

@@ -59,10 +59,10 @@
                 <h1 >Indicadores genero femenino</h1>
             </article>
             <article class="information-filter">
-            <a class="btn_mex search-country" id="MEX" data-ciudad="MEX">México</a>
-            <a class="btn_per search-country" id="btn_per" data-ciudad="PER">Peru</a>
-            <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA">Brasil</a>
-            <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL">Chile</a>
+                <a class="btn_mex search-country" id="MEX" data-ciudad="MEX" data-object="countryMex">México</a>
+                <a class="btn_per search-country" id="btn_per" data-ciudad="PER" data-object="countryPer">Peru</a>
+                <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA" data-object="countryBra">Brasil</a>
+                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl">Chile</a>
             </article>  
             <article> 
                 <a id="educacion" class="typeTheme" >Educacion</a> 
@@ -71,23 +71,37 @@
                 <select id="list-question" class="list-question">
                     <option value="valor" >Selecciona un pais</option>
                 </select>
-                <h2>Mostrar año</h2>
-                <select id="order-year" >
-                    <option value="">Mayor</option> 
-                    <option value="">Menor</option>
-                </select>
-                <h2>Mostrar valor</h2>
-                <select  id="order-valor">
-                    <option value="">Valor mayor</option> 
-                    <option value="">Valor menor</option>
-                </select>
-            </article>
-            <article id="information-filter-inner" class="" >
-            </article>
-            
-  <section id="indicador"></section>
-        </section>
+                <div class="order__filters">
+                    <div class="order__items right">
+                        <p><b>Ordenar por Año</b></p>
 
+                        
+                        <label for="asc" class="container__check">Menor
+                            <input type="radio" id="asc" class="radio__filter" name="order" data-sortBy="years" data-sortOrder="asc" checked>
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="desc" class="container__check"> Mayor
+                            <input type="radio" id="desc" class="radio__filter" name="order" data-sortBy="years" data-sortOrder="desc">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="order__items">
+                        <p><b>Ordenar por valor</b></p>                        
+                        <label for="numAsc" class="container__check"># Menor
+                            <input type="radio" id="numAsc" class="radio__filter" name="order" data-sortBy="values" data-sortOrder="asc">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label for="numDesc" class="container__check"># Mayor
+                            <input type="radio" id="numDesc" class="radio__filter" name="order" data-sortBy="values" data-sortOrder="desc">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </article>
+            <article id="information-filter-inner" class="information__filtered" >
+            </article>
     </main>
     <footer>
       <p class="title-footer">©2019 Grupo Banco Mundial. Reservados todos los derechos.</p> 
