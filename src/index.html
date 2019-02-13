@@ -6,66 +6,90 @@
   <meta charset="utf-8">
   <!-------------Welcome screen------------->
   <title>MexEduca</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </div>
-  <header>
-    <nav role="navigation">
-      <figure class="logo"><img src="imagen/learning.png" alt="leyendo"></figure>
-      <h1 class="title">Alfabetización en Latinoamérica</h1>
-      <ul>
-        <li><a href="imagen/Historia de usuario..png">¿Quiénes somos?</a></li>
-        <li><a href="imagen/Historia de usuario. (1).png">¿Porqué MexEduca?</a></li>
-      </ul>
-    </nav>
-  </header>
+
 </head>
 
 <body>
-  <section>
-    <div class="inner"></div>
-    <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
-  </section>
+  <header>
+    <div class="container">
+      <nav role="navigation">
+        <figure class="logo"><img src="imagen/learning.png" alt="leyendo"></figure>
+        <h1 class="title">Alfabetización en Latinoamérica</h1>
+        <ul>
+          <li><a href="imagen/Historia de usuario..png">¿Quiénes somos?</a></li>
+          <li><a href="imagen/Historia de usuario. (1).png">¿Porqué MexEduca?</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <section>
-    <h3>Noticias</h3>
+  <div class="container">
+    <section class="main row">
+      <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
+      <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+        <button class="btnliteracy" id="literacy">Alfabetización</button>
+        <fieldset>
+          Para : <select name="country" id="countriesOptions">
+            <option class="opt" value="MEX">México</option>
+            <option class="opt" value="CHIL">Chile</option>
+            <option class="opt" value="PER">Perú</option>
+            <option class="opt" value="BRA">Brasil</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          Para : <select name="literacyMex" id="literacyOptions">
+            <option class="opt" value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
+            <option class="opt" value="adultWomen">Mujeres adultas (15 años o más)</option>
+          </select>
+        </fieldset>
 
-  </section>
+        <aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <p> NOTICIAS
 
-  <section>
-    <button class="btnliteracy" id="literacy">Alfabetización</button>
-    <fieldset>
-      Para : <select name="country" id="countriesOptions">
-        <option class="opt" value="MEX">México</option>
-        <option class="opt" value="CHIL">Chile</option>
-        <option class="opt" value="PER">Perú</option>
-        <option class="opt" value="BRA">Brasil</option>
-      </select>
-    </fieldset>
+          </p>
+        </aside>
+    </section>
+  </div>
 
-    <fieldset>
-      Para : <select name="literacyMex" id="literacyOptions">
-        <option class="opt" value="youngWomen">Mujeres jóvenes (15 a 24 años) </option>
-        <option class="opt" value="adultWomen">Mujeres adultas (15 años o más)</option>
-      </select>
-    </fieldset>
+  <div class="row">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <p>MÉXICO</p>
+    </div>
+    <div class="clearfix-sm-block"></div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <p>CHILE</p>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <p>PERÚ</p>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <p>BRASIL</p>
+    </div>
+  </div>
+
+
   </section>
 
   <section>
     <article>
-      <h3>Datos</h3>
+      <h5>Datos</h5>
       <h5 id="imprimiendo"></h5>
     </article>
   </section>
 
   <footer>
-    <article>
-      <h4>Acerca de</h4>
-      <h4>Sitios de interés</h4>
+    <div class="container">
+      <article>
+        <h6>Acerca de</h4>
+          <h6>Sitios de interés</h4>
 
 
-    </article>
+      </article>
+    </div>
 
   </footer>
 
@@ -74,6 +98,11 @@
 
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+
 
 </body>
 
