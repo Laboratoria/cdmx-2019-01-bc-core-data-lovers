@@ -13,7 +13,7 @@ describe('filterByRol', () => {
     expect(typeof window.lol.filterByRol).toBe('function');
   });
   it('Should returns the object Aatrox if we select Tank', () => {
-    expect(window.lol.filterByRol(newArrayInfo, 'Tank')[0].toEqual(window.LOL.data.Aatrox.tags[1]));
+    expect(window.lol.filterByRol(newArrayInfo, 'Tank')[0]).toEqual(window.LOL.data.Aatrox);
   });
 });
 
