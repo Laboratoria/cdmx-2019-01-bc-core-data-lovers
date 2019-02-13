@@ -1,9 +1,7 @@
 
 
-    const search = document.getElementById('search')
-
     /* Convierte la base de datos en una variable*/
-    const dataLol = LOL.data;
+    const dataLol = window.LOL.data;
 
     /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
     const showFirstChampionList = document.getElementById('showFirstChampionList')
@@ -11,20 +9,24 @@
  //Trae la class que contiene el rol de la lista del menú desplegable 
     const rol = document.getElementsByClassName("rolPersonajes");
 
+    //Trae cada personaje para la iteración por clase
+    const characterFromList = document.getElementsByClassName("nameList");
+
+
   //almacena en variable los id del primer evento de cambio de pantalla, la interacción para abrir y cerrar el menú
     const inicio = document.getElementById('inicio')
     const menu = document.getElementById('menu')
     const cerrar = document.getElementById('titleChampions')
 
   //Trae los divs de cada personaje
-  const character = document.getElementById('character')
+  //const character = document.getElementById('character')
 
   //almacena el valor del input para la busqueda por nombre
   const searchInput = document.getElementById("searchInput")
     
   
   //vuelve la base de datos a un arreglo
- const dataToArray = Object.values(dataLol); 
+ //const dataToArray = Object.values(dataLol); 
 
   //Funcion de botones
   //click que hace cambio de la primera pantalla a la lista de personajes
@@ -76,7 +78,7 @@ const selectByRol = () => {
       let rolId = rol[i].id;
       document.getElementById("mySidenav").style.width = "0%";
   
-      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataToArray);
+      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
       print(arrayRolesFiltered);})}}
     selectByRol();
       
@@ -85,7 +87,7 @@ const selectByRol = () => {
 const searchByName = () => {
   searchInput.addEventListener("keyup", ()=>{
     let searchValue = searchInput.value;
-    const showSearch = window.lol.filterByName(searchValue,dataToArray);
+    const showSearch = window.lol.filterByName(searchValue,datos);
     print(showSearch);
   })};
  searchByName();
@@ -120,3 +122,18 @@ const searchByName = () => {
       console.log('sí funciono');
 
     })
+
+
+    const characterSelection = () => {
+      for ( let i=0; i<characterFromList.length; i++){
+        characterFromList[i].addEventListener('click', () => {
+          let characterId = characterFromList[i].id;
+          console.log(characterId);})}}
+         
+         
+         
+          // const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
+          //print(arrayRolesFiltered);})}}
+
+         characterSelection()
+    
