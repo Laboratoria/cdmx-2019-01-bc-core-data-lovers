@@ -18,6 +18,7 @@ window.data = {
       });
     }
     return dataToReturn;
+
   },
   
   consult: (dataToSearch, yearValue) => {
@@ -32,3 +33,12 @@ window.data = {
 //for (const injuriesByYear of INJURIES) {
   //console.log(injuriesByYear)
 //}
+
+  }
+};
+//función para obtener arreglo por año
+// let years = new Map();
+// for (const injuriesByYear of INJURIES) {
+//   // console.log(injuriesByYear)
+// }
+

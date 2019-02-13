@@ -12,12 +12,11 @@ body {
   background-size: 80%;
   opacity: 30%;
   text-align: center;
-
+  margin: 0;
 }
 
-span {
-  font-size: 50px;
-  cursor: pointer;
+header{
+  width: 100%;
 }
 
 table {
@@ -35,7 +34,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   color: #037393;
-  font-size: 32px;
+  font-size: 200%;
 }
 h3 {
   font-family: 'Poppins',sans-serif;
@@ -53,19 +52,32 @@ p {
 }
 
 /************** menu ********/
-.side_menu {
+#menu{
+  background: #112659;
+  display: none;
+}
+
+header label{
+  display: none;
+  /* width: 100%; */
+  height: 30px;
+  padding: 10px;
+}
+
+.menu {
+  display: none;
   background: #112659;
   color: #fff;
   position: fixed;
   font-family: 'Montserrat', sans-serif;
-  font-size: 90%;
+  font-size: 100%;
   text-align: center;
   bottom: 0;
   left: 0;
   top: 0;
   width: 15%;
 }
-.side_menu a {
+.menu a {
   margin: 15%;
   display: block;
   padding: .5em;
@@ -77,16 +89,18 @@ p {
   border-color: #F9B53C;
 }
 
-.side_menu a:hover, .visualize_data_button:hover {
-  background-color: #037393;
-}
 
 .fa-facebook-f, .fa-twitter {
   font-size: 2em;
   padding: .5em;
 }
 
-.side_menu ul {
+
+.menu a:hover, .visualize_data_button:hover {
+  background-color: #037393;
+}
+
+.menu ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -96,14 +110,11 @@ p {
 
 .realB {
   display: block;
-  margin-left: auto;
-  width: 90%;
+  width: 100%;
 }
 
 .infoBody {
   /* display: block; */
-  margin-left: auto;
-  width: 90%;
   background-color: #037393;
   opacity: 0.8;
 }
@@ -115,7 +126,6 @@ p {
 
 .tableStructure {
   display: inline;
-  margin-right: 10px;
 }
 
 section.content {
@@ -124,6 +134,7 @@ section.content {
 }
 
 /********** iconos*****/
+
 .fa-walking, .fa-bicycle, .fa-motorcycle, .fa-bus, .fa-car, .datayear_button {
   color: white;
   width: 80px;
@@ -133,34 +144,42 @@ section.content {
   font-size: 200%;
   border-radius: 70px;
   border-width: 8px;
-  background-color: transparent;
   text-align: center;
 }
 
-.fa-walking, .pedestrians_info {
+.fa-walking {
   background-color: rgb(18, 18, 134);
 }
 
-.fa-bicycle, .pedalcyclists_info {
+.fa-bicycle {
   background-color: orangered;
 }
 
-.fa-motorcycle, .motorcyclists_info {
+.fa-motorcycle {
   background-color: crimson;
 }
 
-.fa-bus, .busoccupants_info {
+.fa-bus {
   background-color: forestgreen;
 }
 
-.fa-car, .caroccupants_info {
+.fa-car {
   background-color: darkmagenta;
 }
+
 
 .datayear_button {
   font-size: 10px;
   font-family: Poppins, sans-serif;
   padding: 3%;
+
+.fa-bars{
+  color: white;
+  width: 100%;
+  font-size: 200%;
+  background-color: #112659;
+  text-align: right;
+
 }
 
 .year_button {
@@ -169,11 +188,14 @@ section.content {
 
 /*year section styles*/
 .slideshow-area {
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
+  
+  
 
 .choose-year-button {
   display: block;
@@ -209,4 +231,13 @@ section.content {
   color: #fff;
   border-color: #F9B53C;
 }
+
+/**************************************************/
+@media (max-width:768px) {
+
+  .side_menu{
+    display:
+
+  }
+
 /**************************************************/
