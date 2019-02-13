@@ -15,6 +15,7 @@ const theme = document.getElementById("theme");
 
 //Declaración para el boton Inicio
 const btnStart = document.getElementById('btnStart');
+const burguer = document.getElementById ('burguer');
 const welcome = document.getElementById('welcome');
 const toReturn = document.getElementById('toReturn');
 
@@ -22,6 +23,7 @@ btnStart.addEventListener("click", () => {
   welcome.classList.add('hide');
   pokemones.classList.remove('hide');
   theme.classList.remove('hide');
+  burguer.classList.remove('hide');
 });
 
 //Di y Fa: Boton que muestra los pokemones filtrados y oculta todos

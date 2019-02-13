@@ -14,16 +14,56 @@
     
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--Agregue mas instrucciones para responsive-->
-
   <title>Data Lovers</title>
   <!--Faby:Este link es de la librería de Bootstrap-->
   
+  <link rel="stylesheet" href="style.css" />   
 
-  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
+  <header id="burguer" class="hide logfixed">
+       <!--Nav de bootstrap-->
+       <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">POKEMON</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Promedio</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ordenar<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+          <!--Cierre de Nav de Bootstrap-->
   </header>
   <section id="welcome" class="container-fluid wellcomeBackground">
     <!--Faby:Este div contiene la imagen de inicio de pantalla-->
@@ -44,6 +84,15 @@
   <!--Se quedan las sections que se pusieron-->
   <!--Cierre del div container-fluid-->
   <section id="theme" class="pokemonBackground hide">
+    
+  <!--  <div class="dropdown">MENÚ DESPLEGABLE(class="logfixed")
+      
+        <div><img id="toReturn" class="widthLogData" src="images/International_Pokémon_logo.svg.png" alt=""></div>
+        <button></button>
+        <div><button id="btnFilterBy" class="btn-warning btn-lg">FILTRAR</button></div>
+  
+    </div>-->
+    
     <!--Fa:Este div visualiza el fondo en la seccion de los pokemon-->
     <div class="logfixed">
       <!--Div de boton filtrar -Estos cambios se quedan-->
@@ -67,13 +116,11 @@
     </div>
   </section>
 
-
-
   
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
-  <!--Faby:Estos también son links de Bootstrap-->
+  
   <footer></footer>
 </body>
 
