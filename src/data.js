@@ -2,9 +2,10 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 //esto a esta funcionando al 100
-window.data={ //cambia
+window.data={ 
 
 //funcion de filtrar
+
 filterData:(dataPokemon,types) =>{
 const arrayPokemon= dataPokemon ;
   const arrayFilter = arrayPokemon.filter(arrayPokemon => arrayPokemon.type.includes(types));
@@ -12,29 +13,7 @@ const arrayPokemon= dataPokemon ;
 }
 
 }
-
-
-
-
-
-
 /*
-
-
-
-let mostrar = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
- 
-
-  //funcion de filtrar
-  filterData:(dataPokemon,types) =>{
-  const arrayPokemon= dataPokemon ;
-    const arrayFilter = arrayPokemon.filter(arrayPokemon => arrayPokemon.type.includes(types));
-    return arrayFilter;
-  },
-
-
-
-  
 //funcion de ordenar
 sortData:(dataPokemon,sortBy,sortOrder)=>{
   let orderDta = [];
@@ -59,8 +38,78 @@ sortData:(dataPokemon,sortBy,sortOrder)=>{
   
   }
   sortData(dataPokemon,sortBy,sortOrder);
-}
-}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*En esta seccion estoy extrayendo datos especificos de la data*/
+  /*
+ const datapokemon =POKEMON.pokemon;
+ 
+  
+ const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
+  
+  const pokes = document.getElementById("pintar");
+ 
+   let nombrePokemon = `<p> <img src="${imagen}">
+   <br>Nombre:${nombre2}</br>
+   <br> Su Id es :${id}</br>
+   <br> Su candy es :${candy}</br>
+   <br> Su altura es :${altura}</br>
+   <br> Su peso es :${peso}</br>
+   <br> debilidades :${debilidades}</br>
+   </p>`;
+   pokes.insertAdjacentHTML("beforeend",nombrePokemon);
+   
+ };
+ datapokemon.forEach(elemento => {
+   let imagen = elemento.img;
+   let nombre2 = elemento.name;
+   let id = elemento.id;
+   let candy = elemento.candy;
+   let altura = elemento.height;
+   let peso =elemento.weight;
+   let debilidades =elemento.weaknesses;
+   imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
+   alert(imprimir);
+ });*/    
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 /*funcion de calcular*/
 /*computeStats:(data) =>{
   const todo= array ;
@@ -100,8 +149,8 @@ sortData:(dataPokemon,sortBy,sortOrder)=>{
 
   
   
-  
   /*
+  
   let mostrar = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
    
       let nombrePokemon = `<p> <img src="${imagen}">
@@ -125,72 +174,5 @@ sortData:(dataPokemon,sortBy,sortOrder)=>{
    
     
   });*/
-  /*En esta seccion estoy extrayendo datos especificos de la data*/
+ 
   
-  
-  /*
-  const pokes = document.getElementById("probando");
-  const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
-
-    let nombrePokemon = `<p> <img src="${imagen}">
-    <br>Nombre:${nombre2}</br>
-    <br> Su Id es :${id}</br>
-    <br> Su candy es :${candy}</br>
-    <br> Su altura es :${altura}</br>
-    <br> Su peso es :${peso}</br>
-    <br> debilidades :${debilidades}</br>
-    </p>`;
-    pokes.insertAdjacentHTML("beforeend",nombrePokemon);
-  };
-  datapokes.forEach(elemento => {
-    let imagen = elemento.img;
-    let nombre2 = elemento.name;
-    let id = elemento.id;
-    let candy = elemento.candy;
-    let altura = elemento.height;
-    let peso =elemento.weight;
-    let debilidades =elemento.weaknesses;
-    imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
-  });*/
-  
-  
-  
-  /*Probando filter*/
-  /*const pokes = document.getElementById("probando");
-   const filterElement= POKEMON.pokemon;
-   let resultFilter = filterElement.filter(pokemon => pokemon.type.includes("Water"));
-   
-   console.log(resultFilter)*/
-  
-  /* Del arreglo resultFilter, necesito pintarlo en el HTML*/
-  
-  /*resultFilter.map((pokemon) => {
-      pokes.innerHTML += `
-      <article id="${pokemon.id}">
-        <p>${pokemon.name}</p>
-        <img src="${pokemon.img}" />
-      </article>
-      `
-  })
-  */
-  
-  
-  
-   /*imprimir(resultFilter);*/
-  
-   /*let newArr2 = datapokes.filter(pokemon => pokemon.type.includes("Water"));
-   console.log(newArr2);
-   let newArr3 = datapokes.filter(pokemon => pokemon.name.includes("Pikachu"));
-   console.log(newArr3);*/
-  /*
-  
-  const pokes=document.getElementById("probando");
-  const filterElement=filterElement.filter(pokemon => pokemon.type.includes("Fire"));
-  resultFilter.map((pokemon)=> { 
-  pokes.innerHTML +=`
-  <article id="${pokemon.id}">
-  <p>${pokemon.name}</p>
-  <img src="${pokemon.img}"/>
-  </article>
-  `
-  })*/
