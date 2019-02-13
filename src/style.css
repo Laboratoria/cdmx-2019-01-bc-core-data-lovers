@@ -1,6 +1,10 @@
 
-
 @import url('https://fonts.googleapis.com/css?family=Courgette|Righteous');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
 
 .divPokemon {
   border: 2px solid #99b89d;
@@ -9,9 +13,15 @@
   text-align: center;
   font-family: 'Righteous', cursive;
   border-radius: 1em;
+  
 }
 
-
+.fondo {
+background-image: url('./assets/images/backInicio.jpg');
+width: 100%;
+height: -webkit-fill-available;
+background-size: cover;
+}
 
 #pokemones {
   display: flex;
@@ -20,11 +30,7 @@
   justify-content: center;
 }
 
-#back {
-  
-  text-align: center;
-  background-color: #0c4fb4 ;
-}
+
 #pokemon-title {
   width: 35%;
  margin-top: -500%;
@@ -165,8 +171,7 @@ legend{
 }
 
 /* MENU */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 * {
   margin: 0;
@@ -244,13 +249,57 @@ ul li:hover {
   background: rgb(255, 215, 54);
 }
 
+/* Desktop */
+@media only screen and (min-widh: 992px){
+  
+  .divPokemon {
+    /*position: relative;*/
+    width: 20%;
+    
+  }
+}
 
-@media (max-width: 450px){
+/* Tabletas */
+@media only screen and (max-width: 768px) {
 
-.menu-mobile {
+  .menu-mobile {
 
-  background-color: red;
+    background-color: green;
+  }
 
+  #back {
+
+    background-color: green;
+  }
+
+  .divPokemon {
+    
+    width: 32%;
+    
+  }
 
 }
+
+/* Mobiles */
+@media only screen and (max-width: 576px) {
+
+.menu-mobile {
+  background-color: red;
+}
+
+#inicio {
+  background-color: red;
+}
+
+.divPokemon {
+
+  width: 48%;
+  
+}
+
+/* #pokemones {
+  width: 5%;
+  justify-content: center;
+} */
+
 }
