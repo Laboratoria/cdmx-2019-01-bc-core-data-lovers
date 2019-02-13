@@ -65,8 +65,8 @@ transition: all .5s ease;
   position: absolute;
   line-height: 1.5;
   text-align: center;
-  top: 6.5px;
-  right: 9px;
+  top: 4px;
+  right: 3%;
   border-radius: 3px;
   background-color: transparent;
   transition: all .5s ease;
@@ -106,6 +106,22 @@ transition: all .5s ease;
   text-align: justify;
   font-family: sans-serif;
   padding: 5%;
+  font-kerning: none;
+}
+
+.button1{
+  text-align: center;
+  background: #231f20;
+  width: 24%;
+  height: auto;
+  border-radius: 8%;
+  padding: 2%;
+  margin: 5% 15% 7% 15%;
+}
+
+#consulta{
+  color: white;
+  text-decoration: none;
 }
 
 .button{
@@ -304,6 +320,17 @@ footer {
     padding-top: 8%;
   }
 
+  .sidebar {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -205px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
+  }
 /*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
@@ -343,8 +370,15 @@ footer {
     width: 6%;
     height: auto;
     padding: 1%;
+    display: none;
   }
-
+#extend{
+  display: inline-block;
+  width: 6%;
+  height: auto;
+  padding: 1%;
+  display: none;
+}
   .menu {
     width: 6%;
     height: auto;
@@ -354,7 +388,21 @@ footer {
     float: right;
   }
 
+  #extend{
+    display: none;
+  }
 
+  .sidebar {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -680px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
+  }
 /*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
@@ -397,7 +445,21 @@ footer {
     padding: 5%;
     margin-left: 3%;
   }
+  #extend{
+    display: none;
+  }
 
+  .sidebar {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -205px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
+  }
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -440,3 +502,19 @@ footer {
     margin-left: 3%;
     text-align: center
   }
+
+#extend{
+  display: none;
+}
+
+.sidebar {
+position: absolute;
+width: 200px;
+height: 100vh;
+top: 0;
+right: -205px;
+padding-top: 47px;
+background-color: rgba(29, 33, 32, 1);
+border-left: 4px solid rgb(235, 0, 139);
+transition: all .5s ease;
+}
