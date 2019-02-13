@@ -1,4 +1,4 @@
-const POKEMON = {
+window.POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",
