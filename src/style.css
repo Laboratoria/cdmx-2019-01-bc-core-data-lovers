@@ -134,6 +134,10 @@ ul {
 #search {
   background-color: rgba(29, 33, 40, 0.5);
   border-color: #efc056;
+  background-image: url(./imagenes/lupa.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
   border-width: 5px;
   width: 70%;
   height: 100px;
@@ -156,21 +160,6 @@ ul {
     width: 40%;
     height: 50px;
     font-size: 1.8em;
-  }
-}
-
-#input-lens {
-  width: 5%;
-  position: absolute;
-  margin-top: -12%;
-  margin-left: 72%;
-}
-
-@media (min-width:992px) {
-  #input-lens {
-    width: 2%;
-    margin-top: -6.8%;
-    margin-left: 63%;
   }
 }
 
@@ -236,7 +225,7 @@ h3 {
   h3 {
     font-size: 2em;
     width: 15.5%;
-    transform: translate(0, -50px);    
+    transform: translate(0, -50px);
     padding-bottom: 10px;
   }
 }
@@ -253,7 +242,7 @@ p {
 @media (min-width:992px) {
   p {
     font-size: 2em;
-    
+
   }
 }
 
@@ -294,9 +283,9 @@ img {
 
 @media (min-width:992px) {
   #enlisted {
-    width: 5%;  
+    width: 5%;
     padding-bottom: 0px;
-    padding-left: 25px; 
+    padding-left: 25px;
     padding-top: 2px;
   }
 }
