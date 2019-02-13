@@ -1,3 +1,4 @@
+
 const getData = require('../src/data.js');
 require('../src/data/injuries/injuries.js')
 
@@ -17,3 +18,4 @@ describe('getData', () => {
           });
 
       });
+
