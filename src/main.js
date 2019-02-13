@@ -8,7 +8,6 @@
 // const para desplegar menu
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
-const container = document.getElementById("container");
 // const para opciones de menu 
 const btnAbout = document.getElementById("btn-about");
 const btnNews = document.getElementById("btn-news");
@@ -44,12 +43,12 @@ btnFilters.addEventListener('click', () => {
 });
 
 //acceder a la data de cada pais
-const data = WORLDBANK;
+const data = window.WORLDBANK;
 
-const countryMex = WORLDBANK.MEX.indicators;
-const countryPer = WORLDBANK.PER.indicators;
-const countryBra= WORLDBANK.BRA.indicators;
-const countryChl= WORLDBANK.CHL.indicators;
+// const countryMex = WORLDBANK.MEX.indicators;
+// const countryPer = WORLDBANK.PER.indicators;
+// const countryBra= WORLDBANK.BRA.indicators;
+// const countryChl= WORLDBANK.CHL.indicators;
 
 // section donde esta la informacion y el select
 const indicator = document.getElementById("information-filter-inner");
@@ -66,7 +65,7 @@ for (let boton in buttonTypes){
     listQuestion.dataset.ciudad = e.target.dataset.ciudad;
     listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>'); 
     paisElegido.forEach( ciudad => {
-      listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
+    listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
     });
   })
 }
@@ -74,11 +73,15 @@ for (let boton in buttonTypes){
 //filtrar 
 listQuestion.addEventListener("change", () => {
   indicator.innerHTML = "";//Limpiar funcion
-  const resultado = window.WorldBank.filterCountry(data, listQuestion)//Datos de data.js
+  let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
+  let countrySelect = listQuestion.value;
+  const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js
   for (let resultYear in resultado) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
-    indicator.insertAdjacentHTML('beforeend', `<p><b>Año</b>: ${resultYear} => ${resultado[resultYear] || 0}</p>`);
+    indicator.insertAdjacentHTML('beforeend', `<p><b>Año</b>: ${resultYear} => ${resultado[resultYear] || "N/A"}</p>`);
   }
 });
+
+
 const radioFilters = Array.from(document.getElementsByClassName('radio__filter'));
 //console.log(radioFilters)
 for (let radioItem in radioFilters){
@@ -91,7 +94,7 @@ for (let radioItem in radioFilters){
 
     for (let resultadoYear in resultadoOrder) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
       let parrafo = document.createElement('p'); // creamos un elemento p temporal ira grafica
-      parrafo.innerHTML = `<b>Año</b>: ${resultadoOrder[resultadoYear]} => ${resultado[resultadoOrder[resultadoYear]] || 0} ` //imprimimos el año y numeros
+      parrafo.innerHTML = `<b>Año</b>: ${resultadoOrder[resultadoYear]} = ${resultado[resultadoOrder[resultadoYear]] || "N/A"} ` //imprimimos el año y numeros
       indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
     }
   })
