@@ -11,8 +11,6 @@
   <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </div>
 
-</head>
-
 <body>
   <header>
     <div class="container">
@@ -29,6 +27,7 @@
 
   <div class="container">
     <section class="main row">
+<<<<<<< HEAD
       <img class="gradu" src="imagen/graduadas.jpg" alt="graduadas">
 
       <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
@@ -49,8 +48,14 @@
         </fieldset>
 
         <aside class="col-xs-12  col-sm-8 col-md-9  col-lg-9">
+=======
+      <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+      <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
+      </article>
+      
+        <aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+>>>>>>> upstream/master
           <p> NOTICIAS
-
           </p>
         </aside>
     </section>
@@ -58,53 +63,52 @@
 
   <div class="row">
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <p>MÉXICO</p>
+      <button class="btnCountry" id="PER">Perú</button>
     </div>
     <div class="clearfix-sm-block"></div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <p>CHILE</p>
+      <button class="btnCountry" id="MEX">México</button>
     </div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <p>PERÚ</p>
+      <button class="btnCountry" id="BRA">Brasil</button>
     </div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <p>BRASIL</p>
+      <button class="btnCountry" id="CHL">Chile</button>
     </div>
   </div>
-
-
+  
+  <section>
+    <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+    <fieldset>
+      Para : <select name="literacy" id="indicator">
+        <option class="opt" value="youngWomen">Indicador</option>
+      </select>
+    </fieldset>
+    </article>
   </section>
 
   <section>
-    <article>
-      <h5>Datos</h5>
-      <h5 id="imprimiendo"></h5>
-    </article>
-  </section>
+      <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+        <h3>Datos</h3>
+        <h5 id="data-year"></h5>
+      </article>
+    </section>
+  
 
   <footer>
     <div class="container">
       <article>
         <h6>Acerca de</h4>
           <h6>Sitios de interés</h4>
-
-
       </article>
     </div>
-
   </footer>
 
-
   <script src="./data/worldbank/worldbank.js"></script>
-
   <script src="data.js"></script>
   <script src="main.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-
-
-
 </body>
 
 </html>

@@ -12,74 +12,50 @@ function myFunction() {
 
 
 
-/*const print = (window.literacy) => {
-    let result = `<h5>${window.literacy}</h5>`
-    dataLiteracy.insertAdjacentHTML("beforeend", result);
-
-}*/
-
-/*const newData = () => {
-    let options = literacyOptions.value;
-    let literacy = filtroLiteracy(select);
-    dataLiteracy = document.write("Los datos son:");
-}*/
-
-//Traer base de datos A
-//const originDatabase = databaseMexEducation.dataFunction(WORLDBANK);
-
-
-//Elementos DOM-funciona
-/*const database = WORLDBANK;
-
-const literacy = document.getElementById("literacy");
-const literacyOptions = document.getElementById("literacyOptions");
-const countriesOptions = document.getElementById("countriesOptions");
-console.log(literacy, literacyOptions, countriesOptions)
-
-
-//ejemplo John
-
-const ejecutable = () => {
-    const result = window.databaseMexEducation.dataFunction(database);
-    print(result);
-}
-
-literacyOptions.addEventListener("change", ejecutable)
-
-const print = (papintar) => {
-imprimiendo.innerHTML = papintar
-}*/
-
-
-//Eventos
-
-/*categoriesButtons.forEach(categoriesButtons => categoriesButtons.addEventListener ("click", (e) => {
-    switch(e.target.id){
-        case "literacy":
-        result 
-    }
-} ))*/
-
-/*const buttonArray = Array.from(document.getElementsByClassName('button'));
-console.log(buttonArray)
-     for (let i = 0; i < buttonArray.length; i++ ) {
-         buttonArray[i].addEventListener('click', (event)=>console.log(filterData(dataWorldbank, event.target.id)));
-     } 
-
-     const filterData = (data, texto) => {
-         return data[texto].indicators;
-        
+   const dataWorldbank = WORLDBANK; //Traer base de datos
+   const buttonCountries = document.getElementsByClassName('btnCountry');
+   const selectIndicator = document.getElementById('indicator')
+   const dataYear = document.getElementById('data-year')
+   
+   
+   const buttonClick = () => {
+     let countries = event.target.id;
+     let result = window.WorldBank.dataCountries(dataWorldbank, countries)
+     printOption (result)
+   }
+   
+   for(let i = 0; i< buttonCountries.length; i++){
+     buttonCountries[i].addEventListener('click', buttonClick)
+   }
+   
+   const printOption = (result) => {
+     const dataFilter = result.filter(indicator => {
+       let printIndicatorName = indicator.indicatorName
+       let education = /educación/i
+       let matchs = printIndicatorName.match(education)
+       if(matchs !== null){
+         let indicatorOption =`<option value="${printIndicatorName}" >${printIndicatorName}</option>`
+         selectIndicator.insertAdjacentHTML('beforeend', indicatorOption)
+         return matchs
+       }
+     });
+     selectIndicator.addEventListener('change', () => {
+       let matchYear = event.target.value
+       let resultYear = window.WorldBank.percentAndYear(dataFilter, matchYear)
+       printYears(resultYear);    
+     })
+   }
+   
+   const printYears = (resultYear) => {
+     for (const key in resultYear) {
+       if (resultYear.hasOwnProperty(key)) {
+         let element =resultYear[key];
+         const year=key;
+         if(element !== ""){
+           let indicatorDataYear=`<p>Año: <span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`
+         dataYear.insertAdjacentHTML('beforeend', indicatorDataYear)  
+         }
+       }
      }
-
-     const indicator= document.getElementById("indicator");
-
-     const countryFilter=(filterWorldbank,countries)=>{
-     const filterWorldbank=dataWorldbank;
-     console.log(filterWorldbank) 
-     }*/
-     
-
-
-
-
-
+   
+   }
