@@ -21,36 +21,23 @@
 
       <button type="submit" id="next" class="styleButtonNext buttonNext">Entrar</button>
 
-
-
-
-
     </section>
 
-
-
-
-
-    <div class="topnav" id="myTopnav">
-      <a href="#main" class="active">Home</a>
-      <a href="#news">Tipos de Pokemons</a>
-      <a href="#contact">Pokemons Ordenados</a>
-      <a href="#about">Estadísticas</a>
-
-    <input type="text" class="search" placeholder="Search..">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+   
 
     <section id="serch">
+         <div class="topnav" id="myTopnav">
+            <a href="#main" class="active">Home</a>
+            <a href="#news">Tipos de Pokemons</a>
+            <a href="#contact">Pokemons Ordenados</a>
+            <a href="#about">Estadísticas</a>
 
-         
-        
-      
-
-
-      <section>
+          <input type="text" class="search" placeholder="Search..">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <section>
 
           <button type="button" class="bottonPokemons" id = "Fire">Fuego</button>
           <button type="button" class="bottonPokemons" id = "Normal">Normal</button>
@@ -67,18 +54,32 @@
           <button type="button" class="bottonPokemons" id = "Rock">Roca</button>
           <button type="button" class="bottonPokemons" id = "Ghost">Fantasma</button>
           <button type="button" class="bottonPokemons" id = "Dragon">Dragron</button>  
-       
         
-       <h1 id="pokemons"></h1>
        </section>
 
-    </section>
-<!-- <section id="water" change="change">
-  <select class="" name="" >
-    <option value="" id = "agua" >Agua</option>
+       <form>
+        <fieldset>
+         <legend>Ordenados por Peso</legend>
+         <button type="button" class="sortTipo" id="weight-asc">Ligeros-Pesados</button>
+         <button type="button" class="sortTipo" id="weight-dsc">Pesados-Ligeros</button>
+        </fieldset>
+       </form>
 
-  </select>
-</section> -->
+       <form>
+        <fieldset>
+         <legend>Ordenados por Tamaño</legend>
+         <button type="button" class="sortTipo" id="height-asc">Pequeños-Grandes</button>
+         <button type="button" class="sortTipo" id="height-dsc">Grandes-Pequeños</button>
+        </fieldset>
+       </form>
+        <h1 id="pokemons"></h1>
+    </section>
+    
+      
+    
+
+    
+  
 
 
 

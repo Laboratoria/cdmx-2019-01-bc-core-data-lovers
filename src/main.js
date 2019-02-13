@@ -7,6 +7,7 @@ document.getElementById("next").addEventListener("click", ()=>{
  var POKEMON;
 const dataPokemon = POKEMON.pokemon;
 const buttonTypes = Array.from( document.getElementsByClassName("bottonPokemons"));
+const buttonOrder = Array.from( document.getElementsByClassName("sortTipo"));
 
 
 
@@ -29,6 +30,25 @@ const obtenerTipo = (arregloBotones) => {
 }
 
 obtenerTipo(buttonTypes);
+
+const sortButton = (botonesOrder)=>{
+  botonesOrder.map(eventoSor =>{
+    eventoSor.addEventListener("click",(event) =>{
+      const idDivi = event.target.id.split("-");
+      const sortBy = idDivi[0];
+      const sortOrder = idDivi[1];
+      const arrayOrde = window.data.sortDataPokemon(dataPokemon, sortBy, sortOrder);
+         
+      imprimir(arrayOrde);
+      
+    })
+  })
+}
+
+sortButton(buttonOrder);
+
+
+
 
 const imprimir = (obtenerTipo) =>{
 

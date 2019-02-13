@@ -196,11 +196,11 @@ const dataBase = [
 ]
 
 describe('data', () => {
-  it('is a object', () => {
+  it('data is a object', () => {
     expect(typeof window.data).toBe('object');
   });
 
-  it('is a function', () => {
+  it('filterPokemon is a function', () => {
     expect(typeof window.data.filterPokemon).toBe('function');
   });
 
@@ -214,6 +214,23 @@ describe('data', () => {
 
   it('Deberia devolver el arr de Normal si elegimos Normal ', () => {
     expect(window.data.filterPokemon(dataBase,"Normal")[0]).toEqual(dataBase[2]);
+  });
+
+  it('sortDataPokemon is a function', () => {
+    expect(typeof window.data.sortDataPokemon).toBe('function');
+  });
+
+  it('Deberia devolver el arr con peso Ascendente', () => {
+    expect(window.data.sortDataPokemon(dataBase,"weight","asc")[0].weight).toEqual("39.5 kg");
+  });
+  it('Deberia devolver el arr con peso Descendente', () => {
+    expect(window.data.sortDataPokemon(dataBase,"weight","dsc")[0].weight).toEqual("1.8 kg");
+  });
+  it('Deberia devolver el arr con Altura Ascendente', () => {
+    expect(window.data.sortDataPokemon(dataBase,"height","asc")[0].height).toEqual("1.50 m");
+  });
+  it('Deberia devolver el arr con Altura Descendente', () => {
+    expect(window.data.sortDataPokemon(dataBase,"height","dsc")[0].height).toEqual("0.30 m");
   });
 });
 
