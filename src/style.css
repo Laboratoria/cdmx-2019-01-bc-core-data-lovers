@@ -15,7 +15,7 @@
 
 .titleWeb, .titlePokemonLight,.titlePokemonHeavy,
 .titlePokemonSmall, .titlePokemonMedium, .titlePokemonTall,
-.titlePokemonSortByHeight, .titlePokemonSortByWeight{
+.titlePokemonsortByHeightAscending, .titlePokemonsortByWeightAscending{
     top: 15px;
    text-align: center;
 }
