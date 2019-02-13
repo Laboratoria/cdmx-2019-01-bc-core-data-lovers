@@ -8,6 +8,7 @@ const showPokemons = document.getElementById('showPokemons');
 const root =  document.getElementById('root');
 const cajitas = document.getElementsByClassName('cajitas')
 const dataPokemon = POKEMON.pokemon;
+const Water = document.getElementById('Water');
 // const nombre= document.getElementById('next');
 // const pantalla1=document.getElementById('pantalla1');
 //
@@ -21,8 +22,9 @@ sectionName.style.display ="none";
 pantalla2.style.display  ="block"
  })
 
-const printData = () => {
-  dataPokemon.forEach( pokemon => {
+const printData = (data) => {
+  console.log(data)
+  data.forEach( pokemon => {
     let namePokemon = `<div class="tarjeta"> <h1> ${pokemon.num} </h1> <h2> ${pokemon.name} </h2>
     <div> <img = class "imageBox" src ="${pokemon.img}"> </div>
     <p> TYPE: ${pokemon.type} </p>
@@ -40,31 +42,54 @@ const printData = () => {
     root.insertAdjacentHTML("beforeend",namePokemon);
 
   })
+  // dataPokemon.forEach(element =>{
+    //  let num = element.num;
+    //  let name = element.name;
+    //  let img = element.img;
+    //  let type = element.type;
+    //  let height = element.height;
+    //  let weight = element.weight;
+    //  let candy = element.candy;
+    //  let candy_count= element.candy_count;
+    //  let egg = element.egg;
+    //  let spawn_chance = element.spawn_chance;
+    //  let avg_spawns = element.avg_spawns;
+    //  let spawn_time = element.spawn_time;
+    //  let multipliers = element.multipliers;
+    //  let weaknesses = element.weaknesses;
+    //  printPokemon(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers, weaknesses);
+    // })
 }
+Water.addEventListener("click", ()=>{
+  const elementPokemon = "Water"
+  const pokemonType = window.pokemon.filterPokemons(dataPokemon,elementPokemon)
+  console.log(pokemonType)
+    printData(pokemonType);
 
-for(let i = 0; i< cajitas.length; i++){
-  cajitas[i].addEventListener('click', () => {
-    let elementPokemon = cajitas[i].id
-    window.pokemon.filterPokemons(dataPokemon, elementPokemon)
-  })
-}
-
-
-showPokemons.addEventListener('click', printData)
-
-
-
-const nombre= document.getElementById('next');
-const pantalla1=document.getElementById('pantalla1');
-
-nombre.addEventListener("click", ()=>{
-  pantalla1.classList.add('hide');
-  pantalla2.classList.remove('hide');
 })
-const fire= document.getElementById('Fire');
-fire.addEventListener("click", (e) =>{
-  alert("fuego 2");
-})
+//for(let i = 0; i< cajitas.length; i++){
+  //cajitas[i].addEventListener('click', () => {
+  //let elementPokemon = cajitas[i].id
+
+
+
+
+
+//showPokemons.addEventListener('click', printData  )
+
+
+
+//const nombre= document.getElementById('next');
+//const pantalla1=document.getElementById('pantalla1');
+
+//nombre.addEventListener("click", ()=>{
+  //pantalla1.classList.add('hide');
+ // pantalla2.classList.remove('hide');
+//})
+//const fire= document.getElementById('Fire');
+//fire.addEventListener("click", (e) =>{
+  //alert("fuego 2");
+//})
 //
 //
 //
@@ -108,20 +133,3 @@ fire.addEventListener("click", (e) =>{
 // };
 //
 //
-// dataPokemon.forEach(element =>{
-//  let num = element.num;
-//  let name = element.name;
-//  let img = element.img;
-//  let type = element.type;
-//  let height = element.height;
-//  let weight = element.weight;
-//  let candy = element.candy;
-//  let candy_count= element.candy_count;
-//  let egg = element.egg;
-//  let spawn_chance = element.spawn_chance;
-//  let avg_spawns = element.avg_spawns;
-//  let spawn_time = element.spawn_time;
-//  let multipliers = element.multipliers;
-//  let weaknesses = element.weaknesses;
-//  printPokemon(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers, weaknesses);
-// })

@@ -1,57 +1,16 @@
 window.pokemon = {
-
-    show: (data) => {
-
-      const imprimir = (objeto) => {
-        console.log(objeto.nombre);
-        const pokemons = document.getElementById("pokemons");
-        let nombrePokemon = `
-      <div class="divPokemon">
-        <img src="${objeto.imagen}">
-        <p>${objeto.num}</p>
-      </div>`;
-        pokemons.insertAdjacentHTML("beforeend", nombrePokemon);
-
-      }
-
-      data.forEach(elemento => {
-        const objetoPokemon = {
-          nombre: elemento.name,
-          imagen: elemento.img,
-          height: elemento.height,
-          num: elemento.num,
-        }
-        // console.log(objetoPokemon);
-
-        // let nombre = elemento.name;
-        //let imagen = elemento.img;
-        //imprimir(nombre, imagen);
-        imprimir(objetoPokemon);
-
-      })
-      return imprimir;
-    },
-
-
-
-
-
-
-  filterPokemons: (dataPokemon, elementPokemon) => {
-    // const arr = [];
-    // console.log(dataPokemon[0].type[0])
-    // console.log(dataPokemon)
-    dataPokemon.forEach(pokemon => {
+ filterPokemons: (dataPokemon, elementPokemon) => {
+    return dataPokemon.filter(pokemon => {
       let typePokemon = pokemon.type[0]
       if (typePokemon === elementPokemon) {
-        console.log(pokemon)
+        return true
       }
-    })
+    });
 
     // const showPokemons= arrayPokemonData.sort((a,b)=>
   }
 // return arr
-};
+}
 //const example = () => {
 //return 'example';
 //};
