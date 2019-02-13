@@ -55,7 +55,7 @@
 #buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
 #buttonPokemonPsychic, #buttonPokemonWater, #buttonAboutPikapediaOnFilter,
 #buttonStadisticsPageOnFilter, #buttonSearchPokemonOnFilter,#filterButtonOnFilter,
-#buttonBackFilterPage {
+#buttonBackFilterPage, #buttonBackFilterPage, #buttonBackPageKanto{
     background-color:#00CED1;
     border: none; 
     color: white; 
@@ -76,7 +76,7 @@
   #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
   #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover,  #buttonAboutPikapediaOnFilter:hover,
   #buttonStadisticsPageOnFilter:hover, #buttonSearchPokemonOnFilter:hover,#filterButtonOnFilter:hover,
-  #buttonBackFilterPage:hover {
+  #buttonBackFilterPage:hover,#buttonBackFilterPage:hover,#buttonBackPageKanto:hover {
     background-color: RoyalBlue;
   }      
 

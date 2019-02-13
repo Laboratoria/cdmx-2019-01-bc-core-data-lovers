@@ -3,7 +3,6 @@ const pageKanto = document.getElementById('pageKanto');
 const filterPage = document.getElementById('filterPage');
 const searchPage = document.getElementById('searchPage');
 const stadisticsPage = document.getElementById('stadisticsPage');
-const aboutPikapediaPage=document.getElementById('aboutPikapediaPage')
 const buttonAboutPikapedia = document.getElementById('buttonAboutPikapedia');
 const filterButton = document.getElementById("filterButton");
 const totalData = document.getElementById("total-data");
@@ -71,7 +70,7 @@ buttonBackFilterPage.addEventListener("click", () => {
 
 buttonSearchPokemon.addEventListener("click", () => {
   pageKanto.classList.add('hide');
-  searchPage.classList.remove('hide');
+  typePokemonPage.classList.remove('hide');
 });
 
 buttonStadisticsPage.addEventListener("click", () => {
@@ -81,10 +80,20 @@ buttonStadisticsPage.addEventListener("click", () => {
   stadisticsPage.innerHTML = totalWeight;
 });
 
-checkboxTypeFilter.addEventListener("click", () => {
+
+buttonAboutPikapedia.addEventListener("click", () => {
+  pageKanto.classList.add("hide");
+  aboutPikapediaPage.remove("hide");
+});
+
+buttonSearchPokemonOnFilter.addEventListener("click", () => {
   filterPage.classList.add("hide");
   typePokemonPage.classList.remove("hide");
+});
 
+buttonBackPageKanto.addEventListener("click", () => {
+  typePokemonPage.classList.add("hide");
+  pageKanto.classList.remove("hide");
 });
 
 buttonAboutPikapedia.addEventListener("click", ()=>{
