@@ -42,43 +42,52 @@ toReturn.addEventListener("click", () => {
    const filter = pokemones;
    filter.innerHTML = "";
    mapData.map((dataPokemon) => {
-     filter.innerHTML += `<button id="${dataPokemon.name}" class="divPokemon btnPokemon ${dataPokemon.type[0]} btnModal" data-toggle="modal" data-target="#pokemon${dataPokemon.name}">
-    <img src="${dataPokemon.img}">
-    <br><br><br><p class="name">${dataPokemon.name}</p><br>
-    </button>`;
+    filter.innerHTML +=
+    ` <button type="button" class="divPokemon btnPokemon ${dataPokemon.type[0]} btn btn-primary btn-lg" data-toggle="modal" data-target="#pokemon${dataPokemon.name}">
+        <img src="${dataPokemon.img}"> <br><br><br><p class="name">${dataPokemon.name}</p><br>
+      </button>
+
+      <div class="modal fade" id="pokemon${dataPokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h2 class="modal-title" id="myModalLabel">${dataPokemon.name}</h2>
+                  </div>
+                  <div class="modal-body">
+                    <table style="width:100%" class="details">
+                      <tr>
+  	                    <td>Type:${dataPokemon.type}</td>
+                        <th rowspan="4"><img class="" src="${dataPokemon.img}"></th>
+                      </tr>
+                      <tr>
+                        <td>Height:${dataPokemon.height}</td>
+                      </tr>
+                      <tr>
+                        <td>Weigh:${dataPokemon.weigh}</td>
+                      </tr>
+                      <tr>
+                        <td>Candy:${dataPokemon.candy} </td>
+                      </tr>
+                      <tr>
+                        <td>weaknesses: ${dataPokemon.weaknesses}</td>
+                      </tr>
+                      <tr>
+                        <td>55577855</td>
+                       </tr>
+  
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div> 
+    `
   });
  }
 
  toPrint(dataPokemon);
-  
-
-const show = (dataPokemon) => {console.log('jwfl')
-// $('#myModal').modal('toggle');
-
-  infoPokemon.innerHTML =
-    `<div class="modal fade" id="pokemon${dataPokemon.name}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        <img src="${dataPokemon.img}" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`
-    
-  };
-
 
 /* const storeFilter = (poke) => {
   poke.map(btnFilterBy);
@@ -92,10 +101,3 @@ const show = (dataPokemon) => {console.log('jwfl')
 
 storeFilter(btnFilterBy);*/
 
-
-for (let i=0; i<btnModal.length; i++){
-  btnModal[i].addEventListener("click",() => {
-    console.log(btnModal[i]);
-    show();
-  });
-}
