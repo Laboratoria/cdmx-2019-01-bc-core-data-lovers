@@ -7,7 +7,6 @@ const dataPokemon = POKEMON.pokemon;
 const btnFilterBy = Array.from(document.getElementsByClassName('filterData'));
 const Water = document.getElementById("Water");
 const btnModal = document.getElementsByClassName('btnModal');
-const infoPokemon = document.getElementById("infoPokemon");
 
 // btnFilterBy = Array.from(document.getElementsByClassName("filterData"));
 const filtered_out = document.getElementById('filtered_out');
