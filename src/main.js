@@ -1,4 +1,4 @@
- const dataWorldbank = WORLDBANK;
+const dataWorldbank = WORLDBANK;
 const buttonCountries = document.getElementsByClassName('button');
 const selectIndicator = document.getElementById('indicator')
 const dataYear = document.getElementById('data-year')
