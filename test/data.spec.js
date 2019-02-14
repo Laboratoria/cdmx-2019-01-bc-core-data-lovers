@@ -26,11 +26,11 @@ const indicators= [{
 }];
 
 describe('filter', () => {
-  it('is a function', () => {
+  it('Is a function', () => {
     expect(typeof window.data.filter).toBe('function');
   });
 
-  it('Debería devolver el obj de Desempleo total', () => {
+  it('It should return the Desempleo total object', () => {
   });
   expect(window.data.filter(indicators,'Desempleo total')).toEqual(
     {
@@ -40,4 +40,13 @@ describe('filter', () => {
       chile: {},
       brasil: {}
     });
+});
+
+describe('sort', ()=>{
+  it('Is a function', ()=>{
+    expect(typeof window.data.sort).toBe('function');
+  });
+  it('It should return the upward order of the years in the object', ()=>{
+    expect(window.data.sort();
+  })
 })
