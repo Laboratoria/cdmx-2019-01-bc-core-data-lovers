@@ -6,57 +6,57 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<header>
-   
-  <!--<div class="contenedorboton"></div>-->
-  <input type="checkbox" id="btn-menu" class="mostrar">
+  </head>
+  <body>
+  <header> 
+
+    <input type="checkbox" id="btn-menu" class="mostrar">
     <label for="btn-menu"><img src="assets/icono-menu.png" alt="">
-    </label>    
- <!-- <button class="mostrar"><i id="mostrar" class="fas fa-align-justify"></i></button> -->
-  
-  <nav id="menu" class="menu">
-    <div class="contenedor">
-    <ul class="menu"> 
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Campeones</a></li>
-      <li><a href="#">Roles</a></li>
-      <ul>
-        <li ><a id="Tank" class="rol" href="#">Tank</a></li>
-        <li ><a id="Fighter" class="rol" href="#">Fighter</a></li>
-        <li ><a id="Mage" class="rol" href="#">Mage</a></li>
-        <li ><a id="Assassin" class="rol" href="#">Assassin</a></li>
-        <li ><a id="Marksman" class="rol" href="#">ADC</a></li>
-        <li ><a id="Support" class="rol" href="#">Support</a></li>
-      </ul>
-      <li><a href="#">Poderes</a></li>
-    </ul>
-  </nav>
- </div>
+    </label>  
 
-
-</header>
-<section>   
-  <input type="search" id="search" placeholder="Search..." />
-  <button type="button" class="botonBuscar">Buscar</button>
-
-</section> 
+    <nav id="menu" class="menu">
+        <div class="contenedor">
+        <ul class="menu"> 
+          <li><a id="home" href="#">Home</a></li>
+          <li><a id="searchChampion" href="#">Champions</a></li>
+          <li><a href="#">Roles</a>
+          <ul>
+            <li ><a id="Tank" class="rol" href="#">Tank</a></li>
+            <li ><a id="Fighter" class="rol" href="#">Fighter</a></li>
+            <li ><a id="Mage" class="rol" href="#">Mage</a></li>
+            <li ><a id="Assassin" class="rol" href="#">Assassin</a></li>
+            <li ><a id="Marksman" class="rol" href="#">ADC</a></li>
+            <li ><a id="Support" class="rol" href="#">Support</a></li>
+          </ul>
+        </li>
+          <li><a id="difficultyDecent" href="#">Difficulty</a></li>
+        </ul>
+       </div> 
+      </nav>
+</header> 
+<section>
+  <div><span class="icon"><i class="fa fa-search"></i></span><input type="search" id="search" class="search" placeholder="Find Champion"/>
+  </div>
 <br>
 <br>
 <br>
 <br>
-
   <div class="contenedorRoles">
     <div id="imprimirRoles" class="imprimir-roles"></div>
   </div>
-</section>
-   
- 
+</section> 
+
+    
     <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <!-- <script <script src="./data/pokemon/pokemon.js"></script> -->
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-  </body>
+   </body>
+  
+ </html>
