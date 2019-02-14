@@ -59,6 +59,31 @@ window.WorldBank = {
           
         }
     }
-  },  
+  }, 
+  computeStats:() =>{
+    //return "prueba"
+    // let avg = {};
+    // var firstsix = [{quantity :656},{quantity :31},{quantity :28},{quantity :28},{quantity :25},{quantity :23}];
+    //   var totalLocation = 0;
+    //   firstsix.forEach(element => {
+    //     totalLocation += element.quantity;
+    //   })
+    //   firstsix.forEach(element => {
+    //    element.quantity * 100 / totalLocation
+    //   })
+    //   return avg;
+  
+  
+  let values = [2, 56, 3, 41, 0, 4, 100, 23];
+  let sum = values.reduce((previous, current) => current += previous);
+  let avg = sum / values.length;
+  console.log(avg)
 
+  
+  // let avg = 1 + 2;
+  //   let c = parseInt(a + b);
+  //  return avg
+ 
+
+  },
  }
