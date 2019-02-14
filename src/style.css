@@ -75,7 +75,7 @@ transition: all .5s ease;
 
   .menu-toogle::before {
     content: "☰";
-   font-size: 45px;
+   font-size: 33px;
    color: #eb008b;
    }
 
