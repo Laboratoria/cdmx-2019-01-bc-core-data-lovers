@@ -27,19 +27,8 @@ window.data = {
     });
 
     const suma = avgSpawns.reduce((prev, next) => prev + next);
-    let prom = suma / avgSpawns.length;
-    let biggest = avgSpawns.reduce((back, end) => {
-    if (back > end) {
-      end = back;
-    }
-    return end;
-  });
-
-  const returnProm = prom.toString();
-  const returnSum = biggest.toString();
-  const returnAll = returnProm + returnSum
-
-    return returnAll
+    const prom = suma / avgSpawns.length;
+    return prom
 
 
   }
