@@ -425,8 +425,6 @@ text-align:center;
      }
    .position-filter{
     display: none;
-     grid-column: 4/5;
-     grid-row: 1/7;
    }
    .mostrar{
      display: block
