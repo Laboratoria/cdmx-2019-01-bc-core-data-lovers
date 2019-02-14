@@ -14,7 +14,8 @@ window.lol = {
           attack: element.info.attack,
           defense: element.info.defense,
           magic: element.info.magic,
-          id: element.id
+          id: element.id,
+          difficulty: element.difficulty
         }
         if (!element.tags[1]) {
           champsInfo.secondaryRol = "";
@@ -80,7 +81,6 @@ window.lol = {
 
 //Aquí inicia la función matemática
 
-  
+
 //esta llave cierra window.lol
 }
-
