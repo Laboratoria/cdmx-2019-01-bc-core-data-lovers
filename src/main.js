@@ -33,10 +33,7 @@ Water.addEventListener("click", () => {
 
 
 //Di: Botón que regresa a la pantalla que muestra todos los pokemones
-toReturn.addEventListener("click", () => {
-  filtered_out.style.display = "none";
-  pokemones.style.display = "block";
-});
+
 
  //Di: Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
  const toPrint = (mapData) => {

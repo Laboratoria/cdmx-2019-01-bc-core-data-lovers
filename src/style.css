@@ -18,7 +18,7 @@ h2{
 }
 
 #pokemones, #filtered_out {
-    /*padding-top:15%;*/
+    padding-top:10%;
     margin-left: 1.5%; 
     flex-wrap: wrap;
     justify-content: center;
@@ -146,7 +146,7 @@ td{
     margin-left: auto;
     width: 100%;
     position: relative;
-    background-image: url('./images/backgroud.png');
+    background-image: url('./images/fondo_modal.png');/*Cambio de imagen*/
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -178,9 +178,16 @@ td{
     border-bottom-right-radius: 25px;
 }
 
-nav.navbar {
+nav.navbar { 
     background-color: black;
     border:0;
+    min-height:30px;
+    font-size: 20px;
+}
+
+.dark{ /*Estilo para el boton de pokebola del navbar*/
+    background-color:black;
+    border: 0;
 }
 
 
@@ -530,5 +537,15 @@ img{
             background-color: rgba(27, 27, 27, 0.9);
             font-size: 1em;
         }
+
+        .navbar-collapse { 
+            text-align: center; 
+        }
+
+        #pokehide{/*Creado para desaparecer "POKEMON" del NavBar*/
+            display: none;
+        }
+
+       
             
     }/* <----Cierre del @Media de 320px*/
