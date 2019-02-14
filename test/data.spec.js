@@ -1217,6 +1217,173 @@ const filteredType =[
   },
 ]
 
+
+const sortedName= [{
+  "id": 1,
+  "num": "001",
+  "name": "Bulbasaur",
+  "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
+  "type": [
+    "Grass",
+    "Poison"
+  ],
+  "height": "0.71 m",
+  "weight": "6.9 kg",
+  "candy": "Bulbasaur Candy",
+  "candy_count": 25,
+  "egg": "2 km",
+  "spawn_chance": 0.69,
+  "avg_spawns": 69,
+  "spawn_time": "20:00",
+  "multipliers": [1.58],
+  "weaknesses": [
+    "Fire",
+    "Ice",
+    "Flying",
+    "Psychic"
+  ],
+  "next_evolution": [{
+    "num": "002",
+    "name": "Ivysaur"
+  }, {
+    "num": "003",
+    "name": "Venusaur"
+  }]
+},{
+  "id": 4,
+  "num": "004",
+  "name": "Charmander",
+  "img": "http://www.serebii.net/pokemongo/pokemon/004.png",
+  "type": [
+    "Fire"
+  ],
+  "height": "0.61 m",
+  "weight": "8.5 kg",
+  "candy": "Charmander Candy",
+  "candy_count": 25,
+  "egg": "2 km",
+  "spawn_chance": 0.253,
+  "avg_spawns": 25.3,
+  "spawn_time": "08:45",
+  "multipliers": [1.65],
+  "weaknesses": [
+    "Water",
+    "Ground",
+    "Rock"
+  ],
+  "next_evolution": [{
+    "num": "005",
+    "name": "Charmeleon"
+  }, {
+    "num": "006",
+    "name": "Charizard"
+  }]
+},{
+  "id": 5,
+  "num": "005",
+  "name": "Charmeleon",
+  "img": "http://www.serebii.net/pokemongo/pokemon/005.png",
+  "type": [
+    "Fire"
+  ],
+  "height": "1.09 m",
+  "weight": "19.0 kg",
+  "candy": "Charmander Candy",
+  "candy_count": 100,
+  "egg": "Not in Eggs",
+  "spawn_chance": 0.012,
+  "avg_spawns": 1.2,
+  "spawn_time": "19:00",
+  "multipliers": [1.79],
+  "weaknesses": [
+    "Water",
+    "Ground",
+    "Rock"
+  ],
+  "prev_evolution": [{
+    "num": "004",
+    "name": "Charmander"
+  }],
+  "next_evolution": [{
+    "num": "006",
+    "name": "Charizard"
+  }]
+},  {
+  "id": 2,
+  "num": "002",
+  "name": "Ivysaur",
+  "img": "http://www.serebii.net/pokemongo/pokemon/002.png",
+  "type": [
+    "Grass",
+    "Poison"
+  ],
+  "height": "0.99 m",
+  "weight": "13.0 kg",
+  "candy": "Bulbasaur Candy",
+  "candy_count": 100,
+  "egg": "Not in Eggs",
+  "spawn_chance": 0.042,
+  "avg_spawns": 4.2,
+  "spawn_time": "07:00",
+  "multipliers": [
+    1.2,
+    1.6
+  ],
+  "weaknesses": [
+    "Fire",
+    "Ice",
+    "Flying",
+    "Psychic"
+  ],
+  "prev_evolution": [{
+    "num": "001",
+    "name": "Bulbasaur"
+  }],
+  "next_evolution": [{
+    "num": "003",
+    "name": "Venusaur"
+  }]
+}, {
+  "id": 3,
+  "num": "003",
+  "name": "Venusaur",
+  "img": "http://www.serebii.net/pokemongo/pokemon/003.png",
+  "type": [
+    "Grass",
+    "Poison"
+  ],
+  "height": "2.01 m",
+  "weight": "100.0 kg",
+  "candy": "Bulbasaur Candy",
+  "egg": "Not in Eggs",
+  "spawn_chance": 0.017,
+  "avg_spawns": 1.7,
+  "spawn_time": "11:30",
+  "multipliers": null,
+  "weaknesses": [
+    "Fire",
+    "Ice",
+    "Flying",
+    "Psychic"
+  ],
+  "prev_evolution": [{
+    "num": "001",
+    "name": "Bulbasaur"
+  }, {
+    "num": "002",
+    "name": "Ivysaur"
+  }]
+}]
+
+
+
+
+
+
+
+
+
+
 const string = "Fire";
 
 const numberOfPokemon = 5;
@@ -1389,17 +1556,16 @@ describe('window.pokemonFunction debería ser un objeto', () => {
     expect(typeof window.pokemonFunction).toBe('object')
   });
 })
-
 describe('sortByName debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.sortByName).toEqual('function')
-  })
-});
-describe('La función sortByName debería ordenar los pokemon de manera alfabetica', () => {
-  it("ordena los pokemon de manera alfabetica", () => {
+})
+})
+describe('La función sortByName debería ordenar los pokémon de manera alfabética', () => {
+  it("Ordena los pokémon de manera alfabética", () => {
     expect(window.pokemonFunction.sortByName(pokemonSortTest.pokemon)).toEqual(sortedName)
   });
-})
+});
 
 describe('sortByHeightAscending debería ser una función', () => {
   it('Es una función', () => {
@@ -1438,7 +1604,7 @@ describe('La función sortByWeightAscending debería ordenar la estatura de los 
 })
 
 
-describe(' sortByWeightDescending debería ser una función', () => {
+describe('sortByWeightDescending debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.sortByWeightDescending).toEqual('function')
   })
@@ -1450,7 +1616,7 @@ describe('La función sortByWeightDescending debería ordenar el peso de los pok
 })
 
 
-describe(' filterByWeightLight debería ser una función', () => {
+describe('filterByWeightLight debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.filterByWeightLight).toEqual('function')
   })
@@ -1461,7 +1627,7 @@ describe('La función filterByWeightLight debería ordenar el peso de los pokém
   });
 })
 
-describe(' filterByWeightHeavy debería ser una función', () => {
+describe('filterByWeightHeavy debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.filterByWeightHeavy).toEqual('function')
   })
@@ -1472,8 +1638,7 @@ describe('La función filterByWeightHeavy debería ordenar el peso de los pokém
   });
 })
 
-
-describe(' filterByHeightSmall debería ser una función', () => {
+describe('filterByHeightSmall debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.filterByHeightSmall).toEqual('function')
   })
@@ -1503,12 +1668,12 @@ describe('filterByHeightTall debería ser una función', () => {
   })
 });
 describe('La función filterByHeightTall debería ordenar la altura de los pokémon de más de 1.80m', () => {
-  it("Ordena la altura de los pokémon de más  1.80m", () => {
+  it("Ordena la altura de los pokémon de más 1.80m", () => {
     expect(window.pokemonFunction.filterByHeightTall(pokemonSortTest.pokemon)).toEqual(expect.arrayContaining(filteredTall))
   });
 })
 
-describe(' pokemonFilterType debería ser una función', () => {
+describe('pokemonFilterType debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.pokemonFilterType).toEqual('function')
   })
@@ -1524,22 +1689,19 @@ describe('averageHeight debería ser una función', () => {
     expect(typeof window.pokemonFunction.averageHeight).toEqual('function')
   })
 });
-describe('La función averageHeight debería dar el promedio total de la altura de los pokemon', () => {
-  it("Da el promedio total de altura de los pokemon", () => {
+describe('La función averageHeight debería dar el promedio total de la altura de los pokémon', () => {
+  it("Da el promedio total de altura de los pokémon", () => {
     expect(window.pokemonFunction.averageHeight(pokemonSortTest.pokemon, numberOfPokemon)).toEqual(1.082)
   });
 })
 
-
-describe(' totalWeight debería ser una función', () => {
+describe('totalWeight debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.totalWeight).toEqual('function')
   })
 });
-describe('La función totalWeight debería dar el promedio total de la peso de los pokemon', () => {
-  it("Da el promedio total de peso de los pokemon", () => {
+describe('La función totalWeight debería dar el promedio total de la peso de los pokémon', () => {
+  it("Da el promedio total de peso de los pokémon", () => {
     expect(window.pokemonFunction.totalWeight(pokemonSortTest.pokemon, numberOfPokemon)).toEqual(29.48)
   });
 })
-
-
