@@ -1,98 +1,115 @@
+/* Convierte la base de datos en una variable*/
+const dataLol = window.LOL.data;
+
+//Trae el resultado de la función filtrado de data.js
+const datos = window.lol.iterarData(dataLol)
+
+/*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
+const showFirstChampionList = document.getElementById('showFirstChampionList')
+
+//Trae la class que contiene el rol de la lista del menú desplegable 
+const rol = document.getElementsByClassName("rolPersonajes");
+
+//Trae cada personaje para la iteración por clase
+const characterFromList = document.getElementsByClassName("nameList");
 
 
+//almacena en variable los id del primer evento de cambio de pantalla, la interacción para abrir y cerrar el menú
+const inicio = document.getElementById('inicio')
+const menu = document.getElementById('menu')
+const cerrar = document.getElementById('titleChampions')
 
-    /* Convierte la base de datos en una variable*/
-    const dataLol = window.LOL.data;
-    
-  //Trae el resultado de la función filtrado de data.js
-  const datos  = window.lol.iterarData(dataLol)
+//Trae los divs de cada personaje
+//const character = document.getElementById('character')
 
-    /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
-    const showFirstChampionList = document.getElementById('showFirstChampionList')
-
- //Trae la class que contiene el rol de la lista del menú desplegable 
-    const rol = document.getElementsByClassName("rolPersonajes");
-
-    //Trae cada personaje para la iteración por clase
-    const characterFromList = document.getElementsByClassName("nameList");
+//almacena el valor del input para la busqueda por nombre
+const searchInput = document.getElementById("searchInput")
 
 
-  //almacena en variable los id del primer evento de cambio de pantalla, la interacción para abrir y cerrar el menú
-    const inicio = document.getElementById('inicio')
-    const menu = document.getElementById('menu')
-    const cerrar = document.getElementById('titleChampions')
+//vuelve la base de datos a un arreglo
+//const dataToArray = Object.values(dataLol); 
 
-  //Trae los divs de cada personaje
-  //const character = document.getElementById('character')
+//Funcion de botones
+//click que hace cambio de la primera pantalla a la lista de personajes
 
-  //almacena el valor del input para la busqueda por nombre
-  const searchInput = document.getElementById("searchInput")
-    
-  
-  //vuelve la base de datos a un arreglo
- //const dataToArray = Object.values(dataLol); 
+inicio.onclick = () => {
+  document.getElementById("primera-pantalla").style.display = 'none';
+  document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';
+};
 
-  //Funcion de botones
-  //click que hace cambio de la primera pantalla a la lista de personajes
+// función del menú desplegable donde se encuentran los roles para filtrar 
 
-   inicio.onclick = ()=>{
-     document.getElementById("primera-pantalla").style.display = 'none';
-     document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';};
+menu.onmouseover = () => {
+  document.getElementById("mySidenav").style.width = "75%";
+};
 
-     // función del menú desplegable donde se encuentran los roles para filtrar 
-     
-   menu.onmouseover = ()=> {
-      document.getElementById("mySidenav").style.width = "75%";};
+showFirstChampionList.onmouseover = () => {
+  document.getElementById("mySidenav").style.width = "0px";
+};
 
-   showFirstChampionList.onmouseover = ()=> {
-        document.getElementById("mySidenav").style.width = "0px";};
+cerrar.onmouseover = () => {
+  document.getElementById("mySidenav").style.width = "0px";
+};
 
-   cerrar.onmouseover = ()=> {
-          document.getElementById("mySidenav").style.width = "0px";};
-  
 
 
 /* ----------------------------------------------*/
 //función que despliega la info del personaje al dar click
 const characterSelection = () => {
-  for ( let i=0; i<characterFromList.length; i++){
+  for (let i = 0; i < characterFromList.length; i++) {
     characterFromList[i].addEventListener('click', () => {
+
       let characterId = characterFromList[i].id;
       //console.log(characterId);
-     
-     const elementChampion = window.lol.filterByCharacter(characterId,datos);
 
-     printCharacterSheet(elementChampion);})}}
-     
-      // const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
-      //print(arrayRolesFiltered);})}}
-     characterSelection()
+      const elementChampion = window.lol.filterByCharacter(characterId, datos);
+
+      printCharacterSheet(elementChampion);
+    })
+  }
+}
+
+// const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
+//print(arrayRolesFiltered);})}}
+characterSelection()
 
 
 
 // función que imprime la primera iteración que da la lista completa de campeones
-  const print = (datos) => {
-    showFirstChampionList.innerHTML = "";
-    datos.forEach(champ => {
+const print = (datos) => {
+  showFirstChampionList.innerHTML = "";
+  datos.forEach(champ => {
 
-    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);
-    characterSelection(nameList);});
-  
-  }
-               print(datos)
+    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;
+    showFirstChampionList.insertAdjacentHTML("beforeend", nameList);
+    characterSelection(nameList);
+  });
 
-               
-  //---------------------2do Print------------------------------------------------------//
-   //función que imprime la información completa del personaje 
-   const printCharacterSheet = (datos) => {
-    showFirstChampionList.innerHTML = "";
-   datos.forEach(champ => {
-   let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p><h2>${champ.blurb}</h2> <p>Attack:${champ.info}</p><p>${champ.stats}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}             
-  
+}
+print(datos)
 
 
-              
-    
+//---------------------2do Print------------------------------------------------------//
+//función que imprime la información completa del personaje 
+const printCharacterSheet = (datos) => {
+  showFirstChampionList.innerHTML = "";
+  datos.forEach(champ => {
+    let nameList = `<div id="${champ.id}" class="nameList">
+   <img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}">
+   <div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p>
+   <h2>${champ.blurb}</h2><p>Attack:${champ.attack}</p><p>Defense:${champ.defense}</p>
+   <p>Magic:${champ.magic}</p><p>Difficulty:${champ.difficulty}</p>
+   </div><h2>Stats</h2><p>Hp:${champ.hp}</p><p>Hp per level:${champ.hpperlevel}</p>
+   <p>Mp:${champ.mp}</p><p>Mp per level:${champ.mpperlevel}</p>
+   <p>Movespeed:${champ.movespeed}</p> <p>Armor:${champ.armor}</p></div>`;
+    showFirstChampionList.insertAdjacentHTML("beforeend", nameList);
+  });
+}
+
+
+
+
+
 //toma el id de las "a" del menu desplegable
 //las itera, a cada una le asigna un addEventListener
 //las prepara para recibir click
@@ -102,26 +119,30 @@ const characterSelection = () => {
 //limpia la sección previa 
 //itera el arreglo y va acumulando los resultados dentro de divs de impresión
 const selectByRol = () => {
-  for ( let i=0; i<rol.length; i++){
+  for (let i = 0; i < rol.length; i++) {
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
       document.getElementById("mySidenav").style.width = "0%";
 
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
-      print(arrayRolesFiltered);})}}
-    selectByRol();
-      
+      print(arrayRolesFiltered);
+    })
+  }
+}
+selectByRol();
 
-  
+
+
 const searchByName = () => {
-  searchInput.addEventListener("keyup", ()=>{
+  searchInput.addEventListener("keyup", () => {
     let searchValue = searchInput.value;
-    const showSearch = window.lol.filterByName(searchValue,datos);
+    const showSearch = window.lol.filterByName(searchValue, datos);
     print(showSearch);
-  })};
- searchByName();
+  })
+};
+searchByName();
 
-    
+
 //selecciona un personaje dando click
 //el click ejecuta la función que abre la info del personaje
 //el click almacena el id del personaje que se seleccionó
@@ -136,19 +157,3 @@ const searchByName = () => {
  console.log (openCharacterSheet);})}
  characterSheet();*/
 
-
- //const characterSheet = () => {
-  /*for ( let i=0; i<showFirstChampionList.length; i++){
-    showFirstChampionList[i].addEventListener('click', () => {
-      let characterName = showFirstChampionList[i].id;
-      console.log(characterName);})}
-    //  const characterDetail = window.lol.characterSelection(characterName,dataToArray);
-    //  console.log(characterDetail);})}}*/
-//----------------------------------------------------//
-
-
-
-    
-   
-    
-    

@@ -3,22 +3,32 @@
 
 window.lol = {
   iterarData: (dataLol) => {
-    let datos = [];
-    for (const key in dataLol) {
-      if (dataLol.hasOwnProperty(key)) {
-        const element = dataLol[key];
-        let objetoVacio = {
-          name: element.name,
-          tags: element.tags,
-          img: element.img,
-          title: element.title,
-          id: element.id,
-          splash: element.splash,
-          blurb: element.blurb,
-          info: element.info.difficulty,
-          stats: element.stats,
-        }
-        datos.push(objetoVacio)
+
+    let datos =[];
+    for(const key in dataLol){
+      if(dataLol.hasOwnProperty(key)){
+      const element = dataLol[key];
+      let objetoVacio = {
+      name: element.name,
+      tags: element.tags,
+      img: element.img,
+      title: element.title,
+      id: element.id,
+      splash:element.splash,
+      blurb: element.blurb,
+      attack: element.info.attack,
+      defense: element.info.defense,
+      magic: element.info.magic,
+      difficulty: element.info.difficulty,
+      hp: element.stats.hp,
+      hpperlevel:element.stats.hpperlevel,
+      mp:element.stats.mp,
+      mpperlevel:element.stats.mpperlevel,
+      movespeed:element.stats.movespeed,
+      armor:element.stats.armor,
+      }
+    datos.push(objetoVacio)
+
       }
     }
     return datos
