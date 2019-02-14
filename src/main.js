@@ -157,11 +157,3 @@ searchByName();
  console.log (openCharacterSheet);})}
  characterSheet();*/
 
-
-//const characterSheet = () => {
-/*for ( let i=0; i<showFirstChampionList.length; i++){
-  showFirstChampionList[i].addEventListener('click', () => {
-    let characterName = showFirstChampionList[i].id;
-    console.log(characterName);})}
-  //  const characterDetail = window.lol.characterSelection(characterName,dataToArray);
-  //  console.log(characterDetail);})}}*/
