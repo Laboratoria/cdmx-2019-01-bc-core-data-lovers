@@ -9,6 +9,11 @@ describe("WorldBank", () => {
     expect(typeof window.WorldBank).toBe("object");
   });
 
+  it("WorldBank.dataCountries is a function", () => {
+    expect(typeof window.WorldBank.dataCountries).toBe("function");
+  });
+});
+
   //it('returns `example`', () => {
     //expect(example()).toBe('example');
   //});
