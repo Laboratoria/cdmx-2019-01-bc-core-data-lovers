@@ -1,87 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>PokéDataDex</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <meta charset="utf-8">
+  <title>PokéDataDex</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
 
-  </head>
-  <body>
-    <section id="main">
-      <header id="title">
-          <figure class = "imgPokemon"><img src="../src/assets/img/68747470733a2f2f692e696d6775722e636f6d2f415975745a4f462e706e67.png" alt="Logo Pokemon"></figure>
-      </header>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <button type="submit" id="next" class="styleButtonNext buttonNext">Entrar</button>
+</head>
 
-    </section>
+<body>
+  <section id="main">
+    <header id="title">
+      <img src="../src/assets/img/68747470733a2f2f692e696d6775722e636f6d2f415975745a4f462e706e67.png" class="logo" alt="Logo Pokemon">
+    </header>
 
-   
+    <button type="submit" id="next" class="styleButtonNext buttonNext">Entrar</button>
 
-    <section id="serch">
+  </section>
+
+
+
+
+  <!-- <button onclick="typeWriter()">Click me</button>
+      <p id="demo"></p>
+    </section> -->
+  <!-- <section id="serch">
          <div class="topnav" id="myTopnav">
             <a href="#main" class="active">Home</a>
             <a href="#news">Tipos de Pokemons</a>
             <a href="#contact">Pokemons Ordenados</a>
             <a href="#about">Estadísticas</a>
 
-          <input type="search" class="search" id ="search" placeholder="Search..">
+         <input type="text" class="search" placeholder="Search..">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
-        </div>
-        <section>
+        </div>-->
 
-          <button type="button" class="bottonPokemons" id = "Fire">Fuego</button>
-          <button type="button" class="bottonPokemons" id = "Normal">Normal</button>
-          <button type="button" class="bottonPokemons" id = "Water">Agua</button>
-          <button type="button" class="bottonPokemons" id = "Grass">Hierba</button>
-          <button type="button" class="bottonPokemons" id = "Electric">Electrico</button>
-          <button type="button" class="bottonPokemons" id = "Ice">Hielo</button>
-          <button type="button" class="bottonPokemons" id = "Fighting">Pelea</button>
-          <button type="button" class="bottonPokemons" id = "Poison">Veneno</button>
-          <button type="button" class="bottonPokemons" id = "Ground">Tierra</button>
-          <button type="button" class="bottonPokemons" id = "Flying">Volador</button>
-          <button type="button" class="bottonPokemons" id = "Psychic">Psiquico</button>
-          <button type="button" class="bottonPokemons" id = "Bug">Bicho</button>
-          <button type="button" class="bottonPokemons" id = "Rock">Roca</button>
-          <button type="button" class="bottonPokemons" id = "Ghost">Fantasma</button>
-          <button type="button" class="bottonPokemons" id = "Dragon">Dragron</button>  
-        
-       </section>
 
-       <form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="serch">
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="#" id="about">About</a>
+      <a href="#" id="blog">Blog</a>
+      <a href="#" id="projects">Projects</a>
+      <a href="#" id="contact">Contact</a>
+    </div>
+    <h1 id="pokemons"></h1>
+
+    <section id="navs">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Fire">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Normal">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Water">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Grass">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Electric">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Ice">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Fighting">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Poison">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Ground">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Flying">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Psychic">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Bug">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Rock">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Ghost">
+      <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id="Dragon">
+
+
+      <form>
         <fieldset>
-         <legend>Ordenados por Peso</legend>
-         <button type="button" class="sortTipo" id="weight-asc">Ligeros-Pesados</button>
-         <button type="button" class="sortTipo" id="weight-dsc">Pesados-Ligeros</button>
+          <legend>Ordenados por Peso</legend>
+          <button type="button" class="sortTipo" id="weight-asc">Ligeros-Pesados</button>
+          <button type="button" class="sortTipo" id="weight-dsc">Pesados-Ligeros</button>
         </fieldset>
-       </form>
+      </form>
 
-       <form>
+      <form>
         <fieldset>
-         <legend>Ordenados por Tamaño</legend>
-         <button type="button" class="sortTipo" id="height-asc">Pequeños-Grandes</button>
-         <button type="button" class="sortTipo" id="height-dsc">Grandes-Pequeños</button>
+          <legend>Ordenados por Tamaño</legend>
+          <button type="button" class="sortTipo" id="height-asc">Pequeños-Grandes</button>
+          <button type="button" class="sortTipo" id="height-dsc">Grandes-Pequeños</button>
         </fieldset>
-       </form>
-        <h1 id="pokemons"></h1>
+      </form>
+
     </section>
 
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+  </section>
+
+
+
+
+
+
+
+  <div id="root"></div>
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <script src="./data/pokemon/pokemon.js"></script>
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
