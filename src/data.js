@@ -19,7 +19,13 @@ window.lol = {
       defense: element.info.defense,
       magic: element.info.magic,
       difficulty: element.info.difficulty,
-      stats: element.stats,}
+      hp: element.stats.hp,
+      hpperlevel:element.stats.hpperlevel,
+      mp:element.stats.mp,
+      mpperlevel:element.stats.mpperlevel,
+      movespeed:element.stats.movespeed,
+      armor:element.stats.armor,
+      }
     datos.push(objetoVacio)
   }
 }
