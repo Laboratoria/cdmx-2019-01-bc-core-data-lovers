@@ -203,6 +203,7 @@ describe('es una función llamada filtroPaís', () => {// test si es funcion fil
     expect(typeof window.worldBank.filtroPais).toBe('function');
   });
   
+  
   it('Debe regresar las datos del Indicador y Pais que selecciona el usuario', ()=>{//Test de funcion Filtro, 
     expect(window.worldBank.filtroPais(baseDatos,'MEX','Población de 0 a 4 años, mujeres (% de la población femenina)')).toEqual(baseDatos.MEX.indicators[0].data);
   
@@ -222,8 +223,6 @@ expect(typeof window.worldBank.orderByAsc).toBe('function');
   it('Dede ordenar de forma descendente la data', ()=>{
     expect(window.worldBank.orderByAsc('desc',arrayObject)).toEqual(arrayOrder2);
   });
-  
-  
 });
 
 
