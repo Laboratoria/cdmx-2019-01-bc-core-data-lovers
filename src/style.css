@@ -10,15 +10,21 @@
   display: none;
 }
 
+
+
+
 body{
-  background-color: #E9ECF4;
-  height: 100vh;
+  /* background-color: #E9ECF4; */
+    background:linear-gradient(130deg, #4AB583, #9284FF);
+  height: 100vh; 
   font-family: 'Lato', sans-serif;
 }
 
+
+
 .initial-page{
-  background-color: #C2FAB9;
-   width: 90%;
+  background: linear-gradient(130deg, #4AB583, #9284FF);
+  width: 90%;
    max-width: 1000px;  
    height: 100vh;
    margin: 0 auto;
@@ -31,8 +37,12 @@ body{
   display: block;
 }
 
+
+
+
+
 .poke-button {
-  background-color: #C2FAB9;
+  background-color: rgba(255, 255, 255, 0);
   border: none;
   margin: auto;
   display: block;
@@ -55,8 +65,18 @@ body{
   }
 }
 
+
+
+/*color morado safe 	#9966FF
+morado oscuro #9284FF
+morado medio #D1CAFE
+morado claro #E6DFFE
+verde oscuro claro #4AB583
+verde oscuro #266378
+color verde safe 	#4AB583*/
+
 .header, .main-content{
-  background-color: #C2FAB9;
+  /* background-color: #E6DFFE; */
    width: 90%;
    max-width: 1000px;  
    margin: 0 auto;
@@ -80,7 +100,7 @@ body{
 }
 
 nav{
-  background: #12203E;
+  background: #003471;
   opacity: .8;
   margin: auto;
   border-radius: 10px;
@@ -106,13 +126,14 @@ i{
 }
 
 .main-content{
-   height: 35em;
-   background-color: #C2FAB9;
+   height: 33em;
+  /* background:linear-gradient(130deg, #4AB583, #9284FF);*/
 }
 
+
 .content, .aside{
-   background-color:  #5AC6BB;
-   height: 33em;
+   background-color:  rgba(209, 202, 254, 0.493);
+   height: 34em;
    margin-top: 2%;
    margin-bottom: 2%;
    float: left;
@@ -121,12 +142,12 @@ i{
 .content{
    width: 63%;   
    margin-left: 4%;
-   overflow: scroll;
+   overflow: auto;
    overflow-x: hidden;
    border-radius: 14px;
 }
 .post{
-  margin-left:5%;
+  margin-left:9%;
   margin-top: 4%;
 }
 .aside{
@@ -142,8 +163,9 @@ i{
   width: 37%;
   border-radius: 10px;
   margin-bottom: 2%;
-  margin-left: 8%;
+  margin-left: 4%;
   margin-top: 2%;
+  margin-right: 4%;
   padding: 2%;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -155,39 +177,45 @@ i{
   background: #FFBA5C;
 }
 .type,.orderByName, .doYouKnow{
-  padding-top: 5%;
+  padding-top: 7%;
   padding-bottom: 5%;
 }
+
+
 .average{
-  background: #E6FDFB;
+  background: #FFD185;
+  height: 20%;
+  margin:5% 8.5% 5% ;
+  border-radius:15px; 
+  border: 3px solid #FFBA5C; 
 }
-.footer{
-   background-color: #C2FAB9;
-   height: 5em;
+
+/*.footer{*/
+   /* background-color:#E6DFFE; */
+ /*  height: 5em;
    width: 90%;
    max-width: 1000px;
    margin: 0 auto;
 }
 
 .footertext {
-  background: #976DD0;
+  background: #003471;
+  opacity: .8;
   margin: auto;
   padding: 2%;
   border-radius: 8px;
   width: 89%;
   height: 53%;
-}
+}*/
 
 .img-pokebola-chica {
-  background: #976DD0;
+  background:#976DD0;
   border: none;
-  
   margin-left: 50%;
   float: left;
 }
 
 .img-pokebola-chica:hover{
-  display: block;
   animation: pulse 1s infinite;
   animation-timing-function: linear;
 }
