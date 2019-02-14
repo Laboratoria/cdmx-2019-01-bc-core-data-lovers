@@ -21,7 +21,8 @@ searchbutton.addEventListener("click", () => {
 
 allDataButton.addEventListener("click", () => {
   alert("Hello! I am an alert box!!");
-  let yearValue = injuriesBy
-  //resultsecc.innerHTML = `${newData[0]}`;
+
+  console.log(newData)
+  resultsecc.innerHTML = `${newData[0]}`;
   }
 );
