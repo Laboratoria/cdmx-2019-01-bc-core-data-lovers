@@ -18,6 +18,10 @@ describe('CONSULT', () => {
       expect(window.data.consult(window.INJURIES,"2001-01-04","Total_Injured_Persons_Motorcyclists")).toEqual(["2001", 60236])
     });
   });
+<<<<<<< HEAD
+=======
+});
+>>>>>>> upstream/master
 
 // describe('SORT', () => {
 //   it('Debería ser una funcion', () => {
