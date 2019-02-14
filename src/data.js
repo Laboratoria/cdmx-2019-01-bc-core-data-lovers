@@ -60,4 +60,4 @@ window.pokesaurius = {
 
 //}
 
-};
+

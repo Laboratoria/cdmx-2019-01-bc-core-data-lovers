@@ -6,7 +6,9 @@ const pokeballButton=document.getElementById('pokeball-button');
 const printList = document.getElementById('print-list'); 
 const buttonType=document.getElementsByClassName('type-button'); 
 const pokeButtonHome=document.getElementById('poke-button-home'); 
-
+const weight = document.getElementById('weight');
+const counterCollection=document.getElementById('counterCollection');
+const printType= document.getElementById('printType');
 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
@@ -15,24 +17,26 @@ pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
 });
 
 const print=(data)=>{
-  
-data.forEach(element => {
-   let result = `<div class="wrapper">
-   <div class="pokemon-cart"> 
-     <div class="pokemon-card-image">
-       <img src="${element.img}">
-     </div>
-     <div class="box-card">
-       <p>Número:${element.num}</p>
-       <p>${element.name}</p>
-       <p>${element.candy_count}</p> <!--lo agregue 110219-->
-     </div>
-   </div>
-     </div>`
-   printList.insertAdjacentHTML("beforeend",result);
-   return print;
-  });
-  
+    let totalWeight= 0;
+    data.forEach(element => {
+        totalWeight += parseFloat(element.weight);
+        let result = `<div class="wrapper">
+        <div class="pokemon-cart"> 
+        <div class="pokemon-card-image">
+        <img src="${element.img}">
+        </div>
+        <div class="box-card">
+        <p>Número:${element.num}</p>
+        <p>${element.name}</p>
+        </div>
+        </div>
+        </div>`
+        printList.insertAdjacentHTML("beforeend",result);
+        return print;
+    });
+   const averageWeight= totalWeight/data.length;
+   weight.innerHTML=averageWeight;
+   counterCollection.innerHTML= data.length;
 };
 
 print(data)
@@ -41,10 +45,10 @@ print(data)
 for(let i = 0; i <buttonType.length; i++ ){
   buttonType[i].addEventListener('click',() => {
   let pokemonElegido = buttonType[i].id
-  
   printList.innerHTML = '';
   const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido);
     print(pokemonFiltrados)
+    printType.innerHTML= pokemonElegido;
 });
 }
 
