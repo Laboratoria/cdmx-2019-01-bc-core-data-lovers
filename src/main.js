@@ -59,11 +59,34 @@
     showFirstChampionList.innerHTML = "";
     datos.forEach(champ => {
 
-    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
+    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
+               print(datos)
 
-               print(datos);
-   
                
+  //---------------------2do Print------------------------------------------------------//
+   //función que imprime la información completa del personaje 
+   const printCharacterSheet = (datos) => {
+    showFirstChampionList.innerHTML = "";
+   datos.forEach(champ => {
+   let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p><h2>${champ.blurb}</h2> <p>Attack:${champ.info}</p><p>${champ.stats}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}             
+  
+
+
+  const characterSelection = () => {
+    for ( let i=0; i<characterFromList.length; i++){
+      characterFromList[i].addEventListener('click', () => {
+        let characterId = characterFromList[i].id;
+        console.log(characterId);
+       
+       const elementChampion = window.lol.filterByCharacter(characterId,datos);
+
+       printCharacterSheet(elementChampion);})}}
+       
+        // const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
+        //print(arrayRolesFiltered);})}}
+       characterSelection()
+
+              
     
 //toma el id de las "a" del menu desplegable
 //las itera, a cada una le asigna un addEventListener
@@ -78,7 +101,7 @@ const selectByRol = () => {
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
       document.getElementById("mySidenav").style.width = "0%";
-  
+
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
       print(arrayRolesFiltered);})}}
     selectByRol();
@@ -118,23 +141,8 @@ const searchByName = () => {
     //  console.log(characterDetail);})}}*/
 
 
-    //let aatrox = document.getElementById("Aatrox")
-    //aatrox.addEventListener('click', () => { 
-     // console.log('sí funciono');
 
     
-
-
-    const characterSelection = () => {
-      for ( let i=0; i<characterFromList.length; i++){
-        characterFromList[i].addEventListener('click', () => {
-          let characterId = characterFromList[i].id;
-          console.log(characterId);})}}
-         
-         
-         
-          // const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
-          //print(arrayRolesFiltered);})}}
-
-         characterSelection()
+   
+    
     

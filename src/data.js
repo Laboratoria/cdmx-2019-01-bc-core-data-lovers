@@ -13,7 +13,10 @@ window.lol = {
       img: element.img,
       title: element.title,
       id: element.id,
-      splash:element.splash,}
+      splash:element.splash,
+      blurb: element.blurb,
+      info: element.info.difficulty,
+      stats: element.stats,}
     datos.push(objetoVacio)
   }
 }
@@ -32,10 +35,13 @@ filterByName: (name,datos) => {
  return search;
 },
 
-/*characterSelection: (id,datos) => {
-  const characterOnClick = datos.filter(element => element.id === id);
+
+
+filterByCharacter: (characterId,datos) => {
+  const characterOnClick = datos.filter(element => element.id === characterId);
+  console.log(characterOnClick)
   return characterOnClick;
-}*/
+}
 
 // taller TEST de Sil
 }

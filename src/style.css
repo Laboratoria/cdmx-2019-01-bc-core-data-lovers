@@ -426,7 +426,7 @@ footer{
 
 
   .sidenav{
-    display:none;
+    display:block;
   }
 
   #showFirstChampionList{
