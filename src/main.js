@@ -36,6 +36,10 @@ const imprimir = (obtenerTipo) => {
 
 
 
+
+/*ordenando pokemon*/
+
+
 /*
 filterCoincidence();
 

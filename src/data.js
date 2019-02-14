@@ -2,10 +2,11 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 //esto a esta funcionando al 100
+window.data={ 
 
-
-window.data={
 //funcion de filtrar
+
+
 
 filterData:(dataPokemon,types) =>{
 const arrayPokemon= dataPokemon ;
