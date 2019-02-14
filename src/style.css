@@ -114,7 +114,24 @@ header label:hover{
 
 
 @media only screen and (max-width: 600px) {
-  header label{
+  .cuadro{
+    color: #3d3316; 
+    font-size: 50%; 
+    font-weight: 25%; 
+    text-align: center;
+    background: #efc056; 
+    margin: 0; 
+    overflow: hidden; 
+    padding: 9px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 1px solid #7a631c;
+    display: inline-block;
+    width: 44%;
+    z-index: -100;
+}
+header label{
     display: block;
   }
 
@@ -124,6 +141,7 @@ header label:hover{
     width: 70%;
     margin-left:-70%;
     transition: all 0.3s;
+    z-index: 20;
   }
 
   .menu li:hover{
@@ -151,21 +169,5 @@ header label:hover{
    #btn-menu:checked ~ .menu{
      margin: 0;
    }
-   .cuadro{
-      color: #3d3316; 
-      font-size: 50%; 
-      font-weight: 25%; 
-      text-align: center;
-      background: #efc056; 
-      margin: 0; 
-      overflow: hidden; 
-      padding: 2px; 
-      border-radius: 35px 0px 35px 0px; 
-      -moz-border-radius: 35px 0px 35px 0px; 
-      -webkit-border-radius: 35px 0px 35px 0px; 
-      border: 1px solid #7a631c;
-      display: inline-block;
-      width: 48%;
-  
-  }
+
 }

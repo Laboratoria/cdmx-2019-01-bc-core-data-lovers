@@ -10,6 +10,7 @@ const searchChampion = document.getElementById("searchChampion");
 const rol = document.getElementsByClassName('rol');
 const imprimirRoles = document.getElementById("imprimirRoles")  /*trae el div imprimir roles para identificarlo e imprimir*/
 let search = document.getElementById("search");
+const difficultyDecent = document.getElementById("difficultyDecent");
 
 home.addEventListener("click",() =>{
   imprimirRoles.innerHTML = "";
@@ -45,10 +46,10 @@ const selectRol = () =>{
 selectRol();
 
 //Función para limpiar contenido antes mostrado y desplegar todos los campeones para realizar busqueda específica 
-const printChamp = ()=> {
-    imprimirRoles.innerHTML = "";
-    print(datosArr)
-}
+// const printChamp = ()=> {
+//     imprimirRoles.innerHTML = "";
+//     print(datosArr)
+// }
  
 //Función para desplegar el campeon para se desea buscar
 const filterRolBySearch = () => {
@@ -60,3 +61,11 @@ const filterRolBySearch = () => {
   })
 };
 filterRolBySearch ();
+
+const orderByDifficultyDecent = () => {
+  difficultyDecent.addEventListener("click", () => {
+    console.log("si funciono wey");
+    const decent = window.lol.sortByDifficulty(datosArr);
+
+  })};
+  orderByDifficultyDecent();

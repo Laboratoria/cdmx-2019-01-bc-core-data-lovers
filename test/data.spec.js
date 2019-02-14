@@ -121,6 +121,7 @@ let muestra = {
        tag: element.tags,
        splash: element.splash,
        title: element.title,
+       difficulty: element.info.difficulty,
      }
      dataToArray.push(objetoVacio)
     } 
@@ -153,6 +154,26 @@ describe('Debería de ser una función',() => {
     expect(typeof window.lol.filterBySearch).toBe('function');  
   });
   it('Deberia regresar un arreglo con los campeones cuyo nombre coincidan con la A', () =>{
-    window.lol.filterBySearch('Aatrox', muestra.data).for(element in dataToArray) () => {
+    const result = window.lol.filterBySearch('Aatrox', dataToArray);
+    for(let element of result) () => {
       expect(element.name).toMatch('Aatrox');  
-});});
+    }
+  });
+  it('Deberia regresar un arreglo vacio cuando busca que coincidan con la tx', () =>{
+    const result = window.lol.filterBySearch('tx', dataToArray);
+    expect(result.length).toBe(0);
+  });
+});
+
+
+describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad',() => {
+  it('Es una funcion', () =>{
+    expect(typeof window.lol.sortByDifficulty).toBe('function');
+  });
+  it('Dado la muestra, si ordena de manera descendente, Ahri es el primer elemento', () =>{
+    expect(window.lol.sortByDifficulty( true, dataToArray)[0].name).toBe('Ahri');
+  });
+  it('Dado la muestra, si ordena de manera ascendente, Aatrox es el primer elemento', () =>{
+    expect(window.lol.sortByDifficulty( false, dataToArray)[0].name).toBe('Aatrox');
+  });
+});
