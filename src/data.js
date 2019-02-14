@@ -15,7 +15,7 @@ window.lol = {
       id: element.id,
       splash:element.splash,
       blurb: element.blurb,
-      info: element.info,
+      info: element.info.difficulty,
       stats: element.stats,}
     datos.push(objetoVacio)
   }

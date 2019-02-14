@@ -12,6 +12,18 @@ describe('example', () => {
   })
 })
 
+
+describe('iterarData', ()=>{
+  it('is a function',() => {
+    expect(typeof window.lol.iterarData).toBe('function');
+  
+ 
+ });
+ 
+ });
+
+
+
 describe('example', () => {
   it('is a function', () => {
     expect(typeof window.lol.filterByName).toBe('function');
@@ -19,6 +31,11 @@ describe('example', () => {
 })
 
 
+
+    it('Deberia devolver el obj Alistar si es igual a Tank',()=>{
+      expect(window.lol.filtroDataRoles('Tank',window.lol.dataToArray )).toEqual(window.dataToArray.Alistar.tags[0])
+    })
+ });
 
 
 describe('filtoDataRoles', () => {
@@ -155,9 +172,13 @@ describe('filtoDataRoles', () => {
     it('Should returns the object Aatrox if we select Tank', () => {
       expect(window.lol.filtroDataRoles('Tank', dataToArray)[0]).toEqual(dataToArray[0]);
     })
+
     it('Should returns the object Ahri if we select Mage', () => {
       expect(window.lol.filtroDataRoles('Mage', dataToArray)[0]).toEqual(dataToArray[1]);
     })
 
     
   });
+
+  });
+
