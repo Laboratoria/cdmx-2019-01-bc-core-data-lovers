@@ -14,7 +14,7 @@ window.data = {
       let moto = element.Total_Injured_Persons_Motorcyclists;
       let bike = element.Total_Injured_Persons_Pedalcyclists;
       let walk = element.Total_Injured_Persons_Pedestrians;
-      allData = (moto, bike, walk)
+      console.log(year, moto)
       })
       //if (year >= "2001-01-04") {}
       //Dentro de un ciclo FOR buscamos las Key y comparamos con el valor del Usuario.
