@@ -37,11 +37,11 @@ search.addEventListener('keyup', () => {
   // let search3 = searchByName.toLowerCase();
   const newArrayChamp = window.lol.showData(lolData);
   let filtered = window.lol.filterByName(newArrayChamp, name2);
-  if (name2 == "" ) {
+  if (name2 == "") {
     printData(newArrayChamp);
   } else {
-      printData(filtered);
-}
+    printData(filtered);
+  }
 })
 
 //Esta función es para seleccionar el rol por el cual se va a filtrar
