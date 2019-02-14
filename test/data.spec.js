@@ -1,5 +1,4 @@
 require('../src/data.js');
-
 const LOL = {
   type: "champion",
   format: "standAloneComplex",
@@ -101,6 +100,370 @@ const LOL = {
         attackdamageperlevel: 3,
         attackspeedoffset: -0.065,
         attackspeedperlevel: 2
+      }
+    },
+    Akali: {
+      version: "6.24.1",
+      id: "Akali",
+      key: "84",
+      name: "Akali",
+      title: "the Fist of Shadow",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
+      blurb:
+        "There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe. This order is known as the Kinkou ...",
+      info: {
+        attack: 5,
+        defense: 3,
+        magic: 8,
+        difficulty: 7
+      },
+      image: {
+        full: "Akali.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 96,
+        y: 0,
+        w: 48,
+        h: 48
+      },
+      tags: ["Assassin"],
+      partype: "Energy",
+      stats: {
+        hp: 587.8,
+        hpperlevel: 85,
+        mp: 200,
+        mpperlevel: 0,
+        movespeed: 350,
+        armor: 26.38,
+        armorperlevel: 3.5,
+        spellblock: 32.1,
+        spellblockperlevel: 1.25,
+        attackrange: 125,
+        hpregen: 8.34,
+        hpregenperlevel: 0.65,
+        mpregen: 50,
+        mpregenperlevel: 0,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 58.376,
+        attackdamageperlevel: 3.2,
+        attackspeedoffset: -0.1,
+        attackspeedperlevel: 3.1
+      }
+    },
+    Alistar: {
+      version: "6.24.1",
+      id: "Alistar",
+      key: "12",
+      name: "Alistar",
+      title: "the Minotaur",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Alistar.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
+      blurb:
+        "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of ...",
+      info: {
+        attack: 6,
+        defense: 9,
+        magic: 5,
+        difficulty: 7
+      },
+      image: {
+        full: "Alistar.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 144,
+        y: 0,
+        w: 48,
+        h: 48
+      },
+      tags: ["Tank", "Support"],
+      partype: "MP",
+      stats: {
+        hp: 613.36,
+        hpperlevel: 106,
+        mp: 278.84,
+        mpperlevel: 38,
+        movespeed: 330,
+        armor: 24.38,
+        armorperlevel: 3.5,
+        spellblock: 32.1,
+        spellblockperlevel: 1.25,
+        attackrange: 125,
+        hpregen: 8.675,
+        hpregenperlevel: 0.85,
+        mpregen: 8.5,
+        mpregenperlevel: 0.8,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 61.1116,
+        attackdamageperlevel: 3.62,
+        attackspeedoffset: 0,
+        attackspeedperlevel: 2.125
+      }
+    },
+    Amumu: {
+      version: "6.24.1",
+      id: "Amumu",
+      key: "32",
+      name: "Amumu",
+      title: "the Sad Mummy",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Amumu.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
+      blurb:
+        "''Solitude can be lonelier than death.''<br><br>A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever, as his touch is death and his affection ...",
+      info: {
+        attack: 2,
+        defense: 6,
+        magic: 8,
+        difficulty: 3
+      },
+      image: {
+        full: "Amumu.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 192,
+        y: 0,
+        w: 48,
+        h: 48
+      },
+      tags: ["Tank", "Mage"],
+      partype: "MP",
+      stats: {
+        hp: 613.12,
+        hpperlevel: 84,
+        mp: 287.2,
+        mpperlevel: 40,
+        movespeed: 335,
+        armor: 23.544,
+        armorperlevel: 3.8,
+        spellblock: 32.1,
+        spellblockperlevel: 1.25,
+        attackrange: 125,
+        hpregen: 8.875,
+        hpregenperlevel: 0.85,
+        mpregen: 7.38,
+        mpregenperlevel: 0.525,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 53.384,
+        attackdamageperlevel: 3.8,
+        attackspeedoffset: -0.02,
+        attackspeedperlevel: 2.18
+      }
+    },
+    Ashe: {
+      version: "6.24.1",
+      id: "Ashe",
+      key: "22",
+      name: "Ashe",
+      title: "the Frost Archer",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ashe.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
+      blurb:
+        "With each arrow she fires from her ancient ice-enchanted bow, Ashe proves she is a master archer. She chooses each target carefully, waits for the right moment, and then strikes with power and precision. It is with this same vision and focus that she ...",
+      info: {
+        attack: 7,
+        defense: 3,
+        magic: 2,
+        difficulty: 4
+      },
+      image: {
+        full: "Ashe.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 336,
+        y: 0,
+        w: 48,
+        h: 48
+      },
+      tags: ["Marksman", "Support"],
+      partype: "MP",
+      stats: {
+        hp: 527.72,
+        hpperlevel: 79,
+        mp: 280,
+        mpperlevel: 32,
+        movespeed: 325,
+        armor: 21.212,
+        armorperlevel: 3.4,
+        spellblock: 30,
+        spellblockperlevel: 0,
+        attackrange: 600,
+        hpregen: 5.42,
+        hpregenperlevel: 0.55,
+        mpregen: 6.97,
+        mpregenperlevel: 0.4,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 56.508,
+        attackdamageperlevel: 2.26,
+        attackspeedoffset: -0.05,
+        attackspeedperlevel: 3.33
+      }
+    },
+    Azir: {
+      version: "6.24.1",
+      id: "Azir",
+      key: "268",
+      name: "Azir",
+      title: "the Emperor of the Sands",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Azir.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
+      blurb:
+        "''Shurima was once the glory of Runeterra. I will make it so again.''<br><br>Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his ...",
+      info: {
+        attack: 6,
+        defense: 3,
+        magic: 8,
+        difficulty: 9
+      },
+      image: {
+        full: "Azir.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 432,
+        y: 0,
+        w: 48,
+        h: 48
+      },
+      tags: ["Mage", "Marksman"],
+      partype: "MP",
+      stats: {
+        hp: 524.4,
+        hpperlevel: 80,
+        mp: 350.56,
+        mpperlevel: 42,
+        movespeed: 325,
+        armor: 19.04,
+        armorperlevel: 3,
+        spellblock: 30,
+        spellblockperlevel: 0,
+        attackrange: 525,
+        hpregen: 6.92,
+        hpregenperlevel: 0.55,
+        mpregen: 6,
+        mpregenperlevel: 0.8,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 52,
+        attackdamageperlevel: 2.8,
+        attackspeedoffset: -0.02,
+        attackspeedperlevel: 1.5
+      }
+    },
+    Bard: {
+      version: "6.24.1",
+      id: "Bard",
+      key: "432",
+      name: "Bard",
+      title: "the Wandering Caretaker",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Bard.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
+      blurb:
+        "Bard travels through realms beyond the imagination of mortal beings. Some of Valoran's greatest scholars have spent their lives trying to understand the mysteries he embodies. This enigmatic spirit has been given many names throughout the history of ...",
+      info: {
+        attack: 4,
+        defense: 4,
+        magic: 5,
+        difficulty: 9
+      },
+      image: {
+        full: "Bard.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 0,
+        y: 48,
+        w: 48,
+        h: 48
+      },
+      tags: ["Support", "Mage"],
+      partype: "MP",
+      stats: {
+        hp: 535,
+        hpperlevel: 89,
+        mp: 350,
+        mpperlevel: 50,
+        movespeed: 330,
+        armor: 25,
+        armorperlevel: 4,
+        spellblock: 30,
+        spellblockperlevel: 0,
+        attackrange: 500,
+        hpregen: 5.4,
+        hpregenperlevel: 0.55,
+        mpregen: 6,
+        mpregenperlevel: 0.45,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 52,
+        attackdamageperlevel: 3,
+        attackspeedoffset: 0,
+        attackspeedperlevel: 2
+      }
+    },
+    Caitlyn: {
+      version: "6.24.1",
+      id: "Caitlyn",
+      key: "51",
+      name: "Caitlyn",
+      title: "the Sheriff of Piltover",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Caitlyn.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
+      blurb:
+        "''Go ahead, run. I'll give you a five minute head start.''<br><br>One of the reasons Piltover is known as the City of Progress is because it has an extraordinarily low crime rate. This hasn't always been the case; brigands and thieves of all sorts ...",
+      info: {
+        attack: 8,
+        defense: 2,
+        magic: 2,
+        difficulty: 6
+      },
+      image: {
+        full: "Caitlyn.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 192,
+        y: 48,
+        w: 48,
+        h: 48
+      },
+      tags: ["Marksman"],
+      partype: "MP",
+      stats: {
+        hp: 524.4,
+        hpperlevel: 80,
+        mp: 313.7,
+        mpperlevel: 35,
+        movespeed: 325,
+        armor: 22.88,
+        armorperlevel: 3.5,
+        spellblock: 30,
+        spellblockperlevel: 0,
+        attackrange: 650,
+        hpregen: 5.67,
+        hpregenperlevel: 0.55,
+        mpregen: 7.4,
+        mpregenperlevel: 0.55,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 53.66,
+        attackdamageperlevel: 2.18,
+        attackspeedoffset: 0.1,
+        attackspeedperlevel: 4
       }
     },
     Fiora: {
@@ -250,265 +613,61 @@ const LOL = {
         attackspeedperlevel: 2
       }
     },
-    Anivia: {
+    Xerath: {
       version: "6.24.1",
-      id: "Anivia",
-      key: "34",
-      name: "Anivia",
-      title: "the Cryophoenix",
-      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Anivia.png",
-      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
-      blurb: "Anivia is a being of the coldest winter, a mystical embodiment of ice magic, and an ancient protector of the Freljord. She commands all the power and fury of the land itself, calling the snow and bitter wind to defend her home from those who would ...",
+      id: "Xerath",
+      key: "101",
+      name: "Xerath",
+      title: "the Magus Ascendant",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Xerath.png",
+      splash:
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
+      blurb:
+        "''A lifetime as a slave has prepared me for eternity as your master.''<br><br>Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the ...",
       info: {
         attack: 1,
-        defense: 4,
-        magic: 10,
-        difficulty: 10
-      },
-      image: {
-        full: "Anivia.png",
-        sprite: "champion0.png",
-        group: "champion",
-        x: 240,
-        y: 0,
-        w: 48,
-        h: 48
-      },
-      tags: ["Mage", "Support"],
-      partype: "MP",
-      stats: {
-        hp: 467.6,
-        hpperlevel: 70,
-        mp: 396.04,
-        mpperlevel: 50,
-        movespeed: 325,
-        armor: 21.22,
-        armorperlevel: 4,
-        spellblock: 30,
-        spellblockperlevel: 0,
-        attackrange: 600,
-        hpregen: 5.57,
-        hpregenperlevel: 0.55,
-        mpregen: 6,
-        mpregenperlevel: 0.8,
-        crit: 0,
-        critperlevel: 0,
-        attackdamage: 51.376,
-        attackdamageperlevel: 3.2,
-        attackspeedoffset: 0,
-        attackspeedperlevel: 1.68
-      }
-    },
-    Annie: {
-      version: "6.24.1",
-      id: "Annie",
-      key: "1",
-      name: "Annie",
-      title: "the Dark Child",
-      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Annie.png",
-      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
-      blurb: "There have always been those within Noxus who did not agree with the evils perpetrated by the Noxian High Command. The High Command had just put down a coup attempt from the self-proclaimed Crown Prince Raschallion, and a crackdown on any form of ...",
-      info: {
-        attack: 2,
         defense: 3,
         magic: 10,
-        difficulty: 6
+        difficulty: 8
       },
       image: {
-        full: "Annie.png",
-        sprite: "champion0.png",
+        full: "Xerath.png",
+        sprite: "champion4.png",
         group: "champion",
-        x: 288,
+        x: 96,
         y: 0,
         w: 48,
         h: 48
       },
-      tags: ["Mage"],
+      tags: ["Mage", "Assassin"],
       partype: "MP",
       stats: {
-        hp: 511.68,
-        hpperlevel: 76,
-        mp: 334,
-        mpperlevel: 50,
-        movespeed: 335,
-        armor: 19.22,
-        armorperlevel: 4,
-        spellblock: 30,
-        spellblockperlevel: 0,
-        attackrange: 575,
-        hpregen: 5.42,
-        hpregenperlevel: 0.55,
-        mpregen: 6,
-        mpregenperlevel: 0.8,
-        crit: 0,
-        critperlevel: 0,
-        attackdamage: 50.41,
-        attackdamageperlevel: 2.625,
-        attackspeedoffset: 0.08,
-        attackspeedperlevel: 1.36
-      }
-    },
-    Karthus: {
-      version: "6.24.1",
-      id: "Karthus",
-      key: "30",
-      name: "Karthus",
-      title: "the Deathsinger",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Karthus.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
-      blurb:
-        "''Death is not the end of the journey, it is just the beginning...''<br><br>The harbinger of oblivion, Karthus is an undying spirit whose haunting songs are a prelude to the horror of his nightmarish appearance. The living fear the eternity of undeath,...",
-      info: {
-        attack: 2,
-        defense: 2,
-        magic: 10,
-        difficulty: 7
-      },
-      image: {
-        full: "Karthus.png",
-        sprite: "champion1.png",
-        group: "champion",
-        x: 336,
-        y: 48,
-        w: 48,
-        h: 48
-      },
-      tags: ["Mage"],
-      partype: "MP",
-      stats: {
-        hp: 516,
-        hpperlevel: 75,
-        mp: 372.48,
-        mpperlevel: 61,
-        movespeed: 335,
-        armor: 20.88,
-        armorperlevel: 3.5,
-        spellblock: 30,
-        spellblockperlevel: 0,
-        attackrange: 450,
-        hpregen: 6.42,
-        hpregenperlevel: 0.55,
-        mpregen: 6,
-        mpregenperlevel: 0.8,
-        crit: 0,
-        critperlevel: 0,
-        attackdamage: 45.66,
-        attackdamageperlevel: 3.25,
-        attackspeedoffset: 0,
-        attackspeedperlevel: 2.11
-      }
-    },
-    Leblanc: {
-      version: "6.24.1",
-      id: "Leblanc",
-      key: "7",
-      name: "LeBlanc",
-      title: "the Deceiver",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Leblanc.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
-      blurb:
-        "Every city has its dark side, even one whose reputation is already of a questionable hue. Noxus - though its name is already invoked with a mixture of reverence and revulsion - is no exception to this simple truth. Deep within the winding dungeons ...",
-      info: {
-        attack: 1,
-        defense: 4,
-        magic: 10,
-        difficulty: 9
-      },
-      image: {
-        full: "Leblanc.png",
-        sprite: "champion1.png",
-        group: "champion",
-        x: 240,
-        y: 96,
-        w: 48,
-        h: 48
-      },
-      tags: ["Assassin", "Mage"],
-      partype: "MP",
-      stats: {
-        hp: 516,
+        hp: 514.4,
         hpperlevel: 80,
-        mp: 334,
-        mpperlevel: 50,
+        mp: 366.96,
+        mpperlevel: 44,
         movespeed: 340,
         armor: 21.88,
         armorperlevel: 3.5,
         spellblock: 30,
         spellblockperlevel: 0,
         attackrange: 525,
-        hpregen: 7.4,
+        hpregen: 5.42,
         hpregenperlevel: 0.55,
         mpregen: 6,
         mpregenperlevel: 0.8,
         crit: 0,
         critperlevel: 0,
-        attackdamage: 54.88,
-        attackdamageperlevel: 3.5,
-        attackspeedoffset: 0,
-        attackspeedperlevel: 1.4
-      }
-    },
-    Ryze: {
-      version: "6.24.1",
-      id: "Ryze",
-      key: "13",
-      name: "Ryze",
-      title: "the Rune Mage",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ryze.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg",
-      blurb:
-        "''Take care with this world. What is made can be unmade.''<br><br>Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden to bear. Armed with a boundless constitution and ...",
-      info: {
-        attack: 2,
-        defense: 2,
-        magic: 10,
-        difficulty: 7
-      },
-      image: {
-        full: "Ryze.png",
-        sprite: "champion2.png",
-        group: "champion",
-        x: 336,
-        y: 96,
-        w: 48,
-        h: 48
-      },
-      tags: ["Mage", "Fighter"],
-      partype: "MP",
-      stats: {
-        hp: 558.48,
-        hpperlevel: 86,
-        mp: 400,
-        mpperlevel: 50,
-        movespeed: 340,
-        armor: 21.552,
-        armorperlevel: 3,
-        spellblock: 30,
-        spellblockperlevel: 0,
-        attackrange: 550,
-        hpregen: 7,
-        hpregenperlevel: 0.55,
-        mpregen: 6,
-        mpregenperlevel: 0.8,
-        crit: 0,
-        critperlevel: 0,
-        attackdamage: 55.04,
+        attackdamage: 54.7,
         attackdamageperlevel: 3,
         attackspeedoffset: 0,
-        attackspeedperlevel: 2.112
+        attackspeedperlevel: 1.36
       }
     },
   }
 };
-
 const newArrayInfo = window.lol.showData(LOL.data);
-
 //Test que confirma que window.lol es un objeto
 describe('window.lol', () => {
   it('is an object', () => {
@@ -518,45 +677,106 @@ describe('window.lol', () => {
 
 //Test de la función para filtrar por rol
 describe('filterByRol', () => {
+
   it('is a function', () => {
     expect(typeof window.lol.filterByRol).toBe('function');
+  });
+  it('Should returns the object Aatrox if we select Fighter', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Fighter')[0].name).toEqual('Aatrox');
+  });
+  it('Should returns the object Master Yi if we select Fighter', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Fighter')[2].name).toEqual('Master Yi');
+  });
+  it('Should returns the object Ahri if we select Mage', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Mage')[0].name).toEqual('Ahri');
+  });
+  it('Should returns the object Xerath if we select Mage', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Mage')[4].name).toEqual('Xerath');
+  });
+  it('Should returns the object Akali if we select Assassin', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Assassin')[1].name).toEqual('Akali');
+  });
+  it('Should returns the object Ahri if we select Assassin', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Assassin')[0].name).toEqual('Ahri');
+  });
+  it('Should returns the object Alistar if we select Support', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Support')[0].name).toEqual('Alistar');
+  });
+  it('Should returns the object Bardo if we select Support', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Support')[2].name).toEqual('Bard');
+  });
+  it('Should returns the object Amumu if we select Tank', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Tank')[2].name).toEqual('Amumu');
   });
   it('Should returns the object Aatrox if we select Tank', () => {
     expect(window.lol.filterByRol(newArrayInfo, 'Tank')[0].name).toEqual('Aatrox');
   });
-  it('Should returns the object Ahri if we select Assassin', () => {
-    expect(window.lol.filterByRol(newArrayInfo, 'Assassin')[0].name).toEqual('Ahri');
+  it('Should returns the object Caitlyn if we select Marksman', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Marksman')[2].name).toEqual('Caitlyn');
+  });
+  it('Should returns the object Ashe if we select Marksman', () => {
+    expect(window.lol.filterByRol(newArrayInfo, 'Marksman')[0].name).toEqual('Ashe');
   });
 });
 
 // Test de la función para ordenar por ataque
 describe('sorterByAttack', () => {
+
   it('is a function', () => {
     expect(typeof window.lol.sorterByAttack).toBe('function');
   });
-  it('Should return the object Fiora if we select sort by Attack', () => {
-    expect(window.lol.sorterByAttack(newArrayInfo, 'attack')[0].name).toEqual('Fiora');
+  it('Should return the object Bard if we select sort by Attack', () => {
+    expect(window.lol.sorterByAttack(newArrayInfo, 'attack')[9].name).toEqual('Bard');
   });
-  it('Should return the object Master Yi if we select sort by Attack', () => {
-    expect(window.lol.sorterByAttack(newArrayInfo, 'attack')[2].name).toEqual('Master Yi');
+  it('Should return the object Ashe if we select sort by Attack', () => {
+    expect(window.lol.sorterByAttack(newArrayInfo, 'attack')[5].name).toEqual('Ashe');
+  });
+  it('Should return the object Caitlyn if we select sort by Attack', () => {
+    expect(window.lol.sorterByAttack(newArrayInfo, 'attack')[4].name).toEqual('Caitlyn');
+  });
+  it('Should return the object Xerath if we select sort by Attack', () => {
+    expect(window.lol.sorterByAttack(newArrayInfo, 'attack')[12].name).toEqual('Xerath');
+  });
+  it('Should return the object Jhin if we select sort by Attack', () => {
+    expect(window.lol.sorterByAttack(newArrayInfo, 'attack')[1].name).toEqual('Jhin');
   });
 });
 
 // Test de la función para ordenar por magia
 describe('sorterByMagic', () => {
+
   it('is a function', () => {
     expect(typeof window.lol.sorterByMagic).toBe('function');
   });
-  it('Should return the object LeBlanc if we select sort by Magic', () => {
-    expect(window.lol.sorterByMagic(newArrayInfo, 'magic')[3].name).toEqual('LeBlanc');
+  it('Should return the object Bard if we select sort by Magic', () => {
+    expect(window.lol.sorterByMagic(newArrayInfo, 'magic')[7].name).toEqual('Bard');
   });
-  
+  it('Should return the object Fiora if we select sort by Magic', () => {
+    expect(window.lol.sorterByMagic(newArrayInfo, 'magic')[11].name).toEqual('Fiora');
+  });
+  it('Should return the object Jhin if we select sort by Magic', () => {
+    expect(window.lol.sorterByMagic(newArrayInfo, 'magic')[5].name).toEqual('Jhin');
+  });
+  it('Should return the object Master Yi if we select sort by Magic', () => {
+    expect(window.lol.sorterByMagic(newArrayInfo, 'magic')[12].name).toEqual('Master Yi');
+  });
 });
 
 // Test de la función para ordenar por defensa
 describe('sorterByDefense', () => {
+
+  const newArrayInfo = window.lol.showData(LOL.data);
   it('is a function', () => {
     expect(typeof window.lol.sorterByDefense).toBe('function');
+  });
+  it('Should return the object Alistar if we select sort by Defense', () => {
+    expect(window.lol.sorterByDefense(newArrayInfo, 'Defense')[0].name).toEqual('Alistar');
+  });
+  it('Should return the object Amumu if we select sort by Defense', () => {
+    expect(window.lol.sorterByDefense(newArrayInfo, 'Defense')[1].name).toEqual('Amumu');
+  });
+  it('Should return the object Bardo if we select sort by Defense', () => {
+    expect(window.lol.sorterByDefense(newArrayInfo, 'Defense')[4].name).toEqual('Bard');
   });
 });
 
@@ -564,5 +784,14 @@ describe('sorterByDefense', () => {
 describe('filterByName', () => {
   it('is a function', () => {
     expect(typeof window.lol.filterByName).toBe('function');
+  });
+  it('Should return the object Jhin if we search by J', () => {
+    expect(window.lol.filterByName(newArrayInfo, 'J')[0].name).toEqual('Jhin');
+  });
+  it('Should return the object Fiora if we search by F', () => {
+    expect(window.lol.filterByName(newArrayInfo, 'F')[0].name).toEqual('Fiora');
+  });
+  it('Should return the object Ashe if we search by As', () => {
+    expect(window.lol.filterByName(newArrayInfo, 'As')[0].name).toEqual('Ashe');
   });
 });
