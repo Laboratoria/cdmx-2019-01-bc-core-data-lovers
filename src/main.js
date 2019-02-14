@@ -1,4 +1,4 @@
-// const dataToSearch = window.INJURIES;
+const dataToSearch = window.INJURIES;
 
 const bottonstByMode = Array.from(document.getElementsByClassName('button-transport'));
 const contentByMode = Array.from(document.getElementsByClassName('infoBody'));
@@ -39,14 +39,21 @@ function printDataInHTML(year, number, tableToPrint, canPrint) {
     tableToPrint.insertAdjacentHTML('beforeend', `<tr><td>${year}</td><td>${number}</td></tr>`);
   }}
 
-// // Declaramos las variables de la sección de Year
-// let selectedYear = document.getElementById('selected_year');
-// let visualizeData = document.getElementById('visualize_data');
-// //let resultGraphic = document.getElementById('result_graphic');
-// //Función para que al evento de click sobre el botón de Visualize Data
-// visualizeData.addEventListener("click", () => {
-//   let yearValue = selectedYear.value;
-//   const resultData = window.data.consult(dataToSearch, yearValue);
-//   //console.log(resultData)
-//   resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
-// });
+  // Declaramos las variables de la sección de Year
+  let selectedYear = document.getElementById('selected_year');
+  let visualizeData = document.getElementById('visualize_data');
+  let resultGraphic = document.getElementById('result_graphic');
+  // let indicator = document.getElementsByName();
+
+
+  //Función para que al evento de click sobre el botón de Visualize Data
+  visualizeData.addEventListener("click", () => {
+   let yearValue = selectedYear.value;
+   const resultData = window.data.consult(dataToSearch, yearValue);
+   // console.log(resultData)
+   //con el método Object.values convertimos en arreglo el objeto resultData y sólo nos devuelve los valores
+   let arrayData = Object.values(resultData);
+   // console.log(arrayData);
+   resultGraphic.innerHTML = `<b>Year:  </b>${selectedYear.value.substr(0,4)}<br><br><b>Pedestrians:  </b>${arrayData[0]} <br><b>Bikecyclists:  </b>${arrayData[1]} <br><b>Bus Occupants:  </b>${arrayData[2]} <br><b>Car Occupants:  </b>${arrayData[3]} <br><b>Motorcyclists:  </b>${arrayData[4]}`;
+   return arrayData;
+   });

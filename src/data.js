@@ -1,12 +1,8 @@
 /*global INJURIES: true*/
 
-/*eslint no-undef: "error"*/
-
 /*fetch('./data/injuries/injuries.json').then((injuries) => injuries.json()).then((injuries) => {
   return console.log(injuries)
 });*/
-
-// let INJURIES = ('./data/injuries/injuries.js')
 
 window.data = {
   dataKeys: [
@@ -27,7 +23,7 @@ window.data = {
     }
     return dataToReturn;
   },
-  
+
   consult: (dataToSearch, yearValue) => {
     const dataByYear = dataToSearch.find(element => element.Year === yearValue);
     const newDataByYear = {};
