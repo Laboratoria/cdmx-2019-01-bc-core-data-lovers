@@ -2,7 +2,7 @@ window.data = {
 
   showAllData: (dataPokemon) => {
     //const completeData = dataPokemon.map(({name,img}) => [name, img]);
-    const completeData = dataPokemon.map(({id,name,img}) => ({id,name,img}));
+    const completeData = dataPokemon.map(({id,name,img,height,weight,candy,egg,type}) => ({id,name,img,height,weight,candy,egg,type}));
     return completeData;
   },
 
@@ -67,9 +67,10 @@ window.data = {
         arrayCandys.push(element[valueItem])
       }
     });
-    
+
     const sum = arrayCandys.reduce((prev, next) => prev + next);
-    result.average = sum / arrayCandys.length;
+    const averageComplete = sum / arrayCandys.length;
+    result.average = parseFloat(averageComplete.toFixed(2));
     result.minimum = Math.min.apply(null,arrayCandys);
     result.maximum = Math.max.apply(null,arrayCandys);
 
