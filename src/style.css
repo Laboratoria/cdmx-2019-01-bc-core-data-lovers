@@ -7,6 +7,11 @@ article {
   display: table-cell;
 }
 
+aside {
+  width: 30%;
+  display: table-cell;
+}
+
 body {
   background: url("images/usa.png") no-repeat center top fixed;
   background-size: 80%;
@@ -55,6 +60,14 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   font-size: 1em;
+}
+
+h4 {
+  font-family: 'Roboto';
+ color: #fff;
+ text-align: justify;
+ width: 60%;
+ margin-left: 13%;
 }
 
 p {
