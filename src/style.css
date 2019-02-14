@@ -46,93 +46,55 @@ figure {
 
 .menu_list {
   list-style: none;
+  font-family: sans-serif;
 }
 
 .nav__item {
-  display: block;
-  width: 70%;
-  margin: 0 auto;
-  line-height: 4;
-  position: relative;
-  /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
-  border-bottom: .5px solid rgba(59, 62, 61, 1);
-  border-top: .5px solid rgba(59, 62, 61, 1);
-  background-color: transparent;
-  color: rgba(221, 231, 228, 1);
-}
-
-.current:before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-top: 17px solid transparent;
-  border-left: 15px solid #1D2120;
-  border-bottom: 17px solid transparent;
-  top: 12px;
-  right: 166px;
-  z-index: 4;
-  /*le otorgamos un z-index alto para que se posicione arriba de otros elementos*/
-}
-
-.current:after {
-  content: "";
-  width: -33px;
-  height: -1px;
-  position: absolute;
-  /*Le damos al after una posición absoluta relativa al li que lo contiene*/
-  border-top: 16.5px solid transparent;
-  border-left: 17px solid rgb(235, 0, 139);
-  border-bottom: 17px solid transparent;
-  top: 12.5px;
-  right: 161px;
-  z-index: 1;
-  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
-}
+     display:block;
+     width:70%;
+     margin:0 auto;
+     line-height:4;
+     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+     border-bottom:.5px solid rgba(59, 62, 61, 1);
+     border-top:.5px solid rgba(59, 62, 61, 1);
+     background-color:transparent;
+     color:rgba(221, 231, 228, 1);
+   }
 
 .menu-toogle {
   position: absolute;
-  /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
-  line-height: 1.1;
+  line-height: 1.5;
   text-align: center;
-  top: 6.5px;
-  /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
-  right: 8px;
+  top: 4px;
+  right: 3%;
   border-radius: 3px;
   background-color: transparent;
   transition: all .5s ease;
-  /*Añadimos una transición para que realice un desplazamineto suave*/
   z-index: 10;
-}
+  }
 
-.menu-toogle::before {
-  content: ;
-  font-size: 32px;
-  color: white;
-}
+  .menu-toogle::before {
+    content: "☰";
+   font-size: 45px;
+   color: #eb008b;
+   }
 
-.checkbox {
-  float: right;
-  /*Ocultamos el checkbox pues no nos interesa que se vea*/
-}
+   .checkbox {
+     float: right;
+      display: none;/*Ocultamos el checkbox pues no nos interesa que se vea*/
+   }
+   .checkbox:checked ~ .sidebar {
+     right:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+     position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+   }
+   .checkbox:checked ~ .main-w {
+     margin-right:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+   }
+   .checkbox:checked ~ .menu-toogle {
+     right:208px;
+     position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+   }
 
-.checkbox:checked~.sidebar {
-  right: 0px;
-  /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
-  position: fixed;
-  /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
-}
-
-.checkbox:checked~.main-w {
-  margin-right: 200px;
-  /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
-}
-
-.checkbox:checked~.menu-toogle {
-  right: 208px;
-  position: fixed;
-  /*Fijamos la hamburgues para que se desplace junto con el menú*/
-}
 
 
 .info {
@@ -144,7 +106,23 @@ figure {
   color: white;
   text-align: justify;
   font-family: sans-serif;
+  padding: 7%;
+  font-kerning: none;
+}
+
+.button1{
+  text-align: center;
+  background: #231f20;
+  width: 50%;
+  height: auto;
+  border-radius: 4%;
   padding: 5%;
+  margin: 5% 15% 7% 15%;
+}
+
+#consulta{
+  color: white;
+  text-decoration: none;
 }
 
 .button {
@@ -183,7 +161,7 @@ p {
   color: white;
   font-family: sans-serif;
   text-align: justify;
-  padding: 3%;
+  padding: 10%;
   font-size: 14px;
   margin: 0;
 }
@@ -257,6 +235,10 @@ p {
   align-content: center;
   margin-block-start: 0%;
   vertical-align: bottom;
+}
+
+.question{
+  padding: 1%;
 }
 
 footer {
@@ -360,139 +342,190 @@ footer {
     padding-top: 8%;
   }
 
-  /*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
 
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .menu {
+    width: 6%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 8%;
+    margin-left: 63%;
+  }
 
-  @media (min-width: 1025px) and (max-width: 1380px) {
-    .menu {
-      width: 6%;
-      height: auto;
-      vertical-align: top;
-      padding: 0;
-      padding-top: 8%;
-      margin-left: 63%;
-    }
+  .logo {
+    width: 8%;
+    height: auto;
+    padding: 3%;
+  }
 
-    .logo {
-      width: 8%;
-      height: auto;
-      padding: 3%;
-    }
+  .info {
 
-    .info {
+    background-color: #eb008b;
+    width: auto;
+    height: 100%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+  }
 
-      background-color: #eb008b;
-      width: auto;
-      height: 100%;
-      margin-block-end: 0%;
-      margin-block-start: 0%;
-      color: white;
-      text-align: center;
-      font-family: sans-serif;
-      padding: 2%;
-    }
+  .logo {
+    width: 6%;
+    height: auto;
+    padding: 1%;
+    display: none;
+  }
+#extend{
+  display: inline-block;
+  width: 6%;
+  height: auto;
+  padding: 1%;
+  display: none;
+}
+  .menu {
+    width: 6%;
+    height: auto;
+    vertical-align: top;
+    padding: 2%;
+    padding-top: 2%;
+    float: right;
+  }
 
-    .logo {
-      width: 6%;
-      height: auto;
-      padding: 1%;
-    }
+  #extend{
+    display: none;
+  }
 
-    .menu {
-      width: 6%;
-      height: auto;
-      vertical-align: top;
-      padding: 2%;
-      padding-top: 2%;
-      float: right;
-    }
-
-
-    /*
+  .sidebar {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -1557px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
+  }
+}
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
-      .menu {
-        width: 5%;
-        height: auto;
-        vertical-align: top;
-        padding: 0;
-        padding-top: 5%;
-        margin-left: 63%;
-      }
+   .menu {
+    width: 5%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 5%;
+    margin-left: 63%;
+}
 
-      .logo {
-        width: 8%;
-        height: auto;
-        padding: 3%;
-      }
+  .logo {
+    width: 8%;
+    height: auto;
+    padding: 3%;
+  }
 
-      .info {
+  .info {
 
-        background-color: #eb008b;
-        width: auto;
-        height: 100%;
-        margin-block-end: 0%;
-        margin-block-start: 0%;
-        color: white;
-        text-align: center;
-        font-family: sans-serif;
-        padding: 2%;
-      }
+    background-color: #eb008b;
+    width: auto;
+    height: 100%;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+  }
 
-      .icon {
-        display: inline-block;
-        width: 15%;
-        height: auto;
-        padding: 5%;
-        margin-left: 3%;
-      }
+  .icon {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    padding: 5%;
+    margin-left: 3%;
+  }
+  #extend{
+    display: none;
+  }
 
-      /*
+  .sidebar {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -656px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
+  }
+}
+/*
+
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-      @media (min-width: 300px) and (max-width: 767px) {
-        .menu {
-          width: 8%;
-          height: auto;
-          vertical-align: top;
-          padding: 0;
-          padding-top: 8%;
-          margin-left: 63%;
-        }
+@media (min-width: 300px) and (max-width: 767px) {
+  .menu {
+    width: 8%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    padding-top: 8%;
+    margin-left: 63%;
+  }
 
-        .logo {
-          width: 10%;
-          height: auto;
-          padding: 3%;
-        }
+  .logo {
+    width: 10%;
+    height: auto;
+    padding: 3%;
+  }
 
-        .info {
+  .info {
 
-          background-color: #eb008b;
-          width: auto;
-          height: 100%;
-          margin-block-end: 0%;
-          margin-block-start: 0%;
-          color: white;
-          text-align: center;
-          font-family: sans-serif;
-          padding: 2%;
-        }
+    background-color: #eb008b;
+    width: auto;
+    height: 100%;
+    margin-block-end: 0%;
+    margin-block-start: 10%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+  }
 
-        .icon {
-          display: inline-block;
-          width: 20%;
-          height: auto;
-          padding: 5%;
-          margin-left: 3%;
-          text-align: center
-        }
+  .icon {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    padding: 5%;
+    margin-left: 3%;
+    text-align: center
+  }
+
+#extend{
+  display: none;
+}
+
+.sidebar {
+position: absolute;
+width: 200px;
+height: 100vh;
+top: 0;
+right: -435px;
+padding-top: 47px;
+background-color: rgba(29, 33, 32, 1);
+border-left: 4px solid rgb(235, 0, 139);
+transition: all .5s ease;
+}
+
+}
