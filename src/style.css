@@ -113,7 +113,7 @@ margin-right: -40px;
     /* left:400px; */
     /* top: -193px; */
 
-/* 
+/*
   /* } */
 
   /* .topnav.responsive .active{
@@ -128,8 +128,25 @@ margin-right: -40px;
   } */
 
 
-@media screen and (max-width: 600px) {
-}
+  .divPokemon{
+      position: relative;
+      background-image: url(../src/assets/img/cajita.png);
+      background-size: cover;
+      background-position: center center;
+      height: 200px;
+      width: 100px;
+
+      /* font-family: Pokemon-Solid; */
+      color: rgb(65, 37, 43);
+      display: inline-block;
+      padding: 5%;
+      margin: 5%;
+      border-radius: 10%;
+
+  }
+
+
+
 .divPokemon{
     position: relative;
     background-image: url(../src/assets/img/cajita.png);
@@ -137,17 +154,21 @@ margin-right: -40px;
     background-position: center center;
     height: 200px;
     width: 100px;
-   
+
     /* font-family: Pokemon-Solid; */
     color: rgb(65, 37, 43);
     display: inline-block;
     padding: 5%;
-    margin: 5%;
+    margin: 3%;
+    margin-left: 10%;
     border-radius: 10%;
 
 }
 
-.namePokemon{
+
+
+
+/* .namePokemon{
     font-size: 63%;
     letter-spacing: 1px;
     margin-top: 50%;
@@ -155,7 +176,7 @@ margin-right: -40px;
     margin-bottom: 60%;
     font-family: 'Indie Flower', cursive;
 
-}
+} */
 
 
 .divPokemon img{
@@ -179,15 +200,24 @@ position:absolute;
 }
 
 .namePokemon{
-margin-top: 20%;
-
+  font-family: 'Indie Flower', cursive;
+  font-size: 63%;
+  letter-spacing: 1px;
+margin-top: 60%;
+margin-left: -40%;
 text-align: center
 
 
 }
 
 .styleButtonNext{
-  
+  display: block;
+position: absolute;
+right: 44%;
+top:190px;
+size: auto;
+border-width: 2px;
+border-color: #000;
   border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
   -webkit-border-radius: 50% 50% 50% 50%;
@@ -198,7 +228,11 @@ text-align: center
   font-family: Pokemon-Solid;
   color: rgb(12, 10, 1);
   font-size: 2vw;
-  padding: 20px ;
+  padding: 2.5% ;
+  margin:0;
+  /* margin-left: 30px; */
+  /* margin-top: 2%; */
+  /* margin-right: 0%; */
 }
 
 .styleButtonNext:hover{
@@ -228,6 +262,7 @@ text-align: center
 }
 
 #navs{
+background-image: url(../src/assets/img/2.jpg);
   display:none;
 }
 
@@ -344,6 +379,7 @@ margin-top: 15%;
 
 #pokemons{
   background-image: black;
+
 }
 #serch{
   background-image: url(../src/assets/img/2.jpg);
@@ -352,12 +388,12 @@ margin-top: 15%;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    
+
     position: relative;
     display: inline-block;
     display: none;
     overflow: auto;
-    
+
 }
 
 .bottonPokemons{
@@ -371,12 +407,17 @@ width:10%;
     height: 7em;
     margin-top:-32%;
     margin-left: 8%;
-    display: inline-block;
+    display:inline-block;
 }
+
+
+
 
 .logo{
-  width: 40%;
-  display: inline-block;
+  position: absolute;
+  left: 28%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 40vw;
 }
-
-
