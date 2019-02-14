@@ -168,7 +168,7 @@ margin-right: -40px;
 
 
 
-.namePokemon{
+/* .namePokemon{
     font-size: 63%;
     letter-spacing: 1px;
     margin-top: 50%;
@@ -176,7 +176,7 @@ margin-right: -40px;
     margin-bottom: 60%;
     font-family: 'Indie Flower', cursive;
 
-}
+} */
 
 
 .divPokemon img{
@@ -200,15 +200,24 @@ position:absolute;
 }
 
 .namePokemon{
-margin-top: 20%;
-
+  font-family: 'Indie Flower', cursive;
+  font-size: 63%;
+  letter-spacing: 1px;
+margin-top: 60%;
+margin-left: -40%;
 text-align: center
 
 
 }
 
 .styleButtonNext{
-
+  display: block;
+position: absolute;
+right: 44%;
+top:190px;
+size: auto;
+border-width: 2px;
+border-color: #000;
   border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
   -webkit-border-radius: 50% 50% 50% 50%;
@@ -219,7 +228,11 @@ text-align: center
   font-family: Pokemon-Solid;
   color: rgb(12, 10, 1);
   font-size: 2vw;
-  padding: 20px ;
+  padding: 2.5% ;
+  margin:0;
+  /* margin-left: 30px; */
+  /* margin-top: 2%; */
+  /* margin-right: 0%; */
 }
 
 .styleButtonNext:hover{
@@ -401,6 +414,10 @@ width:10%;
 
 
 .logo{
-  width: 40%;
-  display: inline-block;
+  position: absolute;
+  left: 28%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 40vw;
 }
