@@ -1,12 +1,40 @@
-document.getElementById("next").addEventListener("click", () => {
-  document.getElementById("serch").style.display = "block";
-  document.getElementById("main").style.display = "none";
-  imprimir(dataPokemon);
-})
-var POKEMON;
+document.getElementById("next").addEventListener("click", ()=>{
+    
+    document.getElementById("navs").style.display="none";
+    document.getElementById("serch").style.display="block";
+    document.getElementById("main").style.display="none";
+
+    imprimir(dataPokemon);
+  })
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  // var i = 0;
+  // var pokemonName = ; /* The text */
+  // var speed = 50; /* The speed/duration of the effect in milliseconds */
+  
+  // function typeWriter(dataPokemon) {
+  //   if (i < pokemonName.length) {
+  //     document.getElementById("demo").innerHTML += txt.charAt(i);
+  //     i++;
+  //     setTimeout(typeWriter, speed);
+  //   }
+  // }
+
+
+ var POKEMON;
+
 const dataPokemon = POKEMON.pokemon;
 const buttonTypes = Array.from(document.getElementsByClassName("bottonPokemons"));
 const buttonOrder = Array.from(document.getElementsByClassName("sortTipo"));
+
 
 
 
@@ -63,7 +91,10 @@ const imprimir = (obtenerTipo) => {
 
   obtenerTipo.map((dataPokemon) => {
 
-    pokemons.innerHTML += `<div class="divPokemon" "><figure class="imgPokemon"><img src="${dataPokemon.img}"></figure>
+
+
+   pokemons.innerHTML+= `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure>
+
                        <p class="namePokemon" id="nameCenter"> Nombre:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
 
 
