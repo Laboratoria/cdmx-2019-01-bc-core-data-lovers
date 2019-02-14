@@ -76,7 +76,7 @@ sorterByDefense: (newArrayChamp) => {
 return defenseSorter;
 },
 
-  filterByName: (name2, newArrayChamp) => {
+  filterByName: (newArrayChamp, name2) => {
       const filteringName = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
     return filteringName;
   }

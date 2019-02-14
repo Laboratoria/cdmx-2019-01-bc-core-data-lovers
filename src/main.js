@@ -36,7 +36,7 @@ search.addEventListener('keyup', () => {
   let name2 = search.value;
   // let search3 = searchByName.toLowerCase();
   const newArrayChamp = window.lol.showData(lolData);
-  let filtered = window.lol.filterByName(name2, newArrayChamp);
+  let filtered = window.lol.filterByName(newArrayChamp, name2);
   if (name2 == "" ) {
     printData(newArrayChamp);
   } else {
@@ -52,7 +52,7 @@ const selectRol = () => {
       const newArrayChamp = window.lol.showData(lolData);
       const arrayFiltered = window.lol.filterByRol(newArrayChamp, rolId);
       printData(arrayFiltered);
-      
+
     })
   }
 }
