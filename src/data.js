@@ -19,5 +19,8 @@ window.data = {
       } //For IF
     } // For
     return [yearResult, userResult];
-  } //Consult
+  }, //Consult
+
+
+
 }; //window
