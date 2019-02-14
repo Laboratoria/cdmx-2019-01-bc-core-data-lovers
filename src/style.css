@@ -105,17 +105,17 @@ transition: all .5s ease;
   color: white;
   text-align: justify;
   font-family: sans-serif;
-  padding: 5%;
+  padding: 7%;
   font-kerning: none;
 }
 
 .button1{
   text-align: center;
   background: #231f20;
-  width: 24%;
+  width: 50%;
   height: auto;
-  border-radius: 8%;
-  padding: 2%;
+  border-radius: 4%;
+  padding: 5%;
   margin: 5% 15% 7% 15%;
 }
 
@@ -150,7 +150,7 @@ p {
   color: white;
   font-family: sans-serif;
   text-align: justify;
-  padding: 3%;
+  padding: 10%;
   font-size: 14px;
   margin: 0;
 }
@@ -217,6 +217,10 @@ p {
   align-content: center;
   margin-block-start: 0%;
   vertical-align: bottom;
+}
+
+.question{
+  padding: 1%;
 }
 
 footer {
@@ -325,12 +329,13 @@ footer {
   width: 200px;
   height: 100vh;
   top: 0;
-  right: -205px;
+  right: -680px;
   padding-top: 47px;
   background-color: rgba(29, 33, 32, 1);
   border-left: 4px solid rgb(235, 0, 139);
   transition: all .5s ease;
   }
+}
 /*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
@@ -397,12 +402,13 @@ footer {
   width: 200px;
   height: 100vh;
   top: 0;
-  right: -680px;
+  right: -1557px;
   padding-top: 47px;
   background-color: rgba(29, 33, 32, 1);
   border-left: 4px solid rgb(235, 0, 139);
   transition: all .5s ease;
   }
+}
 /*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
@@ -454,12 +460,13 @@ footer {
   width: 200px;
   height: 100vh;
   top: 0;
-  right: -205px;
+  right: -656px;
   padding-top: 47px;
   background-color: rgba(29, 33, 32, 1);
   border-left: 4px solid rgb(235, 0, 139);
   transition: all .5s ease;
   }
+}
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -487,7 +494,7 @@ footer {
     width: auto;
     height: 100%;
     margin-block-end: 0%;
-    margin-block-start: 0%;
+    margin-block-start: 10%;
     color: white;
     text-align: center;
     font-family: sans-serif;
@@ -512,9 +519,11 @@ position: absolute;
 width: 200px;
 height: 100vh;
 top: 0;
-right: -205px;
+right: -435px;
 padding-top: 47px;
 background-color: rgba(29, 33, 32, 1);
 border-left: 4px solid rgb(235, 0, 139);
 transition: all .5s ease;
+}
+
 }
