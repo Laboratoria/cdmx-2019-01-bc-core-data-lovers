@@ -68,11 +68,11 @@ selOption.addEventListener('change',filtraIndPais); //funcion recorre el objeto
 
 const recorrerObjeto = (pais)=>{  
 
-let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
+let respuesta="<li>"+"<font size=4>"+"<b>"+"Año"+"Valor(%)."+"</font>"+"</li>"+"</b>"+"<br>";
 
  for (let i in pais) //for iteracon cada elemento del objeto que se almacena en la variable pais
   {
-    respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
+    respuesta+="<li>"+"<b>"+i+":  "+"   "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
    }
     for (let i in pais) 
     {//recorre objeto para pasar el año a nuevo arrego de eje X
