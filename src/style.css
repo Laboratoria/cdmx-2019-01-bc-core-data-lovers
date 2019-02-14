@@ -256,7 +256,9 @@ img {
 }
 
 .background-modal {
-  background-color: blue;
+  background-image: url(./imagenes/garen.jpg);
+  background-position: center;
+  background-size: cover; 
   width: 100%;
   height: 50%;
   border-top-color: #efc056;
