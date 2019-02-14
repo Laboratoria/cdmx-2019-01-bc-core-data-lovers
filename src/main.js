@@ -102,6 +102,17 @@ for (let radioItem in radioFilters){
   })
 }
 
+const avg = document.getElementById("avg");
+avg_result = document.getElementById("avg_result");
+avg.addEventListener("click", () => {
+  avg_result.innerHTML = '<p>g</p>'
+  const resultado = window.WorldBank.computeStats()
+  //avg_result.innerHTML = resultado
+  for (let resultadoValor in resultado) { 
+  indicator.insertAdjacentHTML('beforeend', `${resultado[resultadoValor]}`)
+  }
+});
+
 
 
 
