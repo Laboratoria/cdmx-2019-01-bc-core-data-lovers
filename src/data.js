@@ -21,6 +21,6 @@ window.data = {
     return [yearResult, userResult];
   }, //Consult
 
-
+order: (injuriesBy, )
 
 }; //window
