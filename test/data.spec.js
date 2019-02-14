@@ -34,8 +34,7 @@ describe('example', () => {
 
     it('Deberia devolver el obj Alistar si es igual a Tank',()=>{
       expect(window.lol.filtroDataRoles('Tank',window.lol.dataToArray )).toEqual(window.dataToArray.Alistar.tags[0])
-    })
- });
+    });
 
 
 describe('filtoDataRoles', () => {
@@ -180,5 +179,4 @@ describe('filtoDataRoles', () => {
     
   });
 
-  });
 
