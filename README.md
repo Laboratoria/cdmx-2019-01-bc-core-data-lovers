@@ -10,7 +10,7 @@ Cuando él era un niño, le gustaba atrapar insectos y renacuajos. Por supuesto,
 
 Con más de **300 millones** de copias vendidas alrededor del mundo, Comic Book nombró a Pokémon como la marca más rentable del ocio al obtener 59 billones de dólares de ganancias desde su creación. Esta impresionante cifra llega de mano de sus videojuegos (tanto de móviles y de consolas) como de su experiencia en películas y series, más no de juguetes y productos relacionados.
 
-##GENERACIÓN 1 – KANTO – 27 DE FEBRERO DE 1996.
+## GENERACIÓN 1 – KANTO – 27 DE FEBRERO DE 1996.
 
 Los primeros juegos fueron Pokémon Red y Pokémon Green en GameBoy para Japón. En América fue la versión roja y azul en 1999. El sueño de Satoshi Tajiri había sido cumplido, los demás podían experimentar su pasión por los bichos, permitiéndoles atrapar hasta 151 Pokémon en los juegos.
 
@@ -60,6 +60,7 @@ Sin duda Crhistian busca una app completa y con una interfaz amigable para que l
 
 ### Diseño de la Interfaz de Usuario
 
+
 #### Prototipo de baja fidelidad
 
 (https://ibb.co/JrGRd47)
@@ -67,11 +68,14 @@ Sin duda Crhistian busca una app completa y con una interfaz amigable para que l
 
 #### Prototipo de alta fidelidad
 
+(https://ibb.co/S5ydJJW)
+
 
 #### Testeos de usabilidad
 
 
 ## Pre-requisitos e instalación
+
 1. Antes que nada, asegúrate de tener un editor de texto en
    condiciones, algo como [Atom](https://atom.io/),
    [Visual Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
@@ -94,6 +98,7 @@ Sin duda Crhistian busca una app completa y con una interfaz amigable para que l
    pruebas unitarias (unit tests) con el comando `npm run test`.
 
 ## Consideraciones técnicas
+
 Este proyecto está desarrollado con:
 - EMS6 JavaScript puro [JSVanilla](https://medium.com/laboratoria-developers/vanillajs-vs-jquery-31e623bbd46e).
 -CSS3
@@ -102,7 +107,10 @@ Este proyecto está desarrollado con:
 - Como gestor de proyecto se utilizó NPM (Node Package Manager) (https://www.npmjs.com/).
 
 ## Pruebas
-Las pruebas unitarias para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que las funciones relacionadas a la manipulación de la data. Funciones relacionadas con el filtrado, ordenamiento alfabético y operaciones relaciones al promedio de la data, están testeadas y las puedes encontrar en el la carpeta de test.
+
+Las pruebas unitarias para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que las funciones relacionadas a la manipulación de la data funcionen de manera óptima.
+
+Funciones relacionadas con el filtrado, ordenamiento alfabético y operaciones relaciones al promedio de la data, están testeadas y las puedes encontrar en el la carpeta de test.
 
 ## Autores
 - Ameyalli Brito González
