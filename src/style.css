@@ -227,6 +227,42 @@ img {
   text-align: center;
 }
 
+#modal-fun {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#close-fun {
+  color: white;
+  float: right;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+/* Contenido del modal */
+.modal-content {
+  display: block;
+  background-color: rgba(29, 33, 40);
+  margin: auto;
+  border: 0px;
+  width: 80%;
+  height: 80%;
+  padding-top: 52%;
+}
+
+.background-modal {
+  background-color: blue;
+  width: 100%;
+  height: 50%;
+  border-top-color: #efc056;
+  border-top-style: solid;
+}
+
 @media (min-width:992px) {
   article {
     margin-top: 50px;
@@ -325,40 +361,6 @@ img {
     width: 73%;
   }
 }
-
-#close-fun {
-  color: white; 
-}
-
-#modal-fun {
-  position: fixed;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  left: 0;
-  top: 0;
-  width: 90%;
-  height: 90%;
-  background-color: rgba(0,0,0,0.4);
-}
-
-/* Contenido del modal */
-.modal-content {
-  display: block;
-  background-color: rgba(29, 33, 40);
-  margin: auto;
-  border: 0px;
-  width: 80%;
-  height:80%
-}
-
-.background-modal {
-  background-color: red;
-  width: 100%;
-  height: 50%;
-  padding-top: 20%;
-}
-
 
 @media (min-width: 1200px){
   h3 {
