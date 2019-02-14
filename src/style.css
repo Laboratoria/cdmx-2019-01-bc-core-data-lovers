@@ -314,7 +314,7 @@ img {
     padding-bottom: 0px;
     padding-left: 25px;
     padding-top: 2px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
@@ -350,6 +350,6 @@ img {
   .drop-down li ul li ul {
     left: 100%;
     top: 0px;
-    width: 55%;
+    width: 73%;
   }
 }
