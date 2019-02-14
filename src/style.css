@@ -18,7 +18,7 @@ h2{
 }
 
 #pokemones, #filtered_out {
-    padding-top:15%;
+    /*padding-top:15%;*/
     margin-left: 1.5%; 
     flex-wrap: wrap;
     justify-content: center;
@@ -168,7 +168,7 @@ td{
 
 /*Fa:Tamaño para el logo de la pagina principal*/
 .widthLogData{ /* <-----**A este le cambimos el nombre*/
-    width:35%;
+    width:15%;
 }
 
 .logfixed{ 
