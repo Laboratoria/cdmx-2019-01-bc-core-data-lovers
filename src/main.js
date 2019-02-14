@@ -4,7 +4,6 @@ const buttonCountries = document.getElementsByClassName("button");
 const selectIndicator = document.getElementById("indicator");
 const dataYear = document.getElementById("data-year");
 
-
 const buttonClick = () => {
   let countries = event.target.id;
   let result = window.WorldBank.dataCountries(dataWorldbank, countries);
@@ -44,10 +43,9 @@ const printYears = (resultYear) => {
         indicatorDataYear = `<p>Año: <span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);   
       }
-        
-    }
-    
-  }
+}
+
+}
   
 //return result
 //dataYear.innerHTML=indicatorDataYear;

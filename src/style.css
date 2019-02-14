@@ -1,5 +1,5 @@
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -13,10 +13,10 @@ header {
   z-index: 10;
   position: fixed;
   width: 100%;
-  height: 15vh;
+  height: 12vh;
   left: 0px;
   top: 0px;
-  background: #F4F5F2;
+  background: rgb(255, 255, 255);
   background-size: cover;
 }
 
@@ -26,7 +26,7 @@ main {
 
 #home {
   padding: 2px;
-  height: 113vh;
+  height: 100vh;
   background: url(./assets/images/img_home_low.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ main {
 }
 
 button {
-  background-color: #FF3450;
+  background-color: grey;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   bottom: 27px;
   border-radius: 8px;
@@ -45,27 +45,31 @@ button {
   height: 50px;
   font-weight: bold;
   transform: translate(205px, 248px);
-
   color: #fff;
 }
 
 
+
 #countries {
   padding: 4px;
-  background: #F4F5F2;
   text-align: center;
+}
+
+
+#indicator {
+  
 }
 
 #conferencias {
   padding:6px;
-  background: #a5a5a5;
+  background: rgb(255, 255, 255);;
   text-align: center;
-  color:#ffff
+  color:#444444;
 }
 
 #contacto {
   padding:6px;
-  background: #FF3450;
+  background: #FFD252;
   text-align: center;
   color: #fff;
   font-size: 12px;
@@ -74,10 +78,12 @@ button {
 #logo {
   position: absolute;
   /*width: 43%;*/
-  height: 60px;
-  left: 14px;
-  top: 17px;
+  height: 50px;
+  left: 25px;
+  top: 20px;
+  cursor: pointer;
 }
+
 
 #filtrar-pais {
   background-color: #fff;
@@ -103,28 +109,55 @@ button {
 
 #text {
   position: relative;
-
   width: 397px;
   height: 31px;
-  left: 19px;
-  top: 101px;
+  left: 75px;
+  top: 8%;
   font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  font-size: 1.3em;
+  font-variant: small-caps;
   text-transform: uppercase;
-
-  color: #FFFFFF;
-
+  font-weight: 600; 
+  line-height: 29px;
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+  color: #466871;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  color: #444444;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+  color: #444444;
 }
 
-/*#indicator {
-  padding: 50px;
-  margin-top: -19px;
-  background: #F4F5F2;
-}*/
+.button-est {
+  position: relative;
+  left: 155px;
+  top: 100%;
+}
+
+#btn-est { 
+  /* position: relative; */
+  width: 170px;
+  height: 50px;
+  left: 0px;
+  border: 0px;
+  border-radius: 10px 0px 10px 0px;
+  background-color: #FFD252;
+  font-style: normal;
+  font-size: 1em;
+  letter-spacing: 0.4px;
+  mix-blend-mode: normal;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #444444;
+}
+
+#btn-est:hover {
+  color: white;
+  background-color: #FFD252;
+  opacity: 15%; 
+  border: 2px solid #FFD252;
+  color:#444444;
+}
 
 nav {
   width: 100%;
@@ -151,60 +184,23 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background: #FF3450;
+  /* background:#EC5A24;
   height: 3.9vh;
-  border-radius: 5px;
-  color: white;
+  border-radius: 2px; */
+  background: #FFD252;
+  transition: all 0.5s;
 }
 
 nav ul li a {
+  top: 27px;
   text-decoration: none;
-  color: black;
-  font-size: 20px;
+  color: #808080;
+  letter-spacing: 0.3px;
+  font-size: 15px;
 
 }
 
-/*.menu-icon {
-  width: 100%;
-  background: #000;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #fff;
-  display: inline-block;
-}*/
-
-
-
-/*@media(max-width: 580px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16 px;
-  }
-
-  nav ul {
-    max-height: 0px;
-    background: #000;
-  }
-
-  nav.black ul {
-    background: #000;
-  }
-
-  .showing {
-    max-height: 20em;
-  }
-
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px 0;
-    text-align: center;
-  }
-
-  .menu-icon {
-    display: block;
-    height: 10vh;
-  }*/
+nav ul li a:hover {
+  font-weight: 700;
+  color: #444444;
+}
