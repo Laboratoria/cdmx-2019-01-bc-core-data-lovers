@@ -18,6 +18,7 @@ for (let i = 0; i < buttonCountries.length; i++) {
 
 const printOption = (result) => {
   selectIndicator.innerHTML="";
+  dataYear.innerHTML="";
   const dataFilter = result.filter(indicator => {
     let printIndicatorName = indicator.indicatorName;
     let education = /educación/i
@@ -37,7 +38,7 @@ const printOption = (result) => {
 
 const printYears = (resultYear) => {
   let indicatorDataYear = "";
-  dataYear.innerHTML = "";
+    dataYear.innerHTML = "";
   for (const key in resultYear) {
     if (resultYear.hasOwnProperty(key)) {
       let element = resultYear[key];
