@@ -16,24 +16,66 @@ body,html{
   background-position: center center;
   background-attachment: fixed;
 }
-.button {
-  background-color: #efc056;
-  padding: 0;
-  border-radius: 8px;
-  font-size: 16px;
-}
-.menu{
-  background-color: #1a1a1f;
-}
-.menu ul{
-  font-size: 15px;
-  color: #e6bd38;
-}
+
 header{
   width: 100%;
+  background: rgba(0, 0, 0, 0.5)
 }
-.sidenav-trigger{
+
+#btn-menu{
   display: none;
+}
+/* Aqui vive el icono de menu"*/
+header label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid rgb(131, 109, 13);
+}
+
+header label:hover{
+  cursor:pointer;
+  background: #efc056;
+}
+ /*AquÃ­ toma su estuctura horizontal el menu*/
+.menu ul {
+    margin:0;
+    list-style: none;
+    padding: 0;
+    display: flex; /*Hace que se ajuste al tamaÃ±o del navegador*/
+    /*justify-content: center; Aqui le da su alinacion*/
+    /*flex-direction: row;*/
+}
+
+.menu li {
+  border-right: 1px solid #fff;
+  text-align: center;
+  flex-grow: 1; /*hace que crezca segun la pantalla*/
+}
+
+.menu li:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: #efc056;
+  text-decoration: none;
+}
+.search{
+  text-align: center;
+  position: absolute;
+  background-color:rgb(37, 37, 37);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: rgb(37, 37, 37);
+  color: #efc056;
+  display:flex;
+  top: 15%;
+  left: 40%
 }
 
 .contenedorRoles{
@@ -41,28 +83,29 @@ header{
 }
 
 .cuadro{
-  color: #3d3316; 
-  font-size: 30%; 
+  color: #e7b82b;  
   font-weight: 25%; 
+  font-size: 55%;
   text-align: center;
-  background: #efc056; 
+  background: rgba(0, 0, 0, 0.9);
   margin: 0; 
   overflow: hidden; 
   padding: 2px; 
   border-radius: 35px 0px 35px 0px; 
   -moz-border-radius: 35px 0px 35px 0px; 
   -webkit-border-radius: 35px 0px 35px 0px; 
-  border: 1px solid #7a631c;
+  /*border: 1px solid #7a631c;*/
   display: inline-block;
   width: 22%;
 }
+
 .cuadro h1{
-  font-size: 25px;
+  color: #ad8816;
+}
+.cuadro h2{
+  color: #f5f4f1;
 }
 
-.cuadro h2{
-  font-size: 15px;
-}
 .imagen{
   width: 100%;
   padding-top: 20px;
@@ -71,13 +114,38 @@ header{
 
 
 @media only screen and (max-width: 600px) {
+  .cuadro{
+    color: #3d3316; 
+    font-size: 50%; 
+    font-weight: 25%; 
+    text-align: center;
+    background: #efc056; 
+    margin: 0; 
+    overflow: hidden; 
+    padding: 9px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 1px solid #7a631c;
+    display: inline-block;
+    width: 44%;
+    z-index: -100;
+}
+header label{
+    display: block;
+  }
 
   .menu {
     position: absolute;
-    background: #efc056;
+    background:  rgba(0, 0, 0, 80);
     width: 70%;
     margin-left:-70%;
     transition: all 0.3s;
+    z-index: 20;
+  }
+
+  .menu li:hover{
+    background: rgba(0, 0, 0, 15);
   }
 
   .menu ul {
@@ -87,28 +155,19 @@ header{
   .menu li {
     border-top: 1px solid #fff;
    }
-  
-  .sidenav-trigger{
-    display: block;
-  }
-   .cuadro{
-      color: #3d3316; 
-      font-size: 50%; 
-      font-weight: 25%; 
-      text-align: center;
-      background: #efc056; 
-      margin: 0; 
-      overflow: hidden; 
-      padding: 2px; 
-      border-radius: 35px 0px 35px 0px; 
-      -moz-border-radius: 35px 0px 35px 0px; 
-      -webkit-border-radius: 35px 0px 35px 0px; 
-      border: 1px solid #7a631c;
-      display: inline-block;
-      width: 48%;
-  
-  }
+   
+   #btn-menu .icon{
+     float: left; 
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+     text-align: left; 
+     z-index: 1;
+
+   }
+
+   #btn-menu:checked ~ .menu{
+     margin: 0;
+   }
+
 }
-
-
-
