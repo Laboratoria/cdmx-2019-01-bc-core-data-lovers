@@ -62,7 +62,11 @@
 
     <section id="know" class="know">
       <h2 id="knowMore"> CONOCE MÁS </h2>
-      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
+      
+      <div class="button">
+        <input id="all" class="button" type="button" value="Mostrar todos los datos">
+      </div>
+      
       <form class="select">
         <select id="yearbttn" name="year" class="selector">
           <option selected value="0"> AÑO </option>
@@ -81,21 +85,23 @@
           <option class="year" value="2013-01-04">2013</option>
           <option class="year" value="2014-01-04">2014</option>
           <option class="year" value="2015-01-04">2015</option>
-          <option class="year" value="01-04">TODOS</option>
+          <option class="year" value="all">Todos los años</option>
+
         </select>
         <select id="user" name="user" class="selector">
           <option selected value="0"> HERIDOS </option>
-
           <option value="Total_Injured_Persons_Motorcyclists">Motociclista</option>
           <option value="Total_Injured_Persons_Pedestrians">Peaton</option>
           <option value="Total_Injured_Persons_Pedalcyclists">Ciclista</option>
           <option value="Total_Injured_Persons_Transit_Total">Conductor</option>
-          <option value="Total_Injured_Persons">TODOS</option>
+          <option value="all">Todos los medios</option>
+
         </select>
         <div class="button">
           <input id="search" class="button" type="button" value="CONSULTA">
         </div>
       </form>
+      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
     </section>
 
     <section id="result" class="result"></section>

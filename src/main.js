@@ -4,6 +4,8 @@ let yearbutton = document.getElementById("yearbttn");
 let userbutton = document.getElementById("user");
 //Declaramos input del consulta
 let searchbutton = document.getElementById("search");
+//Declaramos input del ALL DATA
+let allDataButton = document.getElementById("all");
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
 //Constante que contiene la data
@@ -16,3 +18,11 @@ searchbutton.addEventListener("click", () => {
   const resultData = window.data.consult(injuriesBy, yearValue, userValue);
   resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
 });
+
+allDataButton.addEventListener("click", () => {
+  alert("Hello! I am an alert box!!");
+  let yearValue = injuriesBy
+  console.log(newData)
+  //resultsecc.innerHTML = `${newData[0]}`;
+  }
+);
