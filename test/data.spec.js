@@ -97,6 +97,7 @@ const pokemonPrueba= [
 }]
 
 const ivysaur= pokemonPrueba[0];
+const venusaur= pokemonPrueba[1];
 const charmander=pokemonPrueba[2];
 
 
@@ -112,7 +113,7 @@ describe('pokesaurius', () => {
       expect(typeof window.pokesaurius.typeFilter).toBe('function');
     })
 
-  it('Deberia devolver el array de Ivysaur si ingresamos tipo Poison',()=>{
+  it('Deberia devolver el array de  si ingresamos tipo Poison',()=>{
     expect(window.pokesaurius.typeFilter(pokemonPrueba,'Poison')[0]).toEqual(ivysaur)
   })
 
@@ -121,6 +122,21 @@ describe('pokesaurius', () => {
   })
 })
 )
+
+describe('sortByName', () => {
+  it('is a function', () => {
+    expect(typeof window.pokesaurius.sortByName).toBe('function');
+  })
+
+it('Deberia devolver el array ordenado alfabéticamente Charmander, Ivysaur, Venusaur',()=>{
+  expect(window.pokesaurius.sortByName(pokemonPrueba)[0]).toEqual(charmander,ivysaur,venusaur)
+})
+
+})
+
+
+
+
 
 
 
