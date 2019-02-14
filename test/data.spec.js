@@ -139,8 +139,8 @@ describe('filtoDataRoles', () => {
   for (const key in muestra.data) {
     if (muestra.data.hasOwnProperty(key)) {
       const element = muestra.data[key];
-      console.log('elemento', element);
-      console.log('tags', element.tags);
+      //console.log('elemento', element);
+      //console.log('tags', element.tags);
       let objetoVacio = {
         name: element.name,
         tags: element.tags,
@@ -155,4 +155,9 @@ describe('filtoDataRoles', () => {
     it('Should returns the object Aatrox if we select Tank', () => {
       expect(window.lol.filtroDataRoles('Tank', dataToArray)[0]).toEqual(dataToArray[0]);
     })
+    it('Should returns the object Ahri if we select Mage', () => {
+      expect(window.lol.filtroDataRoles('Mage', dataToArray)[0]).toEqual(dataToArray[1]);
+    })
+
+    
   });

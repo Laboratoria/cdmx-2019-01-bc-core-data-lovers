@@ -39,7 +39,7 @@ filterByName: (name,datos) => {
 
 filterByCharacter: (characterId,datos) => {
   const characterOnClick = datos.filter(element => element.id === characterId);
-  console.log(characterOnClick)
+  //console.log(characterOnClick)
   return characterOnClick;
 }
 
