@@ -6,9 +6,17 @@
   return console.log(injuries)
 });*/
 
-  // let INJURIES = ('./data/injuries/injuries.js')
+// let INJURIES = ('./data/injuries/injuries.js')
 
 window.data = {
+  dataKeys: [
+    'Total_Injured_Persons_Bus_Occupants',
+    'Total_Injured_Persons_Motorcyclists',
+    'Total_Injured_Persons_Passenger_Car_Occupants',
+    'Total_Injured_Persons_Pedalcyclists',
+    'Total_Injured_Persons_Pedestrians'
+  ],
+
   getData: (dataToSearch) => {
     let dataToReturn = [];
     for (let injuriesByYear of INJURIES) {
@@ -18,27 +26,22 @@ window.data = {
       });
     }
     return dataToReturn;
-
   },
   
   consult: (dataToSearch, yearValue) => {
-    //let dataForYear = {},
     const dataByYear = dataToSearch.find(element => element.Year === yearValue);
-    console.log(dataByYear); 
+    const newDataByYear = {};
+    for (const key of window.data.dataKeys) {
+      if (dataByYear.hasOwnProperty(key)) {
+        newDataByYear[key] = dataByYear[key];
       }
-      //return dataForYear;
-  };
+    }
+    return newDataByYear;
+  }
+};
+
 //función para obtener arreglo por año
 //let years = new Map();
 //for (const injuriesByYear of INJURIES) {
-  //console.log(injuriesByYear)
+//console.log(injuriesByYear)
 //}
-
-  }
-};
-//función para obtener arreglo por año
-// let years = new Map();
-// for (const injuriesByYear of INJURIES) {
-//   // console.log(injuriesByYear)
-// }
-

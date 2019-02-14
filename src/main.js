@@ -1,5 +1,4 @@
-
-const dataToSearch = window.INJURIES;
+// const dataToSearch = window.INJURIES;
 
 const bottonstByMode = Array.from(document.getElementsByClassName('button-transport'));
 const contentByMode = Array.from(document.getElementsByClassName('infoBody'));
@@ -16,13 +15,15 @@ for (let i = 0; i < bottonstByMode.length; i++) {
     //Print in the information panel all the information
     printTheData(accidentsData, tableByMode[i], printOnce[i]);
     printOnce[i] = false;
-  });
-};
+  })
+}
+
 function hideAllContent() {
   for (let i = 0; i < contentByMode.length; i++) {
     contentByMode[i].style.display = 'none';
   }
 }
+
 function getNeededData(fieldToSearch) {
   return window.data.getData(fieldToSearch);
 }
@@ -36,19 +37,16 @@ function printTheData(accidentsByYear, tableToPrint, canPrint) {
 function printDataInHTML(year, number, tableToPrint, canPrint) {
   if (canPrint) {
     tableToPrint.insertAdjacentHTML('beforeend', `<tr><td>${year}</td><td>${number}</td></tr>`);
-  }
+  }}
 
-};
-
-// Declaramos las variables de la sección de Year
-let selectedYear = document.getElementById('selected_year');
-let visualizeData = document.getElementById('visualize_data');
-//let resultGraphic = document.getElementById('result_graphic');
-//Función para que al evento de click sobre el botón de Visualize Data
-visualizeData.addEventListener("click", () => {
-  let yearValue = selectedYear.value;
-  const resultData = window.data.consult(dataToSearch, yearValue);
-  //console.log(resultData)
-  resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
-});
-
+// // Declaramos las variables de la sección de Year
+// let selectedYear = document.getElementById('selected_year');
+// let visualizeData = document.getElementById('visualize_data');
+// //let resultGraphic = document.getElementById('result_graphic');
+// //Función para que al evento de click sobre el botón de Visualize Data
+// visualizeData.addEventListener("click", () => {
+//   let yearValue = selectedYear.value;
+//   const resultData = window.data.consult(dataToSearch, yearValue);
+//   //console.log(resultData)
+//   resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
+// });

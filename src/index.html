@@ -12,32 +12,34 @@
 <body>
   <div id="root"></div>
   <!--<script src="./data/injuries/injuries.js"></script>-->
-  <header id="realB">
+  <header>
     <!--menu responsive-->
-    <input type="checkbox" id="menu">
-    <label for="menu" class="fas fa-bars"></label>
+    <input type="checkbox" id="burger-menu">
+    <label for="burger-menu"><img src="images/burger.png"></label>
     <nav class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        <i class="fab fa-facebook-f"></i><br>
-        <i class="fab fa-twitter"></i>
+        <!-- <i class="fab fa-facebook-f"></i><br>
+        <i class="fab fa-twitter"></i> -->
        </ul>
     </nav>
-    <!--<section1 id="principalpage" class=hide>-->
-    <h1>Injured persons by<br>transportation mode</h1>
-    <h2>in United States of America</h2>
+    </header>
 
-    <h3>All cities all over the world recognized safety and security mobility in its goals, objectives and polices. Specific objectives were translated into performance criteria used to establish priorities for planned transportation improvements. A key way to measure safety is evaluating the total number of injured persons in each mode of transportation.</h3>
+    <section id="realB">
 
-    <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
-    <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
-    <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
-    <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
-    <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
+          <!--<section1 id="principalpage" class=hide>-->
+          <h1>Injured persons by<br>transportation mode</h1>
+          <h2>in United States of America</h2>
+          <h3>All cities all over the world recognized safety and security mobility in its goals, objectives and polices. Specific objectives were translated into performance criteria used to establish priorities for planned transportation improvements. A key way to measure safety is evaluating the total number of injured persons in each mode of transportation.</h3>
 
-  </header>
+          <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
+          <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
+          <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
+          <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
+          <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
+    </section>
 
   <section class="infoBody content">
     <h1 class="titleToSearch">Pedestrians</h1>
@@ -150,7 +152,8 @@
   </section>
 
    <section id="year_section" class="slideshow-area">
-      <select id="selected_year" name="year" class="select_year">
+       <h3>Or search by year:</h3>
+      <select id="selected_year" name="year" class="year_button">
           <option selected value="0"> YEAR </option>
           <option class="year" value="2001-01-04">2001</option>
           <option class="year" value="2002-01-04">2002</option>
