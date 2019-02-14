@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <title>Poke Lovers</title>
     <link rel="stylesheet" href="style.css" />
-     <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
   </head>
   <body>
-
     <!--Pantalla uno-->
     <!--Obteniendo nombre y boton siguiente para pintarlo en pantalla 2-->
     <div id="pantalla1" class= "contenedor">
       <header>
         <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/190211/66212bef18f1889a2bb8dd6f4096808c.png" alt="fuente-pokemon" border="0"></a>
-    <!--<h1>Pokedext website</h1>-->
+        <!--<h1>Pokedext website</h1>-->
       </header>
       <input type="text" id="nombre" placeholder="Escribe tu nombre">
       <button type="submit" id="next" class= "styleBtn"> GO </button>
     </div>
+
+
+
+
+
     <!--Pantalla dos-->
     <!--Boton que muestra los Pokemones-->
     <div id="pantalla2" class="hide">
+
       <!-- Barra de menu-->
       <nav class= "topnav">
         <ul>
           <li> <a href="index.html"> Inicio </a> </li>
-          <li> <a href="printData"id="showPokemons"> Pokelist </a> </li>
+          <li> <a href="#" id="showPokemons"> Pokelist </a> </li>
           <li> <a href="#"> Estadisticas </a> </li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Elementos</a>
@@ -51,23 +55,23 @@
           </li>
         </ul>
       </nav>
-      <!-- Boton de que imprime la data de Pokemones -->
-      <!--  <button type="submit" id="showPokemons">Pokémons Ordenados </button>-->
-      <!--<button type="submit" id="showPokemons">Pokémons Ordenados </button>-->
-      <!-- search para traer data-->
-      <input type="text"  value="search"> <br>
-      <!-- Letrero de Bienvenida que al darle click en pantalla 1, me lo pinta en pantalla 2-->
-      <span id= "nombre-bienvenido"> </span>
 
-    </div>
 
-    <div id="root" class="container"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steams/steam.js"></script> -->
 
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
-  </html>
+  <!-- Letrero de Bienvenida que al darle click en pantalla 1, me lo pinta en pantalla 2-->
+  <span id= "nombre-bienvenido"> </span>
+
+</div>
+
+<div id="root" class="container"></div>
+<!-- <script src="./data/injuries/injuries.js"></script> -->
+<script src="./data/pokemon/pokemon.js"></script>
+<!-- <script src="./data/steams/steam.js"></script> -->
+<!--<button class="buscar" id="boton">Buscar</button>
+<input type="text" id="nombre"  value="search"> <br>-->
+
+<!-- <script src="./data/injuries/injuries.js"></script> -->
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
