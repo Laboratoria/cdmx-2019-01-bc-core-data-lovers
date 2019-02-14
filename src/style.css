@@ -12,18 +12,18 @@ header {
   left: 0;
 }
 
-figure{
+figure {
   margin: 0%;
 }
 
-#menu{
-    width: 10%;
-    height: auto;
-    vertical-align: top;
-    padding: 2%;
-    padding-top: 9%;
-    float: right;
-    margin: 0%;
+#menu {
+  width: 10%;
+  height: auto;
+  vertical-align: top;
+  padding: 2%;
+  padding-top: 9%;
+  float: right;
+  margin: 0%;
 }
 
 .logo {
@@ -33,18 +33,18 @@ figure{
 }
 
 .sidebar {
-position: absolute;
-width: 200px;
-height: 100vh;
-top: 0;
-right: -205px;
-padding-top: 47px;
-background-color: rgba(29, 33, 32, 1);
-border-left: 4px solid rgb(235, 0, 139);
-transition: all .5s ease;
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -205px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
 }
 
-.menu_list{
+.menu_list {
   list-style: none;
   font-family: sans-serif;
 }
@@ -96,6 +96,7 @@ transition: all .5s ease;
    }
 
 
+
 .info {
   background-color: #eb008b;
   width: auto;
@@ -124,10 +125,20 @@ transition: all .5s ease;
   text-decoration: none;
 }
 
-.button{
+.button {
   margin: 5%;
   padding: 2%;
   text-align: center;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
 }
 
 
@@ -197,6 +208,13 @@ p {
   text-align: center;
 }
 
+.selector {
+  border-radius: 10px;
+  padding: 2%;
+  background: #f2f1f0;
+  border-color: transparent;
+}
+
 .consult {
   margin: 2%;
   text-align: center;
@@ -204,7 +222,7 @@ p {
   padding: 1%;
 }
 
-.result{
+.result {
   text-align: center;
   font-family: sans-serif;
   margin-block-end: 20%;
@@ -231,7 +249,7 @@ footer {
 
 }
 
-#footer{
+#footer {
   font-size: 60%;
   text-align: center;
   vertical-align: bottom;
@@ -324,23 +342,6 @@ footer {
     padding-top: 8%;
   }
 
-  .sidebar {
-  position: absolute;
-  width: 200px;
-  height: 100vh;
-  top: 0;
-  right: -680px;
-  padding-top: 47px;
-  background-color: rgba(29, 33, 32, 1);
-  border-left: 4px solid rgb(235, 0, 139);
-  transition: all .5s ease;
-  }
-}
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
 
 @media (min-width: 1025px) and (max-width: 1380px) {
   .menu {
@@ -371,19 +372,6 @@ footer {
     padding: 2%;
   }
 
-  .logo {
-    width: 6%;
-    height: auto;
-    padding: 1%;
-    display: none;
-  }
-#extend{
-  display: inline-block;
-  width: 6%;
-  height: auto;
-  padding: 1%;
-  display: none;
-}
   .menu {
     width: 6%;
     height: auto;
@@ -391,10 +379,6 @@ footer {
     padding: 2%;
     padding-top: 2%;
     float: right;
-  }
-
-  #extend{
-    display: none;
   }
 
   .sidebar {
@@ -451,9 +435,6 @@ footer {
     padding: 5%;
     margin-left: 3%;
   }
-  #extend{
-    display: none;
-  }
 
   .sidebar {
   position: absolute;
@@ -468,6 +449,7 @@ footer {
   }
 }
 /*
+
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
@@ -514,16 +496,16 @@ footer {
   display: none;
 }
 
-.sidebar {
-position: absolute;
-width: 200px;
-height: 100vh;
-top: 0;
-right: -435px;
-padding-top: 47px;
-background-color: rgba(29, 33, 32, 1);
-border-left: 4px solid rgb(235, 0, 139);
-transition: all .5s ease;
-}
+  .sidebar {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -435px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
+  }
 
 }

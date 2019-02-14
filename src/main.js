@@ -4,18 +4,25 @@ let yearbutton = document.getElementById("yearbttn");
 let userbutton = document.getElementById("user");
 //Declaramos input del consulta
 let searchbutton = document.getElementById("search");
+//Declaramos input del ALL DATA
+let allDataButton = document.getElementById("all");
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
 //Constante que contiene la data
 const injuriesBy = window.INJURIES;
 
-//Al evento de click de toma el valor de Usuario y del Año.
-searchbutton.addEventListener("click", ()=>{
+//Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
+searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
-  //const resultYear = window.data.consult(yearValue,userValue)
-  //const resultUser = window.data.consult(userValue)
-const resultData= window.data.consult(injuriesBy, yearValue, userValue);
-resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
+  const resultData = window.data.consult(injuriesBy, yearValue, userValue);
+  const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
+  resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
 });
-//<br><b>Total de heridos en ${userValue};</i>
+
+// // allDataButton.addEventListener("click", () => {
+// //   alert("Hello! I am an alert box!!");
+// //   let yearValue = injuriesBy
+// //   //resultsecc.innerHTML = `${newData[0]}`;
+// //   }
+// );
