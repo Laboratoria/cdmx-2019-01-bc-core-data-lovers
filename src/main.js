@@ -3,6 +3,9 @@
 
     /* Convierte la base de datos en una variable*/
     const dataLol = window.LOL.data;
+    
+  //Trae el resultado de la función filtrado de data.js
+  const datos  = window.lol.iterarData(dataLol)
 
     /*trae el div de nombre "es" para identificarlo e imprimirlo ahí*/
     const showFirstChampionList = document.getElementById('showFirstChampionList')
@@ -50,16 +53,32 @@
 
 
 /* ----------------------------------------------*/
-  
-  //Trae el resultado de la función filtrado de data.js
-  const datos  = window.lol.iterarData(dataLol)
+//función que despliega la info del personaje al dar click
+const characterSelection = () => {
+  for ( let i=0; i<characterFromList.length; i++){
+    characterFromList[i].addEventListener('click', () => {
+      let characterId = characterFromList[i].id;
+      //console.log(characterId);
+     
+     const elementChampion = window.lol.filterByCharacter(characterId,datos);
+
+     printCharacterSheet(elementChampion);})}}
+     
+      // const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
+      //print(arrayRolesFiltered);})}}
+     characterSelection()
+
+
 
 // función que imprime la primera iteración que da la lista completa de campeones
   const print = (datos) => {
     showFirstChampionList.innerHTML = "";
     datos.forEach(champ => {
 
-    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}
+    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);
+    characterSelection(nameList);});
+  
+  }
                print(datos)
 
                
@@ -71,20 +90,6 @@
    let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p><h2>${champ.blurb}</h2> <p>Attack:${champ.info}</p><p>${champ.stats}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}             
   
 
-
-  const characterSelection = () => {
-    for ( let i=0; i<characterFromList.length; i++){
-      characterFromList[i].addEventListener('click', () => {
-        let characterId = characterFromList[i].id;
-        console.log(characterId);
-       
-       const elementChampion = window.lol.filterByCharacter(characterId,datos);
-
-       printCharacterSheet(elementChampion);})}}
-       
-        // const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
-        //print(arrayRolesFiltered);})}}
-       characterSelection()
 
               
     
