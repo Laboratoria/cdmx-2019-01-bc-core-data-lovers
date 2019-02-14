@@ -1,10 +1,10 @@
-@import "https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins|Robot";
+@import "https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins|Roboto";
 @import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
 
 /************body*********/
 article {
   width: 50%;
-  display: inline-flex;
+  display: table-cell;
 }
 
 body {
@@ -57,13 +57,17 @@ h3 {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
-  color: #112659;
+  font-family: 'Roboto';
+ color: #fff;
+ text-align: justify;
+ width: 60%;
+ margin-left: 13%;
 }
 
 /************** menu ********/
 #burger-menu {
   display: none;
+  position: fixed;
 }
 
 header label {
@@ -119,7 +123,8 @@ header label:hover {
 
 .dataTable {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+   font-size: .5em;
+   display: inline block;
 }
 
 .tableStructure {
