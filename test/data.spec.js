@@ -172,4 +172,3 @@ describe("data", () => {
     expect(window.data.filterData(dataBpokemon, "Grass")[0]).toEqual(dataBpokemon[0]);
   });
 });
-
