@@ -1,10 +1,33 @@
-//let POKEMON;
+let POKEMON;
 let dataPokemon = POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const searchCoincidence = document.getElementById('search-coincidences');
 
-const printPokemon = (nombre, imagen) => {
-  let nombrePokemon = `<div class="divPokemon"><img src="${imagen}"><br>${nombre}</div>`;
+const printPokemon = (pokemon) => {
+  let nombrePokemon = `<div class="divPokemon">
+    <div class="flip-card-inner">
+      <div class="flip-card-front"><h5># ${pokemon.id}</h5><img id="${pokemon.id}" src="${pokemon.img}"><p>${pokemon.name}</p>
+        <span class="color-type">${pokemon.type}</span>
+      </div>
+      <div class="flip-card-back">
+      <h4>${pokemon.name}</h4>
+      <table id="details">
+        <tr>
+          <th>Height</th><td>${pokemon.height}</td>
+        </tr>
+        <tr>
+          <th>Weight</th><td>${pokemon.weight}</td>
+        </tr>
+        <tr>
+          <th>Candy</th><td class="break-words">${pokemon.candy}</td>
+        </tr>
+        <tr>
+          <th>Egg</th><td class="break-words">${pokemon.egg}</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+  </div>`;
   pokemones.insertAdjacentHTML("beforeend", nombrePokemon);
 };
 //const allData = window.showAllData(dataPokemon);
@@ -13,9 +36,7 @@ const printPokemon = (nombre, imagen) => {
 const showList = (pokemonList) => {
   pokemones.innerHTML="";
   pokemonList.forEach(element => {
-    let name = element.name;
-    let image = element.img;
-    printPokemon(name, image);
+    printPokemon(element);
   });
 };
 
@@ -58,7 +79,7 @@ if (ubication.includes('typePokemon.html')) {
  // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
   //showList(allData);
   filterCoincidence();
-  
+
 
 }else if (ubication.includes('orderPokemon.html')) {
   /*const orderNameRadio = document.getElementById('asc-name');
@@ -81,7 +102,7 @@ if (ubication.includes('typePokemon.html')) {
   getOrderPokemon(arrayRadio);
 
   showList(window.data.showAllData(dataPokemon));
-  
+
 } else if (ubication.includes('statsPokemon.html')){
   const resultCandy = window.data.computeStats(dataPokemon, 'candy_count');
   document.getElementById('max-candy').innerHTML= resultCandy.maximum;
@@ -100,7 +121,7 @@ if (ubication.includes('typePokemon.html')) {
 
 }
 
- 
+
 
 //MENU
 let menu = document.querySelector('#menu');

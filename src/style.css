@@ -1,16 +1,82 @@
 
-@import url('https://fonts.googleapis.com/css?family=Courgette|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Righteous|Dosis:400,500');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/*  Clases para la tarjeta del pokemon con el efecto que se voltea y muestra información*/
 .divPokemon {
   border: 2px solid #99b89d;
   width: 20%;
   margin: 1%;
   text-align: center;
-  font-family: 'Righteous', cursive;
   border-radius: 1em;
-  
+  height: 12em;
+  perspective: 100em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.divPokemon:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #d45827;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  border-radius: 1em;
+  text-align: justify;
+
+}
+
+#details td{
+  padding-left: 1em;
+  font-family: 'Dosis', sans-serif;
+
+}
+
+#details th{
+  padding-left: 5%;
+  font-family: 'Dosis', sans-serif;
+}
+
+h4{
+  color: orange;
+  text-align: center;
+  padding: 8%;
+}
+
+.break-words{
+    overflow-wrap: break-word;
+}
+
+.color-type{
+  color: #e37222;
+}
+
+h5,p, h4{
+  font-family: 'Righteous', cursive;
 }
 
 .fondo {
@@ -176,7 +242,7 @@ legend{
   border-collapse: collapse;
   width: 80%;
   margin-top: 10%;
- 
+
 }
 
 #stats-table td, #stats-table th {
@@ -195,7 +261,7 @@ legend{
   text-align: left;
   background-color: #d14f1f;
   color: white;
- 
+
 }
 
 #principal-stats{
@@ -283,11 +349,11 @@ ul li:hover {
 
 /* Desktop */
 @media only screen and (min-widh: 992px){
-  
+
   .divPokemon {
     /*position: relative;*/
     width: 20%;
-    
+
   }
 }
 
@@ -301,40 +367,46 @@ ul li:hover {
 
 
   .divPokemon {
-    
-    width: 32%;
+
+    width: 30%;
   }
-
-
-
 }
 
 /* Mobiles */
 @media only screen and (max-width: 576px) {
 
-.menu-mobile {
-  background-color: rgb(10, 113, 182);
+  .menu-mobile {
+    background-color: rgb(10, 113, 182);
+  }
+
+
+  .divPokemon {
+
+    width: 48%;
+
+  }
+
+  #order-section {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #order-section > section  {
+  width: 85%;
 }
 
-
-.divPokemon {
-
-  width: 48%;
-  
+input[type=radio]{
+  transform:scale(2,2);
+  margin-left: 20%;
 }
 
-#order-section {
-  margin: 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+label{
+  margin-left: 2%;
 }
 
-/* #pokemones {
-  width: 5%;
-  justify-content: center;
-} */
 
 }

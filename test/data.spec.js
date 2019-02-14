@@ -228,7 +228,7 @@ describe ('data', () => {
       expect(window.data.computeStats(dataPokemonTest, 'candy_count').maximum).toBe(100);
     });
     test('debería regresar el promedio para candy_count', () => {
-      expect(window.data.computeStats(dataPokemonTest, 'candy_count').average).toBe(50);
+      expect(window.data.computeStats(dataPokemonTest, 'candy_count').average).toBe(50.00);
     });
   });
 });
