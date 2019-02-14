@@ -127,32 +127,36 @@ let muestra = {
     } 
   }
 
-
+//Si la data es un objeto
 describe('lol es un objeto', () => {
   it('is an object', () => {
     expect(typeof window.lol).toBe('object');
   });});
 
+  //Si filtrar es una función
 describe('Debería de ser una función',() => {
   it('is a function', () =>{
     expect(typeof window.lol.filtroDataRoles).toBe('function');
   });});
 
+  //Si iterar data es una función
 describe('Debería de ser una función',() => {
     it('is a function', () =>{
       expect(typeof window.lol.iterarData).toBe('function');
     });});
-
+// si filtrar por roles funciones retorna los campeones por rol
 describe('filtroDataRoles',() => {   
     it('Should returns the objetc Aatrox if we select Tank',() => {
     expect(window.lol.filtroDataRoles('Tank', dataToArray)[0]).toEqual(dataToArray[0]);
   })
 });
 
+//si filtrado por busqueda es una función
 describe('Debería de ser una función',() => {
   it('is a function', () =>{
     expect(typeof window.lol.filterBySearch).toBe('function');  
   });
+ // si el filtrado por busqueda retorna el campeon por el input 
   it('Deberia regresar un arreglo con los campeones cuyo nombre coincidan con la A', () =>{
     const result = window.lol.filterBySearch('Aatrox', dataToArray);
     for(let element of result) () => {
@@ -171,9 +175,9 @@ describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad',()
     expect(typeof window.lol.sortByDifficulty).toBe('function');
   });
   it('Dado la muestra, si ordena de manera descendente, Ahri es el primer elemento', () =>{
-    expect(window.lol.sortByDifficulty( true, dataToArray)[0].name).toBe('Ahri');
+    expect(window.lol.sortByDifficulty(1, dataToArray)[0].name).toBe('Ahri');
   });
   it('Dado la muestra, si ordena de manera ascendente, Aatrox es el primer elemento', () =>{
-    expect(window.lol.sortByDifficulty( false, dataToArray)[0].name).toBe('Aatrox');
+    expect(window.lol.sortByDifficulty(-1, dataToArray)[0].name).toBe('Aatrox');
   });
 });
