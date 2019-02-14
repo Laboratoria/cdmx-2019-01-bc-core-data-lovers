@@ -13,6 +13,7 @@ window.lol = {
         }
         datosArr.push(obj)
       }
+
     }
     return datosArr
   },
@@ -28,13 +29,21 @@ window.lol = {
     return concidence;
   },
 
-  sortByDifficulty: (difficulty, datosArr) => {
-    datosArr.sort ((a, b) => {
-    (a.element.info.difficulty) - (b.elelemnt.info.difficulty);
-        }
-   )
-      
-  }
+  sortByDifficulty: (datosArr) => {
+    const queFuncione = datosArr.sort ((a, b) => {
+    if(a.difficulty > b.difficulty){
+      return 1;
+    }
+    if(a.difficulty< b.difficulty){
+      return -1;
+    }
+    else{
+    return 0;
+  } 
+})
+return queFuncione}
+  
+
 
 
 }

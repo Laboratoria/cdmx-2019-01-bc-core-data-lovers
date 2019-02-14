@@ -64,8 +64,10 @@ filterRolBySearch ();
 
 const orderByDifficultyDecent = () => {
   difficultyDecent.addEventListener("click", () => {
-    console.log("si funciono wey");
+    //console.log("si funciono wey");
     const decent = window.lol.sortByDifficulty(datosArr);
+    print (decent);
 
   })};
   orderByDifficultyDecent();
+  
