@@ -50,37 +50,73 @@ toReturn.addEventListener("click", () => {
 
       <div class="modal fade" id="pokemon${dataPokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
-              <div class="modal-content">
+              <div class="modal-content bigModal">
                   <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
                       <h2 class="modal-title" id="myModalLabel">${dataPokemon.name}</h2>
                   </div>
                   <div class="modal-body">
-                    <table style="width:100%" class="details">
-                      <tr>
-  	                    <td>Type:${dataPokemon.type}</td>
-                        <th rowspan="4"><img class="" src="${dataPokemon.img}"></th>
+                    <table class="details">
+                    
+                      <tr> 
+                          <td class="id type" >Type:</td>
+                          <td class="dataid">${dataPokemon.type}</td>
+                          <th rowspan="8"><img class="imgModal" src="${dataPokemon.img}"></th>
                       </tr>
+
+                      <tr> 
+                        <td class="id height">Height:</td>
+                        <td class="dataid">${dataPokemon.height}</td>
+                      </tr> 
+
+                      <tr>  
+                        <td class="id weigh">Weight:</td>
+                        <td class="dataid">${dataPokemon.weight}</td>
+                      </tr> 
+
+                      <tr> 
+                        <td class="id candy">Candy:</td>
+                        <td class="dataid">${dataPokemon.candy}</td>
+                      </tr> 
+                      
+                      <tr> 
+                        <td class="id candy_c">Candy Count:</td>
+                        <td class="dataid">${dataPokemon.candy_count}</td>
+                      </tr> 
+
+                      <tr> 
+                        <td class="id spawn_t">Spawn Time:</td>
+                        <td class="dataid">${dataPokemon.spawn_time}</td>
+                      </tr> 
+
+                      <tr> 
+                        <td class="id egg">Egg:</td>
+                        <td class="dataid">${dataPokemon.egg}</td>
+                      </tr> 
+                      
+                      <tr> 
+                        <td class="id weaknesses">Weaknesses:</td>
+                        <td class="dataid">${dataPokemon.weaknesses}</td>
+                      </tr> 
+
                       <tr>
-                        <td>Height:${dataPokemon.height}</td>
-                      </tr>
-                      <tr>
-                        <td>Weigh:${dataPokemon.weigh}</td>
-                      </tr>
-                      <tr>
-                        <td>Candy:${dataPokemon.candy} </td>
-                      </tr>
-                      <tr>
-                        <td>weaknesses: ${dataPokemon.weaknesses}</td>
-                      </tr>
-                      <tr>
-                        <td>55577855</td>
-                       </tr>
+                        <th colspan="3">
+                            <table class="evolution">
+                                <tr>
+                                <td><button>Hola1</button></td>
+                                <td><button>Hola2</button></td>
+                                <td><button>Hola3</button></td>
+                                </tr>
+                            </table>
+                        </th>  
+                      </tr> 
   
-                      </table>
+                    </table>
                   </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                  Close
+              </button>
+      </div>
               </div>
           </div>
       </div> 
