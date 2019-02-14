@@ -108,12 +108,9 @@ const LOL = {
       key: "84",
       name: "Akali",
       title: "the Fist of Shadow",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
-      blurb:
-        "There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe. This order is known as the Kinkou ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
+      blurb: "There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe. This order is known as the Kinkou ...",
       info: {
         attack: 5,
         defense: 3,
@@ -160,12 +157,9 @@ const LOL = {
       key: "12",
       name: "Alistar",
       title: "the Minotaur",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Alistar.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
-      blurb:
-        "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Alistar.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
+      blurb: "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of ...",
       info: {
         attack: 6,
         defense: 9,
@@ -212,12 +206,9 @@ const LOL = {
       key: "32",
       name: "Amumu",
       title: "the Sad Mummy",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Amumu.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
-      blurb:
-        "''Solitude can be lonelier than death.''<br><br>A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever, as his touch is death and his affection ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Amumu.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
+      blurb: "''Solitude can be lonelier than death.''<br><br>A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever, as his touch is death and his affection ...",
       info: {
         attack: 2,
         defense: 6,
@@ -264,12 +255,9 @@ const LOL = {
       key: "22",
       name: "Ashe",
       title: "the Frost Archer",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ashe.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
-      blurb:
-        "With each arrow she fires from her ancient ice-enchanted bow, Ashe proves she is a master archer. She chooses each target carefully, waits for the right moment, and then strikes with power and precision. It is with this same vision and focus that she ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Ashe.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
+      blurb: "With each arrow she fires from her ancient ice-enchanted bow, Ashe proves she is a master archer. She chooses each target carefully, waits for the right moment, and then strikes with power and precision. It is with this same vision and focus that she ...",
       info: {
         attack: 7,
         defense: 3,
@@ -316,12 +304,9 @@ const LOL = {
       key: "268",
       name: "Azir",
       title: "the Emperor of the Sands",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Azir.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
-      blurb:
-        "''Shurima was once the glory of Runeterra. I will make it so again.''<br><br>Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Azir.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
+      blurb: "''Shurima was once the glory of Runeterra. I will make it so again.''<br><br>Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his ...",
       info: {
         attack: 6,
         defense: 3,
@@ -368,12 +353,9 @@ const LOL = {
       key: "432",
       name: "Bard",
       title: "the Wandering Caretaker",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Bard.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
-      blurb:
-        "Bard travels through realms beyond the imagination of mortal beings. Some of Valoran's greatest scholars have spent their lives trying to understand the mysteries he embodies. This enigmatic spirit has been given many names throughout the history of ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Bard.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
+      blurb: "Bard travels through realms beyond the imagination of mortal beings. Some of Valoran's greatest scholars have spent their lives trying to understand the mysteries he embodies. This enigmatic spirit has been given many names throughout the history of ...",
       info: {
         attack: 4,
         defense: 4,
@@ -420,12 +402,9 @@ const LOL = {
       key: "51",
       name: "Caitlyn",
       title: "the Sheriff of Piltover",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Caitlyn.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
-      blurb:
-        "''Go ahead, run. I'll give you a five minute head start.''<br><br>One of the reasons Piltover is known as the City of Progress is because it has an extraordinarily low crime rate. This hasn't always been the case; brigands and thieves of all sorts ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Caitlyn.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
+      blurb: "''Go ahead, run. I'll give you a five minute head start.''<br><br>One of the reasons Piltover is known as the City of Progress is because it has an extraordinarily low crime rate. This hasn't always been the case; brigands and thieves of all sorts ...",
       info: {
         attack: 8,
         defense: 2,
@@ -619,12 +598,9 @@ const LOL = {
       key: "101",
       name: "Xerath",
       title: "the Magus Ascendant",
-      img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Xerath.png",
-      splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
-      blurb:
-        "''A lifetime as a slave has prepared me for eternity as your master.''<br><br>Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the ...",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Xerath.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
+      blurb: "''A lifetime as a slave has prepared me for eternity as your master.''<br><br>Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the ...",
       info: {
         attack: 1,
         defense: 3,

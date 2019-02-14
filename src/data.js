@@ -6,7 +6,7 @@ window.lol = {
     for (const key in lolData) {
       if (lolData.hasOwnProperty(key)) {
         const element = lolData[key];
-         champsInfo = {
+        champsInfo = {
           splash: element.splash,
           name: element.name,
           primaryRol: element.tags[0],
@@ -16,7 +16,7 @@ window.lol = {
           magic: element.info.magic,
           id: element.id
         }
-        if (!element.tags[1]){
+        if (!element.tags[1]) {
           champsInfo.secondaryRol = "";
         }
       }
@@ -28,59 +28,56 @@ window.lol = {
   filterByRol: (newArrayChamp, rolId) => {
     const filtering = newArrayChamp.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId);
     return filtering;
-},
-    //Aquí inicia la función para ordenar por ataque
+  },
+  //Aquí inicia la función para ordenar por ataque
   sorterByAttack: (newArrayChamp) => {
     const attackSorter = newArrayChamp.sort((a, b) => {
-      if (b.attack > a.attack){
+      if (b.attack > a.attack) {
         return 1;
       }
-    if (b.attack < a.attack){
-      return -1;
+      if (b.attack < a.attack) {
+        return -1;
+      } else {
+        return 0;
       }
-    else {
-      return 0;
-    }
-   });
+    });
 
-  return attackSorter;
+    return attackSorter;
   },
 
-sorterByMagic: (newArrayChamp) => {
-  const magicSorter = newArrayChamp.sort((a, b) => {
-    if (b.magic > a.magic){
-      return 1;
-    }
-  if (b.magic < a.magic){
-    return -1;
-    }
-  else {
-    return 0;
-  }
- });
-return magicSorter;
-},
+  sorterByMagic: (newArrayChamp) => {
+    const magicSorter = newArrayChamp.sort((a, b) => {
+      if (b.magic > a.magic) {
+        return 1;
+      }
+      if (b.magic < a.magic) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+    return magicSorter;
+  },
 
-sorterByDefense: (newArrayChamp) => {
-  const defenseSorter = newArrayChamp.sort((a, b) => {
-    if (b.defense > a.defense){
-      return 1;
-    }
-  if (b.defense < a.defense){
-    return -1;
-    }
-  else {
-    return 0;
-  }
- });
-return defenseSorter;
-},
+  sorterByDefense: (newArrayChamp) => {
+    const defenseSorter = newArrayChamp.sort((a, b) => {
+      if (b.defense > a.defense) {
+        return 1;
+      }
+      if (b.defense < a.defense) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+    return defenseSorter;
+  },
 
   filterByName: (newArrayChamp, name2) => {
-      const filteringName = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
+    const filteringName = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
     return filteringName;
   }
-//esta llave cierra window.lol
+  //esta llave cierra window.lol
 
 }
 
