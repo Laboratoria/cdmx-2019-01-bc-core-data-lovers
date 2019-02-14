@@ -1,17 +1,5 @@
-//Cambio de páginas
-function myFunction() {
-    document.getElementById("page1").style.display = "none"
-    document.getElementById("page2").style.display = "block"
-   }
-   
-   function functionA() {
-    document.getElementById("page2").style.display = "none";
-    document.getElementById("results").style.display = "block";
-   }
 
-
-
-
+   var WORLDBANK;
    const dataWorldbank = WORLDBANK; //Traer base de datos
    const buttonCountries = document.getElementsByClassName('btnCountry');
    const selectIndicator = document.getElementById('indicator')
@@ -29,6 +17,7 @@ function myFunction() {
    }
    
    const printOption = (result) => {
+     selectIndicator.innerHTML="";
      const dataFilter = result.filter(indicator => {
        let printIndicatorName = indicator.indicatorName
        let education = /educación/i
@@ -47,6 +36,7 @@ function myFunction() {
    }
    
    const printYears = (resultYear) => {
+     dataYear.innerHTML = "";
      for (const key in resultYear) {
        if (resultYear.hasOwnProperty(key)) {
          let element =resultYear[key];
