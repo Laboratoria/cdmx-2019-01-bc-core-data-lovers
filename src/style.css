@@ -114,7 +114,16 @@ font-weight: bold;
 :focus {
     outline: 0;
     }
-
+    #box2{
+        background-image: url("https://i.ibb.co/BwbR4TM/logo1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; 
+        height: 70vh;
+        
+    
+    }
+  
 @media screen and (max-width:800px){
     #contenido{
         text-align: center;
