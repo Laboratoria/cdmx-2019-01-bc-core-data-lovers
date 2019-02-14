@@ -26,11 +26,11 @@
       <nav class="navigation">
         <ul>
           <li><a href="#countries">Estadísticas</a></li>
-          <li><a href="#conferencias" type="button" id="conf">Conferencias</a></li>
+          <li><a href="#conferencias">Conferencias</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      </div>
+    </div>
   </header>
 
   <main class="main">
@@ -53,11 +53,10 @@
     <section>
       <select id="indicator">
         <option value="indicadores"> Indicadores </option>
-        
-        <input type="checkbox" id="myCheck" onclick="myFunction()"> Ascendente
-        <input type="checkbox" id="myCheck" onclick="myFunction()"> Descendente
-      </select>
-
+        </select>
+        <input type="radio" name="sort" value="upward" > Ascendente
+        <input type="radio" name= "sort" value="falling" > Descendente
+      
 
       <div id="data-year">
       </div>
