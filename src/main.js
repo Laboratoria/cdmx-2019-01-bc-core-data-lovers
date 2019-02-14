@@ -41,7 +41,7 @@ toReturn.addEventListener("click", () => {
  //Di: Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
  const toPrint = (mapData) => {
    const filter = pokemones;
-   filter.innerHTML = "";
+  //  filter.innerHTML = "";
    mapData.map((dataPokemon) => {
     filter.innerHTML +=
     ` <button type="button" class="divPokemon btnPokemon ${dataPokemon.type[0]} btn btn-primary btn-lg" data-toggle="modal" data-target="#pokemon${dataPokemon.name}">
