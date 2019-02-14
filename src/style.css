@@ -6,6 +6,11 @@ img{
     width: 70%;
 }
 
+h2{
+    color:white;
+    font-size: 4em;
+}
+
 
 .btnPokemon{
     width: 24%;
@@ -35,8 +40,30 @@ img{
     color: white;
     font-size: 1.5em;
 }
-table, tr, td{
-    border: 3px solid white;
+
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.evolution{
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.651);
+
+}
+
+td{
+    padding-left: 15px;
+}
+
+.id{
+    width: 23%;
+}
+
+.dataid{
+    padding-left: 50px;
+    width: 35%
 }
 
 .name{
@@ -44,10 +71,39 @@ table, tr, td{
     background-color: rgba(27, 27, 27, 0.9);
     font-size: 2em;
 }
+/* Estilos para las celdas de la tabla del modal */
+.type{
+    background: rgb(3, 95, 0);
+}
+
+.height{
+    background: rgb(163, 87, 0)
+}
+
+.weigh{
+    background: rgb(182, 0, 0);
+}
+
+.candy{
+    background: rgb(0, 102, 170);
+}
+.candy_c{
+    background: rgb(184, 184, 0);
+}
+.egg{
+    background: rgb(0, 129, 101);
+}
+.spawn_t{
+    background: rgb(81, 0, 148);
+}
+.weaknesses{
+    background: rgb(134, 1, 63);
+}
+/* Terminan estilos de las celdas para la tabla del modal */
 
 /*Fa: Estilos de la imagen de fondo de la pantalla de inicio*/
 .wellcomeBackground{
-    background-image:url("images/pokeball_wellcome.jpg") ;
+    background-image:url("images/pokeball_wellcome.jpg");
     background-size: cover;
     height: 100vh;   
 } 
@@ -81,12 +137,31 @@ table, tr, td{
 }
 
 .imgModal{
-    width: 200px;
+    width: 100%;
 }
 
 .bigModal{
-    background-color: black;
-    width: 130%;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    position: relative;
+    background-image: url('./images/backgroud.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bigModal::after{
+    content: "";
+    background: black;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
 }
 
 
@@ -97,7 +172,7 @@ table, tr, td{
 }
 
 .logfixed{ 
-    width:100%;
+    width: 100%;
     position: fixed;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -210,6 +285,8 @@ img{
 
 }/* <----Cierre del @Media de 1024px*/
 
+
+
 @media (max-width: 800px) { 
     .wellcomeBackground{
         background-image:url(./images/pokeball_mobile01.jpg);
@@ -238,7 +315,49 @@ img{
     
     }/* <----Cierre del @Media de 800px*/
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+    h2{
+        color:white;
+        font-size: 2em;
+    }
+
+    .imgModal{
+        width: 80%;
+    }
+    .bigModal{
+        width: 108%;
+    }
+
+    .details{
+        color: white;
+        font-size: 1.4em;
+    }
+    
+    table{
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    
+    .evolution{
+        border-radius: 10px;
+        background: rgba(128, 128, 128, 0.651);
+    
+    }
+    
+    td{
+        padding-left: 10px;
+    }
+    
+    .id{
+        width: 25%;
+    }
+    
+    .dataid{
+        padding-left: 30px;
+        width: 40%
+    }
+    
     .wellcomeBackground{
         background-image:url(./images/pokeball_inicio_mobile.jpg);
         background-size: cover;
