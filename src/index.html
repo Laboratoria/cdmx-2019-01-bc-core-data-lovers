@@ -13,17 +13,14 @@
 </head>
 
 <body>
-
   <div id="root">
-    <section id="initial-page">
+    <section id="initial-page" class="initial-page">
       <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img">
       <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-button.png"></button>
-  
-    </section>
-    <section id="pokemon-page" class="hideElement">
-      
+   </section>
 
-      <header>
+    <section id="pokemon-page" class="hideElement">
+       <header class="header">
         <div>
           <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="imgchico">
         </div>
@@ -33,47 +30,48 @@
         </nav>
       </header>
 
-      <section class="contenido">
-        <article id="print-list">
-        </article>
-      </section>
-
-      <aside class="type-search">
-        <ul>
-        <li>Tipo</li>
-        </ul>
-        <ul>
-        <li><button class="type-button" id="Grass">Planta</button></li>
-        <li><button class="type-button" id="Poison">Veneno</button></li>
-        <li><button class="type-button" id="Fire">Fuego</button></li>
-        <li><button class="type-button" id="Ice">Hielo</button></li>
-        <li><button class="type-button" id="Flying">Volador</button></li>
-        <li><button class="type-button" id="Psychic">Psíquico</button></li>
-        <li><button class="type-button" id="Water">Agua</button></li>
-        <li><button class="type-button" id="Ground">Tierra</button></li>
-        <li><button class="type-button" id="Rock">Roca</button></li>
-        <li><button class="type-button" id="Electric">Eléctrico</button></li>
-        <li><button class="type-button" id="Bug">Bicho</button></li>
-        <li><button class="type-button" id="Normal">Normal</button></li>
-        <h3>Ordenar por Nombre</h3>
-        <button class="type-sort-button" id="a-z">Por nombre</button>
-       
-      </ul>
-      <article>
-        <p>Sabias que...<br>
-          El peso promedio de tus pokemones <span id = "printType"></span> es de <span id="weight">1000 kg</span></p>
-      </article>
-      </aside>
-
-      <footer id="search">
-        <div class="footertext">
-
-        <button id="poke-button-home" class="img-pokebola-chica"><img src="./assets/poke-ball-button_1cm.png"></button>
         
+
+      <section class="main-content">
+        <div class="content"> 
+        <article id="print-list" class="post">
+        </article>
+
       </div>
- 
-      </footer>
+
+      <aside class="aside">
+        <h3 class="type">Tipo</h3>  
+  
+          <button class="type-button" id="Grass">Planta</button>
+          <button class="type-button" id="Poison">Veneno</button>
+          <button class="type-button" id="Fire">Fuego</button>
+          <button class="type-button" id="Ice">Hielo</button>
+          <button class="type-button" id="Flying">Volador</button>
+          <button class="type-button" id="Psychic">Psíquico</button>
+          <button class="type-button" id="Water">Agua</button>
+          <button class="type-button" id="Ground">Tierra</button>
+          <button class="type-button" id="Rock">Roca</button>
+          <button class="type-button" id="Electric">Eléctrico</button>
+          <button class="type-button" id="Bug">Bicho</button>
+          <button class="type-button" id="Normal">Normal</button>
+          <h3 class="orderByName">Ordenar por Nombre</h3>
+          <button class="type-button" id="Ascendente">Por nombre</button>
+        <article class="average">
+          <h4 class="doYouKnow">Sabias que...</h4>
+            <p>El peso promedio de tus pokemones <span id = "printType"></span> es de <span id="weight">1000 kg</span></p>
+        </article>
+        </aside>
+              
     </section>
+   
+    <footer id="search" class="footer">
+        <div class="footertext">
+        <button id="poke-button-home" class="img-pokebola-chica"><img src="./assets/poke-ball-button_1cm.png"></button>
+      </div>
+     </footer>
+        </section>
+
+    
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
@@ -83,6 +81,11 @@
     <script src="main.js"></script>
 
   </div> <!--termina div root-->
+
+ 
+
+
+
 </body>
 
 </html>
