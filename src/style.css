@@ -22,24 +22,11 @@ article {
   padding: 20px;
 }
 
-@media (min-width:992px) {
-  article {
-    margin-top: 50px;
-    width: 40%;
-  }
-}
-
 h2 {
   text-align: center;
   color: #efc056;
   font-size: 2.5em;
   margin: 0 auto;
-}
-
-@media (min-width:992px) {
-  h2 {
-    font-size: 1.5em;
-  }
 }
 
 .logo1 {
@@ -49,25 +36,11 @@ h2 {
   padding-top: 100px;
 }
 
-@media (min-width:992px) {
-  .logo1 {
-    width: 30%;
-    padding-top: 50px;
-  }
-}
-
 .logo2 {
   width: 40%;
   display: inline-block;
   padding: 30px;
   float: right;
-}
-
-@media (min-width:992px) {
-  .logo2 {
-    width: 15%;
-    padding: 12px;
-  }
 }
 
 .start {
@@ -85,14 +58,6 @@ h2 {
   background-color: rgba(29, 33, 40, 0.5);
   font-size: 3em;
   font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-@media (min-width:992px) {
-  .start {
-    margin-top: 50px;
-    padding: 25px 50px;
-    font-size: 2em;
-  }
 }
 
 .hide {
@@ -150,7 +115,7 @@ ul {
 }
 
 .drop-down li ul li ul {
-  right: -285px;
+  left: 100%;
   top: -30px;
 }
 
@@ -181,15 +146,6 @@ ul {
   margin-bottom: 22px;
 }
 
-@media (min-width:992px) {
-  #search {
-    margin-top: 8%;
-    width: 40%;
-    height: 50px;
-    font-size: 1.8em;
-  }
-}
-
 footer {
   text-align: center;
   text-decoration: none;
@@ -209,25 +165,11 @@ footer {
   height: 100px;
 }
 
-@media (min-width:992px) {
-  footer {
-    font-size: 1em;
-    padding-top: 16px;
-  }
-}
-
 #footer-lens {
   width: 6%;
   position: absolute;
   margin-top: -3%;
   margin-left: 4%;
-}
-
-@media (min-width:992px) {
-  #footer-lens {
-    width: 2%;
-    margin-top: -2%;
-  }
 }
 
 #champion-list {
@@ -248,15 +190,6 @@ h3 {
   text-align: center;
 }
 
-@media (min-width:992px) {
-  h3 {
-    font-size: 2em;
-    width: 15.5%;
-    transform: translate(0, -50px);
-    padding-bottom: 10px;
-  }
-}
-
 p {
   font-size: 2.5em;
   margin-block-start: 0px;
@@ -264,13 +197,6 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: #efc056;
-}
-
-@media (min-width:992px) {
-  p {
-    font-size: 2em;
-
-  }
 }
 
 .square {
@@ -283,13 +209,6 @@ p {
   display: inline-block;
   margin: 0 1% 1%;
   overflow: hidden;
-}
-
-@media (min-width:992px) {
-  .champion {
-    width: 16%;
-    margin: 0 2% 2%;
-  }
 }
 
 img {
@@ -309,11 +228,93 @@ img {
 }
 
 @media (min-width:992px) {
+  article {
+    margin-top: 50px;
+    width: 40%;
+  }
+}
+
+@media (min-width:992px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width:992px) {
+  .logo1 {
+    width: 30%;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width:992px) {
+  .logo2 {
+    width: 15%;
+    padding: 12px;
+  }
+}
+
+@media (min-width:992px) {
+  .start {
+    margin-top: 50px;
+    padding: 25px 50px;
+    font-size: 2em;
+  }
+}
+
+@media (min-width:992px) {
+  #search {
+    margin-top: 8%;
+    width: 40%;
+    height: 50px;
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width:992px) {
+  footer {
+    font-size: 1em;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width:992px) {
+  #footer-lens {
+    width: 2%;
+    margin-top: -2%;
+  }
+}
+
+@media (min-width:992px) {
+  h3 {
+    font-size: 2em;
+    width: 15.5%;
+    transform: translate(0, -50px);
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:992px) {
+  p {
+    font-size: 2em;
+
+  }
+}
+
+@media (min-width:992px) {
+  .champion {
+    width: 16%;
+    margin: 0 2% 2%;
+  }
+}
+
+@media (min-width:992px) {
   #enlisted {
     width: 5%;
     padding-bottom: 0px;
     padding-left: 25px;
     padding-top: 2px;
+    font-size: 2.5em;
   }
 }
 
@@ -326,5 +327,29 @@ img {
 @media (min-width:992px) {
   .drop-down li {
     padding: 0px 0px;
+  }
+}
+
+@media (min-width:992px) {
+  .drop-down li ul {
+    margin: 0px;
+    display: none;
+    position: absolute;
+    width: 27%;
+  }
+
+  .drop-down li:hover>ul {
+    display: block;
+  }
+
+  .drop-down li ul li {
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .drop-down li ul li ul {
+    left: 100%;
+    top: 0px;
+    width: 55%;
   }
 }
