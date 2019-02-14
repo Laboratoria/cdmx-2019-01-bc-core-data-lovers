@@ -34,31 +34,49 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">POKEMON</a>
+              <a class="navbar-brand" href="#">
+              <i id="toReturn" class="widthLogData" src="images/International_Pokémon_logo.svg.png" alt="" aria-hidden="true"></i>
+              </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#">Promedio</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filtrar<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li id="Water" class="filterData"><a href="#">Water</a></li>
+                    <li><a href="#">Fire</a></li>
+                    <li><a href="#">Grass</a></li>
+                    <li><a href="#">Bug</a></li>
+                    <li><a href="#">Normal</a></li>
+                    <li><a href="#">Poison</a></li>
+                    <li><a href="#">Electric</a></li>
+                    <li><a href="#">Ground</a></li>
+                    <li><a href="#">Fighting</a></li>
+                    <li><a href="#">Psychic</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="#">Ghost</a></li>
+                    <li><a href="#">Ice</a></li>
+                    <li><a href="#">Dragon</a></li>
+                  </ul>
+                </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ordenar<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="#">Ascendente</a></li>
+                    <li><a href="#">Peso</a></li>
                   </ul>
                 </li>
+                <li><a href="#">Promedio</a></li>
               </ul>
               <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default">
+                  <span class="glyphicon glyphicon-home"></span>
+                </button>
               </form>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -69,12 +87,12 @@
     <!--Faby:Este div contiene la imagen de inicio de pantalla-->
     <div class="row">
 
-      <div class="col-12 center">
+      <div class="col-md-12 center">
         <!--Fa:Div donde tenemos el logo y boton-->
         <img class="widthLog" src="images/International_Pokémon_logo.svg.png" alt="">
         <div class="row">
           <!--Fa:Este div crea un nuevo renglón-->
-          <div class="col-12"><button id="btnStart" class="btn btn-danger widthButton btn-sm">INICIO</button></div>
+          <div class="col-md-12"><button id="btnStart" class="btn btn-danger widthButton btn-sm">INICIO</button></div>
         </div>
         <!--cierre de row-->
       </div>
@@ -93,18 +111,6 @@
   
     </div>-->
     
-    <!--Fa:Este div visualiza el fondo en la seccion de los pokemon-->
-    <div>
-      <!--Div de boton filtrar -Estos cambios se quedan-->
-      <div class="row space">
-        <div class="col-3">
-          <!--Div para crear espa cio-->
-        </div>
-        <div class="col-6"><img id="toReturn" class="widthLogData" src="images/International_Pokémon_logo.svg.png" alt=""></div>
-        <div class="col-3"><button id="Water" class="btn-warning btn-lg filterData">FILTRAR</button></div>
-      </div>
-    </div>
-    <!---Cierre de Div de Boton filtrar-->
 
     <div id="pokemones" class="hide"> </div>
 
