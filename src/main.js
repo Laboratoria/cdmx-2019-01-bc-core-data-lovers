@@ -63,5 +63,6 @@ alphabeticOrderButton.addEventListener('click',()=> {
     printList.innerHTML='';
     const resultSortByName= window.pokesaurius.sortByName(data);
     print(resultSortByName);
+
 });
 
