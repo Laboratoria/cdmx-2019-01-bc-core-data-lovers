@@ -123,8 +123,8 @@ const limpiar = () => {
 const DatGraph = () =>{//funcion llenado de grafica con arrayX y arrayY
 let arrayYear = valorAnioX;
 let arrayValors = valorPorcentajeY;
+let prtGrap =ctx;
 
-let almacenaGraf= window.worldBank.VerGrafica(arrayYear,arrayValors)
+let almacenaGraf= window.worldBank.VerGrafica(arrayYear,arrayValors,prtGrap)
 return almacenaGraf;
-
 }
