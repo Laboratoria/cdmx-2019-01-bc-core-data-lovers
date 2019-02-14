@@ -10,6 +10,12 @@
 
 <!--En esta seccion esta todos los elementos que contiene la pagina principal-->
 
+
+<div id="PaginaInicio">
+  <img src="assets/ball.png" style="max-width: 100%">
+  <h1> PokeGram</h1>
+
+
 <div id="PaginaInicio">
   <img src="assets/ball.png" style="max-width: 100%">
   <h1> PokeGram</h1>
@@ -18,6 +24,7 @@
 <body>
   <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
   <div id="PaginaElementos" class="ocultar">
+
 
     <!--onkeyup es un evento de liberacion de tecla-->
     <div>
@@ -55,10 +62,71 @@
     <script src="main.js"></script>
     <div id="PaginaPerfil" class="ocultar">
 
+    
+      <!--onkeyup es un evento de liberacion de tecla-->
+      <div>
+        <ul id="result"></ul>
+      </div>
+    
+    <br><input type="text" id="busqueda" onkeyup="searching()" placeholder="Escribe el nombre del pókemon" > 
+    <br>
+    <div id="buttonsType">
+      <button type="submit"><img src="./assets/agua.png" id="Water" class="typesPokemon"></button>
+        <button type="submit"><img src="assets/bug.png" id="Bug" class="typesPokemon"></button>
+          <button type="submit"><img src="assets/dragon.png" id="Dragon" class="typesPokemon"></button>
+            <button type="submit"><img src="assets/electric.png" id="Electric" class="typesPokemon"></button>
+              <button type="submit"><img src="assets/ghost.png" id="Ghost" class="typesPokemon"></button>
+                <button type="submit"><img src="assets/grass.png" id="Grass" class="typesPokemon"></button>
+                  <button type="submit"><img src="assets/psychic.png" id="Psychic" class="typesPokemon"></button>
+                    <button type="submit"><img src="assets/ice.png" id="Ice" class="typesPokemon"></button>
+                      <button type="submit"><img src="assets/normal.png" id="Normal" class="typesPokemon"></button>
+                        <button type="submit"><img src="assets/flying.png" id="Flying" class="typesPokemon"></button>
+                          <button type="submit"><img src="assets/rock.png" id="Rock" class="typesPokemon"></button>
+                            <button type="submit"><img src="assets/fight.png" id="Fighting" class="typesPokemon"></button>
+                              <button type="submit"><img src="assets/fire.png" id="Fire" class="typesPokemon"></button>
+                                <button type="submit"><img src="assets/ground.png" id="Ground" class="typesPokemon"></button>
+                                  <button type="submit"><img src="assets/poison.png" id="Poison" class="typesPokemon"></button>
+    </div>
+    
+  </div>
+  <div>
+    <p><br>
+      <seccion id="probando" class="grid-img">
+  
+  <script src="./data/pokemon/pokemon.js"></script>
+  </seccion>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  
+
+  
+  <div id="PaginaPerfil" class="ocultar">
+
+
       <button id="Start">Start </button>
     </div>
 
     <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
+
+
+  <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
+ 
+
+  <h4>Ordenando Pokemones </h4>
+  <section id="order-section">
+    <section>
+      <p>Name</p>
+      <input id="asc-name" type="radio" name="order">
+      <label for="asc-name">A-Z</label>
+      <input id="desc-name" type="radio" name="order">
+      <label for="desc-name">Z-A</label>
+    </section>
+
+
+  </section>
+
+ 
+
 
 
 
@@ -104,3 +172,13 @@
     </p>
   </div>
 </body>
+
+</p>
+</div>
+<seccion id="pintar" class="grid-img">
+  
+    
+</seccion>
+</body>
+     
+
