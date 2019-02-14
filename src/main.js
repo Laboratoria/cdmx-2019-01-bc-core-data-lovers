@@ -35,17 +35,11 @@ const imprimir = (obtenerTipo) => {
 
 /*ordenando pokemon*/
 
-/*
-filterCoincidence();
-
-}else if (ubication.includes('orderPokemon.html')) {
-  const orderRdio = document.getElementById("order");
-  alert('funciono');
-  
-  console.log(orderRdio);
-  const arrayRadio = Array.from(orderRadio)
+  const orderRadio = document.getElementsByClassName("order");
+  const arrayRadio = Array.from(orderRadio);
   console.log(arrayRadio);
   const getOrderPokemon = (optionsRadio) => {
+    
     optionsRadio.map(radio => {
       radio.addEventListener("click", () => {
         if (radio.checked === true) {
@@ -56,7 +50,7 @@ filterCoincidence();
     });
   }
   getOrderPokemon(arrayRadio);
-}*/
+
 
 
 

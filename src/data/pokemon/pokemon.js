@@ -1017,7 +1017,7 @@ window.POKEMON = {
     "id": 36,
     "num": "036",
     "name": "Clefable",
-    "img": "https://www.google.com/search?q=Clefairy+gif&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjOgvGi67bgAhVI4qwKHaybC50Q_AUIDigB&biw=1213&bih=589#imgdii=yPGv2O6LEHqY2M:&imgrc=Nrj05eJZ437CeM:http://www.serebii.net/pokemongo/pokemon/036.png",
+    "img": "https://img.webme.com/pic/p/poke-comunidad/Cleffsombragengar.gif",
     "type": [
       "Normal"
     ],
@@ -2269,7 +2269,7 @@ window.POKEMON = {
     "id": 80,
     "num": "080",
     "name": "Slowbro",
-    "img": "http://www.serebii.net/pokemongo/pokemon/080.png",
+    "img": "https://vignette.wikia.nocookie.net/pokpiruleta/images/8/80/Slowbro_XY_gif.gif/revision/latest?cb=20140625071054&path-prefix=es",
     "type": [
       "Water",
       "Psychic"
@@ -2372,7 +2372,7 @@ window.POKEMON = {
     "id": 84,
     "num": "084",
     "name": "Doduo",
-    "img": "http://www.serebii.net/pokemongo/pokemon/084.png",
+    "img": "https://vignette.wikia.nocookie.net/pokeminds/images/4/4c/Doduo_XY.gif/revision/latest?cb=20140103014915&path-prefix=es",
     "type": [
       "Normal",
       "Flying"
@@ -2401,7 +2401,7 @@ window.POKEMON = {
     "id": 85,
     "num": "085",
     "name": "Dodrio",
-    "img": "http://www.serebii.net/pokemongo/pokemon/085.png",
+    "img": "https://vignette.wikia.nocookie.net/pokeminds/images/4/48/Dodrio_XY.gif/revision/latest?cb=20140103014915&path-prefix=es",
     "type": [
       "Normal",
       "Flying"
@@ -3016,7 +3016,7 @@ window.POKEMON = {
     "id": 108,
     "num": "108",
     "name": "Lickitung",
-    "img": "http://www.serebii.net/pokemongo/pokemon/108.png",
+    "img": "https://66.media.tumblr.com/a741ad805125fc65262585113dad6946/tumblr_mwsk48Iypa1r8sc3ro1_250.gif",
     "type": [
       "Normal"
     ],
@@ -3492,7 +3492,7 @@ window.POKEMON = {
     "id": 128,
     "num": "128",
     "name": "Tauros",
-    "img": "http://www.serebii.net/pokemongo/pokemon/128.png",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a5/latest/20150321183421/Tauros_espalda_G6.gif",
     "type": [
       "Normal"
     ],
@@ -3587,7 +3587,7 @@ window.POKEMON = {
     "id": 132,
     "num": "132",
     "name": "Ditto",
-    "img": "http://www.serebii.net/pokemongo/pokemon/132.png",
+    "img": "https://thumbs.gfycat.com/ConcreteWetAntelope-max-1mb.gif",
     "type": [
       "Normal"
     ],
@@ -3606,7 +3606,7 @@ window.POKEMON = {
     "id": 133,
     "num": "133",
     "name": "Eevee",
-    "img": "http://www.serebii.net/pokemongo/pokemon/133.png",
+    "img": "https://vignette.wikia.nocookie.net/pokeminds/images/1/16/Eevee_XY.gif/revision/latest?cb=20140103020715&path-prefix=es",
     "type": [
       "Normal"
     ],
@@ -3867,7 +3867,7 @@ window.POKEMON = {
     "id": 143,
     "num": "143",
     "name": "Snorlax",
-    "img": "http://www.serebii.net/pokemongo/pokemon/143.png",
+    "img": "http://orig11.deviantart.net/d9f7/f/2012/243/f/7/snorlax_used_hyperbeam_by_pencilsymbiosis-d5d31ev.gif",
     "type": [
       "Normal"
     ],

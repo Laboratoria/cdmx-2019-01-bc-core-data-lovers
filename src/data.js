@@ -12,8 +12,8 @@ const arrayPokemon= dataPokemon ;
   return arrayFilter;
 }
 
-}
-/*
+};
+
 //funcion de ordenar
 sortData:(dataPokemon,sortBy,sortOrder)=>{
   let orderDta = [];
@@ -30,34 +30,23 @@ sortData:(dataPokemon,sortBy,sortOrder)=>{
 
     case "width":
     if (sortOrder === "asc"){
-      orderDta=dataPokemon.sort((a,b) => (a.width>b.name)?1:-1);
+      orderDta=dataPokemon.sort((a,b) => (a.width>b.width)?1:-1);
     }else if (sortOrder === "desc"){
-        orderDta= dataPokemon.sort((a,b) => (a.width>b.name)?-1:1);
+        orderDta= dataPokemon.sort((a,b) => (a.width>b.width)?-1:1);
     }break
 
   
   }
   sortData(dataPokemon,sortBy,sortOrder);
-}*/
-
-
-
-
-
-
-
-
-
-
-
+};
 
 
  /*En esta seccion estoy extrayendo datos especificos de la data*/
-  /*
- const datapokemon =POKEMON.pokemon;
- 
   
- const imprimir = (imagen, nombre2, id, candy, altura, peso, debilidades) => {
+ 
+
+  
+  imprimir : (imagen, nombre2, id, candy, altura, peso, debilidades) => {
   
   const pokes = document.getElementById("pintar");
  
@@ -72,7 +61,7 @@ sortData:(dataPokemon,sortBy,sortOrder)=>{
    pokes.insertAdjacentHTML("beforeend",nombrePokemon);
    
  };
- datapokemon.forEach(elemento => {
+ dataPokemon.forEach(elemento => {
    let imagen = elemento.img;
    let nombre2 = elemento.name;
    let id = elemento.id;
@@ -82,7 +71,7 @@ sortData:(dataPokemon,sortBy,sortOrder)=>{
    let debilidades =elemento.weaknesses;
    imprimir(imagen ,nombre2,id,candy,altura,peso,debilidades);
    alert(imprimir);
- });*/    
+ });    
  
  
 
