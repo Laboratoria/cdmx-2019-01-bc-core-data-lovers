@@ -144,6 +144,7 @@ const searchByName = () => {
       console.log(characterName);})}
     //  const characterDetail = window.lol.characterSelection(characterName,dataToArray);
     //  console.log(characterDetail);})}}*/
+//----------------------------------------------------//
 
 
 
