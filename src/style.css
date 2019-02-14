@@ -79,7 +79,10 @@
     grid-template-columns: repeat(auto-fill, minmax(191px, 1fr) ) ;
 }
 button{
+<<<<<<< HEAD
+=======
 
+>>>>>>> upstream/master
   border-radius: 10px;
   background: black;
 }
@@ -107,6 +110,8 @@ figure{
     max-height: 10vh;
 }
 
+<<<<<<< HEAD
+=======
   font-family: 'Ubuntu Condensed', sans-serif;
   border: solid 2px;
   font-size: 30px;
@@ -124,6 +129,7 @@ style="max-width:80%"
 
 }
 
+>>>>>>> upstream/master
 
    
   
