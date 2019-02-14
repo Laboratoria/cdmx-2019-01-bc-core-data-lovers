@@ -17,8 +17,7 @@ searchbutton.addEventListener("click", () => {
   let userValue = userbutton.value;
   const resultData = window.data.consult(injuriesBy, yearValue, userValue);
   const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
-  resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
-  resultsecc.innerHTML = `<b>Año:</b>${resultDatos[0]} <b>Total de heridos:</b>${resultDatos[1]}`;
+  //resultsecc.innerHTML = `<b>Año:</b>${resultDatos[0]} <b>Total de heridos:</b>${resultDatos[1]}`;
 });
 
 // // allDataButton.addEventListener("click", () => {
