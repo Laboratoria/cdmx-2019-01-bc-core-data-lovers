@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <!-------------Welcome screen------------->
+  <title>MexEduca</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </div>
+  <header>
+    <nav role="navigation">
+      <figure class="logo"><img src="imagen/learning.png" alt="leyendo"></figure>
+      <h1 class="title">Alfabetización en Latinoamérica</h1>
+      <ul>
+        <li><a href="imagen/Historia de usuario..png">¿Quiénes somos?</a></li>
+        <li><a href="imagen/Historia de usuario. (1).png">¿Por qué Alfabetización?</a></li>
+      </ul>
+    </nav>
+  </header>
+</head>
+
+<body>
+  <section>
+      <div class="inner"></div>
+      <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
+  </section>
+
+  <section>
+    <h3>Noticias</h3>
+
+  </section>
+
+  <section>
+    <h3>Países</h3>
+    <button class="btnCountry" id="PER">Perú</button>
+    <button class="btnCountry" id="MEX">México</button>
+    <button class="btnCountry" id="BRA">Brasil</button>
+    <button class="btnCountry" id="CHL">Chile</button>
+
+    <fieldset>
+      Para : <select name="literacy" id="indicator">
+        <option class="opt" value="youngWomen">Indicador</option>
+      </select>
+    </fieldset>
+  </section>
+
+  <section>
+      <article>
+        <h3>Datos</h3>
+        <h5 id="data-year"></h5>
+      </article>
+    </section>
+  
+  <footer>
+    <article>
+      <h4>Acerca de</h4>
+      <h4>Sitios de interés</h4>
+
+    </article>
+
+  </footer>
+
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
 </html>

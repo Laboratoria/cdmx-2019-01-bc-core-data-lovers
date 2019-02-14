@@ -1,8 +1,21 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-const example = () => {
-  return 'example';
+//Objeto global
+window.WorldBank = {
+  dataCountries: (data, countries) => { //Función para extraer la data por país. 
+  let dataByCountries = data[countries].indicators //Obtener los objetos por país.
+  return dataByCountries;
+  },
+  percentAndYear:(data, matchYear) =>{ // Función para 
+    let newData= {}
+    data.forEach(objeto => {
+      if(objeto.indicatorName === matchYear){
+        newData = objeto.data 
+        return newData
+      }
+    });
+    return newData
+  }
 };
 
-window.example = example;
+
+
+
