@@ -16,17 +16,14 @@ searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
   const resultData = window.data.consult(injuriesBy, yearValue, userValue);
-  //const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
+  const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
   resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
-  //resultsecc.innerHTML = `<b>Año:</b>${resultDatos[0]} <b>Total de heridos:</b>${resultDatos[1]}`;
-  //resultOrder.innerHTML = `<b>Año:</b>${order[0]} <b>Total de heridos:</b>${order[1]} <b>Total de heridos en moto:</b>${order[2]}` ;
-
+  resultsecc.innerHTML = `<b>Año:</b>${resultDatos[0]} <b>Total de heridos:</b>${resultDatos[1]}`;
 });
 
-// allDataButton.addEventListener("click", () => {
-//   alert("Hello! I am an alert box!!");
-
-//   console.log(newData)
-//   resultsecc.innerHTML = `${newData[0]}`;
-//   }
+// // allDataButton.addEventListener("click", () => {
+// //   alert("Hello! I am an alert box!!");
+// //   let yearValue = injuriesBy
+// //   //resultsecc.innerHTML = `${newData[0]}`;
+// //   }
 // );
