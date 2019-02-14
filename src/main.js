@@ -1,11 +1,25 @@
 document.getElementById("next").addEventListener("click", ()=>{
-    
-    document.getElementById("navs").style.display="block";
+
+    document.getElementById("navs").style.display="none";
     document.getElementById("serch").style.display="block";
     document.getElementById("main").style.display="none";
 
     imprimir(dataPokemon);
   })
+
+  document.getElementById("neews").addEventListener("click", ()=>{
+
+      document.getElementById("navs").style.display="block";
+document.getElementById("pokemons").style.display="none";
+document.getElementById("pokemones").style.display="block";
+
+    })
+
+    // document.getElementsById("Fire").addEventListener("click", ()=>{
+    //
+    //     document.getElementById("pokemons").style.display="none";
+    //     document.getElementById("pokemones").style.display="block";
+    //   })
 
   function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -17,12 +31,12 @@ document.getElementById("next").addEventListener("click", ()=>{
   }
 
   // var i = 0;
-  // var pokemonName = ; /* The text */
+  // var pokemonName = dataPokemon.name;
   // var speed = 50; /* The speed/duration of the effect in milliseconds */
-  
+  //
   // function typeWriter(dataPokemon) {
-  //   if (i < pokemonName.length) {
-  //     document.getElementById("demo").innerHTML += txt.charAt(i);
+  //   if (i < pokemonName) {
+  //     document.getElementById("nameCenter").innerHTML += txt.charAt(i);
   //     i++;
   //     setTimeout(typeWriter, speed);
   //   }
@@ -63,9 +77,15 @@ const sortButton = (botonesOrder) => {
       const idDivi = event.target.id.split("-");
       const sortBy = idDivi[0];
       const sortOrder = idDivi[1];
+
       // const arrayOrde = window.data.sortDataPokemon(dataPokemon, sortBy, sortOrder);
 
       imprimir(window.data.sortDataPokemon(dataPokemon, sortBy, sortOrder));
+
+      const arrayOrde = window.data.sortDataPokemon(dataPokemon, sortBy, sortOrder);
+
+      imprimir(arrayOrde);
+
 
     })
   })
@@ -90,9 +110,21 @@ const imprimir = (obtenerTipo) => {
 
   obtenerTipo.map((dataPokemon) => {
 
+     const pokemons = document.getElementById("pokemons");
+     const pokemones= document.getElementById("pokemones");
+      pokemons.innerHTML="";
+      pokemones.innerHTML="";
+
+
+
+
+
    pokemons.innerHTML+= `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure>
+
                        <p class="namePokemon" id="nameCenter"> Nombre:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
 
 
   })
 }
+
+
