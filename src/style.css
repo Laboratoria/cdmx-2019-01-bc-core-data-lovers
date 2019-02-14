@@ -76,7 +76,7 @@
     height: 43em;
     position: relative;
     padding-top: 21px;
-    margin-top: 70px;
+    margin-top: 0;
     color: #d5e0d5;
     margin-left: 1%;
     background-color: #eff7ef;
@@ -101,6 +101,7 @@
         width: 100%;
         margin-bottom: 10px;
         padding-bottom: 10%;
+        background-color: #dddddd;
   }
 
   .style-button:hover{
@@ -302,7 +303,7 @@
     .style-filter{
       z-index: 9;
       height: 25em;
-      background-color: rgba(0, 0, 0, 0.72);
+      color: #d5e0d5;
       float: right;
       width: 50%;
       margin-top: -83px;
@@ -310,27 +311,6 @@
       position: fixed;
       padding-top: 21px;
       left: 50%;
-    }
-
-    .containerMenu{
-      height: 25px;
-        width: 20%;
-        display: grid;
-        grid-column-start: 3;
-        grid-row-start: 1;
-        z-index: 40;
-        padding-left: 19em;
-
-    }
-
-    .container-filters{
-
-          display: grid;
-          width: 80%;
-          height: 51%;
-          text-align: center;
-          margin-left: 10%;
-          padding-top: 10em;
     }
 
     .style-font{
@@ -355,6 +335,7 @@
           margin-bottom: 10px;
           padding-bottom: 10%;
           cursor: pointer;
+          background-color: #dddddd;
     }
 
     .style-button:hover{
