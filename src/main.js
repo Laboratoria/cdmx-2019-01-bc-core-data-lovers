@@ -68,8 +68,8 @@
    const printCharacterSheet = (datos) => {
     showFirstChampionList.innerHTML = "";
    datos.forEach(champ => {
-   let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p><h2>${champ.blurb} ${champ.info} ${champ.stats}</h2></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}             
-
+   let nameList = `<div id="${champ.id}" class="nameList"><img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}"><div id="letras"><h1 id= "nombre" >${champ.name}</h1> <p id="titulo">${champ.title}</p><h2>${champ.blurb}</h2> <p>Attack:${champ.info}</p><p>${champ.stats}</p></div></div>`;    showFirstChampionList.insertAdjacentHTML("beforeend",nameList);});}             
+  
 
 
   const characterSelection = () => {
@@ -101,7 +101,7 @@ const selectByRol = () => {
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
       document.getElementById("mySidenav").style.width = "0%";
-  
+
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
       print(arrayRolesFiltered);})}}
     selectByRol();

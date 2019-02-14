@@ -12,15 +12,48 @@ describe('example', () => {
   })
 })
 
+<<<<<<< HEAD
+describe('iterarData', ()=>{
+  it('is a function',() => {
+    expect(typeof window.lol.iterarData).toBe('function');
+  
+ 
+ });
+ 
+ });
+
+
+describe('filtroDataRoles', ()=>{
+  it('is a function',() => {
+    expect(typeof window.lol.filtroDataRoles).toBe('function');
+  });
+=======
 describe('example', () => {
   it('is a function', () => {
     expect(typeof window.lol.filterByName).toBe('function');
   })
 })
+>>>>>>> upstream/master
 
 
+    it('Deberia devolver el obj Alistar si es igual a Tank',()=>{
+      expect(window.lol.filtroDataRoles('Tank',window.lol.dataToArray )).toEqual(window.dataToArray.Alistar.tags[0])
+    })
+ });
 
 
+<<<<<<< HEAD
+
+
+describe('filterByName', ()=>{
+ it('is a function',() => {
+   expect(typeof window.lol.filterByName).toBe('function');
+});
+
+})
+
+
+=======
 describe('filtoDataRoles', () => {
 
   let muestra = {
@@ -156,3 +189,4 @@ describe('filtoDataRoles', () => {
       expect(window.lol.filtroDataRoles('Tank', dataToArray)[0]).toEqual(dataToArray[0]);
     })
   });
+>>>>>>> upstream/master
