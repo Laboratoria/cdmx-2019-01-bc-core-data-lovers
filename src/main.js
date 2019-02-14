@@ -114,7 +114,7 @@ const limpiar = () => {
     document.getElementById('order').value = '';
     document.getElementById('contenido').innerHTML = '';
     document.getElementById('graf').style.display='none';
-  }
+  } 
   
   buttonLimpiar.addEventListener('click', limpiar)
 //console.log(limpiar);
