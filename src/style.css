@@ -232,83 +232,61 @@ img {
     margin-top: 50px;
     width: 40%;
   }
-}
 
-@media (min-width:992px) {
   h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
-}
 
-@media (min-width:992px) {
   .logo1 {
     width: 30%;
     padding-top: 50px;
   }
-}
 
-@media (min-width:992px) {
   .logo2 {
     width: 15%;
     padding: 12px;
   }
-}
 
-@media (min-width:992px) {
   .start {
     margin-top: 50px;
     padding: 25px 50px;
     font-size: 2em;
   }
-}
 
-@media (min-width:992px) {
   #search {
     margin-top: 8%;
     width: 40%;
     height: 50px;
     font-size: 1.8em;
   }
-}
 
-@media (min-width:992px) {
   footer {
     font-size: 1em;
     padding-top: 16px;
   }
-}
 
-@media (min-width:992px) {
   #footer-lens {
     width: 2%;
     margin-top: -2%;
   }
-}
 
-@media (min-width:992px) {
   h3 {
-    font-size: 2em;
-    width: 15.5%;
+    font-size: 1.8em;
+    width: 20%;
     transform: translate(0, -50px);
     padding-bottom: 10px;
   }
-}
 
-@media (min-width:992px) {
   p {
-    font-size: 2em;
+    font-size: 1.6em;
 
   }
-}
 
-@media (min-width:992px) {
   .champion {
-    width: 16%;
+    width: 21%;
     margin: 0 2% 2%;
   }
-}
 
-@media (min-width:992px) {
   #enlisted {
     width: 5%;
     padding-bottom: 0px;
@@ -316,21 +294,15 @@ img {
     padding-top: 2px;
     font-size: 2em;
   }
-}
 
-@media (min-width:992px) {
   ul {
     padding: 0px;
   }
-}
 
-@media (min-width:992px) {
   .drop-down li {
     padding: 0px 0px;
   }
-}
 
-@media (min-width:992px) {
   .drop-down li ul {
     margin: 0px;
     display: none;
@@ -351,5 +323,24 @@ img {
     left: 100%;
     top: 0px;
     width: 73%;
+  }
+}
+
+@media (min-width: 1200px){
+  h3 {
+    font-size: 1.7em;
+    width: 15.4%;
+    transform: translate(0, -50px);
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.5em;
+
+  }
+
+  .champion {
+    width: 16%;
+    margin: 0 2% 2%;
   }
 }
