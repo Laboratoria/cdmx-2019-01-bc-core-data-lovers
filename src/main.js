@@ -1,5 +1,4 @@
-[9:47, 14/2/2019] Katia Lab: // esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+
 
 //esto a esta funcionando al 100
 window.data={ 
