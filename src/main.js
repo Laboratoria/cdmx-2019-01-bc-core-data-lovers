@@ -44,6 +44,23 @@ search.addEventListener('keyup', () => {
   }
 })
 
+//Esta función es para seleccionar el campeón que queremos visualizar
+// const champion = document.getElementsByClassName('champion');
+// console.log(champion);
+// let championInd = [];
+// // let y = lolData.id;
+// // let x = event.target.y;
+
+// const selectChamp = () => {
+//   for (let i = 0; i < champion; i++) {
+//     champion[i].addEventListener("click", () => {
+//       championInd = champ[i];
+
+//     })
+//   }
+// }
+// selectChamp();
+
 //Esta función es para seleccionar el rol por el cual se va a filtrar
 const selectRol = () => {
   for (let i = 0; i < rol.length; i++) {

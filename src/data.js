@@ -77,13 +77,10 @@ window.lol = {
     const filteringName = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
     return filteringName;
   }
-  //esta llave cierra window.lol
 
+//Aquí inicia la función matemática
+
+  
+//esta llave cierra window.lol
 }
 
-// // esta es una función de ejemplo
-// // puedes ver como agregamos la función a nuestro objeto global window
-// /* const example = () => {
-//   return 'example';
-// };
-// window.example = example;
