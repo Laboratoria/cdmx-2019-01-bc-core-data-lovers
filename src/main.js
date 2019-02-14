@@ -20,7 +20,6 @@ btnStart.addEventListener("click", () => {
   burguer.classList.remove('hide');
 });
 
-
  //Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
  const toPrint = (mapData) => {
    const filter = pokemones;
