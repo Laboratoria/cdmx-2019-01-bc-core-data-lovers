@@ -326,6 +326,40 @@ img {
   }
 }
 
+#close-fun {
+  color: white; 
+}
+
+#modal-fun {
+  position: fixed;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  left: 0;
+  top: 0;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Contenido del modal */
+.modal-content {
+  display: block;
+  background-color: rgba(29, 33, 40);
+  margin: auto;
+  border: 0px;
+  width: 80%;
+  height:80%
+}
+
+.background-modal {
+  background-color: red;
+  width: 100%;
+  height: 50%;
+  padding-top: 20%;
+}
+
+
 @media (min-width: 1200px){
   h3 {
     font-size: 1.7em;

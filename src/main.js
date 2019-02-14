@@ -3,12 +3,17 @@ const start = document.getElementById('start');
 const championList = document.getElementById('champion-list');
 const cardSummary = document.getElementById('card-summary');
 const rol = document.getElementsByClassName('rol');
+const modalFunFacts = document.getElementById('modal-fun');
+
 //Declarando las variables que enlazan los botones del HTML mediante el DOM
 const startButton = document.getElementById('start-button');
 const attack = document.getElementById('attack');
 const magic = document.getElementById('magic');
 const defense = document.getElementById('defense');
 const back = document.getElementById('back');
+const funFacts = document.getElementById('fun-facts');
+const closeFunFacts = document.getElementById('close-fun');
+
 //Input para buscar por nombre
 let search = document.getElementById('search');
 
@@ -30,6 +35,14 @@ const printData = (newArrayInfo) => {
     cardSummary.insertAdjacentHTML("beforeend", result);
   })
 }
+//Evento para el boton funFacts
+funFacts.addEventListener('click', ()=>{
+  modalFunFacts.classList.remove('hide');
+})
+
+closeFunFacts.addEventListener ('click', () => {
+  modalFunFacts.classList.add('hide');
+});
 
 //Funcion para agregar el evento key up al input para filtrar por nombre
 search.addEventListener('keyup', () => {
@@ -42,7 +55,7 @@ search.addEventListener('keyup', () => {
   } else {
     printData(filtered);
   }
-})
+});
 
 //Esta función es para seleccionar el campeón que queremos visualizar
 // const champion = document.getElementsByClassName('champion');
