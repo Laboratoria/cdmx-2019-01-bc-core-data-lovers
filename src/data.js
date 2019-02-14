@@ -20,15 +20,15 @@ window.data = {
   }, //Consult
 
   order: (injuriesBy, yearValue, userValue) => {
-    const yearFound = injuriesBy.find(element => element.Year == yearValue);
+    //const yearFound = injuriesBy.find(element => element.Year == yearValue);
       injuriesBy.forEach(element => {
-      let year = yearFound;
+      let year = element.Year;
       let moto = element.Total_Injured_Persons_Motorcyclists;
       let bike = element.Total_Injured_Persons_Pedalcyclists;
       let walk = element.Total_Injured_Persons_Pedestrians;
       let transit = element.Total_Injured_Persons_Transit_Total;
       let allInjured = [moto, bike, walk, transit];
-        if (year >= "2009-01-04" && userValue === "all") {
+        if (yearValue === year && userValue === "all") {
             let yearFind = [year.substr(0,4), allInjured]
           console.log(yearFind);
         }
