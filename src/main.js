@@ -9,6 +9,7 @@ const pokeButtonHome=document.getElementById('poke-button-home');
 const weight = document.getElementById('weight');
 const counterCollection=document.getElementById('counterCollection');
 const printType= document.getElementById('printType');
+const alphabeticOrderButton=document.getElementById('a-z');
 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
@@ -35,7 +36,7 @@ const print=(data)=>{
         return print;
     });
    const averageWeight= totalWeight/data.length;
-   weight.innerHTML=averageWeight;
+   weight.innerHTML=averageWeight.toFixed(2);
    counterCollection.innerHTML= data.length;
 };
 
@@ -56,5 +57,11 @@ for(let i = 0; i <buttonType.length; i++ ){
 pokeButtonHome.addEventListener('click',() => {
     printList.innerHTML='';
     print(data)
+});
+
+alphabeticOrderButton.addEventListener('click',()=> {
+    printList.innerHTML='';
+    const resultSortByName= window.pokesaurius.sortByName(data);
+    print(resultSortByName);
 });
 
