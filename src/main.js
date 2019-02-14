@@ -15,7 +15,7 @@ const pokemonTypeAll = document.getElementById("pokemonTypeAll");
 const checkboxWeightLight = document.getElementById("checkboxWeightLight");
 const checkboxWeightHeavy = document.getElementById("checkboxWeightHeavy");
 const checkboxWeightAscending = document.getElementById("checkboxWeightAscending");
-//const checkboxWeightDescending = document.getElementById("checkboxWeightDescending")
+const checkboxWeightDescending = document.getElementById('checkboxWeightDescending');
 const checkboxHeightSmall = document.getElementById("checkboxHeightSmall");
 const checkboxHeightMedium = document.getElementById("checkboxHeightMedium");
 const checkboxHeightTall = document.getElementById("checkboxHeightTall");
@@ -49,7 +49,7 @@ const titlePokemonSortByHeightDescending = document.getElementById ('titlePokemo
 const aboutPikapediaPage = document.getElementById("aboutPikapediaPage");
 const buttonSearchPokemonOnFilter = document.getElementById("buttonSearchPokemonOnFilter");
 const buttonBackPageKanto = document.getElementById("buttonBackPageKanto");
-const checkboxWeightDescending = document.getElementById('checkboxWeightDescending');
+
 
 
 
