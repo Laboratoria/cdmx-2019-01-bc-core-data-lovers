@@ -79,10 +79,6 @@
     grid-template-columns: repeat(auto-fill, minmax(191px, 1fr) ) ;
 }
 button{
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
   border-radius: 10px;
   background: black;
 }
@@ -109,27 +105,4 @@ figure{
     padding-top: 50%;
     max-height: 10vh;
 }
-
-<<<<<<< HEAD
-=======
-  font-family: 'Ubuntu Condensed', sans-serif;
-  border: solid 2px;
-  font-size: 30px;
-  
-  border-radius: 20px;
-    height: 0 auto;
-    width: 0 auto;
-
-
-}
-#busqueda{
-
-size=100px;
-style="max-width:80%"
-
-}
-
->>>>>>> upstream/master
-
-   
   
