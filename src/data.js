@@ -54,7 +54,7 @@ sortData:(dataPokemon,sortBy,sortOrder)=>{
 
 
 
- */En esta seccion estoy extrayendo datos especificos de la data/*
+ /*En esta seccion estoy extrayendo datos especificos de la data*/
   /*
  const datapokemon =POKEMON.pokemon;
  
