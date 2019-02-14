@@ -2,6 +2,11 @@ global.window=global;
  require('../src/data.js');
 require('../src/data/pokemon/pokemon');
 
+
+describe("filterData", () => {
+  it("is a function", () => {
+    expect(typeof filterData).toBe("function");
+
 const dataBpokemon = [{
   "id": 1,
   "num": "001",
@@ -163,10 +168,15 @@ const dataBpokemon = [{
 describe("data", () => {
   it('is a function', () => {
     expect(typeof window.data).toBe("object");
+
   });
   
   it('returns filterData', () => {
+
+    expect(filterData(dataPokemon, ["Ghost"]).length).toBe(3);
+
    
+
   });
   it ('returns Pokemon filtrado',()=>{
     expect(window.data.filterData(dataBpokemon, "Grass")[0]).toEqual(dataBpokemon[0]);
