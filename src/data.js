@@ -6,6 +6,20 @@ window.pokesaurius = {
    return filterPokemonType
 
   },
+
+
+  sortByName:(data)=>{
+    const orderPokemonNAme=data.sort((a,b)=> {
+      if(a.name > b.name){
+        return 1;
+      }
+      if(a.name < b.name){
+        return-1;
+      }
+    })
+    return(orderPokemonNAme)
+  }
+
 }
 
 
