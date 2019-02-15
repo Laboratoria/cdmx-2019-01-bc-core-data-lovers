@@ -13,7 +13,7 @@ window.data = {
       Total_Injured_Persons_Pedestrians,
       Total_Injured_Persons_Transit_Total,
       Year
-    }) => [`<br>${Year}<br>${Total_Injured_Persons_Motorcyclists}<br>${Total_Injured_Persons_Motorcyclists}<br>${Total_Injured_Persons_Pedalcyclists}<br>${Total_Injured_Persons_Pedestrians}<br>${Total_Injured_Persons_Transit_Total}<br>`]);
+    }) => [`${Year} ${Total_Injured_Persons_Motorcyclists} ${Total_Injured_Persons_Motorcyclists} ${Total_Injured_Persons_Pedalcyclists} ${Total_Injured_Persons_Pedestrians}<br>${Total_Injured_Persons_Transit_Total}<br>`]);
     console.log(allData)
     
     //Dentro de un ciclo FOR buscamos las Key y comparamos con el valor del Usuario.
