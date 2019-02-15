@@ -15,11 +15,12 @@ const characterFromList = document.getElementsByClassName("nameList");
 
 
 //almacena en variable los id del primer evento de cambio de pantalla, la interacción para abrir y cerrar el menú
-const inicio = document.getElementById('inicio')
-const menu = document.getElementById('menu')
-const cerrar = document.getElementById('titleChampions')
+const inicio = document.getElementById('inicio');
+const menu = document.getElementById('menu');
+const cerrar = document.getElementById('titleChampions');
 const welcome = document.getElementById('welcomeMssg');
-const printRolTitle = document.getElementById('rolTitle')
+const printRolTitle = document.getElementById('rolTitle');
+const home= document.getElementById('home');
 
 //Trae los divs de cada personaje
 //const character = document.getElementById('character')
@@ -53,7 +54,9 @@ cerrar.onmouseover = () => {
   document.getElementById("mySidenav").style.width = "0px";
 };
 
-
+home.onclick= ()=> {
+  document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';
+}
 
 /* ----------------------------------------------*/
 //función que despliega la info del personaje al dar click
