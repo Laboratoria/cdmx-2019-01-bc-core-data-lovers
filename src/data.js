@@ -7,8 +7,8 @@ window.data = {
   },
 
   filterByType: (dataPokemon,category) => {
-    const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
-    return filteredData;
+  const filteredData = dataPokemon.filter(data =>(data.type.includes(category)));
+  return filteredData;
   },
 
   filterByLetter: (dataPokemon, name) => {
@@ -26,7 +26,9 @@ window.data = {
       return data.sort((a, b) => (a[sortBy] > b[sortBy]) ? 1 : -1);
     }
     else if (sortOrder == 'desc') {
-      return data.sort((a, b) => (a[sortBy] < b[sortBy]) ? 1 : -1);
+      return data.sort((a, b) => (a[sortBy] < b[sortBy]) ?  1 : -1);
+    } else {
+      return data;
     }
 
     /*
