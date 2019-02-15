@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html,body{
      margin:0px;
      font-family: 'Lato', sans-serif;
@@ -515,3 +516,387 @@ figure{
    left: 27%;
 }
  }
+=======
+    html,body{
+      margin:0px;
+      font-family: 'Lato', sans-serif;
+    }
+
+    header {
+      grid-column: span 12;
+   grid-row: span 1;
+   height: 380px;
+   background-image: url(https://c.wallhere.com/photos/18/04/Non_Non_Biyori_anime_landscape_nature-25919.png!d);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: 0px;
+   z-index: 21;
+   opacity: .95;
+    }
+
+    figure{
+      margin:0px;
+    }
+
+    nav{
+    height: 70px;
+    background-color: #fafafb;
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  .pokedex{
+  background-color:white;
+  border-style: outset;
+  border-radius: 12px;
+  color:gray;
+  margin: 2%;
+  width: 11%;
+  text-align: center;
+  font-size: 1vw;
+  display: inline-block;
+  }
+
+  .button-filter{
+  display: none;
+    }
+
+    .pokepedia{
+    padding-left: 36%;
+    padding-top: 60px;
+    margin-top: 20px;
+    width: 30%;
+  }
+
+
+  .pediaKanto{
+    padding-left: 2%;
+        margin: 0px;
+        width: 17%;
+        margin-top: .7em;
+        position: absolute;
+  }
+
+
+  .tipoP{
+  border-radius: 12px;
+  border-style: solid;
+  background-color: black;
+  color: white;
+  font-size: 1vw;
+  }
+
+  .style-filter{
+    z-index: 20;
+    float: left;
+    width: 20%;
+    height: 43em;
+    position: relative;
+    padding-top: 21px;
+    margin-top: 0;
+    color: #d5e0d5;
+    margin-left: 1%;
+    background-color: #eff7ef;
+  }
+
+  .style-font{
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 1.5vw;
+  }
+
+  .style-button{
+    outline: none;
+        border: 0;
+        text-align: center;
+        font-size: 1.5vw;
+        padding-top: .5em;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        margin-top: 10px;
+        height: 33px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10%;
+        background-color: #dddddd;
+  }
+
+  .style-button:hover{
+    background-color: rgb(247, 247, 247);
+    color: rgb(1, 1, 1);
+  }
+
+  .browser{
+        /*position: absolute;*/
+        height: 2.5em;
+        width: 35%;
+        z-index: 22;
+        margin-left: 30%;
+        border-radius: 8px;
+        border-style: inset;
+        margin-top: 12px;
+    }
+
+    div h1{
+          margin-top:.5em;
+          margin-bottom: 0px;
+          font-size: 1vw;
+        }
+
+        div p{
+          margin-top:0px;
+          margin-bottom: .5em;
+        }
+
+        div img{
+          width: 95%;
+        }
+
+        .color-background{
+          background-color: #d7ffd7;
+        }
+
+        .return{
+          margin-left: 21%
+      }
+
+
+      .button-login{
+        /*display: inline;
+        height: 70px;
+            background-color: white;
+            color: gray;
+            margin-left: 85%;
+            border-style: none;
+            position: absolute;
+            font-size: 1.5vw;
+            width:15%;*/
+            height: 70px;
+            background-color: white;
+            color: gray;
+            margin-left: 85%;
+            border-style: none;
+            position: absolute;
+            font-size: 1.5vw;
+            width: 15%;
+            z-index: 40;
+            display: table;
+            position: relative;
+            top: -58%;
+        }
+
+        .button-register{
+        /*display:table
+        height: 70px;
+        background-color: white;
+        color: gray;
+        margin-left: 70%;
+        border-style: none;
+        position: absolute;
+        font-size: 1.5vw;
+        width: 15%;*/
+        background-color: white;
+        color: gray;
+        margin-left: 70%;
+        border-style: none;
+        position: relative;
+        font-size: 1.5vw;
+        width: 13%;
+        top: -89px;
+        display: flex;
+        }
+
+    footer {
+    grid-column: span 12;
+    background-color: pink;
+  }
+
+    @media screen and (max-width: 768px) {
+
+    }
+
+
+    @media screen and (max-width: 480px) {
+
+      body{
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: none;
+      }
+
+    nav{
+        background-color: #ffffff;
+        width: 100%;
+        height: 4em;
+        border-bottom: 2px solid rgb(184, 184, 184);
+        position: fixed;
+        top: 0;
+        z-index: 11;
+    }
+
+    .container-browser{
+        margin-top: 30px;
+        margin-bottom: 31px;
+        margin-left: 3em;
+        z-index: 5;
+        position: relative;
+    }
+
+    .container-buttonfilter{
+      float: right;
+      margin-right: 1em;
+      margin-top: -4em;
+      width: 4em;
+      z-index: 35;
+      position: relative;
+      top: 39em;
+    }
+
+    .button-filter{
+      display: inline;
+      background-image: url(./images/menu.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 30px;
+      width: 3em;
+      margin-left: 9%;
+      position: relative;
+      z-index: 40;
+      top: 6px;
+      }
+
+      .browser{
+        border-radius: 7px;
+        height: 2em;
+        width: 55%;
+        margin-left: 22px;
+        margin-top: 18px;
+    }
+
+      footer {
+        background-color: #FFFFFF;
+        height: 61px;
+        position: fixed;
+        bottom: 0;
+        border-top: 2px solid rgb(184, 184, 184);
+        width: 100%;
+        height: 4em;
+        z-index: 10;
+      }
+
+      .pokedex{
+        background-color: rgb(255, 255, 255);
+        border-style: outset;
+        border-style: solid;
+        border-radius: 12px;
+        color:rgb(84, 84, 84);
+        opacity: 2.8;
+        margin: 5%;
+        width: 35%;
+        text-align: center;
+        font-size: 19px;
+        display: inline-block;
+        padding-bottom: 5%
+      }
+
+
+    .position-filter{
+
+     display: none;
+      grid-column: 4/5;
+      grid-row: 1/7;
+    }
+    .mostrar{
+      display: grid;
+      grid-column-start: 5;
+      grid-auto-rows: 6;
+      grid-row: 1/7;
+    }
+
+    .style-filter{
+      z-index: 9;
+      height: 25em;
+      color: #d5e0d5;
+      float: right;
+      width: 50%;
+      margin-top: -83px;
+      height: 51em;
+      position: fixed;
+      padding-top: 21px;
+      left: 50%;
+    }
+
+    .style-font{
+      font-family: 'Lato', sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 4vw;
+    }
+
+
+    .style-button{
+        outline: none;
+          border: 0;
+          text-align: center;
+          font-size: 4vw;
+          padding-top: .5em;
+          border-radius: 1em;
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+          margin-top: 10px;
+          height: 33px;
+          width: 95;
+          margin-bottom: 10px;
+          padding-bottom: 10%;
+          cursor: pointer;
+          background-color: #dddddd;
+    }
+
+    .style-button:hover{
+      background-color: rgb(205, 205, 205);
+      color: rgb(1, 1, 1);
+    }
+
+      .return{
+        margin-left: 0;
+        display: inline;
+        position: absolute;
+        z-index: 5
+
+      }
+
+      .color-background{
+        background-color: #d7ffd7;
+      }
+
+      .button-login{
+        display: none;
+      }
+
+      .button-register{
+        display: none;
+      }
+
+      .tipoP{
+      border-radius: 12px;
+      border-style: solid;
+      background-color: black;
+      color: white;
+      font-size: 19px;
+    }
+
+
+figure{
+    position: relative;
+    top: 43em;
+    width: 55em;
+    left: 27%;
+}
+
+  }
+>>>>>>> 32a7b3049364b6fa129fc9a06793e25c4ebeb985
