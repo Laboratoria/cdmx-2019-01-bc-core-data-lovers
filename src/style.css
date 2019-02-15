@@ -113,7 +113,7 @@ margin-right: -40px;
     /* left:400px; */
     /* top: -193px; */
 
-/* 
+/*
   /* } */
 
   /* .topnav.responsive .active{
@@ -128,8 +128,25 @@ margin-right: -40px;
   } */
 
 
-@media screen and (max-width: 600px) {
-}
+  .divPokemon{
+      position: relative;
+      background-image: url(../src/assets/img/cajita.png);
+      background-size: cover;
+      background-position: center center;
+      height: 200px;
+      width: 100px;
+
+      /* font-family: Pokemon-Solid; */
+      color: rgb(65, 37, 43);
+      display: inline-block;
+      padding: 5%;
+      margin: 5%;
+      border-radius: 10%;
+
+  }
+
+
+
 .divPokemon{
     position: relative;
     background-image: url(../src/assets/img/cajita.png);
@@ -137,17 +154,22 @@ margin-right: -40px;
     background-position: center center;
     height: 200px;
     width: 100px;
-   
+
     /* font-family: Pokemon-Solid; */
-    color: rgb(65, 37, 43);
+
     display: inline-block;
     padding: 5%;
-    margin: 5%;
+    margin: 3%;
+    margin-top: 5%;
+    margin-left: 10%;
     border-radius: 10%;
 
 }
 
-.namePokemon{
+
+
+
+/* .namePokemon{
     font-size: 63%;
     letter-spacing: 1px;
     margin-top: 50%;
@@ -155,7 +177,7 @@ margin-right: -40px;
     margin-bottom: 60%;
     font-family: 'Indie Flower', cursive;
 
-}
+} */
 
 
 .divPokemon img{
@@ -179,15 +201,26 @@ position:absolute;
 }
 
 .namePokemon{
-margin-top: 20%;
 
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #fff;
+  font-size: 70%;
+  letter-spacing: 2.5px;
+margin-top: 60%;
+margin-left: -40%;
 text-align: center
 
 
 }
 
 .styleButtonNext{
-  
+  display: block;
+position: absolute;
+right: 44%;
+top:220px;
+size: auto;
+border-width: 2px;
+border-color: #000;
   border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
   -webkit-border-radius: 50% 50% 50% 50%;
@@ -198,8 +231,13 @@ text-align: center
   font-family: Pokemon-Solid;
   color: rgb(12, 10, 1);
   font-size: 2vw;
-  padding: 20px ;
+  padding: 2.5% ;
+  margin:0;
+  /* margin-left: 30px; */
+  /* margin-top: 2%; */
+  /* margin-right: 0%; */
 }
+
 
 .styleButtonNext:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -213,6 +251,8 @@ text-align: center
     box-shadow: 0 7px #666;
     transform: translateY(8px);
 }
+
+
 
 #main{
     background-image: url(../src/assets/img/fondoPokemon.png);
@@ -228,6 +268,7 @@ text-align: center
 }
 
 #navs{
+background-image: url(../src/assets/img/2.jpg);
   display:none;
 }
 
@@ -236,6 +277,10 @@ text-align: center
 .topnav {
   background-color: #333;
   overflow: inherit;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+
 }
 
 
@@ -290,9 +335,15 @@ text-align: center
   }
 }
 
+.sidenav{
+  position: fixed;
+  margin-top: 15%;
+}
+
 .sidenav a{
-  position: relative;
+  position:fixed;
 margin-top: 15%;
+display:block;
 }
 
 
@@ -324,26 +375,36 @@ margin-top: 15%;
 
 #about {
   top: 20px;
-  background-color: #4CAF50;
+  background-color: rgb(222, 31, 29);
 }
 
 #blog {
   top: 80px;
-  background-color: #2196F3;
+  background-color: rgb(232, 91, 7);
 }
 
 #projects {
   top: 140px;
-  background-color: #f44336;
+  background-color: rgb(231, 227, 7);
 }
 
 #contact {
   top: 200px;
-  background-color: #555
+  background-color: #2196F3;
 }
+
+@media screen and (max-width: 600px) {
+  .sidenav:not(:first-child) {display: none;}
+  .sidenav  {
+
+
+  }
+}
+
 
 #pokemons{
   background-image: black;
+
 }
 #serch{
   background-image: url(../src/assets/img/2.jpg);
@@ -352,16 +413,21 @@ margin-top: 15%;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    
+
     position: relative;
     display: inline-block;
     display: none;
     overflow: auto;
-    
+
 }
 
 .bottonPokemons{
 width:10%;
+position:relative;
+margin-top: 5%;
+margin-bottom: -5%;
+margin-right: 0%;
+padding: 0%
 }
 
 
@@ -369,14 +435,50 @@ width:10%;
 .imgPokemon img{
     width: 7em;
     height: 7em;
-    margin-top:-32%;
+    margin-top:-29%;
     margin-left: 8%;
-    display: inline-block;
+    display:inline-block;
 }
 
 .logo{
-  width: 40%;
-  display: inline-block;
+  position: absolute;
+  left: 27%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+
+  width: 43%;
 }
 
 
+@media (max-width: 999px) and (min-width: 320px)
+{
+.logo{
+  position: relative;
+  left: 0%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100vw;
+
+  width: 200vw;
+}
+@media (max-width: 999px) and (min-width: 768px)
+{
+.logo{
+  position: relative;
+  left: 0%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100vw;
+
+  width: 80vw;
+}
+
+.orderBy{
+  position: relative;
+  margin-top: 300%;
+}
+
+/* .order{
+  display:block;
+} */

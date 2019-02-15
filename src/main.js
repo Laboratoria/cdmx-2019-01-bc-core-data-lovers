@@ -1,36 +1,77 @@
-
 document.getElementById("next").addEventListener("click", ()=>{
-    
-    document.getElementById("navs").style.display="none";
-    document.getElementById("serch").style.display="block";
-    document.getElementById("main").style.display="none";
 
-    imprimir(dataPokemon);
+  document.getElementById("navs").style.display="none";
+  document.getElementById("barra").style.display="block";
+  document.getElementById("serch").style.display="block";
+  document.getElementById("main").style.display="none";
+  document.getElementById("order").style.display="none";
+
+  imprimir(dataPokemon);
+})
+
+document.getElementById("home").addEventListener("click", ()=>{
+  document.getElementById("navs").style.display="none";
+  // document.getElementById("navs").style.display="none";
+  document.getElementById("serch").style.display="block";
+  document.getElementById("main").style.display="none";
+  document.getElementById("order").style.display="none"
+  document.getElementById("pokemons").style.display="block";
+  imprimir(dataPokemon);
+// imprimir(dataPokemon);
+})
+
+
+
+document.getElementById("neews").addEventListener("click", ()=>{
+
+    document.getElementById("navs").style.display="block";
+    // document.getElementById("order").style.display="none";
+
+document.getElementById("pokemons").style.display="none";
+imprimir(dataPokemon);
+
+
+
   })
 
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+  document.getElementById("orderBy").addEventListener("click", ()=>{
+
+      document.getElementById("order").style.display="block";
+      document.getElementById("navs").style.display="none"
+      document.getElementById("pokemons").style.display="none";
+imprimir(dataPokemon);
+        })
+  // document.getElementsById("Fire").addEventListener("click", ()=>{
+  //
+  //     document.getElementById("pokemons").style.display="none";
+  //     document.getElementById("pokemones").style.display="block";
+  //   })
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
+}
 
-  // var i = 0;
-  // var pokemonName = ; /* The text */
-  // var speed = 50; /* The speed/duration of the effect in milliseconds */
-  
-  // function typeWriter(dataPokemon) {
-  //   if (i < pokemonName.length) {
-  //     document.getElementById("demo").innerHTML += txt.charAt(i);
-  //     i++;
-  //     setTimeout(typeWriter, speed);
-  //   }
-  // }
+myFunction();
+
+// var i = 0;
+// var pokemonName = dataPokemon.name;
+// var speed = 50; /* The speed/duration of the effect in milliseconds */
+//
+// function typeWriter(dataPokemon) {
+//   if (i < pokemonName) {
+//     document.getElementById("nameCenter").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
 
 
- var POKEMON;
+var POKEMON;
 const dataPokemon = POKEMON.pokemon;
 const buttonTypes = Array.from( document.getElementsByClassName("bottonPokemons"));
 const buttonOrder = Array.from( document.getElementsByClassName("sortTipo"));
@@ -40,36 +81,36 @@ const buttonOrder = Array.from( document.getElementsByClassName("sortTipo"));
 
 const obtenerTipo = (arregloBotones) => {
 
-  arregloBotones.map((tipo) => {
+arregloBotones.map((tipo) => {
 
-      tipo.addEventListener("click", (event) =>{
-
-
-      const getTypePokemon = event.target.id;
+    tipo.addEventListener("click", (event) =>{
 
 
-      const arregloFiltrado = window.data.filterPokemon(dataPokemon,getTypePokemon);
+    const getTypePokemon = event.target.id;
 
-      imprimir(arregloFiltrado);
-    })
-  });
+
+    const arregloFiltrado = window.data.filterPokemon(dataPokemon,getTypePokemon);
+
+    imprimir(arregloFiltrado);
+  })
+});
 
 }
 
 obtenerTipo(buttonTypes);
 
 const sortButton = (botonesOrder)=>{
-  botonesOrder.map(eventoSor =>{
-    eventoSor.addEventListener("click",(event) =>{
-      const idDivi = event.target.id.split("-");
-      const sortBy = idDivi[0];
-      const sortOrder = idDivi[1];
-      const arrayOrde = window.data.sortDataPokemon(dataPokemon, sortBy, sortOrder);
-         
-      imprimir(arrayOrde);
-      
-    })
+botonesOrder.map(eventoSor =>{
+  eventoSor.addEventListener("click",(event) =>{
+    const idDivi = event.target.id.split("-");
+    const sortBy = idDivi[0];
+    const sortOrder = idDivi[1];
+    const arrayOrde = window.data.sortDataPokemon(dataPokemon, sortBy, sortOrder);
+
+    imprimir(arrayOrde);
+
   })
+})
 }
 
 sortButton(buttonOrder);
@@ -79,14 +120,25 @@ sortButton(buttonOrder);
 
 const imprimir = (obtenerTipo) =>{
 
-     const pokemons = document.getElementById("pokemons");
-      pokemons.innerHTML="";
+   const pokemons = document.getElementById("pokemons");
+   const pokemones= document.getElementById("pokemones");
+   const pokemonees= document.getElementById("pokemonees");
 
-      obtenerTipo.map((dataPokemon) => {
+    pokemons.innerHTML="";
+    pokemones.innerHTML="";
+    pokemonees.innerHTML="";
 
-   pokemons.innerHTML+= `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure>
-                       <p class="namePokemon" id="nameCenter"> Nombre:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
 
+    obtenerTipo.map((dataPokemon) => {
+
+ pokemons.innerHTML+= `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
+                     <p class="namePokemon" id="nameCenter"> Name:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+
+ pokemones.innerHTML+= `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
+                     <p class="namePokemon" id="nameCenter"> caca:  ${ dataPokemon.name }</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+
+ pokemonees.innerHTML+= `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
+                                         <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
 
 })}
 

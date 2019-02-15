@@ -5,26 +5,28 @@
     <title>PokéDataDex</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale= 1.0, minium-scale= 1.0">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nova+Flat|Open+Sans|Quattrocento+Sans|Sunflower:300" rel="stylesheet">
   </head>
   <body>
     <section id="main">
       <header id="title">
-          <img src="../src/assets/img/68747470733a2f2f692e696d6775722e636f6d2f415975745a4f462e706e67.png" class="logo" alt="Logo Pokemon">
+          <img src="../src/assets/img/POKEMON.png" class="logo" alt="Logo Pokemon">
       </header>
 
-      <button type="submit" id="next" class="styleButtonNext buttonNext">Entrar</button>
+      <button type="button" id="next" class="styleButtonNext buttonNext">Entrar</button>
 
     </section>
- 
-   
-    
+
+
+
 
 <!-- <button onclick="typeWriter()">Click me</button>
       <p id="demo"></p>
@@ -42,31 +44,34 @@
             </a>
         </div>-->
 
-      
-
-
-        
-       
-            
-           
-             
 
 
 
-    
- 
-    
 
-    
-  <section id="serch"> 
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="serch">
+
+<section id="barra">
       <div class="topnav" id="myTopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+          <a href="#home" id="home" class="active">Home</a>
+          <a href="#news" id="neews">Type of Pokemons</a>
+          <a href="#contact" id="orderBy">Ordered by: Size/Weight</a>
+          <a href="#about">Statistics</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
+
         </div>
 
         <div id="mySidenav" class="sidenav">
@@ -75,9 +80,16 @@
             <a href="#" id="projects">Projects</a>
             <a href="#" id="contact">Contact</a>
           </div>
-          <h1 id="pokemons"></h1>
 
-          <section id="navs"> 
+</section>
+
+
+
+<h1 id="pokemons"></h1>
+
+
+          <section id="navs">
+
       <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id = "Fire">
       <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id = "Normal">
       <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id = "Water">
@@ -93,8 +105,12 @@
       <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id = "Rock">
       <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id = "Ghost">
       <input type="image" src="../src/assets/img/fuegos.png" class="bottonPokemons" id = "Dragon">
-    
-   
+<h1 id="pokemones"></h1>
+
+</section>
+
+
+<section id="order" class="orderBy">
    <form>
     <fieldset>
      <legend>Ordenados por Peso</legend>
@@ -110,11 +126,11 @@
      <button type="button" class="sortTipo" id="height-dsc">Grandes-Pequeños</button>
     </fieldset>
    </form>
-  
+<h1 id="pokemonees"></h1>
   </section>
- 
+
 </section>
-  
+
 
 
 
@@ -131,3 +147,20 @@
     <script src="main.js"></script>
   </body>
 </html>
+      
+
+
+        
+       
+            
+           
+             
+
+
+
+    
+ 
+    
+
+    
+  
