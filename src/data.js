@@ -13,8 +13,18 @@ window.WorldBank = {
       }
     });
     return newData
+  },
+  sortPercentAndYear: (arrResultYear, sortValue) => {
+    console.log("hola")
+      if (sortValue === "upward") {
+        arrResultYear.sort((a,b)=>a[1]- b[1]);
+      } else if(sortValue === "falling") {
+        arrResultYear.sort((a,b)=>(b[1]-a[1]));
+      }
+    return arrResultYear  
   }
 };
+
 
 
 
