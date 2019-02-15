@@ -122,7 +122,7 @@ for(let i=0; i<filterType.length; i++){
   });
 }
 
-/* const orderByName = dataPokemon.sort(function (a, b) {
+const orderByName = dataPokemon.sort(function (a, b) {
   if (a.name > b.name) {
     return 1;
   }
@@ -133,5 +133,5 @@ for(let i=0; i<filterType.length; i++){
   return 0;
 });
 
-console.log(orderByName); */
+console.log(orderByName);
 
