@@ -3,6 +3,7 @@
 
 window.lol = {
   iterarData: (dataLol) => {
+
     let datos =[];
     for(const key in dataLol){
       if(dataLol.hasOwnProperty(key)){
@@ -27,30 +28,46 @@ window.lol = {
       armor:element.stats.armor,
       }
     datos.push(objetoVacio)
+
+      }
+    }
+    return datos
+  },
+
+
+  filtroDataRoles: (rolId, datos) => {
+
+    const filtradoPorRoles = datos.filter(element => element.tags[0] === rolId || element.tags[1] === rolId);
+
+    return filtradoPorRoles;
+  },
+
+  filterByName: (name, datos) => {
+    const search = datos.filter(element => (element.name.toLowerCase().match(name.toLowerCase())));
+    return search;
+  },
+
+
+
+  filterByCharacter: (characterId, datos) => {
+    const characterOnClick = datos.filter(element => element.id === characterId);
+    //console.log(characterOnClick)
+    return characterOnClick;
+  },
+
+sortByDifficulty: (datos) => {
+    const sort = datos.sort((a, b) => {
+      if (a.difficulty > b.difficulty) {
+        return 1;
+      }
+      if (a.difficulty < b.difficulty) {
+        return -1;
+      }
+      else {
+        return 0;
+      }
+    })
+    return sort
   }
-}
-return datos }, 
 
-
-filtroDataRoles: (rolId, datos) => {
-
-  const filtradoPorRoles = datos.filter(element => element.tags[0] === rolId || element.tags[1] === rolId);
-
-  return filtradoPorRoles;
-},
-
-filterByName: (name,datos) => {
- const search = datos.filter(element => (element.name.toLowerCase().match(name.toLowerCase())));
- return search;
-},
-
-
-
-filterByCharacter: (characterId,datos) => {
-  const characterOnClick = datos.filter(element => element.id === characterId);
-  //console.log(characterOnClick)
-  return characterOnClick;
-}
-
-// taller TEST de Sil
 }
