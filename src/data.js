@@ -49,14 +49,14 @@ window.lol = {
 
 
 
-  filterByCharacter: (characterId, datos) => {
+  selectCharacter: (characterId, datos) => {
     const characterOnClick = datos.filter(element => element.id === characterId);
     //console.log(characterOnClick)
     return characterOnClick;
   },
 
-sortByDifficulty: (datos) => {
-    const sort = datos.sort((a, b) => {
+sortByDifficultyAsc: (datos) => {
+    const sortA = datos.sort((a, b) => {
       if (a.difficulty > b.difficulty) {
         return 1;
       }
@@ -65,9 +65,25 @@ sortByDifficulty: (datos) => {
       }
       else {
         return 0;
-      }
+      } 
     })
-    return sort
+    return sortA
+  },
+
+sortByDifficultyDsc: (datos) => {
+    const sortD = datos.sort((a, b) => {
+      if (a.difficulty < b.difficulty) {
+        return 1;
+      }
+      if (a.difficulty > b.difficulty) {
+        return -1;
+      }
+      else {
+        return 0;
+      } 
+    })
+    return sortD
   }
+
 
 }

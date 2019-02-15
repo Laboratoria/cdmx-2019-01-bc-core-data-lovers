@@ -1,4 +1,11 @@
 require('../src/data.js');
+
+describe('window.lol', () => {
+  it('es un objeto', () => {
+    expect(typeof window.lol).toBe('object');
+  })
+})
+
 let muestra = {
   type: "champion",
   format: "standAloneComplex",
@@ -127,7 +134,7 @@ for (const key in muestra.data) {
   }
 }
 
-describe('example', () => {
+describe('filtroDataRoles', () => {
   it('is a function', () => {
     expect(typeof window.lol.filtroDataRoles).toBe('function');
   })
@@ -138,7 +145,7 @@ describe('iterarData', () => {
     expect(typeof window.lol.iterarData).toBe('function');
   });
 });
-describe('example', () => {
+describe('filter by name', () => {
   it('is a function', () => {
     expect(typeof window.lol.filterByName).toBe('function');
   })
@@ -157,7 +164,8 @@ describe('example', () => {
     expect(window.lol.filtroDataRoles('Mage', dataToArray)[0]).toEqual(dataToArray[1]);
   })
 
-//si el filtrado por busqueda retorna el campeon por el input
+//test del filtro que trae el campeón que se busca por nombre
+
 it('Debería regresar un arreglo de campeones cuyo nombre coincidan con la A', () => {
 const result = window.lol.filterByName('Aatrox',dataToArray);
 for(let element of result)() => {
@@ -170,19 +178,52 @@ it('Debería regresar un arreglo vacio con busqueda que coincida con tx', () =>{
   expect(result.length).toBe(0);
 })
 
+//filtro por dificultad ascendente
 describe('Ordenar, devuelve un arreglo de campeones ordenado por dificultad', () =>{
   it('Es una función', () =>{
-    expect(typeof window.lol.sortByDifficulty).toBe('function');
+    expect(typeof window.lol.sortByDifficultyAsc).toBe('function');
+  });
+  it('Dado la muestra, si ordena de manera ascendente, Aatrox es el primer elemento', () =>{
+    expect(window.lol.sortByDifficultyAsc(dataToArray)[0].name).toBe('Aatrox');
+  });
+  it('Dado la muestra, si ordena de manera ascendente,Ahri es el segundo elemento', () => {
+    expect(window.lol.sortByDifficultyAsc(dataToArray)[1].name).toBe('Ahri');
+  });
+  it('Dado la muestra, si pedimos el personaje Amumu debería dar un arreglo vacío', () =>{
+    expect(window.lol.sortByDifficultyAsc(dataToArray)[0].name.Amumu).toBe();
+
+})})
+
+//filtro por dificultad descendente
+describe('Ordenar, devuelve un arreglo de campeones ordenado por dificultad', () =>{
+  it('Es una función', () =>{
+    expect(typeof window.lol.sortByDifficultyDsc).toBe('function');
   });
   it('Dado la muestra, si ordena de manera descendente, Ahri es el primer elemento', () =>{
-    expect(window.lol.sortByDifficulty(1,dataToArray)[0].name).toBe('Ahri');
+    expect(window.lol.sortByDifficultyDsc(dataToArray)[1].name).toBe('Ahri');
   });
-  it('Dado la muestra, si ordena de manera ascendente,Aatrox es el primer elemento', () => {
-    expect(window.lol.sortByDifficulty(-1, dataToArray)[0].name).toBe('Aatrox');
-  });
-})
+  it('Dado la muestra, si ordena de manera descendente, Aatrox es el segundo elemento', () => {
+    expect(window.lol.sortByDifficultyDsc(dataToArray)[0].name).toBe('Aatrox');
+  })
+  it('Dado la muestra, si pedimos el personaje Amumu debería dar un arreglo vacío', () =>{
+    expect(window.lol.sortByDifficultyDsc(dataToArray)[0].name.Amumu).toBe();
 
+})})
 
+//filtro de selección de personaje
 
+it('Debería devolver un arreglo del personaje Aatrox cuyo nombre coincida con el id de Aatrox', () => {
+ 
+  const resultCharacter = window.lol.selectCharacter('Aatrox',dataToArray);
+  for(let element of resultCharacter)() => {
+    expect(element.id).toMatch('Aatrox');
+  }
+  })
   
-
+  it('No debería devolver un arreglo del personaje Aatrox si se selecciona el id Ahri', () =>{
+    const resultCharacter = window.lol.selectCharacter('Ahri',dataToArray);
+    for(let element of resultCharacter)() => {
+      
+    expect(element.id).not.toBe('Aatrox');
+  
+  }});
