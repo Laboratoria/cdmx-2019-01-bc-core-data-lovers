@@ -12,7 +12,9 @@ body{
 img{
     width: 70%;
 }
-
+body{
+    background-image: url("./images/Teselia_N2B2.png");
+}
 h2{
     color:white;
     font-size: 4em;
