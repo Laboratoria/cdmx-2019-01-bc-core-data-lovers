@@ -7,7 +7,8 @@ const modalFunFacts = document.getElementById('modal-fun');
 
 //Declarando las variables que enlazan los botones del HTML mediante el DOM
 const startButton = document.getElementById('start-button');
-const attack = document.getElementById('attack');
+const attackDesc = document.getElementById('attack-desc');
+const attackUpw = document.getElementById('attack-upw');
 const magic = document.getElementById('magic');
 const defense = document.getElementById('defense');
 const back = document.getElementById('back');
@@ -87,13 +88,20 @@ const selectRol = () => {
     })
   }
 }
-
 selectRol();
 
-attack.addEventListener('click', () => {
+//Funciones con las que se ordena de manera Descendente
+attackDesc.addEventListener('click', () => {
   const newArrayChamp = window.lol.showData(lolData);
-  const attackSort = window.lol.sorterByAttack(newArrayChamp);
-  printData(attackSort);
+  const attackSortDesc = window.lol.sorterByAttackDesc(newArrayChamp);
+  printData(attackSortDesc);
+});
+
+//Funciones con las que se ordena de manera Ascendente
+attackUpw.addEventListener('click', () => {
+  const newArrayChamp = window.lol.showData(lolData);
+  const attackSortUpw = window.lol.sorterByAttackUpw(newArrayChamp);
+  printData(attackSortUpw);
 });
 
 magic.addEventListener('click', () => {
