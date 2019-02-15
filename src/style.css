@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
-
-
-@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 
 :root {
@@ -17,7 +14,7 @@
 }
 body {
  margin:0;
- font-family: 'Exo 2', sans-serif;
+ font-family: 'Ubuntu', sans-serif;
 }
 header{
     width: 100%;
@@ -177,12 +174,85 @@ p{
     display: inline-block;
     
  }
-.card, .typeCard{
+ .boxesContainer, .typeCard{
     display: inline-block;
-    border: solid #FFDE00;
-    margin: 1%;
+    
+    
    
 }
+
+.card {
+    
+    cursor: default;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+  }
+
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  }
+
+  .cardBox:hover .card {
+    transform: rotateY(180deg);
+  }
+
+  .front, .back {
+    backface-visibility: hidden;
+  color: white;
+
+  font-size: 1.2em;
+  position: relative;
+
+}
+  .back {
+    transform: rotateY( 180deg);
+  }
+
+  .cardBox .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+  @keyframes giro {
+
+    from {
+  
+      transform: rotateY( 180deg);
+  
+    }
+  
+    to {
+  
+      transform: rotateY( 0deg);
+  
+    }
+  
+  }
+  
+  @-webkit-keyframes giro {
+  
+    from {
+  
+      transform: rotateY( 180deg);
+  
+    }
+  
+    to {
+  
+      transform: rotateY( 0deg);
+  
+    }
+  
+  }
+
+
 .filterCard{
     display: inline-block;
     border: solid #FFDE00;
@@ -195,6 +265,7 @@ p{
 
 .imageCard{
     position:relative;
+    left: 30%;
 }
 .namePokemonFilter{
     position: relative;
