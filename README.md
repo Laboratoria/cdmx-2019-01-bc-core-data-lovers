@@ -1,3 +1,91 @@
+# Pokémon Encyplopedia
+
+## Definición del producto
+
+Pokémon Encyplopedia es una página Web que nos proporciona información básica de los Pokemones que aparecen el el famoso juego de Pokémon Go, esta página Web te permite conocer que pokemones existe y clasificarlos por su tipo, así como verlos ordenados dependiendo de algunos criterios que el usuario seleccione.
+
+Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan iniciandose como jugadores de Pokémon Go y que por lo tanto no son expertos en estos pequeños personajes, por lo cual requieren información hasta cierto punto básica acerca de los Pokemones, con la finalidad de irse involucrando más en el mismo de este juego
+
+## Historias de usuario
+
+
+## Diseño de la Interfaz de Usuario
+
+### Prototipo de baja fidelidad
+
+
+### Prototipo de alta fidelidad
+
+### Testeos de usabilidad
+
+Al realizar los testeos de usabilidad se identificó lo siguiente:
+
+- El menú no es descriptivo.
+- Se revuelve la información al tenerla en dos idiomas (español e ingles).
+- Agregar un titulo a a sección de estadisticas, porque la tabla sola proporciona información en sí.
+
+## Configuración
+
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+### Pre-requisitos
+
+Antes de instalar este proyecto se requiere tener instalado lo siguiente:
+
+  1. Tener un :pencil: editor de texto en condiciones, algo como [Atom](https://atom.io/),
+     [Visual Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
+  2. Para ejecutar los comandos a continuación necesitarás una :shell:
+     [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+     que es un programita que interpreta líneas de comando (command-line
+     interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+     instalado.
+  4. Instalar [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
+
+### Instalación
+
+   1. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
+      de [ este repositorio](https://github.com/MitziYolotzin/cdmx-2019-01-bc-core-data-lovers).
+   2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
+      tu _fork_ a tu computadora (copia local).
+   3. 📦 Instala las dependencias del proyecto con el comando `npm
+      install`.
+
+## Pruebas
+
+Si la instalación se realizó correctamente, debes poder ejecutar las :traffic_light: pruebas unitarias (unit tests) con el comando `npm run test`.
+
+Para ejecutar las pruebas solo debes ubicarte en la carpeta donde se encuentra tu proyecto desde la terminal y ejecutar el comando `npm run test`, el cuál mostrará una pantalla con el resultado de las pruebas.
+
+Este proyecto tiene configurada las pruebas para evaluar las funciones siguientes:
+
+- showAllData
+- filterByType
+- filterByLetter
+- sortData
+- computeStats
+
+## Deployment
+
+El proyecto DataLovers lo puedes ver desde esta [liga](https://mitziyolotzin.github.io/cdmx-2019-01-bc-core-data-lovers/src/).
+
+## Construido con
+
+Para el desarrollo de este proyecto se utilizó:
+
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+
+## Autores
+
+Este proyecto forma parte del equipo de Laboratoria y es concluido por Mitzi Yolotzin Olvera Castillo y Diana Lizbeth Muñoz Pérez, estudiantes de Laboratoria 7a Generación.
+
+
+
+
+
+
+
 # Data Lovers
 
 ## Índice
