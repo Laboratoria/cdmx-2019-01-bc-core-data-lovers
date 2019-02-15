@@ -116,6 +116,7 @@ figure img{
   font-size: 20px;
   color: rgb(240, 236, 228);
   width: max-content;
+  margin-left: 2%;
 }
 .hidden {
   display: none;
