@@ -160,9 +160,15 @@ const indicators = [{
   },
 ]
 
+const table = document.getElementById("table-year-data");
+table.style.display = "none";
+const tableBody = document.getElementById("table-indicators");
 const country = document.getElementsByClassName("country");
 const selects = document.getElementById("selects");
 const sorting = document.getElementsByClassName("order");
+const sorters = document.getElementById("sorters");
+sorters.style.display = "none";
+const average = document.getElementById("average");
 let objectSelected = {};
 let dataCountry = {};
 let years = "";
@@ -177,6 +183,7 @@ selects.addEventListener("change", () => {
 //Recorre el array de botones de países y guarda el value del botón seleccionado
 for (let i = 0; i < country.length; i++) {
   country[i].addEventListener("click", () => {
+    tableBody.innerHTML = "";
     let countryValue = country[i].value
     //Recorre el objeto del indicador seleccionado y guarda el objeto correspondiente al país seleccionado con los botones
     for (let countryS in objectSelected) {
@@ -186,7 +193,9 @@ for (let i = 0; i < country.length; i++) {
         for (let year in dataCountry) {
           years = `${year}`
           percent = `${dataCountry[year]}`
-          printing(years, percent);
+          if (percent > 0) {
+            printing(years, percent);
+          }
         }
       }
     }
@@ -196,6 +205,7 @@ for (let i = 0; i < country.length; i++) {
 //Evento para ordenar
 for (let i = 0; i < sorting.length; i++) {
   sorting[i].addEventListener("click", () => {
+    tableBody.innerHTML = "";
     let sortingValue = sorting[i].value;
     let sortingObject = Object.keys(dataCountry);
     let sortedArray = window.data.sort(sortingObject, sortingValue);
@@ -203,20 +213,38 @@ for (let i = 0; i < sorting.length; i++) {
       let k = sortedArray[i]
       years = `${k}`
       percent = `${dataCountry[k]}`
-      printing(years, percent);
+      if (percent > 0) {
+        printing(years, percent);
+      }
     }
   })
 }
 
+//Evento que calcula el promedio
+average.addEventListener("click", () => {
+  let values = [];
+  for (let years in dataCountry) {
+    if (dataCountry[years] > 0) {
+      values.push(parseInt(dataCountry[years]));
+    }
+  }
+  console.log(values);
+  let avg = window.data.average(values);
+  document.getElementById("result").innerHTML = avg;
+})
+
 //Función que pinta los años y datos filtrados en una tabla
-const table = document.getElementById("table-indicators");
+
 const printing = (years, percent) => {
-  let row = table.insertRow(0);
+  table.style.display = "block";
+  sorters.style.display = "block";
+  let row = tableBody.insertRow(0);
   let cellYear = row.insertCell(0);
   let cellPercent = row.insertCell(1);
   cellYear.innerHTML = `${years}`;
   cellPercent.innerHTML = `${percent}`;
 }
+
 
 //Slides
 

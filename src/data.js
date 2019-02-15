@@ -19,5 +19,12 @@ window.data = {
       sorted = sortingObject.reverse();
       return sorted;
     }
+  },
+
+  average: (values) => {
+    let sum = values.reduce((previous, current) => current += previous);
+    console.log(sum);
+    let averageResult = sum / values.length;
+    return averageResult;
   }
 }
