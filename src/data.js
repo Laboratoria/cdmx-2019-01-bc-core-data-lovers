@@ -111,6 +111,5 @@ window.lol = {
 
   //Aquí inicia la función matemática
 
-
   //esta llave cierra window.lol
 }

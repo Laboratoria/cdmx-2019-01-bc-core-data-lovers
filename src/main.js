@@ -24,7 +24,8 @@ const printModal = (champ) => {
   <p>Crit: ${champ.stats.crit}</p><p>Attack Damage: ${champ.stats.attackdamage}</p><p>Move Speed: ${champ.stats.movespeed}</p>
   </div>
   </div>`;
-}
+  }
+
 
 //Input para buscar por nombre
 let search = document.getElementById('search');
@@ -46,6 +47,7 @@ const printData = (newArrayInfo) => {
     <h3> ${champ.name} </h3> <div class="tags"> <p> ${champ.primaryRol} </p> <p> ${champ.secondaryRol} </p> </div></div>`;
     cardSummary.insertAdjacentHTML("beforeend", result);
   })
+
   for (let i = 0; i < champion.length; i++) {
     champion[i].addEventListener("click", () => {
       let champElegido = champion[i].id;
