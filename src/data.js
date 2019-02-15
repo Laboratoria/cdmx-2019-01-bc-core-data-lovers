@@ -10,29 +10,30 @@ window.data = {
       for (const key in yearFound) {
         if (yearFound.hasOwnProperty(key)) {
           const element = yearFound[key];
-          if (key == userValue) {
+          if (key == userValue ) {
             yearResult = yearValue.substr(0, 4);
             userResult = element;
           } //for if If
         } //For IF
       } // For
+      // console.log(yearResult,userResult);
     return [yearResult, userResult]
   }, //Consult
-
   order: (injuriesBy, yearValue, userValue) => {
     //const yearFound = injuriesBy.find(element => element.Year == yearValue);
+    let yearFind = "";
       injuriesBy.forEach(element => {
       let year = element.Year;
       let moto = element.Total_Injured_Persons_Motorcyclists;
       let bike = element.Total_Injured_Persons_Pedalcyclists;
       let walk = element.Total_Injured_Persons_Pedestrians;
       let transit = element.Total_Injured_Persons_Transit_Total;
-      let allInjured = [moto, bike, walk, transit];
+      //let allInjured = [moto, bike, walk, transit];
         if (yearValue === year && userValue === "all") {
-            let yearFind = [year.substr(0,4), allInjured]
-          console.log(yearFind);
+            yearFind = [year.substr(0,4), moto, bike, walk, transit];
+         console.log(yearFind);
         }
       }) //ForEach
-      //return yearFind
+      return yearFind;
   }//Order
 }; //window
