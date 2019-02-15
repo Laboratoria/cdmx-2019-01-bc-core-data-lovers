@@ -87,9 +87,15 @@ btnStart.addEventListener("click", () => {
                   <th colspan="3">
                     <table class="evolution">
                       <tr>
-                        <td><button>Hola1</button></td>
-                        <td><button>Hola2</button></td>
-                        <td><button>Hola3</button></td>
+                        <td><button type="button" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> PREVIOUS
+                        </button></td>
+                        <td><button type="button" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> EVOLUCIÓN <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+                        </button></td>
+                        <td><button type="button" class="btn btn-success btn-lg">
+                        NEXT <span class="glyphicon glyphicon-forward" aria-hidden="true"></span> 
+                        </button></td>
                       </tr>
                     </table>
                   </th>  
