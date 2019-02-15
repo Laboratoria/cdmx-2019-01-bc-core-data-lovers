@@ -40,6 +40,7 @@
 }
 @media (max-width:576px){
 
+
   .carousel-caption{
     position:absolute;
     top:40%;
@@ -78,6 +79,7 @@ body{
   color: #222;
   
 }
+
 
 
 header{
@@ -357,12 +359,23 @@ footer{
   background: rgb(8, 80, 122);
 
   
+}*/
+
+#table-year-data {
+  border-collapse: collapse;
+  width: 100%; 
+}
+td{
+  border: 1px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 
-table, td{
-  border: 1px solid black;
-}
-*/
+
+
+
+
 
 /*  BREAKPOINTS- BOOSTRAP
 
@@ -379,6 +392,5 @@ Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) {...}
 
 Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {...}
+@media (min-width: 1200px) {...}*/
 
-*/
