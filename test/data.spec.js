@@ -39,4 +39,27 @@ describe('orderData', function () {
 it('Deberia de retornar un arreglo de orderDataYear ordenado de forma descentente si le mando "desc" para Mexico, Chile, Peru, Brasil', () => {
   expect(window.WorldBank.orderData(data, "values", "desc")[0]).toEqual("1990","33.1");
 });
-});
+})
+
+describe('getMathMedia es  una funcion que obtiene la media de los porcentajes', ()=>{
+
+  it('es una funcion', ()=>{
+    expect(typeof window.WorldBank.getMathMedia).toBe('function');
+  });
+  it('para los datos [10, 50.5, 10.777, 23.923, 33.0345] deberia devolver 25.6469', ()=>{
+    const dataPrueba = [10, 50.5, 10.777, 23.923, 33.0345];
+    expect(window.WorldBank.getMathMedia(dataPrueba)).toBe(25.6469);
+  });
+ 
+  it('para los datos [1, 2, 3, 4] deberia devolver 2.5', ()=>{
+    const dataPrueba = [1,2,3,4];
+    expect(window.WorldBank.getMathMedia(dataPrueba)).toBe(2.5);
+ 
+  });
+ 
+  it('para los datos [1, 2, 3, ""] deberia devolver 2', ()=>{
+    const dataPrueba = [1, 2, 3, ""];
+    expect(window.WorldBank.getMathMedia(dataPrueba)).toBe(2);
+  })
+
+})
