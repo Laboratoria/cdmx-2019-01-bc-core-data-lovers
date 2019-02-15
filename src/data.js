@@ -78,18 +78,19 @@ window.lol = {
     const filteringName = newArrayChamp.filter(element => (element.id.toLowerCase().match(name2.toLowerCase())));
     return filteringName;
   },
+
   toModal: (data, champSelect) => {
-    let champ = {}
+    let champ = {};
     for (const key in data) {
       if (data.hasOwnProperty(key)) {
         const element = data[key];
         if(element.id === champSelect){
-          champ = element
-          return element
+          champ = element;
+          return element;
         }
       }
     }
-    return champ
+    return champ;
   }
 
 //Aquí inicia la función matemática
@@ -97,5 +98,3 @@ window.lol = {
 
 //esta llave cierra window.lol
 }
-
-

@@ -239,13 +239,17 @@ img {
 
 #close-fun {
   color: #efc056;
-  float: right;
-  font-size: 5em;
+  font-size: 2.8em;
   font-weight: bold;
-  border-radius: 0%;
+  border-radius: 50%;
   border-color: #efc056;
   border-style: solid;
-  margin: 30px;
+  margin: 0px;
+  position: absolute;
+  right: 10%;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+
 }
 
 /* Contenido del modal */
@@ -260,11 +264,10 @@ img {
 }
 
 .background-modal {
-  background-image: url(./imagenes/garen.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 75%;
+  height: 40vh;
   border-top-color: #efc056;
   border-top-style: solid;
 }
@@ -284,6 +287,9 @@ h1 {
 
   h2 {
     font-size: 1.3em;
+    color: #efc056;
+    text-align: center;
+    padding: 50px;
   }
 
   .logo1 {
