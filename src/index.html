@@ -17,38 +17,44 @@
 <body>
   <div id="root"></div>
 
-  <!-- PÁGINA 1 -->
-  <section id="enterPage">
+  <!-- PAGE 1 -->
+  <section id="homePage">
+    <header> <input type="checkbox" id="hamburguerMenu">
+    <label for="hamburguerMenu"><i class="fas fa-bars"></i>
+    </label>
+      <nav class="menu_gral">
+          <ul>
+            <li><a id="buttonBack" ><i class="fas fa-undo-alt"></i> Home</a></li>
+            <li><a id="buttonStadisticsPage"><i class="far fa-chart-bar"></i> Stadistics</a></li>
+            <li><a  id="buttonSearchByType"><i class="fas fa-search"></i> Search By Type</a></li>
+            <li><a  id="buttonFilterPokemon"><i class="fas fa-filter"></i> Filter Pokémon</a></li>
+            <li><a  id="buttonRegionKanto"><i class="far fa-compass"></i> Kanto Region</a></li>
+            <li><a  id="buttonAboutPikapedia"><i class="far fa-question-circle"></i> About Pikapedia</a></li>
+          </ul>
+        </nav>
+      </header>
 
-
-    <header class="titleWeb"> <img src="https://fontmeme.com/permalink/190131/5da1fd9f888163ac1f007ae0c421f891.png" alt="pokemonFont">
-    </header>
-
-    <div> <button id="enterToPikapedia">ENTRAR</button></div>
-    <figure class="probando"><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" id="detectivePikachu"></figure>
-
-
-  </section>
-  <!-- PÁGINA 2 -->
-  <section id="pageKanto" class="hide">
-    <nav>
-      <ol>
-        <button id="buttonAboutPikapedia"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
-        <button id="buttonStadisticsPage"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
-        <button id="buttonSearchPokemon"><i class="fas fa-search"></i> BUSQUEDA POR TIPO </button>
-        <button id="filterButton"><i class="fas fa-filter"></i>FILTRAR POKÉMON </button>
-        <button id="buttonBack"><i class="fas fa-undo-alt"></i> VOLVER </button>
-      </ol>
-    </nav>
-
-    <main class="welcomeMessage"><img src="https://fontmeme.com/permalink/190201/e3023a41d60c4c0dc0c6150069296ce1.png"></main>
-
-    <article id="total-data" class="pokemones"></article>
+<div class="titleHomePage"><img src="https://fontmeme.com/permalink/190215/ada9c7811719dbf7eb3c711f9df76a5c.png"></div>
+    
+<figure class=><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png" class="detectivePikachu"></figure>
   </section>
 
-  <!-- PÁGINA 3 -->
+  <!-- PAGE 2 -->
   <section id="filterPage" class="hide">
-    <nav>
+      <header> <input type="checkbox" class="hamburguerMenu">
+      <label for="hamburguerMenu"><i class="fas fa-bars"></i></label>
+      <nav class="menu_gral">
+          <ul>
+            <li><a id="buttonBackFilterPage" ><i class="fas fa-undo-alt"></i> Home</a></li>
+            <li><a id="buttonStadisticsPageOnFilter"><i class="far fa-chart-bar"></i> Stadistics</a></li>
+            <li><a id="buttonSearchPokemonOnFilter"><i class="fas fa-search"></i> Search By Type</a></li>
+            <li><a id="buttonRegionKantoOnFilter"><i class="far fa-compass"></i> Kanto Region</a></li>
+             <li><a id="buttonAboutPikapediaOnFilter"><i class="far fa-question-circle"></i> About Pikapedia</a></li>
+          </ul>
+        </nav>
+        </header>
+
+    <!---<nav>
       <ol>
         <button class="Button" id="buttonAboutPikapediaOnFilter"><i class="far fa-question-circle"></i> SOBRE PIKAPEDIA </button>
         <button class="Button" id="buttonStadisticsPageOnFilter"><i class="far fa-chart-bar"></i> ESTADÍSTICAS </button>
@@ -57,18 +63,20 @@
         <button class="Button" id="buttonBackFilterPage"><i class="fas fa-undo-alt"></i> VOLVER </button>
       </ol>
     </nav>
+  ----->
+
     <section>
     <figure class="checkbox">
       <div> <i class="fas fa-align-left"> </i> FILTRAR POKÉMON</div>
       <label><input type="checkbox" id="checkboxWeightLight"> LIGEROS </label><br>
       <label><input type="checkbox" id="checkboxWeightHeavy"> PESADOS</label><br>
-      <label><input type="checkbox" id="checkboxWeightAscending">POR PESO DE MODO ASCENDENTE</label><br>
-      <label><input type="checkbox" id="checkboxWeightDescending"> POR PESO DE MODO DESCENDENTE</label><br>
+      <label><input type="checkbox" id="checkboxWeightAscending">POR PESO ASCENDENTE</label><br>
+      <label><input type="checkbox" id="checkboxWeightDescending"> POR PESO DESCENDENTE</label><br>
       <label><input type="checkbox" id="checkboxHeightSmall">PEQUEÑOS </label><br>
       <label><input type="checkbox" id="checkboxHeightMedium"> MEDIANOS </label><br>
       <label><input type="checkbox" id="checkboxHeightTall"> ALTOS</label><br>
-      <label><input type="checkbox" id="checkboxHeightAscending"> POR ALTURA DE MODO ASCENDENTE</label><br>
-      <label><input type="checkbox" id="checkboxHeightDescending"> POR ALTURA DE MODO DESCENDENTE</label><br>
+      <label><input type="checkbox" id="checkboxHeightAscending"> POR ALTURA ASCENDENTE</label><br>
+      <label><input type="checkbox" id="checkboxHeightDescending"> POR ALTURA DESCENDENTE</label><br>
     </figure>
    
     <figure class="namePokemonFilter"><img src="https://fontmeme.com/permalink/190203/0bf66c3b9788fe67f0e1c3679e5dab96.png" id = "titlePokemonLight"
@@ -93,33 +101,21 @@
  </section>
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- PÁGINA 4 -->
-  <section id="searchPage" class="hide">
-
+  <!-- PAGE 3 -->
+  <section id="pageKanto" class="hide">
+<main class="titleKantoRegion"><img src="https://fontmeme.com/permalink/190201/e3023a41d60c4c0dc0c6150069296ce1.png"></main>
+<article id="total-data" class="pokemones"></article>
   </section>
+  
 
-
-  <!-- PÁGINA 5 -->
+  <!-- PAGE 4 -->
   <section id="stadisticsPage" class="hide">
   </section>
-  <!-- PÁGINA 6 -->
+  <!-- PAGE 5 -->
   <section id="aboutPikapediaPage" class="hide">
 
   </section>
-  <!--PÁGINA 7-->
+  <!--PAGE 6-->
   <section id="typePokemonPage" class="hide">
     <main id="pokemonTypeAll" class="pokemones">
       <button id="buttonPokemonFire"><i class="fas fa-fire-alt"></i> Fire</button>
@@ -143,6 +139,7 @@
       </nav>
     </main>
   </section>
+
   <script src="./data/pokemon/pokemon.js"></script>
 
   <script src="data.js"></script>

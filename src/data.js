@@ -7,18 +7,17 @@
 window.example = example;*/
 
 window.pokemonFunction = {
-  sortByName: (arrayPokemonData) => {
-    const pokemonSortedData = arrayPokemonData.sort((a, b) => {
-      if (a.name> b.name) {
+  sortByName: (arrayPokemonData) =>{
+    const pokemonSortedData= arrayPokemonData.sort((a,b) => {
+      if (a.name > b.name){
         return 1;
-      }
-      if (a.name < b.name) {
+      }else if (a.name < b.name){
         return -1;
-      } else {
-        return 0;
+      }else{
+        return 0 ;
       }
     })
-    return pokemonSortedData;
+    return pokemonSortedData
   },
   sortByHeightAscending: (arrayPokemonData) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
@@ -116,9 +115,9 @@ window.pokemonFunction = {
 
   totalWeight: (arrayPokemonData,numberOfPokemon) => {
 
-    const pokemonAverageWeightt = arrayPokemonData.reduce((total, pokemonData) =>{
+    const pokemonAverageWeight = arrayPokemonData.reduce((total, pokemonData) =>{
      return total += parseFloat(pokemonData.weight)}, 0)/numberOfPokemon;
-    return pokemonAverageWeightt;
+    return pokemonAverageWeight;
   
   
 },
