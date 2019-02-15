@@ -14,26 +14,14 @@ window.WorldBank = {
     return newData
   },
   sortPercentAndYear: (arrResultYear, sortValue) => {
-    if (sortValue === "upward") {
-      arrResultYear.sort(
-        function (a, b) {
-          return a[1] - b[1];
-        });
-    } else if (sortValue === "falling") {
-      arrResultYear.sort(
-        function (a, b) {
-          return b[1] - a[1];
-        });
+      if (sortValue === "upward")
+      {arrResultYear.sort((a,b)=>a[1]- b[1]);
+      }else if(sortValue === "falling")
+      {arrResultYear.sort((a,b)=>(b[1]-a[1]));
+      }
+      console.log(arrResultYear)
+      return arrResultYear  
     }
-    return arrResultYear;
-
   }
-  //   if (sortValue === "upward")
-  //   {arrResultYear.sort((a,b)=>(a[1]>b[1]?1:-1));
-  //   }else if(sortValue === "falling")
-  //   {arrResultYear.sort((a,b)=>(a[1]<b[1]?-1:1));
-  //   }
-  //   return arrResultYear  
-  // }
 
-}
+
