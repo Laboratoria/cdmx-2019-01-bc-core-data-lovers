@@ -1,0 +1,170 @@
+
+/* ----MEDIA QUERIES ---
+@media (max-width:992px){
+}
+@media (max-width:768px){
+}
+@media (max-width:576px){
+}
+
+
+
+
+
+
+header{
+  position:fixed;
+  width:100%;
+  height:15vh;
+  left:0px;
+  top:0px;
+  background: rgb(8, 80, 122);
+  background-size:cover;
+  
+}
+
+header nav{
+  width:100%;
+  max-width: 1300px;
+  margin:20px auto;
+  background:rgb(8, 80, 122);
+  
+}
+
+.navMenu {
+  overflow:hidden;
+ 
+  
+}
+
+.navMenu a{
+  float: right;
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 45px;
+  text-decoration:none;
+}
+
+.navMenu a:hover{
+  background-color:rgb(243, 148, 39);
+  color: white;
+}
+
+#Objetivo{
+  background-color:rgba(255, 255, 255, 0.281);
+ color: black;
+}
+
+
+h1 {
+  color:rgb(8, 80, 122);
+  font-family: 'Franklin Gothic';
+}
+
+h3{
+  color:rgb(8, 80, 122);
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  font-family: 'Franklin Gothic';
+  
+  
+}
+
+#contenedor-descripcion {
+  background-color: white;
+  color: black;
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.region {
+    height: 50px;
+    width: 200px;
+    background-color:rgb(119, 220, 234) ;
+    border-radius:0%;
+    text-align: center;
+    font-size: 10px;
+    font-family: Lucida Sans Unicode;
+    border:19px;
+    display: block, center;
+    margin-bottom: 10px;
+    
+}
+
+#option  {
+    height: 50px;
+    width: 200px;
+    background-color:rgb(26, 172, 177) ;
+    border-radius:0%;
+    text-align: center;
+    font-size: 10px;
+    font-family: Lucida Sans Unicode;
+    border:19px;
+    display: block, center;
+    margin-bottom: 10px;
+    
+}
+
+
+
+#country {
+ 
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+
+}
+
+#Estadisticas{
+  text-align: center;
+}
+
+
+
+#secondPage{
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+footer{
+ 
+  width:100%;
+  height:15vh;
+  left:0px;
+  margin-top:500px;
+  background: rgb(8, 80, 122);
+
+  
+}
+
+table, td{
+  border: 1px solid black;
+}
+*/
+
+/*  BREAKPOINTS- BOOSTRAP
+
+Extra small (xs) devices  (portrait phones, less than 576px)
+No media query since this is the default in Boostrap
+
+Small(sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+
+*/
