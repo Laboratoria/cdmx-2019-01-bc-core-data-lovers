@@ -1,137 +1,157 @@
-@import "https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins|Robot";
+@import "https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins|Roboto";
 @import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
 
 /************body*********/
 article {
-  width: 50%;
-  display: inline-flex;
-}
+  width: 30%;
+  display: table-cell;
+ }
 
-body {
+ aside {
+  width: 30%;
+  display: table-cell;
+ }
+ 
+ .img {
+  opacity: 50%;
+ }
+
+ body {
   background: url("images/usa.png") no-repeat center top fixed;
   background-size: 80%;
   opacity: 30%;
-  text-align: center;
   margin: 0;
-}
-
-header{
+  font-family: 'Montserrat', sans-serif;
+   font-size: 100%;
+ }
+ 
+ header {
+  position: fixed;
+  top: 0;
   width: 100%;
-}
-
-table {
+  height: 45px;
+  background: #112659;
+  z-index: 3;
+ }
+ 
+ table {
   border-spacing: 5px;
-}
-
-/**********fonts***********/
-h1 {
+ }
+ 
+ /**********fonts***********/
+ h1 {
   font-family: 'Montserrat', sans-serif;
   color: #FFAD09;
   font-size: 400%;
   text-align: center;
-}
-
-h2 {
+  margin-bottom: 0;
+  margin-top: 3%;
+  padding: 30px;
+ }
+ 
+ h2 {
   font-family: 'Poppins', sans-serif;
   color: #037393;
   font-size: 200%;
-}
-h3 {
-  font-family: 'Poppins',sans-serif;
+  margin-top: 0%;
+ }
+ 
+ h3 {
+  font-family: 'Poppins', sans-serif;
   color: dimgrey;
   width: 55%;
   margin: 0%;
   margin-left: auto;
   margin-right: auto;
   font-size: 1em;
-}
+ }
 
-p {
-  font-family: 'Lato',sans-serif;
-  color: #112659;
-}
-
-/************** menu ********/
-#menu{
-  background: #112659;
+ h4 {
+  font-family: 'Roboto';
+ color: #fff;
+ text-align: justify;
+ width: 60%;
+ margin-left: 13%;
+ }
+ 
+ p {
+  font-family: 'Roboto';
+ color: #fff;
+ text-align: justify;
+ width: 60%;
+ margin-left: 13%;
+ }
+ 
+ /************** menu ********/
+ #burger-menu {
   display: none;
-}
-
-header label{
-  display: none;
-  /* width: 100%; */
-  height: 30px;
-  padding: 10px;
-}
-
-.menu {
-  display: none;
-  background: #112659;
-  color: #fff;
   position: fixed;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 100%;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  width: 15%;
-}
-.menu a {
-  margin: 15%;
-  display: block;
-  padding: .5em;
-  background-color: #F9B53C;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 2em;
-  text-decoration: none;
-  color: #fff;
-  border-color: #F9B53C;
-}
-
-
-.fa-facebook-f, .fa-twitter {
-  font-size: 2em;
-  padding: .5em;
-}
-
-
-.menu a:hover, .visualize_data_button:hover {
-  background-color: #037393;
-}
-
-.menu ul {
-  padding: 0;
-  margin: 0;
+ }
+ 
+ header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px 10px 0 10px;
+ }
+ 
+ header label:hover {
+  cursor: pointer;
+  background: #037393;
+ }
+ 
+ .menu ul {
+  margin-top: 10px;
   list-style: none;
-}
-
-/**************** div  ***********************/
-
-.realB {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+ }
+ 
+ .menu li a {
+  margin: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+ }
+ 
+ .menu li:hover {
+  background: #037393;
+ }
+ 
+ /**************** div  ***********************/
+ #realB {
   display: block;
   width: 100%;
-}
-
-.infoBody {
-  /* display: block; */
+  text-align: center;
+ }
+ 
+ #year_section {
+  display: block;
+  width: 100%;
+  text-align: center;
+ }
+ 
+ .infoBody {
   background-color: #037393;
   opacity: 0.8;
-}
-
-.dataTable{
+  text-align: center;
+ }
+ 
+ .dataTable {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-}
-
-.tableStructure {
+   font-size: .5em;
+  text-align: center;
+ }
+ 
+ .tableStructure {
   display: inline;
-}
-
-section.content {
-	display: none;
-
-}
+  font-family: 'Montserrat', sans-serif;
+ }
+ 
+ section.content {
+  display: none;
+ }
 
 /********** iconos*****/
 
@@ -145,6 +165,7 @@ section.content {
   border-radius: 70px;
   border-width: 8px;
   text-align: center;
+  margin-bottom: 2%;
 }
 
 .fa-walking {
@@ -167,77 +188,113 @@ section.content {
   background-color: darkmagenta;
 }
 
-
-.datayear_button {
-  font-size: 10px;
-  font-family: Poppins, sans-serif;
-  padding: 3%;
-
-.fa-bars{
+.fa-bars {
   color: white;
   width: 100%;
   font-size: 200%;
   background-color: #112659;
   text-align: right;
-
 }
 
-.year_button {
-  font-size: 10%;
-}
+.button-transport {
+  cursor: pointer;
+ }
+ 
+ .button-transport:hover {
+  background: #037393;
+ }
 
 /*year section styles*/
-.slideshow-area {
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-  
-  
-
-.choose-year-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
 .year_button {
-  font-family: Montserrat, sans-serif;
-    color: #fff;
-    font-size: 1em;
-    text-align: center;
-    position: relative;
-    width: 20em;
-    height: 3em;
-    line-height: 3;
-    background: #112659;
-    overflow: hidden;
-    border-radius: .5em;
-    margin-top: 40%;
-  
-}
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  width: 15em;
+  height: 2em;
+  line-height: 3;
+  background: #112659;
+  overflow: hidden;
+  border-radius: .5em;
+  margin-top: 2%;
+}  
 
 .visualize_data_button {
+  cursor: pointer;
   align-content: center;
   position: relative;
-  font-size: 1em;
+  font-size: .9em;
   padding: .5em;
   background-color: #F9B53C;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 2em;
+  border-radius: .5em;
   text-decoration: none;
   color: #fff;
   border-color: #F9B53C;
+  height: 2em;
+  padding: 0%;
 }
 
+.visualize_data_button:hover {
+  background: #037393;
+ }
+
+.result_graphic {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  line-height: 200%;
+  padding: 0%;
+  height: 0; 
+  margin-left: 5%;
+}
+
+.pieChart {
+  opacity: 0.8;
+  width: 70%;
+  text-align: right;
+  font-size: 20%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+}
+ 
+
 /**************************************************/
-@media (max-width:768px) {
+@media (max-width:768px){
 
-  .side_menu{
-    display:
-
+  header label {
+    display: block;
   }
+  .menu {
+    position: absolute;
+    background: #112659;
+    width: 70%;
+    margin-left: -70%;
+    transition: all .5s;
+  }
+ 
+  .menu ul {
+    flex-direction: column;
+  }
+ 
+  #burger-menu:checked~.menu {
+    margin: 0;
+  }
+  article {
+    width: 30%;
+    display: contents;
+  }
+  h1 {
+    font-size: 230%;
+  }
+ 
+  h2{
+    font-size: 150%;
+  }
+ }
 
 /**************************************************/

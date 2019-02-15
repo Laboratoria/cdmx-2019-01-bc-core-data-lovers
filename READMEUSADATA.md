@@ -20,7 +20,7 @@ Sintaxis y uso de tests.
 
 ##Metodología, proceso de diseño e implementación de UX
 Para el presente proyecto incorporamos la metodología Design Thinking, que a su vez es una metodología ágil que nos ayuda a adaptarnos fácilmente a los cambios e imprevistos que surgieron en los tres sprints de duración del proceso de diseño. 
-(imagen png proceso Design Thinking)
+![designthinking](../src/data/images/designthinking.png)
 UX Research
 Un método utilizado fue la búsqueda de soluciones análogas a la misma problemática de nuestro usuario. Estas son experiencias de interfaz y de usuario previas con problemas similares. La visualización de la información o de data es un tema que popularizado por la transversalidad de usuarios que recurren a ellas. Es por eso, que más empresas y manejadores de datos deben implementar interfaces que ayuden a la interpretación de la misma, así como que facilite su acceso, manejo y entendimiento. 
 Ejemplos de visualizadores de data existen bastantes últimamente ya que existen herramientas que tienen gráficas predeterminadas que sólo requieren que se le vincule la base de datos. 
