@@ -75,7 +75,7 @@ sortt.addEventListener('click' , () => {
   let orderAtoZ = window.allPokemon.orderData(resultTotal);
   printOrder(orderAtoZ);
 })
-
+//imprime de la a - z
 const printOrder = (arrayOfTypes) => {
   const orderResult = document.getElementById('root');
   orderResult.innerHTML = "";
