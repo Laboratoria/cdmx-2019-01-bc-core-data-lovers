@@ -61,4 +61,3 @@ filterCoincidence();
   }
   getOrderPokemon(arrayRadio);
 }*/
-

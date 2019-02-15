@@ -19,11 +19,9 @@
     font-size: 80px;
     color: rgba(232, 236, 13, 0.726);
     -webkit-text-stroke: 2px black;
-    
-   /animacion/
    animation-duration: 7s;
    animation-name: slidein;
-
+   
  }
  
  @keyframes slidein {
@@ -50,86 +48,79 @@
         color: white;
     }
     p{
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 20px;
-    max-width: 100%;        
-    height: auto; 
-    margin:0 auto; 
-       
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 19px;
+        max-width: 100%;
+        height: 15%;
+        margin: -1%;
+        color: mintcream;
   }
-#busqueda {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  border: solid 2px;
-  font-size: 30px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-    height: 0 auto;
-}
-::placeholder{
-    font-size: 20px;
-}
-#result {
-  font-size: 20px;
-  font-family: 'Ubuntu Condensed', sans-serif;
-}
 .grid-img{
     display: grid;
-    grid-gap: 1px 1px;
+    grid-gap: 1px 40px;
     grid-template-columns: repeat(auto-fill, minmax(191px, 1fr) ) ;
 }
 button{
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
   border-radius: 10px;
   background: black;
 }
-#busqueda{
-size:100px;
-max-width:80%;
+
+.ocultar{
+    padding: 5%;
 }
 .imagesPokemon{
-background-image: url(./assets/pokedex.jpg);
+background-image: url(./assets/red.png);
 background-position: center;
-background-size: 210%; 
-margin: 1%;
-max-width: 100%;
-height: 84vh;
-border: solid 1px white;
-width: 51vh;
+background-size: 130%; 
+margin: 3%;
+max-width: 104%;
+width: 34vh;
+height: 55vh;
     position: relative;
     top: 3%;
-    display: grid;
-    grid-gap: 1px 1px;
-    grid-template-columns: repeat(auto-fill, minmax(191px, 1fr) );
+    display: inline-grid
+    
 }
 figure{
-    padding-top: 50%;
-    max-height: 10vh;
+    padding-top: 0%;
+    max-height: 20vh;
 }
-
-<<<<<<< HEAD
-=======
-  font-family: 'Ubuntu Condensed', sans-serif;
-  border: solid 2px;
-  font-size: 30px;
-  
-  border-radius: 20px;
-    height: 0 auto;
-    width: 0 auto;
-
-
-}
-#busqueda{
-
-size=100px;
-style="max-width:80%"
-
-}
-
->>>>>>> upstream/master
-
+span.tooltip {
+    border-bottom: 1px dashed gray;
+    cursor: pointer;
+    position:relative;
+   }
    
-  
+span.tooltip::before {
+    display: none; /* Lo ocultamos*/
+    content: attr(data-info);
+    color:black;
+    font-size: 20px;
+    padding: 2px 8px;
+    background:white;
+    border-radius: 5px;
+    position: absolute; /* Lo posicionamos de modo absoluto dentro del span */
+    top: 1.5em;
+    left: 5px;
+    min-width: 80px;
+    z-index:1;
+}
+span.tooltip:hover::before {
+    display: block;
+}
+#PaginaInicio{
+    
+}
+   
+   
+ 
+
+.ocultar{
+    padding-top: 0%;
+    padding-bottom: 5%;
+}
+
+a{
+    font-size: 35px;
+    font-family: 'Staatliches', cursive;
+}
