@@ -364,7 +364,7 @@ footer{
     }
     
     .nameList{
-      width: 60%;
+      width: 30%;
      margin-right: 2%;
      margin-left:2%;
      margin-top: 2%;
@@ -379,7 +379,7 @@ footer{
     }
   
     .fas{
-      margin-top: 1%;
+      margin-top: 2%;
     }
   
     .sidenav a{
@@ -403,7 +403,7 @@ footer{
   #searchDiv{
     margin-left: 57%;
     position: absolute;
-    margin-top: 1.5%;
+    margin-top: 2%;
   
    
   }
