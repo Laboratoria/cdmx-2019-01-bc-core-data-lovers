@@ -9,7 +9,7 @@ const pokeButtonHome=document.getElementById('poke-button-home');
 const weight = document.getElementById('weight');
 const counterCollection=document.getElementById('counterCollection');
 const printType= document.getElementById('printType');
-const alphabeticOrderButton=document.getElementById('a-z');
+const alphabeticOrderButton=document.getElementById('totales');
 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
@@ -53,11 +53,6 @@ for(let i = 0; i <buttonType.length; i++ ){
 });
 }
 
-//bolahome ya estaba
-pokeButtonHome.addEventListener('click',() => {
-    printList.innerHTML='';
-    print(data)
-});
 
 alphabeticOrderButton.addEventListener('click',()=> {
     printList.innerHTML='';
@@ -65,4 +60,11 @@ alphabeticOrderButton.addEventListener('click',()=> {
     print(resultSortByName);
 
 });
+
+//bolahome ya estaba
+// pokeButtonHome.addEventListener('click',() => {
+//     printList.innerHTML='';
+//     print(data)
+//});
+
 

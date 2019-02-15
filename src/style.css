@@ -4,9 +4,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.hideElement {
+.hideElement{
   display: none;
 }
 
@@ -17,8 +18,6 @@ body{
   height: 100vh; 
   font-family: 'Lato', sans-serif;
 }
-
-
 
 .initial-page{
   background: linear-gradient(130deg, #4AB583, #9284FF);
@@ -34,10 +33,6 @@ body{
   padding-top: 30%;
   display: block;
 }
-
-
-
-
 
 .poke-button {
   background-color: rgba(255, 255, 255, 0);
@@ -78,7 +73,6 @@ color verde safe 	#4AB583*/
    width: 90%;
    max-width: 1000px;  
    margin: 0 auto;
-
 }
 
 .content, .aside, .footer{   
@@ -88,7 +82,6 @@ color verde safe 	#4AB583*/
 .header{
    height: 45%;
    border-radius: 4px;
-   
 }
 
 .imgchico {
@@ -102,7 +95,7 @@ nav{
   opacity: .8;
   margin: auto;
   border-radius: 10px;
-  width: 90%;
+  width: 92.5%;
   height: 5%;
   font-size: 20px;
   font-weight: bold;
@@ -115,19 +108,22 @@ nav{
   margin-top: 4px;
   margin-left: 3%;
 }
+/*<a href="#" class="bt-menu"><span class="icon-bars"><i class="fas fa-bars"></i></span></a>*/
+.bt-menu{
+  display: none;
+}
 
 i{
+  display: none;
   color: wheat;
   float: right;
   padding: 5px;
-  
 }
 
 .main-content{
    height: 33em;
   /* background:linear-gradient(130deg, #4AB583, #9284FF);*/
 }
-
 
 .content, .aside{
    background-color:  rgba(209, 202, 254, 0.493);
@@ -145,7 +141,7 @@ i{
    border-radius: 14px;
 }
 .post{
-  margin-left:9%;
+  margin-left:10%;
   margin-top: 4%;
 }
 .aside{
@@ -224,7 +220,7 @@ i{
   margin: 9px 15px;
   padding-bottom: 10px;
   width: 130px;
-  height: 160px;
+  height: 180px;
   border-radius: 14px;
   border: 3px solid #FFBA5C;
 }
@@ -242,292 +238,51 @@ i{
   margin-top: 9px;
 }
 
-
-
-/*body {
-  background: #E9ECF4;
-  font-family: 'Lato', sans-serif;
-}
-
-#root {
-  background:  #C2FAB9;
-  width: 80%;
-  
-  max-width: 1000px;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.img {
-  margin: auto;
-  padding-top: 30%;
-  display: block;
-}
-
-.poke-button {
-  background: #C2FAB9;
-  border: none;
-  margin: auto;
-  display: block;
-}
-
-.poke-button:hover {
-  background: #C2FAB9;
-  border: none;
-  margin: auto;
-  display: block;
-  animation: pulse 1s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-header {
-  background: #C2FAB9;
-  width: 80%;
-  max-width: 1000px;
-  border-radius: 4px;
-  position: fixed;
-  color: whitesmoke;
-}
-
-.imgchico {
-  width: 200px;
-  margin: auto;
-  display: block;
-}
-
-nav {
-  background: #12203E;
-  opacity: .8;
-  margin: auto;
-  border-radius: 10px;
-  width: 90%;
-  height: 40%;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-}
-
-.text-page {
-  color: wheat;
-  display: inline-block;
-  margin-top: 4px;
-  margin-left: 3%;
-}
-
-.name-search {
-  background: #37486B;
-  margin-left: 50%;
-  width: 200px;
-  padding: 5px;
-  box-sizing: border-box;
-  border: 1px solid wheat;
-  border-radius: 5px;
-  color: wheat;
-  display: inline-block;
-}
-
-.contenido {
-  background: #5AC6BB;
-  width: 68.5%;
-  margin-top: 14%;
-  margin-left: 4%;
-  margin-bottom: 15%;
-  padding-top: 3%;
-  padding-left: 2%;
-  border-radius: 14px;
-  box-sizing: border-box;
-  float: left;
-}
-
-aside {
-  background: #5AC6BB;
-  width: 20%;
-  margin-top: 14%;
-  margin-left: 2%;
-  margin-bottom: 50px;
-  padding: 20px;
-  border-radius: 14px;
-  float: left;
-  box-sizing: border-box;
-  color: wheat;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.li>.li{
-  list-style: none;
-}
-
-h3{
-  padding-bottom: 10px;
-}
-
-.type-button {
-  background: #E6FDFB;
-  border: none;
-  width: 150px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  padding: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: #12203E;
-  display: inline-block;
-}
-
-.type-button:hover {
-  background: #5AC6BB;
-  border: 1px solid #E6FDFB;
-  width: 150px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  padding: 5px; 
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: wheat;
-  display: inline-block;
-}
-
-footer {
-  background:#976DD0;
-  width: 80%;
-  max-width: 1000px;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 0%;
-  height: 10%;
-  color: whitesmoke;
-  float: left;
-  box-sizing: border-box;
-}
-
-.footertext {
-  background: #976DD0;
-  border-radius: 8px;
-  
-  bottom: 0%;
-  width: 65%;
-  margin-left: 2.5%;
-  height: 10%;
-  
-}
-
-.img-pokebola-chica {
-  background: #976DD0;
-  border: none;
-  margin-top: 10px;
-  padding-top: 5px;
-  margin-left: 50%;
-  float: left;
-}
-
-.img-pokebola-chica:hover{
-  background: #976DD0;
-  border: none;
-  margin: 10px;
-  margin-left: 50%;
-  display: block;
-  animation: pulse 1s infinite;
-  animation-timing-function: linear;
-}
-
-.wrapper {
-  display: inline-block;
-  background: #FFD185;
-  margin: 9px 15px;
-  padding-bottom: 10px;
-  width: 130px;
-  height: 160px;
-  border-radius: 14px;
-  border: 3px solid #FFBA5C;
-}
-
-.pokemon-card-image {
-  background: #EAFEE6;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  right: 30px;
-}
-
-.box-card {
-  font-size: 14px;
-  text-align: center;
-  margin-top: 9px;
-}
-
-.text-footer {
-  color: wheat;
-  display: inline-block;
-}
-
-.img {
-  margin: auto;
-  padding-top: 30%;
-  display: block;
-}
-
-.poke-button {
-  background: #C2FAB9;
-  border: none;
-  margin: auto;
-  display: block;
-}
-
-.poke-button:hover {
-  background: #C2FAB9;
-  border: none;
-  margin: auto;
-  display: block;
-  animation: pulse 1s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.text-footer{
-    font-size: 10px;
-}
-
-@media screen and (min-width: 780px) and (max-width: 1024px){
+@media screen and (min-width: 992px) and (max-width: 1024px){
   #root {
     width: 100%;
   }
   header{
     width: 100%;
   }
-  .contenido {
-    
+  .contenido { 
     width: 100%;
 }
 }
 
-@media screen and (min-width: 375px) and (max-width: 780px){
+@media screen and (min-width: 768px) and (max-width: 992px){
+  #root {
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+  .contenido { 
+    width: 100%;
+}
+  .main-content{
+    width: 100%;
+  }
+  .content{
+    width: 83.5%;
+    margin-left: 8%;
+  }
+  .post{
+    margin-left: 3%;
+  }
+  .wrapper {
+    margin: 9px 10px;
+  }
+  .content{
+    over
+    overflow-x: hidden;
+ }
+ .bt-menu{
+   display: inline-block;
+ }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px){
   #root {
     width: 100%; 
   }
