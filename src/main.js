@@ -16,10 +16,13 @@ const closeFunFacts = document.getElementById('close-fun');
 
 
 const printModal = (champ) => {
-  document.getElementById('printModal').innerHTML = `<h1>${champ.name}</h1><h2>${champ.tags[0]}</h2><br> <h2>${champ.tags[1]} </h2><div class="background-modal" style="background-image:url(${champ.splash})">
+  document.getElementById('printModal').innerHTML = `<h1>${champ.name}</h1><h2>${champ.tags[0]}</h2><h2>${champ.tags[1]} </h2><div class="background-modal" style="background-image:url(${champ.splash})">
+  <p>Attack: ${champ.info.attack}</p><p>Defense: ${champ.info.defense}</p><p>Magic: ${champ.info.magic}</p>
+  <p>Difficulty: ${champ.info.difficulty}</p>
+  <p>HP: ${champ.stats.hp}</p><p>MP: ${champ.stats.mp}</p><p>Armor: ${champ.stats.armor}</p>
+  <p>Crit: ${champ.stats.crit}</p><p>Attack Damage: ${champ.stats.attackdamage}</p><p>Move Speed: ${champ.stats.movespeed}</p>
   </div>
-</div>`;
-
+  </div>`;
 }
 
 //Input para buscar por nombre
