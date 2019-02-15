@@ -2,6 +2,13 @@
     display: none;
 }
 
+body{
+    background-image: url('./images/Teselia_N2B2.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 img{
     width: 70%;
 }
@@ -18,7 +25,7 @@ h2{
 }
 
 #pokemones, #filtered_out {
-    padding-top:15%;
+    padding-top:10%;
     margin-left: 1.5%; 
     flex-wrap: wrap;
     justify-content: center;
@@ -146,7 +153,7 @@ td{
     margin-left: auto;
     width: 100%;
     position: relative;
-    background-image: url('./images/backgroud.png');
+    background-image: url('./images/fondo_modal.png');/*Cambio de imagen*/
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -155,7 +162,7 @@ td{
 .bigModal::after{
     content: "";
     background: black;
-    opacity: 0.9;
+    opacity: 0.7;
     top: 0;
     left: 0;
     bottom: 0;
@@ -168,7 +175,7 @@ td{
 
 /*Fa:Tamaño para el logo de la pagina principal*/
 .widthLogData{ /* <-----**A este le cambimos el nombre*/
-    width:35%;
+    width:15%;
 }
 
 .logfixed{ 
@@ -178,9 +185,16 @@ td{
     border-bottom-right-radius: 25px;
 }
 
-nav.navbar {
+nav.navbar { 
     background-color: black;
     border:0;
+    min-height:30px;
+    font-size: 20px;
+}
+
+.dark{ /*Estilo para el boton de pokebola del navbar*/
+    background-color:black;
+    border: 0;
 }
 
 
@@ -530,5 +544,15 @@ img{
             background-color: rgba(27, 27, 27, 0.9);
             font-size: 1em;
         }
+
+        .navbar-collapse { 
+            text-align: center; 
+        }
+
+        #pokehide{/*Creado para desaparecer "POKEMON" del NavBar*/
+            display: none;
+        }
+
+       
             
     }/* <----Cierre del @Media de 320px*/

@@ -7,7 +7,7 @@
 
 window.data = {
   filterData: (dataPokemon, filterBy) => {
-    const result = dataPokemon.filter(dataPokemon.type.includes(filterBy));
+    const result = dataPokemon.filter(element => element.type.includes(filterBy));
     return result;
   },
 
