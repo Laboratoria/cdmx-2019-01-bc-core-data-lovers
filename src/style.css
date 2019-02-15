@@ -143,16 +143,19 @@ header label:hover{
     display: inline-block    
 }
 
-h1,h2{
-    color:#FFDE00;
-    text-align: center;
-}
+h1,h2 {
+    color: #FFDE00;
+    text-align: center; 
+  }
+
+
+
 p{
    color: white;
    font-size: 16px;
    background: #8E2DE2;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to right, #4A00E0, #8E2DE2);
    width: 270px;
    margin:0px;
    left:540px;
@@ -176,8 +179,6 @@ p{
  }
  .boxesContainer, .typeCard{
     display: inline-block;
-    
-    
    
 }
 
@@ -206,16 +207,17 @@ p{
 
   .front, .back {
     backface-visibility: hidden;
-  color: white;
+    color: white;
 
-  font-size: 1.2em;
-  position: relative;
+    font-size: 1.2em;
+    position: relative;
 
 }
   .back {
     transform: rotateY( 180deg);
   }
 
+ 
   .cardBox .card {
     -webkit-animation: giro 1.5s 1;
     animation: giro 1.5s 1;
