@@ -11,8 +11,16 @@ const attack = document.getElementById('attack');
 const magic = document.getElementById('magic');
 const defense = document.getElementById('defense');
 const back = document.getElementById('back');
-const funFacts = document.getElementById('fun-facts');
+// const funFacts = document.getElementById('fun-facts');
 const closeFunFacts = document.getElementById('close-fun');
+
+
+const printModal = (champ) => {
+  document.getElementById('printModal').innerHTML = `<h1>${champ.name}</h1><h2>${champ.tags[0]}</h2><br> <h2>${champ.tags[1]} </h2><div class="background-modal" style="background-image:url(${champ.splash})">
+  </div>
+</div>`;
+
+}
 
 //Input para buscar por nombre
 let search = document.getElementById('search');
@@ -36,18 +44,15 @@ const printData = (newArrayInfo) => {
   })
   for (let i = 0; i < champion.length; i++) {
     champion[i].addEventListener("click", () => {
-      let champElegido = champion[i].id
-      const champ = window.lol.toModal(lolData, champElegido)
-      printModal(champ)
+      let champElegido = champion[i].id;
+      const champ = window.lol.toModal(lolData, champElegido);
+      printModal(champ);
       modalFunFacts.classList.remove('hide');
     })
   }
 }
-// Evento para el boton funFacts
-funFacts.addEventListener('click', () => {
-  modalFunFacts.classList.remove('hide');
-})
 
+//Función para el boton que cierra los modales
 closeFunFacts.addEventListener('click', () => {
   modalFunFacts.classList.add('hide');
 });
@@ -104,9 +109,3 @@ back.addEventListener('click', () => {
   championList.classList.add('hide');
   start.classList.remove('hide');
 });
-
-
-
-const printModal = (champ) => {
-  document.getElementById('printModal').innerHTML = champ.name;
-}
