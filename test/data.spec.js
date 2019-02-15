@@ -33,6 +33,8 @@ const pokemon = [{
   }]
 }];
 
+
+
 describe ('Es un objeto Pokemon', () => {
   it ('is an object', () => { 
 expect(typeof window.allPokemon).toBe('object');
@@ -56,4 +58,5 @@ describe('es una función para filtrar Pokemones', () => {
       it ('is a function', () => { 
     expect(typeof window.allPokemon.orderData).toBe('function');
       });
+
     });
