@@ -63,11 +63,35 @@ const prueba = () => {
           arrResultYear.push([key, resultYear[key]]);
         }
       }
-  
+
       let sortUpward = window.WorldBank.sortPercentAndYear(arrResultYear, sortValue);
-        printYears(sortUpward);
+     obj = new Object()
+      sortUpward.forEach(element=>{
+        let percent=  element[1]
+        let year = element[0]
+       obj[percent]  = year
+
+      })
+      printYears2(obj);
+      console.log(obj)
     })
 
+  }
+}
+
+
+const printYears2 = (resultYear) => {
+  dataYear.innerHTML = "";
+  for (const key in resultYear) {
+    if (resultYear.hasOwnProperty(key)) {
+      let element = resultYear[key];
+      const year = key;
+      if (year !== "") {
+        let indicatorDataYear = `<p>Año: <span>${element}   </span> <span>${parseFloat(year).toFixed(2)}%</span></p>`
+        dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
+      }
+
+    }
   }
 }
 
