@@ -448,8 +448,18 @@ img{
         #pokemones, #filtered_out {
             padding-top:20%;
         } 
+
+        #iconBall{ /* <----- Arregla la visualizacion del icono del navbar*/
+            width: 40px;
+        }
         
         }/* <----Cierre del @Media de 640 y 360px*/
+
+    @media (max-width: 640px){ /* <----- Arregla la visualizacion del icono del navbar*/
+        #iconBall{
+            width: 38px;
+        } 
+    }
 
     @media (max-width: 480px) { 
     .wellcomeBackground{
