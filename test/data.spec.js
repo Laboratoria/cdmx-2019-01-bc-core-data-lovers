@@ -214,6 +214,8 @@ describe ('data', () => {
     test('debería retornar una arreglo ordenado de forma descendente por peso', ()=>{
       expect(window.data.sortData(dataPokemonTest, 'weight', 'desc')[0].weight).toBe(100.0);
       expect(window.data.sortData(dataPokemonTest, 'weight', 'desc')[3].weight).toBe(6.9);
+
+      expect(window.data.sortData(dataPokemonTest, 'weight')[3].weight).toBe(6.9);
     });
   });
 
