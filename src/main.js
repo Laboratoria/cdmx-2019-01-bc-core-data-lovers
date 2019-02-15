@@ -130,7 +130,7 @@ for (let radioItem in radioFilters){
 
 
 
-<<<<<<< HEAD
+
 
 // on radio filters change 
 // const radioYearMayor = document.getElementById("asc");
