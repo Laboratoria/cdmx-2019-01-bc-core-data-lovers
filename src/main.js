@@ -53,6 +53,11 @@ for(let i = 0; i <buttonType.length; i++ ){
 });
 }
 
+//bolahome ya estaba
+///pokeButtonHome.addEventListener('click',() => {
+    //printList.innerHTML='';
+    //print(data)
+//});//
 
 alphabeticOrderButton.addEventListener('click',()=> {
     printList.innerHTML='';
@@ -61,10 +66,5 @@ alphabeticOrderButton.addEventListener('click',()=> {
 
 });
 
-//bolahome ya estaba
-// pokeButtonHome.addEventListener('click',() => {
-//     printList.innerHTML='';
-//     print(data)
-//});
 
 

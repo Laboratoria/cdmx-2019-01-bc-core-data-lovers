@@ -11,12 +11,12 @@
   display: none;
 }
 
-/* hola, no hubo conflictos */
+
 body{
   /* background-color: #E9ECF4; */
   background:linear-gradient(130deg, #4AB583, #9284FF);
   height: 100vh; 
-  font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .initial-page{
