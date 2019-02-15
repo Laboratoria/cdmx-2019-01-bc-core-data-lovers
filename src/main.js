@@ -58,7 +58,7 @@ showFirstChampionList.onmouseover = () => {
 cerrar.onmouseover = () => {
   document.getElementById("mySidenav").style.width = "0px";
 };
-
+// Link que lleva a la home
 home.onclick= ()=> {
   print(datos);
   document.getElementById("mySidenav").style.width = "0px";
