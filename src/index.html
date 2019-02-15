@@ -20,6 +20,7 @@
     <!--onkeyup es un evento de liberacion de tecla-->
       <ul id="result"></ul>
     </div>
+
     
     <a>Elementos</a>
     <div>
@@ -38,10 +39,25 @@
       <button type="submit"><span class="tooltip" data-info="FUEGO"><img src="assets/fire.png" id="Fire" class="typesPokemon"></span></button>
       <button type="submit"><span class="tooltip" data-info="TIERRA"><img src="assets/ground.png" id="Ground" class="typesPokemon"></span></button>
       <button type="submit"><span class="tooltip" data-info="VENENO"><img src="assets/poison.png" id="Poison" class="typesPokemon"></span></button>
+    </div>
+     <div>
+          <h4>Ordenando Pokemones </h4>
+          <section id="order-section">
+            <section>
+              <p>Name</p>
+              <input id="asc-name" type="radio" name="order">
+              <label for="asc-name">A-Z</label>
+              <input id="desc-name" type="radio" name="order">
+              <label for="desc-name">Z-A</label>
+            </section>
+          </section>
+        </div>
+
   </div>
 
   <div id="pok" class="panel">
       <seccion id="probando" class="grid-img">
+
     
     <script src="./data/pokemon/pokemon.js"></script>
     </seccion>
@@ -50,23 +66,22 @@
       <button id="Start">Start </button>
     </div>
     
+        <div id="PaginaPerfil" class="ocultar">
+
+          <button id="Start">Start </button>
+        </div>
+
+        <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
+
+
+
+    
+    <seccion id="pintar" class="grid-img">
+    </seccion>
  
-    <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
+  <script src="./data/pokemon/pokemon.js"></script>
+  
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 
-  <section id="order-section">
-    <section>
-      <p>Name</p>
-      <input id="asc-name" type="radio" name="order">
-      <label for="asc-name">A-Z</label>
-      <input id="desc-name" type="radio" name="order">
-      <label for="desc-name">Z-A</label>
-    </section>
-
-
-  </section>
-
-</div>
-<seccion id="pintar" class="grid-img"> 
-</seccion>
-</div></body> 
-     
+</seccion></div></div></body>

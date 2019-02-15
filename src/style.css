@@ -48,6 +48,7 @@
         color: white;
     }
     p{
+
         font-family: 'Ubuntu Condensed', sans-serif;
         font-size: 19px;
         max-width: 100%;
@@ -71,6 +72,7 @@ button{
 .imagesPokemon{
 background-image: url(./assets/red.png);
 background-position: center;
+
 background-size: 130%; 
 margin: 3%;
 max-width: 104%;
@@ -124,3 +126,4 @@ a{
     font-size: 35px;
     font-family: 'Staatliches', cursive;
 }
+
