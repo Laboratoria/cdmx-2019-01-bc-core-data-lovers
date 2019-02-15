@@ -1,5 +1,5 @@
-let POKEMON;
-let dataPokemon = POKEMON.pokemon;
+//let POKEMON;
+let dataPokemon = window.POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const searchCoincidence = document.getElementById('search-coincidences');
 

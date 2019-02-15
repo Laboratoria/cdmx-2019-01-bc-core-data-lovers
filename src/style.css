@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Righteous|Dosis:400,500');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 
 /*  Clases para la tarjeta del pokemon con el efecto que se voltea y muestra información*/
 .divPokemon {
@@ -99,6 +100,15 @@ background-repeat: no-repeat;
   width: 100%;
   text-align: center;
 }
+
+#subtitle{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 6em;
+  text-align: center;
+  text-shadow: 0 0 8px black, 0 0 12px blue;
+  color: #FDCA14;
+  padding-top: 3%;
+ }
 
 #pokemon-title {
   width: 50%;
@@ -237,6 +247,10 @@ legend{
 }
 
 /* Stats */
+.stats {
+  text-align: center;
+}
+
 #stats-table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -370,6 +384,10 @@ ul li:hover {
 
     width: 30%;
   }
+
+  #subtitle{
+    font-size: 4em;
+  }
 }
 
 /* Mobiles */
@@ -408,5 +426,8 @@ label{
   margin-left: 2%;
 }
 
+#subtitle{
+  font-size: 2em;
+}
 
 }
