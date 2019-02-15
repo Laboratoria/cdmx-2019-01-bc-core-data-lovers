@@ -10,6 +10,7 @@
 //     }
   
 //   }
+
 window.WorldBank = {
   filterCountry: (data, country, countrySelect) =>{
     //console.log(data,listQuestion)
@@ -17,10 +18,12 @@ window.WorldBank = {
     // console.log(country)
     let paisElegido = data[country].indicators // entrams a la data de cada pais y los indicadores
     //et countrySelect = listQuestion.value; //obtenemos el idicator code que tiene de la pregunta
+
     let result = {}; //declaramos una variable vacia  para que aqui almacene el resultado
-    // if(country === 'ciudadesMex'){ // comparamos la data-ciudad que sea igual a la que seleccionamos
-      paisElegido.forEach(ciudad =>{ //  seleccionamos la idicadores de mexico 
+    if(country === 'ciudadesMex'){ // comparamos la data-ciudad que sea igual a la que seleccionamos
+      countryMex.forEach(ciudad =>{ //  seleccionamos la idicadores de mexico 
         if(ciudad.indicatorCode == countrySelect){ //si el codigo y el select son iguales
+
           //console.log(result)
           result = ciudad.data //retornamos la data años y numeros 
         }
