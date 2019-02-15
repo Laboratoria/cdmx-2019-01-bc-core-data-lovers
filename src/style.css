@@ -1,14 +1,11 @@
 * {
   font-family: 'Roboto', sans-serif;
-
 }
-
 body {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-
 header {
   z-index: 10;
   position: fixed;
@@ -19,11 +16,9 @@ header {
   background: rgb(255, 255, 255);
   background-size: cover;
 }
-
 main {
   margin-top: 70px;
 }
-
 #home {
   padding: 2px;
   height: 100vh;
@@ -31,9 +26,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
-
 button {
   background-color: grey;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -47,26 +40,20 @@ button {
   transform: translate(205px, 248px);
   color: #fff;
 }
-
-
-
 #countries {
   padding: 4px;
   text-align: center;
 }
-
-
 #indicator {
+  background: #FFD252
   
 }
-
 #conferencias {
   padding:6px;
   background: rgb(255, 255, 255);;
   text-align: center;
   color:#444444;
 }
-
 #contacto {
   padding:6px;
   background: #FFD252;
@@ -74,7 +61,6 @@ button {
   color: #fff;
   font-size: 12px;
 }
-
 #logo {
   position: absolute;
   /*width: 43%;*/
@@ -83,8 +69,6 @@ button {
   top: 20px;
   cursor: pointer;
 }
-
-
 #filtrar-pais {
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -95,8 +79,6 @@ button {
   font-weight: bold;
   color: rgb(15, 15, 15);
 }
-
-
 /*#bars {
   width: 8%;
   height: 30px;
@@ -104,9 +86,7 @@ button {
   margin-left: 54%;
   margin-top: 4%;
   top: 30px;
-
 }*/
-
 #text {
   position: relative;
   width: 397px;
@@ -127,13 +107,11 @@ button {
   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
   color: #444444;
 }
-
 .button-est {
   position: relative;
   left: 155px;
   top: 100%;
 }
-
 #btn-est { 
   /* position: relative; */
   width: 170px;
@@ -150,7 +128,6 @@ button {
   cursor: pointer;
   color: #444444;
 }
-
 #btn-est:hover {
   color: white;
   background-color: #FFD252;
@@ -158,15 +135,12 @@ button {
   border: 2px solid #FFD252;
   color:#444444;
 }
-
 nav {
   width: 100%;
 }
-
 li {
   list-style: none;
 }
-
 nav ul {
   list-style: none;
   background: rgba(0, 0, 0, 0);
@@ -177,12 +151,10 @@ nav ul {
   margin: 0;
   transition: 1s;
 }
-
 nav ul li {
   display: inline-block;
   padding: 20px;
 }
-
 nav ul li:hover {
   /* background:#EC5A24;
   height: 3.9vh;
@@ -190,17 +162,53 @@ nav ul li:hover {
   background: #FFD252;
   transition: all 0.5s;
 }
-
 nav ul li a {
   top: 27px;
   text-decoration: none;
   color: #808080;
   letter-spacing: 0.3px;
   font-size: 15px;
-
 }
-
 nav ul li a:hover {
   font-weight: 700;
   color: #444444;
 }
+/*.menu-icon {
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+}*/
+/*@media(max-width: 580px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16 px;
+  }
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+  nav.black ul {
+    background: #000;
+  }
+  .showing {
+    max-height: 20em;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+  .menu-icon {
+    display: block;
+    height: 10vh;
+  }*/
+
+
+

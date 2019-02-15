@@ -14,14 +14,20 @@ window.WorldBank = {
     return newData
   },
   sortPercentAndYear: (arrResultYear, sortValue) => {
+     
     if (sortValue === "upward") {
+      
       arrResultYear.sort(
         function (a, b) {
+          console.log(arrResultYear)
+          
           return a[1] - b[1];
         });
     } else if (sortValue === "falling") {
       arrResultYear.sort(
         function (a, b) {
+          console.log(arrResultYear)
+      
           return b[1] - a[1];
         });
     }

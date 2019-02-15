@@ -54,19 +54,21 @@ const prueba = () => {
   let matchYear = event.target.value;
   let resultYear = window.WorldBank.percentAndYear(dataFilter, matchYear);
   printYears(resultYear);
+  let arrResultYear = [];
   for (let i = 0; i < sortRadio.length; i++) {
-  sortRadio[i].addEventListener('click', () => {
-    let arrResultYear = [];
-    for (let key in resultYear) {
-      if (resultYear.hasOwnProperty(key)) {
-        arrResultYear.push(resultYear[key]);
+    sortRadio[i].addEventListener('click', () => {
+      let sortValue = sortRadio[i].value
+      for (let key in resultYear) {
+        if (resultYear.hasOwnProperty(key)) {
+          arrResultYear.push([key, resultYear[key]]);
+        }
       }
-      }
-      let sortValue= sortRadio.value
-    let sortUpward = window.WorldBank.sortPercentAndYear(arrResultYear,sortValue);
-    printYears(sortUpward);
-  })
-}
+  
+      let sortUpward = window.WorldBank.sortPercentAndYear(arrResultYear, sortValue);
+        printYears(sortUpward);
+    })
+
+  }
 }
 
 
