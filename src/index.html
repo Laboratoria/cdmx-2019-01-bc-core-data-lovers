@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <title>P O K E D E X</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image" href="./favicon.png">
-  </head>
-  <body>
-    <section id = "start" class = "hide">
-      <div id = "buttonContainer">
-        <button  id= "startPokemon" class = "start" >S T A R T</button>
-      </div>
-        
-    </section>
-    
-      <section id= "options" class = "pokedex hide" >
-        <div id = "optionsContainer">
-            <button type = "button" id= "Fire" class = "boton-typeChart">Fuego</button>
-            <button type = "button" id= "Normal" class = "boton-typeChart">Normal</button>
-            <button type = "button" id= "Grass" class = "boton-typeChart" >Hierba</button>
-            <button type = "button" id= "Ice"  class = "boton-typeChart">Hielo</button>
-            <button type = "button" id= "Electric"  class = "boton-typeChart">Eléctrico</button>
-            <button type = "button" id= "Fighting" class = "boton-typeChart" >Pelea</button>
-            <button type = "button" id= "Poison"  class = "boton-typeChart">Veneno</button>
-            <button type = "button" id= "Ground" class = "boton-typeChart">Tierra</button>
-            <button type = "button" id= "Flying" class = "boton-typeChart">Volador</button>
-            <button type = "button" id= "Psychic" class = "boton-typeChart">Psíquico</button>
-            <button type = "button" id= "Bug" class = "boton-typeChart">Bicho</button>
-            <button type = "button" id= "Rock" class = "boton-typeChart">Roca</button>
-            <button type = "button" id= "Ghost" class = "boton-typeChart">Fantasma</button>
-            <button type = "button" id= "Dragon" class = "boton-typeChart">Dragón</button>
-                  
-          </div>
-        <div><button type= "button" id = "nextPage" >S I G U I E N T E</button>
-        </div>
-      </section>
+<head>
+  <title>P O K E D E X</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image" href="./favicon.png">
+</head>
 
-   <section id = "rootContainer" class="hide">
-      <button type= "button" id = "regresar" >R E G R E S A R</button>
-      <button type= "button" id = "ordenar" >O R D E N A R<br>A - Z</button>
-      <div id = "root" >
-      </div>
-   
-      
-   </section>
-    
-    <script src="./data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<body>
+  <section id="start" class="hide">
+    <div id="buttonContainer">
+      <button id="startPokemon" class="start">S T A R T</button>
+    </div>
+
+  </section>
+
+  <section id="options" class="pokedex hide">
+    <div id="optionsContainer">
+      <button type="button" id="Fire" class="boton-typeChart">Fuego</button>
+      <button type="button" id="Normal" class="boton-typeChart">Normal</button>
+      <button type="button" id="Grass" class="boton-typeChart">Hierba</button>
+      <button type="button" id="Ice" class="boton-typeChart">Hielo</button>
+      <button type="button" id="Electric" class="boton-typeChart">Eléctrico</button>
+      <button type="button" id="Fighting" class="boton-typeChart">Pelea</button>
+      <button type="button" id="Poison" class="boton-typeChart">Veneno</button>
+      <button type="button" id="Ground" class="boton-typeChart">Tierra</button>
+      <button type="button" id="Flying" class="boton-typeChart">Volador</button>
+      <button type="button" id="Psychic" class="boton-typeChart">Psíquico</button>
+      <button type="button" id="Bug" class="boton-typeChart">Bicho</button>
+      <button type="button" id="Rock" class="boton-typeChart">Roca</button>
+      <button type="button" id="Ghost" class="boton-typeChart">Fantasma</button>
+      <button type="button" id="Dragon" class="boton-typeChart">Dragón</button>
+      <button type="button" id="regresar">R E G R E S A R</button>
+      <button type="button" id="ordenar">O R D E N A R</button>
+    </div>
+    <div><button type="button" id="nextPage">S I G U I E N T E</button>
+    </div>
+  </section>
+
+  <section id="rootContainer" class="hide">
+    <div id = "charmander" class = "hide">
+      <img src="./FeminineRemarkableChuckwalla-small.gif" alt="charmander" />
+    </div>
+
+    <div id="root">
+    </div>
+  </section>
+
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

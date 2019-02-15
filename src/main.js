@@ -1,11 +1,11 @@
 //Declarar objeto de la data
 const data = window.POKEMON.pokemon;
 
-
 // Declara botones
 const startPokedex = document.getElementById('startPokemon');
 const next = document.getElementById('nextPage');
 const back = document.getElementById('regresar');
+const sort = document.getElementById('ordenar');
 
 // Declara Sections
 const start = document.getElementById('start');
@@ -16,10 +16,10 @@ const sortt = document.getElementById('ordenar');
 // Declara boton de tipos de pokemones en un array, por medio de su clase.
 const buttonFilter = Array.from(document.getElementsByClassName("boton-typeChart"));
 
-
 /*
 Cambiar de página en Mobile
 */
+
 startPokedex.addEventListener("click", () => {
   start.style.display = "none";
   rootContainer.style.display = "none";
@@ -44,6 +44,7 @@ back.addEventListener("click", () => {
 const gettingType = (arrayofButtons) => {
   arrayofButtons.map((buttonSelected) => {
     buttonSelected.addEventListener("click", (event) => {
+      Charmander.style.display = "none";
       const buttonType = event.target.id;
       const dataFiltered = window.allPokemon.dataFiltered(data, buttonType);
       printResult(dataFiltered)
@@ -52,6 +53,7 @@ const gettingType = (arrayofButtons) => {
 };
 
 gettingType(buttonFilter);
+//guarda los resultados en un array
 
 let resultTotal;
 

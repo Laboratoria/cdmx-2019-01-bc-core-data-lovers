@@ -22,8 +22,7 @@
     color: transparent;
   }
   #regresar {
-    display: inline-block;
-    background: transparent;
+    |background: transparent;
     border: 0;
     color: white;
     font-size: 100%;
@@ -148,7 +147,7 @@
   background-attachment: fixed;
 }
 #rootContainer {
-  display: inline-block;
+  float: left;
   width: 51vw;
   height: 68vw;
   background-attachment: fixed;
@@ -169,5 +168,9 @@
 }
 head {
   color: transparent;
+}
+#charmander {
+  background-image: url(./atrapalosya.png);
+
 }
 }
