@@ -502,3 +502,6 @@ function filtrar(id_tipo) {
     });
   }
 }
+
+
+var gaby= hola;
