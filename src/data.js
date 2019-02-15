@@ -28,36 +28,7 @@ window.data = {
   }
 
 
-    /*
     
-    let orderDta = [];
-    switch (sortBy) {
-      case "name":
-        if (sortOrder === 'asc-name') {
-          orderDta = result.sort((a, b) => (a.name > b.name) ? 1 : -1);
-          console.log(orderDta
-            );
-        } else if (sortOrder === "desc-name") {
-          console.log(sortBy);
-          orderDta = result.sort((a, b) => (a.name > b.name) ? -1 : 1);
-        }
-        break;
-        
-  
-  
-    }
-    sortData(result, sortBy, sortOrder);
-    
-}*/
-   
-
-
-
-//funcion de ordenar
-
-
-
-
 
 
 
