@@ -2,27 +2,29 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> -->
-    
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> -->
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--Agregue mas instrucciones para responsive-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!--Agregue mas instrucciones para responsive-->
   <title>Data Lovers</title>
   <!--Faby:Este link es de la librería de Bootstrap-->
-  
-  <link rel="stylesheet" href="style.css" />   
+
+  <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
   <header id="burguer" class="hide logfixed">
+
        <!--Nav de bootstrap-->
        <nav class="navbar navbar-inverse">
           <div class="container-fluid">
@@ -48,42 +50,45 @@
                 </div>
               </form>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filtrar<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li id="Water" class="filterType"><a href="#">Water</a></li>
-                    <li id="Fire" class="filterType"><a href="#">Fire</a></li>
-                    <li id="Grass" class="filterType"><a href="#">Grass</a></li>
-                    <li id="Bug" class="filterType"><a href="#">Bug</a></li>
-                    <li id="Normal" class="filterType"><a href="#">Normal</a></li>
-                    <li id="Poison" class="filterType"><a href="#">Poison</a></li>
-                    <li id="Electric" class="filterType"><a href="#">Electric</a></li>
-                    <li id="Ground" class="filterType"><a href="#">Ground</a></li>
-                    <li id="Fighting" class="filterType"><a href="#">Fighting</a></li>
-                    <li id="Psychic" class="filterType"><a href="#">Psychic</a></li>
-                    <li id="Rock" class="filterType"><a href="#">Rock</a></li>
-                    <li id="Ghost" class="filterType"><a href="#">Ghost</a></li>
-                    <li id="Ice" class="filterType"><a href="#">Ice</a></li>
-                    <li id="Dragon" class="filterType"><a href="#">Dragon</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ordenar<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Ascendente</a></li>
-                    <li><a href="#">Peso</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Promedio</a></li>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Filtrar<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li id="Water" class="filterType"><a href="#">Water</a></li>
+                <li id="Fire" class="filterType"><a href="#">Fire</a></li>
+                <li id="Grass" class="filterType"><a href="#">Grass</a></li>
+                <li id="Bug" class="filterType"><a href="#">Bug</a></li>
+                <li id="Normal" class="filterType"><a href="#">Normal</a></li>
+                <li id="Poison" class="filterType"><a href="#">Poison</a></li>
+                <li id="Electric" class="filterType"><a href="#">Electric</a></li>
+                <li id="Ground" class="filterType"><a href="#">Ground</a></li>
+                <li id="Fighting" class="filterType"><a href="#">Fighting</a></li>
+                <li id="Psychic" class="filterType"><a href="#">Psychic</a></li>
+                <li id="Rock" class="filterType"><a href="#">Rock</a></li>
+                <li id="Ghost" class="filterType"><a href="#">Ghost</a></li>
+                <li id="Ice" class="filterType"><a href="#">Ice</a></li>
+                <li id="Dragon" class="filterType"><a href="#">Dragon</a></li>
               </ul>
-              <!---->
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-          <!--Cierre de Nav de Bootstrap-->
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Ordenar<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a id="ascendente" class="orderName" href="#">Ascendente</a></li>
+                <li><a id="descendente" class="orderName" href="#">Descentente</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Promedio</a></li>
+          </ul>
+          <!---->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--Cierre de Nav de Bootstrap-->
   </header>
   <section id="welcome" class="container-fluid wellcomeBackground">
     <!--Faby:Este div contiene la imagen de inicio de pantalla-->
@@ -103,16 +108,17 @@
   </section>
   <!--Se quedan las sections que se pusieron-->
   <!--Cierre del div container-fluid-->
+
   <section id="theme" class="pokemonBackground hide">
-      <div id="pokemones"> </div>
+    <div id="pokemones"> </div>
   </section>
   <!--Cierre del Div donde se visualiza el fondo-->
 
-  
+
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
-  
+
   <footer></footer>
 </body>
 
