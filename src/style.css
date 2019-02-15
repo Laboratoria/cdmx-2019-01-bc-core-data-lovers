@@ -283,7 +283,7 @@ footer {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media (min-width: 1380px) {
 
   .logo {
     width: 6%;

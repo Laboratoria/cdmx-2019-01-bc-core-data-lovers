@@ -4,36 +4,29 @@ window.data = {
     //Variables que guardan en resultado de la busqueda
     let yearResult = "";
     let userResult = "";
+
     //Usamos FIND para buscar el año dentro del objeto.
     const yearFound = injuriesBy.find(element => element.Year == yearValue);
-      //Dentro de un ciclo FOR buscamos las Key y comparamos con el valor del Usuario.
-      for (const key in yearFound) {
-        if (yearFound.hasOwnProperty(key)) {
-          const element = yearFound[key];
-          if (key == userValue) {
-            yearResult = yearValue.substr(0, 4);
-            userResult = element;
-          } //for if If
-        } //For IF
-      } // For
-    return [yearResult, userResult]
-  }, //Consult
-
-  order: (injuriesBy, yearValue, userValue) => {
-
-  const yearFound = injuriesBy.find(element => element.Year == yearValue);  
-
-  injuriesBy.forEach(element => {
-      let year = element.Year;
-      let moto = element.Total_Injured_Persons_Motorcyclists;
-      let bike = element.Total_Injured_Persons_Pedalcyclists;
-      let walk = element.Total_Injured_Persons_Pedestrians;
-      let transit = element.Total_Injured_Persons_Transit_Total;
-        if (userValue == "all") {
-            let dataFind = [year.substr(0,4), moto, bike, walk, transit]
-          console.log(dataFind);
-          return dataFind
-        }
-      }) //ForEach
-  }//Order
+    const allData = injuriesBy.map(({
+      Total_Injured_Persons_Motorcyclists,
+      Total_Injured_Persons_Pedalcyclists,
+      Total_Injured_Persons_Pedestrians,
+      Total_Injured_Persons_Transit_Total,
+      Year
+    }) => [`<br>${Year}<br>${Total_Injured_Persons_Motorcyclists}<br>${Total_Injured_Persons_Motorcyclists}<br>${Total_Injured_Persons_Pedalcyclists}<br>${Total_Injured_Persons_Pedestrians}<br>${Total_Injured_Persons_Transit_Total}<br>`]);
+    console.log(allData)
+    
+    //Dentro de un ciclo FOR buscamos las Key y comparamos con el valor del Usuario.
+    for (const key in yearFound) {
+      if (yearFound.hasOwnProperty(key)) {
+        const element = yearFound[key];
+        if (key == userValue) {
+          yearResult = yearValue.substr(0, 4);
+          userResult = element;
+        } //for if If 
+      } //For IF
+    } // For
+    //console.log(yearResult, userResult)
+    return [allData]
+  } //Consult
 }; //window
