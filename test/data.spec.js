@@ -97,7 +97,6 @@ const pokemon = [{
 ]
 
 
-
 describe('filterData', () => {
   it('is a function', () => {
     expect(typeof window.data.filterData).toBe('function');
@@ -113,7 +112,11 @@ describe('sortData', () => {
   it('is a function', () => {
     expect(typeof window.data.sortData).toBe('function');
   });
-})
+
+  it('return arr A-Z', () => {
+    expect(window.data.sortData(pokemon, "ascendente")[0].name).toEqual('Bulbasaur');
+  })
+}); 
 
 describe('computeStats', () => {
   it('is a function', () => {

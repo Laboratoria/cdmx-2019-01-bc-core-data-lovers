@@ -12,8 +12,8 @@ window.data = {
     }
   },
 
-  computeStats: () => {
-
+  computeStats: (a,b) => {
+    a+b == 20;
   }
 
 };
