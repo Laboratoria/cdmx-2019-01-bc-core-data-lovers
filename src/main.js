@@ -30,17 +30,25 @@ startButton.addEventListener('click', () => {
 const printData = (newArrayInfo) => {
   cardSummary.innerHTML = "";
   newArrayInfo.forEach(champ => {
-    let result = `<div class="champion"> <img src="${champ.splash}">
+    let result = `<div id='${champ.name}' class="champion"> <img src="${champ.splash}">
     <h3> ${champ.name} </h3> <div class="tags"> <p> ${champ.primaryRol} </p> <p> ${champ.secondaryRol} </p> </div></div>`;
     cardSummary.insertAdjacentHTML("beforeend", result);
   })
+  for (let i = 0; i < champion.length; i++) {
+    champion[i].addEventListener("click", () => {
+      let champElegido = champion[i].id
+      const champ = window.lol.toModal(lolData, champElegido)
+      printModal(champ)
+      modalFunFacts.classList.remove('hide');
+    })
+  }
 }
-//Evento para el boton funFacts
-funFacts.addEventListener('click', ()=>{
+// Evento para el boton funFacts
+funFacts.addEventListener('click', () => {
   modalFunFacts.classList.remove('hide');
 })
 
-closeFunFacts.addEventListener ('click', () => {
+closeFunFacts.addEventListener('click', () => {
   modalFunFacts.classList.add('hide');
 });
 
@@ -58,21 +66,7 @@ search.addEventListener('keyup', () => {
 });
 
 //Esta función es para seleccionar el campeón que queremos visualizar
-// const champion = document.getElementsByClassName('champion');
-// console.log(champion);
-// let championInd = [];
-// // let y = lolData.id;
-// // let x = event.target.y;
-
-// const selectChamp = () => {
-//   for (let i = 0; i < champion; i++) {
-//     champion[i].addEventListener("click", () => {
-//       championInd = champ[i];
-
-//     })
-//   }
-// }
-// selectChamp();
+const champion = document.getElementsByClassName('champion');
 
 //Esta función es para seleccionar el rol por el cual se va a filtrar
 const selectRol = () => {
@@ -82,7 +76,6 @@ const selectRol = () => {
       const newArrayChamp = window.lol.showData(lolData);
       const arrayFiltered = window.lol.filterByRol(newArrayChamp, rolId);
       printData(arrayFiltered);
-
     })
   }
 }
@@ -111,3 +104,9 @@ back.addEventListener('click', () => {
   championList.classList.add('hide');
   start.classList.remove('hide');
 });
+
+
+
+const printModal = (champ) => {
+  document.getElementById('printModal').innerHTML = champ.name;
+}
