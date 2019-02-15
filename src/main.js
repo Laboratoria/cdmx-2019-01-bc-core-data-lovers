@@ -18,6 +18,8 @@ const characterFromList = document.getElementsByClassName("nameList");
 const inicio = document.getElementById('inicio')
 const menu = document.getElementById('menu')
 const cerrar = document.getElementById('titleChampions')
+const welcome = document.getElementById('welcomeMssg');
+const printRolTitle = document.getElementById('rolTitle')
 
 //Trae los divs de cada personaje
 //const character = document.getElementById('character')
@@ -63,7 +65,7 @@ const characterSelection = () => {
       //console.log(characterId);
 
       const elementChampion = window.lol.filterByCharacter(characterId, datos);
-
+      document.getElementById("welcomeMssg").style.display = 'none';
       printCharacterSheet(elementChampion);
     })
   }
@@ -93,6 +95,7 @@ print(datos)
 //función que imprime la información completa del personaje 
 const printCharacterSheet = (datos) => {
   showFirstChampionList.innerHTML = "";
+  printRolTitle.innerHTML="";
   datos.forEach(champ => {
     let nameList = `<div id="${champ.id}" class="nameList">
    <img class="lolIcons" src="${champ.img}"><img class="bigImg" src="${champ.splash}">
@@ -123,8 +126,11 @@ const selectByRol = () => {
     rol[i].addEventListener('click', () => {
       let rolId = rol[i].id;
       document.getElementById("mySidenav").style.width = "0%";
+      printRolTitle.innerHTML="";
+      printRolTitle.insertAdjacentHTML("beforeend", rolId);
 
       const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
+      document.getElementById("welcomeMssg").style.display = 'none';
       print(arrayRolesFiltered);
     })
   }
@@ -136,7 +142,9 @@ selectByRol();
 const searchByName = () => {
   searchInput.addEventListener("keyup", () => {
     let searchValue = searchInput.value;
+    printRolTitle.innerHTML="";
     const showSearch = window.lol.filterByName(searchValue, datos);
+    document.getElementById("welcomeMssg").style.display = 'none';
     print(showSearch);
   })
 };
