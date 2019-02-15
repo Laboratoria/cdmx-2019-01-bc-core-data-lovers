@@ -1,7 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems);
-});*/
+
 /*convierte la base de datos en una variable*/
 const datalol = window.LOL.data;
 const datosArr = window.lol.iterarData(datalol);
@@ -15,6 +12,7 @@ const difficultyDsc = document.getElementById("difficultyDsc");
 //cambiar nombre en css
 const cuadro = document.getElementsByClassName("cuadro");
 
+//Limpiar los elementos de DOM para regresar a pantalla de inicio
 home.addEventListener("click", () => {
   imprimirRoles.innerHTML = "";
 });
@@ -25,8 +23,33 @@ searchChampion.addEventListener("click", () => {
   print(datosArr)
 });
 
+//Función para pintar todos los campeones y e iterar los id para mostrar la tarjeta del campeon seleccionada
+const print = (datosArr) => {
+  imprimirRoles.innerHTML = "";
+  datosArr.forEach(champ => {
+    let pintar = `<div div id="${champ.id}" class="cuadro"><img class="imagen" src="${champ.splash}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`;
+    imprimirRoles.insertAdjacentHTML("beforeend", pintar);
+  })
+  for (let i = 0; i < cuadro.length; i++) {
+    cuadro[i].addEventListener('click', () => {
+      let characterId = cuadro[i].id;
+      const elementChampion = window.lol.selectCharacter(characterId, datosArr);
+      printCharacterSheet(elementChampion);
+    })
+  } 
+};
+
+//Función para pintar la tarjeta del campeon seleccionado
+const printCharacterSheet = (datosArr) => {
+  imprimirRoles.innerHTML = "";
+  datosArr.forEach(champ => {
+    let pintar = `<div div id="${champ.id}" class="cuadro"><img class="imagen" src="${champ.splash}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`;
+    imprimirRoles.insertAdjacentHTML("beforeend", pintar);
+  })
+};
+
 //-----funciones pintar
-const characterSelection = () => {
+/*const characterSelection = () => {
   for (let i = 0; i < cuadro.length; i++) {
     cuadro[i].addEventListener("click", () => {
       let characterId = cuadro[i].id;
@@ -35,26 +58,10 @@ const characterSelection = () => {
     })
   }
 }
-characterSelection()
+characterSelection()*/
 
 //función para pintar los campeones acorde a las propiedades seleccionadas
-const print = (datosArr) => {
-  imprimirRoles.innerHTML = "";
-  datosArr.forEach(champ => {
-    let pintar = `<div div id="${champ.id}" class="cuadro"><img class="imagen" src="${champ.splash}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`;
-    imprimirRoles.insertAdjacentHTML("beforeend", pintar);
-    characterSelection(pintar);
-  })
 
-};
-
-const printCharacterSheet = (datosArr) => {
-  imprimirRoles.innerHTML = "";
-  datosArr.forEach(champ => {
-    let pintar = `<div div id="${champ.id}" class="cuadro"><img class="imagen" src="${champ.splash}"> <div id="subtitulo"><h1 id="nombre">${champ.name}</h1> <h2 id"titulo"> ${champ.title}</h2></div></div>`;
-    imprimirRoles.insertAdjacentHTML("beforeend", pintar);
-  })
-};
 
 //Función para desplegar los campeones filtrados por roles
 const selectRol = () => {
@@ -69,11 +76,6 @@ const selectRol = () => {
 }
 selectRol();
 
-//Función para limpiar contenido antes mostrado y desplegar todos los campeones para realizar busqueda específica 
-// const printChamp = ()=> {
-//     imprimirRoles.innerHTML = "";
-//     print(datosArr)
-// }
 
 //Función para desplegar el campeon para se desea buscar
 const filterRolBySearch = () => {

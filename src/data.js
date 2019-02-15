@@ -9,7 +9,6 @@ window.lol = {
           tag: element.tags,
           splash: element.splash,
           title: element.title,
-          difficulty: element.info.difficulty,
           id: element.id,
           blurb: element.blurb,
           attack: element.info.attack,
@@ -39,9 +38,9 @@ window.lol = {
     return concidence;
   },
 
-  filterByCharacter: (characterId, datosArr) => {
-    const characterOnclick = datosArr.filter(element => element.id === characterId);
-    return characterOnclick;
+  selectCharacter: (characterId, datosArr) => {
+    const character = datosArr.filter(element => element.id === characterId);
+    return character;
   },
 
   sortByDifficulty: (datosArr) => {
