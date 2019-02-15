@@ -97,12 +97,6 @@ button {
 }
 
 
-/*#bars {
-  width: 8%;
-  top: 30px;
-
-}*/
-
 #text {
   position: relative;
   width: 397px;
@@ -131,6 +125,7 @@ button {
 }
 
 #btn-est { 
+
   width: 170px;
   height: 50px;
   left: 0px;
