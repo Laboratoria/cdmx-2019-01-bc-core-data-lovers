@@ -117,67 +117,37 @@ Los criterios para considerar que has completado este proyecto son:
 
 ### Definición del producto
 
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
+El propósito de este producto, es facilitar el acceso de información demográfica femenina, que utilizan las ONG (Organización No Gubernamental)para la planificación de servicios sociales (programas infancia, juventud, salud
+reproductiva, mercado de trabajo, envejecimiento) de México, Perú, Chile y Brasil.
 
+El diseño se penso tomando en cuenta los estandares y consistencia visual de los sitios Web de organizaciones que proporcionan información estadistica de tipo poblacional. 
+
+El logo integra los colores representativos de cada país y el nombre porque dichos países pertenecen a América Latina.
+Lo anterior con la finalidad de que la aplicación cuente con una identidad gráfica.
 ### Historias de usuario
 
-Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition of done_) para cada una.
+1. Yo como usuario quiero poder filtrar la data por país y por indicador.
+- La definición de terminado se cumplirá cuando muestre los datos de los filtros seleccionados, pase los test implementados, así como las pruebas de usabilidad y el códgio se haya incorporado en GitHub.
+
+2. Yo como usuario quiero poder ordenar de forma ascendente y descendente la data obtenida.
+- La definición de terminado se cumplirá cuando se muestre la información en orden ascendente o descendente, pase los test implementados, así como las pruebas de usabilidad y el códgio se haya incorporado en GitHub.
+
+3. Yo como usuiario quiero poder visualizar de forma gráfica la información.
+- La definición de terminado se cumplirá cuando se muestre la información en gráficas, pase los test implementados, así como las pruebas de usabilidad y el códgio se haya incorporado en GitHub.
+
 
 ### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
-Durante tu trabajo deberás haber hecho e iterado sketches (boceto) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que realices y las subas a tu repositorio, y las menciones en tu
-`README.md`.
+![prototipo-BajaFidelidad](https://i.ibb.co/2yp8s8W/20190215-122218.jpg")
 
+- A traves de la investigación nos percatamos que al consultar este tipo de información, el usuario tiene que llevar a cabo mas de un paso, por lo que este diseño se creó pensando en una interfaz formal y accesible para el usuario.
 #### Prototipo de alta fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
+![pantalla1](https://i.ibb.co/ZYZ0V0y/p1.png)
 
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para hackear. Además, tu
-diseño debe seguir los fundamentos de _visual design_. También, te recomendamos exportar
-tu diseño a [Zeplin](https://zeplin.io/) y podrías utilizar las especificaciones de
-estilo que te proporcione Zeplin al momento de implementar tus diseños en código.
-
-#### Testeos de usabilidad
-
-Durante el reto deberás realizar tests de usabilidad con distintos usuarios, y
-en base a los resultados de esos tests, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los tests y cómo los
-mejoraste en tu propuesta final.
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-Como mencionamos, **no** es necesario que construyas la interfaz tal como la
-diseñaste. Tendrás un tiempo limitado para hackear, así es que deberás
-priorizar.
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario filtrar y ordenar la data.
-3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
-   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
-   un determinado valor, por ejemplo.
-4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
-
-Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
-siga los fundamentos de _visual design_.
+![pantalla2](https://i.ibb.co/YRpRD6K/p2.png)
 
 ### Pruebas unitarias
 
@@ -226,15 +196,9 @@ Features/características extra sugeridas:
   o [Google Charts](https://developers.google.com/chart/).
 - 100% Coverage
 
-## Consideraciones técnicas
+## Pruebas
 
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#parte-opcional-hacker-edition) más arriba.
-
-No se debe utilizar la _pseudo-variable_ `this`.
+Las pruebas automatizadas para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que se realice el filtrado y el orden de la data. Analiza que la función filtrar sea función y permita el filtrado de la información por país e indicadores; Analiza que la función ordenar, sea función y permita el orden de la información de forma ascendente o descentente.
 
 El _boilerplate_ contiene una estructura de archivos como punto de partida así
 como toda la configuración de dependencias:
@@ -296,205 +260,11 @@ La línea quedaría así:
 Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
 scripts (como `src/data.js` o `src/main.js`).
 
-### `src/main.js`
-
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
-interacción con el DOM. Operaciones como creación de nodos, registro de
-manejadores de eventos (_event listeners_ o _event handlers_), ....
-
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
-
-### `src/data.js`
-
-El corazón de este proyecto es la manipulación de datos a través de arreglos y
-objetos. La idea de este archivo es contener toda la funcionalidad
-que corresponda a obtener, procesar y manipular datos.
-
-En este archivo esperamos que implementes las funciones detalladas en la sección
-de [_Pruebas Unitarias_](#pruebas-unitarias).
-
-### `src/data`
-
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
-carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
-extensión `.js` y otro `.json`. Ambos archivos contienen la misma data; la
-diferencia es que el `.js` lo usaremos a través de una etiqueta `<script>`,
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-(ver sección de [_Parte Opcional_](#parte-opcional-hacker-edition)).
-
-### `test/data.spec.js`
-
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
-
-## Evaluación
-
-Recuerda revisar la [rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada habilidad y cada nivel. Esta es una
-lista de todas las habilidades involucradas en este proyecto y que evaluaremos
-cuando lo completes:
-
-### General
-
-| Característica/Habilidad |
-| ------------------------ |
-| Completitud              |
-
-### Tech
-
-| Habilidad              |
-| ---------------------- |
-| **JavaScript**         |
-| Estilo                 |
-| Nomenclatura/semántica |
-| Funciones/modularidad  |
-| Estructuras de datos   |
-| Tests                  |
-| **HTML**               |
-| Validación             |
-| Estilo                 |
-| Semántica              |
-| **CSS**                |
-| DRY                    |
-| Responsive             |
-| **SCM**                |
-| Git                    |
-| GitHub                 |
-| **CS**                 |
-| Lógica                 |
-| Arquitectura           |
-
-### UX
-
-| Habilidad       |
-| --------------- |
-| User Centricity |
-| Entrevistas     |
-| Contraste       |
-| Alineación      |
-| Jerarquía       |
-| Tipografía      |
-| Color           |
-
-### Habilidades Blandas
-
-| Habilidad                    |
-| ---------------------------- |
-| Planificación y organización |
-| Autoaprendizaje              |
-| Solución de problemas        |
-| Dar y recibir feedback       |
-| Adaptabilidad                |
-| Trabajo en equipo            |
-| Comunicación eficaz          |
-| Presentaciones               |
-
----
-
-## Pistas sobre cómo empezar a trabajar en el proyecto
-
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
-
-- ¿Quiénes son los principales usuarios de producto?
-- ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-- ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-- ¿Cuándo utilizan o utilizarían el producto?
-
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
-
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus \_coaches\* te compartirán un \_link\* a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1)
-   un `remote` hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu :fork_and_knife: a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. A codear se ha dicho! :rocket:
-
-<!--
-En este proyecto deberás trabajar colaborativamente. Para ello, una de las
-integrantes del equipo deberá forkear el repositorio del cohort y la otra
-integrante **deberá hacer un fork del repositorio de su compañera**. Luego de
-esto, deberás
-[configurar](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-un `remote` hacia el repositorio del cual hiciste el fork.
-
-Para mandar cambios desde un repositorio forkeado al original debes crear un
-[pull request](https://goo.gl/4bYnuh)
-y el propietario del repositorio original recibirá una notificación para
-[revisar el pull request](https://goo.gl/XSFcT5)
-y [aceptar los cambios](https://goo.gl/HLJtqN).
-
-Aquí algunas recomendaciones para que organices mejor el trabajo con tu
-compañera:
-
-* En lugar de trabajar en una sola rama o _branch_, puedes organizar el flujo de
-  trabajo con dos ramas principales:
-  - `master`: rama que contiene las funcionalidades terminadas y sin errores.
-  - `develop`: rama dónde integrarás las funcionalidades conforme las vayas
-    desarrollando.
-
-* Además de tener las dos ramas anteriores, puedes trabajar cada nueva
-  funcionalidad en una rama individual (_feature branches_), estas ramas en
-  lugar de crearse a partir de `master`, tienen a `develop` como su rama de
-  origen. Cuando una funcionalidad es terminada se integra de nuevo a `develop`.
-  Las _feature branches_ no se deben integrar directamente a `master`.
-
-* Por último, te sugerimos codear usando la técnica de
-  [pair programming](https://goo.gl/uAMBX2).
-
-¿Quieres saber más forks y pull requests?
-
-* Un [fork](https://help.github.com/articles/fork-a-repo/) es una copia de un
-  repositorio en el que puedes experimentar sin afectar al repositorio original.
-  Generalmente se usa para proponer cambios al proyecto de alguien más o para
-  usar el proyecto de otra persona como punto de partida para una idea que
-  quieras realizar.
-
-* Un [pull request](https://help.github.com/articles/about-pull-requests/) (PR)
-  te permite solicitar la inclusión de cambios al repositorio original (tu punto
-  de partida) en GitHub. Cuando un PR es abierto, este permite solicitar,
-  discutir y revisar los cambios realizados con todos los colaboradores y
-  agregar otros commits antes de que los cambios sean incluidos al repositorio
-  original.
--->
-
----
-
 ## Contenido de referencia
 
 ### Diseño de experiencia de usuario (User Experience Design)
 
-- Investigación con usuarios / entrevistas
-- Principios de diseño visual
 
-### Desarrollo Front-end
-
-- Unidad de testing en curso de JavaScript en LMS.
-- Unidad de arreglos en curso de JavaScript en LMS.
-- Unidad de objetos en curso de JavaScript en LMS.
-- Unidad de funciones en curso de JavaScript en LMS.
-- Unidad de DOM en curso de Browser JavaScript en LMS.
-- [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-- [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-- [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-- [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-- [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-- [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-- [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-- [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-- [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [json.org](https://json.org/json-es.html)
 
 ### Herramientas
 
@@ -506,28 +276,32 @@ compañera:
 
 ---
 
-## Checklist
+###UX/UI
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-      lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-      `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-      en `README.md`.
+##Antecedentes
+Por medio de investigación, se identificó a los usuarios mas interesados en una aplicación que ofrezca los servicios de filtrado y orden de información estadística poblacional femenina. El grupo al que le pareció mas útil fue a personas que trabajan en ONG de dicadas a la implementación de programas sociales en países como México, Perú, Brasil y Chile.
+
+##Problemas que presenta el usuario
+Frustración al realizar una busqueda de datos estadisticos poblacionales en otros sitios.
+Necesidad de consultar datos estadísticos poblacionales de forma rápida y consisa.
+
+##Objetivos
+Utilizar las opciones de filtrar y ordenar para que realicen lo siguiente:
+Filtrar data por pais y porr indicador.
+O
+Funcionalidad
+El usuario puede ingresar el mensaje que necesite transformar, este puede incluir números, mayúsculas, minúsculas y espacios; además de esto, puede elegir el número de posiciones a las que desee desplazar su mensaje.
+Cliente Modelo (Experiecia de usuario)
+Mario Salgado es un hombre de 25 años al cuál simpre le ha interesado la tecnología y las aplicaciones que le ofrezcan algo con lo cual innovar su entorno. Últimamente esta interesado en una forma de mandar cierta información a sus contactos personales y de trabajo. Se encuentra con varios problemas al querer realizar esto; en su trabajo muchas veces utilizan su computadora sin pedir permiso y cuando le llegan correos o mensajes con temas personales o profesiolnales delicados, han logrado tener acceso a ellos; en su celular encuentra un problema similar, cuando llega a prestar su teléfono, alguien en su entorno lo toma o simplemente llegan a leer el mensaje desde la distancia. Al utilizar Ceasar Code Message Mario ha logrado evitar esto, pues no solo ha logrado proteger sus mensajes, además ha tenido un buen momento gracias a su interés por aplicaciones que le ofrezcan cosas útile y novedosas.
+
+Boceto
+Al utilizar el boceto, los usuarios se sintieron confundidos con el uso de las cajas, pues olvidaban poner el número de desplazamiento (offset) al momento de intentar decifrar/cifrar el mensaje; también expresaron sentir que los botones eran muy pequeños y por lo tanto difíciles de utilizar, en este sentido, les gustaría poder tener un botón que no solo finalíce la aplicación y los retorne al inicio, si no también un botón que les permita limpiar los campos para poder empezar de nuevo sin tener que regresar o borrar los mensajes manualmente; expresaron agrado por el detalle de ver su nombre impreso en pantalla, pues les hizo sentir cierto grado de personalización y confianza; por último expresaron gran aceptación por el fondo utilizado en la primer pantalla, sin embargo los encabezados y el color de fondo en las otras dos pantallas no fueron del agrado visual, expresando que no les hacia sentir que estaban utilizando una aplicación dedicada a cifrar mensajes. Si deseas consultar físicamente ingresa al siguiente link: (https://marvelapp.com/8204i2d/screen/52336642).
+
+Resultado Final
+- 
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 - [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 - [ ] UI: Permite filtrar data en base a una condición.
 
-## Checklist (Opcional)
-
-- [ ] Consume data de forma dinámica (`fetch()`).
-- [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
-- [ ] Cobertura de coverage al 100%.
