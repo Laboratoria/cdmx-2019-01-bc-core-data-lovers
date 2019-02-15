@@ -60,7 +60,12 @@ cerrar.onmouseover = () => {
 };
 
 home.onclick= ()=> {
-  document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';
+  print(datos);
+  document.getElementById("mySidenav").style.width = "0px";
+  printRolTitle.style.display= "none";
+  welcome.style.display = 'block';
+
+
 }
 
 /* ----------------------------------------------*/
@@ -131,6 +136,7 @@ const print = (datos) => {
 
         const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datos);
         document.getElementById("welcomeMssg").style.display = 'none';
+        printRolTitle.style.display= "block";
         print(arrayRolesFiltered);
       })}}
   selectByRol();
@@ -143,6 +149,7 @@ const print = (datos) => {
       printRolTitle.innerHTML = "";
       const showSearch = window.lol.filterByName(searchValue, datos);
       document.getElementById("welcomeMssg").style.display = 'none';
+      printRolTitle.style.display= "block";
       print(showSearch);
     })};
   searchByName();
@@ -167,6 +174,7 @@ const print = (datos) => {
       printRolTitle.innerHTML = "lower to higher";
       const diffA = window.lol.sortByDifficultyAsc(datos);
       document.getElementById("welcomeMssg").style.display = 'none';
+      printRolTitle.style.display= "block";
       print(diffA);
     })};
   difficultyAsc();
@@ -176,6 +184,7 @@ const print = (datos) => {
         printRolTitle.innerHTML = "higher to lower";
         const diffD = window.lol.sortByDifficultyDsc(datos);
         document.getElementById("welcomeMssg").style.display = 'none';
+        printRolTitle.style.display= "block";
         print(diffD);
       })};
     difficultyDsc();
