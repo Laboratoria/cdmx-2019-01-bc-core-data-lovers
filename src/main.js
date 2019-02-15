@@ -32,7 +32,7 @@ getTypePokemon(botonFilter);
 
 buttonNav.addEventListener("click", () => {
   drawPokemon(pokemon);
-}) 
+})
 
 const drawPokemon = (arrayPokemons) => {
   const sectionRoot = returnFilter
@@ -107,6 +107,5 @@ computeStats.addEventListener("click", () => {
   sectionRoot.innerHTML = "";
   sectionRoot.innerHTML += `<h1>Promedio de la Cantidad en la que aparecen todos los pokemons</h1><p>${newProm}</p>`
   return sectionRoot
+
 });
-
-
