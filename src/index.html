@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
   <!-------------Welcome screen------------->
-  <title>MexEduca</title>
+  <title>LatinEduca</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,10 +14,10 @@
     <div class="container">
       <nav role="navigation">
         <figure class="logo"><img src="imagen/learning.png" alt="leyendo"></figure>
-        <h1 class="title">Alfabetización en Latinoamérica</h1>
+        <h1 class="title">LatinEduca</h1>
         <ul>
           <li><a href="imagen/Historia de usuario..png">¿Quiénes somos?</a></li>
-          <li><a href="imagen/Historia de usuario. (1).png">¿Porqué MexEduca?</a></li>
+          <li><a href="imagen/Historia de usuario. (1).png">¿Porqué LatinEduca?</a></li>
         </ul>
       </nav>
     </div>
@@ -28,7 +28,6 @@
       <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
       <img class="img1" src="imagen/graduadas.jpg" alt="graduadas">
       </article>
-      
         <aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <p> NOTICIAS
           </p>
@@ -55,9 +54,15 @@
   <section>
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
     <fieldset>
-      Para : <select name="literacy" id="indicator">
-        <option class="opt" value="youngWomen">Indicador</option>
-      </select>
+      Para : <select name="indicators-by-country" id="indicator">
+               <option class="opt" value="indicators-country" disabled selected>Indicador</option>
+             </select>
+    </fieldset>
+    <fieldset>
+      Ordenar datos por : <select name="sort-by-year" id="sort">
+               <option class="opt" id = "upward" value="upward">Ascendente</option>
+               <option class="opt" id = "falling" value="falling">Descendente</option>
+             </select>
     </fieldset>
     </article>
   </section>
@@ -67,7 +72,7 @@
         <h3>Datos</h3>
         <h5 id="data-year"></h5>
       </article>
-    </section>
+  </section>
   
 
   <footer>
