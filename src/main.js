@@ -1,5 +1,5 @@
 //Declarar objeto de la data
-const data = window.POKEMON.pokemon; 
+const data = window.POKEMON.pokemon;
 
 
 // Declara botones
@@ -11,6 +11,7 @@ const back = document.getElementById('regresar');
 const start = document.getElementById('start');
 const rootContainer = document.getElementById('rootContainer');
 const options = document.getElementById('options');
+const sortt = document.getElementById('ordenar');
 
 // Declara boton de tipos de pokemones en un array, por medio de su clase.
 const buttonFilter = Array.from(document.getElementsByClassName("boton-typeChart"));
@@ -52,15 +53,38 @@ const gettingType = (arrayofButtons) => {
 
 gettingType(buttonFilter);
 
+let resultTotal;
+
 // Imprime resultados por tipo. 
 const printResult = (getType) => {
+  resultTotal = getType
   const finalResult = document.getElementById('root');
-  finalResult.innerHTML = "" ;
+  finalResult.innerHTML = "";
   getType.map(data => {
-   finalResult.innerHTML += `<button class="pokedex"  style='width:250px; height:350px'>
+    finalResult.innerHTML += `<button class="pokedex"  style='width:100%; height:100%'>
     <img src="${data.img}">
     <br>Nùmero: ${data.id} 
     <br> Nombre: ${data.name} 
     <br> Tipo: ${data.type}</button>`;
-});
+  });
+  return getType;
+};
+
+//ordena de la a - z 
+sortt.addEventListener('click' , () => {
+  let orderAtoZ = window.allPokemon.orderData(resultTotal);
+  printOrder(orderAtoZ);
+})
+
+const printOrder = (arrayOfTypes) => {
+  const orderResult = document.getElementById('root');
+  orderResult.innerHTML = "";
+  arrayOfTypes.map(data => {
+    orderResult.innerHTML += `<button class="pokedex"  style='width:100%; height:100%'>
+    <img src="${data.img}">
+    <br>Nùmero: ${data.id} 
+    <br> Nombre: ${data.name} 
+    <br> Tipo: ${data.type}</button>`;
+  });
+  return arrayOfTypes;
 };
