@@ -100,7 +100,6 @@ const orderByDifficultyDsc = () => {
     //console.log("si funciono wey");
     const decent = window.lol.sortByDifficultyDsc(datosArr);
     print(decent)
-
   })
 };
 orderByDifficultyDsc();

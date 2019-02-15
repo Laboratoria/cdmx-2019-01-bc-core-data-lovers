@@ -175,9 +175,9 @@ describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad',()
     expect(typeof window.lol.sortByDifficulty).toBe('function');
   });
   it('Dado la muestra, si ordena de manera descendente, Ahri es el primer elemento', () =>{
-    expect(window.lol.sortByDifficulty(1, dataToArray)[0].name).toBe('Ahri');
+    expect(window.lol.sortByDifficulty(1, dataToArray)[0].name).toBe('Aatrox');
   });
   it('Dado la muestra, si ordena de manera ascendente, Aatrox es el primer elemento', () =>{
-    expect(window.lol.sortByDifficulty(-1, dataToArray)[0].name).toBe('Aatrox');
+    expect(window.lol.sortByDifficulty(-1, dataToArray)[0].name).toBe('Ahri');
   });
 });

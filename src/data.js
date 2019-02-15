@@ -10,8 +10,6 @@ window.lol = {
           splash: element.splash,
           title: element.title,
           id: element.id,
-          difficulty: element.info.difficulty,
-          splash: element.splash,
           blurb: element.blurb,
           attack: element.info.attack,
           defense: element.info.defense,
