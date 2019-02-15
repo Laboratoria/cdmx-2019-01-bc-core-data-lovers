@@ -4,21 +4,20 @@ let yearbutton = document.getElementById("yearbttn");
 let userbutton = document.getElementById("user");
 //Declaramos input del consulta
 let searchbutton = document.getElementById("search");
-//Declaramos input del ALL DATA
-//let allDataButton = document.getElementById("all");
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
 //Constante que contiene la data
 const injuriesBy = window.INJURIES;
+//Constante que contiene la tabla
+const table = document.getElementById('table');
 
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
   if(userValue === 'all'){
-    resultsecc.innerHTML = ''
+    resultsecc.innerHTML = '';
     const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
-    const table = document.getElementById('table')
     table.innerHTML = `          <table>
                 <tr>
                   <th> AÑO ${resultDatos[0]} </th>
@@ -43,8 +42,8 @@ searchbutton.addEventListener("click", () => {
       </tr>
               </table>`
   } else {
-    console.log('no soy all');
-    table.innerHTML = ''
+    //console.log('no soy all');
+    table.innerHTML = '';
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);
     resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
   }
