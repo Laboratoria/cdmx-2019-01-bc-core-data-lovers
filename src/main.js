@@ -64,7 +64,9 @@ const getOrderPokemon = (arrayRadio) => {
         
       }
     });
+
   });
   
 }
 getOrderPokemon(arrayRadio);
+
