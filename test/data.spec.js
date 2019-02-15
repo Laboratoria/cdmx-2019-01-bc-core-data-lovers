@@ -205,7 +205,7 @@ describe('data', () => {
   });
 
   it('Deberia devolver el arr de Poison si elegimos Poison ', () => {
-    expect(window.data.filterPokemon(dataBase,"Poison")[0]).toEqual(dataBase[0]);
+    expect(window.data.filterPokemon(dataBase,"Grass")[0].type[0]).toEqual("Grass");
   });
 
   it('Deberia devolver el arr de Bug si elegimos Bug ', () => {
@@ -221,17 +221,31 @@ describe('data', () => {
   });
 
   it('Deberia devolver el arr con peso Ascendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"weight","asc")[0].weight).toEqual("39.5 kg");
+    expect(window.data.sortDataPokemon(dataBase,"weight","asc")[0].weight).toEqual("1.8 kg");
   });
   it('Deberia devolver el arr con peso Descendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"weight","dsc")[0].weight).toEqual("1.8 kg");
+    expect(window.data.sortDataPokemon(dataBase,"weight","dsc")[0].weight).toEqual("39.5 kg");
   });
   it('Deberia devolver el arr con Altura Ascendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"height","asc")[0].height).toEqual("1.50 m");
+    expect(window.data.sortDataPokemon(dataBase,"height","asc")[0].height).toEqual("0.30 m");
   });
   it('Deberia devolver el arr con Altura Descendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"height","dsc")[0].height).toEqual("0.30 m");
+    expect(window.data.sortDataPokemon(dataBase,"height","dsc")[0].height).toEqual("1.50 m");
   });
+
+  it('filterLetterPokemon is a function', () => {
+    expect(typeof window.data.filterLetterPokemon).toBe('function');
+  });
+
+  it('Deberia devolver la coincidencia de Bul Bulbasaur', () => {
+    expect(window.data.filterLetterPokemon(dataBase,"Bul")[0].name).toEqual("Bulbasaur");
+  });
+
+  it('Deberia devolver la coincidencia de Kakuna', () => {
+    expect(window.data.filterLetterPokemon(dataBase,"Kakuna")[0]).toEqual(dataBase[3]);
+  });
+
+  
 });
 
 

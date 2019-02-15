@@ -1,3 +1,4 @@
+
 document.getElementById("next").addEventListener("click", ()=>{
 
   document.getElementById("navs").style.display="none";
@@ -141,6 +142,3 @@ const imprimir = (obtenerTipo) =>{
                                          <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
 
 })}
-
-
-

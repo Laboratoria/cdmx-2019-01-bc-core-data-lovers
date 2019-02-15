@@ -395,11 +395,11 @@ display:block;
 
 @media screen and (max-width: 600px) {
   .sidenav:not(:first-child) {display: none;}
-  .sidenav  {
+  
 
-
+  
   }
-}
+
 
 
 #pokemons{
@@ -479,6 +479,8 @@ padding: 0%
   margin-top: 300%;
 }
 
-/* .order{
+.order{
   display:block;
-} */
+}
+}
+}
