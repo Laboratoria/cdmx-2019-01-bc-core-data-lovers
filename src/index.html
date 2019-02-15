@@ -36,14 +36,15 @@
     <div class="square" id="card-summary">
     </div>
     <div class="hide" id="modal-fun">
-        <!-- Contenido del modal -->
-        <div class="modal-content">
-          <span class="close" id="close-fun">x</span>
-          <div id="printModal"><div>
+      <!-- Contenido del modal -->
+      <div class="modal-content">
+        <span class="close" id="close-fun">x</span>
+        <div id="printModal">
+          <div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <div id="separator"></div>
 
     <!--Pie de página-->
@@ -70,7 +71,12 @@
               </li>
               <li><a>Sort by</a>
                 <ul>
-                  <li id="attack">Attack</li>
+                  <li id="attack"><a>Attack</a>
+                    <ul>
+                      <li id="attack-desc">Descendant</li>
+                      <li id="attack-upw">Upward</li>
+                    </ul>
+                  </li>
                   <li id="magic">Magic</li>
                   <li id="defense">Defense</li>
                 </ul>

@@ -508,11 +508,11 @@ compañera:
 
 ## Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] Usa VanillaJS.
+- [x] No hace uso de `this`.
+- [x] Pasa linter (`npm pretest`)
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
 - [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
 - [ ] Incluye historias de usuario en `README.md`.
@@ -522,9 +522,9 @@ compañera:
       en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
+- [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Opcional)
 
