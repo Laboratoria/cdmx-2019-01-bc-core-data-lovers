@@ -185,7 +185,7 @@ html,body{
        }
        div p{
          margin-top:0px;
-         margin-bottom: .5em;
+         margin-bottom: 0px;
        }
        div img{
          width: 95%;
@@ -264,9 +264,9 @@ html,body{
        .Grass{
          color:#78c84f
        }
-       .Normal{
-         color:#a9a878
-       }
+    .Normal{
+      color:#a9a878
+      }
        .Poison{
          color:#a040a1
        }
@@ -360,9 +360,6 @@ text-align:center;
        top: 0;
        z-index: 11;
    }
-   .pedia-kanto{
-     
-   }
    .container-browser{
        margin-top: 30px;
        margin-bottom: 31px;
@@ -380,24 +377,26 @@ text-align:center;
      top: 39em;
    }
    .button-filter{
-     display: inline;
-     background-image: url(./images/menu.png);
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 30px;
-     width: 3em;
-     margin-left: 9%;
-     position: relative;
-     z-index: 40;
-     top: 6px;
+    display: inline;
+    background-image: url(./images/menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 3em;
+    margin-left: 2%;
+    position: relative;
+    z-index: 40;
+    top: 6px;
+    border-radius: 5px;
      }
      .browser{
-       border-radius: 7px;
-       height: 2em;
-       width: 55%;
-       margin-left: 22px;
-       margin-top: 18px;
+      border-radius: 7px;
+      height: 2em;
+      width: 50%;
+      margin-left: 31%;
+      margin-top: 12px;
+  
    }
      footer {
        background-color: #FFFFFF;
@@ -410,36 +409,33 @@ text-align:center;
        z-index: 10;
      }
      .pokedex{
-       background-color: rgb(255, 255, 255);
-       border-style: outset;
-       border-style: solid;
-       border-radius: 12px;
-       color:rgb(84, 84, 84);
-       opacity: 2.8;
-       margin: 5%;
-       width: 35%;
-       text-align: center;
-       font-size: 19px;
-       display: inline-block;
-       padding-bottom: 5%
+      background-color: white;
+      border-style: outset;
+      border-radius: 12px;
+      color: gray;
+      margin: 1%;
+      width: 30%;
+      text-align: center;
+      font-size: 3.5vw;
+      display: inline-block;
+      height: 11em;
      }
    .position-filter{
     display: none;
    }
    .mostrar{
-     display: block
+     display: block;
    }
    .style-filter{
-     z-index: 9;
-     height: 25em;
-     color: #d5e0d5;
-     float: right;
-     width: 50%;
-     margin-top: -83px;
-     height: 51em;
-     position: fixed;
-     padding-top: 21px;
-     left: 50%;
+    z-index: 9;
+    color: #d5e0d5;
+    float: right;
+    width: 49%;
+    margin-top: 9px;
+    height: 39em;
+    position: fixed;
+    padding-top: 8px;
+    left: 50%
    }
    .containerMenu{
      height: 25px;
@@ -464,21 +460,22 @@ text-align:center;
      font-size: 4vw;
    }
    .style-button{
-       outline: none;
-         border: 0;
-         text-align: center;
-         font-size: 4vw;
-         padding-top: .5em;
-         border-radius: 1em;
-         -webkit-transition-duration: 0.4s;
-         transition-duration: 0.4s;
-         margin-top: 10px;
-         height: 33px;
-         width: 95;
-         margin-bottom: 10px;
-         padding-bottom: 10%;
-         cursor: pointer;
-         background-color: #dddddd;
+    outline: none;
+    border: 0;
+    text-align: center;
+    font-size: 2.5vw;
+    padding-top: 1.4em;
+    border-radius: 1em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-top: 1px;
+    height: 6.3em;
+    width: 38%;
+    margin-bottom: 10px;
+    padding-bottom: 10%;
+    cursor: pointer;
+    background-color: #eff7ef;
+    margin-left: 7%;
    }
    .style-button:hover{
      background-color: rgb(205, 205, 205);
@@ -488,7 +485,8 @@ text-align:center;
        margin-left: 0;
        display: inline;
        position: absolute;
-       z-index: 5
+       z-index: 5;
+       padding-top: 4em;
      }
      .color-background{
        background-color: #d7ffd7;
@@ -504,12 +502,27 @@ text-align:center;
      border-style: solid;
      background-color: black;
      color: white;
-     font-size: 19px;
+     font-size: 2vw;
    }
 figure{
    position: relative;
    top: 43em;
    width: 55em;
    left: 27%;
+}
+.Grass {
+  color: #78c84f;
+}
+.pedia-kanto{
+  background-image: url(https://fontmeme.com/permalink/190215/43106cf0497ff771e5229c84ee101b79.png);
+  width: 10%;
+  margin-top: -42em;
+  position: absolute;
+  height: 2em;
+  background-color: #fafafb;
+  border: none;
+    padding-left: 10%;
+    margin-left: -10.5%;
+
 }
  }

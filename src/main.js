@@ -30,6 +30,10 @@ const getTypePokemon = (arrayButtons) => {
 
 getTypePokemon(botonFilter);
 
+buttonNav.addEventListener("click", () => {
+  drawPokemon(pokemon);
+}) 
+
 const drawPokemon = (arrayPokemons) => {
   const sectionRoot = returnFilter
   sectionRoot.innerHTML = "";
@@ -92,7 +96,6 @@ const filterLetter = () => {
 }
 filterLetter();
 
-
 orderedButton.addEventListener("click", () => {
   const newSortedData = window.data.sortData(pokemon)
   drawPokemon(newSortedData);
@@ -106,6 +109,4 @@ computeStats.addEventListener("click", () => {
   return sectionRoot
 });
 
-buttonNav.addEventListener("click", () => {
-  drawPokemon(pokemon);
-})
+
