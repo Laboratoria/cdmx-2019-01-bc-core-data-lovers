@@ -142,20 +142,18 @@ const printPokemon = (name, img, quality) => {
 
 
 const printData = (num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
-  spawn_time, multipliers, weaknesses) => {
-  let result = `<div class="boxesContainer"><div class="cardBox"><div class="card"><div class="front"><h1>${num}</h1>
+  spawn_time, multipliers, weaknesses ) => {
+  let result = `<div class="boxesContainer"><div class="cardBox">
+  <div class="card"><div class="front">
         <h2>${name}</h2>
-        <img class= "imageCard"src=${img}></div>
-        <div class ="back"><article class ="informationCard"><p> TYPE : ${type}</p>
+        <img class= "imageCard"src=${img}>
+        </div>
+        <div class="back"><article class ="informationCard"><p> TYPE : ${type}</p>
         <p> HEIGHT : ${height}</p>
         <p> WEIGHT: ${weight}</p>
         <p>CANDY: ${candy}</p>
         <p>CANDY COUNT: ${candy_count}</p>
         <p>EGG: ${egg}</p>
-        <p>SPAWN CHANCE: ${spawn_chance}</p>
-        <p>AVERANGE SPAWNS: ${avg_spawns}</p>
-        <p>SPAWN TIME: ${spawn_time}</p>
-        <p>MULTIPLIERS: ${multipliers}</p>
         <p>WEAKNESSES: ${weaknesses}</p></article></div></div></div></div>`;
   totalData.insertAdjacentHTML("beforeend", result);
 
