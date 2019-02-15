@@ -3,14 +3,76 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 
+
 :root {
     background:#2980B9;
   }
+
+ 
 .hide{
     display:none;
 }
 .show{
     display:contents;
+}
+body {
+ margin:0;
+ font-family: 'Exo 2', sans-serif;
+}
+header{
+    width: 100%;
+    background: #00CED1;
+}
+
+
+#hamburguerMenu{
+ display: none;
+}
+
+
+.fas{
+    font-size: 18px;
+    color:white;
+
+}
+
+header label {
+    display: none;
+    width:30px;
+    height:30px;
+    padding: 10px;
+    border-right:1px solid white;
+}
+
+header label:hover{
+    cursor:pointer;
+    background: royalblue;
+}
+
+.menu_gral ul {
+    margin:0;
+    list-style-type: none; 
+    padding:0;
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+
+}
+.menu_gral > ul li {
+   border-right: .5px solid white;
+
+}
+.menu_gral li a {
+    display: block;
+    padding:16px 20px;
+    text-decoration: none;
+   font-size: 1rem;
+    line-height: 3.5rem;
+    color: white;
+}
+.menu_gral li:hover a, .menu_gral li a:focus {
+    background-color: Royalblue;
+
 }
 
 .titleWeb, .titlePokemonLight,.titlePokemonHeavy,
@@ -19,71 +81,50 @@
     top: 15px;
    text-align: center;
 }
-#enterToPikapedia{
-        background-color:#00CED1;
-        border:none;  
-        color:white;
-        padding: 12px 18px;  
-        text-decoration: none; 
-        display: inline-block; 
-        font-size: 22px; 
-        font-family: 'Exo 2', sans-serif;
-        border-radius: 5px;
-        position:relative;
-        cursor: pointer;
-        top:50px;
-        left:45%;
-        }
- #enterToPikapedia:hover
- {
-        background-color:royalblue;
-        
- }
 
-#detectivePikachu{
-        height: 400px;
+.detectivePikachu{
+        height: 150px;
         position: relative;
-        top: 20px;
-        left: 430px;
+        left: 45%;
+        top:180px;
+        
+      
         }
 
+.titleHomePage img{
+    position:relative;
+    left: 450px;
+    top: 150px;
+}
 
-#buttonAboutPikapedia,#buttonStadisticsPage,#buttonSearchPokemon,#filterButton,
-#buttonBack,#buttonBackFilterPage,#ButtonGround,
+#ButtonGround,
 #ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
 #ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
 #buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
-#buttonPokemonPsychic, #buttonPokemonWater, #buttonAboutPikapediaOnFilter,
-#buttonStadisticsPageOnFilter, #buttonSearchPokemonOnFilter,#filterButtonOnFilter,
-#buttonBackFilterPage, #buttonBackFilterPage, #buttonBackPageKanto{
+#buttonPokemonPsychic, #buttonPokemonWater{
     background-color:#00CED1;
     border: none; 
     color: white; 
     padding: 12px 35px; 
     font-size: 20px;
-    font-family: 'Exo 2', sans-serif;
     cursor: pointer;
     border-radius: 5px;
     margin:5px;
     
   }
   
-  #buttonAboutPikapedia:hover, #buttonStadisticsPage:hover, #btn3:hover,
-  #filterButton:hover,  #buttonBack:hover, #buttonSearchPokemon:hover,
+ 
   #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
   #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
   #buttonPokemonPsychic:hover, #buttonPokemonWater:hover,
   #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
-  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover,  #buttonAboutPikapediaOnFilter:hover,
-  #buttonStadisticsPageOnFilter:hover, #buttonSearchPokemonOnFilter:hover,#filterButtonOnFilter:hover,
-  #buttonBackFilterPage:hover,#buttonBackFilterPage:hover,#buttonBackPageKanto:hover {
+  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover {
     background-color: RoyalBlue;
   }      
 
-.welcomeMessage{
+.titleKantoRegion{
    color:#FFDE00;
    font-size: 30px;
-   font-family:'Exo 2', sans-serif;
    text-align: center;
 
 }
@@ -99,7 +140,6 @@
 }
 .pokemones{
     color: white;
-    font-family: 'Exo 2', sans-serif;
     font-size: 20px;
     text-align: center;
     position: relative;
@@ -125,7 +165,6 @@ p{
  .checkbox {
     width: 25%;
     height: 25%;
-    font-family: 'Exo 2', sans-serif;
     color: white;
     font-size: 18px;
     padding: 1%;
@@ -176,4 +215,30 @@ p{
    margin:0px;
    padding: 1px;
    text-align: center;
+}
+
+
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu_gral{
+        position: absolute;
+        background-color:#00CED1;
+        width: 60%;
+        margin-left:-70%;
+        transition: all 1s;
+    }
+    .menu_gral ul {
+       flex-direction: column;
+    }
+    .menu_gral li{
+        border-top: .5px solid white;
+    }
+
+    #hamburguerMenu:checked ~ .menu_gral{
+        margin:0;
+    }
+
+
 }

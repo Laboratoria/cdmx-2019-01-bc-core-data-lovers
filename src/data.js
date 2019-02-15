@@ -115,9 +115,9 @@ window.pokemonFunction = {
 
   totalWeight: (arrayPokemonData,numberOfPokemon) => {
 
-    const pokemonAverageWeightt = arrayPokemonData.reduce((total, pokemonData) =>{
+    const pokemonAverageWeight = arrayPokemonData.reduce((total, pokemonData) =>{
      return total += parseFloat(pokemonData.weight)}, 0)/numberOfPokemon;
-    return pokemonAverageWeightt;
+    return pokemonAverageWeight;
   
   
 },

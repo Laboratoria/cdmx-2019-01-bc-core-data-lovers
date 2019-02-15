@@ -1,16 +1,17 @@
+const homePage = document.getElementById('homePage')
 const enterPage = document.getElementById('enterPage');
 const pageKanto = document.getElementById('pageKanto');
 const filterPage = document.getElementById('filterPage')
 const stadisticsPage = document.getElementById('stadisticsPage');
 const buttonAboutPikapedia = document.getElementById('buttonAboutPikapedia');
-const filterButton = document.getElementById("filterButton");
+const buttonFilterPokemon = document.getElementById("buttonFilterPokemon");
 const totalData = document.getElementById("total-data");
 const pokemonData = window.POKEMON.pokemon;
 const buttonBack = document.getElementById("buttonBack");
+const buttonRegionKanto = document.getElementById('buttonRegionKanto')
 const buttonStadisticsPage = document.getElementById('buttonStadisticsPage');
 const buttonBackFilterPage = document.getElementById('buttonBackFilterPage');
-const buttonSearchPokemon = document.getElementById('buttonSearchPokemon');
-const enterToPikapedia = document.getElementById("enterToPikapedia");
+const buttonSearchByType = document.getElementById('buttonSearchByType');
 const pokemonTypeAll = document.getElementById("pokemonTypeAll");
 const checkboxWeightLight = document.getElementById("checkboxWeightLight");
 const checkboxWeightHeavy = document.getElementById("checkboxWeightHeavy");
@@ -54,19 +55,19 @@ const buttonBackPageKanto = document.getElementById("buttonBackPageKanto");
 
 
 //Botón de entrada
-enterToPikapedia.addEventListener("click", () => {
+//enterPage.addEventListener("click", () => {
 
-  enterPage.classList.add('hide');
-  pageKanto.classList.remove('hide');
-});
+  //enterPage.classList.add('hide');
+  //pageKanto.classList.remove('hide');
+//});
 
 buttonBack.addEventListener("click", () => {
   pageKanto.classList.add('hide');
   enterPage.classList.add('show');
 });
 
-filterButton.addEventListener("click", () => {
-  pageKanto.classList.add('hide');
+buttonFilterPokemon.addEventListener("click", () => {
+  homePage.classList.add('hide');
   filterPage.classList.remove('hide');
 });
 
@@ -75,15 +76,15 @@ buttonBackFilterPage.addEventListener("click", () => {
   pageKanto.classList.remove('hide');
 });
 
-buttonSearchPokemon.addEventListener("click", () => {
-  pageKanto.classList.add('hide');
+buttonSearchByType.addEventListener("click", () => {
+  homePage.classList.add('hide');
   typePokemonPage.classList.remove('hide');
 });
 
 buttonStadisticsPage.addEventListener("click", () => {
-  pageKanto.classList.add('hide');
+  homePage.classList.add('hide');
   stadisticsPage.classList.remove('hide');
-  const averageWeight = window.printPokemon.averageWeight(pokemonData);
+  const averageWeight = window.pokemonFunction.averageWeight(pokemonData);
   stadisticsPage.innerHTML = averageWeight;
 });
 
@@ -92,6 +93,12 @@ buttonAboutPikapedia.addEventListener("click", () => {
   pageKanto.classList.add("hide");
   aboutPikapediaPage.remove("hide");
 });
+
+buttonRegionKanto.addEventListener("click",()=>{
+  homePage.classList.add('hide');
+  pageKanto.classList.remove('hide');
+
+})
 
 buttonSearchPokemonOnFilter.addEventListener("click", () => {
   filterPage.classList.add("hide");
