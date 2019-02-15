@@ -290,6 +290,10 @@ img{
     font-size: 2em;
 }
 
+#pokemones, #filtered_out {
+    padding-top:12%;
+}  
+
 }/* <----Cierre del @Media de 1024px*/
 
 
@@ -319,6 +323,10 @@ img{
         width: 20%;
         height: 80%;
     }
+
+    #pokemones, #filtered_out {
+        padding-top:15%;
+    }  
     
     }/* <----Cierre del @Media de 800px*/
 
@@ -392,6 +400,18 @@ img{
     .name{
         font-size: 1em;
     }
+
+    #pokehide{/*Creado para desaparecer "POKEMON" del NavBar*/
+        display: none;
+    }
+
+    .navbar-collapse { 
+        text-align: center; 
+    }
+
+    #pokemones, #filtered_out {
+        padding-top:18%;
+    } 
     
     }/* <----Cierre del @Media de 768px*/
 
@@ -424,6 +444,10 @@ img{
         .name{
             font-size: 1em;
         }
+
+        #pokemones, #filtered_out {
+            padding-top:20%;
+        } 
         
         }/* <----Cierre del @Media de 640 y 360px*/
 
@@ -461,6 +485,10 @@ img{
         background-color: rgba(27, 27, 27, 0.9);
         font-size: 1em;
     }
+
+    #pokemones, #filtered_out {
+        padding-top:28%;
+    } 
     
     }/* <----Cierre del @Media de 480px*/
 
@@ -498,6 +526,10 @@ img{
             background-color: rgba(27, 27, 27, 0.9);
             font-size: 1em;
         }
+
+        #pokemones, #filtered_out {
+            padding-top:34%;
+        } 
         
         }/* <----Cierre del @Media de 384px*/
 
@@ -538,14 +570,9 @@ img{
             font-size: 1em;
         }
 
-        .navbar-collapse { 
-            text-align: center; 
-        }
-
-        #pokehide{/*Creado para desaparecer "POKEMON" del NavBar*/
-            display: none;
-        }
+        #pokemones, #filtered_out {
+            padding-top:40%;
+        } 
 
        
-            
     }/* <----Cierre del @Media de 320px*/
