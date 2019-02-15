@@ -1,7 +1,9 @@
+global.window = global;
 require('../src/data.js');
+require('../src/data/pokemon/pokemon');
 
-/* var POKEMON = {
-  "pokemon": [{
+
+const pokemon = [{
     "id": 1,
     "num": "001",
     "name": "Bulbasaur",
@@ -91,29 +93,30 @@ require('../src/data.js');
       "num": "105",
       "name": "Marowak"
     }]
-  },
-
-],}; */
-
+  }
+]
 
 
-describe ('filterData', () => {
-  it('is a function', () =>{
+
+describe('filterData', () => {
+  it('is a function', () => {
     expect(typeof window.data.filterData).toBe('function');
   });
+
+  it('Vulpix', () => {
+    expect(window.data.filterData(pokemon, "Fire")[0]).toEqual(pokemon[1]);
+  })
 })
 
 
-describe ('sortData', () =>{
-  it('is a function', ()=>{
+describe('sortData', () => {
+  it('is a function', () => {
     expect(typeof window.data.sortData).toBe('function');
   });
-  })
-
-describe ('computeStats', () => {
-  it('is a function',() =>{
-    expect (typeof window.data.computeStats).toBe('function');
-  });
 })
 
-
+describe('computeStats', () => {
+  it('is a function', () => {
+    expect(typeof window.data.computeStats).toBe('function');
+  });
+})
