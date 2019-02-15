@@ -4,7 +4,6 @@
 // function setearCiudad(ciudad){
 //   listQuestion.dataset.ciudad =  ciudad;
 // }
-
 // const para desplegar menu
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
@@ -18,11 +17,8 @@ const about = document.getElementById("about");
 const filters = document.getElementById("general-filter");
 //evento para ocultar y mostrar elementos
 navIcon.addEventListener('click', () => {
-  navMenu.classList.toggle('ocultar');
-  
+navMenu.classList.toggle('ocultar'); 
 });
-
-
 btnAbout.addEventListener('click', () => {
   about.classList.remove('ocultar');
   filters.classList.add('ocultar');
@@ -41,7 +37,6 @@ btnFilters.addEventListener('click', () => {
   navMenu.classList.add('ocultar');
   news.classList.remove('mostrar-news');
 });
-
 //acceder a la data de cada pais
 const data = window.WORLDBANK;
 
@@ -72,6 +67,7 @@ for (let boton in buttonTypes){
 }
 
 //filtrar 
+const avg = document.getElementById("avg");
 listQuestion.addEventListener("change", () => {
   indicator.innerHTML = "";//Limpiar funcion
   let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
@@ -80,6 +76,12 @@ listQuestion.addEventListener("change", () => {
   for (let resultYear in resultado) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
     indicator.insertAdjacentHTML('beforeend', `<p><b>Año</b>: ${resultYear} => ${resultado[resultYear] || "N/A"}</p>`);
   }
+  //codigo prueba 
+  //let mediaContent = document.createElement('span');
+  const media = window.WorldBank.getMathMedia(resultado);
+  avg.innerHTML = `Media porcentual:${media}`;
+  //indicator.appendChild(mediaContent);
+  
 });
 
 
@@ -93,25 +95,28 @@ for (let radioItem in radioFilters){
     let countrySelect = listQuestion.value;
     const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js
     const resultadoOrder = window.WorldBank.orderData(resultado, e.target.dataset.sortby, e.target.dataset.sortorder)//Datos de data.js
-
+    
+   
     for (let resultadoYear in resultadoOrder) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
       let parrafo = document.createElement('p'); // creamos un elemento p temporal ira grafica
       parrafo.innerHTML = `<b>Año</b>: ${resultadoOrder[resultadoYear]} = ${resultado[resultadoOrder[resultadoYear]] || "N/A"} ` //imprimimos el año y numeros
       indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
     }
+
   })
 }
 
-const avg = document.getElementById("avg");
-avg_result = document.getElementById("avg_result");
-avg.addEventListener("click", () => {
-  avg_result.innerHTML = '<p>g</p>'
-  const resultado = window.WorldBank.computeStats()
-  //avg_result.innerHTML = resultado
-  for (let resultadoValor in resultado) { 
-  indicator.insertAdjacentHTML('beforeend', `${resultado[resultadoValor]}`)
-  }
-});
+// const avg = document.getElementById("avg");
+// avg_result = document.getElementById("avg_result");
+// avg.addEventListener("click", () => {
+//   // avg_result.innerHTML = '<p>g</p>'
+//   const resultado = window.WorldBank.computeStats()
+//   //avg_result.innerHTML = resultado
+//   for (let resultadoValor in resultado) { 
+//     avg_result.insertAdjacentHTML('beforeend', `${resultado[resultadoValor]}`);
+//     console.log(avg_result)
+//   }
+// });
 
 
 
