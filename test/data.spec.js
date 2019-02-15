@@ -144,6 +144,7 @@ describe('Debería de ser una función',() => {
     it('is a function', () =>{
       expect(typeof window.lol.iterarData).toBe('function');
     });});
+
 // si filtrar por roles funciones retorna los campeones por rol
 describe('filtroDataRoles',() => {   
     it('Should returns the objetc Aatrox if we select Tank',() => {
@@ -156,6 +157,7 @@ describe('Debería de ser una función',() => {
   it('is a function', () =>{
     expect(typeof window.lol.filterBySearch).toBe('function');  
   });
+
  // si el filtrado por busqueda retorna el campeon por el input 
   it('Deberia regresar un arreglo con los campeones cuyo nombre coincidan con la A', () =>{
     const result = window.lol.filterBySearch('Aatrox', dataToArray);
@@ -169,7 +171,6 @@ describe('Debería de ser una función',() => {
   });
 });
 
-
 describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad',() => {
   it('Es una funcion', () =>{
     expect(typeof window.lol.sortByDifficulty).toBe('function');
@@ -181,3 +182,4 @@ describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad',()
     expect(window.lol.sortByDifficulty(-1, dataToArray)[0].name).toBe('Ahri');
   });
 });
+

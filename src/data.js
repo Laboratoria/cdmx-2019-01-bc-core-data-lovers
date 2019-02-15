@@ -9,6 +9,7 @@ window.lol = {
           tag: element.tags,
           splash: element.splash,
           title: element.title,
+          difficulty: element.info.difficulty,
           id: element.id,
           blurb: element.blurb,
           attack: element.info.attack,
@@ -74,3 +75,4 @@ window.lol = {
   },
 
 }
+

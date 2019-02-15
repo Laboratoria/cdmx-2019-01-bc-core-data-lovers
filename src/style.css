@@ -17,14 +17,22 @@ body,html{
   background-attachment: fixed;
 }
 
+.button {
+  background-color: #efc056;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
 header{
   width: 100%;
-  background: rgba(0, 0, 0, 0.5)
+  background: rgba(0, 0, 0, 0.9)
 }
 
 #btn-menu{
   display: none;
 }
+
 /* Aqui vive el icono de menu"*/
 header label{
   display: none;
@@ -64,88 +72,107 @@ header label:hover{
   color: #efc056;
   text-decoration: none;
 }
-.search{
-  text-align: center;
-  position: absolute;
-  background-color:rgb(37, 37, 37);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: rgb(37, 37, 37);
-  color: #efc056;
-  display:flex;
-  top: 15%;
-  left: 40%
-}
 
 .contenedorRoles{
   margin: 5px 5% 1em 7%;
 }
 
 .cuadro{
-  color: #e7b82b;  
-  font-weight: 25%; 
+  color: #ffffff; 
   font-size: 55%;
+  font-weight: bold;
   text-align: center;
-  background: rgba(0, 0, 0, 0.9);
-  margin: 0; 
+  background: rgba(0, 0, 0, 0.9); 
+  margin: 5px; 
   overflow: hidden; 
-  padding: 2px; 
-  border-radius: 35px 0px 35px 0px; 
-  -moz-border-radius: 35px 0px 35px 0px; 
-  -webkit-border-radius: 35px 0px 35px 0px; 
-  /*border: 1px solid #7a631c;*/
+  padding: 0px; 
+  border-radius: 5px 5px 5px 5px; 
+  -moz-border-radius: 5px 5px 5px 5px; 
+  -webkit-border-radius: 5px 5px 5px 5px; 
+  border: 3px solid rgb(131, 109, 13);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
   display: inline-block;
   width: 22%;
 }
 
-.cuadro h1{
-  color: #ad8816;
-}
-.cuadro h2{
-  color: #f5f4f1;
-}
-
 .imagen{
   width: 100%;
-  padding-top: 20px;
+  padding-top: 0px;
+  position: top;
+}
+
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  left: 37%;
+  top: 15px;
+  white-space: nowrap;
   position: relative;
 }
 
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.9);
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #b6993c;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-color: 3px solid rgb(131, 109, 13);
+  position: relative;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+  outline:none;
+  background: #ffffff;
+}
 
 @media only screen and (max-width: 600px) {
-  .cuadro{
-    color: #3d3316; 
-    font-size: 50%; 
-    font-weight: 25%; 
-    text-align: center;
-    background: #efc056; 
-    margin: 0; 
-    overflow: hidden; 
-    padding: 9px; 
-    border-radius: 35px 0px 35px 0px; 
-    -moz-border-radius: 35px 0px 35px 0px; 
-    -webkit-border-radius: 35px 0px 35px 0px; 
-    border: 1px solid #7a631c;
-    display: inline-block;
-    width: 44%;
-    z-index: -100;
-}
-header label{
+  header label{
     display: block;
+  }
+
+  .container-1{
+    width: 300px;
+    vertical-align: middle;
+    left: 37%;
+    top: 15px;
+    white-space: nowrap;
+    position: relative;
   }
 
   .menu {
     position: absolute;
-    background:  rgba(0, 0, 0, 80);
+    background: #000000;
     width: 70%;
     margin-left:-70%;
     transition: all 0.3s;
     z-index: 20;
-  }
-
-  .menu li:hover{
-    background: rgba(0, 0, 0, 15);
   }
 
   .menu ul {
@@ -156,6 +183,10 @@ header label{
     border-top: 1px solid #fff;
    }
    
+  .menu li:hover{
+  background: rgba(212, 163, 1, 0.3);
+  }
+
    #btn-menu .icon{
      float: left; 
      margin: 0;
@@ -167,7 +198,22 @@ header label{
    }
 
    #btn-menu:checked ~ .menu{
-     margin: 0;
+     margin: 0;  
    }
-
+    .cuadro{
+      color: #ffffff; 
+      /*font-size: 55%; */
+      /*font-weight: 25%; */
+      text-align: center;
+      background: rgba(0, 0, 0, 0.9); 
+      margin: 0; 
+      overflow: hidden; 
+      padding: 0px; 
+      border-radius: 3px 3px 3px 3px; 
+      -moz-border-radius: 3px 3px 3px 3px; 
+      -webkit-border-radius: 3px 3px 3px 3px; 
+      border: 1px solid #000000;
+      display: inline-block;
+      width: 49%;
+  }
 }
