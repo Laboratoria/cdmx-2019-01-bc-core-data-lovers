@@ -32,6 +32,7 @@ body {
   padding-bottom: 20%;
   padding-left: 5px;
   opacity: 0.9;
+  background-attachment: fixed;
 
 }
 .welcome{
@@ -53,7 +54,7 @@ body {
 }
 
 #searchDiv{
-  margin-left: 33%;
+  margin-left: 40%;
   position: absolute;
   margin-top: 3%;
 
@@ -98,6 +99,12 @@ figure img{
   width: 90%;
   height: 80%;
 }
+
+.fa-home:before {
+  content: "\f015";
+  margin-right: 500%;
+}
+
 .fas {
   color:rgba(120, 90, 40);
   font-size: 35px;
@@ -130,6 +137,8 @@ figure img{
   font-size: 20px;
   color: rgb(240, 236, 228);
   width: max-content;
+  margin-left: 4%;
+  margin-bottom: -2%;
 }
 .hidden {
   display: none;
@@ -144,7 +153,12 @@ figure img{
 }
 
 
-
+#home{
+  padding-left: 2%;
+  margin-bottom: -7%;
+  color: ghostwhite;
+  font-size: 160%;
+}
 #nombre {
 
   font-size: 20px;
@@ -221,7 +235,6 @@ figure img{
   
 footer{
   width: 100%;
-  padding-top: 
   left:0;
   top:0;
   height:50px;
@@ -278,6 +291,10 @@ justify-content:center;
     height: 8%;
   }
 
+  .fa-home:before {
+    content: "\f015";
+    margin-left: -10%;
+}
   .fas{
     margin-top: 2%;
   }
@@ -289,7 +306,9 @@ justify-content:center;
 
   .titulo{
     font-size: 150%;
-    padding: 5%;
+    padding-left: 3%;
+   
+  
     
 }
 #titleChampions{
@@ -309,7 +328,7 @@ justify-content:center;
 }
 
 #searchDiv{
-  margin-left: 50%;
+  margin-left: 57%;
   position: absolute;
   margin-top: 3%;
 
@@ -322,14 +341,13 @@ justify-content:center;
 
   
 }
+#home{
 
-
-
+  font-size: 250%;
+}
 }
 
-footer{
 
-}
 /*Media Query Ipad-Pro*/
 @media only screen  and (min-width : 1024px) {
 
@@ -363,7 +381,7 @@ footer{
     }
     
     .nameList{
-      width: 60%;
+      width: 30%;
      margin-right: 2%;
      margin-left:2%;
      margin-top: 2%;
@@ -378,7 +396,7 @@ footer{
     }
   
     .fas{
-      margin-top: 1%;
+      margin-top: 2%;
     }
   
     .sidenav a{
@@ -400,9 +418,9 @@ footer{
   }
   
   #searchDiv{
-    margin-left: 55%;
+    margin-left: 64%;
     position: absolute;
-    margin-top: 1.5%;
+    margin-top: 2%;
   
    
   }
@@ -447,11 +465,6 @@ footer{
    margin-top: 2%;
    margin-bottom: 2%;
   display: flex;
-justify-content:center;
-
-  }
-
-  
-
+justify-content:center;}
 
 }

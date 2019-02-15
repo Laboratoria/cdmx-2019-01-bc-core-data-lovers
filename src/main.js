@@ -18,10 +18,14 @@ const characterFromList = document.getElementsByClassName("nameList");
 const inicio = document.getElementById('inicio');
 const menu = document.getElementById('menu');
 const cerrar = document.getElementById('titleChampions');
-//const welcome = document.getElementById('welcomeMssg');
+
+const welcome = document.getElementById('welcomeMssg');
 const printRolTitle = document.getElementById('rolTitle');
+const home= document.getElementById('home');
+//const welcome = document.getElementById('welcomeMssg');
 const buttonDifficultyAsc = document.getElementById('difficultyAsc');
 const buttonDifficultyDsc = document.getElementById('difficultyDsc');
+
 
 //Trae los divs de cada personaje
 //const character = document.getElementById('character')
@@ -55,7 +59,9 @@ cerrar.onmouseover = () => {
   document.getElementById("mySidenav").style.width = "0px";
 };
 
-
+home.onclick= ()=> {
+  document.getElementById("fondo-de-lista-de-campeones").style.display = 'block';
+}
 
 /* ----------------------------------------------*/
 //función que despliega la info del personaje al dar click
