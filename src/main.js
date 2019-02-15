@@ -79,20 +79,3 @@
   sectionRoot.innerHTML += `<h1>Promedio de la Cantidad en la que aparecen todos los pokemons</h1><p>${newProm}</p>`
   return sectionRoot
 })
-
-
-
-      // HOLI ACUERDENSE DE ESTO SI SUFREN... CARITA DE REGALO :)
-      // const suma = (numero1, numero2) => {
-      //   return numero1 + numero2
-      // }
-      //
-      // suma(2,3)
-      // suma(24,3341)
-      // suma(233,3)
-      // suma(212341,334)
-      //
-      //
-      //
-      //
-      //
