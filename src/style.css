@@ -3,6 +3,51 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 
+#menu_gral {
+    font-family: verdana, sans sherif;
+    width: 80%;
+    margin: 1.5rem auto;
+    
+    
+}
+#menu_gral ul {
+    list-style-type: none; 
+    text-align: center;
+    font-size: 0;
+}
+#menu_gral > ul li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    background: #00CED1;
+}
+#menu_gral li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: white;
+}
+#menu_gral li:hover a, #menu_gral li a:focus {
+    background-color: RoyalBlue;
+    
+}
+
+#menu_gral li ul {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+}
+#menu_gral li:hover ul, #menu_gral li:focus ul {
+    width: 100%;
+    margin: 0 -4rem -4rem -4rem;
+    padding: 0 4rem 4rem 4rem;
+    background:  #bbb;
+    z-index: 5;
+}
+
+
+
 :root {
     background:#2980B9;
   }
@@ -48,14 +93,14 @@
         }
 
 
-#buttonAboutPikapedia,#buttonStadisticsPage,#buttonSearchPokemon,#filterButton,
-#buttonBack,#buttonBackFilterPage,#ButtonGround,
+
+#ButtonGround,
 #ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
 #ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
 #buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
 #buttonPokemonPsychic, #buttonPokemonWater, #buttonAboutPikapediaOnFilter,
 #buttonStadisticsPageOnFilter, #buttonSearchPokemonOnFilter,#filterButtonOnFilter,
-#buttonBackFilterPage, #buttonBackFilterPage, #buttonBackPageKanto{
+#buttonBackFilterPage, #buttonBackFilterPage, #buttonBackPageKanto,#regionKanto,#regionKantOnFilter{
     background-color:#00CED1;
     border: none; 
     color: white; 
@@ -68,15 +113,14 @@
     
   }
   
-  #buttonAboutPikapedia:hover, #buttonStadisticsPage:hover, #btn3:hover,
-  #filterButton:hover,  #buttonBack:hover, #buttonSearchPokemon:hover,
+    
   #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
   #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
   #buttonPokemonPsychic:hover, #buttonPokemonWater:hover,
   #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
   #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover,  #buttonAboutPikapediaOnFilter:hover,
   #buttonStadisticsPageOnFilter:hover, #buttonSearchPokemonOnFilter:hover,#filterButtonOnFilter:hover,
-  #buttonBackFilterPage:hover,#buttonBackFilterPage:hover,#buttonBackPageKanto:hover {
+  #buttonBackFilterPage:hover,#buttonBackFilterPage:hover,#buttonBackPageKanto:hover,#regionKanto:hover,#regionKantOnFilter:hover {
     background-color: RoyalBlue;
   }      
 
