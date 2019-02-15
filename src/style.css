@@ -218,15 +218,6 @@ footer{
 @media only screen  and (min-width : 768px) {
 
 
-  #mainHeader{
-    width: 100%;
-    left:0;
-    top:0;
-    position:fixed;
-    height:50px;
-    background-color: #111;
-    display:flex;
-  }
 
 .blinke {
   font-size: 200%;
@@ -272,8 +263,7 @@ justify-content:center;
   }
 
   .fas{
-  font-size: 200%;
-  margin-top:5%;
+    margin-top: 2%;
   }
 
   .sidenav a{
@@ -294,6 +284,28 @@ justify-content:center;
   margin-top: 5%;
 }
 
+#iconGlass{
+  font-size:100%;
+  margin-left:50px;
+  margin-top:10%;
+  float: left;
+ 
+}
+
+#searchDiv{
+  margin-left: 50%;
+  position: absolute;
+  margin-top: 3%;
+
+ 
+}
+
+#searchInput{
+  width: 200px;
+  
+
+  
+}
 
 
 
@@ -350,8 +362,7 @@ footer{
     }
   
     .fas{
-    font-size: 200%;
-    margin-top:5%;
+      margin-top: 1%;
     }
   
     .sidenav a{
@@ -373,19 +384,21 @@ footer{
   }
   
   #searchDiv{
-    margin-left: 50%;
-    height:100%; 
-    margin-top: -2%;
+    margin-left: 55%;
+    position: absolute;
+    margin-top: 1.5%;
   
-  
-  
+   
   }
   
   #searchInput{
-    width: 150%;
-    display: inline-block;
-    height: 30%;
+    width: 250px;
+    
+    
+  
+    
   }
+  
   
  
   
