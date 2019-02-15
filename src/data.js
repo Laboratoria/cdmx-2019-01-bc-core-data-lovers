@@ -31,7 +31,6 @@ window.data = {
       //let allInjured = [moto, bike, walk, transit];
         if (yearValue === year && userValue === "all") {
             yearFind = [year.substr(0,4), moto, bike, walk, transit];
-         console.log(yearFind);
         }
       }) //ForEach
       return yearFind;

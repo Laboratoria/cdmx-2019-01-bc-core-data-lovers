@@ -79,6 +79,10 @@ figure {
    color: #eb008b;
    }
 
+   td, th, table {
+     border: 1px solid black;
+   }
+
    .checkbox {
      float: right;
       display: none;/*Ocultamos el checkbox pues no nos interesa que se vea*/
