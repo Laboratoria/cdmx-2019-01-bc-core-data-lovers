@@ -15,7 +15,7 @@ window.lol = {
           defense: element.info.defense,
           magic: element.info.magic,
           id: element.id,
-          difficulty: element.difficulty
+          difficulty: element.info.difficulty
         }
         if (!element.tags[1]) {
           champsInfo.secondaryRol = "";
@@ -107,9 +107,17 @@ window.lol = {
       }
     }
     return champ;
-  }
+  },
 
   //Aquí inicia la función matemática
+  toReduce: (difficultyArray) => {
+    const champDifficulty = difficultyArray.reduce((total, newArrayInfo) => {
+      console.log(total)
+      return total += newArrayInfo.difficulty/134;
+    }, 0);
+    return champDifficulty;
+  },
+
 
   //esta llave cierra window.lol
 }

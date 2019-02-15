@@ -122,3 +122,8 @@ back.addEventListener('click', () => {
   championList.classList.add('hide');
   start.classList.remove('hide');
 });
+
+//Función para llamar a la función de reduce
+const newArrayChamp = window.lol.showData(lolData);
+const reduce = window.lol.toReduce(newArrayChamp);
+console.log(reduce);
