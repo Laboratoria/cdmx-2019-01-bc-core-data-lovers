@@ -60,16 +60,12 @@ table{
 
 }
 
-td{
-    padding-left: 15px;
-}
-
 .id{
     width: 23%;
 }
 
 .dataid{
-    padding-left: 50px;
+    padding-left: 10px;
     width: 35%
 }
 
@@ -336,7 +332,7 @@ img{
     }
 
     .imgModal{
-        width: 80%;
+        width: 100%;
     }
     .bigModal{
         width: 108%;
@@ -359,17 +355,14 @@ img{
     
     }
     
-    td{
-        padding-left: 10px;
-    }
     
-    .id{
-        width: 25%;
+    .id{ 
+        width: 15%;
     }
     
     .dataid{
-        padding-left: 30px;
-        width: 40%
+        border: 3px solid white;
+        width: 5%;
     }
     
     .wellcomeBackground{

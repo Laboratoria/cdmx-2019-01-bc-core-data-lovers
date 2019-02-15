@@ -1,8 +1,10 @@
 //Declaración de variables para manipular la data
 var POKEMON;
 const dataPokemon = POKEMON.pokemon;
+dataPokemon.weaknesses = String(dataPokemon.weaknesses);
 
 const pokemones = document.getElementById('pokemones');
+const theme = document.getElementById('theme');
 
 //Declaración para filtrar
 const filterType = document.getElementsByClassName('filterType');
@@ -26,11 +28,11 @@ btnStart.addEventListener("click", () => {
    filter.innerHTML = "";
    mapData.map((dataPokemon) => {
     filter.innerHTML +=
-    ` <button type="button" class="divPokemon btnPokemon ${dataPokemon.type[0]} btn btn-primary btn-lg" data-toggle="modal" data-target="#pokemon${dataPokemon.name}">
+    ` <button type="button" class="divPokemon btnPokemon ${dataPokemon.type[0]} btn btn-primary btn-lg" data-toggle="modal" data-target="#pokemon${dataPokemon.id}">
         <img src="${dataPokemon.img}"> <br><br><br><p class="name">${dataPokemon.name}</p><br>
       </button>
 
-      <div class="modal fade" id="pokemon${dataPokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="pokemon${dataPokemon.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content bigModal">
 
@@ -119,4 +121,17 @@ for(let i=0; i<filterType.length; i++){
     toPrint(pokeFilter);
   });
 }
+
+/* const orderByName = dataPokemon.sort(function (a, b) {
+  if (a.name > b.name) {
+    return 1;
+  }
+  if (a.name < b.name) {
+    return -1;
+  }
+  // a must be equal to b
+  return 0;
+});
+
+console.log(orderByName); */
 
