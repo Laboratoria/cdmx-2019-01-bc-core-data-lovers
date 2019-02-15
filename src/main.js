@@ -1,16 +1,17 @@
+const homePage = document.getElementById('homePage')
 const enterPage = document.getElementById('enterPage');
 const pageKanto = document.getElementById('pageKanto');
 const filterPage = document.getElementById('filterPage')
 const stadisticsPage = document.getElementById('stadisticsPage');
 const buttonAboutPikapedia = document.getElementById('buttonAboutPikapedia');
-const filterButton = document.getElementById("filterButton");
+const buttonFilterPokemon = document.getElementById("buttonFilterPokemon");
 const totalData = document.getElementById("total-data");
 const pokemonData = window.POKEMON.pokemon;
 const buttonBack = document.getElementById("buttonBack");
+const buttonRegionKanto = document.getElementById('buttonRegionKanto')
 const buttonStadisticsPage = document.getElementById('buttonStadisticsPage');
 const buttonBackFilterPage = document.getElementById('buttonBackFilterPage');
-const buttonSearchPokemon = document.getElementById('buttonSearchPokemon');
-const enterToPikapedia = document.getElementById("enterToPikapedia");
+const buttonSearchByType = document.getElementById('buttonSearchByType');
 const pokemonTypeAll = document.getElementById("pokemonTypeAll");
 const checkboxWeightLight = document.getElementById("checkboxWeightLight");
 const checkboxWeightHeavy = document.getElementById("checkboxWeightHeavy");
@@ -57,19 +58,19 @@ const buttonStadisticsPageOnFilter = document.getElementById("buttonStadisticsPa
 
 
 //Botón de entrada
-enterToPikapedia.addEventListener("click", () => {
+//enterPage.addEventListener("click", () => {
 
-  enterPage.classList.add('hide');
-  pageKanto.classList.remove('hide');
-});
+  //enterPage.classList.add('hide');
+  //pageKanto.classList.remove('hide');
+//});
 
 buttonBack.addEventListener("click", () => {
   pageKanto.classList.add('hide');
   enterPage.classList.add('show');
 });
 
-filterButton.addEventListener("click", () => {
-  pageKanto.classList.add('hide');
+buttonFilterPokemon.addEventListener("click", () => {
+  homePage.classList.add('hide');
   filterPage.classList.remove('hide');
 });
 
@@ -78,13 +79,13 @@ buttonBackFilterPage.addEventListener("click", () => {
   pageKanto.classList.remove('hide');
 });
 
-buttonSearchPokemon.addEventListener("click", () => {
-  pageKanto.classList.add('hide');
+buttonSearchByType.addEventListener("click", () => {
+  homePage.classList.add('hide');
   typePokemonPage.classList.remove('hide');
 });
 
 buttonStadisticsPage.addEventListener("click", () => {
-  pageKanto.classList.add('hide');
+  homePage.classList.add('hide');
   stadisticsPage.classList.remove('hide');
   const allPokemon = 151
   const averageWeight = window.pokemonFunction.averageWeight(pokemonData, allPokemon);
@@ -96,6 +97,12 @@ buttonAboutPikapedia.addEventListener("click", () => {
   pageKanto.classList.add("hide");
   aboutPikapediaPage.remove("hide");
 });
+
+buttonRegionKanto.addEventListener("click",()=>{
+  homePage.classList.add('hide');
+  pageKanto.classList.remove('hide');
+
+})
 
 buttonSearchPokemonOnFilter.addEventListener("click", () => {
   filterPage.classList.add("hide");
@@ -136,10 +143,10 @@ const printPokemon = (name, img, quality) => {
 
 const printData = (num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
   spawn_time, multipliers, weaknesses) => {
-  let result = `<div class="card"><h1>${num}</h1>
+  let result = `<div class="boxesContainer"><div class="cardBox"><div class="card"><div class="front"><h1>${num}</h1>
         <h2>${name}</h2>
-        <img class= "imageCard"src=${img}>
-        <p> TYPE : ${type}</p>
+        <img class= "imageCard"src=${img}></div>
+        <div class ="back"><article class ="informationCard"><p> TYPE : ${type}</p>
         <p> HEIGHT : ${height}</p>
         <p> WEIGHT: ${weight}</p>
         <p>CANDY: ${candy}</p>
@@ -149,7 +156,7 @@ const printData = (num, name, img, type, height, weight, candy, candy_count, egg
         <p>AVERANGE SPAWNS: ${avg_spawns}</p>
         <p>SPAWN TIME: ${spawn_time}</p>
         <p>MULTIPLIERS: ${multipliers}</p>
-        <p>WEAKNESSES: ${weaknesses}</p><div>`;
+        <p>WEAKNESSES: ${weaknesses}</p></article></div></div></div></div>`;
   totalData.insertAdjacentHTML("beforeend", result);
 
 };

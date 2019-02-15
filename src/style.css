@@ -3,59 +3,76 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 
-#menu_gral {
-    font-family: verdana, sans sherif;
-    width: 80%;
-    margin: 1.5rem auto;
-    
-    
-}
-#menu_gral ul {
-    list-style-type: none; 
-    text-align: center;
-    font-size: 0;
-}
-#menu_gral > ul li {
-    display: inline-block;
-    width: 25%;
-    position: relative;
-    background: #00CED1;
-}
-#menu_gral li a {
-    display: block;
-    text-decoration: none;
-    font-size: 1rem;
-    line-height: 2.5rem;
-    color: white;
-}
-#menu_gral li:hover a, #menu_gral li a:focus {
-    background-color: RoyalBlue;
-    
-}
-
-#menu_gral li ul {
-    position: absolute;
-    width: 0;
-    overflow: hidden;
-}
-#menu_gral li:hover ul, #menu_gral li:focus ul {
-    width: 100%;
-    margin: 0 -4rem -4rem -4rem;
-    padding: 0 4rem 4rem 4rem;
-    background:  #bbb;
-    z-index: 5;
-}
-
-
 
 :root {
     background:#2980B9;
   }
+
+ 
 .hide{
     display:none;
 }
 .show{
     display:contents;
+}
+body {
+ margin:0;
+ font-family: 'Exo 2', sans-serif;
+}
+header{
+    width: 100%;
+    background: #00CED1;
+}
+
+
+#hamburguerMenu{
+ display: none;
+}
+
+
+.fas{
+    font-size: 18px;
+    color:white;
+
+}
+
+header label {
+    display: none;
+    width:30px;
+    height:30px;
+    padding: 10px;
+    border-right:1px solid white;
+}
+
+header label:hover{
+    cursor:pointer;
+    background: royalblue;
+}
+
+.menu_gral ul {
+    margin:0;
+    list-style-type: none; 
+    padding:0;
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+
+}
+.menu_gral > ul li {
+   border-right: .5px solid white;
+
+}
+.menu_gral li a {
+    display: block;
+    padding:16px 20px;
+    text-decoration: none;
+   font-size: 1rem;
+    line-height: 3.5rem;
+    color: white;
+}
+.menu_gral li:hover a, .menu_gral li a:focus {
+    background-color: Royalblue;
+
 }
 
 .titleWeb, .titlePokemonLight,.titlePokemonHeavy,
@@ -64,70 +81,50 @@
     top: 15px;
    text-align: center;
 }
-#enterToPikapedia{
-        background-color:#00CED1;
-        border:none;  
-        color:white;
-        padding: 12px 18px;  
-        text-decoration: none; 
-        display: inline-block; 
-        font-size: 22px; 
-        font-family: 'Exo 2', sans-serif;
-        border-radius: 5px;
-        position:relative;
-        cursor: pointer;
-        top:50px;
-        left:45%;
-        }
- #enterToPikapedia:hover
- {
-        background-color:royalblue;
-        
- }
 
-#detectivePikachu{
-        height: 400px;
+.detectivePikachu{
+        height: 150px;
         position: relative;
-        top: 20px;
-        left: 430px;
+        left: 45%;
+        top:180px;
+        
+      
         }
 
-
+.titleHomePage img{
+    position:relative;
+    left: 450px;
+    top: 150px;
+}
 
 #ButtonGround,
 #ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
 #ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
 #buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
-#buttonPokemonPsychic, #buttonPokemonWater, #buttonAboutPikapediaOnFilter,
-#buttonStadisticsPageOnFilter, #buttonSearchPokemonOnFilter,#filterButtonOnFilter,
-#buttonBackFilterPage, #buttonBackFilterPage, #buttonBackPageKanto,#regionKanto,#regionKantOnFilter{
+#buttonPokemonPsychic, #buttonPokemonWater{
     background-color:#00CED1;
     border: none; 
     color: white; 
     padding: 12px 35px; 
     font-size: 20px;
-    font-family: 'Exo 2', sans-serif;
     cursor: pointer;
     border-radius: 5px;
     margin:5px;
     
   }
   
-    
+ 
   #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
   #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
   #buttonPokemonPsychic:hover, #buttonPokemonWater:hover,
   #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
-  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover,  #buttonAboutPikapediaOnFilter:hover,
-  #buttonStadisticsPageOnFilter:hover, #buttonSearchPokemonOnFilter:hover,#filterButtonOnFilter:hover,
-  #buttonBackFilterPage:hover,#buttonBackFilterPage:hover,#buttonBackPageKanto:hover,#regionKanto:hover,#regionKantOnFilter:hover {
+  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover {
     background-color: RoyalBlue;
   }      
 
-.welcomeMessage{
+.titleKantoRegion{
    color:#FFDE00;
    font-size: 30px;
-   font-family:'Exo 2', sans-serif;
    text-align: center;
 
 }
@@ -143,23 +140,35 @@
 }
 .pokemones{
     color: white;
-    font-family: 'Exo 2', sans-serif;
     font-size: 20px;
     text-align: center;
     position: relative;
     display: inline-block    
 }
 
-h1,h2{
-    color:#FFDE00;
+h1,h2 {
+    background: #FFDE00;
+    color: #fff;
     text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+  }
+.informationCard{
+
+    margin-bottom: 1.8em;
 }
+
+.cardBox .card .back {
+    background:  #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 p{
    color: white;
    font-size: 16px;
    background: #8E2DE2;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    width: 270px;
    margin:0px;
    left:540px;
@@ -169,7 +178,6 @@ p{
  .checkbox {
     width: 25%;
     height: 25%;
-    font-family: 'Exo 2', sans-serif;
     color: white;
     font-size: 18px;
     padding: 1%;
@@ -182,12 +190,54 @@ p{
     display: inline-block;
     
  }
-.card, .typeCard{
+.boxesContainer, .typeCard{
     display: inline-block;
-    border: solid #FFDE00;
-    margin: 1%;
-   
 }
+
+
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  }
+
+
+  .cardBox:hover .card {
+    transform: rotateY(180deg);
+  }
+
+
+  .card {
+    /*background: #222;*/
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+  }
+
+  .front, .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: inline-block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .back {
+    transform: rotateY( 180deg);
+  }
+
 .filterCard{
     display: inline-block;
     border: solid #FFDE00;
@@ -220,4 +270,30 @@ p{
    margin:0px;
    padding: 1px;
    text-align: center;
+}
+
+
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu_gral{
+        position: absolute;
+        background-color:#00CED1;
+        width: 60%;
+        margin-left:-70%;
+        transition: all 1s;
+    }
+    .menu_gral ul {
+       flex-direction: column;
+    }
+    .menu_gral li{
+        border-top: .5px solid white;
+    }
+
+    #hamburguerMenu:checked ~ .menu_gral{
+        margin:0;
+    }
+
+
 }
