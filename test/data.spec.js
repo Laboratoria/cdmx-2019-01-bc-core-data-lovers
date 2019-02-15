@@ -722,7 +722,7 @@ describe('sorterByAttackDesc', () => {
 describe('sorterByAttackUpw', () => {
 
   it('is a function', () => {
-    expect(typeof window.lol.sorterByAttackDesc).toBe('function');
+    expect(typeof window.lol.sorterByAttackUpw).toBe('function');
   });
   it('Should return the object Bard if we select sort by Attack', () => {
     expect(window.lol.sorterByAttackUpw(newArrayInfo, 'attack')[3].name).toEqual('Bard');
