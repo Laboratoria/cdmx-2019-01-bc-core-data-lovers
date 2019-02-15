@@ -75,8 +75,12 @@ figure {
 
   .menu-toogle::before {
     content: "☰";
-   font-size: 45px;
+   font-size: 33px;
    color: #eb008b;
+   }
+
+   td, th, table {
+     border: 1px solid black;
    }
 
    .checkbox {
@@ -372,19 +376,6 @@ footer {
     padding: 2%;
   }
 
-  .logo {
-    width: 6%;
-    height: auto;
-    padding: 1%;
-    display: none;
-  }
-#extend{
-  display: inline-block;
-  width: 6%;
-  height: auto;
-  padding: 1%;
-  display: none;
-}
   .menu {
     width: 6%;
     height: auto;
@@ -392,10 +383,6 @@ footer {
     padding: 2%;
     padding-top: 2%;
     float: right;
-  }
-
-  #extend{
-    display: none;
   }
 
   .sidebar {
@@ -451,9 +438,6 @@ footer {
     height: auto;
     padding: 5%;
     margin-left: 3%;
-  }
-  #extend{
-    display: none;
   }
 
   .sidebar {
@@ -516,16 +500,16 @@ footer {
   display: none;
 }
 
-.sidebar {
-position: absolute;
-width: 200px;
-height: 100vh;
-top: 0;
-right: -435px;
-padding-top: 47px;
-background-color: rgba(29, 33, 32, 1);
-border-left: 4px solid rgb(235, 0, 139);
-transition: all .5s ease;
-}
+  .sidebar {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: -435px;
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-left: 4px solid rgb(235, 0, 139);
+  transition: all .5s ease;
+  }
 
 }

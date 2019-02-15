@@ -40,7 +40,7 @@
         se exponen y sus posibles consecuencias.</p>
 
         <div class="button1">
-          <a class="button" id="consulta" value="CONOCE MÁS" href="#know">CONOCE MÁS</a>
+          <a class="button1" id="consulta"  href="#know">CONOCE MÁS</a>
       </div>
 
     </section>
@@ -60,30 +60,22 @@
 
     <section id="know" class="know">
       <h2 id="knowMore"> CONOCE MÁS </h2>
-      
+      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
+
       <div class="button">
         <input id="all" class="button" type="button" value="Mostrar todos los datos">
       </div>
-      
+
       <form class="select">
         <select id="yearbttn" name="year" class="selector">
           <option selected value="0"> AÑO </option>
-          <option class="year" value="2001-01-04">2001</option>
-          <option class="year" value="2002-01-04">2002</option>
-          <option class="year" value="2003-01-04">2003</option>
-          <option class="year" value="2004-01-04">2004</option>
-          <option class="year" value="2005-01-04">2005</option>
-          <option class="year" value="2006-01-04">2006</option>
-          <option class="year" value="2007-01-04">2007</option>
-          <option class="year" value="2008-01-04">2008</option>
-          <option class="year" value="2009-01-04">2009</option>
           <option class="year" value="2010-01-04">2010</option>
           <option class="year" value="2011-01-04">2011</option>
           <option class="year" value="2012-01-04">2012</option>
           <option class="year" value="2013-01-04">2013</option>
           <option class="year" value="2014-01-04">2014</option>
           <option class="year" value="2015-01-04">2015</option>
-          <option class="year" value="all">Todos los años</option>
+
 
         </select>
         <select id="user" name="user" class="selector">
@@ -92,17 +84,26 @@
           <option value="Total_Injured_Persons_Pedestrians">Peaton</option>
           <option value="Total_Injured_Persons_Pedalcyclists">Ciclista</option>
           <option value="Total_Injured_Persons_Transit_Total">Conductor</option>
-          <option value="all">Todos los medios</option>
-
+          <option value="all">Todos los heridos</option>
         </select>
+
         <div class="button">
           <input id="search" class="button" type="button" value="CONSULTA">
         </div>
+
+            <section id="result" class="result"></section>
+            <section id="tableData" class="tableData">
+
+<div id="table">
+
+</div>
+
+            </section>
       </form>
-      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
+
     </section>
 
-    <section id="result" class="result"></section>
+
 
       <section id="photos" class="photos">
         <img src="images/way.png" alt="PuntoMuerto" class="image">
@@ -126,7 +127,6 @@
   </div>
 
   <script src="./data/injuries/injuries.js"></script>
-
   <script src="main.js"></script>
   <script src="data.js"></script>
 </body>
