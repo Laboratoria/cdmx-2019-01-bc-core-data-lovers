@@ -82,6 +82,10 @@ describe('WorldBank', () => {
   it('WorldBank.dataCountries is a function', () => {
     expect(typeof window.WorldBank.dataCountries).toBe('function');
   });
+
+  it('Debería retornar "WORLDBANK.MEX.indicators', () => {
+    expect(window.WorldBank.dataCountries).toEqual(WORLDBANK.MEX.indicators)
+  })
 });
 
 
