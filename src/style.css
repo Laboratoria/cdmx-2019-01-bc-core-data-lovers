@@ -22,12 +22,13 @@
     color: transparent;
   }
   #regresar {
-    |background: transparent;
+    background: transparent;
     border: 0;
     color: white;
     font-size: 100%;
     float: right;
-    margin-top: -34%;
+    margin-top: 30%;
+    margin-right: 12%;
 }
 #start {
   background-image: url(./start.png);
@@ -96,14 +97,26 @@
   border: 0;
 }
 #root {
-  display: inline-block;
-  height: 91vw;
-  width: 71vw;
-  margin-top: 55vw;
-  margin-left: 13vw;
+  overflow: auto;
+  height: 85vw;
+  width: 66vw;
+  margin-top: 17vw;
+  margin-left: 14vw;
 }
 #options, #rootContainer {
   display: none;
+}
+#ordenar{
+  margin-top: 12%;
+  float: right;
+  margin-right: -36%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 102%;
+}
+#ordenarDesktop {
+  display: none
 }
 }
 
@@ -116,7 +129,8 @@
     background-image: url(./background.png);
      background-color: #2697FF;
      BACKGROUND-REPEAT: NO-REPEAT;
-     BACKGROUND-SIZE: 100%;
+     BACKGROUND-SIZE: 80%;
+     background-position: center;
 }
 
 #startPokemon {
@@ -127,10 +141,17 @@
 .boton-typeChart {
   display: inline-block;
   background-color: #0763db;
-  padding: 2%;
-  font-size: 2vw;
+  padding: 1%;
+  font-size: 83%;
   margin: 1%;
   background-attachment: fixed;
+}
+.botonesInferiores{
+ display: none;
+  margin-top: 16%
+}
+#regresar{
+  display:none;
 }
 #options {
   float: right;
@@ -140,10 +161,10 @@
 }
 
 #optionsContainer {
-  width: 74%;
-  height: 27%;
-  margin-top: 74%;
-  margin-left: 17%;
+  width: 59%;
+    height: 24%;
+    margin-top: 74%;
+    margin-left: 8%;
   background-attachment: fixed;
 }
 #rootContainer {
@@ -153,12 +174,12 @@
   background-attachment: fixed;
 }
 #root {
-  display: inline-block;
-  width: 27vw;
-  height: 35vh;
+  overflow: auto;
+  width: 24vw;
+  height: 29vh;
   margin-top: 22vw;
-  padding: 2%;
-  margin-left: 11%;
+  padding: 7%;
+  margin-left: 26%;
 }
 
 #nextPage {
@@ -171,6 +192,25 @@ head {
 }
 #charmander {
   background-image: url(./atrapalosya.png);
+  width: 44%;
+  display: inline-block;
+  height: 15%;
+  background-size: 101%;
+  margin-top: 51%;
+  margin-left: 33%;
 
+}
+.gif{
+  background-image: url(./FeminineRemarkableChuckwalla-small.gif);
+    width: 45%;
+    height: 67%;
+    /* display: inline-block; */
+    float: inherit;
+    margin-top: -16%;
+    margin-left: 33%;
+}
+#ordenarDesktop {
+  margin-top: 16%;
+  margin-left: 29%;
 }
 }

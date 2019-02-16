@@ -5,13 +5,16 @@ const data = window.POKEMON.pokemon;
 const startPokedex = document.getElementById('startPokemon');
 const next = document.getElementById('nextPage');
 const back = document.getElementById('regresar');
-const sort = document.getElementById('ordenar');
+const sortt = document.getElementById('ordenar');
+const sortDesk = document.getElementById('ordenarDesktop');
+
 
 // Declara Sections
 const start = document.getElementById('start');
 const rootContainer = document.getElementById('rootContainer');
 const options = document.getElementById('options');
-const sortt = document.getElementById('ordenar');
+const Charmander = document.getElementById('charmander');
+const gif = document.getElementById('charmanderbackground');
 
 // Declara boton de tipos de pokemones en un array, por medio de su clase.
 const buttonFilter = Array.from(document.getElementsByClassName("boton-typeChart"));
@@ -45,6 +48,7 @@ const gettingType = (arrayofButtons) => {
   arrayofButtons.map((buttonSelected) => {
     buttonSelected.addEventListener("click", (event) => {
       Charmander.style.display = "none";
+      gif.style.display='none';
       const buttonType = event.target.id;
       const dataFiltered = window.allPokemon.dataFiltered(data, buttonType);
       printResult(dataFiltered)
@@ -74,6 +78,10 @@ const printResult = (getType) => {
 
 //ordena de la a - z 
 sortt.addEventListener('click' , () => {
+  let orderAtoZ = window.allPokemon.orderData(resultTotal);
+  printOrder(orderAtoZ);
+})
+sortDesk.addEventListener('click' , () => {
   let orderAtoZ = window.allPokemon.orderData(resultTotal);
   printOrder(orderAtoZ);
 })
