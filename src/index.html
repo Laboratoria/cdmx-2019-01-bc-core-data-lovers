@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Banco Mundial</title>
+    <title>BANCO MUNDIAL</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
@@ -13,18 +13,22 @@
         <img class="icon-logo" src="./images/logo.svg" alt="nav">
       </section>
       <section class="header-right">
-            <a  id="nav-icon"  class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>  
+            <a  id="nav-icon"  class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>
       </section>
+      <nav id="nav-menu" class="nav-menu ocultar">
+          <ul>
+            <li id="btn-about" class="item-menu">Acerca de</li>
+            <li id="btn-news" class="item-menu">Noticias</li>
+            <li id="btn-general-filter" class="item-menu">Indicadores genero femenino</li>
+            <li id="" class="item-menu">Contacto</li>
+          </ul>
+        </nav>
+        <div>
+            <input type="search" id="buscar" name="serchForWord">
+            <button>Buscar</button>
+          </div>
     </header>
-    <nav id="nav-menu" class="nav-menu ocultar">
-            <ul>
-              <li id="btn-about" class="item-menu">Acerca de</li>
-              <li id="btn-news" class="item-menu">Noticias</li>
-              <li id="btn-general-filter" class="item-menu">Indicadores genero femenino</li>
-              <li id="" class="item-menu">Contacto</li>
-            </ul>
-          </nav>
-    <main id="container" class="container">
+    <main class="container">
         <section id="news" class="news ocultar mostrar-news">
           <article class="news-mexico">
               <h2>El Banco Mundial en Mexico</h2>
@@ -59,10 +63,12 @@
                 <h1 >Indicadores genero femenino</h1>
             </article>
             <article class="information-filter">
+
                 <a class="btn_mex search-country" id="MEX" data-ciudad="MEX" data-object="countryMex">México</a>
                 <a class="btn_per search-country" id="btn_per" data-ciudad="PER" data-object="countryPer">Peru</a>
                 <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA" data-object="countryBra">Brasil</a>
                 <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl">Chile</a>
+
             </article>  
             <article> 
                 <a id="educacion" class="typeTheme" >Educacion</a> 
@@ -71,6 +77,7 @@
                 <select id="list-question" class="list-question">
                     <option value="valor" >Selecciona un pais</option>
                 </select>
+
                 <div class="order__filters">
                     <div class="order__items right">
                         <p><b>Ordenar por Año</b></p>
@@ -97,9 +104,11 @@
                     </div>
                 </div>
                 <div>
-                    <p id="avg"></p>
-                </div>
-            </article>
+
+                    <a id="avg" >media porcentual</a>
+                    <p id="avg_result"></p>
+
+
 
             <article id="information-filter-inner" class="information__filtered" >
             </article>
