@@ -40,7 +40,7 @@
         se exponen y sus posibles consecuencias.</p>
 
       <div class="button1">
-        <a class="button1" id="consulta" value="CONOCE MÁS" href="#know">CONOCE MÁS</a>
+        <a class="button1" id="consulta" href="#know">CONOCE MÁS</a>
       </div>
 
     </section>
@@ -60,6 +60,7 @@
 
     <section id="know" class="know">
       <h2 id="knowMore"> CONOCE MÁS </h2>
+      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
 
       <form class="select">
         <select id="yearbttn" name="year" class="selector">
@@ -79,29 +80,25 @@
           <option value="Total_Injured_Persons_Pedestrians">Peaton</option>
           <option value="Total_Injured_Persons_Pedalcyclists">Ciclista</option>
           <option value="Total_Injured_Persons_Transit_Total">Conductor</option>
-          <option value="all">Todos los medios</option>
-
+          <option value="all">Todos los heridos</option>
         </select>
+
         <div class="button">
           <input id="search" class="button" type="button" value="CONSULTA">
         </div>
+
+        <section id="result" class="result"></section>
+        <section id="tableData" class="tableData">
+
+          <div id="table">
+
+          </div>
+
+        </section>
       </form>
 
     </section>
 
-    <section id="result" class="result"></section>
-    <img src="images/peaton.png" alt="PuntoMuerto" class="image">
-    <section id="photos" class="photos">
-      <img src="images/way.png" alt="PuntoMuerto" class="image">
-      <img src="images/cros.png" alt="PuntoMuerto" class="image">
-      <img src="images/incident.png" alt="PuntoMuerto" class="image">
-      <h2 id="fqa"> FQA </h2>
-      <p class="question"> <b> ¿Qué es punto muerto?</b> </p>
-      <p class="question"> <b> ¿A quién se dirige esta campaña? </b></p>
-      <p class="question"><b> ¿Qué medidas puedo realizar para evitar accidentes?</b> </p>
-      <p class="question"> <b> ¿De dónde son los datos que consulto?</b> </p>
-      <p class="question"><b> ¿Qué medidas debo tomar si soy peaton? </b></p>
-    </section>
 
     <footer>
       <figure>
@@ -113,7 +110,6 @@
   </div>
 
   <script src="./data/injuries/injuries.js"></script>
-
   <script src="main.js"></script>
   <script src="data.js"></script>
 </body>
