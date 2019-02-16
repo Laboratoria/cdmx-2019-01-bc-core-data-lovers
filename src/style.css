@@ -72,7 +72,6 @@ table{
 }
 
 .name{
-    border-radius: 25px;
     background-color: rgba(27, 27, 27, 0.9);
     font-size: 2em;
 }
