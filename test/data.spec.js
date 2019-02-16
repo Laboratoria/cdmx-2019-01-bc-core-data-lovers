@@ -73,6 +73,9 @@ var WORLDBANK = {
   }
 };
 
+//const dataWorldBankTest = WORLDBANK.MEX.indicators;
+
+
 
 describe('WorldBank', () => {
   it('WorldBank is an object', () => {
@@ -83,8 +86,8 @@ describe('WorldBank', () => {
     expect(typeof window.WorldBank.dataCountries).toBe('function');
   });
 
-  it('Debería retornar "WORLDBANK.MEX.indicators', () => {
-    expect(window.WorldBank.dataCountries).toEqual(WORLDBANK.MEX.indicators)
+  it('Debería retornar un array de objetos', () => {
+    expect(window.WorldBank.dataCountries(data, countries)).toEqual(WORLDBANK.MEX.indicators)
   })
 });
 

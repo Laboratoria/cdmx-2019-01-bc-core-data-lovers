@@ -63,17 +63,17 @@ const sortByPercent = () => {
         }
       }
       let sortFinal = window.WorldBank.sortPercentAndYear(arrResultYear, sortValue);
-      obj = new Object()
+      arrResultYear = new Object()
       sortFinal.forEach(element=> {
         let percent=  element[1];
         let year = element[0];
-       obj[percent]  = year;
+       arrResultYear[percent]  = year;
     })
-    printPercents2(obj);
+    printPercents(arrResultYear);
   })
 }
 
-const printPercents2 = (resultYear) => {
+const printPercents = (resultYear) => {
   dataYear.innerHTML = "";
   for (const key in resultYear) {
     if (resultYear.hasOwnProperty(key)) {
