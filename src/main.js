@@ -17,11 +17,9 @@ const about = document.getElementById("about");
 const filters = document.getElementById("general-filter");
 //evento para ocultar y mostrar elementos
 navIcon.addEventListener('click', () => {
-<<<<<<< HEAD
+
   navMenu.classList.toggle('ocultar');
-=======
-navMenu.classList.toggle('ocultar'); 
->>>>>>> 20c852a27f42d1787088f79bf2a0c56bfa36abff
+
 });
 btnAbout.addEventListener('click', () => {
   about.classList.remove('ocultar');
