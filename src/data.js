@@ -35,7 +35,11 @@ window.data = {
       }) //ForEach
       return yearFind;
   },//Order
-  sort: () =>{
-    
+  dataSort: (resultDatos) =>{
+    let ordered = [newMoto, newBike, newPeaton,newAuto];
+    const res = ordered.sort((a,b) => {
+      a > b;
+    })
+    return a[1] > b[1];
   }
 }; //window

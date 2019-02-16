@@ -20,24 +20,25 @@ searchbutton.addEventListener("click", () => {
     const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
     table.innerHTML = `          <table>
                 <tr>
-                  <th> AÑO ${resultDatos[0]} </th>
+                  <th> AÑO </th>
                   <th> TIPO DE HERIDO </th>
                   <th> TOTAL </th>
                   </tr>
                   <tr>
-                    <td colspan="2"> MOTOCICLISTA </td>
+                    <td rowspan="4"> ${resultDatos[0]} </td>
+                    <td> MOTOCICLISTA </td>
                     <td> ${resultDatos[1]} </td>
                   </tr>
                   <tr>
-                    <td colspan="2"> CICLISTA </td>
+                    <td> CICLISTA </td>
                     <td> ${resultDatos[2]} </td>
                   </tr>
                   <tr>
-            <td colspan="2"> PEATON </td>
+            <td> PEATON </td>
             <td> ${resultDatos[3]} </td>
         </tr>
         <tr>
-          <td colspan="2"> AUTOMOVIL </td>
+          <td> AUTOMOVIL </td>
           <td> ${resultDatos[4]} </td>
       </tr>
               </table>`
