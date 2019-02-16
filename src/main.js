@@ -10,7 +10,7 @@ const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
-/*let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica*///comentar grafica
+let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica*///comentar grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
 let pais;
@@ -84,8 +84,8 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
   }
  document.getElementById('contenido').innerHTML = respuesta;
 
-/* document.getElementById('graf').style.display='block';//comentar grafica
- VerGrafica();*/
+ document.getElementById('graf').style.display='block';//comentar grafica
+ VerGrafica();
  return respuesta;
 }
 
@@ -122,9 +122,9 @@ const limpiar = () => {
 
 
 
-/*console.log(valorAnioX);  //comentar grafica
+//console.log(valorAnioX);  //comentar grafica
 
-console.log(valorPorcentajeY);
+//console.log(valorPorcentajeY);
 
 const VerGrafica=()=>{
 
@@ -167,4 +167,4 @@ const VerGrafica=()=>{
         }
     })
     
-    }*/
+    }
