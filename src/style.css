@@ -273,13 +273,17 @@ i{
   .wrapper {
     margin: 9px 10px;
   }
-  .content{
-    over
-    overflow-x: hidden;
- }
  .bt-menu{
    display: inline-block;
+   float: left;
  }
+ .aside{
+   position: absolute;
+  left:0px;
+  z-index:20;
+}
+
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px){
@@ -292,4 +296,43 @@ i{
   #root {
     width: 100%; 
   }
+
+  .content{
+    width: 83.5%;
+    margin-left: 8%;
+  }
+  div.wrapper {
+    display: inline-block;
+    background: #FFD185;
+    margin: 9px 15px;
+    padding-bottom: 10px;
+    width: 43px;
+    height: 60px;
+    border-radius: 14px;
+    border: 3px solid #FFBA5C;
+  }
+  
+  .pokemon-card-image {
+    background: #EAFEE6;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    right: 30px;
+  }
+  
+  .box-card {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 9px;
+  }
+
+
+
+
+
+
+
+
 }
+
+
+
