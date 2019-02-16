@@ -1,4 +1,103 @@
-#Banca Mundial
+# Indicadores economicos en America Latina
+
+
+## Índice del proyecto de pagina
+
+- [Introducción](#Introducción)
+- [Descripción](#Descripción-del-proyecto)
+- [Parámetros](#Parámetros)
+- [Comenzando](#Comenzando)
+- [Pre-requisitos](#Pre-requisitos)
+- [Instalación](#Instalación)
+- [Pruebas unitarias](#Pruebas-unitarias)
+- [Pruebas de estilo de estilo de codificación](#Pruebas-de-estilo-de-codificación)
+- [Construido con](#Construido-con)
+- [Contribuyendo](#Contribuyendo)
+- [Versionando](#Versionando)
+- [Autores](#Autores)
+- [Licencia](#Licencia)
+- [Agradecimientos](#Agradecimientos)
+
+
+## Introducción
+
+
+## Descripción
+
+La siguiente página fue creada en base a la necesidad de estudiantes de economía, a los que esta dirigida la misma, de obtener informacion sobre indicadores del banco mundial, de manera ordenada y sencilla, ademas de poder acceder a los numeros de estos indicadores, es decir los años y las mediciones de cada uno asi como lo son porcentajes; Proporcionandoles tambien la medicion del promedio de cada data por indicador; La tematica de los indicadores se dirige primordialmente a la poblacion femenina, aunque no es exclusiva de esta.
+
+Los paises que se analizan en esta pagina son: México, Peru, Brasil y Chile.
+
+## Parámetros
+
+Para elaborar esta pagina se han tomado los siguientes indicadores o parametros: demográfia, económia, salud, comercio, violencia de genero y educación
+
+
+## Comenzando
+
+Este proyecto toma los datos de base de datos en un archivo .spec.js, los cuales se manipulan con una funcion que los filtra por año, otra funcion que los ordena de mayor a menor o viceversa por los años o los porcentajes de estos y una funcion que muestra el promedio de los datos de los años.
+
+La pagina se realizo usando el editor de texto de Visual Studio Code, con en lenguaje JavaScript, sobre el marcador de texto HTML, con el lenguaje de diseño grafico CSS; el repositorio original se obtuvo de git hub. A continuación las especificaciones técnicas
+
+## Pre-requisitos
+
+Para poder descargar y usar este repositorio se necesita tener:
+-un editor de texto.
+-una shell para interpretar líneas de comando 
+-git
+
+## Instalación
+
+Para poder usar el repositorio necesitas forquearlo (dando click donde dice fork) y despues clonarlo en la consola
+
+## Pruebas-unitarias
+
+Las pruebas para esta pagina se relizaron con el framework Jest
+Para poder ejecutar las pruebas abres la terminal, te posicionas en la carpeta de el proyecto y en la de test, posteriormente ejecutas npm run test.
+Las pruebas te indican que es lo que deben de retornar para ser positivas
+
+
+## Pruebas-de-estilo-de-codificación
+
+
+- "htmlhint": "^0.10.1"
+- "eslint": "^5.9.0"
+## Construido-con
+
+- Vanilla Javascript
+- HTML
+- CSS
+- Jest
+
+## Contribuyendo
+
+Se agradecerá toda contribución y comentarios a este proyecto.
+Lo podras hacer haciendo fork en el repositorio de git, clonandolo de manera local en tu pc.
+
+
+## Versionando
+
+El sistema de control de versiones en este caso es el de git que permite descargar el repositorio y las actualizaciones a traves de el comando git pull. Se recomienda numerar el versionado por si se quiere tener mayor orden sobre lo que se hace.
+
+## Autores
+## Licencia
+
+codigo abierto
+datos tomados del Banco Mundial
+
+## Agradecimientos
+
+Al equipo No 1:
+
+
+- Claudia Ramirez(claudiaramirez)
+- Ely Ramírez  
+- Daan (Da-ani)
+- Diana Lizbeth(DianaLiz11)
+- Erandi
+- Fabis Juárez (JessFabis)
+- Katt Rodríguez (KatyaRD)
+- Mit (MitziYolotzin)
 
 
 # Data Lovers
@@ -534,3 +633,4 @@ compañera:
 - [ ] Consume data de forma dinámica (`fetch()`).
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
 - [ ] Cobertura de coverage al 100%.
+
