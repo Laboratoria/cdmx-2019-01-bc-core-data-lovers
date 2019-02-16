@@ -140,3 +140,10 @@ for (let i = 0; i < orderName.length; i++) {
     toPrint(pokeOrder);
   })
 }
+
+//const promedio = document.getElementById('promedio');
+const search = document.getElementById('search');
+
+search.addEventListener("click", () => {
+  alert('Se esta trabando en esta sección')
+})

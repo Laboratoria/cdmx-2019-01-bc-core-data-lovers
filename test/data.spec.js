@@ -115,11 +115,16 @@ describe('sortData', () => {
 
   it('return arr A-Z', () => {
     expect(window.data.sortData(pokemon, "ascendente")[0].name).toEqual('Bulbasaur');
+  });
+
+  it('return arr Z-A', () => {
+    expect(window.data.sortData(pokemon, "descendente")[0].name).toEqual('Vulpix');
   })
 }); 
 
-describe('computeStats', () => {
+/* describe('computeStats', () => {
   it('is a function', () => {
     expect(typeof window.data.computeStats).toBe('function');
   });
 })
+ */
