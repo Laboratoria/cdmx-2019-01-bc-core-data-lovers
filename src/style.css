@@ -171,7 +171,7 @@ table{
 
 
 /*Fa:Tamaño para el logo de la pagina principal*/
-.widthLogData{ /* <-----**A este le cambimos el nombre*/
+.widthLogData{
     width:15%;
 }
 
@@ -195,7 +195,7 @@ nav.navbar {
 }
 
 
-/*Aqui comienzan los fondos de los tipos de pokemones-- Y se cambio la opacidad*/
+/*Aqui comienzan los fondos de los tipos de pokemones-*/
 .Water{
     background-color: rgba(0, 139, 253, 0.7);
     border: 10px solid rgba(0, 63, 114, 0.986);
@@ -299,7 +299,6 @@ img{
 }  
 
 }/* <----Cierre del @Media de 1024px*/
-
 
 
 @media (max-width: 800px) { 
