@@ -794,3 +794,14 @@ describe('filterByName', () => {
     expect(window.lol.filterByName(newArrayInfo, 'As')[0].name).toEqual('Ashe');
   });
 });
+
+// Test de la función para sacar promedio
+describe('toReduce', () => {
+it('is a function', () => {
+  expect(typeof window.lol.toReduce).toBe('function');
+});
+it('Should return the average of the difficulty of the champions', () => {
+  expect(window.lol.toReduce(newArrayInfo, '5.769')).toEqual('');
+});
+});
+
