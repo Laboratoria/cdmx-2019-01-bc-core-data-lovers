@@ -1,4 +1,4 @@
-#Indicadores economicos en America Latina
+# Indicadores economicos en America Latina
 
 
 ## Índice del proyecto de pagina
@@ -46,46 +46,46 @@ Para poder descargar y usar este repositorio se necesita tener:
 -una shell para interpretar líneas de comando 
 -git
 
-##Instalación
+## Instalación
 
 Para poder usar el repositorio necesitas forquearlo (dando click donde dice fork) y despues clonarlo en la consola
 
-##Pruebas-unitarias
+## Pruebas-unitarias
 
 Las pruebas para esta pagina se relizaron con el framework Jest
 Para poder ejecutar las pruebas abres la terminal, te posicionas en la carpeta de el proyecto y en la de test, posteriormente ejecutas npm run test.
 Las pruebas te indican que es lo que deben de retornar para ser positivas
 
 
-##Pruebas-de-estilo-de-codificación
+## Pruebas-de-estilo-de-codificación
 
 
 - "htmlhint": "^0.10.1"
 - "eslint": "^5.9.0"
-##Construido-con
+## Construido-con
 
 - Vanilla Javascript
 - HTML
 - CSS
 - Jest
 
-##Contribuyendo
+## Contribuyendo
 
 Se agradecerá toda contribución y comentarios a este proyecto.
 Lo podras hacer haciendo fork en el repositorio de git, clonandolo de manera local en tu pc.
 
 
-##Versionando
+## Versionando
 
 El sistema de control de versiones en este caso es el de git que permite descargar el repositorio y las actualizaciones a traves de el comando git pull. Se recomienda numerar el versionado por si se quiere tener mayor orden sobre lo que se hace.
 
-##Autores
-##Licencia
+## Autores
+## Licencia
 
 codigo abierto
 datos tomados del Banco Mundial
 
-##Agradecimientos
+## Agradecimientos
 
 Al equipo No 1:
 
