@@ -55,7 +55,7 @@ const data = window.WORLDBANK;
 const indicator = document.getElementById("information-filter-inner");
 const listQuestion = document.getElementById("list-question");
 
-<<<<<<< HEAD
+
 // ejecutar el llenado del selector dependiendo del país
 const buttonTypes = Array.from(document.getElementsByClassName('search-country'));
 //console.log(buttonTypes);
