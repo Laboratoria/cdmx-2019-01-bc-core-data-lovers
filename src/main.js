@@ -17,7 +17,11 @@ const about = document.getElementById("about");
 const filters = document.getElementById("general-filter");
 //evento para ocultar y mostrar elementos
 navIcon.addEventListener('click', () => {
+<<<<<<< HEAD
+  navMenu.classList.toggle('ocultar');
+=======
 navMenu.classList.toggle('ocultar'); 
+>>>>>>> 20c852a27f42d1787088f79bf2a0c56bfa36abff
 });
 btnAbout.addEventListener('click', () => {
   about.classList.remove('ocultar');
@@ -25,6 +29,8 @@ btnAbout.addEventListener('click', () => {
   navMenu.classList.add('ocultar');
   news.classList.remove('mostrar-news');
 });
+//comentario
+
 btnNews.addEventListener('click', () => {
   about.classList.add('ocultar');
   filters.classList.add('ocultar');
@@ -38,6 +44,7 @@ btnFilters.addEventListener('click', () => {
   news.classList.remove('mostrar-news');
 });
 //acceder a la data de cada pais
+
 const data = window.WORLDBANK;
 
 // const countryMex = WORLDBANK.MEX.indicators;
@@ -45,10 +52,12 @@ const data = window.WORLDBANK;
 // const countryBra= WORLDBANK.BRA.indicators;
 // const countryChl= WORLDBANK.CHL.indicators;
 
+
 // section donde esta la informacion y el select
 const indicator = document.getElementById("information-filter-inner");
 const listQuestion = document.getElementById("list-question");
 
+<<<<<<< HEAD
 // ejecutar el llenado del selector dependiendo del país
 const buttonTypes = Array.from(document.getElementsByClassName('search-country'));
 //console.log(buttonTypes);
@@ -83,6 +92,7 @@ listQuestion.addEventListener("change", () => {
   //indicator.appendChild(mediaContent);
   
 });
+
 
 
 const radioFilters = Array.from(document.getElementsByClassName('radio__filter'));
@@ -121,6 +131,7 @@ for (let radioItem in radioFilters){
 
 
 
+
 // on radio filters change 
 // const radioYearMayor = document.getElementById("asc");
 // radioYearMayor.addEventListener("change", () => {
@@ -134,4 +145,12 @@ for (let radioItem in radioFilters){
 //   }
 // })
 
+
+
+// for(let i = 0; i<elements.length ; i++){
+// elements[i].addEventListener("click", () => {
+//   let valElement = elements[i].value
+//   window.worldbank.filterData(ciudadesMex, valElement)
+//   )};
+// }
 
