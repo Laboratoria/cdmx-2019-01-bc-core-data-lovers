@@ -1,423 +1,229 @@
 @font-face {
-  font-family: Pokemon-Hollow;
-  font-style: normal;
-  font-weight: normal;
-  src: url(assets/fonts/Pokemon\ Hollow.ttf);
-}
-
-@font-face {
   font-family: Pokemon-Solid;
   font-style: normal;
   font-weight: normal;
   src: url(assets/fonts/Pokemon\ Solid.ttf);
 }
 
-html,body{
-    margin:0;
-    height:100%;
+@font-face {
+  font-family: Sketch;
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/Sketch\ College.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
 
 }
+
+
+p i {
+  display: inline-block;
+  font-size: 20px;
+  }
+
 .styleP {
-    font-family: 'Indie Flower', cursive;
-    color: black;
-    font-size: 2vw;
-}
-
-
-
-
-/* Add a black background color to the top navigation */
-/* .topnav {
-  background-color: #333;
-  overflow: hidden;
-} */
-
-
-/* .active {
-  background-color: #4CAF50;
-  color: white;
-    padding: 14px 10px 0px 0px;
-} */
-
-/* Style the links inside the navigation bar
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 100px 14px 50px;
-  text-decoration: none;
-  font-size: 17px;
-} */
-
-/* Change the color of links on hover */
-/* .topnav a:hover {
-  background-color: #bbb;
-  color: black;
-
-} */
-
-/* Add an active class to highlight the current page */
-
-/* Hide the link that should open and close the topnav on small screens */
-/* .topnav .icon {
-  display: none;
-}
-
-.topnav input[type=text] {
-  float:right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-} */
-
-/* @media screen and (max-width: 600px) {
-  .topnav input[type=text] {
-    float:left;
-    display: block;
-    text-align: left;
-    width: 30%;
-    margin: 12px 0px -50px 5px;
-    padding:0px 0px 0px 0px;
-    margin-left: 10px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-
-  }
-} */
-
-
-
-
-/* @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon
-
-           {
-
-    float: right;
-    display: block;
-    width: 0px;
-margin-right: -40px;
-  }
-} */
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-
-  /* .topnav.responsive {position: relative;} */
-  /* .topnav.responsive a.icon { */
-    /* position:relative; */
-    /* left:400px; */
-    /* top: -193px; */
-
-/*
-  /* } */
-
-  /* .topnav.responsive .active{
-    margin-right: -40px;
-
-
-  } */
-  /* .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  } */
-
-
-  .divPokemon{
-      position: relative;
-      background-image: url(../src/assets/img/cajita.png);
-      background-size: cover;
-      background-position: center center;
-      height: 200px;
-      width: 100px;
-
-      /* font-family: Pokemon-Solid; */
-      color: rgb(65, 37, 43);
-      display: inline-block;
-      padding: 5%;
-      margin: 5%;
-      border-radius: 10%;
-
-  }
-
-
-
-.divPokemon{
-    position: relative;
-    background-image: url(../src/assets/img/cajita.png);
-    background-size: cover;
-    background-position: center center;
-    height: 200px;
-    width: 100px;
-
-    /* font-family: Pokemon-Solid; */
-    color: rgb(65, 37, 43);
-    display: inline-block;
-    padding: 5%;
-    margin: 3%;
-    margin-left: 10%;
-    border-radius: 10%;
-
-}
-
-
-
-
-/* .namePokemon{
-    font-size: 63%;
-    letter-spacing: 1px;
-    margin-top: 50%;
-    margin-left:10%;
-    margin-bottom: 60%;
-    font-family: 'Indie Flower', cursive;
-
-} */
-
-
-.divPokemon img{
-/* margin-top: 40%;
-margin right: : 50%; */
-position:absolute;
-   height:50%;
-   width:100%;
-   top:70px;
-   left:10px;
-}
-.divPokemon p{
-    display: inline-block;
-    position: absolute;
-
-}
-
-.divPokemon figure{
-    display: inline-flex;
-    margin: 0%;
-}
-
-.namePokemon{
   font-family: 'Indie Flower', cursive;
-  font-size: 63%;
-  letter-spacing: 1px;
-margin-top: 60%;
-margin-left: -40%;
-text-align: center
+  color: black;
+  font-size: 2vw;
+}
 
+.print-pokemon {
+  position: relative;
+  background-image: url(../src/assets/img/cajita.png);
+  background-size: cover;
+  background-position: center center;
+  width: 200px;
+  height: 300px;
+  color: rgb(244, 244, 248);
+  display: inline-block;
+  padding: 1%;
+  margin: 3%;
+  border-radius: 10%;
 
 }
 
-.styleButtonNext{
-  display: block;
-position: absolute;
-right: 44%;
-top:190px;
-size: auto;
-border-width: 2px;
-border-color: #000;
+.namePokemon {
+  font-size: 64%;
+  letter-spacing: 2px;
+  font-family: 'Indie Flower', cursive;
+  
+  border-radius: 5px;
+  padding: 0%;
+  margin: 10px;
+  text-align: left;
+}
+
+
+.print-pokemon img {
+  width: 200%;
+  top: 70px;
+  left: 10px;
+}
+
+
+.print-pokemon figure {
+  display: initial;
+}
+
+
+.styleButtonNext1 {
+
+  border-radius: 20px;
+  border: 3% groove #000000;
+  cursor: pointer;
+  -webkit-transition-duration: 0.10s;
+  transition-duration: 0.4s;
+  font-family: Pokemon-Solid;
+  color: rgb(12, 10, 1);
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
+  height: 125px;
+  width: 200px;
+}
+.styleButtonNext2 {
+
+  border-radius: 20px;
+  border: 3% groove #000000;
+  cursor: pointer;
+  -webkit-transition-duration: 0.10s;
+  transition-duration: 0.4s;
+  font-family: Pokemon-Solid;
+  color: rgb(12, 10, 1);
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
+  height: 180px;
+  width: 300px;
+}
+#Fire.styleButtonNext1:hover {
+  background-color: rgb(252, 83, 5);
+}
+#Normal.styleButtonNext1:hover {
+  background-color: rgb(134, 126, 122);
+}
+#Water.styleButtonNext1:hover {
+  background-color: rgb(48, 137, 240);
+}
+#Grass.styleButtonNext1:hover {
+  background-color: rgb(44, 219, 67);
+}
+#Electric.styleButtonNext1:hover {
+  background-color: rgb(245, 222, 19);
+}
+#Ice.styleButtonNext1:hover {
+  background-color: rgb(171, 169, 196);
+}
+#Fighting.styleButtonNext1:hover {
+  background-color: rgb(32, 27, 27);
+  color:floralwhite;
+}
+#Poison.styleButtonNext1:hover {
+  background-color: rgb(194, 79, 204);
+}
+#Ground.styleButtonNext1:hover {
+  background-color: rgb(143, 92, 69);
+}
+#Flying.styleButtonNext1:hover {
+  background-color: rgb(190, 184, 181);
+}
+#Psychic.styleButtonNext1:hover {
+  background-color: rgb(160, 161, 73);
+}
+#Bug.styleButtonNext1:hover {
+  background-color: rgb(36, 187, 104);
+}
+#Rock.styleButtonNext1:hover {
+  background-color: rgb(122, 105, 97);
+}
+#Ghost.styleButtonNext1:hover {
+  background-color: rgb(169, 36, 187);
+}
+#Dragon.styleButtonNext1:hover {
+  background-color: rgb(120, 236, 43);
+}
+.styleButtonNext1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  /* Green */
+  color: black;
+  border: solid;
+  border-width: 2px;
+  transform: translateY(4px);
+}
+
+.styleButtonNext1:active {
+  box-shadow: 0 7px #666;
+  transform: translateY(8px);
+}
+
+.numberSite{
+  font-family: Sketch;
+  font-size: 20px;
+  text-align: center;
+}
+#main {
+  background-image: url(../src/assets/img/fondoPokemon.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+
+}
+
+#serch {
+  background-image: url(../src/assets/img/2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline-block;
+  display: none;
+  overflow: auto;
+}
+
+.imgPokemon img {
+  width: 50%;
+  display: inline-block;
+}
+
+.styleButtonNext {
+
   border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
   -webkit-border-radius: 50% 50% 50% 50%;
   border: 3% groove #000000;
-  cursor:pointer;
+  cursor: pointer;
   -webkit-transition-duration: 0.10s;
   transition-duration: 0.4s;
   font-family: Pokemon-Solid;
   color: rgb(12, 10, 1);
   font-size: 2vw;
-  padding: 2.5% ;
-  margin:0;
-  /* margin-left: 30px; */
-  /* margin-top: 2%; */
-  /* margin-right: 0%; */
+  padding: 20px 30px 20px 30px;
+  height: 150px;
+  width: 150px;
 }
 
-.styleButtonNext:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgb(94, 204, 207); /* Green */
-    color: black;
-    border: solid;
-    border-width:2px;
-    transform: translateY(4px);
-}
-.styleButtonNext:active {
-    box-shadow: 0 7px #666;
-    transform: translateY(8px);
-}
-
-#main{
-    background-image: url(../src/assets/img/fondoPokemon.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-
-}
-
-#navs{
-background-image: url(../src/assets/img/2.jpg);
-  display:none;
-}
-
-
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: inherit;
-}
-
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
+.styleButtonNext:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(94, 204, 207);
+  /* Green */
   color: black;
+  border: solid;
+  border-width: 2px;
+  transform: translateY(4px);
 }
 
-/* Add an active class to highlight the current page */
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.sidenav a{
-  position: relative;
-margin-top: 15%;
-}
-
-
-
-#mySidenav a {
-  position: absolute;
-  left: -80px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-}
-
-#mySidenav a:hover {
-  left: 0;
-}
-
-.cajafuego{
-  margin-left: 100px;
-}
-
-#fire{
-  margin-right: 100px;
-}
-
-
-#about {
-  top: 20px;
-  background-color: #4CAF50;
-}
-
-#blog {
-  top: 80px;
-  background-color: #2196F3;
-}
-
-#projects {
-  top: 140px;
-  background-color: #f44336;
-}
-
-#contact {
-  top: 200px;
-  background-color: #555
-}
-
-#pokemons{
-  background-image: black;
-
-}
-#serch{
-  background-image: url(../src/assets/img/2.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-
-    position: relative;
-    display: inline-block;
-    display: none;
-    overflow: auto;
-
-}
-
-.bottonPokemons{
-width:10%;
-}
-
-
-
-.imgPokemon img{
-    width: 7em;
-    height: 7em;
-    margin-top:-32%;
-    margin-left: 8%;
-    display:inline-block;
-}
-
-
-
-
-.logo{
-  position: absolute;
-  left: 28%;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 40vw;
+.styleButtonNext:active {
+  box-shadow: 0 7px #666;
+  transform: translateY(8px);
 }
