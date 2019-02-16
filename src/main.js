@@ -1,6 +1,5 @@
 //Declaración de variables para manipular la data
 const dataPokemon = window.POKEMON.pokemon;
-dataPokemon.weaknesses = String(dataPokemon.weaknesses);
 
 //Declaración para a secciones del html
 const pokemones = document.getElementById('pokemones');
@@ -22,7 +21,7 @@ btnStart.addEventListener("click", () => {
 //Función que imprime los datos que son llamados y la imagen de los pokemones en el contenedor pokemones
 const toPrint = (mapData) => {
   const filter = pokemones;
-  filter.innerHTML = "";
+  // filter.innerHTML = "";
   let printPokeons = '';
   mapData.map((dataPokemon) => {
     printPokeons +=
@@ -85,9 +84,16 @@ const toPrint = (mapData) => {
                   <th colspan="3">
                   <table class="evolution">
                       <tr>
-                        <td><button>Hola1</button></td>
-                        <td><button>Hola2</button></td>
-                        <td><button>Hola3</button></td>
+                        <td><button type="button" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> PREVIOUS
+                      </button></td>
+                        <td><button type="button" class="btn btn-info btn-lg">
+                        <img src="${dataPokemon.img}"><br>
+                        <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> EVOLUCIÓN <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+                      </button></td>
+                        <td><button type="button" class="btn btn-success btn-lg">
+                        NEXT <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+                      </button></td>
                         </tr>
                     </table>
                   </th>  
