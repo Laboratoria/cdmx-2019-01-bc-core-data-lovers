@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>ProMujer</title>
   <link rel="stylesheet" href="style.css">
@@ -24,7 +25,7 @@
       <nav class="navigation">
         <ul>
           <li><a href="#countries">Estadísticas</a></li>
-          <li><a href="#conferencias" type="button" id="conf">Conferencias</a></li>
+          <li><a href="#conferencias">Conferencias</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -35,18 +36,22 @@
       <div id="text">
         <p>Centro de investigación para el Desarrollo de la mujer en América Latina.</p>
     </div> 
-<div id="button-est">
-  <button id="btn-est">Ver estádisticas</button>
-</div>
-    
+      <div id="button-est">
+        <button id="btn-est">Ver estádisticas</button>
+      </div>
     </section>
   
-   
     <section id="countries">
-      <button id="BRA" class="button">Brasil</button>
-      <button id="CHL" class="button">Chile</button>
-      <button id="MEX" class="button">México</button>
-      <button id="PER" class="button">Perú</button>
+      <div id="text-countries"> 
+        <h2>PAÍS</h2>
+        <h3>Selecciona el país de tu interés:</h3>
+      </div>
+      <div id="group-buttons"> 
+        <button id="BRA" class="button btn btn-danger">Brasil</button>
+        <button id="CHL" class="button">Chile</button>
+        <button id="MEX" class="button">México</button>
+        <button id="PER" class="button">Perú</button>
+      </div>
     </section>
     <section>
       <select id="indicator">
