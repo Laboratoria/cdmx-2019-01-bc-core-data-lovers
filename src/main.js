@@ -25,7 +25,7 @@ const printOption = (result) => { // Filtrar los indicadores del select por pala
     let education = /educación/i; // Se usa la expresión regular -educación- para incorporar los indicadores al select
     let matchs = printIndicatorName.match(education);
     if (matchs !== null) {  // Retirar indicadores con valores vacíos
-      let indicatorOption = `<option value="${printIndicatorName}" >${printIndicatorName}</option>`
+      let indicatorOption = `<option value="${printIndicatorName}" >${printIndicatorName}</option>`;
       selectIndicator.insertAdjacentHTML("beforeend", indicatorOption);
       return matchs
     }
@@ -33,7 +33,7 @@ const printOption = (result) => { // Filtrar los indicadores del select por pala
 
 }
 
-const printYears = (resultYear) => { { // Imprimir los datos(año-porcentaje) del indicador-original-prueba
+const printYears = (resultYear) => {  // Imprimir los datos(año-porcentaje) del indicador-original-prueba
   dataYear.innerHTML = "";
   for (const key in resultYear) {
     if (resultYear.hasOwnProperty(key)) {
@@ -87,5 +87,5 @@ const printPercents = (resultYear) => {
   }
 }
 
-selectIndicator.addEventListener("change", sortByPercent);
+selectIndicator.addEventListener("change", sortByPercent); 
 
