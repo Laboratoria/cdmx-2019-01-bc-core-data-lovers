@@ -21,16 +21,23 @@
 
 ## Introducción
 
+La siguiente página fue creada en base a la necesidad de estudiantes de economía, a los que esta dirigida la misma, de obtener informacion sobre indicadores del banco mundial, de manera ordenada y sencilla, ademas de poder acceder a los numeros de estos indicadores, es decir los años y las mediciones de cada uno asi como lo son porcentajes; Proporcionandoles tambien la medicion del promedio de cada data por indicador; La tematica de los indicadores se dirige primordialmente a la poblacion femenina, aunque no es exclusiva de esta.
+
+Historia de usuario:
+
 
 ## Descripción
 
-La siguiente página fue creada en base a la necesidad de estudiantes de economía, a los que esta dirigida la misma, de obtener informacion sobre indicadores del banco mundial, de manera ordenada y sencilla, ademas de poder acceder a los numeros de estos indicadores, es decir los años y las mediciones de cada uno asi como lo son porcentajes; Proporcionandoles tambien la medicion del promedio de cada data por indicador; La tematica de los indicadores se dirige primordialmente a la poblacion femenina, aunque no es exclusiva de esta.
+Prototipo de baja fidelidad:
 
-Los paises que se analizan en esta pagina son: México, Peru, Brasil y Chile.
+https://marvelapp.com/3dej696
+
 
 ## Parámetros
 
-Para elaborar esta pagina se han tomado los siguientes indicadores o parametros: demográfia, económia, salud, comercio, violencia de genero y educación
+Para elaborar esta pagina se han tomado los siguientes indicadores o parametros: demográfia, económia, salud, comercio, violencia de genero y educación.
+
+Los paises que se analizan en esta pagina son: México, Peru, Brasil y Chile.
 
 
 ## Comenzando
@@ -64,6 +71,7 @@ Las pruebas te indican que es lo que deben de retornar para ser positivas
 - "eslint": "^5.9.0"
 ## Construido-con
 
+- marvel app
 - Vanilla Javascript
 - HTML
 - CSS
