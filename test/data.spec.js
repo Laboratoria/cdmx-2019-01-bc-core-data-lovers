@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-require('../src/data.js');
+/*require('../src/data.js');
 
 var WORLDBANK = {
   "MEX": {
@@ -84,11 +83,14 @@ describe('WorldBank', () => {
   });
 
   it('WorldBank.dataCountries is a function', () => {
-    expect(typeof window.WorldBank.dataCountries).toBe('function');
-=======
+    expect(typeof window.WorldBank.dataCountries).toBe('function');*/
+
+
+
 let dataCountries = require('../src/data.js');
 let data = require('../src/data.js');
 let countries = require('../src/data.js');
+
 describe('WorldBank.dataCountries', () => {
   it('is a function', () => {
     expect(typeof Array).toBe('{[]}');
@@ -96,7 +98,6 @@ describe('WorldBank.dataCountries', () => {
 
   it('returns `dataByCountries`', ([]) => {
     expect(data[countries].indicators).toBe('dataByCountries');
->>>>>>> master
   });
 
   it('Debería retornar un array de objetos', () => {

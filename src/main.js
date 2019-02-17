@@ -9,6 +9,7 @@ let dataFilter = {}
 //Constante para cachar el evento y puntualizar mediante id, el resultado de la función
 const buttonClick = () => { 
   let countries = event.target.id;
+  console.log(countries)
   let result = window.WorldBank.dataCountries(dataWorldbank, countries);
   printOption(result);
 }
