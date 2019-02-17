@@ -127,37 +127,34 @@ for (const key in muestra.data) {
   }
 }
 
-//Si la data es un objeto
+//Window.lol es un objeto
 describe('lol es un objeto', () => {
-  it('is an object', () => {
+  it('window.lol is an object', () => {
     expect(typeof window.lol).toBe('object');
   });
 });
 
-//Si filtrar es una función
-describe('Debería de ser una función', () => {
-  it('is a function', () => {
-    expect(typeof window.lol.filtroDataRoles).toBe('function');
-  });
-});
-
-//Si iterar data es una función
+//Función iterarData para convertir la data LOL de un objeto a un array 
 describe('Debería de ser una función', () => {
   it('is a function', () => {
     expect(typeof window.lol.iterarData).toBe('function');
   });
 });
 
-// si filtrar por roles funciones retorna los campeones por rol
-describe('filtroDataRoles', () => {
+//Función filtrado por roles  
+describe('Filtra, devuelve un arreglo de los campeones filtrados', () => {
+  it('filtroDataRoles is a function', () => {
+    expect(typeof window.lol.filtroDataRoles).toBe('function');
+  });
   it('Should returns the objetc Aatrox if we select Tank', () => {
     expect(window.lol.filtroDataRoles('Tank', dataToArray)[0]).toEqual(dataToArray[0]);
-  })
+  });
 });
 
+
 //si filtrado por busqueda es una función
-describe('Debería de ser una función', () => {
-  it('is a function', () => {
+describe('Filtra, debería devolver un arreglo del id del campeo correspondiente al valor del input search', () => {
+  it('filterBySearch is a function', () => {
     expect(typeof window.lol.filterBySearch).toBe('function');
   });
 
@@ -177,7 +174,7 @@ describe('Debería de ser una función', () => {
 
 //Función desplegar la tarjeta completa del campeon que fue seleccionado 
 describe('selectCharacter, retorna el arreglo con rl personaje por el id indicado', () => {
-  it('is a function', () => {
+  it('selectCharacter is a function', () => {
     expect(typeof window.lol.selectCharacter).toBe('function');
   });
 
