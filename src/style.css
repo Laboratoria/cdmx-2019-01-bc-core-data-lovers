@@ -257,7 +257,7 @@ img {
   margin: auto;
   border: 0px;
   width: 85%;
-  height: 70%;
+  height: 55%;
   padding-top: 30%;
 }
 
@@ -268,13 +268,24 @@ img {
   height: 40vh;
   border-top-color: #efc056;
   border-top-style: solid;
+  padding-top: 3%;
 }
 
 h1 {
   font-size: 3em;
   color: #efc056;
   text-align: center;
-  padding: 50px;
+  padding: 1%;
+}
+
+.champion-title {
+  font-size: 3em;
+  color: #efc056;
+  text-align: center;
+
+}
+.champion-stats {
+  padding-left: 3%;
 }
 }
 
