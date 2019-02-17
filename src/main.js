@@ -4,12 +4,13 @@ let yearbutton = document.getElementById("yearbttn");
 let userbutton = document.getElementById("user");
 //Declaramos input del consulta
 let searchbutton = document.getElementById("search");
-//Declaramos input del ALL DATA
-//let allDataButton = document.getElementById("all");
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
 //Constante que contiene la data
 const injuriesBy = window.INJURIES;
+//Declaramos botón de ordenar
+let ordenbutton = document.getElementById("ordendata");
+
 //Users
 let motociclista = "MOTOCICLISTA"
 ciclista = "CICLISTA"
@@ -17,7 +18,9 @@ peaton = "PEATÓN"
 auto = "AUTOMOVILISTA"
 
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
+
 searchbutton.addEventListener("click", () => {
+
   let resultDatos = []
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
@@ -28,14 +31,7 @@ searchbutton.addEventListener("click", () => {
     newbike = [ciclista, resultDatos[2]]
     newpeaton = [peaton, resultDatos[3]]
     newauto = [auto, resultDatos[4]]
-    
-    let ordered = [newmoto, newbike, newpeaton, newauto]
-    const res = ordered.sort((a,b) => {
-      a > b
-      return a[1] > b[1]
-    })
-    console.log(res)
-    
+
     const table = document.getElementById('table')
     table.innerHTML = `          <table>
     <tr>
@@ -66,5 +62,16 @@ searchbutton.addEventListener("click", () => {
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);
     resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
   }
-  console.log(resultDatos)
 });
+// ordenbutton.addEventListener("click",() => {
+//   alert("holi")
+//   ordenDatos = window.data.ordenData(injuriesBy,resultDatos);
+//   console.log(ordenDatos)
+//   return ordenDatos
+// })
+
+// function showAlert(){
+//   alert('Holi');
+// }
+
+// ordenbutton.addEventListener('click', showAlert);
