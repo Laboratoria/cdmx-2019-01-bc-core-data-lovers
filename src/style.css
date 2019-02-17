@@ -1,27 +1,20 @@
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.map {
-  size: 10px, 20px;
-
-}
-
-h1 {
-  color: #57295F;
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #C4D5E0;
   background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: ;
+  height: 1500px;
+  font-size: 20px;
+  list-style: height 16px;
+}
+
+.img1 {
   padding-top: 30%;
   align-content: initial;
-  display: block;
-}
-
-.title {
-  padding-inline-start: 3%;
-  margin-top: 5%;
+  display: flexbox;
 }
 
 ::selection {
@@ -34,31 +27,17 @@ h1 {
   color: #000;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 1500px;
-  font-size: 16px;
-  line-height: 1.5;
+
+.container {
+  width: 100%;
+  position: static;
+  margin: 0 auto;
 }
 
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-.logo {
-  font-family: Montserrat;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 50px;
-  margin: 0px;
-  padding: 0px;
+.col-xs-12 col-sm-8 col-md-9 col-lg-9 {
+  width: 100%;
+  position: ;
+  margin: auto;
 }
 
 .inner {
@@ -68,12 +47,14 @@ a,
 }
 
 header {
+  image: url(imagen/Latineduca.png) size:10%;
   position: fixed;
   width: 100%;
   padding-top: 0px;
-  background: #fff;
-  transition: 0.7s all;
+  background-color: #e1e1e1;
+  transition: 0.8s all;
   z-index: inherit 2;
+
 }
 
 header.alt-header {
@@ -85,11 +66,10 @@ header.alt-header {
 }
 
 body.header-fixed header {
-  position: fixed;
-  top: 0px;
+  position: ce top: 100px;
   right: 2px;
-  padding-top: 0px;
-  width: 0%;
+  padding-top: 100px;
+  width: 100%;
   z-index: 2;
 }
 
@@ -129,8 +109,7 @@ nav a:hover {
   float: left;
   line-height: 0px;
   transition: 0.7s all;
-  align-content: flex-start;
-  margin: 3%;
+  margin: 6%;
   display: inline;
 }
 
@@ -147,28 +126,25 @@ body.header-fixed .logo {
   color: #fff;
 }
 
-section .inner {
-  padding-top: 100px;
+section .container {
+  padding: 100px;
+  width: 100px;
+
 }
 
-.img1 {
-  height: auto;
-  max-width: 100%;
-  padding: 0%;
-  margin: 20%, 0%;
-  border-image: 0mm;
-  ;
+
+.logo {
+  padding: 10px;
+  width: 350px;
+  margin-top: 3%;
+  margin-left: 40px;
+
 }
 
-.img4 {
-  background-image: url(imagenes/geome.jpg) min-height: 5vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.title {}
 
 .btnliteracy,
-.btnlevel,
-.btnregistration {
+.opt {
   background-color: rgba(133, 60, 145, 0.97);
   width: 40%;
   height: 60%;
@@ -176,6 +152,7 @@ section .inner {
   color: #fff;
   font-family: Montserrat;
   size: 10%;
+  display: -moz-inline-grid;
 }
 
 .slc {}
