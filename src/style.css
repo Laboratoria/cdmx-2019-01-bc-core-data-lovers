@@ -247,7 +247,6 @@ img {
   right: 10%;
   padding-right: 0.2em;
   padding-left: 0.2em;
-
 }
 
 /* Contenido del modal */
@@ -284,6 +283,7 @@ h1 {
   text-align: center;
   padding-bottom: 2%
 }
+
 .champion-stats {
   padding-left: 3%;
 }
@@ -344,7 +344,6 @@ h1 {
 
   p {
     font-size: 1.6em;
-
   }
 
   .champion {
@@ -389,6 +388,7 @@ h1 {
     top: 0px;
     width: 73%;
   }
+
   .tags {
     height: 3em;
   }
@@ -422,13 +422,12 @@ h1 {
     text-align: center;
     padding-bottom: 2%
   }
+
   .champion-stats {
     padding-left: 3%;
     font-size: 2em;
   }
 }
-
-
 
 @media screen and (min-width: 1200px){
   h3 {
@@ -440,7 +439,6 @@ h1 {
 
   p {
     font-size: 1.5em;
-
   }
 
   .champion {
@@ -479,6 +477,7 @@ h1 {
     text-align: center;
     padding-bottom: 1%
   }
+  
   .champion-stats {
     padding-left: 3%;
     font-size: 1.3em;
