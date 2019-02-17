@@ -14,6 +14,7 @@ header {
 
 figure {
   margin: 0%;
+  display: inline-block;
 }
 
 #menu {
@@ -331,7 +332,7 @@ footer {
     font-family: sans-serif;
     padding: 1%;
     font-size: 14px;
-    margin: 0;
+    width: 25%;
   }
 
   .icon {
@@ -356,15 +357,8 @@ footer {
   }
 
   header{
-    background: white;
-    display: inline-block;
-    vertical-align: top;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: auto;
-  }
+    }
 
 .button1{
   text-align: center;
@@ -380,8 +374,13 @@ footer {
 
 
 @media (min-width: 1024px) and (max-width: 1380px) {
+
+  header{
+    width: 100%;
+    }
+
   .logo {
-    width: 4%;
+    width: 10%;
     height: auto;
     padding: 1%
   }
@@ -426,7 +425,22 @@ footer {
 
   #infoSecI{
     font-size: 14px;
-    margin: 4% 69% 6% 0%;
+    margin: 4% 0% 6% 0%;
+    display: inline-block;
+    float: left;
+  }
+
+  #map{
+  display: inline-block;
+  width: 44%;
+  height: auto;
+  padding: 1.5%;
+  padding-block-start: 5%;
+  }
+
+#totalParraph{
+
+}
 
 }
 /*
@@ -435,6 +449,10 @@ footer {
 */
 
 @media (min-width: 767px) and (max-width: 1024px) {
+
+  header{
+    width: 100%;
+    }
 
    .menu {
     width: 5%;
@@ -483,6 +501,8 @@ footer {
   border-left: 4px solid rgb(235, 0, 139);
   transition: all .5s ease;
   }
+
+
 }
 /*
 
@@ -491,6 +511,11 @@ footer {
 */
 
 @media (min-width: 300px) and (max-width: 767px) {
+
+  header{
+    width: 100%;
+  }
+
   .menu {
     width: 8%;
     height: auto;
