@@ -378,6 +378,9 @@ h1 {
     top: 0px;
     width: 73%;
   }
+  .tags {
+    height: 3em;
+  }
 }
 
 
