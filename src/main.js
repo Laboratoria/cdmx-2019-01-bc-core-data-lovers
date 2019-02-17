@@ -17,12 +17,21 @@ const closeFunFacts = document.getElementById('close-fun');
 
 
 const printModal = (champ) => {
-  document.getElementById('printModal').innerHTML = `<h1>${champ.name}</h1><h2>${champ.tags[0]}</h2><h2>${champ.tags[1]} </h2><div class="background-modal" style="background-image:url(${champ.splash})">
-  <p>Attack: ${champ.info.attack}</p><p>Defense: ${champ.info.defense}</p><p>Magic: ${champ.info.magic}</p>
-  <p>Difficulty: ${champ.info.difficulty}</p>
-  <p>HP: ${champ.stats.hp}</p><p>MP: ${champ.stats.mp}</p><p>Armor: ${champ.stats.armor}</p>
-  <p>Crit: ${champ.stats.crit}</p><p>Attack Damage: ${champ.stats.attackdamage}</p><p>Move Speed: ${champ.stats.movespeed}</p>
-  </div>
+  document.getElementById('printModal').innerHTML = `<h1>${champ.name}</h1>
+  <p class="champion-title">${champ.title}</p>
+  <div class="background-modal" style="background-image:url(${champ.splash})">
+  <h2>${champ.tags[0]}</h2>
+  <h2>${champ.tags[1]} </h2>
+  <p class="champion-stats">Attack: ${champ.info.attack}</p>
+  <p class="champion-stats">Defense: ${champ.info.defense}</p>
+  <p class="champion-stats">Magic: ${champ.info.magic}</p>
+  <p class="champion-stats">Difficulty: ${champ.info.difficulty}</p>
+  <p class="champion-stats">HP: ${champ.stats.hp}</p>
+  <p class="champion-stats">MP: ${champ.stats.mp}</p>
+  <p class="champion-stats">Armor: ${champ.stats.armor}</p>
+  <p class="champion-stats">Crit: ${champ.stats.crit}</p>
+  <p class="champion-stats">Attack Damage: ${champ.stats.attackdamage}</p>
+  <p class="champion-stats">Move Speed: ${champ.stats.movespeed}</p>
   </div>`;
   }
 
