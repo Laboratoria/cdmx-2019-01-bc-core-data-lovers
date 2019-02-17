@@ -30,6 +30,7 @@ window.lol = {
     const filtering = newArrayChamp.filter(element => element.primaryRol == rolId || element.secondaryRol == rolId);
     return filtering;
   },
+
   //Aquí inicia la función para ordenar por ataque descendente
   sorterByAttackDesc: (newArrayChamp) => {
     const attackSorterDesc = newArrayChamp.sort((a, b) => {
@@ -42,9 +43,9 @@ window.lol = {
         return 0;
       }
     });
-
     return attackSorterDesc;
   },
+
   //Aquí inicia la función para ordenar por ataque ascendente
   sorterByAttackUpw: (newArrayChamp) => {
     const attackSorterUpw = newArrayChamp.sort((a, b) => {
@@ -57,10 +58,8 @@ window.lol = {
         return 0;
       }
     });
-
     return attackSorterUpw;
   },
-
 
   sorterByMagic: (newArrayChamp) => {
     const magicSorter = newArrayChamp.sort((a, b) => {
@@ -117,7 +116,6 @@ window.lol = {
     }, 0);
     return champDifficulty;
   },
-
 
   //esta llave cierra window.lol
 }

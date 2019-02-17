@@ -15,7 +15,6 @@ const back = document.getElementById('back');
 // const funFacts = document.getElementById('fun-facts');
 const closeFunFacts = document.getElementById('close-fun');
 
-
 const printModal = (champ) => {
   document.getElementById('printModal').innerHTML = `<h1>${champ.name}</h1>
   <p class="champion-title">${champ.title}</p>
@@ -35,11 +34,11 @@ const printModal = (champ) => {
   </div>`;
   }
 
-
 //Input para buscar por nombre
 let search = document.getElementById('search');
-
+//Variable para extraer la data
 const lolData = window.LOL.data;
+
 //Evento del boton Comenzar
 startButton.addEventListener('click', () => {
   start.classList.add('hide');

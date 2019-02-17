@@ -643,7 +643,9 @@ const LOL = {
     },
   }
 };
+
 const newArrayInfo = window.lol.showData(LOL.data);
+
 //Test que confirma que window.lol es un objeto
 describe('window.lol', () => {
   it('is an object', () => {
@@ -653,7 +655,6 @@ describe('window.lol', () => {
 
 //Test de la función para filtrar por rol
 describe('filterByRol', () => {
-
   it('is a function', () => {
     expect(typeof window.lol.filterByRol).toBe('function');
   });
@@ -697,7 +698,6 @@ describe('filterByRol', () => {
 
 // Test de la función para ordenar por ataque de manera descendente
 describe('sorterByAttackDesc', () => {
-
   it('is a function', () => {
     expect(typeof window.lol.sorterByAttackDesc).toBe('function');
   });
@@ -720,7 +720,6 @@ describe('sorterByAttackDesc', () => {
 
 // Test de la función para ordenar por ataque de manera ascendente
 describe('sorterByAttackUpw', () => {
-
   it('is a function', () => {
     expect(typeof window.lol.sorterByAttackUpw).toBe('function');
   });
@@ -743,7 +742,6 @@ describe('sorterByAttackUpw', () => {
 
 // Test de la función para ordenar por magia
 describe('sorterByMagic', () => {
-
   it('is a function', () => {
     expect(typeof window.lol.sorterByMagic).toBe('function');
   });
@@ -763,7 +761,6 @@ describe('sorterByMagic', () => {
 
 // Test de la función para ordenar por defensa
 describe('sorterByDefense', () => {
-
   const newArrayInfo = window.lol.showData(LOL.data);
   it('is a function', () => {
     expect(typeof window.lol.sorterByDefense).toBe('function');
@@ -804,4 +801,3 @@ it('Should return the average of the difficulty of the champions', () => {
   expect(window.lol.toReduce(newArrayInfo, '5.769')).toEqual('');
 });
 });
-
