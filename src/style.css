@@ -451,6 +451,7 @@ h1 {
   #close-fun {
     font-size: 1.8em;
     margin-top: 2%
+    margin-right: 7%;
   }
 
   /* Contenido del modal */
@@ -480,6 +481,6 @@ h1 {
   }
   .champion-stats {
     padding-left: 3%;
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
