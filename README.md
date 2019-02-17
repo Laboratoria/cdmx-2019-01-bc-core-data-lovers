@@ -36,6 +36,10 @@ Pruebas de usabilidad:
 
 https://docs.google.com/forms/d/1gi4ybwQSOvqVvxtmSK1Zp3wWfRT3j5-JWEuMSQVS1kg/edit
 
+Prototipo de alta fidelidad:
+
+https://www.figma.com/file/VofsoE0IoUCePd1G6VCBDpEC/Untitled?node-id=4%3A1
+
 
 ## Parámetros
 
@@ -78,6 +82,7 @@ Las pruebas te indican que es lo que deben de retornar para ser positivas
 ## Construido con
 
 - marvel app
+- figma
 - Vanilla Javascript
 - HTML
 - CSS
@@ -625,22 +630,22 @@ compañera:
 ## Checklist
 
 - [x] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] No hace uso de `this`.
+- [x] Pasa linter (`npm pretest`)
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
 - [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
 - [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
 - [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
+- [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Opcional)
 
