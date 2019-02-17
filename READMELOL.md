@@ -19,10 +19,19 @@ La aplicación está estructurada utilizando:
 
 ### Scripts / Archivos
 - README.md: explica cómo descargar, instalar y ejecutar la aplicación así como una introducción a la aplicación, su funcionalidad y decisiones de diseño tomadas.
-- data.js: 
-lol.js: set de datos que muestra la lista de jugadores del videojuego League of Legends.
-- main.js: se implementan los objetos de mostrar, filtrar y ordenar la data, el cual debe estar exportado en el objeto global (window).
-- html/index: se reflejan los eventos del DOM para permitir interacción con el usuario (filtrado, ordenado). Se invoca al bucle for...in para procesar la data de objetos y convertirlo en un nuevo arreglo para mostrar cierto fragmento de información (siete indicadores), así como  las funciones .filter() y .sort() a través de los eventos generados al dar click en los botones y la lista desplegable de la aplicación.
+- data.js: contiene las funciones que manipulan la data (procesar, filtrar y ordenar).
+Se invoca al bucle for...in para procesar la data de objetos y convertirlo en un nuevo arreglo para mostrar cierto fragmento de información (siete indicadores), así como  las funciones .filter() y .sort() a través de los eventos generados al dar click en los botones y la lista desplegable de la aplicación.
+Funciones implementadas:
+* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
+  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar recibe tres parámetros.
+  * El primer parámetro, `data`, nos entrega los datos.
+  * El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de la data se quiere ordenar.
+  * El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
+  ascendente o descendente.
+- lol.js: set de datos que muestra la lista de campeones del videojuego League of Legends.
+- main.js: es donde se implementan los eventos del DOM para permitir interacción con el usuario al mostrar, filtrar y ordenar la data, el cual debe estar exportado en el objeto global (window).
+- html/index: tiene la estructura de la página.
 - data.spec.js: se encuentran los tests para confirmar que window.lol es un objeto y que las funciones de .filter() y .sort() son funciones.
 - CSS: permite dar el diseño a la interfaz en elementos como la tipografía, color, imagen de fondo, acomodar los elementos como textos, imágenes, botones, lista desplegable, encabezado, contenido y pie de página.
 - Carpeta de imágenes: se agregó una carpeta extra a la data ya brindada, esto con el fin de utilizar las imágenes para el fondo de pantalla en la página de inicio, un logo para página de inicio y otro para el encabezado, la lupa para el input de búsqueda y la imagen para el ícono de la página.
@@ -94,6 +103,6 @@ Más que problemas de usabilidad, se encontraron opiniones que ayudaron a mejora
 - Maritza Díaz Robles
 
 ## Agradecimientos
- - A las offices hours con Jonh, Mike, Silvana y Lizzie
+ - A las offices hours con Jonh, Mike, Silvana, Dení y Lizzie
  - Al trabajo en dupla
  - A los comentarios de otras duplas
