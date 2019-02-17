@@ -88,6 +88,8 @@ Para el segundo sprint se decidió cambiar el idioma de la información que perm
 
 Otra de las preguntas en la encuesta fue saber qué tipo de información les gustaría conocer de cada campeón, esto ayudó a determinar qué datos se mostrarían -de toda la data- en la tarjeta de cada jugador; como resultado, cada tarjeta mostraría lo más relevante a modo de no saturar de información irrelevante al usuario y mantener el aspecto visual más “limpio”.
 
+La encuesta realizada se puede ver acá: https://docs.google.com/forms/d/e/1FAIpQLScJVy2w6j63vSefiVoqEpTW78AuqqbGxprD-XtMgdXTLxgsMw/viewform?vc=0&c=0&w=1
+
 **Problemas de usabilidad detectados a través de los tests**
 Más que problemas de usabilidad, se encontraron opiniones que ayudaron a mejorar la forma en que se mostraría la información de cada campeón. Como resultado, la opinión de los encuestados ayudaron a mejorar la propuesta final de la aplicación.
 
