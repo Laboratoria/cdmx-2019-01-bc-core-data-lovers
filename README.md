@@ -32,6 +32,10 @@ Prototipo de baja fidelidad:
 
 https://marvelapp.com/3dej696
 
+Pruebas de usabilidad:
+
+https://docs.google.com/forms/d/1gi4ybwQSOvqVvxtmSK1Zp3wWfRT3j5-JWEuMSQVS1kg/edit
+
 
 ## Parámetros
 
@@ -46,7 +50,7 @@ Este proyecto toma los datos de base de datos en un archivo .spec.js, los cuales
 
 La pagina se realizo usando el editor de texto de Visual Studio Code, con en lenguaje JavaScript, sobre el marcador de texto HTML, con el lenguaje de diseño grafico CSS; el repositorio original se obtuvo de git hub. A continuación las especificaciones técnicas
 
-## Pre-requisitos
+## Pre requisitos
 
 Para poder descargar y usar este repositorio se necesita tener:
 -un editor de texto.
@@ -57,19 +61,21 @@ Para poder descargar y usar este repositorio se necesita tener:
 
 Para poder usar el repositorio necesitas forquearlo (dando click donde dice fork) y despues clonarlo en la consola
 
-## Pruebas-unitarias
+## Pruebas unitarias
 
 Las pruebas para esta pagina se relizaron con el framework Jest
 Para poder ejecutar las pruebas abres la terminal, te posicionas en la carpeta de el proyecto y en la de test, posteriormente ejecutas npm run test.
 Las pruebas te indican que es lo que deben de retornar para ser positivas
 
 
-## Pruebas-de-estilo-de-codificación
+## Pruebas de estilo de codificación
 
 
 - "htmlhint": "^0.10.1"
 - "eslint": "^5.9.0"
-## Construido-con
+
+
+## Construido con
 
 - marvel app
 - Vanilla Javascript
@@ -618,7 +624,7 @@ compañera:
 
 ## Checklist
 
-- [ ] Usa VanillaJS.
+- [x] Usa VanillaJS.
 - [ ] No hace uso de `this`.
 - [ ] Pasa linter (`npm pretest`)
 - [ ] Pasa tests (`npm test`)
