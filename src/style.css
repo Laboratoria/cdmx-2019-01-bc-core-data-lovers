@@ -17,13 +17,6 @@ body,html{
   background-attachment: fixed;
 }
 
-.button {
-  background-color: #efc056;
-  padding: 0;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
 header{
   width: 100%;
   background: rgba(0, 0, 0, 0.9)
@@ -73,6 +66,18 @@ header label:hover{
   text-decoration: none;
 }
 
+/*titulos de las secciones*/
+.objetive{
+  display: block;
+  text-align: center;
+  color: white; 
+}
+.titleBySection{
+  display: none;
+  text-align: center;
+  color: white; 
+}
+
 .contenedorRoles{
   margin: 5px 5% 1em 7%;
 }
@@ -102,6 +107,7 @@ header label:hover{
   padding-top: 0px;
   position: top;
 }
+
 
 .container-1{
   width: 300px;
@@ -150,6 +156,40 @@ header label:hover{
 .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
   outline:none;
   background: #ffffff;
+}
+
+
+.totalDescription{
+  color: #ffffff; 
+  font-size: 55%;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9); 
+  margin: 5px; 
+  overflow: hidden; 
+  padding: 0px; 
+  border-radius: 5px 5px 5px 5px; 
+  -moz-border-radius: 5px 5px 5px 5px; 
+  -webkit-border-radius: 5px 5px 5px 5px; 
+  border: 3px solid rgb(131, 109, 13);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+  display: inline-block;
+  width: 22%;
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+footer >ul > a > i{
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 600px) {
