@@ -231,6 +231,8 @@ describe('data', () => {
   });
   it('Deberia devolver el arr con Altura Descendente', () => {
     expect(window.data.sortDataPokemon(dataBase,"height","dsc")[0].height).toEqual("1.50 m");
+    expect(window.data.sortDataPokemon(dataBase,"height")[0].height).toEqual("1.50 m");
+    
   });
 
   it('filterLetterPokemon is a function', () => {
