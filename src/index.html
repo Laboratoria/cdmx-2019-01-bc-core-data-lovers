@@ -12,26 +12,51 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nova+Flat|Open+Sans|Quattrocento+Sans|Sunflower:300" rel="stylesheet">
 </head>
 
 <body>
   <section id="main">
     <header id="title">
-      <figure class="imgPokemon"><img src="../src/assets/img/POKEMON.png"
-          alt="Logo Pokemon"></figure>
+        <img src="../src/assets/img/POKEMON.png" class="logo" alt="Logo Pokemon"
+          alt="Logo Pokemon">
     </header>
 
     <button type="submit" id="next" class="styleButtonNext buttonNext">Entrar</button>
 
   </section>
 
-
-
   <section id="serch">
+      <section id="barra">
+          <div class="topnav" id="myTopnav">
+              <a href="#home" id="home" class="active">Home</a>
+              <a href="#news" id="neews">Type of Pokemons</a>
+              <a href="#contact" id="orderBy">Ordered by: Size/Weight</a>
+              <a href="#about">Statistics</a>
+              <input type="search" class="search" id="search" placeholder="Search..">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+    
+            </div>
+    
+            <div id="mySidenav" class="sidenav">
+                <a href="#" id="about">About</a>
+                <a href="#" id="blog">Blog</a>
+                <a href="#" id="projects">Projects</a>
+                <a href="#" id="contact">Contact</a>
+              </div>
+    
+    </section>
+    
+    
+    
+    <h1 id="pokemons"></h1>
     
 
-      <input type="search" class="search" id="search" placeholder="Search..">
       
+    <section id="navs">
+
     <form>
         <fieldset id="typesPokeBottons">
           <legend><i class="fas fa-filter"></i> FILTRO </legend>
@@ -53,8 +78,12 @@
       <button type="button" class="bottonPokemons styleButtonNext1" id="Dragon"><i class="fas fa-dragon"></i> Dragon</button>
     </fieldset>
   </form>
+  <h1 id="pokemones"></h1>
 
-    <form>
+</section>
+
+<section id="order" class="orderBy">
+     <form>
       <fieldset id="propiedadButtons">
         <legend><i class="fas fa-list-ol"></i>  ORDENADOS</legend>
         <p><i class="fas fa-balance-scale"></i> Peso </p>
@@ -65,7 +94,8 @@
         <button type="button" class="sortTipo styleButtonNext2" id="height-dsc"><i class="fas fa-caret-square-down"></i> Grandes-Pequeños</button>
       </fieldset>
     </form>
-    <h1 id="pokemons"></h1>
+    <h1 id="pokemonees"></h1>
+  </section>
   </section>
 
   <div id="root"></div>
