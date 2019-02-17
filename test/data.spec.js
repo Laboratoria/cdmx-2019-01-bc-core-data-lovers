@@ -87,7 +87,7 @@ describe('WorldBank', () => {
   });
 
   it('Debería retornar un array de objetos', () => {
-    expect(window.WorldBank.dataCountries(data, countries)).toEqual(WORLDBANK.MEX.indicators)
+    expect(window.WorldBank.dataCountries).toEqual(WORLDBANK.MEX)
   })
 });
 
