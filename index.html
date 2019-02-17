@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="LatinoEduca" content="indicadores educativos">
+  <meta name="author" content="">
+
+  <title>LatinoEduca</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/full-width-pics.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">LatinoEduca</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">¿Qué es LatinoEduca?
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">País e Indicador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Información</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header - set the background image for the header in the line below -->
+  <header class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/803C8YL/ilustracion-graduados-universitarios-53876-28468.jpg');">
+    <img class="img-fluid d-block mx-auto" src="https://i.ibb.co/0GcYyCd/log.jpg" alt="logo">
+  </header>
+
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+      <h1>¿Qué es LatinoEduca?</h1>
+      <p class="lead"><strong>Esta app te podrá ayudar a: </strong> <br> -Encontrar datos específicos acerca del
+        nivel Educativo en Latino América. <br>
+        -Con la información recopilada podrás distinguir el comportamiento de la educación a través de los años. <br>
+        -La información se obtiene del Banco Mundial una fuente confiable. </p>
+    </div>
+  </section>
+
+  <!-- Image Section - set the background image for the header in the line below -->
+  <section class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/XYm8PHq/215829b563d1466.jpg');">
+    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+    <div style="height: 200px;"></div>
+  </section>
+
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+      <h1>Noticias</h1>
+      <p class="lead">¿Cómo va la educación en América Latina?</p>
+      <p>La <strong> educación</strong> se ha convertido en un tema de agenda y detectar las falencias de los sistemas
+        educativos en los
+        diferentes
+        países es una prioridad para el progreso y desarrollo de las naciones. Sin embargo, a pesar de los múltiples
+        esfuerzos,
+        todavía queda mucho camino por recorrer; y eso es lo que está sucediendo en mérica América Latina. <br> América
+        Latina tendrá un 96,6 por ciento de cobertura en educación primaria; y para 2042, se proyecta que la cobertura
+        sea universal en este nivel. En cuanto a educación media, para 2030, se espera que la región tenga un 90 por
+        ciento de
+        cobertura y en 2066 sea total. Por último, en educación media superior, la cobertura será de un 72,7 por ciento
+        en 2030
+        y se proyecta que la cobertura será universal para 2095 en la región. <br> En cuanto al tema de docentes, en la
+        región de América Latina y el Caribe, solo el 85 por ciento de los maestros de
+        primaria tienen formación. El análisis de encuestas de población activa de 13 países de la región mostró
+        resultados muy
+        similares a los países de la Ocde. <br> Además, la Unesco recomienda que las políticas sobre docentes tienen
+        que ser integrales y sistemáticas; pues la región
+        debe avanzar en la certificación de sus profesores en los niveles de primaria y secundaria.
+
+        Por último, para poder impulsar la educación técnica, es clave impulsar la conexión de los distintos actores
+        del sistema. De acuerdo con el organismo internacional, se necesita complementariedad, pertinencia y
+        actualización
+        de la formación que ofrecen las instituciones educativas. <strong>“El verdadero desafío de los sistemas de
+          educación
+          terciaria de la región es que se asegure la equidad de su expansión, transformándose en palancas de promoción
+          y movilidad
+          social”. </strong>
+      </p>
+    </div>
+    <!-------bottons----->
+    <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <button class="btnCountry" id="PER">Perú</button>
+      </div>
+      <div class="clearfix-sm-block"></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <button class="btnCountry" id="MEX">México</button>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <button class="btnCountry" id="BRA">Brasil</button>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <button class="btnCountry" id="CHL">Chile</button>
+      </div>
+    </div>
+  </section>
+  <!-- Indicadores -->
+  <section>
+    <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+      <fieldset>
+        Para : <select name="literacy" id="indicator">
+          <option class="opt" value="youngWomen">Indicador</option>
+        </select>
+      </fieldset>
+    </article>
+  </section>
+  <!-----Datos------>
+  <section>
+    <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+      <h3>Datos</h3>
+      <h5 id="data-year"></h5>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; LatinoEduca 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
