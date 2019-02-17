@@ -232,7 +232,7 @@ img {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.5);
 }
 
 #close-fun {
@@ -257,7 +257,7 @@ img {
   margin: auto;
   border: 0px;
   width: 85%;
-  height: 55%;
+  height: 60%;
   padding-top: 30%;
 }
 
@@ -282,7 +282,7 @@ h1 {
   font-size: 3em;
   color: #efc056;
   text-align: center;
-
+  padding-bottom: 2%
 }
 .champion-stats {
   padding-left: 3%;
