@@ -136,12 +136,9 @@ Al presentarles este producto, los integrantes de la ONG se mostraron gratamente
 
 ### Objetivos
 Utilizar las opciones de filtrar y ordenar para que realicen lo siguiente:
-Filtrar data por pais y porr indicador.
-O
-Funcionalidad
-El usuario puede ingresar el mensaje que necesite transformar, este puede incluir números, mayúsculas, minúsculas y espacios; además de esto, puede elegir el número de posiciones a las que desee desplazar su mensaje.
-Cliente Modelo (Experiecia de usuario)
-Mario Salgado es un hombre de 25 años al cuál simpre le ha interesado la tecnología y las aplicaciones que le ofrezcan algo con lo cual innovar su entorno. Últimamente esta interesado en una forma de mandar cierta información a sus contactos personales y de trabajo. Se encuentra con varios problemas al querer realizar esto; en su trabajo muchas veces utilizan su computadora sin pedir permiso y cuando le llegan correos o mensajes con temas personales o profesiolnales delicados, han logrado tener acceso a ellos; en su celular encuentra un problema similar, cuando llega a prestar su teléfono, alguien en su entorno lo toma o simplemente llegan a leer el mensaje desde la distancia. Al utilizar Ceasar Code Message Mario ha logrado evitar esto, pues no solo ha logrado proteger sus mensajes, además ha tenido un buen momento gracias a su interés por aplicaciones que le ofrezcan cosas útile y novedosas.
+Filtrar data por pais y por indicador.
+Ordenar la información de forma ascendente y descendente.
+Visualizar la información de forma gráfica.
 
 
 ### Boceto
@@ -155,7 +152,7 @@ En cuanto a los apartados, agradecen contar con una breve introducción del obje
 - Se agregó un apartado de contacto para poder recibir comentarios.
 - Se agregó un apartado de próposito para informar a los usuarios lo que se pretende aportar.
 ### Autores
-Olga Contreras y Elizabeth Monroy
+Olga Contreras y Elizabeth Monroy.
 ### Agradecimientos
 A todo el equipo de Laboratoria.
 
