@@ -1,141 +1,178 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <meta name= "viewport" content= "width=device-width" user-scalable= "no" initial-scale= "1.0" maximum-scale= "1.0" minium-scale= "1.0">
-  </head>
-  <body>
-  
- <main id= "box1">
-<header>
-  <div class= "menu" id="showMenu" type="button" ><a class="bt-menu" href="#"><i class="fas fa-bars"></i>Menu</a></div>
-  <nav id="menuList" class="hide">
-    <ul>
-      <li id= "home" type= "button"><a href="#"><i class="fas fa-home"></i>Home</a></li>
-      <li id= "indicador" type= "button" ><a href="#"><i class="fas fa-chart-line"></i>Indicadores</a></li>
-      <li id="prop" type= "button"><a href="#"><i class="fas fa-user-friends"></i>Propósito</a></li>
-      <li id="contact" type= "button"><a href="#"><i class="far fa-envelope"></i>Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-<section id= "box2" >
-  <h1 class="titulo"><b>LatinaData</b></h1>
-  <p class= "text"> En esta página encontrarás indicadores de población femenina de México, Chile, Brasil, Perú.
-  </p>
-  <p class= "text">Da click en la opción <b>"Indicadores"</b> para comenzar
-</p>
-</section>
-<div id="root"></div>
- 
 
-<section id= "box3" class= "hide" >
-    <h1> <b>INDICADORES DE POBLACIÓN FEMENINA </b> </h1>
-    <p>En esta sección podrás consultar indicadores por edad de 0 a 80 años, el resultado se muestra de forma porcentual-anual de 1960 a 2017.</p>
-    <p><b>¿Que debo hacer?</b></p>
-    <ul class="list">
-      <li>Seleccionar el país y el indicador de su interés</li>
-      <li>La opción "Ordenar" muestra los datos de forma ascendente/descentente</li>
-      <li>Si deseas limpiar la pantalla, da click en el botón "Limpiar" </li>
-    </ul>
-    
-<section id="selectorBox">
-   <select id="filtrar-pais" name="paises" class="selectors" >
-        <option value="" disabled selected>País</option>
-      <option value= "MEX">México</option>
-      <option value= "PER">Perú</option>
-      <option value= "CHL">Chile</option>
-      <option value= "BRA">Brasil</option>
-    </select>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width" user-scalable="no" initial-scale="1.0" maximum-scale="1.0"
+    minium-scale="1.0">
+</head>
 
-    <select id="filtrar-indicador" name= "indicators" class="selectors">
-        <option value="" disabled selected>Indicador</option>
-        <option value= "Población de 80 años en adelante, mujeres (% de la población femenina)">Población de 80 años en adelante</option>
-        <option value= "Población de 75 a 79 años, mujeres (% de la población femenina)">Población de 75 a 79 años</option>
-        <option value= "Población de 70 a 74 años, mujeres (% de la población femenina)">Población de 70 a 74 años</option>     
-        <option value= "Población de 65 a 69 años, mujeres (% de la población femenina)">Población de 65 a 69 años</option> 
-        <option value= "Población de 50 a 64 años, mujeres (% de la población femenina)">Población de 50 a 64 años</option> 
-        <option value= "Población de 55 a 59 años, mujeres (% de la población femenina)">Población de 55 a 59 años</option> 
-        <option value= "Población de 50 a 54 años, mujeres (% de la población femenina)">Población de 50 a 54 años</option> 
-        <option value= "Población de 45 a 49 años, mujeres (% de la población femenina)">Población de 45 a 49 años</option> 
-        <option value= "Población de 40 a 44 años, mujeres (% de la población femenina)">Población de 40 a 44 años</option> 
-        <option value= "Población de 35 a 39 años, mujeres (% de la población femenina)">Población de 35 a 39 años</option> 
-        <option value= "Población de 30 a 34 años, mujeres (% de la población femenina)">Población de 30 a 34 años</option> 
-        <option value= "Población de 25 a 29 años, mujeres (% de la población femenina)">Población de 25 a 29 años</option> 
-        <option value= "Población de 20 a 24 años, mujeres (% de la población femenina)">Población de 20 a 24 años</option> 
-        <option value= "Población de 15 a 19 años, mujeres (% de la población femenina)">Población de 15 a 19 años</option> 
-        <option value= "Población de 10 a 14 años, mujeres (% de la población femenina)">Población de 10 a 14 años</option> 
-        <option value= "Población de 5 a 9 años, mujeres (% de la población femenina)">Población de 5 a 9 años</option> 
-        <option value= "Población de 0 a 4 años, mujeres (% de la población femenina)">Población de 0 a 4 años</option> 
-      </select>
+<body>
+
+  <main id="box1">
+    <header>
+      <div class="menu" id="showMenu" type="button"><a class="bt-menu" href="#"><i class="fas fa-bars"></i>Menu</a></div>
+      <nav id="menuList" class="hide">
+        <ul>
+          <li id="home" type="button"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+          <li id="indicador" type="button"><a href="#"><i class="fas fa-chart-line"></i>Indicadores</a></li>
+          <li id="prop" type="button"><a href="#"><i class="fas fa-user-friends"></i>Propósito</a></li>
+          <li id="contact" type="button"><a href="#"><i class="far fa-envelope"></i>Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
 
-  
+    <section id="box2">
+      <h1 class="titulo"><b>LatinaData</b></h1>
+      <p class="text"> En esta página encontrarás indicadores de población femenina de México, Chile, Brasil, Perú.
+      </p>
+      <p class="text">Da click en la opción <b>"Indicadores"</b> para comenzar
+      </p>
+    </section>
+    <div id="root"></div>
 
 
-  <select id="order" class="selectors">
-      <option value="" disabled selected>Ordenar</option>
-    <option value= "asc"> Ascendente</option>
-    <option value= "desc"> Descendente</option>     
-  </select>
+    <section id="box3" class="hide">
+      <h1> <b>INDICADORES DE POBLACIÓN FEMENINA </b> </h1>
+      <p>En esta sección podrás consultar indicadores por edad de 0 a 80 años, el resultado se muestra de forma
+        porcentual-anual de 1960 a 2017.</p>
+      <p><b>¿Que debo hacer?</b></p>
+      <ul class="list">
+        <li>Seleccionar el país y el indicador de su interés</li>
+        <li>La opción "Ordenar" muestra los datos de forma ascendente/descentente</li>
+        <li>La opción "Max/Min" muestra el porcentaje máximo/mínimo de la selección</li>
+        <li>Si deseas limpiar la pantalla, da click en el botón "Limpiar" </li>
+      </ul>
 
- <input id="limpiar" type="button" class="boton" value="Limpiar">
- 
-</section>
-<section id="graf">
-  <div class="grafica">
-    <canvas id="myChart" width="20" height="20" class="grafica-muestra">  
- 
-     </canvas>
-</div>
-</section>
+      <section id="selectorBox">
+        <select id="filtrar-pais" name="paises" class="selectors">
+          <option value="" disabled selected>País</option>
+          <option value="MEX">México</option>
+          <option value="PER">Perú</option>
+          <option value="CHL">Chile</option>
+          <option value="BRA">Brasil</option>
+        </select>
 
-
-</section>
-
-<section id="contenido">  
-  
-
-</section>
-<section id="box4" class="hide">
-  <form action="">
-    <h2>CONTACTO</h2>
-    <input class="form" type="text" name="nombre" placeholder="Nombre">
-    <input class="form" type="text" name="correo" placeholder="Correo">
-    <input class="form" type="text" name="telefono" placeholder="Teléfono">
-    <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
-    <input class="form" type="button" value="ENVIAR" id="botonEnv">
-  </form>
-</section>
-
-<section id="box5" class="hide">
-  <h1>Propósito</h1>
-  <p>Nuestro propósito es facilitar el acceso de información demográfica femenina, utilizada por las ONG
-    (Organización No Gubernamental)para la planificación
-    de servicios sociales (programas infancia, juventud, salud reproductiva, mercado de trabajo, envejecimiento) de
-    México, Perú, Chile y Brasil.</p>
-  <p>La edad se vincula con cada uno de los procesos demográficos (fecundidad, nupcialidad, mortalidad,migración,
-    etc.); en este sentido, la información se presenta por grupo etario/anual;
-    de esta forma expresa muchas cosas por sí sola,resume la historia demográfica de varias generaciones y
-    representa la situación actual de una población.
-  </p>
-</section>
+        <select id="filtrar-indicador" name="indicators" class="selectors">
+          <option value="" disabled selected>Indicador</option>
+          <option value="Población de 80 años en adelante, mujeres (% de la población femenina)">Población de 80 años
+            en adelante</option>
+          <option value="Población de 75 a 79 años, mujeres (% de la población femenina)">Población de 75 a 79 años</option>
+          <option value="Población de 70 a 74 años, mujeres (% de la población femenina)">Población de 70 a 74 años</option>
+          <option value="Población de 65 a 69 años, mujeres (% de la población femenina)">Población de 65 a 69 años</option>
+          <option value="Población de 50 a 64 años, mujeres (% de la población femenina)">Población de 50 a 64 años</option>
+          <option value="Población de 55 a 59 años, mujeres (% de la población femenina)">Población de 55 a 59 años</option>
+          <option value="Población de 50 a 54 años, mujeres (% de la población femenina)">Población de 50 a 54 años</option>
+          <option value="Población de 45 a 49 años, mujeres (% de la población femenina)">Población de 45 a 49 años</option>
+          <option value="Población de 40 a 44 años, mujeres (% de la población femenina)">Población de 40 a 44 años</option>
+          <option value="Población de 35 a 39 años, mujeres (% de la población femenina)">Población de 35 a 39 años</option>
+          <option value="Población de 30 a 34 años, mujeres (% de la población femenina)">Población de 30 a 34 años</option>
+          <option value="Población de 25 a 29 años, mujeres (% de la población femenina)">Población de 25 a 29 años</option>
+          <option value="Población de 20 a 24 años, mujeres (% de la población femenina)">Población de 20 a 24 años</option>
+          <option value="Población de 15 a 19 años, mujeres (% de la población femenina)">Población de 15 a 19 años</option>
+          <option value="Población de 10 a 14 años, mujeres (% de la población femenina)">Población de 10 a 14 años</option>
+          <option value="Población de 5 a 9 años, mujeres (% de la población femenina)">Población de 5 a 9 años</option>
+          <option value="Población de 0 a 4 años, mujeres (% de la población femenina)">Población de 0 a 4 años</option>
+        </select>
 
 
 
 
-<!-- <script src="./data/injuries/injuries.js"></script> -->
-  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-  <!-- <script src="./data/steam/steam.js"></script> -->
-  <script src="./data/worldbank/worldbank.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-  <!-- <script src="./data/lol/lol.js"></script> -->
-  <script src="data.js"></script>
-<script src="main.js"></script>
-<script src="graf.js"></script>
-</main>   
-  </body>
+
+        <select id="order" class="selectors">
+          <option value="" disabled selected>Ordenar</option>
+          <option value="asc"> Ascendente</option>
+          <option value="desc"> Descendente</option>
+        </select>
+
+        <select id="maximo" class="selectors">
+          <option value="" disabled selected>Max/Min</option>
+          <option value="max"> Maximo</option>
+          <option value="min"> Minimo</option>
+        </select>
+
+        <input id="limpiar" type="button" class="boton" value="Limpiar">
+
+      </section>
+      <section id="graf">
+        <div class="grafica">
+          <canvas id="myChart" width="20" height="20" class="grafica-muestra">
+
+          </canvas>
+        </div>
+      </section>
+
+
+    </section>
+    <section id="valorMAx" class="hide">
+      <p></p>
+    </section>
+
+    <section id="reporte" class="hide">
+      <p></p>
+    </section>
+
+    <section id="contenido">
+
+
+    </section>
+
+
+
+
+    <section id="box4" class="hide">
+      <form action="">
+        <h2>CONTACTO</h2>
+        <input class="form" type="text" name="nombre" placeholder="Nombre">
+        <input class="form" type="text" name="correo" placeholder="Correo">
+        <input class="form" type="text" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+        <input class="form" type="button" value="ENVIAR" id="botonEnv">
+      </form>
+      <section id="social" class="hide">
+        <ul>
+          <li><a href="https://es-la.facebook.com/" target="_blanck" class="fab fa-facebook"></a></li>
+          <li><a href="https://twitter.com/login?lang=es" target="_blanck" class="fab fa-twitter-square"></a></li>
+          <li><a href="https://plus.google.com" target="_blanck" class="fab fa-google-plus-square"></a></li>
+          <li><a href="https://mx.linkedin.com/" target="_blanck" class="fab fa-linkedin"></a></li>
+        </ul>
+
+      </section>
+    </section>
+
+
+    <section id="box5" class="hide">
+      <h1>Propósito</h1>
+      <p>Nuestro propósito es facilitar el acceso de información demográfica femenina, utilizada por las ONG
+        (Organización No Gubernamental)para la planificación
+        de servicios sociales (programas infancia, juventud, salud reproductiva, mercado de trabajo, envejecimiento) de
+        México, Perú, Chile y Brasil.</p>
+      <p>La edad se vincula con cada uno de los procesos demográficos (fecundidad, nupcialidad, mortalidad,migración,
+        etc.); en este sentido, la información se presenta por grupo etario/anual;
+        de esta forma expresa muchas cosas por sí sola,resume la historia demográfica de varias generaciones y
+        representa la situación actual de una población.
+      </p>
+    </section>
+
+
+
+
+    <!-- <script src="./data/injuries/injuries.js"></script> -->
+    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <script src="./data/worldbank/worldbank.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!-- <script src="./data/lol/lol.js"></script> -->
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    <script src="graf.js"></script>
+  </main>
+</body>
+
 </html>
