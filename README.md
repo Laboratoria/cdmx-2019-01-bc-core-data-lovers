@@ -28,8 +28,9 @@ Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan ini
 ### Prototipo de alta fidelidad
 
 <a href="https://ibb.co/Fzs5dBY"><img src="https://i.ibb.co/PgTcV5W/home.png" alt="home" border="0"></a></br>
-<a href="https://ibb.co/HCwmqdk"><img src="https://i.ibb.co/VxnXTmP/order.png" alt="order" border="0"></a></br>
-<a href="https://ibb.co/gT07xSV"><img src="https://i.ibb.co/R0XSq3y/filter.png" alt="filter" border="0"></a>
+<a href="https://ibb.co/gT07xSV"><img src="https://i.ibb.co/R0XSq3y/filter.png" alt="filter" border="0"></a></br>
+<a href="https://ibb.co/HCwmqdk"><img src="https://i.ibb.co/VxnXTmP/order.png" alt="order" border="0"></a>
+
 
 ### Testeos de usabilidad
 
