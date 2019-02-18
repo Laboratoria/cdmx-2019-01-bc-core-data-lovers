@@ -19,7 +19,8 @@ body {
 article {
   margin: 0 auto;
   margin-top: 10%;
-  width: 85%;
+  margin-bottom: 10%;
+  width: 75%;
   background-color: rgba(29, 33, 40, 0.5);
   padding: 20px;
 }
@@ -46,7 +47,6 @@ h2 {
 }
 
 .start {
-  margin-top: 50%;
   border-radius: 20px;
   border-color: #efc056;
   border-width: 5px;
@@ -292,7 +292,7 @@ h1 {
 @media screen and (min-width:992px) {
   article {
     margin-top: 3%;
-    width: 45%;
+    width: 56%;
   }
 
   h2 {
