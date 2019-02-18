@@ -7,11 +7,11 @@ _La campaña se realizará en conjunto con instituciones educativas y entidades 
 
 ## Índice  📌
 
-- [Acerca De](#PUNTO-MUERTO)
+- [Punto Muerto](#punto-muerto)
 - [Historia de Usuario](#Historia-de-usuario)
 - [Consideraciones generales](#comenzando)
 - [Testing](#testing)
-- [Autoras](#Autoras)
+- [Autoras](#autoras)
 - [Checklist](#checklist)
 - [Data Lovers](#preámbulo)
 
