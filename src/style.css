@@ -3,6 +3,63 @@
 
 }
 
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; 
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+section#countries {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -87,6 +144,7 @@ main {
   background-position: center;
 }
 
+
 #text {
   position: relative;
   width: 397px;
@@ -108,19 +166,13 @@ main {
   color: #444444;
 }
 
-/* .button-est {
-  position: relative;
-  left: 155px;
-  top: 100%;
-} */
-
 #btn-est { 
   position: relative;
   left: 155px;
-  top: 100%;
+  margin-top: 150px;
   width: 170px;
   height: 50px;
-  left: 0px;
+  left: 65px;
   border: 0px;
   border-radius: 10px 0px 10px 0px;
   background-color: #FFD252;
@@ -141,27 +193,6 @@ main {
   color:white;
 }
 
-#countries {
-  align-content: center;  
-}
-
-#group-buttons{ 
-  align-content: center;
-}
-
-button {
-  background-color:#FFD252;
-  border-radius: 10px 0px 10px 0px;
-  line-height: 50px;
-  /* text-align: center; */
-  width: 15%;
-  height: 20vh;
-  margin: 10px;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #444444;
-}
-
 button:hover{
   color: white;
   background: transparent;
@@ -178,11 +209,7 @@ button:hover{
   text-align: center;
   font-weight: bold;
   color: rgb(15, 15, 15);
-} */
-
-/* #indicator {
-  
-} */
+}
 
 #conferencias {
   padding:6px;
@@ -198,5 +225,3 @@ button:hover{
   color: #fff;
   font-size: 12px;
 }
-
-

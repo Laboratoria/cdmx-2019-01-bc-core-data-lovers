@@ -2,15 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>ProMujer</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto:300,400,400i,700,900" rel="stylesheet">
-  
 </head>
+      
 <body>
+  <script src="http://code.jquery.com/jquery.js"></script>
   <header class="header">
     <div class="container">
       <figure class="logo">
@@ -23,19 +24,19 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      </div>
+    </div>
   </header>
   <main class="main">
-    <section id="home">
+    <section id="home" class="container">
       <div id="text">
         <p>Centro de investigación para el Desarrollo de la mujer en América Latina.</p>
     </div> 
       <div id="button-est">
-        <button id="btn-est">Ver estádisticas</button>
+        <button id="btn-est">Ver estadísticas</button>
       </div>
     </section>
   
-    <section id="countries">
+    <section id="countries" class="container">
       <div id="text-countries"> 
         <h2>PAÍS</h2>
         <h3>Selecciona el país de tu interés:</h3>
@@ -47,7 +48,7 @@
         <button id="PER" class="button">Perú</button>
       </div>
     </section>
-    <section>
+    <section class="container">
       <select id="indicator">
         <option value="indicadores"> Indicadores </option>
       </select>
@@ -57,7 +58,7 @@
       <div id="data-year">
       </div>
     </section>
-    <section id="conferencias">
+    <section id="conferencias" class="container">
       <h2>Conoce nuestras conferencias.</h2>
       <p>¿Quieres que tu audiencia vibre de emoción, encuentre las herramientas que necesita
         <br>para su vida o para su emprendimiento y, sobre todo, pase un momento increíble lleno de
@@ -74,7 +75,8 @@
         <br>el Instituto Tecnológico de Chilpancingo, Banco INVEX,
         Bcysa Servicios Industriales, JR Consultores y Grupo MAP, entre otros.</p>
     </section>
-    <section id="contacto">
+    <footer id="contacto">
+      <div class="container">
       <h2>Para cualquier duda o información.</h2>
       <p>
         Si deseas contactarnos, puedes hacerlo de las siguientes maneras:
@@ -86,7 +88,8 @@
         <br>
         3. Síguenos en nuestra página de Facebook: ProMujer, o Twitter: @ProMujer.
       </p>
-    </section>
+    </div>
+    </footer>
     <div id="root"></div>
   </main>
   <!-- <script src="./data/injuries/injuries.js"></script> -->
