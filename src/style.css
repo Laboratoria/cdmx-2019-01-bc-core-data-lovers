@@ -114,6 +114,11 @@ figure img{
 
 }
 
+#presentation{
+  width: 90%;
+  height: 80%;
+}
+
 .lolIcons {
   width: 25%;
   margin: 5px;
@@ -232,7 +237,37 @@ figure img{
 .bigImg{
   display:none;
 }
-  
+
+.splashPresentation{
+  display:block;
+  width: 100%;
+  height: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  display:inline-block;}
+
+  #title{
+    color: whitesmoke;
+    padding-left: 45%;
+    padding-right: 45%;
+  }
+.rolTitle{
+  position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding-left: 30%;
+  padding-right: 30%;
+  color: rgba(201, 170, 113);
+}
+.stats{
+  display: inline-block;
+  color: whitesmoke;
+}
+.statsOrder{
+  margin-left: 7%;
+}
 footer{
   width: 100%;
   left:0;
