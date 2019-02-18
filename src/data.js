@@ -2,7 +2,6 @@
 window.WorldBank = {
   dataCountries: (data, countries) => { //Función para extraer la data por país. 
   let dataByCountries = data[countries].indicators //Obtener los objetos por país.
-  console.log(dataByCountries)
   return dataByCountries;
   },
   percentAndYear:(data, matchYear) =>{ // Función para integrar al select los indicadores educativos.
