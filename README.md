@@ -1,12 +1,12 @@
 # Hipatia Project
 
-![Hipatia Logo](../src/assets/images/Logo Hipatia-01.png)
+![Hipatia Logo](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Logo%20Hipatia-01.png)
 
-##¿Qué es Hipatia Project?
+## ¿Qué es Hipatia Project?
 
 Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil, Chile, México y Perú. Aquí podrás visualizar datos históricos de diferentes indicadores del Banco Mundial en tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.
 
-#Instrucciones para usuarios
+# Instrucciones para usuarios
 1. Ingresa a la página [Hipatia Project](https://karenamicone.github.io/cdmx-2019-01-bc-core-data-lovers/src/index.html)
 
 2. Al inicio encontrarás una breve descripción sobre la página
@@ -19,7 +19,7 @@ Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil,
 
 6. En la última sección de la página encontrarás la definición de *género* y de *desigualdad de género*.
 
-#Información para desarrolladores
+# Información para desarrolladores
 
 ## Consideraciones técnicas
 
@@ -67,7 +67,7 @@ como toda la configuración de dependencias:
 - [Node.js](https://nodejs.org/)
 - [Jest](https://jestjs.io/)
 
-#Instrucciones
+# Instrucciones
 
 ## Obtener una copia local del repositorio
 1. Hacer un 🍴 fork de este repositorio: <https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers>
@@ -75,7 +75,7 @@ como toda la configuración de dependencias:
 2. Clonar el fork en tu computadora (copia local).
 
 
-##Instalar las dependencias y ejecutar los tests
+## Instalar las dependencias y ejecutar los tests
 
 1. Instala las dependencias del proyecto con el comando `npm install`. Esto
    asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
@@ -86,7 +86,7 @@ como toda la configuración de dependencias:
 ## Funcionalidad de la página
 Hipatia Project está constituida por tres funciones principales: filtrar información (función *filter*), ordenarla de forma ascendente y descendente (función *sort*), y calcular el promedio(función *average*).
 
-##Pruebas unitarias
+## Pruebas unitarias
 Las pruebas unitarias verifican las propiedades de las funciones principales y están constituidas por 7 pruebas. 
 
 1. Verifica que *filter* sea una función.
@@ -98,15 +98,15 @@ Las pruebas unitarias verifican las propiedades de las funciones principales y e
 7. Verifica que *average* calcule el promedio de los datos ingresados.
 
 ---
-#Diseño UX
+# Diseño UX
 
-##Definición del producto
+## Definición del producto
 
-###¿Qué es Hipatia Project?
+### ¿Qué es Hipatia Project?
 
 Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil, Chile, México y Perú. Aquí podrás visualizar datos históricos de diferentes indicadores del Banco Mundial en tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.
 
-###Objetivo
+### Objetivo
 
 Mostrar datos estadísticos para el estudio y sensibilización social sobre la desigualdad de género en el trabajo, de forma accesible y amigable. 
 
@@ -131,17 +131,17 @@ El trabajo es una de las principales vías por las cuales las personas obtienen 
 
 
 
-###Problemática
+### Problemática
 
 Observamos que hay un interés creciente, tanto académico como social, en la información con enfoque de género, por un lado. Y por otro lado, poca oferta de páginas web que contengan y muestren de forma accesible los datos de la brecha laboral de género en América Latina. 
 
 
-###Creciente interés en los estudios de género
+### Creciente interés en los estudios de género
 
 La Conferencia del Año Internacional de la Mujer celebrada en México en 1975 tuvo un impacto importante en América Latina porque por primera vez los gobiernos tuvieron que comunicar al mundo y a sus ciudadanos sobre las condiciones laborales, educativas y de salud en las que se desenvolvían las mujeres. En México este evento fue un parteaguas en la institucionalización y organización del movimiento feminista, ya que comenzó a tener mayor poder de convocatoria y fuerza política. Las desigualdades entre hombres y mujeres empezaron a cuestionarse con más fuerza, buscando el sustento teórico y académico sobre la creación cultural y no biológica de la brecha de género. Con este objetivo se crearon varios centros y programas de estudios de género. Actualmente hay más de treinta de ellos (Lau y Cruz, 2005). 
  
 
-###Oferta de páginas web sobre estadísticas de género
+### Oferta de páginas web sobre estadísticas de género
 
 En [encuestas](https://docs.google.com/forms/d/1xyq6JV84yFPrlVP5IGgi47BK6nCygZQio4WeC98z1Ug/edit#responses) realizadas a 7 usuarios de repositorios estadísticos, se identificó que una de las debilidades que detectan en estas páginas es el difícil acceso a las bases de datos, así como no poder manipular la información ni poder hacer cálculos estadísticos. Además, en una investigación que realizamos en 4 páginas web oficiales de estadísticas de género (las páginas consultadas fueron [ONU Mujeres] (https://bit.ly/2yTKLil), el repositorio de la [CEPAL] (https://bit.ly/2SqaOvh), [Sistema de Indicadores de Género de Inmujeres] (https://bit.ly/2tPNp6z),  y la [UNICEF] (https://uni.cf/2MZch5Z)), observamos que el diseño es poco eficiente para consultar series de datos, el formato de descarga en la mayoría de ellos es pdf, el cual dificulta la manipulación de datos, las tablas donde se muestran las series de datos son difíciles de encontrar, i.e. hay que dar muchos clicks, y el diseño es poco agradable.    
 
@@ -161,22 +161,22 @@ En [encuestas](https://docs.google.com/forms/d/1xyq6JV84yFPrlVP5IGgi47BK6nCygZQi
 6. Como usuario quiero calcular el promedio de una serie de datos
 
 
-##Diseño de la interfaz
+## Diseño de la interfaz
 
-###Prototipo de baja fidelidad
+### Prototipo de baja fidelidad
 
-![alt text] (../src/assets/images/Sketch.jpg)
+![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20.jpg)
 
 
-###Prototipo de alta fidelidad
+### Prototipo de alta fidelidad
 
-![alt text] (../src/assets/images/Sketch Fino-01.jpg)
+![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-01.jpg)
 
-![alt text] (../src/assets/images/Sketch Fino-02.jpg)
+![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-02.jpg)
 
-![alt text] (../src/assets/images/Sketch Fino-03.jpg)
+![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-03.jpg)
  
-![alt text] (../src/assets/images/Sketch Fino-04.jpg)
+![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-04.jpg)
 
 
 ## Checklist
