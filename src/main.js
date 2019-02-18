@@ -47,15 +47,16 @@ const drawPokemon = (arrayPokemons) => {
 <div class="modal fade modalpokemon " id="miModal${pokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog modalMargin" role="document">
 		<div class="modal-content modalWidth">
-			<div class="modal-header ">
+			<div class="modal-header ${pokemon.type[0]}">
 				<button type="button" class="close " data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
-				<h4 class="modal-title" id="myModalLabel">${pokemon.name}</h4>
+				<h4 class="modal-title White"  id="myModalLabel">${pokemon.name}</h4>
 			</div>
 			<div class="modal-body">
       <img src="${pokemon.img}" class="imgpokemon"></br>
-      <table style="width:100%">
+      <section class="${pokemon.type[0]} section-type">
+      <table style="width:80%" class="${pokemon.type[0]} table-type">
       <tr>
       <th class="weaknesses">Altura</th>
       <th class="weaknesses">Peso</th>
@@ -72,9 +73,12 @@ const drawPokemon = (arrayPokemons) => {
       <td>${pokemon.candy_count}</td>
       <td>${pokemon.avg_spawns}</td>
       </tr>
+      <tr>
+      <th class="weaknesses">Debilidades</th>
+      </tr>
       </table>
-    <p class="weaknesses"> Debilidades</p>
     <p >${pokemon.weaknesses}</p>
+    </section>
 			</div>
 		</div>
 	</div>
@@ -105,11 +109,11 @@ orderedReverseButton.addEventListener("click", () => {
   drawPokemon(dataReverse);
 });
 
-  computeStats.addEventListener("click", () => {
-    const newProm = window.data.computeStats(pokemon)
-    const sectionRoot = returnFilter
-    sectionRoot.innerHTML = "";
-    sectionRoot.innerHTML += `<h1>Promedio de la Cantidad en la que aparecen todos los pokemons</h1><p>${newProm}</p>`
-    return sectionRoot
+computeStats.addEventListener("click", () => {
+  const newProm = window.data.computeStats(pokemon)
+  const sectionRoot = returnFilter
+  sectionRoot.innerHTML = "";
+  sectionRoot.innerHTML += `<h1>Promedio de la Cantidad en la que aparecen todos los pokemons</h1><p>${newProm}</p>`
+  return sectionRoot
 
-  });
+});
