@@ -168,9 +168,14 @@ const selects = document.getElementById("selects");
 const sorting = document.getElementsByClassName("order");
 const sorters = document.getElementById("sorters");
 sorters.style.display = "none";
+const tableTitle= document.getElementById("table-title");
+const countryName= document.getElementById("country-name");
 const average = document.getElementById("average");
+average.style.display= "none";
+let countryValue="";
 let objectSelected = {};
 let dataCountry = {};
+let indicatorName="";
 let years = "";
 let percent = "";
 
@@ -184,17 +189,18 @@ selects.addEventListener("change", () => {
 for (let i = 0; i < country.length; i++) {
   country[i].addEventListener("click", () => {
     tableBody.innerHTML = "";
-    let countryValue = country[i].value
+    countryValue = country[i].value
     //Recorre el objeto del indicador seleccionado y guarda el objeto correspondiente al país seleccionado con los botones
     for (let countryS in objectSelected) {
       if (countryS === countryValue) {
+        indicatorName=objectSelected[countryS].indicatorName;
         dataCountry = objectSelected[countryS].data;
         //Recorre la data del objeto del país seleccionado y pinta el año y el dato del indicador
         for (let year in dataCountry) {
           years = `${year}`
           percent = `${dataCountry[year]}`
           if (percent > 0) {
-            printing(years, percent);
+            printing(indicatorName, countryValue, years, percent);
           }
         }
       }
@@ -214,7 +220,7 @@ for (let i = 0; i < sorting.length; i++) {
       years = `${k}`
       percent = `${dataCountry[k]}`
       if (percent > 0) {
-        printing(years, percent);
+        printing(indicatorName, countryValue, years, percent);
       }
     }
   })
@@ -228,23 +234,24 @@ average.addEventListener("click", () => {
       values.push(parseInt(dataCountry[years]));
     }
   }
-  console.log(values);
   let avg = window.data.average(values);
-  document.getElementById("result").innerHTML = avg;
+  document.getElementById("result").innerHTML = `El promedio es: ${parseInt(avg)}%`;
 })
 
 //Función que pinta los años y datos filtrados en una tabla
 
-const printing = (years, percent) => {
+const printing = (indicatorName, countryValue, years, percent) => {
   table.style.display = "block";
   sorters.style.display = "block";
+  average.style.display= "block";
+  tableTitle.innerHTML= `${indicatorName}`;
+  countryName.innerHTML=`${countryValue.toUpperCase()}`;
   let row = tableBody.insertRow(0);
   let cellYear = row.insertCell(0);
   let cellPercent = row.insertCell(1);
   cellYear.innerHTML = `${years}`;
   cellPercent.innerHTML = `${percent}`;
 }
-
 
 //Slides
 

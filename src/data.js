@@ -10,6 +10,7 @@ window.data = {
     }
     return objS;
   },
+  //Función que ordena
   sort: (sortingObject, sortingValue) => {
     let sorted;
     if (sortingValue === "upward") {
@@ -20,10 +21,9 @@ window.data = {
       return sorted;
     }
   },
-
+//Función que promedia
   average: (values) => {
     let sum = values.reduce((previous, current) => current += previous);
-    console.log(sum);
     let averageResult = sum / values.length;
     return averageResult;
   }
