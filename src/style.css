@@ -9,12 +9,12 @@
    * {
     box-sizing: border-box;
     text-align: center;
-
+   
    }
 
   
 
-   h1{
+   h1.animate{
     font-family: 'Staatliches', cursive;
     font-size: 80px;
     color: rgba(232, 236, 13, 0.726);
@@ -49,38 +49,37 @@
     }
     p{
 
-        font-family: 'Ubuntu Condensed', sans-serif;
-        font-size: 19px;
+        font-family: 'Happy Monkey', cursive;
+        font-size: 20px;
         max-width: 100%;
         height: 15%;
         margin: -1%;
-        color: mintcream;
+        color:rgb(175, 179, 187);
   }
 .grid-img{
     display: grid;
     grid-gap: 1px 40px;
-    grid-template-columns: repeat(auto-fill, minmax(191px, 1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
 }
 button{
   border-radius: 10px;
   background: black;
+  border: solid 1px white;
 }
 
 .ocultar{
     padding: 5%;
 }
 .imagesPokemon{
-background-image: url(./assets/red.png);
-background-position: center;
-
-background-size: 130%; 
-margin: 3%;
-max-width: 104%;
-width: 34vh;
-height: 55vh;
-    position: relative;
-    top: 3%;
-    display: inline-grid
+   
+    background-position: center;
+    background-size: 135%;
+    margin: 3%;
+    max-width: 108%;
+    height: 63vh;
+    border: solid 1px white;
+    width: 51vh;
+    border-radius: 15px;
     
 }
 figure{
@@ -110,20 +109,75 @@ span.tooltip::before {
 span.tooltip:hover::before {
     display: block;
 }
-#PaginaInicio{
-    
-}
-   
-   
- 
 
 .ocultar{
     padding-top: 0%;
     padding-bottom: 5%;
 }
-
-a{
-    font-size: 35px;
-    font-family: 'Staatliches', cursive;
+nav{
+    font-size: 50px;
+    color:yellow;
+    font-family: 'Rock Salt';  
 }
 
+a{
+    font-size: 40px;
+    font-family: 'Caveat Brush';
+}
+
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+}
+#splash .splash-inner{
+    display: block;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+}
+#splash .splash-inner .icon{
+    width: 400px;
+    position: relative;  
+    margin:0 auto;
+    height: 400px;
+
+}
+
+#splash .splash-inner .icon img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#splash .splash-inner h1{
+    padding-top:20px;
+    font-size: 50px;
+    color:yellow;
+    text-align: center;
+    font-family:'Rock Salt';
+    animation: jump .6s linear alternate infinite;
+}
+@keyframes jump {    
+    0%  {transform: translate3d(0,0,0)}    
+   40%  {transform: translate3d(0,-5%,0)}    
+    100% {transform: translate3d(0,-10%,0)}
+}
+
+#splash.hide{
+    top:-100%;
+
+}
+header{
+    background: white;
+}
