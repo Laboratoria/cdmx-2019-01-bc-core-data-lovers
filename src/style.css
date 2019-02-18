@@ -163,6 +163,8 @@ header{
 .container-flags{
   margin-bottom: 80px;
   margin-top: 80px;
+  justify-content: center;
+
 }
 .col {
   display:inline-block;
@@ -177,6 +179,8 @@ h3{
 
 }
 
+
+/* comentario */
 
 
 
@@ -374,6 +378,13 @@ td{
   font-size: 15px;
 }
 
+.carousel-inner img {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+}
 
 
 
