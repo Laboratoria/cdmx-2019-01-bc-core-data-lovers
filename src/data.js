@@ -73,5 +73,13 @@ window.lol = {
     return sortDsc
   },
 
-}
 
+
+  
+averageAttack: (datosArr) => {
+  //console.log(datosArr) 
+ const totalattack = datosArr.reduce((prev, datosArr) => prev + datosArr.attack, 0)/datosArr.length;
+  //console.log(totalattack)
+  return totalattack
+}
+}

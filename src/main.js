@@ -5,8 +5,6 @@ const datalol = window.LOL.data;
 const datosArr = window.lol.iterarData(datalol);
 //ID de la sección Home
 const home = document.getElementById("home");
-//Obtiene el id del objetivo del sitio web que aparece en home
-//const objetive = document.getElementById("objetive");
 //Obtiene el id de la sección que mostrara el titulo de cada una de las secciones seleccionadas 
 const titleBySection = document.getElementById("titleBySection");
 //Obtiene  la clase que contiene el rol del nav 
@@ -21,6 +19,8 @@ const difficultyAsc = document.getElementById("difficultyAsc");
 const difficultyDsc = document.getElementById("difficultyDsc");
 //Obtiene el id del div en donde se va a imprimir la tarjeta de los campeones
 const cuadro = document.getElementsByClassName("cuadro");
+const stats = document.getElementById("stats");
+
 
 //-----FUNCIONES PARA DESPLEGAR LA INFORMACIÓN DE LOS CAMPEONES
 
@@ -142,3 +142,11 @@ const orderByDifficultyDsc = () => {
 };
 orderByDifficultyDsc();
 
+stats.addEventListener('click', () =>{
+  imprimirRoles.innerHTML = "";
+  titleBySection.innerHTML = "Stats Average";
+  const averageAttackP = window.lol.averageAttack(datosArr);
+  imprimirRoles.innerHTML = `<div class="cuadro"> Attack: <br> ${averageAttackP}</div>`;
+  document.getElementById("objetive").style.display = "none";
+  titleBySection.style.display = "block"
+})
