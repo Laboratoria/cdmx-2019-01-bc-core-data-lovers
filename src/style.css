@@ -323,3 +323,8 @@ h2#conf {
 .hide {
   display: none;
 }
+
+#testimony{
+  font-style: italic;
+  font-size: 1.4em;
+}
