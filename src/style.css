@@ -308,7 +308,7 @@ background: #eee;
         display: block;
         text-decoration: none;
 }
-p{
+p {
     text-align: justify;
     padding-bottom: 1%;
     padding-top: 1%;
@@ -326,6 +326,7 @@ p{
 
     font-family: 'Raleway', sans-serif;
 }
+
 #selectors{
     margin-right: 8%;
     margin-left: 8%;
