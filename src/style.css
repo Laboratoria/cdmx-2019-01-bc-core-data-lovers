@@ -18,6 +18,23 @@ body {
   background-color: #111;
   display:flex;
 }
+
+#mySidenavOne{
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+
+}
 #showFirstChampionList{
   margin-top: 50px;
 }
@@ -26,13 +43,14 @@ body {
 #welcomeMssg{
   background-image: url(http://www.lol-wallpapers.com/wp-content/uploads/2017/01/Summoners-Rift-4-League-of-Legends-Artwork-Wallpaper-lol-1024x688.jpg);
   width: 100%;
-  height: 100%; 
+  height: 100%;
   position: static;
   padding-top: 20%;
   padding-bottom: 20%;
   padding-left: 5px;
   background-attachment: fixed;
-
+  background-repeat: no-repeat;
+  
 }
 .welcome{
   font-size: 140%;
@@ -165,8 +183,9 @@ figure img{
   font-size: 20px;
   color: white;
   margin: 2%;
-
+  width: max-content;
 }
+
 
 #titulo{
   font-size: 20px;
@@ -246,6 +265,11 @@ footer{
 
 /*Media Query Ipad*/
 @media only screen  and (min-width : 768px) {
+
+
+  figure img {
+    margin-top: 50%;
+  }  
 
 #titulo {
     width: max-content;
@@ -371,6 +395,9 @@ padding-top: 1%;
 /*Media Query Ipad-Pro*/
 @media only screen  and (min-width : 1024px) {
 
+  figure img {
+    margin-top: 50%;
+  }
 
   .blinke {
     font-size: 200%;
@@ -465,6 +492,101 @@ padding-top: 1%;
 
 @media (min-width: 1025px) {
 
+  figure img {
+    margin-top: 50%;
+  }
+  .hidden{
+    margin-left: 200px;
+  }
+
+  #mainHeader{
+    height: 9%;
+  }
+
+  #showFirstChampionList{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+  }
+
+  
+  .nameList{
+    width: 20%;
+    margin-right: 2px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  display: flex;
+justify-content:center;}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidenav a {
+    padding: 1px 12px 2px 55px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.fa-home:before {
+  display: block;
+}
+
+#letras{
+  margin-left: -12%
+}
+
+#home {
+  padding-left: 2%;
+  margin-bottom: -8%;
+  margin-top: 8%;}
+}
+
+@media (min-width: 1025px){
+
+  #mySidenavOne{
+    display: block;
+  
+  }
+
+}
+
+
+
+
+@media (min-width: 1281px){
+
+
+  figure img {
+    margin-top: 50%;
+  }
+
+  .hidden{
+    margin-left: 220px;
+  }
+
   #mainHeader{
     height: 9%;
   }
@@ -487,4 +609,49 @@ padding-top: 1%;
   display: flex;
 justify-content:center;}
 
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
 }
+#mySidenavOne{
+  display: block;
+
+}
+
+.sidenav a {
+    padding: 1px 15px 2px 55px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.fa-home:before {
+  display: block;
+}
+
+#letras{
+  margin-left: -12%
+}
+
+#home {
+  padding-left: 2%;
+  margin-bottom: -8%;
+  margin-top: 8%;}
+}
+
