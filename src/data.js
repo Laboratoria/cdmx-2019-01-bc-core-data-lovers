@@ -25,7 +25,7 @@ window.WorldBank = {
         result = ciudad.data //retornamos la data años y numeros 
       }
     });
-    console.log(result)
+    //console.log(result)
     return result //retorna a la variable vacia que declaramos al inicio
   },
   // order numbers en mayor, menor, asc, desc
