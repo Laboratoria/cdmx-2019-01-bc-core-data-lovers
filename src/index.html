@@ -9,7 +9,16 @@
   <link rel="stylesheet" href="style.css" />
   <title>Pókemon</title>
 </head>
+
+
 <!--En esta seccion esta todos los elementos que contiene la pagina principal-->
+
+<div id="PaginaInicio">
+  <img src="assets/ball.png" style="max-width: 80%">
+  <h1> PokeGram</h1>
+</div>
+
+
 <body>
 <div id="splash">
     <div class="splash-inner">
@@ -23,6 +32,7 @@
   <div id="PaginaElementos" class="ocultar">
 
     <!--onkeyup es un evento de liberacion de tecla-->
+
       <ul id="result"></ul>
     </div>   
     <nav>
@@ -56,31 +66,52 @@
             </section>
           </section>
         </div>
-  <div id="pok" class="panel">
-      <seccion id="probando" class="grid-img">
+ 
+    <h4>Ordenando Pokemones </h4>
+    <section id="order-pokes">
+      <section>
+        <p>Name</p><br>
+        <input id="asc-name" type="radio" name="order">
+        <label for="asc-name">A-Z</label>
+        <input id="desc-name" type="radio" name="order">
+        <label for="desc-name">Z-A</label>
+      </section>
 
-    
-    <script src="./data/pokemon/pokemon.js"></script>
+      <!--<br><section>
+        <p>Estatura</p><br>
+        <input id="asc-heigh" type="radio" name="order">
+        <label for="asc-heigh">Más Alto</label>
+        <input id="desc-heigh" type="radio" name="order">
+        <label for="desc-heigh">Más Bajito</label>
+      </section>
+    </section>
+  </div>-->
+
+
+
+  <div id="pok" class="panel">
+    <seccion id="paint" class="grid-img">
+
+
+      <script src="./data/pokemon/pokemon.js"></script>
     </seccion>
     <script src="data.js"></script>
     <script src="main.js"></script>
-    </div>
-    
-        <div id="PaginaPerfil" class="ocultar">
-
-        </div>
-
-        <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
 
 
+  <div id="PaginaPerfil" class="ocultar">
+  </div>
 
-    
-    <seccion id="pintar" class="grid-img">
-    </seccion>
- 
+  <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
+
+  <seccion id="pintar" class="grid-img">
+  </seccion>
+
   <script src="./data/pokemon/pokemon.js"></script>
-  
+
   <script src="data.js"></script>
   <script src="main.js"></script>
 
-</body>
+
+</section></div></body> 
+

@@ -1351,7 +1351,7 @@ window.POKEMON = {
     "id": 48,
     "num": "048",
     "name": "Venonat",
-    "img": "http://www.serebii.net/pokemongo/pokemon/048.png",
+    "img": "https://reygif.com/media/pokemon-venonat-53251.gif",
     "type": [
       "Bug",
       "Poison"
@@ -1382,7 +1382,7 @@ window.POKEMON = {
     "id": 49,
     "num": "049",
     "name": "Venomoth",
-    "img": "https://www.google.com/search?q=Venonat+gifs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjgweep77bgAhVBS60KHfs7C2IQ_AUIDigB&biw=1209&bih=589#imgrc=PRNRvbRPRDad1M:",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/de/latest/20140111210817/Venomoth_XY.gif",
     "type": [
       "Bug",
       "Poison"
@@ -2326,7 +2326,7 @@ window.POKEMON = {
     "id": 82,
     "num": "082",
     "name": "Magneton",
-    "img": "http://www.serebii.net/pokemongo/pokemon/082.png",
+    "img": "http://pokemongoleaderboards.com/wp-content/uploads/2018/05/magneton.gif",
     "type": [
       "Electric"
     ],
@@ -2454,7 +2454,7 @@ window.POKEMON = {
     "id": 87,
     "num": "087",
     "name": "Dewgong",
-    "img": "http://www.serebii.net/pokemongo/pokemon/087.png",
+    "img": "https://media.pokemoncentral.it/wiki/d/d0/Sprxym087.gif",
     "type": [
       "Water",
       "Ice"
@@ -2555,7 +2555,7 @@ window.POKEMON = {
     "id": 91,
     "num": "091",
     "name": "Cloyster",
-    "img": "http://www.serebii.net/pokemongo/pokemon/091.png",
+    "img": "https://reygif.com/media/pokemon-cloyster-53071.gif",
     "type": [
       "Water",
       "Ice"
@@ -2613,7 +2613,7 @@ window.POKEMON = {
     "id": 93,
     "num": "093",
     "name": "Haunter",
-    "img": "http://www.serebii.net/pokemongo/pokemon/093.png",
+    "img": "https://projectpokemon.org/home/uploads/monthly_2017_11/5a06119840ef0_small.Animated3.gif.dd05e1934bab5be6c0beea797da8ccf4.gif",
     "type": [
       "Ghost",
       "Poison"
@@ -2648,7 +2648,7 @@ window.POKEMON = {
     "id": 94,
     "num": "094",
     "name": "Gengar",
-    "img": "http://www.serebii.net/pokemongo/pokemon/094.png",
+    "img": "https://vignette.wikia.nocookie.net/pokemon-adventure-challenge/images/0/07/Gengar.gif/revision/latest?cb=20140308183949",
     "type": [
       "Ghost",
       "Poison"
@@ -3114,7 +3114,7 @@ window.POKEMON = {
     "id": 112,
     "num": "112",
     "name": "Rhydon",
-    "img": "http://www.serebii.net/pokemongo/pokemon/112.png",
+    "img": "https://orig00.deviantart.net/3351/f/2011/328/5/0/rhydon_quake_by_eledusapo-d4h5tpt.gif",
     "type": [
       "Ground",
       "Rock"
@@ -3305,7 +3305,7 @@ window.POKEMON = {
     "id": 120,
     "num": "120",
     "name": "Staryu",
-    "img": "http://www.serebii.net/pokemongo/pokemon/120.png",
+    "img": "https://media.pokemoncentral.it/wiki/2/28/Sprxym120.gif",
     "type": [
       "Water"
     ],
@@ -3382,7 +3382,7 @@ window.POKEMON = {
     "id": 123,
     "num": "123",
     "name": "Scyther",
-    "img": "http://www.serebii.net/pokemongo/pokemon/123.png",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/3/3e/latest/20140111192640/Scyther_XY.gif",
     "type": [
       "Bug",
       "Flying"
@@ -3511,7 +3511,7 @@ window.POKEMON = {
     "id": 129,
     "num": "129",
     "name": "Magikarp",
-    "img": "http://www.serebii.net/pokemongo/pokemon/129.png",
+    "img": "http://pa1.narvii.com/6449/aee3c63ac6a63ceaf4309b9f0a39ae829e25c98f_00.gif",
     "type": [
       "Water"
     ],
@@ -3539,7 +3539,7 @@ window.POKEMON = {
     "id": 130,
     "num": "130",
     "name": "Gyarados",
-    "img": "http://www.serebii.net/pokemongo/pokemon/130.png",
+    "img": "https://www.pkparaiso.com/imagenes/xy/sprites/animados/gyarados-3.gif",
     "type": [
       "Water",
       "Flying"
@@ -3663,7 +3663,7 @@ window.POKEMON = {
     "id": 135,
     "num": "135",
     "name": "Jolteon",
-    "img": "http://www.serebii.net/pokemongo/pokemon/135.png",
+    "img": "http://66.media.tumblr.com/cae626758f9b0dcdadc7228d6f059e24/tumblr_mz4dfqcTAo1sjo536o3_250.gif",
     "type": [
       "Electric"
     ],
@@ -3843,7 +3843,7 @@ window.POKEMON = {
     "id": 142,
     "num": "142",
     "name": "Aerodactyl",
-    "img": "http://www.serebii.net/pokemongo/pokemon/142.png",
+    "img": "https://orig00.deviantart.net/dc8e/f/2014/080/1/1/aerodactyl_gif_1_by_gloomymyth-d7b4vf5.gif",
     "type": [
       "Rock",
       "Flying"
@@ -3886,7 +3886,7 @@ window.POKEMON = {
     "id": 144,
     "num": "144",
     "name": "Articuno",
-    "img": "http://www.serebii.net/pokemongo/pokemon/144.png",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/9/9c/latest/20140416002343/Articuno_XY_variocolor.gif",
     "type": [
       "Ice",
       "Flying"
@@ -3909,7 +3909,7 @@ window.POKEMON = {
     "id": 145,
     "num": "145",
     "name": "Zapdos",
-    "img": "http://www.serebii.net/pokemongo/pokemon/145.png",
+    "img": "https://reygif.com/media/zapdos-shiny-53538.gif",
     "type": [
       "Electric",
       "Flying"
@@ -3930,7 +3930,7 @@ window.POKEMON = {
     "id": 146,
     "num": "146",
     "name": "Moltres",
-    "img": "http://www.serebii.net/pokemongo/pokemon/146.png",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a9/latest/20140215201513/Moltres_XY.gif",
     "type": [
       "Fire",
       "Flying"
@@ -4014,7 +4014,7 @@ window.POKEMON = {
     "id": 149,
     "num": "149",
     "name": "Dragonite",
-    "img": "http://www.serebii.net/pokemongo/pokemon/149.png",
+    "img": "https://vignette.wikia.nocookie.net/sidekicksmanhwa/images/e/e0/Dragonite.gif/revision/latest?cb=20150516182703",
     "type": [
       "Dragon",
       "Flying"
