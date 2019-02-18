@@ -34,7 +34,6 @@ body{
     display: inline-block;
     font-size: 1rem;
 }
-
 .icon-logo{
     width: 171px;
     height: 37px;
@@ -95,7 +94,6 @@ height: auto;
     padding-left: 1rem;
     padding-right: 1rem;
     }
-
 .title-indicadores>h1{
     font-size: 2rem;
     margin-top: 0;
@@ -111,9 +109,7 @@ left: 0;
 right: 0;
 margin: auto;
 border-bottom: 1px solid #009fda
-
 }
-
 .information-filter-inner{
     border: 1px solid black;
 }
@@ -122,7 +118,6 @@ border-bottom: 1px solid #009fda
     display: inline-block;
     width: 100%;
 }
-
 .list-question{
     width: 100%;
     font-size: 1rem;
@@ -183,8 +178,7 @@ border-bottom: 1px solid #009fda
 .search-country:hover{
     background-color:#002f54;
     border: 1px solid #002f54; 
-    color: #fff;
-    
+    color: #fff; 
 }
 .ocultar{
     display: none;
@@ -215,15 +209,13 @@ border-bottom: 1px solid #009fda
     text-align: center;
     font-size: 1rem;
 }
-
 .news-mexico,
 .news-brazil,
 .news-peru,
 .news-chile{
     height: 250px;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; 
 }
 .news-mexico{
     background-image: url('images/cdmx.jpg')
@@ -279,7 +271,6 @@ footer{
     -ms-user-select: none;
     user-select: none;
   }
-  
   /* Hide the browser's default radio button */
   .container__check input {
     position: absolute;
@@ -288,7 +279,6 @@ footer{
     height: 0;
     width: 0;
   }
-  
   /* Create a custom radio button */
   .checkmark {
     position: absolute;
@@ -299,7 +289,6 @@ footer{
     background-color: #eee;
     border-radius: 50%;
   }
-  
   /* On mouse-over, add a grey background color */
   .container__check:hover input ~ .checkmark {
     background-color: #ccc;
