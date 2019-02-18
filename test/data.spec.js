@@ -120,7 +120,7 @@ describe('sortData', () => {
   it('return arr Z-A', () => {
     expect(window.data.sortData(pokemon, "descendente")[0].name).toEqual('Vulpix');
   })
-}); 
+});
 
 /* describe('computeStats', () => {
   it('is a function', () => {

@@ -23,7 +23,8 @@ const toPrint = (mapData) => {
   const filter = pokemones;
   // filter.innerHTML = "";
   let printPokeons = '';
-  mapData.map((dataPokemon) => {
+  mapData.map((dataPokemon) => {if (dataPokemon.weaknesses.length > 5){
+  }
     printPokeons +=
       ` <button type="button" class="divPokemon btnPokemon ${dataPokemon.type[0]} btn btn-primary btn-lg" data-toggle="modal" data-target="#pokemon${dataPokemon.id}">
         <img src="${dataPokemon.img}"> <br><p class="name">${dataPokemon.name}</p><br>
@@ -84,16 +85,16 @@ const toPrint = (mapData) => {
                   <th colspan="3">
                   <table class="evolution">
                       <tr>
-                        <td><button id="previous" type="button"  class="btn btn-success btn-lg btnxsmallPre" data-target="#pokemon${dataPokemon.num}">
+                        <td><button type="button" class="btn btn-success btn-lg btnxsmallPre btnprueba" data-target="#pokemon${dataPokemon.num}">
                         <p class="btnEvPre"> <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> PREVIOUS </p>
                         </button></td>
 
-                        <td><button id="actual" type="button" class="btn btn-info btn-lg btnxsmallEv">
+                        <td><button type="button" class="btn btn-info btn-lg btnxsmallEv btnprueba">
                         <img class="imgEv" src="${dataPokemon.img}"><br>
                         <p class="btnEv"> <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> EVOLUCIÓN <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> </p>
                         </button></td>
 
-                        <td><button id="next" type="button" class="btn btn-success btn-lg btnxsmall">
+                        <td><button type="button" class="btn btn-success btn-lg btnxsmall btnprueba">
                         <p class="btnEv"> NEXT <span class="glyphicon glyphicon-forward" aria-hidden="true"></span> </p>
                         </button></td>
                         </tr>
@@ -148,20 +149,4 @@ const search = document.getElementById('search');
 
 search.addEventListener("click", () => {
   alert('Se esta trabajando en esta sección')
-})
-
-const previous = document.getElementById('previous');
-const actual = document.getElementById('actual');
-const next = document.getElementById('next');
-
-previous.addEventListener("click", () => {
-  alert('Se esta trabajando en esta sección');
-});
-
-actual.addEventListener("click", () => {
-  alert('Se esta trabajando en esta sección');
-});
-
-next.addEventListener("click", () => {
-  alert('Se esta trabajando en esta sección');
 });

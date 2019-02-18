@@ -11,7 +11,7 @@ window.data = {
       return dataPokemon.sort((a, b) => (a.name < b.name) ? 1 : -1);
     }
   },
-
+ 
   /* computeStats: (a,b) => {
     a+b == 20;
   } */
