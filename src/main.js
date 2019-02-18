@@ -55,7 +55,7 @@ const champion = document.getElementsByClassName('champion');
 
 //Función para imprimir la data en el HTML
 const printData = (newArrayInfo) => {
-  cardSummary.innerHTML = "";
+  cardSummary.innerHTML = " ";
   newArrayInfo.forEach(champ => {
     let result = `<div id='${champ.name}' class="champion"> <img src="${champ.splash}">
     <h3> ${champ.name} </h3> <div class="tags"> <p> ${champ.primaryRol} </p> <p> ${champ.secondaryRol} </p> </div></div>`;
