@@ -132,7 +132,6 @@ figure {
   height: auto;
   border-radius: 4%;
   padding: 5%;
-  margin: 5% 15% 7% 15%;
 }
 
 #consulta{
@@ -253,7 +252,7 @@ p {
 }
 
 .question{
-  padding: 1%;
+  padding: 5%;
 }
 
 footer {
