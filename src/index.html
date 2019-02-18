@@ -8,23 +8,25 @@
     <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
   </head>
   <body>
-    
     <!--Pantalla uno-->
     <!--Obteniendo nombre y boton siguiente para pintarlo en pantalla 2-->
-    <div id="pantalla1" class= "pokebola">
+    <div id="pantalla1" class= "contenedor">
       <header>
         <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/190211/66212bef18f1889a2bb8dd6f4096808c.png" alt="fuente-pokemon" border="0"></a>
         <!--<h1>Pokedext website</h1>-->
       </header>
-      
       <input type="text" id="nombre" placeholder="Escribe tu nombre">
       <button type="submit" id="next" class= "styleBtn"> GO </button>
     </div>
-    
+
+
+
+
+
     <!--Pantalla dos-->
     <!--Boton que muestra los Pokemones-->
     <div id="pantalla2" class="hide">
-      
+
       <!-- Barra de menu-->
       <nav class= "topnav">
         <ul>
@@ -48,15 +50,17 @@
               <p id ="Normal" class="cajitas"><a href="#" >Normal</a></p>
               <p id ="Rock" class="cajitas"><a href="#" >Roca</a></p>
               <p id ="Ground" class="cajitas"><a href="#" >Tierra</a></p>
-              <p id ="Poison" class="cajitas"><a href="#" >Veneno</a></p>          
-        </div>
-      </li>
-    </ul>
-  </nav>
-  
+              <p id ="Poison" class="cajitas"><a href="#" >Veneno</a></p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+
+
   <!-- Letrero de Bienvenida que al darle click en pantalla 1, me lo pinta en pantalla 2-->
   <span id= "nombre-bienvenido"> </span>
-  
+
 </div>
 
 <div id="root" class="container"></div>

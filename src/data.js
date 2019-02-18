@@ -9,9 +9,10 @@ window.pokemon = {
       }
     });
 
-   
+
+
   },
-  
+
 ordenarPorNombre :  (pokemonArray) => {
   const sortName =
   pokemonArray.sort( (prev, next) =>  {
@@ -22,11 +23,11 @@ ordenarPorNombre :  (pokemonArray) => {
       }else{
       return 0;
     }
-  
+
   });
   return sortName
 
 },
 
- 
+
 }
