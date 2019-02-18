@@ -156,6 +156,7 @@ orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objet
 
 const valorMaximo = () =>{//funcion ordenar max/min
     let arrayMax = valorPorcentajeY;
+    //console.log(arrayMax);
     let selcValor = maximo.value;
     let maxObj =window.worldBank.objMax(selcValor,arrayMax);
     ptrMax(selcValor,maxObj)

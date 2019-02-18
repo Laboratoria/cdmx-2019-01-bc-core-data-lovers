@@ -1,9 +1,51 @@
 * {
     margin: 0;
     padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     }
     @import url('https://fonts.googleapis.com/css?family=Raleway');
     @import url('https://fonts.googleapis.com/css?family=Questrial');
+
+    .social{ /*estilos red social*/
+        position:fixed;
+        top:200px;
+        z-index:2000;
+    }
+
+    .social ul{
+        display: inline-block;
+        list-style: none;
+        width: 100%;
+        margin:20px auto;
+              
+    }
+
+    .social ul li {
+        float: left;
+    }
+
+    .social ul li a{
+        color: #fff;
+        background: #000;
+        padding: 7px 10px;
+        text-decoration: none;
+       -webkit-transition:all 500ms ease;
+        transition:all 500ms ease;
+
+    }
+
+    .social ul li .fa-facebook{background:#3b5998;}
+    .social ul li .fa-twitter-square{background:#00abf0;}
+    .social ul li .fa-google-plus-square{background:#d95232;}
+    .social ul li .fa-linkedin{background:#0e76a8;}
+
+    .social ul li a:hover{
+        padding: 7px 20px;
+        background:#000;
+    } /*estilos red social*/
+
     
     body{
         background:#FFFFFA;
