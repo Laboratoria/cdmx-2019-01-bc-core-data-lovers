@@ -3,12 +3,14 @@ const dataWorldbank = WORLDBANK; //variable que nos permite enlazar la data y ut
 const buttonCountries = document.getElementsByClassName("button");
 const selectIndicator = document.getElementById("indicator");
 const dataYear = document.getElementById("data-year");
+const sort=document.getElementById("sort");
 
 let dataFilter = {}
 
 //Con esta función enlazamos mediante el id del botón,la data de cada país. Para eso fue necesario poner
 //una misma clase a todos los botones y escribir el ID igual que como está en  la data.
 const buttonClick = () => {
+  sort.classList.remove("hide");
   let countries = event.target.id;
   let result = window.WorldBank.dataCountries(dataWorldbank, countries);
   printOption(result);
