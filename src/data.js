@@ -47,9 +47,19 @@ window.worldBank = {
     return orderByObject;
   },
 
-  objMax: (optionMax,arrayMax) =>{
-    let valMax = arrayMax;
-    return valMax=Math.max.apply(null, arrayMax);
+  objMax: (selcValor,arrayMax) =>{
+    let valMax;
+    if(selcValor === "max")
+    {
+      return valMax=Math.max.apply(null, arrayMax);
+    }
+
+    if(selcValor === "min")
+    {
+      return valMax=Math.min.apply(null, arrayMax);
+    }
+   
+    
   }
   
 
