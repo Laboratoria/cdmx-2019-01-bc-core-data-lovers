@@ -125,19 +125,19 @@ const dataPokemonTest = [{
     "num": "006",
     "name": "Charizard"
   }]
-} ];
+}];
 
 //Tests for all data
-describe ('data', () => {
+describe('data', () => {
 
   test('debería ser un objeto', () => {
     expect(typeof data).toBe('object');
   });
 
-  describe ('showAllData', () => {
+  describe('showAllData', () => {
 
     test('debería ser una función', () => {
-      expect (typeof window.data.showAllData).toBe('function');
+      expect(typeof window.data.showAllData).toBe('function');
     });
 
     const processedData = window.data.showAllData(dataPokemonTest);
@@ -146,23 +146,23 @@ describe ('data', () => {
     });
   });
 
-//Tests Filter Data
-  describe ('filterByType', () => {
+  //Tests Filter Data
+  describe('filterByType', () => {
 
-    test('debería ser una funcion', ()=>{
+    test('debería ser una funcion', () => {
       expect(typeof window.data.filterByType).toBe('function');
     });
 
     test('debería regresar un arreglo con los pokémones que correspondan con el tipo Poison', () => {
       const processedDataFilter = window.data.filterByType(dataPokemonTest, 'Poison');
       processedDataFilter.forEach(element => {
-        expect (element.type).toEqual(expect.arrayContaining(['Poison']));
+        expect(element.type).toEqual(expect.arrayContaining(['Poison']));
       });
     });
   });
 
-  describe('filterByLetter',() => {
-    const processedFilterLetter = window.data.filterByLetter (dataPokemonTest, 'C');
+  describe('filterByLetter', () => {
+    const processedFilterLetter = window.data.filterByLetter(dataPokemonTest, 'C');
 
     test('debería ser una funcion', () => {
       expect(typeof window.data.filterByLetter).toBe('function');
@@ -182,52 +182,52 @@ describe ('data', () => {
 
   });
 
-//Tests order data
-  describe('sortData',() => {
+  //Tests order data
+  describe('sortData', () => {
 
     test('debería ser una funcion', () => {
       expect(typeof window.data.sortData).toBe('function');
     });
 
     test('debería retornar un arreglo ordenado de forma ascendente por nombre', () => {
-      expect(window.data.sortData(dataPokemonTest, 'name', 'asc' )[0].name).toBe('Bulbasaur');
-      expect(window.data.sortData(dataPokemonTest, 'name', 'asc' )[3].name).toBe('Venusaur');
+      expect(window.data.sortData(dataPokemonTest, 'name', 'asc')[0].name).toBe('Bulbasaur');
+      expect(window.data.sortData(dataPokemonTest, 'name', 'asc')[3].name).toBe('Venusaur');
     });
 
-    test('deberia retornar un arreglo ordenado de forma descendente por nombre',() => {
+    test('deberia retornar un arreglo ordenado de forma descendente por nombre', () => {
       expect(window.data.sortData(dataPokemonTest, 'name', 'desc')[0].name).toBe('Venusaur');
       expect(window.data.sortData(dataPokemonTest, 'name', 'desc')[3].name).toBe('Bulbasaur');
     });
 
-    test('debería retornar un arreglo ordenado de forma ascendente por altura', ()=>{
+    test('debería retornar un arreglo ordenado de forma ascendente por altura', () => {
       expect(window.data.sortData(dataPokemonTest, 'height', 'asc')[0].height).toBe(0.61);
       expect(window.data.sortData(dataPokemonTest, 'height', 'asc')[3].height).toBe(2.01);
     });
 
-    test('debería retornar un arreglo ordenado de forma descendente por altura', ()=>{
+    test('debería retornar un arreglo ordenado de forma descendente por altura', () => {
       expect(window.data.sortData(dataPokemonTest, 'height', 'desc')[0].height).toBe(2.01);
       expect(window.data.sortData(dataPokemonTest, 'height', 'desc')[3].height).toBe(0.61);
     });
 
-    test('debería retornar una arreglo ordenado de forma ascendente por peso', ()=>{
+    test('debería retornar una arreglo ordenado de forma ascendente por peso', () => {
       expect(window.data.sortData(dataPokemonTest, 'weight', 'asc')[0].weight).toBe(6.9);
       expect(window.data.sortData(dataPokemonTest, 'weight', 'asc')[3].weight).toBe(100.0);
     });
 
-    test('debería retornar una arreglo ordenado de forma descendente por peso', ()=>{
+    test('debería retornar una arreglo ordenado de forma descendente por peso', () => {
       expect(window.data.sortData(dataPokemonTest, 'weight', 'desc')[0].weight).toBe(100.0);
       expect(window.data.sortData(dataPokemonTest, 'weight', 'desc')[3].weight).toBe(6.9);
 
       expect(window.data.sortData(dataPokemonTest, 'weight')[3].weight).toBe(6.9);
     });
   });
-//Tests for Stats and average
+  //Tests for Stats and average
   describe('computeStats', () => {
     test('debería ser una funcion', () => {
       expect(typeof window.data.computeStats).toBe('function');
     });
     test('debería regresar el valor mínimo para candy_count', () => {
-      expect(window.data.computeStats(dataPokemonTest,'candy_count').minimum).toBe(25);
+      expect(window.data.computeStats(dataPokemonTest, 'candy_count').minimum).toBe(25);
     });
     test('debería regresar el valor máximo para candy_count', () => {
       expect(window.data.computeStats(dataPokemonTest, 'candy_count').maximum).toBe(100);

@@ -1,4 +1,3 @@
-
 let dataPokemon = window.POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const searchCoincidence = document.getElementById('search-coincidences');
@@ -35,7 +34,7 @@ const printPokemon = (pokemon) => {
 
 //Show List Data
 const showList = (pokemonList) => {
-  pokemones.innerHTML="";
+  pokemones.innerHTML = "";
   pokemonList.forEach(element => {
     printPokemon(element);
   });
@@ -49,14 +48,14 @@ const buttonsArray = Array.from(buttonsCollection)
 //Pokémon type function according to clicking on the button that the user selects
 const getTypePokemon = (arrayButtons) => {
 
-      arrayButtons.map(boton => {
-        boton.addEventListener("click",(event) =>{
-          //console.log(event.target.name);
-          //console.log(window.filterByType(event.target.name));
-          //Invoke a function that paints Pokemon
-          showList(window.data.filterByType(dataPokemon,event.target.name));
-        })
-      })
+  arrayButtons.map(boton => {
+    boton.addEventListener("click", (event) => {
+      //console.log(event.target.name);
+      //console.log(window.filterByType(event.target.name));
+      //Invoke a function that paints Pokemon
+      showList(window.data.filterByType(dataPokemon, event.target.name));
+    })
+  })
 }
 
 getTypePokemon(buttonsArray)
@@ -65,7 +64,7 @@ getTypePokemon(buttonsArray)
 const filterCoincidence = () => {
   searchCoincidence.addEventListener('keyup', () => {
     let searchValue = document.getElementById('search-coincidences').value;
-    showList(window.data.filterByLetter(dataPokemon,searchValue));
+    showList(window.data.filterByLetter(dataPokemon, searchValue));
   });
 }
 
@@ -75,12 +74,12 @@ const filterCoincidence = () => {
 let ubication = location.href;
 
 if (ubication.includes('typePokemon.html')) {
- //Pass all data to show all the info or dataByType to show the filtered information
+  //Pass all data to show all the info or dataByType to show the filtered information
   //showList(allData);
   filterCoincidence();
 
 
-}else if (ubication.includes('orderPokemon.html')) {
+} else if (ubication.includes('orderPokemon.html')) {
   /*const orderNameRadio = document.getElementById('asc-name');
   orderNameRadio.addEventListener('click',()=>{
     showList(window.sortData(dataPokemon,'name','asc'));
@@ -91,11 +90,11 @@ if (ubication.includes('typePokemon.html')) {
   const arrayRadio = Array.from(orderRadio);
   const getOrderPokemon = (optionsRadio) => {
     optionsRadio.map(radio => {
-      radio.addEventListener("click",() =>{
-        if(radio.checked === true){
+      radio.addEventListener("click", () => {
+        if (radio.checked === true) {
           let idRadio = radio.id.split('-');
           //console.log(window.data.sortData(dataPokemon,idRadio[1],idRadio[0]));
-          showList(window.data.sortData(dataPokemon,idRadio[1],idRadio[0]));
+          showList(window.data.sortData(dataPokemon, idRadio[1], idRadio[0]));
         }
       });
     });
@@ -104,25 +103,27 @@ if (ubication.includes('typePokemon.html')) {
 
   showList(window.data.showAllData(dataPokemon));
 
-} else if (ubication.includes('statsPokemon.html')){
+} else if (ubication.includes('statsPokemon.html')) {
   const resultCandy = window.data.computeStats(dataPokemon, 'candy_count');
-  document.getElementById('max-candy').innerHTML= resultCandy.maximum;
-  document.getElementById('min-candy').innerHTML= resultCandy.minimum;
-  document.getElementById('avg-candy').innerHTML= resultCandy.average;
+  document.getElementById('max-candy').innerHTML = resultCandy.maximum;
+  document.getElementById('min-candy').innerHTML = resultCandy.minimum;
+  document.getElementById('avg-candy').innerHTML = resultCandy.average;
 
   const resultSpawn = window.data.computeStats(dataPokemon, 'spawn_chance');
-  document.getElementById('max-spawn').innerHTML= resultSpawn.maximum;
-  document.getElementById('min-spawn').innerHTML= resultSpawn.minimum;
-  document.getElementById('avg-spawn').innerHTML= resultSpawn.average;
+  document.getElementById('max-spawn').innerHTML = resultSpawn.maximum;
+  document.getElementById('min-spawn').innerHTML = resultSpawn.minimum;
+  document.getElementById('avg-spawn').innerHTML = resultSpawn.average;
 
   const resultAvg = window.data.computeStats(dataPokemon, 'avg_spawns');
-  document.getElementById('max-avg').innerHTML= resultAvg.maximum;
-  document.getElementById('min-avg').innerHTML= resultAvg.minimum;
-  document.getElementById('avg-avg').innerHTML= resultAvg.average;
+  document.getElementById('max-avg').innerHTML = resultAvg.maximum;
+  document.getElementById('min-avg').innerHTML = resultAvg.minimum;
+  document.getElementById('avg-avg').innerHTML = resultAvg.average;
 
   //Graficos
   let google = window.google;
-  google.charts.load('current', {'packages':['bar']});
+  google.charts.load('current', {
+    'packages': ['bar']
+  });
 
   const drawChartCandy = () => {
     let data = google.visualization.arrayToDataTable([

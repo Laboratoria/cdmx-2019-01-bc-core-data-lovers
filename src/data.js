@@ -32,34 +32,6 @@ window.data = {
       return data;
     }
 
-    /*
-    switch (sortBy) {
-      case 'name':
-        if (sortOrder == 'asc') {
-          return data.sort((a, b) => (a.name > b.name) ? 1 : -1);
-        }
-        else if (sortOrder == 'desc') {
-          return data.sort((a, b) => (a.name < b.name) ? 1 : -1);
-        }
-        break;
-      case 'height':
-        if (sortOrder === 'asc') {
-          return data.sort((a, b) => (a.height > b.height) ? 1 : -1);
-        }
-        else if (sortOrder === 'desc') {
-          return data.sort((a, b) => (a.height < b.height) ? 1 : -1);
-        }
-        break;
-      case 'weight':
-        if (sortOrder === 'asc') {
-          return data.sort((a, b) => (a.weight > b.weight) ? 1 : -1);
-        }
-        else if (sortOrder === 'desc') {
-          return data.sort((a, b) => (a.weight < b.weight) ? 1 : -1);
-        }
-        break;
-
-    }*/
   },
 //Show data values
   computeStats: (data,valueItem) => {
