@@ -17,7 +17,7 @@ html {
 .container {
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px; 
+  padding-left: 15px;
   /* margin-right: auto;
   margin-left: auto; */
 }
@@ -154,7 +154,7 @@ main {
   font-style: normal;
   font-variant: small-caps;
   text-transform: uppercase;
-  font-weight: 600; 
+  font-weight: 600;
   line-height: 29px;
   font-size: 1.5em;
   letter-spacing: 0.4px;
@@ -166,7 +166,7 @@ main {
   color: #444444;
 }
 
-#btn-est { 
+#btn-est {
   position: relative;
   left: 155px;
   margin-top: 150px;
@@ -188,17 +188,17 @@ main {
 #btn-est:hover {
   color: white;
   background: transparent;
-  opacity: 15%; 
+  opacity: 15%;
   border: 2px solid #FFD252;
-  color:white;
+  color: white;
 }
 
-button:hover{
+button:hover {
   color: white;
   background: transparent;
-  opacity: 15%; 
+  opacity: 15%;
   border: 2px solid #FFD252;
-  color:#444444;
+  color: #444444;
 }
 
 #filtrar-pais {
@@ -212,22 +212,29 @@ button:hover{
 }
 
 #conferencias {
-  padding:6px;
-  background: rgb(255, 255, 255);;
+  padding: 6px;
+  background: rgb(255, 255, 255);
+  ;
   text-align: center;
-  color:#444444;
+  color: #444444;
 }
 
 #contacto {
-  padding:6px;
+  padding: 6px;
   background: #FFD252;
   text-align: center;
   color: #fff;
   font-size: 12px;
 }
 
-#testimony hr{
-    height: 1vh;
-    background-color: #FFD252;
-  
-}
+
+hr {
+  border: 0;
+  border-bottom: 6px solid #FFD252;
+  height:70px;
+  width: 12vh;
+  }
+
+  h2#conf{
+margin-top: 3%;
+  }
