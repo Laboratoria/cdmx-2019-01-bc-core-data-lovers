@@ -1,5 +1,3 @@
-
-
 @media (max-width:992px){
   .social a{
     font-size: 4em;
@@ -110,7 +108,9 @@ header{
 }
 
 
-
+.carousel-inner>img{
+  width:100vw;
+}
 
 
 .mySlides{
@@ -161,6 +161,8 @@ header{
 .container-flags{
   margin-bottom: 80px;
   margin-top: 80px;
+  justify-content: center;
+
 }
 .col {
   display:inline-block;
@@ -176,6 +178,9 @@ h3{
 }
 
 
+.container-fluid{
+  width: 100 vw;
+}
 
 
 
@@ -372,6 +377,13 @@ td{
   font-size: 15px;
 }
 
+.carousel-inner img {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+}
 
 
 

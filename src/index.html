@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
     crossorigin="anonymous">
   <meta charset="utf-8">
-  <title>Data Lovers</title>
+  <title>Hipatia Project</title>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
@@ -23,44 +23,44 @@
 
   <header>
 
-    <nav class="navbar navbar-expand-md sticky-top">
-      <img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="nav-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-
-        <ul class="navbar-nav ml-auto">
+      <nav class="navbar navbar-expand-md sticky-top">
+          <img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX">
+    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="nav-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+    
+            <ul class="navbar-nav ml-auto">
 
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Indicadores</a>
+            <a class="nav-link" href="">Indicadores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="">Contacto</a>
           </li>
 
         </ul>
 
-</div>      
+       </div>      
     </nav>
-  </header>
 
+  </header>
 
   <div id="slides" class="carousel-slide" data-ride="carousel">
 
     <div class="carousel-inner">
 
-      <img class="mySlides" src="assets/images/267.jpg">
-      <img class="mySlides" src="assets/images/aaa.jpg">
-      <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg">
+      <img class="mySlides" src="https://source.unsplash.com/featured/1600x900/?women, empowerment">
+      <img class="mySlides" src="https://source.unsplash.com/featured/1600x900/?women, business">
+      <img class="mySlides" src="https://source.unsplash.com/featured/1600x900/?women, work">
 
       <div class="carousel-caption">
         <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
@@ -82,16 +82,14 @@
     </div>
   </div>
 
-
-
-  <div class="container">
+  <div class="container-fluid">
 
     <div id="Estadisticas">
 
       <h3>Estadísticas laborales</h3>
 
 
-      <select id="selects">
+      <select id="selects" class="container-fluid">
 
         <option class="indicatorGroup">Seleccionar un indicador</option>
         <option value="Desempleo total" class="indicatorGroup">Desempleo, total (% de participación total en la fuerza
@@ -145,36 +143,36 @@
 
 
     </div>
-
+  </div>
 
 
     <div class="container-flags">
-      <div class="row">
+      <div class="row text-center col-12">
 
         <div class="col">
           <h4>México</h4>
-          <button class="country" value="mexico"><img src="./assets/images/mex.png" width="50" height="50"> </button>
+          <button class="country" value="mexico"><img src="./assets/images/mex.png" width="50" height="50" alt="flagMx"> </button>
         </div>
-
-
 
         <div class="col">
           <h4>Chile</h4>
-          <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50" height="50"> </button>
+          <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50" height="50" alt="flagChl"> </button>
         </div>
 
         <div class="col">
           <h4>Brasil</h4>
-          <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50" height="50"> </button>
+          <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50" height="50" alt="flagBra"> </button>
         </div>
 
         <div class="col">
           <h4>Peru</h4>
-          <button class="country" value="peru"><img src="./assets/images/peru.png" width="50" height="50"> </button>
+          <button class="country" value="peru"><img src="./assets/images/peru.png" width="50" height="50" alt="flagPer"> </button>
         </div>
+
       </div>
     </div>
 
+   
 
 
     <form id="sorters">
@@ -238,7 +236,7 @@
 
 
         <div class="col-lg-6">
-          <img src="assets/images/aaa.jpg" class="img flud">
+          <img src="assets/images/aaa.jpg" class="img fluid img-responsive" alt="picture">
         </div>
       </div>
       <hr class="my-4">
@@ -261,8 +259,6 @@
 
 
 
-
-
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
@@ -274,8 +270,8 @@
       <div class="container-fluid padding">
         <div class="row text-center">
           <div class="col-md-4">
-            <img src="../src/assets/images/Logo Hipatia-01.png" style="width:20%">
-            <hr clas="light">
+            <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoF">
+            <hr class="light">
             <p>66423-1873</p>
             <p>HipatiaProject@gmail.com</p>
             <p>Insurgentes Sur 23</p>
@@ -306,7 +302,7 @@
       </div>
     </footer>
 
-</div>
+
 </body>
 
 </html>
