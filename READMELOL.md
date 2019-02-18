@@ -74,12 +74,19 @@ La interacción continúa a través de un cuadro de búsqueda donde el usuario p
 Por otro lado, el usuario podrá dar click y desplegar la lista para filtrar personajes por rol (tanque, peleador, asesino, mago, tirador y soporte); al dar click a cada rol, se mostrarán únicamente los personajes de dicho rol. Asimismo, el usuario también podrá ordenar por número de ataque, magia y defensa de mayor a menor o viceversa. 
 
 ## Prototipo de baja fidelidad
-Fotos de los bocetos hechos en hoja con lápiz.
-src(/prototipos)
+Fotos de los bocetos hechos en hoja con lápiz
+![GitHub Boceto](src/prototipos/boceto1.jpg)
+![GitHub Boceto](src/prototipos/boceto2.jpg)
+![GitHub Boceto](src/prototipos/boceto3.jpg)
 
 ##Prototipo de alta fidelidad (User Testing)
-Imágenes editadas en Photoshop.
-src(/prototipos)
+Imágenes editadas en Photoshop
+![GitHub BocetoAltaFidelidad](src/prototipos/altafidelidad1.png)
+![GitHub BocetoAltaFidelidad](src/prototipos/altafidelidad2.png)
+
+Avances del primer y segundo sprint
+![GitHub Avance](src/prototipos/avance1.png)
+![GitHub Avance](src/prototipos/avance2.png)
 
 ## Pruebas de usabilidad
 Uno de los principales problemas que se detectaron fue reconocer que la data brindada está totalmente en inglés y la información de interacción en la página del primer sprint estaba en español. Por tal motivo, se realizó una encuesta a jugadores con el fin de conocer si había algún tipo de inconformidad al ver que la información estuviese en inglés y también para saber si entendían la lógica de la página.
@@ -88,7 +95,17 @@ Para el segundo sprint se decidió cambiar el idioma de la información que perm
 
 Otra de las preguntas en la encuesta fue saber qué tipo de información les gustaría conocer de cada campeón, esto ayudó a determinar qué datos se mostrarían -de toda la data- en la tarjeta de cada jugador; como resultado, cada tarjeta mostraría lo más relevante a modo de no saturar de información irrelevante al usuario y mantener el aspecto visual más “limpio”.
 
+## Encuesta
+
 La encuesta realizada se puede ver acá: https://docs.google.com/forms/d/e/1FAIpQLScJVy2w6j63vSefiVoqEpTW78AuqqbGxprD-XtMgdXTLxgsMw/viewform?vc=0&c=0&w=1
+
+Resultados de encuesta
+![GitHub Encuesta](src/encuesta/encuesta1.png)
+![GitHub Encuesta](src/encuesta/encuesta2.png)
+![GitHub Encuesta](src/encuesta/encuesta3.png)
+![GitHub Encuesta](src/encuesta/encuesta4.png)
+![GitHub Encuesta](src/encuesta/encuesta5.png)
+
 
 **Problemas de usabilidad detectados a través de los tests**
 Más que problemas de usabilidad, se encontraron opiniones que ayudaron a mejorar la forma en que se mostraría la información de cada campeón. Como resultado, la opinión de los encuestados ayudaron a mejorar la propuesta final de la aplicación.
