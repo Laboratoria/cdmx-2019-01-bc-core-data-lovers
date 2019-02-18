@@ -20,6 +20,10 @@ body{
     background-color: #fff;
     padding: 5px 2rem;
     text-align: right;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
 }
 .header-left{
     float: left;
@@ -44,14 +48,12 @@ body{
     cursor: pointer;
     background: #4d4d4d;
     text-align: center;
-<<<<<<< HEAD
+
     padding: 0 10px;
     -webkit-transition: all linear 0.5s;
     -o-transition: all linear 0.5s;
     transition: all linear 0.5s;
-=======
-    padding: 0 10px; 
->>>>>>> origin/rama-ely
+
 }
 .nav-menu ul{
     line-height: 3rem;
@@ -70,12 +72,9 @@ body{
     border-bottom:1px solid #5a5a5a;
 }
 .container{
-<<<<<<< HEAD
+
     padding: 1rem  1rem;
     min-height: 82vh;
-=======
-    padding: 5px 15px;
->>>>>>> origin/rama-ely
 }
 .news{
     width: 100%;
@@ -88,6 +87,7 @@ body{
 height: auto;
 }
 .title-indicadores{
+    position: relative;
     text-align: center;
 }
 .general-filter{
@@ -100,22 +100,30 @@ height: auto;
     }
 
 .title-indicadores>h1{
-    color:#ffc0cb;
     font-size: 2rem;
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: #002f54;
 }
+.title-indicadores>h1:before{
+    content: "";
+position: absolute;
+width: 5rem;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+border-bottom: 1px solid #009fda
+
+}
+
 .information-filter-inner{
     border: 1px solid black;
 }
 .information-filter{
-    display: flex;
-    justify-content: space-around;
     margin: 30px 0;
     display: inline-block;
     width: 100%;
-    display: inline-block;
-        width: 100%;
 }
 
 .list-question{
@@ -156,7 +164,7 @@ height: auto;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-
+    font-size: 1rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -184,8 +192,53 @@ height: auto;
 .ocultar{
     display: none;
 }
-.mostrar-news{
+.mostrar-filters{
     display: block;
+    font-size: 0;
+}
+.card-news{
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.title-news{
+    margin: 0;
+    color: #fff;
+    text-align: right;
+    font-size: 1.4rem;
+    padding-right: 10px;
+    font-weight: 400;
+}
+.info-news{
+    padding: 0 10px;
+    margin-top: 35px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.news-mexico,
+.news-brazil,
+.news-peru,
+.news-chile{
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.news-mexico{
+    background-image: url('images/cdmx.jpg')
+}
+.news-brazil{
+    background-image: url('images/brazil.jpg')
+}
+.news-peru{
+    background-image: url('images/peru.jpeg')
+}
+.news-chile{
+    background-image: url('images/chile.jpg')  
 }
 footer{
     background-color: #333333;;
@@ -196,7 +249,6 @@ footer{
     color: #fff;
     line-height: 50px;
     text-align: center;
-<<<<<<< HEAD
 }
 
 /* filtros de ordenamiento */
@@ -305,6 +357,28 @@ footer{
         margin-bottom: 1rem;
         max-width: 200px;
     }
-=======
->>>>>>> origin/rama-ely
+
+    .information-filter{
+        display:flex;
+        justify-content: space-around;
+    }
+    .card-news{
+        display: inline-block;
+        width: 45%;
+        margin-left: 3.5%;
+        text-align: center;
+        vertical-align: top;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .news-mexico, .news-brazil, .news-peru, .news-chile{
+        height: 300px;
+    }
+    .item-filter-sort{
+        text-align: center;
+    }
+    .list-question{
+        width: 80%
+    } 
+
 }

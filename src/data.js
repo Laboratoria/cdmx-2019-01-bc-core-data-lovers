@@ -60,11 +60,11 @@ window.WorldBank = {
   },
   // funcion que saque la media de los porcentajes
   getMathMedia: (resultado) => {
-    let suma = 0;
-    let count = 0;
+    let suma = 0;//suma = suma + element
+    let count = 0;//contador  que intera para contar los que si tengan 
     //  porcentajes =  parseFloat(porcentajes)
     for (const key in resultado) {
-      if (resultado.hasOwnProperty(key)) {
+      if (resultado.hasOwnProperty(key)) { //key : valor, propety:"2000"
         const element = resultado[key];
         if (typeof element === 'number') {
           suma += element 
@@ -74,7 +74,6 @@ window.WorldBank = {
     }
   const avg = suma/count
   //console.log(avg)
-    return avg;
-
+  return avg;
   },
 }

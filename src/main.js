@@ -25,7 +25,7 @@ btnAbout.addEventListener('click', () => {
   about.classList.remove('ocultar');
   filters.classList.add('ocultar');
   navMenu.classList.add('ocultar');
-  news.classList.remove('mostrar-news');
+  news.classList.add('ocultar');
 });
 //comentario
 
@@ -33,22 +33,27 @@ btnNews.addEventListener('click', () => {
   about.classList.add('ocultar');
   filters.classList.add('ocultar');
   navMenu.classList.add('ocultar');
-  news.classList.add('mostrar-news');
+  news.classList.remove('ocultar');
 });
 btnFilters.addEventListener('click', () => {
   about.classList.add('ocultar');
   filters.classList.remove('ocultar');
   navMenu.classList.add('ocultar');
-  news.classList.remove('mostrar-news');
+  news.classList.add('ocultar');
 });
+window.onload = function cargar(){
+  filters.classList.remove('ocultar');
+}
 //acceder a la data de cada pais
 
 const data = window.WORLDBANK;
+
 
 // const countryMex = WORLDBANK.MEX.indicators;
 // const countryPer = WORLDBANK.PER.indicators;
 // const countryBra= WORLDBANK.BRA.indicators;
 // const countryChl= WORLDBANK.CHL.indicators;
+
 
 
 // section donde esta la informacion y el select
@@ -92,7 +97,6 @@ listQuestion.addEventListener("change", () => {
 });
 
 
-
 const radioFilters = Array.from(document.getElementsByClassName('radio__filter'));
 //console.log(radioFilters)
 for (let radioItem in radioFilters){
@@ -104,7 +108,6 @@ for (let radioItem in radioFilters){
     const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js
     const resultadoOrder = window.WorldBank.orderData(resultado, e.target.dataset.sortby, e.target.dataset.sortorder)//Datos de data.js
     
-   
     for (let resultadoYear in resultadoOrder) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
       let parrafo = document.createElement('p'); // creamos un elemento p temporal ira grafica
       parrafo.innerHTML = `<b>Año</b>: ${resultadoOrder[resultadoYear]} = ${resultado[resultadoOrder[resultadoYear]] || "N/A"} ` //imprimimos el año y numeros
@@ -126,10 +129,6 @@ for (let radioItem in radioFilters){
 //   }
 // });
 
-
-
-
-
 // on radio filters change 
 // const radioYearMayor = document.getElementById("asc");
 // radioYearMayor.addEventListener("change", () => {
@@ -142,6 +141,7 @@ for (let radioItem in radioFilters){
 //     indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
 //   }
 // })
+
 
 
 
