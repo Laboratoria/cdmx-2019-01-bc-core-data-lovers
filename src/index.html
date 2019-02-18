@@ -1,106 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>ProMujer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto:300,400,400i,700,900" rel="stylesheet">
+ <title>ProMujer</title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900" rel="stylesheet">
+ 
 </head>
-      
+       
 <body>
-  <script src="http://code.jquery.com/jquery.js"></script>
-  <header class="header">
-    <div class="container">
-      <figure class="logo">
-        <img id="logo" src="assets/images/logo_proMujer.png" alt="Logo ProMujer">
-      </figure>
-      <nav class="navigation">
-        <ul>
-          <li><a href="#countries">Estadísticas</a></li>
-          <li><a href="#conferencias">Conferencias</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-    <section id="home" class="container">
-      <div id="text">
-        <p>Centro de investigación para el Desarrollo de la mujer en América Latina.</p>
-    </div> 
-      <div id="button-est">
-        <button id="btn-est">Ver estadísticas</button>
-      </div>
-    </section>
-  
-    <section id="countries" class="container">
-      <div id="text-countries"> 
-        <h2>PAÍS</h2>
-        <h3>Selecciona el país de tu interés:</h3>
-      </div>
-      <div id="group-buttons"> 
-        <button id="BRA" class="button btn btn-danger">Brasil</button>
-        <button id="CHL" class="button">Chile</button>
-        <button id="MEX" class="button">México</button>
-        <button id="PER" class="button">Perú</button>
-      </div>
-    </section>
-    <section class="container">
-      <select id="indicator">
-        <option value="indicadores"> Indicadores </option>
-      </select>
-      <input type="radio" name="sort" value="upward" > Ascendente
-      <input type="radio" name= "sort" value="falling" > Descendente
-      
-      <div id="data-year">
-      </div>
-    </section>
-    <section id="conferencias" class="container">
-      <h2>Conoce nuestras conferencias.</h2>
-      <p>¿Quieres que tu audiencia vibre de emoción, encuentre las herramientas que necesita
-        <br>para su vida o para su emprendimiento y, sobre todo, pase un momento increíble lleno de
-        <br>dinamismo, motivación y conocimiento?
-        <br>¡Entonces trabajemos juntos y hagamos de tu evento UN ÉXITO!
-        Mi experiencia como speaker abarca temas de Desarrollo Humano y Personal,
-        <br>Emprendimiento, Empoderamiento Femenino, Marketing Digital y Negocios
-        <br>Digitales, Liderazgo y Responsabilidad Social.
-        <br>
-        Entre nuestros clientes se encuentran: la Universidad de Tamaulipas, la Universidad Politécnica del Valle de
-        México,la Procuraduría de Justicia del Estado de Veracruz, Grupo Bayer, Grupo Carvajal,
-        <br>Young Living México, El sistema DIF del Estado de Hidalgo, CANACINTRA, la Universidad Politécnica del Valle
-        de México,
-        <br>el Instituto Tecnológico de Chilpancingo, Banco INVEX,
-        Bcysa Servicios Industriales, JR Consultores y Grupo MAP, entre otros.</p>
-    </section>
-    <footer id="contacto">
-      <div class="container">
-      <h2>Para cualquier duda o información.</h2>
-      <p>
-        Si deseas contactarnos, puedes hacerlo de las siguientes maneras:
-        <br>
-        1. Envía un correo electrónico a:
-        info@promujer.org.mx
-        <br>
-        2. Llama al (55) 55530109, de 9 a 15 horas.
-        <br>
-        3. Síguenos en nuestra página de Facebook: ProMujer, o Twitter: @ProMujer.
-      </p>
-    </div>
-    </footer>
-    <div id="root"></div>
-  </main>
-  <!-- <script src="./data/injuries/injuries.js"></script> -->
-  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-  <!-- <script src="./data/steam/steam.js"></script> -->
-  <script src="./data/worldbank/worldbank.js"></script>
-  <!-- <script src="./data/lol/lol.js"></script> -->
-  <script src="data.js"></script>
-  <script src="main.js"></script>
+ 
+ <header class="header">
+  <div class="container">
+   <figure class="logo">
+    <img id="logo" src="assets/images/logo_proMujer.png" alt="Logo ProMujer">
+   </figure>
+   <nav class="navigation">
+    <ul>
+     <li><a href="#countries">Estadísticas</a></li>
+     <li><a href="#conferencias">Conferencias</a></li>
+     <li><a href="#contacto">Contacto</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+ <main class="main">
+  <section id="home" class="container">
+   <div id="text">
+    <p>Centro de investigación para el Desarrollo de la mujer en América Latina.</p>
+  </div> 
+   <div id="button-est">
+    <button id="btn-est">Ver estadísticas</button>
+   </div>
+  </section>
+ 
+  <section id="countries" class="container">
+   <div id="text-countries"> 
+    <h2>PAÍS</h2>
+    <h3>Selecciona el país de tu interés:</h3>
+   </div>
+   <div id="group-buttons"> 
+    <button id="BRA" class="button btn btn-danger">Brasil</button>
+    <button id="CHL" class="button">Chile</button>
+    <button id="MEX" class="button">México</button>
+    <button id="PER" class="button">Perú</button>
+   </div>
+  </section>
+  <section class="container">
+   <select id="indicator">
+    <option value="indicadores"> Indicadores </option>
+   </select>
+   <input type="radio" name="sort" value="upward" > Ascendente
+   <input type="radio" name= "sort" value="falling" > Descendente
+   
+   <div id="data-year">
+   </div>
+  </section>
+  <section id="conferencias" class="container">
+   <h2>Conoce nuestras conferencias.</h2>
+   <p>¿Quieres que tu audiencia vibre de emoción, encuentre las herramientas que necesita
+    <br>para su vida o para su emprendimiento y, sobre todo, pase un momento increíble lleno de
+    <br>dinamismo, motivación y conocimiento?
+    <br>¡Entonces trabajemos juntos y hagamos de tu evento UN ÉXITO!
+    Mi experiencia como speaker abarca temas de Desarrollo Humano y Personal,
+    <br>Emprendimiento, Empoderamiento Femenino, Marketing Digital y Negocios
+    <br>Digitales, Liderazgo y Responsabilidad Social.
+    <br>
+    Entre nuestros clientes se encuentran: la Universidad de Tamaulipas, la Universidad Politécnica del Valle de
+    México,la Procuraduría de Justicia del Estado de Veracruz, Grupo Bayer, Grupo Carvajal,
+    <br>Young Living México, El sistema DIF del Estado de Hidalgo, CANACINTRA, la Universidad Politécnica del Valle
+    de México,
+    <br>el Instituto Tecnológico de Chilpancingo, Banco INVEX,
+    Bcysa Servicios Industriales, JR Consultores y Grupo MAP, entre otros.</p>
+  </section>
+  <footer id="contacto">
+   <div class="container">
+   <h2>Para cualquier duda o información.</h2>
+   <p>
+    Si deseas contactarnos, puedes hacerlo de las siguientes maneras:
+    <br>
+    1. Envía un correo electrónico a:
+    info@promujer.org.mx
+    <br>
+    2. Llama al (55) 55530109, de 9 a 15 horas.
+    <br>
+    3. Síguenos en nuestra página de Facebook: ProMujer, o Twitter: @ProMujer.
+   </p>
+  </div>
+  </footer>
+  <div id="root"></div>
+ </main>
+ <!-- <script src="./data/injuries/injuries.js"></script> -->
+ <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+ <!-- <script src="./data/steam/steam.js"></script> -->
+ <script src="./data/worldbank/worldbank.js"></script>
+ <!-- <script src="./data/lol/lol.js"></script> -->
+ <script src="data.js"></script>
+ <script src="main.js"></script>
 </body>
 </html>
-
-
-
