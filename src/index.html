@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BANCO MUNDIAL</title>
+    <title>Banco Mundial</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
@@ -13,28 +13,24 @@
         <img class="icon-logo" src="./images/logo.svg" alt="nav">
       </section>
       <section class="header-right">
-            <a  id="nav-icon"  class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>
+            <a  id="nav-icon"  class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>  
       </section>
-      <nav id="nav-menu" class="nav-menu ocultar">
-          <ul>
-            <li id="btn-about" class="item-menu">Acerca de</li>
-            <li id="btn-general-filter" class="item-menu">Indicadores de Paises en America Latina</li>
-            <li id="btn-news" class="item-menu">Noticias</li>
-            <li id="" class="item-menu">Contacto</li>
-          </ul>
-        </nav>
-        <div>
-            <input type="search" id="buscar" name="serchForWord">
-            <button>Buscar</button>
-          </div>
     </header>
-
-    <main class="container">
-        <section id="news" class="news ocultar mostrar-news">
-          <article class="news-mexico">
-              <h2>El Banco Mundial en Mexico</h2>
-              <p>La labor del Banco Mundial en México se organiza en torno a un modelo que ofrece soluciones integrales y personalizadas para el desarrollo mediante un paquete de herramientas financieras, de conocimiento y coordinación en todas las ramas de la institución.</p>
-
+    <nav id="nav-menu" class="nav-menu ocultar">
+            <ul>
+              <li id="btn-about" class="item-menu">Acerca de</li>
+              <li id="btn-general-filter" class="item-menu">Indicadores en America Latina</li>
+              <li id="btn-news" class="item-menu">Noticias</li>
+              <li id="" class="item-menu">Contacto</li>
+            </ul>
+          </nav>
+    <main id="container" class="container">
+        <section id="news" class="news ocultar">
+          <article class="card-news">
+              <article class=" news-mexico">
+              <h2 class="title-news">Mexico</h2>
+            </article>
+                <p class="info-news">La labor del Banco Mundial en México se organiza en torno a un modelo que ofrece soluciones integrales y personalizadas para el desarrollo mediante un paquete de herramientas financieras, de conocimiento y coordinación en todas las ramas de la institución.</p>
           </article >
 
           <article  class="card-news">
@@ -60,51 +56,30 @@
 
         </section>
         <section id="about" class="about-bancamundial ocultar">
-
-            <article class="who-we-are" >
-              <h2>Sobre esta pagina</h2>
-              <p>La siguiente página fue creada en base a la necesidad de estudiantes de economía, a los que esta dirigida la misma, de obtener información sobre indicadores del banco mundial, de manera ordenada y sencilla, ademas de poder acceder a los numeros de estos indicadores, es decir los años y las mediciones de cada uno asi como lo son porcentajes; Proporcionandoles tambien el calculo del promedio de cada data por indicador; La tematica de los indicadores se enfoca principalmente en población femenina, aunque no es exclusiva de esta.
-
-            <p></p>Los paises que se analizan en esta pagina son: México, Perú, Brasil y Chile.</p>
-                
-                
-                
-                Para elaborar esta pagina se han tomado los siguientes indicadores o parametros: demográfia, económia, salud, comercio, violencia de genero y educación</p>
-
             <article class="who-we-are">
               <h2>Quienes somos</h2>
               <p>El Grupo Banco Mundial está conformado por 189 países miembros; su personal proviene de más de 170 países, y tiene más de 130 oficinas en todo el mundo. Constituye una asociación mundial única: las cinco instituciones que lo integran trabajan en la búsqueda de soluciones sostenibles para reducir la pobreza y generar prosperidad compartida en los países en desarrollo.</p>
-
             </article>
             <article class="what-we-do">
-                <h2>Sobre Banco Mundial</h2>
-                <p>El Grupo Banco Mundial está conformado por 189 países miembros; su personal proviene de más de 170 países, y tiene más de 130 oficinas en todo el mundo. Constituye una asociación mundial única: las cinco instituciones que lo integran trabajan en la búsqueda de soluciones sostenibles para reducir la pobreza y generar prosperidad compartida en los países en desarrollo.</p>
+              <h2> Que hacemos</h2>
+              <p>El Grupo Banco Mundial trabaja en todas las principales esferas del desarrollo: proporciona una gran variedad de productos financieros y asistencia técnica, y ayuda a los países a enfrentar los desafíos mediante el intercambio de conocimiento de vanguardia y la aplicación de soluciones innovadoras.</p>
             </article>
         </section>
         <section id="general-filter" class="general-filter  ocultar">
             <article class="title-indicadores">
                 <h1 >Indicadores en America Latina</h1>
+                <p>kjhjkhsdjkhasdkjhasdkjh</p>
             </article>
             <article class="information-filter">
-
                 <a class="btn_mex search-country" id="MEX" data-ciudad="MEX" data-object="countryMex">México</a>
                 <a class="btn_per search-country" id="btn_per" data-ciudad="PER" data-object="countryPer">Peru</a>
                 <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA" data-object="countryBra">Brasil</a>
                 <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl">Chile</a>
-
             </article>  
-
-            <article> 
-                <!-- <a id="educacion" class="typeTheme" >Educacion</a> 
-                <a id="demografico" class="typeTheme" >Laboral</a> 
-                <a id="laboral" class="typeTheme" >Democrafico</a>       -->
-
             <article class="item-filter-sort">      
-
                 <select id="list-question" class="list-question">
                     <option value="valor" >Selecciona un pais</option>
                 </select>
-
                 <div class="order__filters">
                     <div class="order__items right">
                         <p><b>Ordenar por Año</b></p>
@@ -131,11 +106,9 @@
                     </div>
                 </div>
                 <div>
-
-                    <a id="avg" >media porcentual</a>
-                    <p id="avg_result"></p>
-
-
+                    <p id="avg"></p>
+                </div>
+            </article>
 
             <article id="information-filter-inner" class="information__filtered" >
             </article>
