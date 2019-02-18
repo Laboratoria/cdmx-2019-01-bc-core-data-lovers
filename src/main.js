@@ -23,11 +23,11 @@ const imprimir = (obtenerTipo) => {
   obtenerTipo.map((dataPokes) => {
     pokemons.innerHTML += `<div class="imagesPokemon"><figure>
 
-<img src="${datapokemon.img}"></figure>
-<div class="texto-pokemon"><p>Nombre:${datapokemon.name}</p>
-<p> Candy:${datapokemon.candy}</p>
-<p> Altura:${datapokemon.height}</p>
-<p> Peso:${datapokemon.weight}</p>
+<img src="${dataPokes.img}"></figure>
+<div class="texto-pokemon"><p>Nombre:${dataPokes.name}</p>
+<p> Candy:${dataPokes.candy}</p>
+<p> Altura:${dataPokes.height}</p>
+<p> Peso:${dataPokes.weight}</p>
 <p> Debilidades:</p>
 <p>${dataPokes.weaknesses}</p></div>
 </div>`
@@ -62,5 +62,6 @@ setTimeout(function(){
 },3000);
 
 }
+
 getOrderPokemon(arrayButtonRadio);
 
