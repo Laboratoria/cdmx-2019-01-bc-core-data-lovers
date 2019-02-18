@@ -1,5 +1,3 @@
-
-
 @media (max-width:992px){
   .social a{
     font-size: 4em;
@@ -180,8 +178,9 @@ h3{
 }
 
 
-/* comentario */
-
+.container-fluid{
+  width: 100 vw;
+}
 
 
 
