@@ -14,7 +14,7 @@
   <div id="root"></div>
   <!--Página de inicio-->
   <section id="start">
-   <!--h2 con class hide escrito por requerimiento para validar en w3--> 
+   <!--h2 con class hide escrito por requerimiento para validar en w3-->
     <h2 class="hide">HEADING</h2>
     <img class="logo1" src="imagenes/logo_lol2.png" alt="">
     <article>
@@ -34,10 +34,10 @@
 
     <h2>Select a champion <br> to view their stats!</h2>
 
-
     <div class="square" id="card-summary">
     </div>
-    <div class="hide" id="modal-fun">
+    <!-- Contenido del modal de cada campeon-->
+    <div class="hide" id="modal-champ">
       <!-- Contenido del modal -->
       <div class="modal-content">
         <span class="close" id="close-fun">x</span>
@@ -46,6 +46,19 @@
         </div>
       </div>
     </div>
+
+    <div class="hide" id="modal-fun">
+          <!-- Contenido del modal de fun facts-->
+          <div class="modal-content">
+            <span class="close" id="close-modal-fun">x</span>
+            <h1>Did you know?</h1>
+            <div class="background-fun">
+            </div>
+            <p id="average-fun">The averge difficulty of the champions is <span id="average"></span> </p>
+
+          </div>
+        </div>
+
     <div id="separator"></div>
 
     <!--Pie de página-->

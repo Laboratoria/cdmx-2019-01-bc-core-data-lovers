@@ -3,7 +3,8 @@ const start = document.getElementById('start');
 const championList = document.getElementById('champion-list');
 const cardSummary = document.getElementById('card-summary');
 const rol = document.getElementsByClassName('rol');
-const modalFunFacts = document.getElementById('modal-fun');
+const modalChamp = document.getElementById('modal-champ');
+const modalFun = document.getElementById('modal-fun');
 
 //Declarando las variables que enlazan los botones del HTML mediante el DOM
 const startButton = document.getElementById('start-button');
@@ -15,6 +16,7 @@ const back = document.getElementById('back');
 //Boton para el modal de curiosidades
 const funFacts = document.getElementById('fun-facts');
 const closeFunFacts = document.getElementById('close-fun');
+const closeModal = document.getElementById('close-modal-fun')
 
 const printModal = (champ) => {
   document.getElementById('printModal').innerHTML = `<h1>${champ.name}</h1>
@@ -48,6 +50,9 @@ startButton.addEventListener('click', () => {
   printData(newArrayChamp);
 });
 
+//Esta variable es para seleccionar el campeón que queremos visualizar
+const champion = document.getElementsByClassName('champion');
+
 //Función para imprimir la data en el HTML
 const printData = (newArrayInfo) => {
   cardSummary.innerHTML = "";
@@ -62,14 +67,19 @@ const printData = (newArrayInfo) => {
       let champElegido = champion[i].id;
       const champ = window.lol.toModal(lolData, champElegido);
       printModal(champ);
-      modalFunFacts.classList.remove('hide');
+      modalChamp.classList.remove('hide');
     })
   }
 }
 
-//Función para el boton que cierra los modales
+//Función para el boton que cierra los modales de los campeones
 closeFunFacts.addEventListener('click', () => {
-  modalFunFacts.classList.add('hide');
+  modalChamp.classList.add('hide');
+});
+
+//Función para el boton que cierra el modal de average
+closeModal.addEventListener('click', () => {
+  modalFun.classList.add('hide');
 });
 
 //Funcion para agregar el evento key up al input para filtrar por nombre
@@ -84,9 +94,6 @@ search.addEventListener('keyup', () => {
     printData(filtered);
   }
 });
-
-//Esta función es para seleccionar el campeón que queremos visualizar
-const champion = document.getElementsByClassName('champion');
 
 //Esta función es para seleccionar el rol por el cual se va a filtrar
 const selectRol = () => {
@@ -137,6 +144,7 @@ back.addEventListener('click', () => {
 funFacts.addEventListener('click', ()=> {
   const newArrayChamp = window.lol.showData(lolData);
   const reduce = window.lol.toReduce(newArrayChamp);
-  printData(reduce);
-  // let div = reduce / newArrayChamp.length;
+  modalFun.classList.remove('hide');
+  let average = reduce / newArrayChamp.length;
+  document.getElementById('average').innerHTML = average;
 })
