@@ -110,7 +110,9 @@ header{
 }
 
 
-
+.carousel-inner>img{
+  width:100vw;
+}
 
 
 .mySlides{
