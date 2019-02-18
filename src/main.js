@@ -55,11 +55,10 @@ const getOrderPokemon = (arrayButtonRadio) => {
 
   });
 
-
-//creando slash//
+//creando slash*//
 setTimeout(function(){
   document.getElementById("splash").className="hide";
-},3000);
+},1000);
 
 }
 
