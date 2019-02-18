@@ -1,4 +1,18 @@
 window.worldBank2 = {
+    objMax: (selcValor,arrayMax) =>{
+    
+        if(selcValor === "max")
+        {
+          return Math.max.apply(null, arrayMax);
+        }
+    
+        if(selcValor === "min")
+        {
+          return Math.min.apply(null, arrayMax);
+        }
+       
+        
+      },
 
     VerGrafica: (arrayYear,arrayValors,ctx)=>{//funcion grafica
   

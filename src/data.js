@@ -47,7 +47,7 @@ window.worldBank = {
     return orderByObject;
   },
 
-  objMax: (selcValor,arrayMax) =>{
+  /*objMax: (selcValor,arrayMax) =>{
     
     if(selcValor === "max")
     {
@@ -60,7 +60,7 @@ window.worldBank = {
     }
    
     
-  }
+  }*/
   
 
 }

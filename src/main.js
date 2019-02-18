@@ -157,7 +157,7 @@ orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objet
 const valorMaximo = () =>{//funcion ordenar max/min
     let arrayMax = valorPorcentajeY;
     let selcValor = maximo.value;
-    let maxObj =window.worldBank.objMax(selcValor,arrayMax);
+    let maxObj =window.worldBank2.objMax(selcValor,arrayMax);
     ptrMax(selcValor,maxObj)
 }
 maximo.addEventListener('change',valorMaximo); //funcion recorre el objeto*/
@@ -167,7 +167,7 @@ const limpiar = () => {
     document.getElementById('filtrar-pais').value = '';
     document.getElementById('filtrar-indicador').value = '';
     document.getElementById('order').value = '';
-    document.getElementById('maximo').value = '';
+    document.getElementById('maximo').innerHTML = '';
     document.getElementById('contenido').innerHTML = '';
     document.getElementById('graf').style.display='none';
   } 
