@@ -119,5 +119,3 @@ computeStats.addEventListener("click", () => {
   return sectionRoot
 
 });
-
-
