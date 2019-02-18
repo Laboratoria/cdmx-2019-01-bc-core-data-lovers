@@ -146,9 +146,11 @@ Al utilizar el boceto original los usuarios expresaron una buena reacción con l
 
 En cuanto a los apartados, agradecen contar con una breve introducción del objetivo de la página, sin embargo, les gustaría tener mayor información sobre el mismo tema; también les gustaría que existiera un apartado para poder entrar en contacto con los creadores para consultas o dudas que se puedad presentar.
 
+También expresaron que les gustaría obtener un análisis preliminar de los datos obtenidos, pues eso les facilitaría la lectira de la información que se muestre.
+
 
 ### Resultado Final
-- Se decidió agregar un logo y nombre como fondo en las pantallas para que sea fácil idenrtificarnos
+- Se decidió agregar un logo y nombre como fondo en las pantallas para que sea fácil idenrtificarnos.
 - Se agregó un apartado de contacto para poder recibir comentarios.
 - Se agregó un apartado de próposito para informar a los usuarios lo que se pretende aportar.
 ### Autores
