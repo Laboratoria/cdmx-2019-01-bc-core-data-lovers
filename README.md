@@ -14,18 +14,20 @@ Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan ini
 
 ## Historias de usuario
 
-1.- Como usuario quiero conocer la lista de todos los Pokémones que hasta el momento existen en Pokemon go.
-2.- Como usuario quiero saber cuales con los tipos de especie de pokémones.
-3.- Como usuario quiero buscar pokémones por nombre.
-4.- Como usuario quiero ver los pokémones ordenados por peso y altura.
-5.- Como usuario quiero ver estadísticas de los pokémones.
+  1. Como usuario quiero conocer la lista de todos los Pokémones que hasta el momento existen en Pokemon go.
+  2. Como usuario quiero saber cuales con los tipos de especie de pokémones.
+  3. Como usuario quiero buscar pokémones por nombre.
+  4. Como usuario quiero ver los pokémones ordenados por peso y altura.
+  5. Como usuario quiero ver estadísticas de los pokémones.
 
 ## Diseño de la Interfaz de Usuario
 
 ### Prototipo de baja fidelidad
 
-
 ### Prototipo de alta fidelidad
+<img src="https://i.ibb.co/PgTcV5W/home.png" alt="home" border="0" />
+<img src="https://i.ibb.co/R0XSq3y/filter.png" alt="filter" border="0" />
+<img src="https://i.ibb.co/VxnXTmP/order.png" alt="order" border="0" />
 
 ### Testeos de usabilidad
 
