@@ -17,7 +17,9 @@ const about = document.getElementById("about");
 const filters = document.getElementById("general-filter");
 //evento para ocultar y mostrar elementos
 navIcon.addEventListener('click', () => {
-navMenu.classList.toggle('ocultar'); 
+
+  navMenu.classList.toggle('ocultar');
+
 });
 btnAbout.addEventListener('click', () => {
   about.classList.remove('ocultar');
@@ -25,6 +27,8 @@ btnAbout.addEventListener('click', () => {
   navMenu.classList.add('ocultar');
   news.classList.add('ocultar');
 });
+//comentario
+
 btnNews.addEventListener('click', () => {
   about.classList.add('ocultar');
   filters.classList.add('ocultar');
@@ -41,11 +45,21 @@ window.onload = function cargar(){
   filters.classList.remove('ocultar');
 }
 //acceder a la data de cada pais
+
 const data = window.WORLDBANK;
+
+
+// const countryMex = WORLDBANK.MEX.indicators;
+// const countryPer = WORLDBANK.PER.indicators;
+// const countryBra= WORLDBANK.BRA.indicators;
+// const countryChl= WORLDBANK.CHL.indicators;
+
+
 
 // section donde esta la informacion y el select
 const indicator = document.getElementById("information-filter-inner");
 const listQuestion = document.getElementById("list-question");
+
 
 // ejecutar el llenado del selector dependiendo del país
 const buttonTypes = Array.from(document.getElementsByClassName('search-country'));
@@ -81,6 +95,7 @@ listQuestion.addEventListener("change", () => {
   //indicator.appendChild(mediaContent);
   
 });
+
 
 const radioFilters = Array.from(document.getElementsByClassName('radio__filter'));
 //console.log(radioFilters)
@@ -126,3 +141,14 @@ for (let radioItem in radioFilters){
 //     indicator.appendChild(parrafo); //limpiamos para que no se dublique en el html
 //   }
 // })
+
+
+
+
+// for(let i = 0; i<elements.length ; i++){
+// elements[i].addEventListener("click", () => {
+//   let valElement = elements[i].value
+//   window.worldbank.filterData(ciudadesMex, valElement)
+//   )};
+// }
+
