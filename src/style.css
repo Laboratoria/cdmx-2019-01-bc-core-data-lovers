@@ -14,7 +14,48 @@
         margin-bottom: .5%;
         font-family: 'Raleway', sans-serif;
     }
-    l.list{
+    form{
+        width: 450px;
+        margin: auto;
+        background: rgba(0,0,0,0.4);
+        box-sizing:border-box;
+        padding: 10px 20px;
+        margin-top:20px;
+        border-radius:7px;
+    }
+    h2{
+        color: #fff;
+        text-align: center;
+        margin:0;
+        font-size:30px;
+        margin-bottom: 20px;
+    }
+    .form,textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border:none;
+    }
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    #botonEnv{
+        background: #01242c;
+        color: #FFF;
+        padding: 20px;
+    }
+    #botonEnv:hover{
+        background-color:#235358; 
+        color: white;
+        transition-duration: 0.4s;
+    }
+    
+    .list{
         text-align: justify;
         margin-top: 1%;
         margin-bottom: 1%;
@@ -142,6 +183,29 @@ font-weight: bold;
         height: 70vh;
         
     
+    }
+    #box4{
+        background-image: url("https://i.ibb.co/hmprwHY/logo-latina-Data.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; 
+        height: 70vh;
+        
+    
+    }
+    #box5{
+        background-image: url("https://i.ibb.co/hmprwHY/logo-latina-Data.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; 
+        height: 70vh;
+        
+    
+    }
+@media screen and (max-width:480px){
+        form{
+            width: 100%
+        }
     }
   
 @media screen and (max-width:800px){

@@ -3,6 +3,8 @@ const buttonMenu= document.getElementById('showMenu');
 const menuList= document.getElementById('menuList');
 const box2= document.getElementById('box2');
 const box3= document.getElementById('box3');
+const box4 = document.getElementById('box4');
+const box5 = document.getElementById('box5');
 const buttonHome = document.getElementById('home');
 const buttonIndicador = document.getElementById('indicador');
 const selOption = document.getElementById('filtrar-pais');
@@ -10,6 +12,8 @@ const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
+let buttonContact = document.getElementById('contact');
+let buttonProp = document.getElementById('prop');
 let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
@@ -40,6 +44,8 @@ const bienvenida = () =>{ //funcion muestra apartado Bienvenida
     contenido.style.display= 'none';  
     box2.classList.remove('hide');
     box3.classList.add('hide');
+    box4.classList.add('hide');
+    box5.classList.add('hide');
 }
 buttonHome.addEventListener('click', bienvenida);
 
@@ -49,8 +55,30 @@ const muestra_indicador = () =>{// funcion muestra apartado indicador
     contenido.style.display= 'block';
     box2.classList.add('hide');
     box3.classList.remove('hide');
+    box4.classList.add('hide');
+    box5.classList.add('hide');
 }
 buttonIndicador.addEventListener('click', muestra_indicador);
+
+const showContact = () => {
+  mostrarMenu()
+  contenido.style.display = 'none';
+  box3.classList.add('hide');
+  box2.classList.add('hide');
+  box5.classList.add('hide');
+  box4.classList.remove('hide');
+}
+buttonContact.addEventListener('click', showContact);
+
+const showProp = () => {
+  mostrarMenu()
+  contenido.style.display = 'none';
+  box3.classList.add('hide');
+  box2.classList.add('hide');
+  box4.classList.add('hide');
+  box5.classList.remove('hide');
+}
+buttonProp.addEventListener('click', showProp);
 
 
 const filtraIndPais = () =>{
@@ -125,6 +153,6 @@ let arrayYear = valorAnioX;
 let arrayValors = valorPorcentajeY;
 let prtGrap =ctx;
 
-let almacenaGraf= window.worldBank.VerGrafica(arrayYear,arrayValors,prtGrap)
+let almacenaGraf= window.worldBank2.VerGrafica(arrayYear,arrayValors,prtGrap)
 return almacenaGraf;
 }
