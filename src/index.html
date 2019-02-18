@@ -17,8 +17,8 @@
     <ul>
       <li id= "home" type= "button"><a href="#"><i class="fas fa-home"></i>Home</a></li>
       <li id= "indicador" type= "button" ><a href="#"><i class="fas fa-chart-line"></i>Indicadores</a></li>
-      <li><a href="#"><i class="fas fa-user-friends"></i>Propósito</a></li>
-      <li><a href="#"><i class="far fa-envelope"></i>Contacto</a></li>
+      <li id="prop" type= "button"><a href="#"><i class="fas fa-user-friends"></i>Propósito</a></li>
+      <li id="contact" type= "button"><a href="#"><i class="far fa-envelope"></i>Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -35,8 +35,8 @@
 <section id= "box3" class= "hide" >
     <h1> <b>INDICADORES DE POBLACIÓN FEMENINA </b> </h1>
     <p>En esta sección podrás consultar indicadores por edad de 0 a 80 años, el resultado se muestra de forma porcentual-anual de 1960 a 2017.</p>
-    <p>¿Que debo hacer?</p>
-    <ul>
+    <p><b>¿Que debo hacer?</b></p>
+    <ul class="list">
       <li>Seleccionar el país y el indicador de su interés</li>
       <li>La opción "Ordenar" muestra los datos de forma ascendente/descentente</li>
       <li>Si deseas limpiar la pantalla, da click en el botón "Limpiar" </li>
@@ -100,6 +100,30 @@
   
 
 </section>
+<section id="box4" class="hide">
+  <form action="">
+    <h2>CONTACTO</h2>
+    <input class="form" type="text" name="nombre" placeholder="Nombre">
+    <input class="form" type="text" name="correo" placeholder="Correo">
+    <input class="form" type="text" name="telefono" placeholder="Teléfono">
+    <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+    <input class="form" type="button" value="ENVIAR" id="botonEnv">
+  </form>
+</section>
+
+<section id="box5" class="hide">
+  <h1>Propósito</h1>
+  <p>Nuestro propósito es facilitar el acceso de información demográfica femenina, utilizada por las ONG
+    (Organización No Gubernamental)para la planificación
+    de servicios sociales (programas infancia, juventud, salud reproductiva, mercado de trabajo, envejecimiento) de
+    México, Perú, Chile y Brasil.</p>
+  <p>La edad se vincula con cada uno de los procesos demográficos (fecundidad, nupcialidad, mortalidad,migración,
+    etc.); en este sentido, la información se presenta por grupo etario/anual;
+    de esta forma expresa muchas cosas por sí sola,resume la historia demográfica de varias generaciones y
+    representa la situación actual de una población.
+  </p>
+</section>
+
 
 
 
@@ -111,6 +135,7 @@
   <!-- <script src="./data/lol/lol.js"></script> -->
   <script src="data.js"></script>
 <script src="main.js"></script>
+<script src="graf.js"></script>
 </main>   
   </body>
 </html>
