@@ -50,7 +50,7 @@
   </nav>
 
   <!-- Header - set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/803C8YL/ilustracion-graduados-universitarios-53876-28468.jpg');">
+  <header class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/Ks2YPvf/manzana.jpg');">
     <img class="img-fluid d-block mx-auto" src="https://i.ibb.co/0GcYyCd/log.jpg" alt="logo">
   </header>
 
@@ -58,15 +58,17 @@
   <section class="py-5">
     <div class="container">
       <h1>¿Qué es LatinoEduca?</h1>
-      <p class="lead"><strong>Esta app te podrá ayudar a: </strong> <br> -Encontrar datos específicos acerca del
-        nivel Educativo en Latino América. <br>
-        -Con la información recopilada podrás distinguir el comportamiento de la educación a través de los años. <br>
-        -La información se obtiene del Banco Mundial una fuente confiable. </p>
+      <p class="lead"><strong>Esta app te podrá ayudar a: </strong> 
+        <ul>
+          <li type="circle">Encontrar datos específicos acerca del nivel Educativo en Latinoamérica.</li>
+          <li type="circle">La información recopilada te ayudará a distinguir el comportamiento de la educación a través de los años.</li>
+          <li type="circle">La fuente de la base de datos es el Banco Mundial</li>
+        </ul>
     </div>
   </section>
 
   <!-- Image Section - set the background image for the header in the line below -->
-  <section class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/XYm8PHq/215829b563d1466.jpg');">
+  <section class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/SfgFBCT/lapices9.jpg');">
     <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
     <div style="height: 200px;"></div>
   </section>
@@ -81,7 +83,7 @@
         diferentes
         países es una prioridad para el progreso y desarrollo de las naciones. Sin embargo, a pesar de los múltiples
         esfuerzos,
-        todavía queda mucho camino por recorrer; y eso es lo que está sucediendo en mérica América Latina. <br> América
+        todavía queda mucho camino por recorrer; y eso es lo que está sucediendo en América Latina. <br> América
         Latina tendrá un 96,6 por ciento de cobertura en educación primaria; y para 2042, se proyecta que la cobertura
         sea universal en este nivel. En cuanto a educación media, para 2030, se espera que la región tenga un 90 por
         ciento de
@@ -105,6 +107,15 @@
           social”. </strong>
       </p>
     </div>
+
+    <div class="slider">
+      <ul>
+        <li><img src="src/imagen/Noticia1.png" alt="cobertura-escolar"></li>
+        <li><img src="src/imagen/Noticia2.png" alt="docentes"></li>
+        <li><img src="src/imagen/Noticia3.png" alt="educación-latinoamérica"></li>
+      </ul>
+    </div>
+
     <!-------bottons----->
     <div class="row">
       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -126,11 +137,17 @@
   <section>
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
       <fieldset>
-        Para : <select name="literacy" id="indicator">
-          <option class="opt" value="youngWomen">Indicador</option>
-        </select>
+        Para : <select name="indicators-by-country" id="indicator">
+                 <option class="opt" value="indicators-country" disabled selected>Indicador</option>
+               </select>
       </fieldset>
-    </article>
+      <fieldset>
+        Ordenar datos por : <select name="sort-by-year" id="sort">
+                 <option class="opt" id = "upward" value="upward">Ascendente</option>
+                 <option class="opt" id = "falling" value="falling">Descendente</option>
+               </select>
+      </fieldset>
+      </article>
   </section>
   <!-----Datos------>
   <section>
@@ -151,6 +168,11 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="src/data/worldbank/worldbank.js"></script>
+  <script src="src/data.js"></script>
+  <script src="src/main.js"></script>
+
 
 </body>
 

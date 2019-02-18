@@ -58,3 +58,27 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/gh-pages/LICENSE) license.
+
+## ¿Qué dicen los usuarios?
+
+Para obtener la retroalimentación de los usuarios se decidió probar la web app con cinco personas dedicadas al ámbito educativo y vinculadas a la investigación. Las opiniones resultaron cruciales para determinar el valor de LatinoEduca 
+en las vidas académicas de los participantes, así como para los ajustes en diseño y el tipo de datos a presentar.
+
+La prueba de usabilidad se realizó vía remota. Para ello, hicimos una breve descripción sobre la tarea a realizar; después, se enviaron los links de la página y del formulario; finalmente, se envío la confirmación de las respuestas recibidas. 
+
+El diseño del formulario siguió el [Modelo de Test de Usuario](https://www.guiadigital.gob.cl/guia-v2/capitulos/05/anexos/pauta-test-usuario.pdf), el cual contempla las siguientes áreas:
+
+* Identidad
+* Contenido
+* Navegación
+* Gráfica Web
+* Búsqueda
+* Feedback
+* Utilidad
+
+Decidimos realizar al menos una pregunta por tópico, cuidando la longitud de la encuesta y evitar el cansancio de los participantes. El [formulario final](https://docs.google.com/forms/d/e/1FAIpQLSc_zHhqktDf9rxAoEnxsFJObdydUYgXQmMr9mc71A8LrH6lfA/viewform) que se implementó en Google forms consta de ocho preguntas, mezcladas entre abiertas y de selección múltiple.  
+
+Ahora bien, para **identidad** se obtuvo que el 80% logra identificar la institución a la que pertenece el sitio. Aquí, quisimos tener de manera precisa cómo es que se dieron cuenta y esto nos permite verificar que el logo y el título cumplen con su función; en este sentido, la respuesta fue positiva en al menos el 80%, quedando una usuaria con duda.
+
+El **contenido** 
+
