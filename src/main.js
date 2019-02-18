@@ -63,6 +63,7 @@ buttonIndicador.addEventListener('click', muestra_indicador);
 
 const showContact = () => {
   mostrarMenu()
+  social.style.display= 'block';
   contenido.style.display = 'none';
   box3.classList.add('hide');
   box2.classList.add('hide');
@@ -74,6 +75,7 @@ buttonContact.addEventListener('click', showContact);
 const showProp = () => {
   mostrarMenu()
   contenido.style.display = 'none';
+  social.style.display= 'none';
   box3.classList.add('hide');
   box2.classList.add('hide');
   box4.classList.add('hide');
@@ -111,6 +113,7 @@ let respuesta="<li>"+"<font size=4.5>"+"<b>"+"Año "+"&nbsp"+"&nbsp"+"  Valor(%)
    {//recorre objeto para pasar el año a nuevo arrego de eje Y
    valorPorcentajeY.push(pais[j]);
   }
+  
  document.getElementById('contenido').innerHTML = respuesta;
  document.getElementById('graf').style.display='block';//comentar grafica
  DatGraph();
@@ -183,7 +186,10 @@ let arrayValors = valorPorcentajeY;
 let prtGrap =ctx;
 
 let almacenaGraf= window.worldBank2.VerGrafica(arrayYear,arrayValors,prtGrap)
+let report ="<p>"+"La grafica muestra un crecimiento exponencial del añ0 1960, con un valor de"+valorPorcentajeY[0]+"a "+valorPorcentajeY[58]+"para 2017.";
+document.getElementById('valorMAx').innerHTML = report;
 return almacenaGraf;
+
 }
 
 

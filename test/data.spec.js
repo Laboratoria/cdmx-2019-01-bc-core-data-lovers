@@ -229,9 +229,11 @@ expect(typeof window.worldBank.orderByAsc).toBe('function');
   it('la función esta definida', () => {
     expect(window.worldBank.orderByAsc()).toBeDefined();
   });
+
   it('Dede ordenar de forma ascendente la data', ()=>{
     expect(window.worldBank.orderByAsc('asc',arrayObject)).toEqual(arrayOrder);
   });
+
   it('Dede ordenar de forma descendente la data', ()=>{
     expect(window.worldBank.orderByAsc('desc',arrayObject)).toEqual(arrayOrder2);
   });
