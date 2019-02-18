@@ -12,206 +12,172 @@
 }
 
 
-body{
-  /* background-color: #E9ECF4; */
-  background:linear-gradient(130deg, #4AB583, #9284FF);
-  height: 100vh; 
-    font-family: 'Lato', sans-serif;
-}
-
-.initial-page{
+body {
   background: linear-gradient(130deg, #4AB583, #9284FF);
-  width: 90%;
-   max-width: 1000px;  
-   height: 100vh;
-   margin: 0 auto;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
 }
 
-.img {
+.initial-page {
+  width: 90%;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*logo Pokesaurius*/
+.img-pokesaurius {
   width: 40%;
   margin: auto;
   padding-top: 30%;
   display: block;
 }
 
-.poke-button {
+.pokebola-button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   margin: auto;
   display: block;
 }
 
-.poke-button:hover {
+.pokebola-button:hover {
   animation: pulse 1s infinite;
   animation-timing-function: linear;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+@keyframes pulse {0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
 }
 
-
-
-/*color morado safe 	#9966FF
-morado oscuro #9284FF
-morado medio #D1CAFE
-morado claro #E6DFFE
-verde oscuro claro #4AB583
-verde oscuro #266378
-color verde safe 	#4AB583*/
-
-.header, .main-content{
-  /* background-color: #E6DFFE; */
-   width: 90%;
-   max-width: 1000px;  
-   margin: 0 auto;
+.header,
+.main-content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.content, .aside, .footer{   
-   box-sizing: border-box;
-}
-
-.header{
-   height: 45%;
-   border-radius: 4px;
-}
-
-.imgchico {
+.img-logo-chico {
   width: 200px;
   margin: auto;
   display: block;
 }
 
-nav{
+nav {
   background: #003471;
-  opacity: .8;
+  /*opacity: .8;*/
   margin: auto;
   border-radius: 10px;
   width: 92.5%;
-  height: 5%;
+  /*height: 50%;*/
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
 }
 
 .text-page {
-  color: wheat;
+  color: #FFBA5C;
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 3px;
   margin-left: 3%;
 }
-/*<a href="#" class="bt-menu"><span class="icon-bars"><i class="fas fa-bars"></i></span></a>*/
-.bt-menu{
-  display: none;
-}
 
-i{
-  display: none;
-  color: wheat;
+i {
+   background-color: #FFBA5C;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  color: #003471;
+  text-align: center;
   float: right;
+  margin: 0 2px;
   padding: 5px;
 }
 
-.main-content{
-   height: 33em;
-  /* background:linear-gradient(130deg, #4AB583, #9284FF);*/
+.main-content {
+  height: 38em;
 }
 
-.content, .aside{
-   background-color:  rgba(209, 202, 254, 0.493);
-   height: 34em;
-   margin-top: 2%;
-   margin-bottom: 2%;
-   float: left;
+.content,
+.aside {
+  background-color: rgba(209, 202, 254, 0.493);
+  height: 36em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  float: left;
 }
 
-.content{
-   width: 63%;   
-   margin-left: 4%;
-   overflow: auto;
-   overflow-x: hidden;
-   border-radius: 14px;
+.content {
+  width: 63%;
+  margin-left: 4%;
+  overflow: auto;
+  overflow-x: hidden;
+  border-radius: 14px;
 }
-.post{
-  margin-left:10%;
+
+.post {
+  margin-left: 5%;
   margin-top: 4%;
 }
-.aside{
-   width: 27%;
-   margin-right: 4%;
-   margin-left: 2%;
-   border-radius: 14px;
-   text-align: center;
+
+.aside {
+  width: 27%;
+  margin-right: 4%;
+  margin-left: 2%;
+  border-radius: 14px;
+  text-align: center;
 }
-.type-button{
+
+.type-button,
+.sort-button {
   background: #E6FDFB;
   border: none;
   width: 37%;
   border-radius: 10px;
-  margin-bottom: 2%;
-  margin-left: 4%;
-  margin-top: 2%;
-  margin-right: 4%;
+  margin: 2% 4%;
   padding: 2%;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: bold;
-  color: #12203E;
+  color: #003471;
   display: inline-block;
 }
-.type-button:hover {
+
+.type-button:hover,
+.sort-button:hover {
   background: #FFBA5C;
 }
-.type,.orderByName, .doYouKnow{
-  padding-top: 7%;
-  padding-bottom: 5%;
+
+.sort-button {
+  width: 55%;
+}
+
+.type,
+.orderByName,
+.doYouKnow {
+  font-size: 25px;
+  font-weight: bold;
+  color: #003471;
+  padding-top: 6%;
+  padding-bottom: 3%;
 }
 
 
-.average{
+.fa-angle-up{
+  display: inline-block;
+}
+
+.average {
   background: #FFD185;
-  height: 20%;
-  margin:5% 8.5% 5% ;
-  border-radius:15px; 
-  border: 3px solid #FFBA5C; 
+  margin: 8% 8.5% 5%;
+  border-radius: 15px;
+  border: 3px solid #FFBA5C;
+  padding-bottom: 10px;
 }
 
-/*.footer{*/
-   /* background-color:#E6DFFE; */
- /*  height: 5em;
-   width: 90%;
-   max-width: 1000px;
-   margin: 0 auto;
-}
-
-.footertext {
-  background: #003471;
-  opacity: .8;
-  margin: auto;
-  padding: 2%;
-  border-radius: 8px;
-  width: 89%;
-  height: 53%;
-}*/
-
-.img-pokebola-chica {
-  background:#976DD0;
-  border: none;
-  margin-left: 50%;
-  float: left;
-}
-
-.img-pokebola-chica:hover{
-  animation: pulse 1s infinite;
-  animation-timing-function: linear;
+p {
+  font-weight: bold;
+  color: #003471;
 }
 
 .wrapper {
@@ -219,7 +185,7 @@ i{
   background: #FFD185;
   margin: 9px 15px;
   padding-bottom: 10px;
-  width: 130px;
+  width: 153px;
   height: 180px;
   border-radius: 14px;
   border: 3px solid #FFBA5C;
@@ -229,67 +195,142 @@ i{
   background: #EAFEE6;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
-  right: 30px;
-}
+padding-left: 6%; 
+ }
 
 .box-card {
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  font-weight: bold;
+  color: #003471;
   text-align: center;
   margin-top: 9px;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px){
-  #root {
-    width: 100%;
+@media screen and (min-width: 769px) {
+  .aside{
+    display: inherit;
   }
-  header{
-    width: 100%;
+  .menu-toogle{
+    display: none;
   }
-  .contenido { 
-    width: 100%;
-}
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-  #root {
-    width: 100%;
-  }
-  header{
-    width: 100%;
-  }
-  .contenido { 
-    width: 100%;
-}
-  .main-content{
-    width: 100%;
-  }
-  .content{
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #root {width: 100%;}
+  header {width: 100%;}
+  .img-pokesaurius {
+    width: 70%;
+    }
+  .contenido {width: 100%;}
+  .main-content {width: 100%;}
+  .content {
     width: 83.5%;
     margin-left: 8%;
   }
-  .post{
-    margin-left: 3%;
+  .post {margin-left: 7%;
   }
-  .wrapper {
-    margin: 9px 10px;
+  .wrapper {margin: 9px 15px;}
+  .aside {
+    background:linear-gradient(130deg, #4AB583, #9284FF);
+    width: 280px;
+  position: absolute;
+  right:4.5%;
+    }
+     }
+
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+  #root {
+    width: 100%;
   }
+  .img-pokesaurius {
+    width: 70%
+  }
+  .content {
+    width: 92%;
+    height: 105%;
+  }
+  .post {margin-left: 3%;
+    margin-top: 3%;
+  }
+  .wrapper{
+    background:#FFD185;
+    width:88%;
+    height: 128px;
+    border-radius:14px;
+    border: 2px solid #FFBA5C;
+    }
+  
+  .pokemon-card-image{
+    background:#EAFEE6;
+    width:48%;
+    border-top-right-radius:0px;
+    border-top-left-radius:14px;
+  border-bottom-left-radius:14px;
+  padding-left: 2%; 
+    display:inline-block;
+  }
+  
+  .box-card{  
+    font-family: 'Roboto', sans-serif;
+    font-size:15px; 
+    font-weight: bold;
+    color: #003471;
+   float:right;
+   top: 0px;
+   margin: 9% 5%;
+   padding: 10px;
+   text-align:center;
+  }
+  .aside {
+    background:linear-gradient(130deg, #4AB583, #9284FF);
+  width: 255px;
+  height: 78%;
+  position: absolute;
+  right:4.5%;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  #root {
+    width: 100%;
+  }
+  .img-pokesaurius {
+    width: 90%
+  }
+  i {
+    
+    float: right;
+    margin: 0 2px;
+    padding: 5px;
+  }
+
   .content{
-    over
-    overflow-x: hidden;
- }
- .bt-menu{
-   display: inline-block;
- }
+    width: 92%;
+    height: 85%;
+    margin-left: 4%;
+  }
+  .post {margin-left: 15%;
+    margin-top: 3%;
+  }
+
+  .aside {
+    background:linear-gradient(130deg, #4AB583, #9284FF);
+  width: 250px;
+  height: 64%;
+  position: absolute;
+  top: 16%;
+  right:4.5%;
+  }
+
+  .type-button {
+    margin: 1% 3%;
+  }
+  
+ 
+
+
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px){
-  #root {
-    width: 100%; 
-  }
-}
 
-@media screen and (max-width: 375px){
-  #root {
-    width: 100%; 
-  }
-}

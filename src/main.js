@@ -5,11 +5,14 @@ const pokemonPage=document.getElementById('pokemon-page'); //página de pokemone
 const pokeballButton=document.getElementById('pokeball-button'); 
 const printList = document.getElementById('print-list'); 
 const buttonType=document.getElementsByClassName('type-button'); 
-const pokeButtonHome=document.getElementById('poke-button-home'); 
+const menuUndo=document.getElementById('menu-undo'); 
 const weight = document.getElementById('weight');
 const counterCollection=document.getElementById('counterCollection');
 const printType= document.getElementById('printType');
 const alphabeticOrderButton=document.getElementById('totales');
+const menuToogle=document.getElementById('menu-toogle');
+const aside=document.getElementById('aside');
+
 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
@@ -45,6 +48,7 @@ print(data)
 
 for(let i = 0; i <buttonType.length; i++ ){
   buttonType[i].addEventListener('click',() => {
+    aside.classList.add('hideElement');  
   let pokemonElegido = buttonType[i].id
   printList.innerHTML = '';
   const pokemonFiltrados = window.pokesaurius.typeFilter(data, pokemonElegido);
@@ -58,6 +62,12 @@ for(let i = 0; i <buttonType.length; i++ ){
     //printList.innerHTML='';
     //print(data)
 //});//
+menuUndo.addEventListener('click',() => {
+    printList.innerHTML='';
+    print(data)
+});
+
+
 
 alphabeticOrderButton.addEventListener('click',()=> {
     printList.innerHTML='';
@@ -65,6 +75,16 @@ alphabeticOrderButton.addEventListener('click',()=> {
     print(resultSortByName);
 
 });
+
+menuToogle.addEventListener('click',()=>{
+    aside.classList.remove('hideElement');
+})
+
+//bolahome ya estaba
+// menuUndo.addEventListener('click',() => {
+//     printList.innerHTML='';
+//     print(data)
+// });
 
 
 
