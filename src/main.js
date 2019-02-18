@@ -13,6 +13,9 @@ const alphabeticOrderButton=document.getElementById('totales');
 const menuToogle=document.getElementById('menu-toogle');
 const aside=document.getElementById('aside');
 const printIndividualCard=document.getElementById('print-individual-card');
+const myModal=document.getElementById('my-modal');
+const pokemonModal=document.getElementById('pokemon-modal-${element.id}');
+
 
 
 
@@ -25,7 +28,8 @@ const print=(data)=>{
     let totalWeight= 0;
     data.forEach(element => {
         totalWeight += parseFloat(element.weight);
-        let result = `<button class="wrapper">
+        let id=element.id
+        let result = `<div id="${element.id}" class="wrapper">
         <div class="pokemon-card"> 
         <div class="pokemon-card-image">
         <img src="${element.img}">
@@ -35,7 +39,8 @@ const print=(data)=>{
         <p>${element.name}</p>
         </div>
         </div>
-        </button>`
+        </div>`
+        
         printList.insertAdjacentHTML("beforeend",result);
         return print;
     });
@@ -105,8 +110,20 @@ menuToogle.addEventListener('click',()=>{
 //         printIndividualCard.innerHTML=result;      
 // } );
     
-// };
-// printPokemonValues()
+};
+
+
+const wrapper = document.getElementsByClassName('wrapper')
+
+for(let i =0; i< wrapper.length; i++ ){
+    wrapper[i].addEventListener('click' , () => {
+       const getIdElement=wrapper[i].id;
+        const modalSelected= window.pokesaurius.pokemonModal(data, getIdElement);
+        console.log(modalSelected);
+        
+    });
+}
+
 
 
 

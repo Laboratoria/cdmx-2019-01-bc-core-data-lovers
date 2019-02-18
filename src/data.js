@@ -18,7 +18,39 @@ window.pokesaurius = {
       }
     })
     return(orderPokemonNAme)
-  }
+  },
+
+
+  pokemonModal:(data, getIdElement) =>{
+    const pokemonId = data.filter(element => element.id==getIdElement);
+    console.log(pokemonId)
+    return pokemonId;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//   {
+//   if (element.id === modalSelected){
+//   console.log(element.id);
+
+//   pokemonId = element;
+//   return element;
+// }
+
+
+
+// return pokemonId;
+// }
+
 
 }
 
