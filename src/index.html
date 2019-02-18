@@ -19,33 +19,44 @@
     <nav id="nav-menu" class="nav-menu ocultar">
             <ul>
               <li id="btn-about" class="item-menu">Acerca de</li>
+              <li id="btn-general-filter" class="item-menu">Indicadores en America Latina</li>
               <li id="btn-news" class="item-menu">Noticias</li>
-              <li id="btn-general-filter" class="item-menu">Indicadores genero femenino</li>
               <li id="" class="item-menu">Contacto</li>
             </ul>
           </nav>
     <main id="container" class="container">
-        <section id="news" class="news ocultar mostrar-news">
-          <article class="news-mexico">
-              <h2>El Banco Mundial en Mexico</h2>
-              <p>La labor del Banco Mundial en México se organiza en torno a un modelo que ofrece soluciones integrales y personalizadas para el desarrollo mediante un paquete de herramientas financieras, de conocimiento y coordinación en todas las ramas de la institución.</p>
+        <section id="news" class="news ocultar">
+          <article class="card-news">
+              <article class=" news-mexico">
+              <h2 class="title-news">Mexico</h2>
+            </article>
+                <p class="info-news">La labor del Banco Mundial en México se organiza en torno a un modelo que ofrece soluciones integrales y personalizadas para el desarrollo mediante un paquete de herramientas financieras, de conocimiento y coordinación en todas las ramas de la institución.</p>
           </article >
-          <article  class="news-brazil">
-              <h2>El Banco Mundial en Brasil</h2>
-              <p>El progreso económico y social de Brasil entre 2003 y 2014 sacó a 29 millones de personas de la pobreza y la desigualdad se redujo significativamente. Restaurar la sostenibilidad fiscal es el desafío económico más urgente para Brasil.</p>
+
+          <article  class="card-news">
+            <article class="news-brazil">
+              <h2 class="title-news">Brasil</h2>
+            </article>
+              <p class="info-news">El progreso económico y social de Brasil entre 2003 y 2014 sacó a 29 millones de personas de la pobreza y la desigualdad se redujo significativamente. Restaurar la sostenibilidad fiscal es el desafío económico más urgente para Brasil.</p>
+          </article> 
+
+          <article class="card-news">
+            <article class="news-peru">
+              <h2 class="title-news">Peru</h2>
+              </article>
+              <p class="info-news">Las acertadas políticas macroeconómicas y estructurales del Perú, combinadas con condiciones externas propicias, han generado un crecimiento importante. El país creció a un ritmo cercano al 6% durante la última década y, entre 2004 y 2015, 9 millones de peruanos salieron de la pobreza.</p>
           </article>
-          <article class="news-peru">
-              <h2>El Banco Mundial en Peru</h2>
-              <p>Las acertadas políticas macroeconómicas y estructurales del Perú, combinadas con condiciones externas propicias, han generado un crecimiento importante. El país creció a un ritmo cercano al 6% durante la última década y, entre 2004 y 2015, 9 millones de peruanos salieron de la pobreza.</p>
+
+          <article class="card-news">
+            <article class="news-chile">
+             <h2 class="title-news">Chile</h2>
+            </article>
+             <p class="info-news">En las últimas décadas, Chile ha sido una de las economías de más rápido crecimiento en Latinoamérica. Esto le ha permitido una importante reducción de la pobreza. Por ejemplo, entre 2000 y 2015, la proporción de la población considerada pobre (US$4 por día) se redujo del 26 a 7.9%.</p>
           </article>
-          <article class="news-chile">
-             <h2>El Banco Mundial en Chile
-             </h2>
-             <p>En las últimas décadas, Chile ha sido una de las economías de más rápido crecimiento en Latinoamérica. Esto le ha permitido una importante reducción de la pobreza. Por ejemplo, entre 2000 y 2015, la proporción de la población considerada pobre (US$4 por día) se redujo del 26 a 7.9%.</p>
-          </article>
+
         </section>
         <section id="about" class="about-bancamundial ocultar">
-            <article class="who-we-are" >
+            <article class="who-we-are">
               <h2>Quienes somos</h2>
               <p>El Grupo Banco Mundial está conformado por 189 países miembros; su personal proviene de más de 170 países, y tiene más de 130 oficinas en todo el mundo. Constituye una asociación mundial única: las cinco instituciones que lo integran trabajan en la búsqueda de soluciones sostenibles para reducir la pobreza y generar prosperidad compartida en los países en desarrollo.</p>
             </article>
@@ -54,9 +65,9 @@
               <p>El Grupo Banco Mundial trabaja en todas las principales esferas del desarrollo: proporciona una gran variedad de productos financieros y asistencia técnica, y ayuda a los países a enfrentar los desafíos mediante el intercambio de conocimiento de vanguardia y la aplicación de soluciones innovadoras.</p>
             </article>
         </section>
-        <section id="general-filter" class="general-filter ocultar">
+        <section id="general-filter" class="general-filter  ocultar">
             <article class="title-indicadores">
-                <h1 >Indicadores genero femenino</h1>
+                <h1 >Indicadores en America Latina</h1>
             </article>
             <article class="information-filter">
                 <a class="btn_mex search-country" id="MEX" data-ciudad="MEX" data-object="countryMex">México</a>
@@ -64,10 +75,7 @@
                 <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA" data-object="countryBra">Brasil</a>
                 <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl">Chile</a>
             </article>  
-            <article> 
-                <a id="educacion" class="typeTheme" >Educacion</a> 
-                <a id="demografico" class="typeTheme" >Laboral</a> 
-                <a id="laboral" class="typeTheme" >Democrafico</a>      
+            <article class="item-filter-sort">      
                 <select id="list-question" class="list-question">
                     <option value="valor" >Selecciona un pais</option>
                 </select>
@@ -85,12 +93,12 @@
                     </div>
                     <div class="order__items">
                         <p><b>Ordenar por valor</b></p>                        
-                        <label for="numAsc" class="container__check"># Menor
+                        <label for="numAsc" class="container__check">Menor
                             <input type="radio" id="numAsc" class="radio__filter" name="order" data-sortby="values" data-sortorder="asc">
                             <span class="checkmark"></span>
                         </label>
 
-                        <label for="numDesc" class="container__check"># Mayor
+                        <label for="numDesc" class="container__check">Mayor
                             <input type="radio" id="numDesc" class="radio__filter" name="order" data-sortby="values" data-sortorder="desc">
                             <span class="checkmark"></span>
                         </label>
