@@ -134,4 +134,5 @@ back.addEventListener('click', () => {
 //Función para llamar a la función de reduce
 const newArrayChamp = window.lol.showData(lolData);
 const reduce = window.lol.toReduce(newArrayChamp);
-console.log(reduce);
+let div = reduce / newArrayChamp.length;
+console.log(div);
