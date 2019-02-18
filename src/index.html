@@ -23,25 +23,34 @@
   </nav>
 </header>
 <section id= "box2" >
-  <h1><b>INDICADORES DEMOGRÁFICOS</b></h1>
-  <p> Los indicadores demográficos muestran las dinámicas de población y sirven para conocer el panorama
-     y distinguir las diferencias entre cada una, de modo que ofrecen una visión general que puede ayudar
-      a identificar lugares que requieren intervención. Generalmente se obtienen por ciudad o país, o por
-      una localidad determinada.   
+  <h1 class="titulo"><b>LatinaData</b></h1>
+  <p class= "text"> En esta página encontrarás indicadores de población femenina de México, Chile, Brasil, Perú.
   </p>
-  <p>Algunos brindan información general sobre el tamaño, distribución territorial, composición y
-     estructura, mientras que otros son útiles para conocer los cambios en su composición y movilidad,
-      en términos sociales. 
+  <p class= "text">Da click en la opción <b>"Indicadores"</b> para comenzar
 </p>
 </section>
 <div id="root"></div>
  
 
 <section id= "box3" class= "hide" >
-    <h1> <b>INDICADORES DE POBLACIÓN FEMENINA</b> </h1>
-    <p>Los indicadores de consulta que integran esta sección, hacen referencia de datos porcentual-anual desde 1960 a 2017 donde se muestra el porcentaje de la población femenina por edad de entre 0 a 80 años, de los países México, Perú, Chile y Brasil. </p>
-    <p>Para consultar la información, seleccione el indicador de su interés y el país del cual desea realizar la consulta.</p>
+    <h1> <b>INDICADORES DE POBLACIÓN FEMENINA </b> </h1>
+    <p>En esta sección podrás consultar indicadores por edad de 0 a 80 años, el resultado se muestra de forma porcentual-anual de 1960 a 2017.</p>
+    <p>¿Que debo hacer?</p>
+    <ul class="list">
+      <li>Seleccionar el país y el indicador de su interés</li>
+      <li>La opción "Ordenar" muestra los datos de forma ascendente/descentente</li>
+      <li>Si deseas limpiar la pantalla, da click en el botón "Limpiar" </li>
+    </ul>
+    
 <section id="selectorBox">
+   <select id="filtrar-pais" name="paises" class="selectors" >
+        <option value="" disabled selected>País</option>
+      <option value= "MEX">México</option>
+      <option value= "PER">Perú</option>
+      <option value= "CHL">Chile</option>
+      <option value= "BRA">Brasil</option>
+    </select>
+
     <select id="filtrar-indicador" name= "indicators" class="selectors">
         <option value="" disabled selected>Indicador</option>
         <option value= "Población de 80 años en adelante, mujeres (% de la población femenina)">Población de 80 años en adelante</option>
@@ -65,13 +74,7 @@
 
 
   
-  <select id="filtrar-pais" name="paises" class="selectors" >
-      <option value="" disabled selected>País</option>
-    <option value= "MEX">México</option>
-    <option value= "PER">Perú</option>
-    <option value= "CHL">Chile</option>
-    <option value= "BRA">Brasil</option>
-  </select>
+
 
   <select id="order" class="selectors">
       <option value="" disabled selected>Ordenar</option>

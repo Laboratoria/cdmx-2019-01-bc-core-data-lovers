@@ -10,7 +10,7 @@ const orderAscDat = document.getElementById('order');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
-let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica*///comentar grafica
+let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
 let pais;
@@ -63,16 +63,16 @@ const filtraIndPais = () =>{
      pais = window.worldBank.filtroPais(baseDatos,selectPais,indicador); //Se llama la funcion window.filtroPais con el valor de selec
      recorrerObjeto (pais); 
 }
-selOption.addEventListener('change',filtraIndPais); //funcion recorre el objeto
+nameIndicators.addEventListener('change',filtraIndPais); //funcion recorre el objeto
 
 
 const recorrerObjeto = (pais)=>{  
 
-let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
+let respuesta="<li>"+"<font size=4.5>"+"<b>"+"Año "+"&nbsp"+"&nbsp"+"  Valor(%)"+"</font>"+"</li>"+"</b>"+"<br>";
 
  for (let i in pais) //for iteracon cada elemento del objeto que se almacena en la variable pais
   {
-    respuesta+="<li>"+"<b>"+i+":  "+"</b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
+    respuesta+="<li>"+"<b>"+i+": "+"&nbsp;&nbsp;&nbsp;"+" </b>"+pais[i].toFixed(2)+"%"+"</li>"+"<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
    }
     for (let i in pais) 
     {//recorre objeto para pasar el año a nuevo arrego de eje X
@@ -83,17 +83,10 @@ let respuesta="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";
    valorPorcentajeY.push(pais[j]);
   }
  document.getElementById('contenido').innerHTML = respuesta;
-
- document.getElementById('graf').style.display='block';//comentar grafica
- VerGrafica();
- return respuesta;
-}
-
 const prtOrder=(orderObj)=>{
-let respOrder="<li>"+"<b>"+"Año   "+"    Valor(%)"+"</li>"+"</b>"+"<br>";    
-for (let i in orderObj)
+let respOrder="<li>"+"<b>"+"Año "+"&nbsp"+"&nbsp"+"  Valor(%)"+"</li>"+"</b>"+"<br>";    
  {
-  respOrder+="<li>"+"<b>"+orderObj[i][0]+":  "+"</b>"+parseFloat(orderObj[i][1]).toFixed(2)+"%"+"</li>"+"<br>";
+  respOrder+="<li>"+"<b>"+orderObj[i][0]+":  "+"</b>"+"&nbsp"+"&nbsp"+parseFloat(orderObj[i][1]).toFixed(2)+"%"+"</li>"+"<br>";
  }     
  document.getElementById('contenido').innerHTML = respOrder;
  return  respOrder;
@@ -115,56 +108,20 @@ const limpiar = () => {
     document.getElementById('order').value = '';
     document.getElementById('contenido').innerHTML = '';
     document.getElementById('graf').style.display='none';
-  }
+  } 
   
   buttonLimpiar.addEventListener('click', limpiar)
 //console.log(limpiar);
 
 
+const DatGraph = () =>{//funcion llenado de grafica con arrayX y arrayY
+let arrayYear = valorAnioX;
+let arrayValors = valorPorcentajeY;
+let prtGrap =ctx;
 
-//console.log(valorAnioX);  //comentar grafica
+let almacenaGraf= window.worldBank.VerGrafica(arrayYear,arrayValors,prtGrap)
+return almacenaGraf;
+}
 
-//console.log(valorPorcentajeY);
 
-const VerGrafica=()=>{
-
-    myChart= new Chart(ctx, { //funcion grafica
-        type: 'line',
-        data: {
-            labels: valorAnioX,
-            datasets: [{
-                label: 'Indicador Demografico (%)',
-                data: valorPorcentajeY,
-                backgroundColor: [
-
-                    'rgba(77, 169, 197, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-
-                    'rgba(11,68,85,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    })
-    
-    }
+}
