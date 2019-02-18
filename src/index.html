@@ -11,85 +11,89 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css"/>
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+
 </head>
 
 
 <body>
 
 
-<header >
+  <header>
 
-<nav class="navbar navbar-expand-md sticky-top">
-      <img id="logo" src= "./assets/images/Logo Hipatia-01.png" style="width:25%" alt= "logoX">
+    <nav class="navbar navbar-expand-md sticky-top">
+      <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logo">
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-    <span class="nav-toggler-icon"></span>
-  </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="nav-toggler-icon"></span>
+      </button>
 
-  <div class="collapse navbar-collapse"id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
 
-     <ul class="navbar-nav ml-auto">
-       
-       <li class="nav-item active">
-         <a class="nav-link" href="#">Inicio</a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Nosotros</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Indicadores</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
+        <ul class="navbar-nav ml-auto">
 
-     </ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Indicadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
 
-  </div>
- </div>
-</nav>
-</header> 
+        </ul>
+
+      </div>
+      
+    </nav>
+  </header>
 
 
-<div id="slides" class="carousel-slide" data-ride="carousel">
+  <div id="slides" class="carousel-slide" data-ride="carousel">
 
-  <div class= "carousel-inner">
+    <div class="carousel-inner">
 
-      <img class="mySlides" src="assets/images/267.jpg" >
-      <img class="mySlides" src="assets/images/aaa.jpg" >
-     <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg" > 
-  
-    <div class= "carousel-caption">
+      <img class="mySlides" src="assets/images/267.jpg" alt="picture1">
+      <img class="mySlides" src="assets/images/aaa.jpg" alt="picture2">
+      <img class="mySlides" src="assets/images/piotr-krzyzanowski-690545-unsplash.jpg" alt="picture3">
+
+      <div class="carousel-caption">
         <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
       </div>
+    </div>
+
   </div>
-  
-</div>
 
 
-<div class="container-welcome">
- <div class="welcome text-center" >
-    
+  <div class="container-welcome">
+    <div class="welcome text-center">
+
       <h2>¿Qué es Hipatia Project?</h2>
       <hr>
-      <p class="lead">Es un repositorio de estadísticas sobre la brecha de género en el trabajo de Brasil, Chile, México y Perú. En él se pueden visualizar datos históricos de diferentes indicadores del Banco Mundial en tablas y gráficas. Además, se pueden descargar archivos en formato Excel y realizar algunos cálculos estadísticos.</p>
- 
- </div>
-</div>
+      <p class="lead">Es un repositorio de estadísticas sobre la brecha de género en el trabajo de Brasil, Chile,
+        México y Perú. En él se pueden visualizar datos históricos de diferentes indicadores del Banco Mundial en
+        tablas y gráficas. Además, se pueden descargar archivos en formato Excel y realizar algunos cálculos
+        estadísticos.</p>
+
+    </div>
+  </div>
 
 
- 
-<div class=container>
 
-     <div id="Estadisticas">
+  <div class="container-fluid">
+
+    <div id="Estadisticas">
 
       <h3>Estadísticas laborales</h3>
 
 
-      <select id="selects">
+      <select id="selects" class="container-fluid">
 
         <option class="indicatorGroup">Seleccionar un indicador</option>
         <option value="Desempleo total" class="indicatorGroup">Desempleo, total (% de participación total en la fuerza
@@ -140,73 +144,75 @@
 
       <br>
       <br>
-      
-
-    </div> 
 
 
-
-      <div class= "container-flags">
-<div class= "row">
-  
-  <div class="col">
-          <h4>México</h4>   
-      <button class="country" value="mexico" ><img src="./assets/images/mex.png" width="50"  height="50"> </button>
     </div>
+  </div>
 
 
-         
-      <div class="col">
-      <h4>Chile</h4>
-       <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50"  height="50"> </button>      
+    <div class="container-flags">
+      <div class="row text-center col-12">
+
+        <div class="col">
+          <h4>México</h4>
+          <button class="country" value="mexico"><img src="./assets/images/mex.png" width="50" height="50" alt="flagMx"> </button>
+        </div>
+
+        <div class="col">
+          <h4>Chile</h4>
+          <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50" height="50" alt="flagChl"> </button>
+        </div>
+
+        <div class="col">
+          <h4>Brasil</h4>
+          <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50" height="50" alt="flagBra"> </button>
+        </div>
+
+        <div class="col">
+          <h4>Peru</h4>
+          <button class="country" value="peru"><img src="./assets/images/peru.png" width="50" height="50" alt="flagPer"> </button>
+        </div>
+
       </div>
-
-       <div class="col">
-        <h4>Brasil</h4>
-     <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50"  height="50"> </button>
     </div>
-     
-     <div class="col">
-          <h4>Peru</h4> 
-           <button class="country" value="peru"><img src="./assets/images/peru.png" width="50"  height="50" >  </button>
-          </div>
-          </div>
-          </div>    
-  
-
-
-      <form id="sorters">
-        <input type="radio" class="order" value="downward">Ascendente
-        <input type="radio" class="order" value="upward">Descendente
-      </form>
-
-      <table id="table-year-data">
-        <tr>
-          <th>Año</th>
-          <th>Datos</th>
-        </tr>
-        <tbody id="table-indicators">
-        </tbody>
-      </table>
-
-      <button id="average">Calcular promedio</button>
-      <p id="result"></p>
 
    
 
-    
-      
+    <form id="sorters">
+      <input type="radio" class="order" value="downward">Ascendente
+      <input type="radio" class="order" value="upward">Descendente
+    </form>
 
- <hr class= "my-4">
+    <table id="table-year-data">
+      <tr>
+        <th>Año</th>
+        <th>Datos</th>
+      </tr>
+      <tbody id="table-indicators">
+      </tbody>
+    </table>
+
+    <button id="average">Calcular promedio</button>
+    <p id="result"></p>
 
 
- <div class="container">
-  <div class="row padding">
-    <div class="col-lg-6">
-      <h3>¿Qué es género?</h3>
-      <p> Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en la mayor parte del mundo, estas desigualdades han afectado a las mujeres.</p>
-       
-      <h3>Desigualdad de género </h3>
+
+
+
+
+    <hr class="my-4">
+
+
+    <div class="container">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h3>¿Qué es género?</h3>
+          <p> Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada
+            sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a
+            cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en
+            la mayor parte del mundo, estas desigualdades han afectado a las mujeres.</p>
+
+          <h3>Desigualdad de género </h3>
 
           <p>La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que
             prevalecen entre mujeres y hombres se asocian a la
@@ -220,29 +226,29 @@
             el estudio de la desigualdad de género en el trabajo.</p>
 
         </div>
-    
 
-    <div class="col-lg-6">
-      <img src="assets/images/aaa.jpg" class= "img flud">
+
+        <div class="col-lg-6">
+          <img src="assets/images/aaa.jpg" class="img fluid img-responsive" alt="picture">
+        </div>
+      </div>
+      <hr class="my-4">
     </div>
-  </div>
-  <hr class="my-4">
-</div>
 
 
-<div class= "container-fluid padding">
-<div class="row text-center padding">
-  <div class="col-12">
-    <h3>Contacto</h3>
-  </div>
-  <div class="col-12 social padding">
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
-  </div>
-</div>
-</div>
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h3>Contacto</h3>
+        </div>
+        <div class="col-12 social padding">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -255,42 +261,42 @@
 
 
 
-<footer >
-  <div class="container-fluid padding">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img src="../src/assets/images/Logo Hipatia-01.png" style="width:20%">
-        <hr clas="light">
-        <p>66423-1873</p>
-        <p>HipatiaProject@gmail.com</p>
-        <p>Insurgentes Sur 23</p>
-        <p>Ciudad de México</p>
-      </div>
-      <div class="col-md-4">
-        <hr class="light">
-        <h5>Horarios</h5>
-        <hr class="light">
-        <p> Lunes: 9am-5pm</p>
-        <p> Sábado: 10am-5pm</p>
-        <p> Domingo: Cerrado</p>
-      </div>
-      <div class="col-md-4">
-          <hr class="light">
-          <h5>Paises</h5>
-          <hr class="light">
-          <p> Perú, Lima</p>
-          <p> Santiago, Chile</p>
-          <p> Sao Paulo, Brasil</p>
-        </div>
-        <div class="col-12">
-          <hr class="light">
-          <h5>&copy; www.hipatia.org</h5>
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoF">
+            <hr class="light">
+            <p>66423-1873</p>
+            <p>HipatiaProject@gmail.com</p>
+            <p>Insurgentes Sur 23</p>
+            <p>Ciudad de México</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Horarios</h5>
+            <hr class="light">
+            <p> Lunes: 9am-5pm</p>
+            <p> Sábado: 10am-5pm</p>
+            <p> Domingo: Cerrado</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Paises</h5>
+            <hr class="light">
+            <p> Perú, Lima</p>
+            <p> Santiago, Chile</p>
+            <p> Sao Paulo, Brasil</p>
+          </div>
+          <div class="col-12">
+            <hr class="light">
+            <h5>&copy; www.hipatia.org</h5>
 
+          </div>
         </div>
       </div>
-
     </footer>
 
-
+</body>
 
 </html>
