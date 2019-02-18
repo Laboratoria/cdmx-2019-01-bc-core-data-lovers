@@ -102,8 +102,9 @@ La encuesta realizada se puede ver acá: https://docs.google.com/forms/d/e/1FAIp
 Resultados de encuesta
 ![GitHub Encuesta](src/encuesta/encuesta1.png)
 ![GitHub Encuesta](src/encuesta/encuesta2.png)
-![GitHub Encuesta](src/encuesta/encuesta3.png)
+
 ![GitHub Encuesta](src/encuesta/encuesta4.png)
+*A futuro se piensa implementar la función de comparar dos campeones
 ![GitHub Encuesta](src/encuesta/encuesta5.png)
 
 
