@@ -4,10 +4,21 @@
 
 Pokémon Encyplopedia es una página Web que nos proporciona información básica de los Pokemones que aparecen el el famoso juego de Pokémon Go, esta página Web te permite conocer que pokemones existe y clasificarlos por su tipo, así como verlos ordenados dependiendo de algunos criterios que el usuario seleccione.
 
-Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan iniciandose como jugadores de Pokémon Go y que por lo tanto no son expertos en estos pequeños personajes, por lo cual requieren información hasta cierto punto básica acerca de los Pokemones, con la finalidad de irse involucrando más en el mismo de este juego
+Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan iniciandose como jugadores de Pokémon Go y que por lo tanto no son expertos en estos pequeños personajes, por lo cual requieren información hasta cierto punto básica acerca de los Pokemones, con la finalidad de irse involucrando más en el mismo de este juego.
+
+-Poder acceder a los datos y caracteristicas de los pokémones, mediante un orden, para que la búsqueda de información sea fácil de consultar.
+
+-De fácil acceso, manejo y navegación, con los datos más importantes, útiles, características, nombres, tipos de especie.
+
+-Cuando necesiten consultar información sobre los pokemons en especifico y saber detalles de sus caracteristicas especiales, para hacer evolucionar a sus pokemones.
 
 ## Historias de usuario
 
+1.- Como usuario quiero conocer la lista de todos los Pokémones que hasta el momento existen en Pokemon go.
+2.- Como usuario quiero saber cuales con los tipos de especie de pokémones.
+3.- Como usuario quiero buscar pokémones por nombre.
+4.- Como usuario quiero ver los pokémones ordenados por peso y altura.
+5.- Como usuario quiero ver estadísticas de los pokémones.
 
 ## Diseño de la Interfaz de Usuario
 
