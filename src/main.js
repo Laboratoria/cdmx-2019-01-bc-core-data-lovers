@@ -81,23 +81,34 @@ menuToogle.addEventListener('click',()=>{
     aside.classList.remove('hideElement');
 });
 
-const printPokemonValues=(data)=>{
-data.forEach(element => {
-        let result= `<div class="wrapper2">
-        <div class="pokemon-card"> 
-              <div class="pokemon-card-image">
-                <img class=${element.img}>
-      </div>
-          <div class="box-card">
-              <p>Nombre:"${element.name}"</p> <p>Evoluciones:"${element.next_evolution}"</p>
-            <p>Tipo:"${element.type}"</p> <p>Debilidades:"${element.weaknesses}"</p>
-              <p>Candies:"${element.candies}"</p>
-           <p> Altura:"${element.height}" Peso:${element.weight} </p>
-              </div>
-              </div>
-              </div>`
-        printIndividualCard.innerHTML=result;      
-} );
+
+
+
+
+
+
+
+
+
+
+
+// const printPokemonValues=(data)=>{
+// data.forEach(element => {
+//         let result= `<div class="wrapper-individual">
+//         <div class="pokemon-card"> 
+//               <div class="pokemon-card-individual">
+//                 <img class="image-individual"${element.img}>
+//       </div>
+//           <div class="box-properties">
+//               <p>Nombre:"${element.name}"</p> <p>Evoluciones:"${element.next_evolution}"</p>
+//             <p>Tipo:"${element.type}"</p> <p>Debilidades:"${element.weaknesses}"</p>
+//               <p>Candies:"${element.candies}"</p>
+//            <p> Altura:"${element.height}" Peso:${element.weight} </p>
+//               </div>
+//               </div>
+//               </div>`
+//         printIndividualCard.innerHTML=result;      
+// } );
     
 };
 
@@ -112,8 +123,6 @@ for(let i =0; i< wrapper.length; i++ ){
         
     });
 }
-
-
 
 
 
