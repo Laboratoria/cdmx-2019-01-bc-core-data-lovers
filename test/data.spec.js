@@ -87,7 +87,7 @@ describe("WorldBank", ()=>{
     expect(typeof window.WorldBank.percentAndYear).toBe("function");
   });
   it ("Muestra año y porcentaje del indicador que selecciona el ususario",()=>{
-    expect(window.WorldBank.percentAndYear(dataFile,"PER","Fuerza laboral con educación intermedia (% del total)")[0]).toEqual(dataFile.PER.indicators[0].data);
+    expect(window.WorldBank.percentAndYear(dataFile,"PER","Fuerza laboral con educación intermedia (% del total)").data).toEqual(dataFile.PER.indicators[0].data);
   });   
   });
   
