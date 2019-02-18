@@ -797,7 +797,7 @@ describe('toReduce', () => {
 it('is a function', () => {
   expect(typeof window.lol.toReduce).toBe('function');
 });
-it('Should return the average of the difficulty of the champions', () => {
-  expect(window.lol.toReduce(newArrayInfo, '5.769')).toEqual('');
+it('Should return the sum of the difficulty of the champions', () => {
+  expect(window.lol.toReduce(newArrayInfo)).toEqual(75);
 });
 });
