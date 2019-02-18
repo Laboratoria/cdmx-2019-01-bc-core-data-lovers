@@ -21,18 +21,24 @@ section#countries {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  section#countries {
+    margin-top: 100px;
+  }
+}
+
 section#countries h2, section#countries h3{margin-bottom: 0}
 button {
   background-color: #fafafa;
   margin: 1rem;
   padding: 1rem;
-  width: 9.5em;
+  width: 10em;
   border: 2px solid #ccc;
   text-align: center;
-  font-size:.8em;
+  font-size:.9em;
 }
 button:hover {
   border: 2px solid #FFD252;
@@ -54,7 +60,7 @@ section#countries h2 {
     max-width: 540px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .container {
     max-width: 760px;
   }
@@ -257,7 +263,7 @@ div#group-buttons{
 }
 #conferencias {
   padding: 2rem 3rem;
-  margin-top: 10em;
+  margin-top: 5em;
   background: rgb(255, 255, 255);
   text-align: justify;
   color: #444444;
@@ -268,6 +274,13 @@ div#group-buttons{
   flex-direction: column;
   align-items: center;
 }
+
+@media (min-width: 768px) {
+  #conferencias {
+    margin-top: 10em; 
+  }
+}
+
 @media (min-width: 768px){
 #text-conf {
     text-align: justify;
@@ -295,6 +308,10 @@ margin-top: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }
+
+select:focus{ outline: none;}
+/* elimina la "sombra" azulada que aparece en Google Chrome */
+
 select#indicator {
   width: 100%;
   min-width: 280px;
