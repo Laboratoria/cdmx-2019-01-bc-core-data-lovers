@@ -171,7 +171,7 @@ const print = (datos) => {
 
   const difficultyAsc = () => {
     buttonDifficultyAsc.addEventListener('click', () => {
-      printRolTitle.innerHTML = "lower to higher";
+      printRolTitle.innerHTML = "Lower to Higher";
       const diffA = window.lol.sortByDifficultyAsc(datos);
       document.getElementById("welcomeMssg").style.display = 'none';
       printRolTitle.style.display= "block";
@@ -181,7 +181,7 @@ const print = (datos) => {
 
     const difficultyDsc = () => {
       buttonDifficultyDsc.addEventListener('click', () => {
-        printRolTitle.innerHTML = "higher to lower";
+        printRolTitle.innerHTML = "Higher to Lower";
         const diffD = window.lol.sortByDifficultyDsc(datos);
         document.getElementById("welcomeMssg").style.display = 'none';
         printRolTitle.style.display= "block";

@@ -14,7 +14,7 @@ body {
   left:0;
   top:0;
   position:fixed;
-  height:9.6%;
+  height:9%;
   background-color: #111;
   display:flex;
 }
@@ -31,7 +31,6 @@ body {
   padding-top: 20%;
   padding-bottom: 20%;
   padding-left: 5px;
-  opacity: 0.9;
   background-attachment: fixed;
 
 }
@@ -83,10 +82,11 @@ body {
   justify-content: center;
 }
 #rolTitle{
-    margin-top: 10px;
-    color:white;
-    display: flex;
-    justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 7%;
+  color:white;
+  display: flex;
+  justify-content: center;
   }
 
 #logo-lol {
@@ -103,6 +103,7 @@ figure img{
 .fa-home:before {
   content: "\f015";
   margin-right: 500%;
+  font-size: 70%;
 }
 
 .fas {
@@ -246,18 +247,24 @@ footer{
 /*Media Query Ipad*/
 @media only screen  and (min-width : 768px) {
 
-
+#titulo {
+    width: max-content;
+}
+#rolTitle {
+  margin-top: -10%;
+  margin-bottom: -7%;}
 
 .blinke {
   font-size: 200%;
   }
 
 .bigImg{
-    display:block;
-    width: 70%;
-    height: 110%;
-    margin-right:5%;
-    margin-left: -8%
+  display: block;
+  width: 120%;
+  height: 80%;
+  margin-right: 0%;
+  margin-left: 0%; 
+  margin-bottom: 3%;
 
 
   }  
@@ -277,23 +284,21 @@ footer{
   }
   
   .nameList{
-    width: 30%;
-   margin-right: 15px;
-   margin-left:15px;
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
    margin-top: 25px;
-   margin-bottom: 25px;
+   margin-bottom: 0px;
    display: flex;
+   flex-wrap: wrap;
 justify-content:center;
-
-  }
-
-  #mainHeader{
-    height: 8%;
+padding-left: 4%;
+padding-right: 4%;
+padding-top: 1%;
   }
 
   .fa-home:before {
-    content: "\f015";
-    margin-left: -10%;
+    font-size: 100%;
 }
   .fas{
     margin-top: 2%;
@@ -307,6 +312,7 @@ justify-content:center;
   .titulo{
     font-size: 150%;
     padding-left: 3%;
+    padding-top: 4%;
    
   
     
@@ -345,6 +351,20 @@ justify-content:center;
 
   font-size: 250%;
 }
+
+
+#mainHeader{
+  height: 7%;
+}
+
+
+#letras{
+  margin-top: 2%
+}
+
+#nombre{
+  font-size: 25px;
+}
 }
 
 
@@ -356,16 +376,17 @@ justify-content:center;
     font-size: 200%;
     }
   
-  .bigImg{
-      display:block;
-      width: 70%;
-      height: 110%;
-      margin-right:5%;
-      margin-left: -8%
-  
-  
-    }  
-  
+    .bigImg{
+      display: block;
+      width: 120%;
+      height: 80%;
+      margin-right: 0%;
+      margin-left: 0%; 
+      margin-bottom: 3%;
+    
+    
+      }  
+
   .lolIcons {
       
       display:none;
@@ -380,20 +401,20 @@ justify-content:center;
       
     }
     
-    .nameList{
-      width: 30%;
-     margin-right: 2%;
-     margin-left:2%;
-     margin-top: 2%;
-     margin-bottom: 2%;
-     display: flex;
-  justify-content:center;
+   .nameList{
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+   margin-top: 25px;
+   margin-bottom: 0px;
+   display: flex;
+   flex-wrap: wrap;
+justify-content:center;
+padding-left: 4%;
+padding-right: 4%;
+padding-top: 1%;
+  }
   
-    }
-  
-    #mainHeader{
-      height: 8%;
-    }
   
     .fas{
       margin-top: 2%;
@@ -433,21 +454,20 @@ justify-content:center;
     
   }
   
+  #mainHeader{
+    height: 7%;
+  }
   
- 
-  
-
-
-
-
-
-
 }
+
+
 /*Desktop*/
 
 @media (min-width: 1025px) {
 
-
+  #mainHeader{
+    height: 9%;
+  }
 
   #showFirstChampionList{
     margin-top: 50px;
@@ -459,11 +479,11 @@ justify-content:center;
   }
   
   .nameList{
-    width: 16%;
-   margin-right: 3%;
-   margin-left:2%;
-   margin-top: 2%;
-   margin-bottom: 2%;
+    width: 20%;
+    margin-right: 2px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   display: flex;
 justify-content:center;}
 
