@@ -2,15 +2,22 @@
 
 ## Definición del producto
 
-Pokémon Encyplopedia es una página Web que nos proporciona información básica de los Pokemones que aparecen el el famoso juego de Pokémon Go, esta página Web te permite conocer que pokemones existe y clasificarlos por su tipo, así como verlos ordenados dependiendo de algunos criterios que el usuario seleccione.
+Pokémon Encyplopedia es una página Web que nos proporciona información básica de los Pokemones que aparecen en el famoso juego de Pokémon Go, esta página Web te permite conocer que pokemones existen y clasificarlos por su tipo, así como verlos ordenados dependiendo de algunos criterios que el usuario seleccione.
 
-Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan iniciandose como jugadores de Pokémon Go y que por lo tanto no son expertos en estos pequeños personajes, por lo cual requieren información hasta cierto punto básica acerca de los Pokemones, con la finalidad de irse involucrando más en el mismo de este juego.
+De acuerdo a estudios estadisticos encontramos que la mayoría de jugadores son mujeres con un 63% sobre un 37% de hombres. En cuanto a edades, el rango más poblado está entre los 18 y 29 años de edad, mientras que el rango de 30 a 50 años se queda en segunda posición, seguido de cerca por jugadores de entre 13 y 17 años.
 
--Poder acceder a los datos y caracteristicas de los pokémones, mediante un orden, para que la búsqueda de información sea fácil de consultar.
+Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 20 años que estan iniciandose como jugadores de Pokémon Go y que por lo tanto no son expertos en estos pequeños personajes, por lo cual requieren información hasta cierto punto básica acerca de los Pokemones, con la finalidad de irse involucrando más en el juego.
 
--De fácil acceso, manejo y navegación, con los datos más importantes, útiles, características, nombres, tipos de especie.
+La decisión para enfocarnos a este grupo de usuarios es porque la mayoría de las páginas que encontramos son para usuarios que se encuentran en un rango mayor de edad, y aveces son complicadas de usar o no tan accesibles para adentrarlos a concocer el mundo de los personajes de Pokémon. Nuestro objetivo es presentarles a los usuarios una página sencilla, fácil de usar para usuarios de menor edad, ya que es un sector que no se ha considerado en las páginas que hoy en día existen.
 
--Cuando necesiten consultar información sobre los pokemons en especifico y saber detalles de sus caracteristicas especiales, para hacer evolucionar a sus pokemones.
+- ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+Poder acceder a los datos y caracteristicas de los pokémones, mediante un orden, para que la búsqueda de información sea fácil de consultar.
+
+- ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+De fácil acceso, manejo y navegación, con los datos más importantes, útiles, características, nombres, tipos de especie.
+
+- ¿Cuándo utilizan o utilizarían el producto?
+Cuando necesiten consultar información sobre los pokemons en especifico y saber detalles de sus caracteristicas especiales, para hacer evolucionar a sus pokemones.
 
 ## Historias de usuario
 
@@ -23,6 +30,7 @@ Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan ini
 ## Diseño de la Interfaz de Usuario
 
 ### Prototipo de baja fidelidad
+
 <a href="https://ibb.co/XtTgYrB"><img src="https://i.ibb.co/XtTgYrB/Captura-de-pantalla-2019-02-17-a-la-s-23-31-04.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-04" border="0"></a> <a href="https://ibb.co/tJtwmPN"><img src="https://i.ibb.co/tJtwmPN/Captura-de-pantalla-2019-02-17-a-la-s-23-31-14.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-14" border="0"></a> <a href="https://ibb.co/FsdvsyH"><img src="https://i.ibb.co/FsdvsyH/Captura-de-pantalla-2019-02-17-a-la-s-23-31-22.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-22" border="0"></a>
 
 ### Prototipo de alta fidelidad
@@ -36,6 +44,9 @@ Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan ini
 
 Al realizar los testeos de usabilidad se identificó lo siguiente:
 
+- No existia un título que identificará la aplicación.
+- El menú se desplegaba del lado contrario al botón que lo activa, causaba confusión al usuario.
+- Separar botones para ordenar y cambiar tamaño, para que en la versión movil fuera de mejor acceso.
 - El menú no es descriptivo.
 - Se revuelve la información al tenerla en dos idiomas (español e ingles).
 - Agregar un titulo a a sección de estadisticas, porque la tabla sola proporciona información en sí.
@@ -618,13 +629,13 @@ compañera:
 - [x] Pasa tests (`npm test`)
 - [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
 - [x] UI: Permite ordenar data por uno o más campos (asc y desc).
