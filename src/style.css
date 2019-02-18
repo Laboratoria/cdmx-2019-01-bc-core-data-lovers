@@ -190,6 +190,9 @@ p {
   border-radius: 14px;
   border: 3px solid #FFBA5C;
 }
+.wrapper:hover{
+  background:#4AB583; 
+}
 
 .pokemon-card-image {
   background: #EAFEE6;
@@ -329,8 +332,5 @@ padding-left: 6%;
   }
   
  
-
-
-}
 
 
