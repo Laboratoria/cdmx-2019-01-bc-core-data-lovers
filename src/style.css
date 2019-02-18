@@ -1,322 +1,662 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-
 :root {
-    background:#2980B9;
-  }
+  background: #2980B9;
+}
 
- 
-.hide{
-    display:none;
+.hide {
+  display: none;
 }
-.show{
-    display:contents;
+
+.show {
+  display: contents;
 }
+
 body {
- margin:0;
- font-family: 'Ubuntu', sans-serif;
-}
-header{
-    width: 100%;
-    background: #00CED1;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-
-#hamburguerMenu{
- display: none;
+header {
+  width: 100%;
+  background: #00CED1;
 }
 
-
-.fas{
-    font-size: 18px;
-    color:white;
-
+.headerType {
+  width: 100%;
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
 }
 
-header label {
-    display: none;
-    width:30px;
-    height:30px;
-    padding: 10px;
-    border-right:1px solid white;
+#hamburguerMenu,
+#hamburguerMenuFilterPage,
+#hamburguerMenuTypePage {
+  display: none;
 }
 
-header label:hover{
-    cursor:pointer;
-    background: royalblue;
+.fas {
+  font-size: 18px;
+  color: white;
+}
+
+header label,
+.headerType label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: royalblue;
 }
 
 .menu_gral ul {
-    margin:0;
-    list-style-type: none; 
-    padding:0;
-    display: flex;
-    font-size: 0;
-    justify-content: center;
-
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
 }
-.menu_gral > ul li {
-   border-right: .5px solid white;
 
+.menu_gral>ul li {
+  border-right: .5px solid white;
 }
+
 .menu_gral li a {
-    display: block;
-    padding:16px 20px;
-    text-decoration: none;
-   font-size: 1rem;
-    line-height: 3.5rem;
-    color: white;
-}
-.menu_gral li:hover a, .menu_gral li a:focus {
-    background-color: Royalblue;
-
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 3.5rem;
+  color: white;
 }
 
-.titleWeb, .titlePokemonLight,.titlePokemonHeavy,
-.titlePokemonSmall, .titlePokemonMedium, .titlePokemonTall,
-.titlePokemonSortByHeightAscending, .titlePokemonsortByWeightAscending{
-    top: 15px;
-   text-align: center;
-}
-
-.detectivePikachu{
-        height: 150px;
-        position: relative;
-        left: 45%;
-        top:180px;
-        
-      
-        }
-
-.titleHomePage img{
-    position:relative;
-    left: 450px;
-    top: 150px;
-}
-
-#ButtonGround,
-#ButtonRock,#ButtonElectric,#ButtonBug,#ButtonNormal,
-#ButtonFighting,#ButtonDragon, #buttonPokemonFire, #buttonPokemonGrass,
-#buttonPokemonIce, #buttonPokemonPoison, #buttonPokemonFlying, 
-#buttonPokemonPsychic, #buttonPokemonWater{
-    background-color:#00CED1;
-    border: none; 
-    color: white; 
-    padding: 12px 35px; 
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin:5px;
-    
-  }
-  
- 
-  #buttonPokemonFire:hover, #buttonPokemonGrass:hover,
-  #buttonPokemonIce:hover, #buttonPokemonPoison:hover, #buttonPokemonFlying:hover, 
-  #buttonPokemonPsychic:hover, #buttonPokemonWater:hover,
-  #ButtonGround:hover, #ButtonRock:hover,#ButtonElectric:hover,#ButtonBug:hover,
-  #ButtonNormal:hover, #ButtonDragon:hover, #ButtonFighting:hover {
-    background-color: RoyalBlue;
-  }      
-
-.titleKantoRegion{
-   color:#FFDE00;
-   font-size: 30px;
-   text-align: center;
+.menu_gral li:hover a,
+.menu_gral li a:focus {
+  background-color: Royalblue;
 
 }
-.fa-align-left{
-    padding:4%;
-    font-size: 20px;
+
+.menu_gral_type_pokemon ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+
 }
 
-.boxPokemones{
-    width: 70%;
-    position:relative;
-    left: 10%;
-    top:70px;
-}
-.pokemones{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    position: relative;
-    display: inline-block    
+.menu_gral_type_pokemon li a {
+  display: block;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: white;
 }
 
-h1,h2 {
-    color: #FFDE00;
-    text-align: center; 
-  }
+.menu_gral_type_pokemon li:hover a,
+.menu_gral_type_pokemon li a:focus {
+  background-color: Royalblue;
 
-
-
-p{
-   color: white;
-   font-size: 16px;
-   background: #8E2DE2;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #4A00E0, #8E2DE2);
-   width: 270px;
-   margin:0px;
-   left:540px;
-   padding: 1px;
-   text-align: center;
 }
- .checkbox {
-    width: 25%;
-    height: 25%;
-    color: white;
-    font-size: 18px;
-    padding: 1%;
-    margin: 2%;
-    background: #8E2DE2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    line-height: 2.1;
-    border-radius: 3%;
-    display: inline-block;
-    
- }
- .boxesContainer, .typeCard{
-    display: inline-block;
-   
+
+
+
+
+.titleWeb{
+  top: 15px;
+  text-align: center;
+
+}
+
+.detectivePikachu img {
+  height: 210px;
+  position: relative;
+  display: block;
+  margin: auto;
+  background-position: center;
+  top: 47px;
+}
+
+.titleHomePage img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  top: 50px;
+}
+
+.titleKantoRegion {
+  color: #FFDE00;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.fa-align-left {
+  padding: 4%;
+  font-size: 20px;
+}
+
+.boxPokemones {
+  width: 70%;
+  position: relative;
+  left: 10%;
+  top: 70px;
+}
+
+.pokemones {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  display: inline-block
+}
+
+h1,
+h2 {
+  color: #FFDE00;
+  text-align: center;
+}
+
+
+
+p {
+  color: white;
+  font-size: 16px;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  width: 270px;
+  margin: 0px;
+  left: 540px;
+  padding: 1px;
+  text-align: center;
+}
+
+.checkbox {
+  width: 25%;
+  height: 25%;
+  color: white;
+  font-size: 18px;
+  padding: 1%;
+  margin: 2%;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  line-height: 2.1;
+  border-radius: 3%;
+  display: inline-block;
+
+}
+
+.containterPokemon, .container-Stadistics {
+  min-height: 120rem;
+  text-align: center;
+}
+
+.typeCard {
+  display: inline-block;
+  text-align: center;
+  border: solid #FFDE00;
+  position: relative;
+  top: 65px;
+  margin: 1%;
+  width: 16%;
+}
+
+.descriptionType p {
+  color: white;
+  font-size: 16px;
+  background: #59C173;
+  background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+ background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+  width: 99%;
+  height: 10%;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.imageType {
+  position: relative;
+  display: block;
+  margin: auto;
+  background-position: center;
+}
+
+.boxesContainer {
+  display: inline-block;
 }
 
 .card {
-    
-    cursor: default;
-    transform-style: preserve-3d;
-    transition: transform 0.4s ease 0s;
-    width: 100%;
-    -webkit-animation: giro 1s 1;
-    animation: giro 1s 1;
-  }
+  cursor: default;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
 
 .cardBox {
-    float: left;
-    font-size: 1.2em;
-    margin: 1% 0 0 1%;
-    perspective: 800px;
-    transition: all 0.3s ease 0s;
-    width: 23.7%;
-  }
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
 
-  .cardBox:hover .card {
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+
+.cardBox .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+@keyframes giro {
+
+  from {
+
     transform: rotateY(180deg);
+
   }
 
-  .front, .back {
-    backface-visibility: hidden;
-    color: white;
+  to {
 
-    font-size: 1.2em;
-    position: relative;
+    transform: rotateY(0deg);
+
+  }
 
 }
-  .back {
-    transform: rotateY( 180deg);
+
+@-webkit-keyframes giro {
+
+  from {
+
+    transform: rotateY(180deg);
+
   }
 
+  to {
+
+    transform: rotateY(0deg);
+
+
+  }
+}
+
+
+.filterCard {
+  display: inline-block;
+  border: solid #FFDE00;
+  margin: 1%;
+  width: 18%;
+  position: relative;
+  left: 28%;
+  bottom: 330px;
+}
+
+.imageCard {
+  position: relative;
+  left: 30%;
+}
+
+.namePokemonFilter {
+  position: relative;
+  display: inline-block;
+  bottom: 300px;
+  left: 17%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16%;
+}
+
+.quality {
+  color: white;
+  font-size: 16px;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  width: 99%;
+  margin: 0px;
+  padding: 1px;
+  text-align: center;
+}
+.Average-Weight, .Average-Height{
+  width:50%;
+  background: #5433FF;  /* fallback for old browsers */
+  margin: 5%;
+  position: relative;
+  text-align: center;
+}
+
+.averageWeightPokemonText, .averageHeightPokemonText{
+   font-size: 30px;
+   color: white;
+}
+
+
+footer {
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-container {
+  width: 100%;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  color: white;
+}
+
+.footer-main {
+  width: 98%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-main .footer-column {
+  width: calc(100% / 2);
+  text-align: justify;
+}
+
+.footer-main .footer-column h3 {
+
+  margin-left: 30px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+
+
+}
+
+.footer-main .footer-column span {
+  display: inline block;
+  margin-left: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  line-height: 2
+}
+
+.footer-copy-redes {
+  width: 100%;
+  background: white;
+  border-top: 2px solid #FFDE00;
+
+}
+
+.main-copy-redes {
+  width: 98%;
+  max-width: 1000px;
+  padding: 15px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.main-copy-redes .footer-copy {
+  width: 70%;
+  color: black;
+
+}
+
+.main-copy-redes .footer-redes {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-copy-redes .footer-redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  background: #00CED1;
+  color: white;
+  text-align: center;
+}
+
+
+@media (max-width:768px) {
+
+  header label,
+  .headerType label {
+    display: block;
+  }
+
+  .menu_gral {
+    position: absolute;
+    background-color: #00CED1;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 1s;
+  }
+
+  .menu_gral_type_pokemon {
+    background-color: #5de6de;
+    background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    position: absolute;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 1.5s;
+
+  }
+
+  .menu_gral ul,
+  .menu_gral_type_pokemon ul {
+    flex-direction: column;
+  }
+
+  .menu_gral li,
+  .menu_gral_type_pokemon li {
+    border-top: .5px solid white;
+  }
+
+  #hamburguerMenu:checked~.menu_gral,
+  #hamburguerMenuFilterPage:checked~.menu_gral,
+  #hamburguerMenuTypePage:checked~.menu_gral_type_pokemon {
+    margin: 0;
+  }
+
+  .containterPokemon {
+    min-height: 200rem;
+  }
+  .typeCard {
+    width: 26%;
+  }
+  .descriptionType p{
+    font-size:16px
+  }
+  
+  .imageType img {
+    height:60%;
+    width:80%;
+    position: relative;
+    display: block;
+    margin: auto;
+    background-position: center;
+  }
+  .nameTypeCard{
+    font-size:20px;
+  }
  
-  .cardBox .card {
-    -webkit-animation: giro 1.5s 1;
-    animation: giro 1.5s 1;
-  }
-  @keyframes giro {
 
-    from {
-  
-      transform: rotateY( 180deg);
-        
-    }
-  
-    to {
-  
-      transform: rotateY( 0deg);
-  
-    }
-  
-  }
-  
-  @-webkit-keyframes giro {
-  
-    from {
-  
-      transform: rotateY( 180deg);
-  
-    }
-  
-    to {
-  
-      transform: rotateY( 0deg);
-  
-    }
-  
+   .footer-main .footer-column {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
   }
 
 
-.filterCard{
-    display: inline-block;
-    border: solid #FFDE00;
-    margin: 1%;
-    width: 18%;
+  .footer-main .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-main .footer-column span {
+    font-size: 12px;
+  }
+}
+
+@media screen and ( min-width: 250px) and (max-width:767px) {
+
+  header label,
+  .headerType label {
+    display: block;
+  }
+
+  .menu_gral {
+    position: absolute;
+    background-color: #00CED1;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 1.5s;
+
+  }
+
+  .menu_gral_type_pokemon {
+    background-color: #5de6de;
+    background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    position: absolute;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 1.5s;
+
+  }
+
+
+  .menu_gral ul,
+  .menu_gral_type_pokemon ul {
+    flex-direction: column;
+  }
+
+  .menu_gral li,
+  .menu_gral_type_pokemon li {
+    border-top: .5px solid white;
+  }
+
+  .menu_gral li a,
+  .menu_gral_type_pokemon li a {
+
+    line-height: .8rem;
+
+  }
+
+  #hamburguerMenu:checked~.menu_gral,
+  #hamburguerMenuFilterPage:checked~.menu_gral,
+  #hamburherMenuTypePokemon:checked~.menu_gral_type_pokemon {
+    margin: 0;
+  }
+
+  .typeCard{ 
+    width:25%;
+    margin: 3%;
+  }
+  .descriptionType p{
+    font-size:14px
+  }
+  
+  .imageType img {
+    height:70%;
+    width:70%;
     position: relative;
-    left: 28%;
-    bottom: 330px;
+    display: block;
+    margin: auto;
+    background-position:center 
 }
 
-.imageCard{
-    position:relative;
-    left: 30%;
+   .imageType{  
+    display: block;
+    margin: auto;
+    background-position: center;
+  }
+  .nameTypeCard{
+    font-size:16px;
+  }
+
+  .footer-main .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .footer-main .footer-column h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer-main .footer-column span {
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .main-copy-redes {
+    width: 83%;
+    max-width: 1000px;
+    padding: 0px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .main-copy-redes .footer-copy {
+    widows: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .main-copy-redes .footer-redes {
+    width: 70%;
+    margin: auto;
+  }
+
 }
-.namePokemonFilter{
-    position: relative;
-    display: inline-block;
-    bottom: 300px;
-    left: 17%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 16%;
-}
-.quality{
- color: white;
-   font-size: 16px;
-   background: #8E2DE2;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   width: 99%;
-   margin:0px;
-   padding: 1px;
-   text-align: center;
-}
 
 
-@media (max-width:768px){
-    header label{
-        display: block;
-    }
-    .menu_gral{
-        position: absolute;
-        background-color:#00CED1;
-        width: 60%;
-        margin-left:-70%;
-        transition: all 1s;
-    }
-    .menu_gral ul {
-       flex-direction: column;
-    }
-    .menu_gral li{
-        border-top: .5px solid white;
-    }
-
-    #hamburguerMenu:checked ~ .menu_gral{
-        margin:0;
-    }
-   
 
 
-}
+
+
+
 /*responsive tablet*/
 @media screen  and (max-width: 1100px) {
     .cardBox {
@@ -332,12 +672,7 @@ p{
     margin-bottom: 3%;
     }
 
-    .boxesContainer, .typeCard {
-        display: inline-block;
-        width: 30%;
     
-    
-    }
     .checkbox{
     width: 25%;
     height: 25%;
@@ -428,12 +763,7 @@ p{
     h2{
         text-align: left;
     }
-    .boxesContainer, .typeCard {
-
-        display: inline-block;
-        width: 50%;
     
-    }
     .titleKanto{
         width: 100%
     }
@@ -487,6 +817,6 @@ p{
         .quality{
             font-size: .6em;
         }
-        
+      
 
     } 
