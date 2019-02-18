@@ -111,8 +111,7 @@ window.lol = {
   //Aquí inicia la función matemática
   toReduce: (difficultyArray) => {
     const champDifficulty = difficultyArray.reduce((total, newArrayInfo) => {
-      console.log(total)
-      return total += newArrayInfo.difficulty/134;
+      return total += newArrayInfo.difficulty;
     }, 0);
     return champDifficulty;
   },
