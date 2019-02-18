@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 
-/*  Clases para la tarjeta del pokemon con el efecto que se voltea y muestra información*/
+/* Classes for the pokemon card with the effect that is flipped and shows information */
 .divPokemon {
   border: 2px solid #99b89d;
   width: 20%;
@@ -51,6 +51,7 @@
 
 }
 
+/* Stats */
 #details td{
   padding-left: 1em;
   font-family: 'Dosis', sans-serif;
@@ -80,6 +81,7 @@ h5,p, h4{
   font-family: 'Righteous', cursive;
 }
 
+/* Index */
 .fondo {
 background-image: url('./assets/images/backInicio.jpg');
 width: 100%;
@@ -115,6 +117,7 @@ background-repeat: no-repeat;
  margin-top: 5%;
 }
 
+/* Filter, search */
 input[type=search]{
     width: 50%;
 }
@@ -149,6 +152,7 @@ input[type=search]{
   width: 30%
 }
 
+/* Buttons by type */
 #normal{
   background-image: url('./assets/images/Type_Normal.png');
 }
@@ -209,6 +213,7 @@ input[type=search]{
   background-image: url('./assets/images/Type_Dragón.png');
 }
 
+/* Input Radios */
 input[type=radio]{
   margin-left: 20%;
 }
@@ -223,7 +228,7 @@ h2 {
   color: #ff383f;
   font-family: 'Courgette', cursive;
 }
-
+/* button group */
 fieldset {
   padding: 1em;
   border-radius: 1em;
@@ -283,7 +288,7 @@ legend{
   justify-content: center;
 }
 
-/* MENU */
+/* MAIN MENU */
 
 * {
   margin: 0;
@@ -343,12 +348,12 @@ nav {
   transition: transform .3s ease;
 }
 
-/* Desplegar Menú */
+/* Unfold main menu */
 nav.open {
   transform: translate(0, 0);
 }
 
-/* Items Menú */
+/* Items main menu*/
 nav li {
   padding: 1em;
 }
@@ -407,6 +412,11 @@ ul li:hover {
     width: 48%;
 
   }
+
+  #type-button {
+    margin: 1em 2em;
+   
+}
 
   #order-section {
     margin: 3%;

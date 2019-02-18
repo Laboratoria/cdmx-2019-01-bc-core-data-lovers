@@ -1,8 +1,9 @@
-//let POKEMON;
+
 let dataPokemon = window.POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const searchCoincidence = document.getElementById('search-coincidences');
 
+//Show data
 const printPokemon = (pokemon) => {
   let nombrePokemon = `<div class="divPokemon">
     <div class="flip-card-inner">
@@ -32,7 +33,7 @@ const printPokemon = (pokemon) => {
 };
 //const allData = window.showAllData(dataPokemon);
 
-
+//Show List Data
 const showList = (pokemonList) => {
   pokemones.innerHTML="";
   pokemonList.forEach(element => {
@@ -40,20 +41,19 @@ const showList = (pokemonList) => {
   });
 };
 
-// Mike estuvo aquí
+// Array buttons
 const buttonsCollection = document.getElementsByClassName("typesPokemon");
 const buttonsArray = Array.from(buttonsCollection)
-
 //console.log(buttonsArray)
 
-// Función que genere el tipo de Pokemon de acuerdo al click del botón que seleccionó el usuario
+//Pokémon type function according to clicking on the button that the user selects
 const getTypePokemon = (arrayButtons) => {
 
       arrayButtons.map(boton => {
         boton.addEventListener("click",(event) =>{
           //console.log(event.target.name);
           //console.log(window.filterByType(event.target.name));
-          // Invocar una función que pinte Pokemon
+          //Invoke a function that paints Pokemon
           showList(window.data.filterByType(dataPokemon,event.target.name));
         })
       })
@@ -61,8 +61,7 @@ const getTypePokemon = (arrayButtons) => {
 
 getTypePokemon(buttonsArray)
 
-// filterCoincidence obtiene las coincidencias letra por letra
-
+//Filter coincidence gets the matches letter by letter
 const filterCoincidence = () => {
   searchCoincidence.addEventListener('keyup', () => {
     let searchValue = document.getElementById('search-coincidences').value;
@@ -70,13 +69,13 @@ const filterCoincidence = () => {
   });
 }
 
-//funcion para ordenar la dataByType
+//function to order the data by type
 
-//esta parte obtiene la ubicacion de la pagina y dependiendo de ésta ejecuta las funciones
+//this part obtains the location of the page and depending on it executes the functions
 let ubication = location.href;
 
 if (ubication.includes('typePokemon.html')) {
- // En esta le paso allData para mostrar toda la info o dataByType para mostrar la info filtrada
+ //Pass all data to show all the info or dataByType to show the filtered information
   //showList(allData);
   filterCoincidence();
 
@@ -86,6 +85,8 @@ if (ubication.includes('typePokemon.html')) {
   orderNameRadio.addEventListener('click',()=>{
     showList(window.sortData(dataPokemon,'name','asc'));
   });*/
+
+  //Buttons actions for order data
   const orderRadio = document.getElementsByName("order");
   const arrayRadio = Array.from(orderRadio);
   const getOrderPokemon = (optionsRadio) => {
@@ -123,7 +124,7 @@ if (ubication.includes('typePokemon.html')) {
 
 
 
-//MENU
+//MENU 
 let menu = document.querySelector('#menu');
 let drawer = document.querySelector('nav');
 let outMenu = document.querySelector('nav');

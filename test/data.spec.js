@@ -127,6 +127,7 @@ const dataPokemonTest = [{
   }]
 } ];
 
+//Tests for all data
 describe ('data', () => {
 
   test('debería ser un objeto', () => {
@@ -145,6 +146,7 @@ describe ('data', () => {
     });
   });
 
+//Tests Filter Data
   describe ('filterByType', () => {
 
     test('debería ser una funcion', ()=>{
@@ -180,6 +182,7 @@ describe ('data', () => {
 
   });
 
+//Tests order data
   describe('sortData',() => {
 
     test('debería ser una funcion', () => {
@@ -218,7 +221,7 @@ describe ('data', () => {
       expect(window.data.sortData(dataPokemonTest, 'weight')[3].weight).toBe(6.9);
     });
   });
-
+//Tests for Stats and average
   describe('computeStats', () => {
     test('debería ser una funcion', () => {
       expect(typeof window.data.computeStats).toBe('function');
