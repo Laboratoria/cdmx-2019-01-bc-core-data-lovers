@@ -15,7 +15,6 @@ let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
 let buttonContact = document.getElementById('contact');
 let buttonProp = document.getElementById('prop');
-let valorMAx = document.getElementById('valorMAx');
 let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
@@ -168,6 +167,7 @@ const limpiar = () => {
     document.getElementById('filtrar-pais').value = '';
     document.getElementById('filtrar-indicador').value = '';
     document.getElementById('order').value = '';
+    document.getElementById('maximo').value = '';
     document.getElementById('contenido').innerHTML = '';
     document.getElementById('graf').style.display='none';
   } 
