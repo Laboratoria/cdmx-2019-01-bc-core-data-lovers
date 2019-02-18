@@ -1,12 +1,13 @@
+const pokemon = POKEMON.pokemon;
+var POKEMON = POKEMON;
 const botonMenu = document.getElementById('menuHide');
 const returnFilter = document.getElementById('returnFilter');
 const botonFilter = Array.from(document.getElementsByClassName("boton-filter"));
 const browser = document.getElementById("browser");
 const orderedButton = document.getElementById("orderedByAZ");
+const orderedReverseButton = document.getElementById("orderedByZA");
 const computeStats = document.getElementById("prom")
 const buttonNav = document.getElementById("buttonNav")
-var POKEMON = POKEMON;
-const pokemon = POKEMON.pokemon;
 
 botonMenu.addEventListener("click", showfilter)
 
@@ -44,21 +45,20 @@ const drawPokemon = (arrayPokemons) => {
       <img src="${pokemon.img}"/>
       <p>${pokemon.name}</p>
       <p class="${pokemon.type[0]} tipoP">${pokemon.type}</p>
-
-
     </div>
 <div class="modal fade modalpokemon " id="miModal${pokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog modalMargin" role="document">
 		<div class="modal-content modalWidth">
-			<div class="modal-header ">
+			<div class="modal-header ${pokemon.type[0]}">
 				<button type="button" class="close " data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
-				<h4 class="modal-title" id="myModalLabel">${pokemon.name}</h4>
+				<h4 class="modal-title White"  id="myModalLabel">${pokemon.name}</h4>
 			</div>
 			<div class="modal-body">
       <img src="${pokemon.img}" class="imgpokemon"></br>
-      <table style="width:100%">
+      <section class="${pokemon.type[0]} section-type">
+      <table style="width:80%" class="${pokemon.type[0]} table-type">
       <tr>
       <th class="weaknesses">Altura</th>
       <th class="weaknesses">Peso</th>
@@ -75,15 +75,19 @@ const drawPokemon = (arrayPokemons) => {
       <td>${pokemon.candy_count}</td>
       <td>${pokemon.avg_spawns}</td>
       </tr>
+      <tr>
+      <th class="weaknesses">Debilidades</th>
+      </tr>
       </table>
-    <p class="weaknesses"> Debilidades</p>
     <p >${pokemon.weaknesses}</p>
+    </section>
 			</div>
 		</div>
 	</div>
 </div>
   `
   })
+
 }
 
 drawPokemon(pokemon);
@@ -97,8 +101,14 @@ const filterLetter = () => {
 filterLetter();
 
 orderedButton.addEventListener("click", () => {
-  const newSortedData = window.data.sortData(pokemon)
+  const newSortedData = window.data.sortData(pokemon);
   drawPokemon(newSortedData);
+});
+
+orderedReverseButton.addEventListener("click", () => {
+  const dataForReverse = window.data.sortData(pokemon);
+  const dataReverse = dataForReverse.reverse();
+  drawPokemon(dataReverse);
 });
 
 computeStats.addEventListener("click", () => {
