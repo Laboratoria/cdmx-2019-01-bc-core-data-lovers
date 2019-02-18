@@ -1,12 +1,12 @@
 document.getElementById("next").addEventListener("click", () => {
-
+  imprimir(dataPokemon);
   document.getElementById("navs").style.display = "none";
   document.getElementById("barra").style.display = "block";
   document.getElementById("serch").style.display = "block";
   document.getElementById("main").style.display = "none";
   document.getElementById("order").style.display = "none";
  
-  imprimir(dataPokemon);
+  
  })
  
  document.getElementById("home").addEventListener("click", () => {
@@ -17,7 +17,7 @@ document.getElementById("next").addEventListener("click", () => {
   document.getElementById("order").style.display = "none"
   document.getElementById("pokemons").style.display = "block";
   imprimir(dataPokemon);
-  // imprimir(dataPokemon);
+  
  })
  
  document.getElementById("neews").addEventListener("click", () => {
@@ -25,7 +25,7 @@ document.getElementById("next").addEventListener("click", () => {
   document.getElementById("navs").style.display = "block";
   // document.getElementById("order").style.display="none";
   document.getElementById("pokemons").style.display = "none";
-  imprimir(dataPokemon);
+  
  
  })
  
@@ -34,7 +34,7 @@ document.getElementById("next").addEventListener("click", () => {
   document.getElementById("order").style.display = "block";
   document.getElementById("navs").style.display = "none"
   document.getElementById("pokemons").style.display = "none";
-  imprimir(dataPokemon);
+  
  })
  
  function myFunction() {
@@ -117,16 +117,13 @@ document.getElementById("next").addEventListener("click", () => {
  
   obtenerTipo.map((dataPokemon) => {
  
-    pokemons.innerHTML += `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
-                    <p class="namePokemon" id="nameCenter"> Name:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+    pokemons.innerHTML += `<div class="divPokemon" "><p class="namePokemon numberSite" id="idPokemon"> # ${dataPokemon.num} / 151</p><br><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> 
+                    <p class="namePokemon" id="nameCenter"> Nombre:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
     pokemones.innerHTML += `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
-                    <p class="namePokemon" id="nameCenter"> caca:  ${ dataPokemon.name }</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+                    <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
  
     pokemonees.innerHTML += `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
-                                        <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+                                        <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon" id="nameCenter"> Altura:  ${ dataPokemon.height }</p><br><p class="namePokemon">Peso: ${dataPokemon.weight}</p></div>`;
   })
  }
  
-
-
-
