@@ -35,15 +35,12 @@ window.data = {
     }) //ForEach
     return yearFind;
   }, //Order
-  OrdenData: (yearValue, userValue) => {
-    console.log(yearValue, userValue)
-    let ordered = [1, 4, 5, 6, 2, 7]
+  OrdenData: (resultdatos) => {
+    let ordered = [, 9, 3, 8, 1, 0, 4, 5, 6, 2, 7]
     //let ordered = [newmoto, newbike, newpeaton, newauto]
     const ordenData = ordered.sort((a, b) => {
       a > b
       return a > b
     })
-    console.log(ordenData)
   }
-
 }; //window
