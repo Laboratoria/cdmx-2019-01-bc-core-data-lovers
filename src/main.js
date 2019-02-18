@@ -145,8 +145,6 @@ const selectByRol = () => {
 }
 selectByRol();
 
-
-
 const searchByName = () => {
   searchInput.addEventListener("keyup", () => {
     let searchValue = searchInput.value;
@@ -175,23 +173,23 @@ searchByName();
  characterSheet();*/
 
 const difficultyAsc = () => {
-  buttonDifficultyAsc.addEventListener('click', () => {
-    printRolTitle.innerHTML = "lower to higher";
-    const diffA = window.lol.sortByDifficultyAsc(datos);
-    document.getElementById("welcomeMssg").style.display = 'none';
-    printRolTitle.style.display = "block";
-    print(diffA);
-  })
-};
-difficultyAsc();
+    buttonDifficultyAsc.addEventListener('click', () => {
+      printRolTitle.innerHTML = "Lower to Higher";
+      const diffA = window.lol.sortByDifficultyAsc(datos);
+      document.getElementById("welcomeMssg").style.display = 'none';
+      printRolTitle.style.display= "block";
+      print(diffA);
+    })};
+  difficultyAsc();
 
-const difficultyDsc = () => {
-  buttonDifficultyDsc.addEventListener('click', () => {
-    printRolTitle.innerHTML = "higher to lower";
-    const diffD = window.lol.sortByDifficultyDsc(datos);
-    document.getElementById("welcomeMssg").style.display = 'none';
-    printRolTitle.style.display = "block";
-    print(diffD);
-  })
-};
-difficultyDsc();
+    const difficultyDsc = () => {
+      buttonDifficultyDsc.addEventListener('click', () => {
+        printRolTitle.innerHTML = "Higher to Lower";
+        const diffD = window.lol.sortByDifficultyDsc(datos);
+        document.getElementById("welcomeMssg").style.display = 'none';
+        printRolTitle.style.display= "block";
+        print(diffD);
+      })};
+    difficultyDsc();
+
+
