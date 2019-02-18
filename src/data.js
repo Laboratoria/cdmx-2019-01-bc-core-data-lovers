@@ -48,15 +48,15 @@ window.worldBank = {
   },
 
   objMax: (selcValor,arrayMax) =>{
-    let valMax;
+    
     if(selcValor === "max")
     {
-      return valMax=Math.max.apply(null, arrayMax);
+      return Math.max.apply(null, arrayMax);
     }
 
     if(selcValor === "min")
     {
-      return valMax=Math.min.apply(null, arrayMax);
+      return Math.min.apply(null, arrayMax);
     }
    
     
