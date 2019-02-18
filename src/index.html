@@ -16,18 +16,23 @@
   <div id="root">
     <section id="initial-page" class="initial-page">
       <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img-pokesaurius">
-      <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-button_2.png"></button>
-   </section>
+
+      <button id="pokeball-button" class="pokebola-button"><img src="./assets/poke-ball-button_2.png"></button>
+   </section> 
+     
 
     <section id="pokemon-page" class="hideElement">
        <header class="header">
         <div>
-          <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img-logo-chico">
+
+        <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img-logo-chico">
         </div>
 
         <nav>
-          <p class="text-page">COLECCIÓN <span id="counterCollection"></span>/151</p>
-        <button class="fas fa-undo" id="button-home"></button>
+          <p class="text-page">COLECCIÓN  <span id="counterCollection"></span>/151</p>
+          <a href="#" id="menu-undo" class="menu-undo"><i class="fas fa-undo"></i></a>
+          <a href="#" id="menu-toogle" class="menu-toogle"><i class="fas fa-bars"></i></a>
+       
         </nav>
       </header>
 
@@ -36,8 +41,7 @@
         <div class="content"> 
         <article id="print-list" class="post">
         </article>
-
-      </div>
+        </div>
 
       <aside class="aside hideElement" id="aside">
         <h3 class="type">Tipo</h3>  
@@ -54,16 +58,21 @@
           <button class="type-button" id="Electric">Eléctrico</button>
           <button class="type-button" id="Bug">Bicho</button>
           <button class="type-button" id="Normal">Normal</button>
+          <br>
 
           <h3 class="orderByName">Ordenar</h3>
 
-          <button class="type-button sort-button" id="totales">Por nombre</button>
-        <article class="average">
-          <h4 class="doYouKnow">Sabias que...</h4>
-            <p>El peso promedio de tus pokemones <span id = "printType"></span> es de <span id="weight">1000 kg</span></p>
-        </article>
-        
-        </aside>
+          <button class="type-button sort-button" id="totales">Por nombre <i class="fas fa-angle-up"></i></button>
+          <article class="average">
+            <h4 class="doYouKnow">Sabías que...</h4>
+             <p>El peso promedio de tus Pokémones <span id = "printType"></span> es de <span id="weight"></span>kg</p>
+          </article>  
+        </aside> 
+               
+    </section> <!--termina main content-->
+
+        </section> <!--termina pokemon-page-->
+         
               
         
     </section>
@@ -73,6 +82,7 @@
    </section>
    
         </section>
+
 
     
     <!-- <script src="./data/injuries/injuries.js"></script> -->

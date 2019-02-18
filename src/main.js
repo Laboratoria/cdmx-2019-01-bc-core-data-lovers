@@ -5,7 +5,7 @@ const pokemonPage=document.getElementById('pokemon-page'); //página de pokemone
 const pokeballButton=document.getElementById('pokeball-button'); 
 const printList = document.getElementById('print-list'); 
 const buttonType=document.getElementsByClassName('type-button'); 
-const buttonHome=document.getElementById('button-home'); 
+const menuUndo=document.getElementById('menu-undo'); 
 const weight = document.getElementById('weight');
 const counterCollection=document.getElementById('counterCollection');
 const printType= document.getElementById('printType');
@@ -58,10 +58,12 @@ for(let i = 0; i <buttonType.length; i++ ){
 });
 }
 
-buttonHome.addEventListener('click',() => {
+
+menuUndo.addEventListener('click',() => {
     printList.innerHTML='';
     print(data)
 });
+
 
 alphabeticOrderButton.addEventListener('click',()=> {
     printList.innerHTML='';
@@ -94,6 +96,12 @@ data.forEach(element => {
     
 };
 printPokemonValues()
+
+//bolahome ya estaba
+// menuUndo.addEventListener('click',() => {
+//     printList.innerHTML='';
+//     print(data)
+// });
 
 
 
