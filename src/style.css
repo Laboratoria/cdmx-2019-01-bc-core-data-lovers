@@ -38,6 +38,10 @@ button {
   text-align: center;
 }
 
+button:hover {
+  border: 2px solid #FFD252;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
