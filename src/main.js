@@ -90,3 +90,5 @@ const printPercents = (resultYear) => {
 
 selectIndicator.addEventListener("change", sortByPercent); 
 
+
+
