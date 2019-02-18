@@ -171,4 +171,15 @@ describe("data", () => {
   it ('returns Pokemon filtrado',()=>{
     expect(window.data.filterData(dataBpokemon, "Grass")[0]).toEqual(dataBpokemon[0]);
   });
-});
+
+  describe("sorData", () => {
+    it('is a function', () => {
+      expect(typeof window.data.sortData).toBe("function");
+    });
+
+  it('retuns sortData',()=>{
+    expect(window.data.sortData(dataBpokemon,name,"asc")[0].name).toEqual("Bulbasaur");
+  });
+
+  })
+})
