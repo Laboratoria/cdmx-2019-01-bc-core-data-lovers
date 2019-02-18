@@ -1,6 +1,6 @@
 # Hipatia Project
 
-![Hipatia Logo](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Logo%20Hipatia-01.png)
+![Hipatia Logo](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Logo%20Hipatia-02.png)
 
 ## ¿Qué es Hipatia Project?
 
