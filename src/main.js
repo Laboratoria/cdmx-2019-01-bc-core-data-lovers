@@ -28,7 +28,6 @@ const imprimir = (obtenerTipo) => {
     pokemons.innerHTML += `<div class="imagesPokemon"><figure>
 <img src="${datapokemon.img}"></figure>
 <div class="texto-pokemon"><p>Nombre:${datapokemon.name}</p>
-<p> Id:${datapokemon.id}</p>
 <p> Candy:${datapokemon.candy}</p>
 <p> Altura:${datapokemon.height}</p>
 <p> Peso:${datapokemon.weight}</p>
@@ -70,3 +69,7 @@ const getOrderPokemon = (arrayRadio) => {
 }
 getOrderPokemon(arrayRadio);
 
+//creando slash//
+setTimeout(function(){
+  document.getElementById("splash").className="hide";
+},3000);
