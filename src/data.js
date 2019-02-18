@@ -47,7 +47,7 @@ window.worldBank = {
     return orderByObject;
   },
 
-  VerGrafica: (arrayYear,arrayValors,ctx)=>{//funcion grafica
+  /*VerGrafica: (arrayYear,arrayValors,ctx)=>{//funcion grafica
 
     new window.Chart(ctx, { 
         type: 'line',
@@ -86,7 +86,7 @@ window.worldBank = {
         }
     })
     
-    }
+    }*/
   
   } //fin de window
 
