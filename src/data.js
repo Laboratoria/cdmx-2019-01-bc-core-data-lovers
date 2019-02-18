@@ -22,10 +22,20 @@ window.lol = {
       difficulty: element.info.difficulty,
       hp: element.stats.hp,
       hpperlevel:element.stats.hpperlevel,
+      hpregen: element.stats.hpregen,
+      hpregenperlevel: element.stats.hpregenperlevel,
       mp:element.stats.mp,
       mpperlevel:element.stats.mpperlevel,
+      mpregen: element.stats.mpregen,
+      mpregenperlevel:element.stats.mpregenperlevel,
       movespeed:element.stats.movespeed,
       armor:element.stats.armor,
+      armorperlevel: element.stats.armorperlevel,
+      spellblock: element.stats.spellblock,
+      spellblockperlevel: element.stats.spellblockperlevel,
+      attackrange: element.stats.attackrange,
+      attackdamage: element.stats.attackdamage,
+      attackdamageperlevel: element.stats.attackdamageperlevel,
       }
     datos.push(objetoVacio)
 
