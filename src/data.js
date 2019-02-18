@@ -52,9 +52,8 @@ window.worldBank = {
     if(selcValor === "max")
     {
       return Math.max.apply(null, arrayMax);
-    }
-
-    if(selcValor === "min")
+    }else
+  
     {
       return Math.min.apply(null, arrayMax);
     }
