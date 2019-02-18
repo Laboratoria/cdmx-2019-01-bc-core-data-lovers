@@ -1535,11 +1535,11 @@ describe('La función averageHeight debería dar el promedio total de la altura 
 
 describe('totalWeight debería ser una función', () => {
   it('Es una función', () => {
-    expect(typeof window.pokemonFunction.totalWeight).toEqual('function')
+    expect(typeof window.pokemonFunction.averageWeight).toEqual('function')
   })
 });
 describe('La función totalWeight debería dar el promedio total de la peso de los pokémon', () => {
   it("Da el promedio total de peso de los pokémon", () => {
-    expect(window.pokemonFunction.totalWeight(pokemonSortTest.pokemon, numberOfPokemon)).toEqual(29.48)
+    expect(window.pokemonFunction.averageWeight(pokemonSortTest.pokemon, numberOfPokemon)).toEqual(29.48)
   });
 })
