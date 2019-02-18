@@ -128,16 +128,23 @@ for (let i in orderObj)
  return  respOrder;
 }
 
-const ptrMax= (maxObj)=>{
+const ptrMax= (selcValor,maxObj)=>{//imprime max/min
      let viewMax;
-     viewMax = "<b>"+"El valor maximo es: "+maxObj.toFixed(2)+"%"+"</b>"; 
+     if (selcValor === 'max') {
+        viewMax = "<b>"+"El valor maximo es: "+maxObj.toFixed(2)+"%"+"</b>"; 
+     }
+
+     if (selcValor === 'min') {
+        viewMax = "<b>"+"El valor minimo es: "+maxObj.toFixed(2)+"%"+"</b>"; 
+     }
+    
     document.getElementById('valorMAx').innerHTML = viewMax;
 
     return maxObj;
  }
 
 
-const orderByAscent = () =>{
+const orderByAscent = () =>{//funcion ordenar asc/desc
     let arrayOrder=pais;
     let order= orderAscDat.value;
     //console.log(order);
@@ -148,13 +155,14 @@ const orderByAscent = () =>{
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
 
 
-const valorMaximo = () =>{
+const valorMaximo = () =>{//funcion ordenar max/min
     let arrayMax = valorPorcentajeY;
-    let valMaximo = maximo.value;
-    let maxObj =window.worldBank.objMax(valMaximo,arrayMax);
-    ptrMax(maxObj)
+    let selcValor = maximo.value;
+    let maxObj =window.worldBank.objMax(selcValor,arrayMax);
+    ptrMax(selcValor,maxObj)
 }
 maximo.addEventListener('change',valorMaximo); //funcion recorre el objeto*/
+
 
 const limpiar = () => {
     document.getElementById('filtrar-pais').value = '';
