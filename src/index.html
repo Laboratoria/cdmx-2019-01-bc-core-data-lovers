@@ -24,7 +24,7 @@
   <header>
 
     <nav class="navbar navbar-expand-md sticky-top">
-      <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logo">
+      <img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="nav-toggler-icon"></span>
@@ -49,11 +49,9 @@
 
         </ul>
 
-      </div>
-      
+       </div>      
     </nav>
   </header>
-
 
   <div id="slides" class="carousel-slide" data-ride="carousel">
 
@@ -76,15 +74,12 @@
 
       <h2>¿Qué es Hipatia Project?</h2>
       <hr>
-      <p class="lead">Es un repositorio de estadísticas sobre la brecha de género en el trabajo de Brasil, Chile,
-        México y Perú. En él se pueden visualizar datos históricos de diferentes indicadores del Banco Mundial en
-        tablas y gráficas. Además, se pueden descargar archivos en formato Excel y realizar algunos cálculos
-        estadísticos.</p>
+      <p class="lead">Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil, Chile,
+        México y Perú. Aquí podrás visualizar datos históricos de diferentes indicadores del Banco Mundial en
+        tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.</p>
 
     </div>
   </div>
-
-
 
   <div class="container-fluid">
 
@@ -178,15 +173,20 @@
 
    
 
+
     <form id="sorters">
+      <label for="">Ordenar</label>
       <input type="radio" class="order" value="downward">Ascendente
       <input type="radio" class="order" value="upward">Descendente
     </form>
+<br>
+    <p id="table-title"></p>
+    <p id="country-name"></p>
 
-    <table id="table-year-data">
+    <table id="table-year-data">  
       <tr>
         <th>Año</th>
-        <th>Datos</th>
+        <th>Porcentaje</th>
       </tr>
       <tbody id="table-indicators">
       </tbody>
@@ -209,7 +209,7 @@
           <h3>¿Qué es género?</h3>
           <p> Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada
             sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a
-            cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en
+            cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos (Organización Mundial de la Salud). Históricamente y en
             la mayor parte del mundo, estas desigualdades han afectado a las mujeres.</p>
 
           <h3>Desigualdad de género </h3>
@@ -223,7 +223,13 @@
             supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y
             empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación
             política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante
-            el estudio de la desigualdad de género en el trabajo.</p>
+            el estudio de la desigualdad de género en el trabajo.
+          </p>
+
+          <h3>Referencias</h3>
+            <p>INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.</p> 
+            <p>Organización Mundial de la Salud. En línea: https://www.who.int/topics/gender/es/.</p>
+
 
         </div>
 
@@ -296,6 +302,7 @@
         </div>
       </div>
     </footer>
+
 
 </body>
 
