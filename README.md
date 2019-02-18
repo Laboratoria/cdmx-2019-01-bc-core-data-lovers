@@ -11,6 +11,7 @@ El logo integra los colores representativos de cada país y el nombre porque dic
 Lo anterior con la finalidad de que la aplicación cuente con una identidad gráfica.
 ### Historias de usuario
 
+
 1. Yo como usuario quiero poder filtrar la data por país y por indicador.
 - La definición de terminado se cumplirá cuando muestre los datos de los filtros seleccionados, pase los test implementados, así como las pruebas de usabilidad y el códgio se haya incorporado en GitHub.
 
@@ -23,14 +24,13 @@ Lo anterior con la finalidad de que la aplicación cuente con una identidad grá
 
 ### Diseño de la Interfaz de Usuario
 
-#### Prototipo de baja fidelidad
-
 ![prototipo-BajaFidelidad](https://i.ibb.co/2yp8s8W/20190215-122218.jpg")
 
 - A traves de la investigación nos percatamos que al consultar este tipo de información, el usuario tiene que llevar a cabo mas de un paso, por lo que este diseño se creó pensando en una interfaz formal y accesible para el usuario.
 #### Prototipo de alta fidelidad
 
 ![pantalla1](https://i.ibb.co/ZYZ0V0y/p1.png)
+
 
 ![pantalla2](https://i.ibb.co/YRpRD6K/p2.png)
 
@@ -70,7 +70,9 @@ filtrado, ordenado, ...).
 
 
 
+
 ### Pruebas
+
 
 Las pruebas automatizadas para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que se realice el filtrado y el orden de la data. Analiza que la función filtrar sea función y permita el filtrado de la información por país e indicadores; Analiza que la función ordenar, sea función y permita el orden de la información de forma ascendente o descentente.
 
@@ -119,8 +121,10 @@ como toda la configuración de dependencias:
 
 ## UX/UI
 
+
 ### Antecedentes
 Por medio de investigación, se identificó a los usuarios mas interesados en una aplicación que ofrezca los servicios de filtrado y orden de información estadística poblacional femenina. El grupo al que le pareció mas útil fue a personas que trabajan en ONG de dicadas a la implementación de programas sociales en países como México, Perú, Brasil y Chile.
+
 
 ### Problemas que presenta el usuario
 Frustración al realizar una busqueda de datos estadisticos poblacionales en otros sitios.
@@ -139,6 +143,7 @@ El usuario puede ingresar el mensaje que necesite transformar, este puede inclui
 Cliente Modelo (Experiecia de usuario)
 Mario Salgado es un hombre de 25 años al cuál simpre le ha interesado la tecnología y las aplicaciones que le ofrezcan algo con lo cual innovar su entorno. Últimamente esta interesado en una forma de mandar cierta información a sus contactos personales y de trabajo. Se encuentra con varios problemas al querer realizar esto; en su trabajo muchas veces utilizan su computadora sin pedir permiso y cuando le llegan correos o mensajes con temas personales o profesiolnales delicados, han logrado tener acceso a ellos; en su celular encuentra un problema similar, cuando llega a prestar su teléfono, alguien en su entorno lo toma o simplemente llegan a leer el mensaje desde la distancia. Al utilizar Ceasar Code Message Mario ha logrado evitar esto, pues no solo ha logrado proteger sus mensajes, además ha tenido un buen momento gracias a su interés por aplicaciones que le ofrezcan cosas útile y novedosas.
 
+
 ### Boceto
 Al utilizar el boceto original los usuarios expresaron una buena reacción con los colores utilizados en la misma, pues en su criterio es un color que expresa seriedad y logran relacionarlo con los colores en este tipo de sitios; en cuanto al fondo utilizado, se mostraron de acuerdo en la utilización de un fondo blanco, pues de esta forma le es más agradable la visualización de la información; sin embargo les confunde un poco  el que no se muestre un logo o nombre del sitio, pues no sabrían como identificarnos.
 
@@ -153,3 +158,4 @@ En cuanto a los apartados, agradecen contar con una breve introducción del obje
 Olga Contreras y Elizabeth Monroy
 ### Agradecimientos
 A todo el equipo de Laboratoria.
+
