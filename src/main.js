@@ -6,23 +6,21 @@ let userbutton = document.getElementById("user");
 let searchbutton = document.getElementById("search");
 //Constante de la sección know del HTML
 const resultsecc = document.getElementById("result");
-//Declaramos botón de ordenar
-let ordenbutton = document.getElementById("ordendata");
 //Constante que contiene la data
 const injuriesBy = window.INJURIES;
-//Users
-let motociclista = "MOTOCICLISTA"
-ciclista = "CICLISTA"
-peaton = "PEATÓN"
-auto = "AUTOMOVILISTA"
 //Constante que tiene el resultado de la función ORDER
 let resultDatos = []
-
+let table = document.getElementById('table')
 
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
+  //Users
+  let motociclista = "MOTOCICLISTA"
+  let ciclista = "CICLISTA"
+  let peaton = "PEATÓN"
+  let auto = "AUTOMOVILISTA"
 
   if (userValue === 'all') {
     resultsecc.innerHTML = ''
@@ -31,8 +29,6 @@ searchbutton.addEventListener("click", () => {
     let newBike = [ciclista, resultDatos[2]]
     let newPeaton = [peaton, resultDatos[3]]
     let newAuto = [auto, resultDatos[4]]
-
-    let table = document.getElementById('table')
     table.innerHTML = `<table>
     <tr>
       <th> AÑO ${resultDatos[0]} </th>
