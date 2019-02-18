@@ -15,20 +15,19 @@
 <body>
   <div id="root">
     <section id="initial-page" class="initial-page">
-      <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img">
+      <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img-pokesaurius">
       <button id="pokeball-button" class="poke-button"><img src="./assets/poke-ball-button_2.png"></button>
    </section>
 
     <section id="pokemon-page" class="hideElement">
        <header class="header">
         <div>
-          <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="imgchico">
+          <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img-logo-chico">
         </div>
-        <input type="button" class="button-nav" id="menu-toogle" value="☰">
 
         <nav>
           <p class="text-page">COLECCIÓN <span id="counterCollection"></span>/151</p>
-        <i class="fas fa-undo"></i>
+        <button class="fas fa-undo" id="button-home"></button>
         </nav>
       </header>
 
@@ -58,7 +57,7 @@
 
           <h3 class="orderByName">Ordenar</h3>
 
-          <button class="type-button" id="totales">Por nombre</button>
+          <button class="type-button sort-button" id="totales">Por nombre</button>
         <article class="average">
           <h4 class="doYouKnow">Sabias que...</h4>
             <p>El peso promedio de tus pokemones <span id = "printType"></span> es de <span id="weight">1000 kg</span></p>
@@ -68,12 +67,11 @@
               
         
     </section>
+   <section class="hideElement">
+     <article id="print-individual-card">
+     </article>
+   </section>
    
-   <!-- <footer id="search" class="footer">
-        <div class="footertext">
-        <button id="poke-button-home" class="img-pokebola-chica"><img src="./assets/poke-ball-button_1cm.png"></button>
-      </div>
-     </footer>-->
         </section>
 
     

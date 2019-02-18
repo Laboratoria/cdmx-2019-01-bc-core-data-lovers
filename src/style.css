@@ -236,6 +236,9 @@ i {
   border-radius: 14px;
   border: 3px solid #FFBA5C;
 }
+.wrapper:hover{
+  background:#4AB583; 
+}
 
 .pokemon-card-image {
   background: #EAFEE6;
@@ -355,11 +358,71 @@ color:blue;
     width: 100%;
   }
 
-}
-
-@media screen and (max-width: 375px) {
-  #root {
+  header {
     width: 100%;
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .content {
+    width: 83.5%;
+    margin-left: 8%;
+  }
+
+  .post {
+    margin-left: 3%;
+  }
+
+  .wrapper {
+    display: inline-block;
+    background: #FFD185;
+    margin: 9px 15px;
+    padding-bottom: 10px;
+    width: 130px;
+    height: 180px;
+    border-radius: 14px;
+    border: 3px solid #FFBA5C;
+  }
+  
+  .pokemon-card-image {
+    background: #EAFEE6;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    right: 30px;
+  }
+  
+  .box-card {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 9px;
+  }
+
+  .aside {
+  position: absolute;
+  right:4.5%;
+  background-color: rgba(209, 202, 254);
+  }
+
+  #menu-toogle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    top: 76px;
+    right: 110px;
+    background-color: #FFBA5C;
+    border-radius: 3px;
+    border: none;
+    transition: all .5 ease;
+    z-index: 10;
+    font-size: 25px;
+    color: #003471;
   }
 }
 

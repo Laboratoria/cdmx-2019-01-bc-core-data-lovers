@@ -5,13 +5,14 @@ const pokemonPage=document.getElementById('pokemon-page'); //página de pokemone
 const pokeballButton=document.getElementById('pokeball-button'); 
 const printList = document.getElementById('print-list'); 
 const buttonType=document.getElementsByClassName('type-button'); 
-const pokeButtonHome=document.getElementById('poke-button-home'); 
+const buttonHome=document.getElementById('button-home'); 
 const weight = document.getElementById('weight');
 const counterCollection=document.getElementById('counterCollection');
 const printType= document.getElementById('printType');
 const alphabeticOrderButton=document.getElementById('totales');
 const menuToogle=document.getElementById('menu-toogle');
 const aside=document.getElementById('aside');
+const printIndividualCard=document.getElementById('print-individual-card');
 
 
 
@@ -24,8 +25,8 @@ const print=(data)=>{
     let totalWeight= 0;
     data.forEach(element => {
         totalWeight += parseFloat(element.weight);
-        let result = `<div class="wrapper">
-        <div class="pokemon-cart"> 
+        let result = `<button class="wrapper">
+        <div class="pokemon-card"> 
         <div class="pokemon-card-image">
         <img src="${element.img}">
         </div>
@@ -34,7 +35,7 @@ const print=(data)=>{
         <p>${element.name}</p>
         </div>
         </div>
-        </div>`
+        </button>`
         printList.insertAdjacentHTML("beforeend",result);
         return print;
     });
@@ -57,11 +58,10 @@ for(let i = 0; i <buttonType.length; i++ ){
 });
 }
 
-//bolahome ya estaba
-///pokeButtonHome.addEventListener('click',() => {
-    //printList.innerHTML='';
-    //print(data)
-//});//
+buttonHome.addEventListener('click',() => {
+    printList.innerHTML='';
+    print(data)
+});
 
 alphabeticOrderButton.addEventListener('click',()=> {
     printList.innerHTML='';
@@ -72,7 +72,28 @@ alphabeticOrderButton.addEventListener('click',()=> {
 
 menuToogle.addEventListener('click',()=>{
     aside.classList.remove('hideElement');
-})
+});
+
+const printPokemonValues=(data)=>{
+data.forEach(element => {
+        let result= `<div class="wrapper2">
+        <div class="pokemon-card"> 
+              <div class="pokemon-card-image">
+                <img class=${element.img}>
+      </div>
+          <div class="box-card">
+              <p>Nombre:"${element.name}"</p> <p>Evoluciones:"${element.next_evolution}"</p>
+            <p>Tipo:"${element.type}"</p> <p>Debilidades:"${element.weaknesses}"</p>
+              <p>Candies:"${element.candies}"</p>
+           <p> Altura:"${element.height}" Peso:${element.weight} </p>
+              </div>
+              </div>
+              </div>`
+        printIndividualCard.innerHTML=result;      
+} );
+    
+};
+printPokemonValues()
 
 
 
