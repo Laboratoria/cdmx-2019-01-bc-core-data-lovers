@@ -80,6 +80,13 @@ figure {
    color: #eb008b;
    }
 
+.tableData{
+  height: auto;
+  width: 100%;
+  margin-block-start: 3%;
+  margin-block-end: 3%;
+
+}
    td, th {
     border: 1px solid #ffffff;
     background: black;
@@ -137,6 +144,7 @@ figure {
 #consulta{
   color: white;
   text-decoration: none;
+  display: inline-block;
 }
 
 .button {
@@ -215,8 +223,18 @@ p {
   padding-block-start: 7%;
 }
 
+.imagepeaton {
+  display: block;
+  width: 99%;
+  height: auto;
+  padding: 0.5%;
+  }
+
+.consulta  {
+    text-align: center;
+  }
+
 .select {
-  margin: 20%;
   margin-top: 4%;
   padding: 2%;
   text-align: center;
@@ -239,7 +257,12 @@ p {
 .result {
   text-align: center;
   font-family: sans-serif;
-  margin-block-end: 20%;
+}
+
+table{
+  width: 50%;
+  text-align: center;
+  margin: 1% 1% 1% 25%;
 }
 
 .photos {
@@ -320,7 +343,7 @@ footer {
   }
 
   .select {
-    margin: 10%;
+    margin: 3%;
     margin-top: 4%;
     padding: 1%;
     text-align: center;
@@ -335,6 +358,10 @@ footer {
 
   header{
     width: 100%;
+    }
+
+    h3{
+      font-size: x-large;
     }
 
 .button1{
@@ -368,13 +395,19 @@ h2{
   padding-block-start: 2%;
 }
 
-.result{
-  margin-block-end: 0%;
-  padding: 7%;
+.imagepeaton{
+  display: inline-block;
+  width: 40%;
+  margin-left: 30%;
 }
 
-.tableData{
-  margin-block-start: 3%;
+.question{
+  padding: 1%;
+}
+
+.image{
+  display: inline-block;
+  width: 32%;
 }
 
 }
@@ -420,14 +453,14 @@ h2{
   padding-block-start: 5%;
   }
 
-  .result{
-    margin-block-start: 5%;
-margin-block-end: -6%;
-padding: 1%;
+
+  .image{
+    display: inline-block;
+    width: 32%;
   }
 
-  .tableData{
-    margin-block-start: 3%;
+  .question{
+    padding: 1%;
   }
 
 }
@@ -467,14 +500,6 @@ padding: 1%;
   padding-top: 47px;
   }
 
-  .result{
-    margin-block-start: 10%;
-    margin-block-end: 0%;
-  }
-
-  .tableData{
-    margin-block-end: -22%;
-  }
 
 
 }
@@ -497,23 +522,11 @@ padding: 1%;
     padding: 3%;
   }
 
-.info{
-  margin-block-start: 0%;
-}
-
 
   .sidebar {
   right: -435px;
   padding-top: 47px;
   }
 
-.result{
-  margin-block-start: 10%;
-  margin-block-end: 0%;
-}
-
-.tableData{
-  margin-block-end: -22%;
-}
 
 }

@@ -18,9 +18,9 @@
         <label for="menu-toogle" class="menu-toogle"></label>
           <nav class="sidebar">
             <ul class="menu_list">
-              <li><a href="#info" class="nav__item current">INFORMACIÓN</a></li>
-              <li><a href="#total" class="nav__item">TOTAL</a></li>
-              <li><a href="#know" class="nav__item">CONSULTA</a></li>
+              <li><a href="#info" class="nav__item current">ACERCA DE</a></li>
+              <li><a href="#total" class="nav__item">HECHOS</a></li>
+              <li><a href="#know" class="nav__item">CONOCE MÁS</a></li>
               <li><a href="#photos" class="nav__item">GALERIA</a></li>
               <li><a href="#fqa" class="nav__item">FQA's</a></li>
             </ul>
@@ -29,33 +29,42 @@
     </header>
 
     <section id="info" class="info">
-      <p id="infoSecI">PUNTO MUERTO es una campaña que está orientada a la población
-        de jóvenes adolescentes de 17 y 18 años, por la proximidad de
-        los mismos a la posibilidad de acceder a una licencia de conducir,
-        y por ser este un momento propicio debido al inicio del aprendizaje
-        y con posibilidad de condicionar conductas responsables. <br>
+
+        <h3>Cada año entre 20 millones y 50 millones de personas sufren traumatismos no mortales,
+        como consecuencia de accidentes de tránsito. </h3><br>
+        <p id="infoSecI">Siendo la principal causa de muerte entre jóvenes de 15 a 17 años.
+      <b>PUNTO MUERTO</b> es una campaña que está orientada a prevenir accidentes viales en la población
+        de jóvenes, por la proximidad de acceder a una licencia de conducir,
+        ser este un momento propicio para fomentar conductas responsables. <br>
         <br>
-        Nos proponemos concientizar a la juventud de los riesgos a que
-        se exponen y sus posibles consecuencias.</p>
+        Nos proponemos concientizar a la juventud y a la población en general, trabajando de la mano de
+        Instituciones Gubernamentales y Educativas.</p>
 
         <div>
           <img src="images/map.png" alt="PuntoMuerto" class="image" id="map">
   </div>
 
-        <div class="button1">
+        <div class="consulta">
           <a class="button1" id="consulta"  href="#know">CONOCE MÁS</a>
       </div>
 
     </section>
 
     <section id="total" class="total">
-      <h2> TOTAL DE HERIDOS </h2>
-      <p id="totalParraph">Tan solo en el 2015, 1 de cada 2 percances automovilísticos
-        se relaciona con el consumo de alcohol y se dan
-        principalmente entre jóvenes. También se le contribuyen otros factores tales como la velocidad,
-        la conducción bajos los efectos de drogas, y el envío de mensajes de texto durante la conducción
+      <h2> HECHOS FUNDAMENTALES </h2>
+      <p id="totalParraph">
+
+        Tan solo en el 2015, 1 de cada 2 percances automovilísticos
+        fueron entre jóvenes y se relacionan con el consumo de alcohol y otros factores tales como la velocidad,
+        la conducción bajos los efectos de drogas y el envío de mensajes de texto.<br><br>
+        Las tasas de mortalidad por accidentes de tránsito
+        son <b>3 veces</b> mayores en países en desarrollo como México.
+
+
+
+
       </p>
-      <p id="totalInjured"> 2’443,175 </p>
+      <p id="totalInjured"> Total de heridos <br> 2’443,175 </p>
       <figure>
       <img src="images/car.png" alt="PuntoMuerto" class="icon">
 
@@ -70,7 +79,7 @@
 
     <section id="know" class="know">
       <h2 id="knowMore"> CONOCE MÁS </h2>
-      <img src="images/peaton.png" alt="PuntoMuerto" class="image">
+      <img src="images/peaton.png" alt="PuntoMuerto" class="imagepeaton">
       <form class="select">
         <select id="yearbttn" name="year" class="selector">
           <option selected value="0"> AÑO </option>
@@ -88,13 +97,14 @@
           <option value="Total_Injured_Persons_Motorcyclists">Motociclista</option>
           <option value="Total_Injured_Persons_Pedestrians">Peaton</option>
           <option value="Total_Injured_Persons_Pedalcyclists">Ciclista</option>
-          <option value="Total_Injured_Persons_Transit_Total">Conductor</option>
+          <option value="Total_Injured_Persons_Transit_Total">Automovilistas</option>
           <option value="all">Todos los heridos</option>
         </select>
 
         <div class="button">
           <input id="search" class="button" type="button" value="CONSULTA">
         </div>
+        </form>
 
             <section id="result" class="result"></section>
             <section id="tableData" class="tableData">
@@ -103,7 +113,7 @@
           </div>
 
           </section>
-      </form>
+
 
     </section>
 
@@ -114,22 +124,24 @@
        <img src="images/cros.png" alt="PuntoMuerto" class="image">
         <img src="images/incident.png" alt="PuntoMuerto" class="image">
         <h2 id="fqa"> FQA </h2>
-        <p class ="question"> <b> ¿Qué es punto muerto?</b>
+        <p class ="question"> <b> ¿Qué es punto muerto?</b><br>
         Es una campaña de prevención contra accidentes de transito en adolescentes
           que tiene como objetivo concientizar y prevenir los accidentes que comprometen
           la vida de nuestra población. </p>
-        <p class ="question"> <b> ¿A quién se dirige esta campaña? </b>
+        <p class ="question"> <b> ¿A quién se dirige esta campaña? </b><br>
          Está dirigida a adolescentes de 17 y 18 años que tienen acceso a la licencia
           de conducir </p>
-        <p class ="question"><b> ¿Qué medidas puedo realizar para evitar accidentes?</b>
-        Respetar los limites de velocidad.
-        Uso de casco por ciclistas y motociclistas.
+        <p class ="question"><b> ¿Qué medidas puedo realizar para evitar accidentes?</b><br>
+        Respetar los limites de velocidad.<br>
+        Uso de casco por ciclistas y motociclistas.<br>
         Protección para niños en automoviles como asientos
         para lactantes y niños, elevadores y cinturones de seguridad. </p>
-        <!--<p class ="question"> <b> ¿De dónde son los datos que consulto?</b>
-        Uso de casco por ciclistas y motociclistas. </p> -->
-        <p class ="question"><b> ¿Qué medidas debo tomar si soy peaton? </b>
-        Uso de casco por ciclistas y motociclistas. </p>
+        <p class ="question"> <b> ¿De dónde son los datos que consulto?</b><br>
+        Los datos que consultas son del <a href="https://www.bts.gov/content/transportation-fatalities-mode">Departamento de Transporte</a></p>
+        <p class ="question"><b> ¿Qué medidas debo tomar si soy peaton? </b><br>
+        Evita caminar por carriles bici o por la calzada.<br>
+        Cruza siempre en línea recta y por el paso de peatones o los pasos con semáforo.<br>
+        Antes de cruzar una calle, mira bien a derecha e izquierda.</p>
       </section>
 
       <footer>

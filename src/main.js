@@ -10,6 +10,13 @@ const resultsecc = document.getElementById("result");
 const injuriesBy = window.INJURIES;
 //Constante que contiene la tabla
 const table = document.getElementById('table');
+//Declaramos botón de ordenar
+// let ordenbutton = document.getElementById("ordendata");
+// //users
+// let motociclista = "MOTOCICLISTA"
+// ciclista = "CICLISTA"
+// peaton = "PEATÓN"
+// auto = "AUTOMOVILISTA"
 
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
@@ -38,7 +45,7 @@ searchbutton.addEventListener("click", () => {
             <td> ${resultDatos[3]} </td>
         </tr>
         <tr>
-          <td> AUTOMOVIL </td>
+          <td> AUTOMOVILISTAS </td>
           <td> ${resultDatos[4]} </td>
       </tr>
               </table>`
