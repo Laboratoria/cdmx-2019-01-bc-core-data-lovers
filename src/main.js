@@ -119,6 +119,64 @@ if (ubication.includes('typePokemon.html')) {
   document.getElementById('min-avg').innerHTML= resultAvg.minimum;
   document.getElementById('avg-avg').innerHTML= resultAvg.average;
 
+  //Graficos
+  let google = window.google;
+  google.charts.load('current', {'packages':['bar']});
+
+  const drawChartCandy = () => {
+    let data = google.visualization.arrayToDataTable([
+      ['feature', 'maximum', 'average', 'minimum'],
+      ['candy count', resultCandy.maximum, resultCandy.average, resultCandy.minimum]
+    ]);
+
+    let options = {
+      chart: {
+        title: 'Candy Count',
+        subtitle: '151 pokemons',
+      }
+    };
+
+    let chart = new google.charts.Bar(document.getElementById('chart-candy'));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  };
+
+  const drawChartSpawn = () => {
+    let data = google.visualization.arrayToDataTable([
+      ['feature', 'maximum', 'average', 'minimum'],
+      ['candy count', resultSpawn.maximum, resultSpawn.average, resultSpawn.minimum]
+    ]);
+
+    let options = {
+      chart: {
+        title: 'Spawn Chance',
+        subtitle: '151 pokemons',
+      }
+    };
+
+    let chart = new google.charts.Bar(document.getElementById('chart-spawn'));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  };
+
+  const drawChartAvg = () => {
+    let data = google.visualization.arrayToDataTable([
+      ['feature', 'maximum', 'average', 'minimum'],
+      ['candy count', resultAvg.maximum, resultAvg.average, resultAvg.minimum]
+    ]);
+
+    let options = {
+      chart: {
+        title: 'Avg Spawns',
+        subtitle: '151 pokemons',
+      }
+    };
+
+    let chart = new google.charts.Bar(document.getElementById('chart-avg'));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  };
+
+  google.charts.setOnLoadCallback(drawChartCandy);
+  google.charts.setOnLoadCallback(drawChartSpawn);
+  google.charts.setOnLoadCallback(drawChartAvg);
 }
 
 

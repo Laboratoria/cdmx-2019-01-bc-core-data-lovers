@@ -81,12 +81,12 @@ h5,p, h4{
 }
 
 .fondo {
-background-image: url('./assets/images/backInicio.jpg');
-width: 100%;
-height: -webkit-fill-available;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+  background-image: url('./assets/images/backInicio.jpg');
+  width: 100%;
+  height: -webkit-fill-available;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #pokemones {
@@ -112,11 +112,11 @@ background-repeat: no-repeat;
 
 #pokemon-title {
   width: 50%;
- margin-top: 5%;
+  margin-top: 5%;
 }
 
 input[type=search]{
-    width: 50%;
+  width: 50%;
 }
 
 #icon-lup {
@@ -280,9 +280,15 @@ legend{
 
 #principal-stats{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
+#principal-stats > section{
+  width: 55%;
+  margin-top: 5%;
+
+}
 /* MENU */
 
 * {
@@ -323,7 +329,7 @@ a:visited {
 .blanco,
 .icon {
   color: white;
- 
+
 }
 
 
@@ -392,6 +398,13 @@ ul li:hover {
   #subtitle{
     font-size: 4em;
   }
+
+  #principal-stats > section{
+    width: 70%;
+
+  }
+
+
 }
 
 /* Mobiles */
@@ -419,19 +432,24 @@ ul li:hover {
 
   #order-section > section  {
   width: 85%;
-}
+  }
 
-input[type=radio]{
-  transform:scale(2,2);
-  margin-left: 20%;
-}
+  input[type=radio]{
+    transform:scale(2,2);
+    margin-left: 20%;
+  }
 
-label{
-  margin-left: 2%;
-}
+  label{
+    margin-left: 2%;
+  }
 
-#subtitle{
-  font-size: 2em;
-}
+  #subtitle{
+    font-size: 2em;
+  }
+
+  #principal-stats > section{
+    width: 80%;
+
+  }
 
 }
