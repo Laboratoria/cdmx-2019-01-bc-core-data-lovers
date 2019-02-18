@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>ProMujer</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto:300,400,400i,700,900" rel="stylesheet">
 </head>
-
 <body>
-
   <header class="header">
-    <!--<div class="container">-->
-    <figure class="logo">
-      <img id="logo" src="assets/images/logo_proMujer.png" alt="Logo ProMujer">
-    </figure>
-    <nav class="navigation">
-      <ul>
-        <li><a href="#countries">Estadísticas</a></li>
-        <li><a href="#conferencias">Conferencias</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <!--</div>-->
+    <div class="container">
+      <div class="nav">
+        <figure class="logo">
+          <img id="logo" src="assets/images/logo_proMujer.png" alt="Logo ProMujer">
+        </figure>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#countries">Estadísticas</a></li>
+            <li><a href="#conferencias">Conferencias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   <main class="main">
     <section id="home" class="container">
@@ -35,9 +33,9 @@
         <button id="btn-est"><a href="#countries">Ver estadísticas</a></button>
       </div>
     </section>
-
     <section id="countries" class="container">
       <div id="text-countries">
+        <hr>
         <h2>Selecciona el país de tu interés:</h2>
       </div>
       <div id="group-buttons">
@@ -47,14 +45,23 @@
         <button id="PER" class="button">Perú</button>
       </div>
     </section>
-    <section class="container">
-      <select id="indicator">
-        <option value="indicadores"> Indicadores </option>
-      </select>
-      <input type="radio" name="sort" value="upward"> Ascendente
-      <input type="radio" name="sort" value="falling"> Descendente
-
-      <div id="data-year">
+    <section class="container ">
+      <div class="infoAll">
+        <div class="col form-inline">
+          <div class="col-50">
+            <select id="indicator">
+              <option value="indicadores"> Indicadores </option>
+            </select>
+          </div>
+          <div class="col-50">
+            <input type="radio" name="sort" value="upward"> Ascendente
+            <input type="radio" name="sort" value="falling"> Descendente
+          </div>
+        </div>
+        <div class="col">
+          <div id="data-year">
+          </div>
+        </div>
       </div>
     </section>
     <section id="conferencias" class="container"><hr>
@@ -80,14 +87,16 @@
         <h2>Para cualquier duda o información.</h2>
         <p>
           Si deseas contactarnos, puedes hacerlo de las siguientes maneras:
-          <br>
-          1. Envía un correo electrónico a:
-          info@promujer.org.mx
-          <br>
-          2. Llama al (55) 55530109, de 9 a 15 horas.
-          <br>
-          3. Síguenos en nuestra página de Facebook: ProMujer, o Twitter: @ProMujer.
         </p>
+        <ul>
+          <li> 1. Envía un correo electrónico a:
+            info@promujer.org.mx
+          <li>2. Llama al (55) 55530109, de 9 a 15 horas.
+          </li>
+          <li>
+            3. Síguenos en nuestra página de Facebook: ProMujer, o Twitter: @ProMujer.</li>
+          </li>
+        </ul>
       </div>
     </footer>
     <div id="root"></div>
@@ -100,5 +109,5 @@
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
-
 </html>
+
