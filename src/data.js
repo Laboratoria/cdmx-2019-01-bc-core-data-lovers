@@ -13,8 +13,6 @@ window.pokemonFunction = {
         return 1;
       }else if (a.name < b.name){
         return -1;
-      }else{
-        return 0 ;
       }
     })
     return pokemonSortedData
@@ -26,9 +24,7 @@ window.pokemonFunction = {
       }
       if (a.height < b.height) {
         return -1;
-      } else {
-        return 0;
-      }
+      } 
     })
     return pokemonSortedData;
   },
@@ -54,9 +50,7 @@ window.pokemonFunction = {
       }
       if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
         return -1;
-      } else {
-        return 0;
-      }
+      } 
     });
     return pokemonSortedData;
   },
@@ -80,7 +74,7 @@ window.pokemonFunction = {
       const pokemonFilteredLight = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) < 30);
       return pokemonFilteredLight
   },
-  
+
    filterByWeightHeavy: (arrayPokemonData) => {
     const pokemonFilteredHeavy = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) > 30);
     return pokemonFilteredHeavy

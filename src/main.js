@@ -38,15 +38,6 @@ const buttonPokemonPsychic = document.getElementById('buttonPokemonPsychic');
 const buttonPokemonWater = document.getElementById('buttonPokemonWater');
 const typePokemonPage = document.getElementById('typePokemonPage');
 const printPokemonFilter = document.getElementById('printPokemonFilter');
-const titlePokemonLight = document.getElementById('titlePokemonLight');
-const titlePokemonHeavy = document.getElementById('titlePokemonHeavy');
-const titlePokemonSmall = document.getElementById('titlePokemonSmall');
-const titlePokemonMedium = document.getElementById('titlePokemonMedium');
-const titlePokemonTall = document.getElementById('titlePokemonTall');
-const titlePokemonSortByHeightAscending = document.getElementById('titlePokemonSortByHeightAscending');
-const titlePokemonsortByWeightAscending = document.getElementById('titlePokemonsortByWeightAscending');
-const titlePokemonSortByWeightDescending = document.getElementById('titlePokemonSortByWeightDescending');
-const titlePokemonSortByHeightDescending = document.getElementById('titlePokemonSortByHeightDescending')
 const aboutPikapediaPage = document.getElementById("aboutPikapediaPage");
 const buttonSearchPokemonOnFilter = document.getElementById("buttonSearchPokemonOnFilter");
 const buttonBackPageKanto = document.getElementById("buttonBackPageKanto");
@@ -54,15 +45,6 @@ const buttonAboutPikapediaOnFilter = document.getElementById("buttonAboutPikaped
 const buttonStadisticsPageOnFilter = document.getElementById("buttonStadisticsPageOnFilter");
 
 
-
-
-
-//Botón de entrada
-//enterPage.addEventListener("click", () => {
-
-  //enterPage.classList.add('hide');
-  //pageKanto.classList.remove('hide');
-//});
 
 buttonBack.addEventListener("click", () => {
   pageKanto.classList.add('hide');
@@ -132,7 +114,7 @@ buttonStadisticsPageOnFilter.addEventListener("click", () => {
 
 const printPokemon = (name, img, quality) => {
   let resultPokemonPrint = `<div class="filterCard"><h1>${name}</h1>
-   <div><img src=${img}></div>
+   <div><img class="filterimg" src=${img}></div>
    <p class='quality'> ${quality}</p></div>`;
   printPokemonFilter.insertAdjacentHTML("beforeend", resultPokemonPrint);
 };
@@ -145,10 +127,11 @@ const printData = (num, name, img, type, height, weight, candy, candy_count, egg
   spawn_time, multipliers, weaknesses ) => {
   let result = `<div class="boxesContainer"><div class="cardBox">
   <div class="card"><div class="front">
-        <h2>${name}</h2>
+       
         <img class= "imageCard"src=${img}>
         </div>
-        <div class="back"><article class ="informationCard"><p> TYPE : ${type}</p>
+        <div class="back"><article class ="informationCard"><h2>${name}</h2>
+        <p> TYPE : ${type}</p>
         <p> HEIGHT : ${height}</p>
         <p> WEIGHT: ${weight}</p>
         <p>CANDY: ${candy}</p>
@@ -168,7 +151,7 @@ const printAll = (namePokemonAll, img, typePokemonAll) => {
 
 
 checkboxWeightLight.addEventListener("click", () => {
-   titlePokemonLight.classList.remove('hide');
+   
    const pokemonsLight = window.pokemonFunction.filterByWeightLight(pokemonData);
    const pokemonSortedLight= window.pokemonFunction.sortByWeightAscending(pokemonsLight)
    pokemonSortedLight.forEach(element => {
@@ -179,7 +162,7 @@ checkboxWeightLight.addEventListener("click", () => {
    });
  });
  checkboxWeightHeavy.addEventListener("click", () => {
-   titlePokemonHeavy.classList.remove('hide');
+   
    const pokemonsHeavy = window.pokemonFunction.filterByWeightHeavy(pokemonData);
    const pokemonSortedHeavy= window.pokemonFunction.sortByWeightAscending(pokemonsHeavy);
    pokemonSortedHeavy.forEach(element => {
@@ -191,7 +174,7 @@ checkboxWeightLight.addEventListener("click", () => {
  });
 
 checkboxHeightSmall.addEventListener("click", () => {
-  titlePokemonSmall.classList.remove('hide');
+ 
   const pokemonsSmall = window.pokemonFunction.filterByHeightSmall(pokemonData);
   const pokemonSortedSmall = window.pokemonFunction.sortByHeightAscending(pokemonsSmall);
   pokemonSortedSmall.forEach(element => {
@@ -203,7 +186,7 @@ checkboxHeightSmall.addEventListener("click", () => {
 });
 
 checkboxHeightMedium.addEventListener("click", () => {
-  titlePokemonMedium.classList.remove('hide')
+ 
   const pokemosMedium = window.pokemonFunction.filterByHeightMedium(pokemonData);
   const pokemonSortedMedium = window.pokemonFunction.sortByHeightAscending(pokemosMedium);
   pokemonSortedMedium.forEach(element => {
@@ -215,7 +198,7 @@ checkboxHeightMedium.addEventListener("click", () => {
 });
 
 checkboxHeightTall.addEventListener("click", () => {
-  titlePokemonTall.classList.remove('hide');
+  
   const pokemonsTall = window.pokemonFunction.filterByHeightTall(pokemonData);
   const pokemonSortedTall = window.pokemonFunction.sortByHeightAscending(pokemonsTall);
   pokemonSortedTall.forEach(element => {
@@ -228,7 +211,7 @@ checkboxHeightTall.addEventListener("click", () => {
 
 
 checkboxHeightAscending.addEventListener("click", () => {
-  titlePokemonSortByHeightAscending.classList.remove('hide');
+  
   const pokemonSortHeight = window.pokemonFunction.sortByHeightAscending(pokemonData);
   pokemonSortHeight.forEach(element => {
     let name = element.name;
@@ -239,7 +222,7 @@ checkboxHeightAscending.addEventListener("click", () => {
 });
 
 checkboxWeightAscending.addEventListener("click", () => {
-  titlePokemonsortByWeightAscending.classList.remove('hide');
+ 
   const pokemonsSortWeight = window.pokemonFunction.sortByWeightAscending(pokemonData);
   pokemonsSortWeight.forEach(element => {
     let name = element.name;
@@ -250,7 +233,7 @@ checkboxWeightAscending.addEventListener("click", () => {
 });
 
 checkboxHeightDescending.addEventListener("click", () => {
-  titlePokemonSortByHeightDescending.classList.remove('hide');
+ 
   const pokemonSortHeightDescending = window.pokemonFunction.sortByHeightDescending(pokemonData);
   pokemonSortHeightDescending.forEach(element => {
     let name = element.name;
@@ -261,7 +244,7 @@ checkboxHeightDescending.addEventListener("click", () => {
 });
 
 checkboxWeightDescending.addEventListener("click", () => {
-  titlePokemonSortByWeightDescending.classList.remove('hide');
+ 
   const pokemonSortWeightDescending = window.pokemonFunction.sortByWeightDescending(pokemonData);
   pokemonSortWeightDescending.forEach(element => {
     let name = element.name;
@@ -504,4 +487,3 @@ function filtrar(id_tipo) {
 }
 
 
-var gaby= hola;

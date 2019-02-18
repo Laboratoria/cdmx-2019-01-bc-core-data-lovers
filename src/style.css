@@ -134,6 +134,7 @@ header label:hover{
     width: 70%;
     position:relative;
     left: 10%;
+    top:70px;
 }
 .pokemones{
     color: white;
@@ -227,7 +228,7 @@ p{
     from {
   
       transform: rotateY( 180deg);
-  
+        
     }
   
     to {
@@ -312,6 +313,180 @@ p{
     #hamburguerMenu:checked ~ .menu_gral{
         margin:0;
     }
+   
 
 
 }
+/*responsive tablet*/
+@media screen  and (max-width: 1100px) {
+    .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+    height: 5%
+    }
+    .card {
+    height: 285px;
+    }
+    .cardBox:last-child {
+    margin-bottom: 3%;
+    }
+
+    .boxesContainer, .typeCard {
+        display: inline-block;
+        width: 30%;
+    
+    
+    }
+    .checkbox{
+    width: 25%;
+    height: 25%;
+    color: white;
+    font-size: 14px;
+    padding: 1%;
+    margin: 2%;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    line-height: 2.1;
+    border-radius: 3%;
+    display: inline-block;
+    }
+    .filterCard {
+        display: inline-block;
+        border: solid #FFDE00;
+        margin-top: 3%;
+        width: 30%;
+        position: relative;
+        left: 28%;
+        bottom: 330px;
+    }
+    .titleKanto{
+        width: 75%
+    }
+    .informationCard{
+        width: 300%;
+    }
+    p{
+        color: white;
+        font-size: .4em;
+        background: #8E2DE2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4A00E0, #8E2DE2);
+        width: 50%;
+        height: 20%;
+        margin:0px;
+        padding: 1px;
+        text-align: center;
+     }
+     
+     h2{
+        text-align: left;
+        margin: 0%;
+    }
+    .imageCard {
+        position: relative;
+        left: 30%;
+        width: 90%;
+    }
+    
+}
+
+
+    /*resposive telefono*/
+    @media screen and (min-width:250px) and (max-width: 767px) {
+    .cardBox {
+    width: 50%;
+    height:  5%;
+
+    }
+    .back{
+        font-size: .5em;
+        position: relative;
+        display: inline-block    
+    }
+    .informationCard{
+        width: 300%;
+    }
+    p{
+        color: white;
+        font-size: 10px;
+        background: #8E2DE2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4A00E0, #8E2DE2);
+        width: 50%;
+        height: 20%;
+        margin:0px;
+        padding: 1px;
+        text-align: center;
+     }
+     .imageCard {
+        position: relative;
+        left: 30%;
+        width: 90%;
+    }
+    h2{
+        text-align: left;
+    }
+    .boxesContainer, .typeCard {
+
+        display: inline-block;
+        width: 50%;
+    
+    }
+    .titleKanto{
+        width: 100%
+    }
+    .checkbox{
+        width: 30%;
+        height: 25%;
+        color: white;
+        font-size: .6em;
+        padding: 1%;
+        margin: 0;
+        background: #8E2DE2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        line-height: 2.1;
+        border-radius: 3%;
+        display: inline-block;
+        }
+        .filterCard {
+            display: inline-block;
+            border: solid #FFDE00;
+            margin-top: 10%;
+            width: 25%;
+            position: relative;
+            left: 28%;
+            
+        }
+        .filterimg{
+            position: relative;
+            width: 80%;
+        }
+        h1{
+            font-size: .6em;
+            margin:0;
+        }
+        #titlePokemonLight,#titlePokemonHevy,#titlePokemonSmall,#titlePokemonMedium,
+        #titlePokemonTall,#titlePokemonSortByHeightAscending,#titlePokemonSortByHeightDescending,
+        #titlePokemonsortByWeightAscending,#titlePokemonSortByWeightDescending{
+            width: 80%;
+            position: relative;
+            left: 20%;
+            
+        }
+        .namePokemonFilter{
+            width: 15%;
+            height: auto;
+            display: block;
+            margin-top: 0%;
+            
+
+        }
+        .quality{
+            font-size: .6em;
+        }
+        
+
+    } 
