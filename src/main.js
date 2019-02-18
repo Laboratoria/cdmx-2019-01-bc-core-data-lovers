@@ -65,15 +65,14 @@ const prueba = () => {
       }
 
       let sortUpward = window.WorldBank.sortPercentAndYear(arrResultYear, sortValue);
-     obj = new Object()
-      sortUpward.forEach(element=>{
-        let percent=  element[1]
+      let obj = new Object()
+      sortUpward.forEach(element => {
+        let percent = element[1]
         let year = element[0]
-       obj[percent]  = year
+        obj[percent] = year
 
       })
       printYears2(obj);
-      console.log(obj)
     })
 
   }
