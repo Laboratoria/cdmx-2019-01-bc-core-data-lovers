@@ -82,6 +82,18 @@ closeModal.addEventListener('click', () => {
   modalFun.classList.add('hide');
 });
 
+window.addEventListener('click', () => {
+  if (event.target == modalChamp) {
+    modalChamp.classList.add('hide');
+  }
+});
+
+window.addEventListener('click', () => {
+  if (event.target == modalFun) {
+    modalFun.classList.add('hide');
+  }
+});
+
 //Funcion para agregar el evento key up al input para filtrar por nombre
 search.addEventListener('keyup', () => {
   let name2 = search.value;
