@@ -165,7 +165,7 @@ En [encuestas](https://docs.google.com/forms/d/1xyq6JV84yFPrlVP5IGgi47BK6nCygZQi
 
 ### Prototipo de baja fidelidad
 
-![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20.jpg)
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20.jpg)
 
 
 ### Prototipo de alta fidelidad
