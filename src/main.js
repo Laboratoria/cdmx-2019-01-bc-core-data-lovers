@@ -9,11 +9,13 @@ const buttonHome = document.getElementById('home');
 const buttonIndicador = document.getElementById('indicador');
 const selOption = document.getElementById('filtrar-pais');
 const orderAscDat = document.getElementById('order');
+const maximo = document.getElementById('maximo');
 const nameIndicators= document.getElementById('filtrar-indicador');
 let contenido = document.getElementById('contenido');
 let buttonLimpiar = document.getElementById('limpiar');
 let buttonContact = document.getElementById('contact');
 let buttonProp = document.getElementById('prop');
+let valorMAx = document.getElementById('valorMAx');
 let ctx = document.getElementById("myChart").getContext("2d");//contenido grafica
 let valorAnioX=[];
 let valorPorcentajeY=[];
@@ -126,6 +128,15 @@ for (let i in orderObj)
  return  respOrder;
 }
 
+const ptrMax= (maxObj)=>{
+     let viewMax;
+     viewMax = "<b>"+"El valor maximo es: "+maxObj.toFixed(2)+"%"+"</b>"; 
+    document.getElementById('valorMAx').innerHTML = viewMax;
+
+    return maxObj;
+ }
+
+
 const orderByAscent = () =>{
     let arrayOrder=pais;
     let order= orderAscDat.value;
@@ -135,6 +146,15 @@ const orderByAscent = () =>{
     prtOrder(orderObj)
 }
 orderAscDat.addEventListener('change',orderByAscent); //funcion recorre el objeto*/
+
+
+const valorMaximo = () =>{
+    let arrayMax = valorPorcentajeY;
+    let valMaximo = maximo.value;
+    let maxObj =window.worldBank.objMax(valMaximo,arrayMax);
+    ptrMax(maxObj)
+}
+maximo.addEventListener('change',valorMaximo); //funcion recorre el objeto*/
 
 const limpiar = () => {
     document.getElementById('filtrar-pais').value = '';
@@ -156,3 +176,8 @@ let prtGrap =ctx;
 let almacenaGraf= window.worldBank2.VerGrafica(arrayYear,arrayValors,prtGrap)
 return almacenaGraf;
 }
+
+
+
+
+
