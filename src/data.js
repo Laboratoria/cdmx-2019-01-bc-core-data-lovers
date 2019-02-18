@@ -18,19 +18,17 @@ window.data = {
 
   computeStats: (pokemon) => {
     ///cantidad en que aparece spawnchange
-    const avgSpawns=[];
+    const candyCount = [];
 
     pokemon.forEach((element) => {
-      if (element.avg_spawns > 0 ) {
-        avgSpawns.push(element.avg_spawns)
+      if (element.candy_count > 0 ) {
+        candyCount.push(element.candy_count)
       }
     });
 
-    const suma = avgSpawns.reduce((prev, next) => prev + next);
-    const prom = suma / avgSpawns.length;
+    const suma = candyCount.reduce((prev, next) => prev + next);
+    const prom = suma / candyCount.length;
     return prom
-
-
   }
 
 };

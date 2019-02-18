@@ -29,7 +29,7 @@ El objetivo de la plataforma es que los usuarios la utilizen como biblioteca vir
 
 ### Definición del producto
 
-Mediante varias encuestas que realizamos a usuarios interesados en la trayectoria de POKEMON, nos dimos cuenta que la data mostrada, se encontraba en la aplicación POKEMON GO (de hecho la data está extraída de esta última aplicación). Por lo que decidimos con base a toda la retroalimentación recibida, crear una "biblioteca" que para que los usuarios accedieran a los 151 pokemon de la región Kanto (primera generación).
+Mediante varias encuestas que realizamos a usuarios interesados en la trayectoria de POKEMON, nos dimos cuenta que la data mostrada, se encontraba en la aplicación POKEMON GO (de hecho la data está extraída de esta última aplicación). Por lo que decidimos con base a toda la retroalimentación recibida, crear una "biblioteca virtual" para que los usuarios accedieran a los 151 pokemon de la región Kanto (primera generación).
 
 ### Historias de usuario
 
@@ -63,12 +63,16 @@ Sin duda Crhistian busca una app completa y con una interfaz amigable para que l
 
 #### Prototipo de baja fidelidad
 
-(https://ibb.co/JrGRd47)
+https://ibb.co/JrGRd47
 
 
 #### Prototipo de alta fidelidad
 
-(https://ibb.co/S5ydJJW)
+https://ibb.co/S5ydJJW
+
+https://ibb.co/z78nft8
+
+https://ibb.co/dm18swg
 
 
 #### Testeos de usabilidad
@@ -142,7 +146,7 @@ Este proyecto está desarrollado con:
 - EMS6 JavaScript puro [JSVanilla](https://medium.com/laboratoria-developers/vanillajs-vs-jquery-31e623bbd46e).
 -CSS3
 -HTML5
-- Se realizaron pruebas unitarias para validar la funcionalidad de codificación y decodificación. Estos test se implementaron con [JEST](https://jestjs.io/) y assertion library de
+- Se realizaron pruebas unitarias para validar la funcionalidad de codificación y decodificación. Estos test se implementaron con [JEST](https://jestjs.io/),
 - Como gestor de proyecto se utilizó NPM (Node Package Manager) (https://www.npmjs.com/).
 
 ## Pruebas

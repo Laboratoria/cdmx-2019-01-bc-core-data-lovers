@@ -349,9 +349,31 @@ html,body{
    footer {
    display: none;
  }
+
+ .order-a{
+  background-color:yellow;
+}
+.order-z{
+ background-color:#0000ffa1;
+
+}
+.average{
+  background-image: url(https://cdn5.dibujos.net/dibujos/pintados/201606/bombilla-la-casa-el-salon-10423275.jpg);
+}
+nav p{
+  margin-left: 5%;
+  color: black;
+}
+
+h4{
+  color: black;
+  font-size: 2vw;
+}
+
    @media screen and (max-width: 768px) {
    }
    @media screen and (max-width: 480px) {
+
      body{
        margin: 0;
        padding: 0;
@@ -447,7 +469,7 @@ html,body{
     float: right;
     width: 49%;
     margin-top: 16px;
-    height: 60em;
+    height: 39.6em;
     position: fixed;
     padding-top: 8px;
     left: 51%;
@@ -471,7 +493,7 @@ html,body{
    }
    .style-font{
      font-family: 'Lato', sans-serif;
-     color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
      font-size: 4vw;
    }
    .style-button{
@@ -491,6 +513,7 @@ html,body{
     cursor: pointer;
     background-color: #eff7ef;
     margin-left: 11%;
+    color: rgb(1, 1, 1);
    }
    .style-button:hover{
      background-color: rgb(239, 247, 239);
@@ -516,7 +539,6 @@ html,body{
      .tipoP{
      border-radius: 12px;
      border-style: solid;
-     background-color: black;
      color: white;
      font-size: 2vw;
    }
@@ -526,9 +548,7 @@ figure{
    width: 55em;
    left: 27%;
 }
-.Grass {
-  color: #78c84f;
-}
+
 .pedia-kanto{
   background-image: url(https://fontmeme.com/permalink/190215/43106cf0497ff771e5229c84ee101b79.png);
   width: 10%;
@@ -550,7 +570,7 @@ footer{
 }
 footer i{
   margin-top: 14px;
-    margin-left: 46%;
+    margin-left: 40%;
     font-size: 7vw;
     color: #000000fa;
 }
@@ -561,4 +581,27 @@ nav i{
   margin-left: 28%;
   margin-top: 19px;
 }
+
+.refresh-mobile{
+  background-color: rgba(255, 255, 255, 0.03);
+  height: 22px;
+      position: relative;
+      left: 177px;
+      border: none;
+      z-index: 10;}
+
+      .order-a{
+       background-color:yellow;
+     }
+     .order-z{
+      background-color:#0000ffa1;
+
+     }
+     .average{
+       background-image: url(https://cdn5.dibujos.net/dibujos/pintados/201606/bombilla-la-casa-el-salon-10423275.jpg);
+     }
+
+     nav p{
+       margin-left: 5%;
+     }
  }
