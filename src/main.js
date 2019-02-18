@@ -12,7 +12,8 @@ const attackUpw = document.getElementById('attack-upw');
 const magic = document.getElementById('magic');
 const defense = document.getElementById('defense');
 const back = document.getElementById('back');
-// const funFacts = document.getElementById('fun-facts');
+//Boton para el modal de curiosidades
+const funFacts = document.getElementById('fun-facts');
 const closeFunFacts = document.getElementById('close-fun');
 
 const printModal = (champ) => {
@@ -132,7 +133,10 @@ back.addEventListener('click', () => {
 });
 
 //Función para llamar a la función de reduce
-const newArrayChamp = window.lol.showData(lolData);
-const reduce = window.lol.toReduce(newArrayChamp);
-let div = reduce / newArrayChamp.length;
-console.log(div);
+
+funFacts.addEventListener('click', ()=> {
+  const newArrayChamp = window.lol.showData(lolData);
+  const reduce = window.lol.toReduce(newArrayChamp);
+  printData(reduce);
+  // let div = reduce / newArrayChamp.length;
+})
