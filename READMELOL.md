@@ -36,6 +36,7 @@ Funciones implementadas:
 - CSS: permite dar el diseño a la interfaz en elementos como la tipografía, color, imagen de fondo, acomodar los elementos como textos, imágenes, botones, lista desplegable, encabezado, contenido y pie de página.
 - Carpeta de imágenes: se agregó una carpeta extra a la data ya brindada, esto con el fin de utilizar las imágenes para el fondo de pantalla en la página de inicio, un logo para página de inicio y otro para el encabezado, la lupa para el input de búsqueda y la imagen para el ícono de la página.
  - Carpeta de prototipos: se encuentran los bocetos de baja y alta calidad.
+ - Carpeta de evidencia: muestra los resultados de la encuesta realizada.
 
 ## Ejecución de pruebas
 El boilerplate contiene la configuración necesaria para ejecutar los tests, en este caso las pruebas unitarias.
@@ -105,8 +106,6 @@ Resultados de encuesta
 
 ![GitHub Encuesta](src/encuesta/encuesta4.png)
 *A futuro se piensa implementar la función de comparar dos campeones
-![GitHub Encuesta](src/encuesta/encuesta5.png)
-
 
 **Problemas de usabilidad detectados a través de los tests**
 Más que problemas de usabilidad, se encontraron opiniones que ayudaron a mejorar la forma en que se mostraría la información de cada campeón. Como resultado, la opinión de los encuestados ayudaron a mejorar la propuesta final de la aplicación.
