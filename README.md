@@ -125,9 +125,9 @@ El trabajo es una de las principales vías por las cuales las personas obtienen 
 *Referencias*
 
 
-..*INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.
+*INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.
 
-..*Lau, A. y Cruz, M (2005). La incorporación de los estudios de mujeres y de género a las instituciones de educación superior. El Programa de Especialización-Maestría en Estudios de la Mujer de la UAM-Xochimilco. La ventana (21) 228-251.
+*Lau, A. y Cruz, M (2005). La incorporación de los estudios de mujeres y de género a las instituciones de educación superior. El Programa de Especialización-Maestría en Estudios de la Mujer de la UAM-Xochimilco. La ventana (21) 228-251.
 
 
 
@@ -143,7 +143,7 @@ La Conferencia del Año Internacional de la Mujer celebrada en México en 1975 t
 
 ### Oferta de páginas web sobre estadísticas de género
 
-En [encuestas](https://docs.google.com/forms/d/1xyq6JV84yFPrlVP5IGgi47BK6nCygZQio4WeC98z1Ug/edit#responses) realizadas a 7 usuarios de repositorios estadísticos, se identificó que una de las debilidades que detectan en estas páginas es el difícil acceso a las bases de datos, así como no poder manipular la información ni poder hacer cálculos estadísticos. Además, en una investigación que realizamos en 4 páginas web oficiales de estadísticas de género (las páginas consultadas fueron [ONU Mujeres] (https://bit.ly/2yTKLil), el repositorio de la [CEPAL] (https://bit.ly/2SqaOvh), [Sistema de Indicadores de Género de Inmujeres] (https://bit.ly/2tPNp6z),  y la [UNICEF] (https://uni.cf/2MZch5Z)), observamos que el diseño es poco eficiente para consultar series de datos, el formato de descarga en la mayoría de ellos es pdf, el cual dificulta la manipulación de datos, las tablas donde se muestran las series de datos son difíciles de encontrar, i.e. hay que dar muchos clicks, y el diseño es poco agradable.    
+En [encuestas](https://docs.google.com/forms/d/1xyq6JV84yFPrlVP5IGgi47BK6nCygZQio4WeC98z1Ug/edit#responses) realizadas a 7 usuarios de repositorios estadísticos, se identificó que una de las debilidades que detectan en estas páginas es el difícil acceso a las bases de datos, así como no poder manipular la información ni poder hacer cálculos estadísticos. Además, en una investigación que realizamos en 4 páginas web oficiales de estadísticas de género (las páginas consultadas fueron [ONU Mujeres](https://bit.ly/2yTKLil), el repositorio de la [CEPAL](https://bit.ly/2SqaOvh), [Sistema de Indicadores de Género de Inmujeres](https://bit.ly/2tPNp6z),  y la [UNICEF](https://uni.cf/2MZch5Z)), observamos que el diseño es poco eficiente para consultar series de datos, el formato de descarga en la mayoría de ellos es pdf, el cual dificulta la manipulación de datos, las tablas donde se muestran las series de datos son difíciles de encontrar, i.e. hay que dar muchos clicks, y el diseño es poco agradable.    
 
 
 ### Historias de usuarios
