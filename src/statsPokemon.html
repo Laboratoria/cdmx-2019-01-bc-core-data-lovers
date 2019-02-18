@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
   <header>
-    
+
     <!--MENU-->
     <div class="menu-mobile">
       <div>
@@ -35,12 +36,22 @@
   <!--STATS-->
   <h2 class="stats">Principal Stats</h2>
   <section id="principal-stats">
+    <section id="chart-candy">
+
+    </section>
+    <section id="chart-spawn">
+
+    </section>
+    <section id="chart-avg">
+
+    </section>
+
     <table id="stats-table">
         <tr>
           <th>Feature</th>
-          <th>Maximum</th>
-          <th>Minimum</th>
-          <th>Average</th>
+          <th>Max</th>
+          <th>Min</th>
+          <th>Avg</th>
         </tr>
         <tr>
             <td>Candy Count</td>
@@ -61,9 +72,8 @@
             <td id="avg-avg"></td>
         </tr>
     </table>
-
   </section>
-  
+
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>

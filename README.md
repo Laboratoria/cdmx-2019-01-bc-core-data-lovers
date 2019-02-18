@@ -1,3 +1,118 @@
+# Pokémon Encyplopedia
+
+## Definición del producto
+
+Pokémon Encyplopedia es una página Web que nos proporciona información básica de los Pokemones que aparecen en el famoso juego de Pokémon Go, esta página Web te permite conocer que pokemones existen y clasificarlos por su tipo, así como verlos ordenados dependiendo de algunos criterios que el usuario seleccione.
+
+De acuerdo a estudios estadisticos encontramos que la mayoría de jugadores son mujeres con un 63% sobre un 37% de hombres. En cuanto a edades, el rango más poblado está entre los 18 y 29 años de edad, mientras que el rango de 30 a 50 años se queda en segunda posición, seguido de cerca por jugadores de entre 13 y 17 años.
+
+Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 20 años que estan iniciandose como jugadores de Pokémon Go y que por lo tanto no son expertos en estos pequeños personajes, por lo cual requieren información hasta cierto punto básica acerca de los Pokemones, con la finalidad de irse involucrando más en el juego.
+
+La decisión para enfocarnos a este grupo de usuarios es porque la mayoría de las páginas que encontramos son para usuarios que se encuentran en un rango mayor de edad, y aveces son complicadas de usar o no tan accesibles para adentrarlos a concocer el mundo de los personajes de Pokémon. Nuestro objetivo es presentarles a los usuarios una página sencilla, fácil de usar para usuarios de menor edad, ya que es un sector que no se ha considerado en las páginas que hoy en día existen.
+
+- ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+Poder acceder a los datos y caracteristicas de los pokémones, mediante un orden, para que la búsqueda de información sea fácil de consultar.
+
+- ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+De fácil acceso, manejo y navegación, con los datos más importantes, útiles, características, nombres, tipos de especie.
+
+- ¿Cuándo utilizan o utilizarían el producto?
+Cuando necesiten consultar información sobre los pokemons en especifico y saber detalles de sus caracteristicas especiales, para hacer evolucionar a sus pokemones.
+
+## Historias de usuario
+
+  1. Como usuario quiero conocer la lista de todos los Pokémones que hasta el momento existen en Pokemon go.
+  2. Como usuario quiero saber cuales con los tipos de especie de pokémones.
+  3. Como usuario quiero buscar pokémones por nombre.
+  4. Como usuario quiero ver los pokémones ordenados por peso y altura.
+  5. Como usuario quiero ver estadísticas de los pokémones.
+
+## Diseño de la Interfaz de Usuario
+
+### Prototipo de baja fidelidad
+
+<a href="https://ibb.co/XtTgYrB"><img src="https://i.ibb.co/XtTgYrB/Captura-de-pantalla-2019-02-17-a-la-s-23-31-04.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-04" border="0"></a> <a href="https://ibb.co/tJtwmPN"><img src="https://i.ibb.co/tJtwmPN/Captura-de-pantalla-2019-02-17-a-la-s-23-31-14.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-14" border="0"></a> <a href="https://ibb.co/FsdvsyH"><img src="https://i.ibb.co/FsdvsyH/Captura-de-pantalla-2019-02-17-a-la-s-23-31-22.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-22" border="0"></a>
+
+### Prototipo de alta fidelidad
+
+<a href="https://ibb.co/Fzs5dBY"><img src="https://i.ibb.co/PgTcV5W/home.png" alt="home" border="0"></a></br>
+<a href="https://ibb.co/gT07xSV"><img src="https://i.ibb.co/R0XSq3y/filter.png" alt="filter" border="0"></a></br>
+<a href="https://ibb.co/HCwmqdk"><img src="https://i.ibb.co/VxnXTmP/order.png" alt="order" border="0"></a>
+
+
+### Testeos de usabilidad
+
+Al realizar los testeos de usabilidad se identificó lo siguiente:
+
+- No existia un título que identificará la aplicación.
+- El menú se desplegaba del lado contrario al botón que lo activa, causaba confusión al usuario.
+- Separar botones para ordenar y cambiar tamaño, para que en la versión movil fuera de mejor acceso.
+- El menú no es descriptivo.
+- Se revuelve la información al tenerla en dos idiomas (español e ingles).
+- Agregar un titulo a a sección de estadisticas, porque la tabla sola proporciona información en sí.
+
+## Configuración
+
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+### Pre-requisitos
+
+Antes de instalar este proyecto se requiere tener instalado lo siguiente:
+
+  1. Tener un :pencil: editor de texto en condiciones, algo como [Atom](https://atom.io/),
+     [Visual Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
+  2. Para ejecutar los comandos a continuación necesitarás una :shell:
+     [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+     que es un programita que interpreta líneas de comando (command-line
+     interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+     instalado.
+  4. Instalar [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
+
+### Instalación
+
+   1. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
+      de [ este repositorio](https://github.com/MitziYolotzin/cdmx-2019-01-bc-core-data-lovers).
+   2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
+      tu _fork_ a tu computadora (copia local).
+   3. 📦 Instala las dependencias del proyecto con el comando `npm
+      install`.
+
+## Pruebas
+
+Si la instalación se realizó correctamente, debes poder ejecutar las :traffic_light: pruebas unitarias (unit tests) con el comando `npm run test`.
+
+Para ejecutar las pruebas solo debes ubicarte en la carpeta donde se encuentra tu proyecto desde la terminal y ejecutar el comando `npm run test`, el cuál mostrará una pantalla con el resultado de las pruebas.
+
+Este proyecto tiene configurada las pruebas para evaluar las funciones siguientes:
+
+- showAllData
+- filterByType
+- filterByLetter
+- sortData
+- computeStats
+
+## Deployment
+
+El proyecto DataLovers lo puedes ver desde esta [liga](https://mitziyolotzin.github.io/cdmx-2019-01-bc-core-data-lovers/src/).
+
+## Construido con
+
+Para el desarrollo de este proyecto se utilizó:
+
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+
+## Autores
+
+Este proyecto forma parte del equipo de Laboratoria y es concluido por Mitzi Yolotzin Olvera Castillo y Diana Lizbeth Muñoz Pérez, estudiantes de Laboratoria 7a Generación.
+
+
+
+
+
+
+
 # Data Lovers
 
 ## Índice
@@ -514,13 +629,13 @@ compañera:
 - [x] Pasa tests (`npm test`)
 - [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
 - [x] UI: Permite ordenar data por uno o más campos (asc y desc).
