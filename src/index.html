@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>ProMujer</title>
   <link rel="stylesheet" href="style.css">
@@ -26,6 +25,7 @@
         </nav>
       </div>
     </div>
+
   </header>
   <main class="main">
     <section id="home" class="container">
@@ -33,14 +33,13 @@
         <p>Centro de investigación para el Desarrollo de la mujer en América Latina.</p>
       </div>
       <div id="button-est">
-        <button id="btn-est">Ver estadísticas</button>
-      </div>
+        <button id="btn-est"><a href="#countries">Ver estadísticas</a></button>
+     </div>
     </section>
 
     <section id="countries" class="container">
       <div id="text-countries">
-        <h2>Países</h2>
-        <h3>Selecciona el país de tu interés:</h3>
+        <h2>Selecciona el país de tu interés:</h2>
       </div>
       <div id="group-buttons">
         <button id="BRA" class="button">Brasil</button>
@@ -73,32 +72,33 @@
 
 
     </section>
-    <section id="conferencias" class="container">
-      <h2>Conoce nuestras conferencias.</h2>
-      <div class="col-70">
-        <p>
-          ¿Quieres que tu audiencia vibre de emoción, encuentre las herramientas que necesita
-          para su vida o para su emprendimiento y, sobre todo, pase un momento increíble lleno de
-          dinamismo, motivación y conocimiento?
-        </p>
-        <p>
-          ¡Entonces trabajemos juntos y hagamos de tu evento UN ÉXITO!
+    <section class="container">
+      <select id="indicator">
+        <option value="indicadores"> Indicadores </option>
+      </select>
+      <input type="radio" name="sort" value="upward"> Ascendente
+      <input type="radio" name="sort" value="falling"> Descendente
 
-        </p>
-        <p>
-          Mi experiencia como speaker abarca temas de Desarrollo Humano y Personal,
-          Emprendimiento, Empoderamiento Femenino, Marketing Digital y Negocios
-          Digitales, Liderazgo y Responsabilidad Social.
-        </p>
-        <p>
-
-          Entre nuestros clientes se encuentran: la Universidad de Tamaulipas, la Universidad Politécnica del Valle de
-          México,la Procuraduría de Justicia del Estado de Veracruz, Grupo Bayer, Grupo Carvajal,
-          Young Living México, El sistema DIF del Estado de Hidalgo, CANACINTRA, la Universidad Politécnica del Valle
-          de México,
-          el Instituto Tecnológico de Chilpancingo, Banco INVEX,
-          Bcysa Servicios Industriales, JR Consultores y Grupo MAP, entre otros.</p>
+      <div id="data-year">
       </div>
+    </section>
+    <section id="conferencias" class="container"><hr>
+      <h2 id="conf"> Conferencias</h2>
+      <p>Empoderamos a las adolescentes para que impulsen un cambio significativo y duradero,
+        <br> y puedan lidiar con las cuestiones interdependientes más apremiantes a las que se enfrentan.
+      <br>Buscamos soluciones innovadoras —como la tecnología digital y nuevas alianzas interesantes— para lograr nuestros 
+      <br>objetivos en materia de igualdad de género a escala. Utilizamos la energía y la promesa de los jóvenes para orientar y
+      <br> elaborar estrategias que funcionen para su generación.
+    <br>Recolectamos, cuantificamos y compartimos datos fundamentales para entender mejor los desafíos actuales y emergentes, así como para encontrar soluciones. 
+    <br>Cada año promovemos el Día Internacional de la Niña con acciones y actividades que abordan los temas de mayor importancia.
+  <br>Por último, apoyamos las plataformas que ofrecen capacitación y reconocen al personal o a los asociados a nivel mundial que utilizan sus competencias 
+  <br>en materia de género para alcanzar nuestros objetivos programáticos conjuntos relacionados con la igualdad de género.</p>
+
+  <div id="testimony">
+      “Me gustaría que todas las niñas tuvieran el conocimiento y la orientación suficientes para que cuando lleguen a la pubertad por primera vez no se sientan aterradas, sino tranquilas”.
+
+      -Una participante en una encuesta sobre la salud e higiene menstrual a través de U-Report, una herramienta digital, Pakistán.
+  </div>
     </section>
     <footer id="contacto">
       <div class="container">
