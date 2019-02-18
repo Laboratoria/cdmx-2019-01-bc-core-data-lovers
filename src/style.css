@@ -191,7 +191,7 @@ p {
   border: 3px solid #FFBA5C;
 }
 .wrapper:hover{
-  background:#4AB583; 
+  background:rgba(209, 202, 254, 0.493); 
 }
 
 .pokemon-card-image {
@@ -210,6 +210,37 @@ padding-left: 6%;
   margin-top: 9px;
 }
 
+.wrapper-individual {
+  display: inline-block;
+  background: #FFD185;
+  margin: 9px 15px;
+  padding-bottom: 10px;
+  width: 76%;
+  border-radius: 14px;
+  border: 3px solid #FFBA5C;
+}
+
+.pokemon-card-individual {
+  background: #EAFEE6;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  right: 30px;
+}
+.image-individual{
+ margin-left: 30%;
+}
+
+.box-properties {
+  width:90%;
+  height:100%;
+  font-family:'Roboto',sans-serif;
+  color:#003471;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 9px;
+  
+}
 @media screen and (min-width: 769px) {
   .aside{
     display: inherit;
