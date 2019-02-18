@@ -122,6 +122,7 @@ for (const key in muestra.data) {
       splash: element.splash,
       title: element.title,
       difficulty: element.info.difficulty,
+      attack: element.info.attack,
     }
     dataToArray.push(objetoVacio)
   }
@@ -194,32 +195,31 @@ describe('selectCharacter, retorna el arreglo con rl personaje por el id indicad
 });
 
 
-//Función ascendente
+//Función sort
 describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad de manera ascendente', () => {
   it('sortByDifficulty es una funcion', () => {
     expect(typeof window.lol.sortByDifficulty).toBe('function');
   });
-  it('Dado la muestra, si ordena de manera ascendente, Aatrox es el primer elemento', () => {
-    expect(window.lol.sortByDifficulty(dataToArray)[0].name).toBe('Aatrox');
+  it('Dado la muestra, si ordena de manera descendente, Ahri es el primer elemento', () =>{
+    expect(window.lol.sortByDifficulty(-1, dataToArray)[0].name).toBe('Ahri');
   });
-  it('Dado la muestra, si ordena de manera ascendente, Ahri es el segundo elemento', () => {
-    expect(window.lol.sortByDifficulty(dataToArray)[1].name).toBe('Ahri');
+  it('Dado la muestra, si ordena de manera ascendente, Aatrox es el primer elemento', () =>{
+    expect(window.lol.sortByDifficulty(1, dataToArray)[0].name).toBe('Aatrox');
   });
   it('Dado la muestra, si pedimos el campeon Morgana debería dar un arreglo vacío', () => {
-    expect(window.lol.sortByDifficulty(dataToArray)[0].name.Morgana).toBe();
+    expect(window.lol.sortByDifficulty(0, dataToArray).name).toBe(undefined);
   });
 });
 
-//Función descendente
-describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad de manera descendente', () => {
-  it('sortByDifficultyDsc es una funcion', () => {
-    expect(typeof window.lol.sortByDifficultyDsc).toBe('function');
+//Reduce
+describe('Reduce, devuelve el promedio del arreglo de attack de los campeones', () => {
+  it('averageAttack es una funcion', () => {
+    expect(typeof window.lol.averageAttack).toBe('function');
   });
-  it('Dado la muestra, si ordena de manera descendente, Ahri es el primer elemento', () => {
-    expect(window.lol.sortByDifficultyDsc(dataToArray)[0].name).toBe('Ahri');
-  });
-  it('Dado la muestra, si ordena de manera descendente, Aatrox es el segundo elemento', () => {
-    expect(window.lol.sortByDifficultyDsc(dataToArray)[1].name).toBe('Aatrox');
+  it('Debería regresar el promedio de attack de los campeones ', () =>{
+    expect(window.lol.averageAttack(dataToArray)).toBe(5.5);
   });
 });
+
+
 

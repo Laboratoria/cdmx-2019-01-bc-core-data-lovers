@@ -43,22 +43,18 @@ window.lol = {
     return character;
   },
 
-  sortByDifficulty: (datosArr) => {
+  sortByDifficulty: (orden, datosArr) => {
     const sortAsc = datosArr.sort((a, b) => {
       if (a.difficulty > b.difficulty) {
-        return 1;
+        return 1*orden;
       }
-      if (a.difficulty < b.difficulty) {
-        return -1;
-      }
-      else {
-        return 0;
-      }
+      else (a.difficulty < b.difficulty)
+        return -1*orden;
     })
     return sortAsc
   },
 
-  sortByDifficultyDsc: (datosArr) => {
+  /*sortByDifficultyDsc: (datosArr) => {
     const sortDsc = datosArr.sort((a, b) => {
       if (a.difficulty < b.difficulty) {
         return 1;
@@ -67,11 +63,19 @@ window.lol = {
         return -1;
       }
       else {
-        return 0;
+        return sortDsc;
       }
     })
     return sortDsc
-  },
+  },*/
 
+
+
+  
+averageAttack: (datosArr) => {
+  //console.log(datosArr) 
+ const totalattack = datosArr.reduce((prev, datosArr) => prev + datosArr.attack, 0)/datosArr.length;
+  //console.log(totalattack)
+  return totalattack
 }
-
+}
