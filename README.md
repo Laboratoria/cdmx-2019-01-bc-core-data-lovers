@@ -23,15 +23,11 @@ Pokémon Encyplopedia esta enfocada a usuarios entre 10 y 28 años que estan ini
 ## Diseño de la Interfaz de Usuario
 
 ### Prototipo de baja fidelidad
-<img src="https://i.ibb.co/VMSM5g0/74-B86653-446-C-42-BC-8-B0-A-07-E7910-DD38-B.jpg" alt="74-B86653-446-C-42-BC-8-B0-A-07-E7910-DD38-B" border="0">
-<img src="https://i.ibb.co/VLQj61q/A5605103-9-AED-4744-BF88-8544-BFD80-F1-B.jpg" alt="A5605103-9-AED-4744-BF88-8544-BFD80-F1-B" border="0">
-<img src="https://i.ibb.co/3NkVrGy/EEAFC71-A-E4-D6-4957-93-B6-24-B57-FB8-A585.jpg" alt="EEAFC71-A-E4-D6-4957-93-B6-24-B57-FB8-A585" border="0">
+<a href="https://ibb.co/XtTgYrB"><img src="https://i.ibb.co/XtTgYrB/Captura-de-pantalla-2019-02-17-a-la-s-23-31-04.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-04" border="0"></a> <a href="https://ibb.co/tJtwmPN"><img src="https://i.ibb.co/tJtwmPN/Captura-de-pantalla-2019-02-17-a-la-s-23-31-14.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-14" border="0"></a> <a href="https://ibb.co/FsdvsyH"><img src="https://i.ibb.co/FsdvsyH/Captura-de-pantalla-2019-02-17-a-la-s-23-31-22.png" alt="Captura-de-pantalla-2019-02-17-a-la-s-23-31-22" border="0"></a>
 
 ### Prototipo de alta fidelidad
 
-<img src="https://i.ibb.co/PgTcV5W/home.png" alt="home" border="0" />
-<img src="https://i.ibb.co/R0XSq3y/filter.png" alt="filter" border="0" />
-<img src="https://i.ibb.co/VxnXTmP/order.png" alt="order" border="0" />
+<img src="https://i.ibb.co/PgTcV5W/home.png" alt="home" border="0" /><img src="https://i.ibb.co/R0XSq3y/filter.png" alt="filter" border="0" /><img src="https://i.ibb.co/VxnXTmP/order.png" alt="order" border="0" />
 
 ### Testeos de usabilidad
 
