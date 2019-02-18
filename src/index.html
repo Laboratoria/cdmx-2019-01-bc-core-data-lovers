@@ -4,13 +4,14 @@
 
 <head>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
-    crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <title>Data Lovers</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
@@ -20,19 +21,68 @@
 
 <body>
 
-
+  
   <header>
+    
 
-    <nav class="navbar navbar-expand-md sticky-top">
-      <img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX">
+      
+        
+          <nav class="navbar navbar-default navbar-expand-lg  sticky-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                  
+                <button  class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navHeaderCollapse #navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ><img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX"> </a>
+              </div>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="nav-toggler-icon"></span>
+
+              <div id="navbar" class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Indicadores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      </li>
+                 
+                 
+                </ul>
+              </div><!--/.nav-collapse -->
+            
+          </nav>
+
+
+
+
+
+    <!--
+    <nav class="navbar navbar-expand-lg  sticky-top">
+      
+      <div class="container-fluid">
+      
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <a class="navbar-brand" ></a><img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX"> </a>
 
-        <ul class="navbar-nav ml-auto">
+
+      <div class="collapse navbar-collapse navHeaderCollapse">
+
+        <ul class="nav navbar-nav navbar-right ml-auto">
 
           <li class="nav-item active">
             <a class="nav-link" href="#">Inicio</a>
@@ -49,9 +99,14 @@
 
         </ul>
 
-       </div>      
+       </div>   
+      </div>   
     </nav>
-  </header>
+  
+
+ -->
+
+</header>
 
   <div id="slides" class="carousel-slide" data-ride="carousel">
 
@@ -83,7 +138,7 @@
 
   <div class="container-fluid">
 
-    <div id="Estadisticas">
+    <div id="Stadistics">
 
       <h3>Estadísticas laborales</h3>
 
@@ -142,6 +197,14 @@
 
 
     </div>
+   
+
+
+
+
+
+
+
   </div>
 
 
@@ -164,7 +227,7 @@
         </div>
 
         <div class="col">
-          <h4>Peru</h4>
+          <h4>Perú</h4>
           <button class="country" value="peru"><img src="./assets/images/peru.png" width="50" height="50" alt="flagPer"> </button>
         </div>
 
@@ -191,6 +254,9 @@
       <tbody id="table-indicators">
       </tbody>
     </table>
+
+ 
+   
 
     <button id="average">Calcular promedio</button>
     <p id="result"></p>
@@ -260,48 +326,73 @@
 
 
 
+   
+
+ 
+
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-    <script src="https://www.jsdelivr.com/package/npm/chart.js?path=dist"></script>
+    
 
 
 
-    <footer>
-      <div class="container-fluid padding">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoF">
-            <hr class="light">
-            <p>66423-1873</p>
-            <p>HipatiaProject@gmail.com</p>
-            <p>Insurgentes Sur 23</p>
-            <p>Ciudad de México</p>
-          </div>
-          <div class="col-md-4">
-            <hr class="light">
-            <h5>Horarios</h5>
-            <hr class="light">
-            <p> Lunes: 9am-5pm</p>
-            <p> Sábado: 10am-5pm</p>
-            <p> Domingo: Cerrado</p>
-          </div>
-          <div class="col-md-4">
-            <hr class="light">
-            <h5>Paises</h5>
-            <hr class="light">
-            <p> Perú, Lima</p>
-            <p> Santiago, Chile</p>
-            <p> Sao Paulo, Brasil</p>
-          </div>
-          <div class="col-12">
-            <hr class="light">
-            <h5>&copy; www.hipatia.org</h5>
+ <!--CHART  
+// iterar.........
+// Guárdalo en un arreglo [
+// ["2018", .3498]
+// ["2018", .3498]
+// ["2018", .3498]
+// ["2018", .3498]
+// ["2018", .3498]
+// ["2018", .3498]
+// ]
+--> 
 
-          </div>
-        </div>
+
+
+<footer>
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoF">
+        <hr class="light">
+        <p>66423-1873</p>
+        <p>HipatiaProject@gmail.com</p>
+        <p>Insurgentes Sur 23</p>
+        <p>Ciudad de México</p>
       </div>
-    </footer>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Horarios</h5>
+        <hr class="light">
+        <p> Lunes: 9am-5pm</p>
+        <p> Sábado: 10am-5pm</p>
+        <p> Domingo: Cerrado</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Paises</h5>
+        <hr class="light">
+        <p> Perú, Lima</p>
+        <p> Santiago, Chile</p>
+        <p> Sao Paulo, Brasil</p>
+      </div>
+      <div class="col-12">
+        <hr class="light">
+        <h5>&copy; www.hipatia.org</h5>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
 
 
 </body>
