@@ -1,22 +1,21 @@
+const pokemon = POKEMON.pokemon;
+var POKEMON = POKEMON;
 const botonMenu = document.getElementById('menuHide');
 const returnFilter = document.getElementById('returnFilter');
 const botonFilter = Array.from(document.getElementsByClassName("boton-filter"));
 const browser = document.getElementById("browser");
 const orderedButton = document.getElementById("orderedByAZ");
+const orderedReverseButton = document.getElementById("orderedByZA");
 const computeStats = document.getElementById("prom")
 const buttonNav = document.getElementById("buttonNav")
-var POKEMON = POKEMON;
-const pokemon = POKEMON.pokemon;
 
 botonMenu.addEventListener("click", showfilter)
 
 function showfilter() {
 
   let menuShow = document.getElementById('menuShow');
-  menuShow.classList.toggle("mostrar");
+    menuShow.classList.toggle("mostrar");
 }
-
-
 
 const getTypePokemon = (arrayButtons) => {
   arrayButtons.map((buttonType) => {
@@ -44,8 +43,6 @@ const drawPokemon = (arrayPokemons) => {
       <img src="${pokemon.img}"/>
       <p>${pokemon.name}</p>
       <p class="${pokemon.type[0]} tipoP">${pokemon.type}</p>
-
-
     </div>
 <div class="modal fade modalpokemon " id="miModal${pokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog modalMargin" role="document">
@@ -84,6 +81,7 @@ const drawPokemon = (arrayPokemons) => {
 </div>
   `
   })
+
 }
 
 drawPokemon(pokemon);
@@ -97,15 +95,21 @@ const filterLetter = () => {
 filterLetter();
 
 orderedButton.addEventListener("click", () => {
-  const newSortedData = window.data.sortData(pokemon)
+  const newSortedData = window.data.sortData(pokemon);
   drawPokemon(newSortedData);
 });
 
-computeStats.addEventListener("click", () => {
-  const newProm = window.data.computeStats(pokemon)
-  const sectionRoot = returnFilter
-  sectionRoot.innerHTML = "";
-  sectionRoot.innerHTML += `<h1>Promedio de la Cantidad en la que aparecen todos los pokemons</h1><p>${newProm}</p>`
-  return sectionRoot
-
+orderedReverseButton.addEventListener("click", () => {
+  const dataForReverse = window.data.sortData(pokemon);
+  const dataReverse = dataForReverse.reverse();
+  drawPokemon(dataReverse);
 });
+
+  computeStats.addEventListener("click", () => {
+    const newProm = window.data.computeStats(pokemon)
+    const sectionRoot = returnFilter
+    sectionRoot.innerHTML = "";
+    sectionRoot.innerHTML += `<h1>Promedio de la Cantidad en la que aparecen todos los pokemons</h1><p>${newProm}</p>`
+    return sectionRoot
+
+  });

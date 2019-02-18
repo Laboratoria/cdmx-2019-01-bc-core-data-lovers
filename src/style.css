@@ -41,11 +41,13 @@ html,body{
  display: none;
    }
    .pokepedia{
-   padding-left: 36%;
-   padding-top: 60px;
-   margin-top: 20px;
-   position: relative;
-     width: 70%
+     padding-left: 42%;
+      padding-top: 60px;
+      margin-top: 20px;
+      position: relative;
+      width: 70%;
+      left: -8%;
+
 
  }
  .pedia-kanto{
@@ -396,7 +398,7 @@ text-align:center;
       width: 50%;
       margin-left: 31%;
       margin-top: 12px;
-  
+
    }
      footer {
        background-color: #FFFFFF;
@@ -523,6 +525,6 @@ figure{
   border: none;
     padding-left: 10%;
     margin-left: -10.5%;
-
 }
+
  }

@@ -73,6 +73,45 @@ Sin duda Crhistian busca una app completa y con una interfaz amigable para que l
 
 #### Testeos de usabilidad
 
+1. Jhonathan Parra:
+- Las letras de las tarjetas y las tarjetas mismas son pequeñas, le es difícil la lectura de las mismas.
+- En las tarjetas le gustaría primero visualizar el nombre del pokemon.
+- Considera que las tarjetas requieren un diseño más llamativo.
+- Los botones de "Ordenar", son poco visibles, requieren más diseño.
+
+2. Sergio Guadarrama:
+
+**Versión Web**
+
+- Tipografía POKEP-DIA, hacer contraste entre fondo y letra
+- Poner alguna leyenda o indicio de qué se trata la plataforma para que el usuario se familiarice y entienda rápidamente el concepto (texto o slogan). Ejemplo “Biblioteca Virtual: Primera Generación, Kanto”
+- Imagen / contraste tratar de buscar referencias de imagen header en web. Investigar “fondo - contraste”
+- Input / Buscador. Poner icono de lupa y una leyenda dentro del buscador que diga “Buscador sólo por nombre. Ejemplo “pikachu”.”
+
+(https://ibb.co/0yvbt7K)
+
+- Modales. Agrandar los títulos:
+
+(https://ibb.co/JyZ1zz1)
+
+Separar las debilidades. Buscar referencias gráficas para cambiar apariencia de botón, conservando la línea de diseño de la interfaz. Revisar la posibilidad de cuando abre el modal, poder dar click en cualquier parte de la página y que este se cierre.
+
+- Sección “filtrado por tipo”. Generar contorno de botones y poner debajo con letra el tipo”.
+
+- Sección “Ordenar Pokemon”. Espacio entre los botones. Y revisar cómo se va a visualizar los párrafos. Buscar “Tipos de lectura de usuarios hacia la página”
+
+**Versión Mobile**
+
+- En el input “buscador”, repetir las mismas instrucciones que en web.
+- Poner el logo de POKEP-DIA  con el slogan o texto.
+- Modificar detalles del menu desplegable.
+- Footer. Colocar casita para regresar a inicio. Primero investiga “10 principios de usabilidad, Jako Nielsen”. Para este punto es importante poner especial atención al principio #10. Con base en este ultimo punto, también definir si es importante que existe otro botón.
+
+**Visualización “Promedio”**
+
+Para esta última sección es importante reacomodarla. Se sugiere que en cuanto cargue el navegador, la primera pantalla que se muestre, arroje está cifra y tengo un texto cómo “¿Sabías qué?”.
+
+
 
 ## Pre-requisitos e instalación
 

@@ -6,7 +6,7 @@ window.data = {
 
   filterInput: (pokemon, letter) => {
 
-    const search = pokemon.filter(pokemon => (pokemon.name.toLowerCase().match(letter.toLowerCase()) || pokemon.num.match(letter)));
+    const search = pokemon.filter(pokemon => (pokemon.name.toLowerCase().match(letter.toLowerCase())));
     return search;
 
   },
