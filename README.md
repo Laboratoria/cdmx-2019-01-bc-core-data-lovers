@@ -1,120 +1,5 @@
 # Data Lovers
 
-## Índice
-
-- [Preámbulo](#preámbulo)
-- [Descripción](#resumen-del-proyecto)
-- [Consideraciones generales](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Parte obligatoria](#parte-obligatoria)
-- [Parte opcional](#parte-opcional-hacker-edition)
-- [Consideraciones técnicas](#consideraciones-técnicas)
-- [Primeros pasos](#primeros-pasos)
-- [Contenido de referencia](#contenido-de-referencia)
-- [Checklist](#checklist)
-
----
-
-## Preámbulo
-
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
-
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
-
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-\* Puedes ver el detalle de la data [aquí](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida [aquí](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
-
-## Resumen del proyecto
-
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
-
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
-
-Una vez que definas tu área de interés, entiende quién es tu usuario y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que le
-ayude a interactuar y entender mejor esos datos.
-
-Estos son datos que te proponemos:
-
-- [Indicadores de desarrollo del Banco Mundial](src/data/worldbank/worldbank.json)
-  de algunos países (Brasil, Chile, México y Perú). Estos datos incluyen
-  indicadores demográficos, económicos y comerciales.
-- [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
-- [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-- [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-- [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicicleta, ...).
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Como aclaración,
-con cálculo agregado nos referimos a distintos cálculos que puedes hacer con
-la data que tienes para mostrar información aún más relevante a los usuarios.
-Una opción serían cálculos estadísticos como el promedio, el máximo o el mínimo,
-por ejemplo, si tenemos una colección que representa a un grupo de personas,
-y cada persona está representada como un _objeto_ con una _propiedad_ `altura`,
-podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
-
-## Consideraciones generales
-
-- Este proyecto se debe resolver en duplas.
-- El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-- Tiempo para completarlo: 3 semana divididas en 3 sprints (una entrega del producto funcional al término de cada sprint).
-
-## Objetivos de aprendizaje
-
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
-
-Dicho en palabras sencillas, aprenderás a:
-
-- Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
-- Pensar en las **necesidades de los usuarios** para crear historias de usuario.
-- Escribir y trabajar con **historias de usuario**, sus definiciones de
-  terminado (_definition of done_) en la organización y planificación de tu
-  trabajo.
-- Definir qué data y de qué forma mostrarla en el producto, basándote en
-  tu **entendimiento del usuario**.
-- Crear productos que sigan los **principios básicos de diseño visual** y
-  las **heurísticas de usabilidad**.
-- Iterar el diseño del producto, basándote en los resultados de los
-  **tests de usabilidad**.
-- Manipular **_arreglos_ (_arrays_) y _objetos_ (_objects_)**.
-- **Manipular el DOM** (agregar elementos dinámicamente basados en la data).
-- **Manejar eventos del DOM** para permitir interacción con el usuario
-  (filtrado, ordenado, ...).
-- Entender los beneficios y complejidades de **trabajar en equipo** en un
-  ambiente de incertidumbre.
-
-## Parte Obligatoria
-
-Los criterios para considerar que has completado este proyecto son:
-
 ### Definición del producto
 
 El propósito de este producto, es facilitar el acceso de información demográfica femenina, que utilizan las ONG (Organización No Gubernamental)para la planificación de servicios sociales (programas infancia, juventud, salud
@@ -125,6 +10,7 @@ El diseño se penso tomando en cuenta los estandares y consistencia visual de lo
 El logo integra los colores representativos de cada país y el nombre porque dichos países pertenecen a América Latina.
 Lo anterior con la finalidad de que la aplicación cuente con una identidad gráfica.
 ### Historias de usuario
+
 
 1. Yo como usuario quiero poder filtrar la data por país y por indicador.
 - La definición de terminado se cumplirá cuando muestre los datos de los filtros seleccionados, pase los test implementados, así como las pruebas de usabilidad y el códgio se haya incorporado en GitHub.
@@ -138,14 +24,13 @@ Lo anterior con la finalidad de que la aplicación cuente con una identidad grá
 
 ### Diseño de la Interfaz de Usuario
 
-#### Prototipo de baja fidelidad
-
 ![prototipo-BajaFidelidad](https://i.ibb.co/2yp8s8W/20190215-122218.jpg")
 
 - A traves de la investigación nos percatamos que al consultar este tipo de información, el usuario tiene que llevar a cabo mas de un paso, por lo que este diseño se creó pensando en una interfaz formal y accesible para el usuario.
 #### Prototipo de alta fidelidad
 
 ![pantalla1](https://i.ibb.co/ZYZ0V0y/p1.png)
+
 
 ![pantalla2](https://i.ibb.co/YRpRD6K/p2.png)
 
@@ -183,20 +68,11 @@ e independientes del DOM**. Estas funciones serán después usadas desde el arch
 `src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
 filtrado, ordenado, ...).
 
-## Parte Opcional (Hacker edition)
 
-Features/características extra sugeridas:
 
-- En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json`
-  de cada set datos.
-- Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
-  ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
-- 100% Coverage
 
-## Pruebas
+### Pruebas
+
 
 Las pruebas automatizadas para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que se realice el filtrado y el orden de la data. Analiza que la función filtrar sea función y permita el filtrado de la información por país e indicadores; Analiza que la función ordenar, sea función y permita el orden de la información de forma ascendente o descentente.
 
@@ -233,39 +109,6 @@ como toda la configuración de dependencias:
 
 8 directories, 17 files
 ```
-
-### `src/index.html`
-
-Al igual que en el proyecto anterior, existe un archivo `index.html`. Como ya
-sabrás, acá va la página que se mostrará al usuario. También nos sirve para
-indicar qué scripts se usarán y unir todo lo que hemos hecho.
-
-En este archivo encontrarás una serie de _etiquetas_ (_tags_) `<script>`
-_comentadas_. Para _cargar_ las diferentes fuentes de datos tendrás que
-_descomentar_ estas _etiquetas_. Cada uno de estos scripts asignará una variable
-global con la data correspondiente a esa fuente de datos.
-
-Por ejemplo, si descomentamos la siguiente línea:
-
-```html
-<!-- <script src="./data/worldbank/worldbank.js"></script> -->
-```
-
-La línea quedaría así:
-
-```html
-<script src="./data/worldbank/worldbank.js"></script>
-```
-
-Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
-scripts (como `src/data.js` o `src/main.js`).
-
-## Contenido de referencia
-
-### Diseño de experiencia de usuario (User Experience Design)
-
-
-
 ### Herramientas
 
 - [Git](https://git-scm.com/)
@@ -276,16 +119,22 @@ scripts (como `src/data.js` o `src/main.js`).
 
 ---
 
-###UX/UI
+## UX/UI
 
-##Antecedentes
+
+### Antecedentes
 Por medio de investigación, se identificó a los usuarios mas interesados en una aplicación que ofrezca los servicios de filtrado y orden de información estadística poblacional femenina. El grupo al que le pareció mas útil fue a personas que trabajan en ONG de dicadas a la implementación de programas sociales en países como México, Perú, Brasil y Chile.
 
-##Problemas que presenta el usuario
+
+### Problemas que presenta el usuario
 Frustración al realizar una busqueda de datos estadisticos poblacionales en otros sitios.
 Necesidad de consultar datos estadísticos poblacionales de forma rápida y consisa.
 
-##Objetivos
+### Cliente Moldelo
+Una ONG dedicada a la implementación de programas sociales en América Latina, esta buscando implementar un programa de salud reproductiva para mujeres jóvenes de entre 20 y 30 años, sin embargo necesita realizar un análisis de estadísticas demógraficas para decidir en que país, entre México, Chile, Perú y Brasil, es más útil su presencia. Para est utiliza la información que se encuentra en el Banco Mundial de Desarollo; sin embargo, le es muy tedioso y tardado buscar entre toda la información y el flujo de la misma página esto, pues la página cuenta con demasiados apartados y contenido innesesario para este propósito. 
+Al presentarles este producto, los integrantes de la ONG se mostraron gratamente sorprendidos por la accesibilidad de la información, la claridad de las instrucciones y la presentación gráfica de la misma; de esta forma su tarea se facilitaría y sería mucho más rápida la toma de desiciones en este sentido.
+
+### Objetivos
 Utilizar las opciones de filtrar y ordenar para que realicen lo siguiente:
 Filtrar data por pais y porr indicador.
 O
@@ -294,14 +143,19 @@ El usuario puede ingresar el mensaje que necesite transformar, este puede inclui
 Cliente Modelo (Experiecia de usuario)
 Mario Salgado es un hombre de 25 años al cuál simpre le ha interesado la tecnología y las aplicaciones que le ofrezcan algo con lo cual innovar su entorno. Últimamente esta interesado en una forma de mandar cierta información a sus contactos personales y de trabajo. Se encuentra con varios problemas al querer realizar esto; en su trabajo muchas veces utilizan su computadora sin pedir permiso y cuando le llegan correos o mensajes con temas personales o profesiolnales delicados, han logrado tener acceso a ellos; en su celular encuentra un problema similar, cuando llega a prestar su teléfono, alguien en su entorno lo toma o simplemente llegan a leer el mensaje desde la distancia. Al utilizar Ceasar Code Message Mario ha logrado evitar esto, pues no solo ha logrado proteger sus mensajes, además ha tenido un buen momento gracias a su interés por aplicaciones que le ofrezcan cosas útile y novedosas.
 
-Boceto
-Al utilizar el boceto, los usuarios se sintieron confundidos con el uso de las cajas, pues olvidaban poner el número de desplazamiento (offset) al momento de intentar decifrar/cifrar el mensaje; también expresaron sentir que los botones eran muy pequeños y por lo tanto difíciles de utilizar, en este sentido, les gustaría poder tener un botón que no solo finalíce la aplicación y los retorne al inicio, si no también un botón que les permita limpiar los campos para poder empezar de nuevo sin tener que regresar o borrar los mensajes manualmente; expresaron agrado por el detalle de ver su nombre impreso en pantalla, pues les hizo sentir cierto grado de personalización y confianza; por último expresaron gran aceptación por el fondo utilizado en la primer pantalla, sin embargo los encabezados y el color de fondo en las otras dos pantallas no fueron del agrado visual, expresando que no les hacia sentir que estaban utilizando una aplicación dedicada a cifrar mensajes. Si deseas consultar físicamente ingresa al siguiente link: (https://marvelapp.com/8204i2d/screen/52336642).
 
-Resultado Final
-- 
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
-      usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
+### Boceto
+Al utilizar el boceto original los usuarios expresaron una buena reacción con los colores utilizados en la misma, pues en su criterio es un color que expresa seriedad y logran relacionarlo con los colores en este tipo de sitios; en cuanto al fondo utilizado, se mostraron de acuerdo en la utilización de un fondo blanco, pues de esta forma le es más agradable la visualización de la información; sin embargo les confunde un poco  el que no se muestre un logo o nombre del sitio, pues no sabrían como identificarnos.
+
+En cuanto a los apartados, agradecen contar con una breve introducción del objetivo de la página, sin embargo, les gustaría tener mayor información sobre el mismo tema; también les gustaría que existiera un apartado para poder entrar en contacto con los creadores para consultas o dudas que se puedad presentar.
+
+
+### Resultado Final
+- Se decidió agregar un logo y nombre como fondo en las pantallas para que sea fácil idenrtificarnos
+- Se agregó un apartado de contacto para poder recibir comentarios.
+- Se agregó un apartado de próposito para informar a los usuarios lo que se pretende aportar.
+### Autores
+Olga Contreras y Elizabeth Monroy
+### Agradecimientos
+A todo el equipo de Laboratoria.
 
