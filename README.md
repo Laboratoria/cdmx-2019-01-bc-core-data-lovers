@@ -170,13 +170,13 @@ En [encuestas](https://docs.google.com/forms/d/1xyq6JV84yFPrlVP5IGgi47BK6nCygZQi
 
 ### Prototipo de alta fidelidad
 
-![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-01.jpg)
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-01.jpg)
 
-![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-02.jpg)
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-02.jpg)
 
-![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-03.jpg)
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-03.jpg)
  
-![alt text] (https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-04.jpg)
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-04.jpg)
 
 
 ## Checklist
