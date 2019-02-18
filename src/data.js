@@ -21,10 +21,11 @@ window.pokesaurius = {
   },
 
 
-  pokemonModal:(data, getIdElement) =>{
-    const pokemonId = data.filter(element => element.id==getIdElement);
-    console.log(pokemonId)
-    return pokemonId;
+  getPokemonById:(data, getIdElement) =>{
+    const pokemon = data.filter(element => element.id == getIdElement);
+    console.log(pokemon);
+    
+    return pokemon;
 }
 
 
