@@ -27,6 +27,13 @@ window.pokesaurius = {
     //return pokemon;
 
 
+  getPokemonById:(data, getIdElement) =>{
+    const pokemon = data.filter(element => element.id == getIdElement);
+    console.log(pokemon);
+    
+    return pokemon;
+}
+
 
 
 
@@ -55,55 +62,5 @@ window.pokesaurius = {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //typeSort:(data, ordenElegido) => {    
-  //}
-
-  // nameSort: (data) => {
-  //   const sortPokemonName = elementSort.sort();
-  //   console.log(sortPokemonName)
-
-  // }
-
-
-
-
-
-
-
-
-  //promedio : (peso)=>{
-   //for(let i=0; i< peso.length; i++){
-    // const sumWeight=
-   //}
-
-//}
 
 
