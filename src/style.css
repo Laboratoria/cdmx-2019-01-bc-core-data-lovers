@@ -15,10 +15,9 @@ aside {
 body {
   background: url("images/usa.png") no-repeat center top fixed;
   background-size: 80%;
-  opacity: 30%;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-   font-size: 100%;
+  font-size: 100%;
 }
 
 header {
@@ -28,10 +27,12 @@ header {
   height: 45px;
   background: #112659;
   z-index: 3;
+  opacity: .8;
 }
 
 table {
-  border-spacing: 5px;
+  border-spacing: 20px;
+  display: inline;
 }
 
 /**********fonts***********/
@@ -64,18 +65,16 @@ h3 {
 
 h4 {
   font-family: 'Roboto';
- color: #fff;
- text-align: justify;
- width: 60%;
- margin-left: 13%;
+  color: #fff;
+  text-align: justify;
+  width: 60%;
+  margin-left: 13%;
 }
 
 p {
-  font-family: 'Roboto';
- color: #fff;
- text-align: justify;
- width: 60%;
- margin-left: 13%;
+  color: #fff;
+  text-align: justify;
+  margin-left: 13%;
 }
 
 /************** menu ********/
@@ -128,6 +127,13 @@ header label:hover {
   text-align: center;
 }
 
+.subtitles {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFAD09;
+  font-size: 300%;
+  text-align: left;
+}
+
 .infoBody {
   background-color: #037393;
   opacity: 0.8;
@@ -136,12 +142,15 @@ header label:hover {
 
 .dataTable {
   font-family: 'Poppins', sans-serif;
-   font-size: .5em;
-  text-align: center;
+  font-size: .5em;
 }
 
 .tableStructure {
-  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  color: bisque;
+  font-size: 2em;
+  line-height: 30%;
+  padding: 0;
 }
 
 section.content {
@@ -187,6 +196,14 @@ section.content {
   padding: .5em;
 }
 
+.button-transport {
+  cursor: pointer;
+}
+
+.button-transport:hover {
+  background: #037393;
+}
+
 /*year section styles*/
 .year_button {
   font-family: 'Montserrat', sans-serif;
@@ -194,7 +211,7 @@ section.content {
   font-size: 1em;
   text-align: center;
   position: relative;
-  width: 20em;
+  width: 15em;
   height: 2em;
   line-height: 3;
   background: #112659;
@@ -204,6 +221,7 @@ section.content {
 }
 
 .visualize_data_button {
+  cursor: pointer;
   align-content: center;
   position: relative;
   font-size: .9em;
@@ -217,18 +235,63 @@ section.content {
   height: 2em;
   padding: 0%;
 }
-.result_graphic {
- font-family: 'Montserrat', sans-serif;
- text-align: left;
- line-height: 200%;
- padding: 5%;
+
+.visualize_data_button:hover {
+  background: #037393;
 }
-/**************************************************/
-@media (max-width:768px){
+
+.year-section {
+  background-color: #fff;
+  opacity: .7;
+}
+
+.result_graphic {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  line-height: 200%;
+  padding: 0%;
+  height: 0;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.pieChart {
+  opacity: 0.8;
+  width: 80%;
+  margin-left: 40%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+/********************* responsive *****************************/
+@media (max-width:768px) {
+  article {
+    width: 30%;
+    display: contents;
+  }
+
+  h1 {
+    font-size: 230%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
 
   header label {
     display: block;
   }
+
+  p{
+    margin: 0 10%;
+  }
+
+.subtitles{
+  text-align: center;
+  padding: 0;
+}
+
   .menu {
     position: absolute;
     background: #112659;
@@ -241,18 +304,15 @@ section.content {
     flex-direction: column;
   }
 
+  .pieChart{
+    top: 200px;
+    margin-left: 0;
+    width: 100%;
+  }
+
   #burger-menu:checked~.menu {
     margin: 0;
   }
-  article {
-    width: 30%;
-    display: contents;
-  }
-  h1 {
-    font-size: 230%;
-  }
 
-  h2{
-    font-size: 150%;
-  }
+
 }
