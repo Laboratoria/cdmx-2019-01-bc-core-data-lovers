@@ -12,10 +12,7 @@ const printType= document.getElementById('printType');
 const alphabeticOrderButton=document.getElementById('totales');
 const menuToogle=document.getElementById('menu-toogle');
 const aside=document.getElementById('aside');
-//const printIndividualCard=document.getElementById('print-individual-card');
-//const myModal=document.getElementById('my-modal');
-//const pokemonModal=document.getElementById('pokemon-modal-${element.id}');
-
+const printIndividualCard=document.getElementById('print-individual-card');
 
 
 
@@ -39,8 +36,7 @@ const print=(data)=>{
         <p class="weight-hide">Peso:${element.weight}</p>
         </div>
         </div>
-        </div>`
-        
+        </button>`
         printList.insertAdjacentHTML("beforeend",result);
         return print;
     });
@@ -85,14 +81,16 @@ menuToogle.addEventListener('click',()=>{
 // data.forEach(element => {
 //         let result= `<div class="wrapper-individual">
 //         <div class="pokemon-card"> 
-//               <div class="pokemon-card-individual">
-//                 <img class="image-individual"${element.img}>
+//          <div class="pokemon-card-individual">
+//           <img class="image-individual"${element.img}>
 //       </div>
 //           <div class="box-properties">
-//               <p>Nombre:"${element.name}"</p> <p>Evoluciones:"${element.next_evolution}"</p>
-//             <p>Tipo:"${element.type}"</p> <p>Debilidades:"${element.weaknesses}"</p>
+//               <p>Nombre:"${element.name}"</p> 
+//               <p>Evoluciones:"${element.next_evolution[0][1].name}"</p>
+//               <p>Tipo:"${element.type}"</p> 
+//               <p>Debilidades:"${element.weaknesses}"</p>
 //               <p>Candies:"${element.candies}"</p>
-//            <p> Altura:"${element.height}" Peso:${element.weight} </p>
+//               <p> Altura:"${element.height}" Peso:${element.weight} </p>
 //               </div>
 //               </div>
 //               </div>`
@@ -106,10 +104,8 @@ const wrapper = document.getElementsByClassName('wrapper');
 for(let i =0; i< wrapper.length; i++ ){
     wrapper[i].addEventListener('click' , () => {
        const getIdElement=wrapper[i].id;
-        const modalSelected= window.pokesaurius.pokemonModal(data, getIdElement);
-       // console.log(modalSelected);
-       return modalSelected;
-        
+        const modalSelected= window.pokesaurius.getPokemonById(data,getIdElement);
+        console.log(modalSelected);
     });
 }
 
