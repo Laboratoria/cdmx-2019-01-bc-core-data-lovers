@@ -1,0 +1,111 @@
+.btnCountry {
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #0069d9;
+    border: 1px solid transparent;
+    padding: 0.10rem 0.80rem;
+    font-size: 2rem;
+    line-height: 1.7;
+    border-radius: 0.30rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce) {
+    .btnCountry {
+      transition: none;
+    }
+  }
+  
+  .btnCountry:hover {
+    color: #212529;
+    text-decoration: none;
+  }
+  
+  .btn:focus,
+  .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn.disabled,
+  .btn:disabled {
+    opacity: 0.65;
+  }
+  
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  
+  a.btn.disabled,
+  fieldset:disabled a.btn {
+    pointer-events: none;
+  }
+  
+  .list-group-item-light {
+    color: #cdcdd1;
+    background-color: #fdfdfe;
+  }
+  
+  .list-group-item-light.list-group-item-action:hover,
+  .list-group-item-light.list-group-item-action:focus {
+    color: #818182;
+    background-color: #ececf6;
+  }
+  
+  .list-group-item-light.list-group-item-action.active {
+    color: #fff;
+    background-color: #818182;
+    border-color: #818182;
+  }
+  
+  .card-title {
+    font-display: hidden;
+  }
+  
+  
+  h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 4rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+  }
+  
+  #what {
+    font-family: inherit;
+    color: #212529;
+    font-size: 3em;
+  }
+  
+  #list {
+    font-family: inherit;
+    color: #0069d9;
+    font-size: 2em;
+    align-items: baseline;
+  }
+  
+  #app {
+    font-family: inherit;
+    color: #212529;
+    font-size: 3em;
+  
+  
+  }
