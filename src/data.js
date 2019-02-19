@@ -19,12 +19,13 @@ window.pokesaurius = {
     return(orderPokemonNAme)
   },
 
+  
+  //getPokemonById:(data, getIdElement) =>{
+   // const pokemon = data.filter(element => element.id == getIdElement);
+   // console.log(pokemon);
+    
+    //return pokemon;
 
-  //pokemonModal:(data, getIdElement) =>{
-  //  const pokemonId = data.filter(element => element.id==getIdElement);
-    //console.log(pokemonId)
-  //  return pokemonId;
-//}
 
 
 
