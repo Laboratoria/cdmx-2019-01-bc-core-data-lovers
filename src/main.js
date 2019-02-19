@@ -10,7 +10,7 @@ const titleBySection = document.getElementById("titleBySection");
 //Obtiene  la clase que contiene el rol del nav 
 const rol = document.getElementsByClassName('rol');
 //Obtiene el id del div en donde se van a imprimir los campeones seleccionados
-const imprimirRoles = document.getElementById("imprimirRoles"); 
+const imprimirRoles = document.getElementById("imprimirRoles");
 //Almacena el input Search por busqueda de nombre
 let search = document.getElementById("search");
 //Obtiene el id del botón ascendente
@@ -27,7 +27,7 @@ const stats = document.getElementById("stats");
 //Limpia los elementos de las secciones Campeones, Search y Dicultad para mostrar la lista completa de los campeones.
 home.addEventListener("click", () => {
   imprimirRoles.innerHTML = "";
-  print (datosArr)
+  print(datosArr)
 });
 
 //Función para iterar la lista de  los campeones e imprimir la tarjeta con información seleccionada de cada uno de los campeones 
@@ -43,16 +43,16 @@ const print = (datosArr) => {
     </section>`;
     imprimirRoles.insertAdjacentHTML("beforeend", championCard);
   })
-//Iteración de la tarjeta del campeon seleccionada e impresión de éste 
+  //Iteración de la tarjeta del campeon seleccionada e impresión de éste 
   for (let i = 0; i < containerInfo.length; i++) {
     containerInfo[i].addEventListener('click', () => {
       let characterId = containerInfo[i].id;
       const elementChampion = window.lol.selectCharacter(characterId, datosArr);
       printCharacterSheet(elementChampion);
     })
-  } 
+  }
 };
-print (datosArr)
+print(datosArr)
 
 //Función para iterar las primeras tarjetas de los campeones e imprimir solo la tarjeta con las propiedades completas del campeon seleccionado.
 const printCharacterSheet = (datosArr) => {
@@ -61,35 +61,40 @@ const printCharacterSheet = (datosArr) => {
   document.getElementById("objetive").style.display = "none";
   titleBySection.style.display = "block";
   datosArr.forEach(champ => {
-    let championCard = `<figure>
-    <img src="http://leseriail.com/cdn/1/2010/48/blank-trading-card-game-template_255787.png" >
-    </figure>
-    <section id=championInfoCard class="totalDescription">
-    <div id="${champ.id}"//**********//>
+    let championCard = `<section id=championInfoCard class="totalDescription">
+    <div class="infoChamp">
+    <div>
+    
     <img class="imagenInfo" src="${champ.splash}">
     <h2 id= "nombre" >${champ.name}</h2> 
     <h1 id="titulo">${champ.title}</h1>
     <p>${champ.blurb}</p>
+    </div>
+    </div>
     
-    <div id="info"<p>Attack:${champ.attack}</p> //******************//
+    <div class="infoChamp">
+    <div id="info"<p>Attack:${champ.attack}</p>
     <p>Defense:${champ.defense}</p>
     <p>Magic:${champ.magic}</p>
     <p>Difficulty:${champ.difficulty}</p>
     </div>
-    
-    <div id="statsInfo" <h2>Stats</h2> //************//
-    <div class="hpInfo"> +++++++++++
+    </div>
+    <br>
+    <div class="infoChamp">
+    <div id="statsInfo">
+    <h2>Stats</h2>
+    <div class="infoChamp">
     <p>Hp:${champ.hp}</p>
     <p>Hp per level:${champ.hpperlevel}</p>
     </div>
-    <div class="mpInfo">  ++++++++++
+    <div class="infoChamp">
     <p>Mp:${champ.mp}</p>
     <p>Mp per level:${champ.mpperlevel}</p>
     </div>
-    <div class="moveSpeedInfo"> ++++++++++
+    <div class="infoChamp">
     <p>Movespeed:${champ.movespeed}</p>
     </div>
-    <div class="armorInfo"> +++++++++++++
+    <div class="infoChamp">
     <p>Armor:${champ.armor}</p>
     </div>
     </div></section>`;
@@ -154,7 +159,7 @@ const orderByDifficultyAsc = () => {
     const asc = window.lol.sortByDifficulty(1, datosArr);
     print(asc)
     document.getElementById("objetive").style.display = "none";
-      titleBySection.style.display = "block"
+    titleBySection.style.display = "block"
   })
 };
 orderByDifficultyAsc();
@@ -174,11 +179,11 @@ const orderByDifficultyDsc = () => {
 };
 orderByDifficultyDsc();
 
-stats.addEventListener('click', () =>{
+stats.addEventListener('click', () => {
   imprimirRoles.innerHTML = "";
   titleBySection.innerHTML = "Stats Average";
   const averageAttackP = window.lol.averageAttack(datosArr);
-  imprimirRoles.innerHTML = `<div class="containerInfo"> Attack: <br> ${averageAttackP}</div>`;
+  imprimirRoles.innerHTML = `<div class="containerStats"> Average attack: <br> ${averageAttackP}</div>`;
   document.getElementById("objetive").style.display = "none";
   titleBySection.style.display = "block"
 })
