@@ -58,6 +58,7 @@
         <section id="about" class="about-bancamundial ocultar">
             <article class="who-we-are">
               <h2>Quienes somos</h2>
+              <p>Con base a la necesidad de estudiantes de economía, a los que esta dirigida en sitio web, de obtener información sobre indicadores del banco mundial, de manera ordenada y sencilla, ademas de poder acceder a los numeros de estos indicadores, es decir los años y las mediciones de cada uno asi como lo son porcentajes; Proporcionandoles tambien el calculo del promedio de cada data por indicador; La tematica de los indicadores se enfoca principalmente en población femenina, aunque no es exclusiva de esta.</p>
               <p>El Grupo Banco Mundial está conformado por 189 países miembros; su personal proviene de más de 170 países, y tiene más de 130 oficinas en todo el mundo. Constituye una asociación mundial única: las cinco instituciones que lo integran trabajan en la búsqueda de soluciones sostenibles para reducir la pobreza y generar prosperidad compartida en los países en desarrollo.</p>
             </article>
             <article class="what-we-do">
@@ -67,7 +68,8 @@
         </section>
         <section id="general-filter" class="general-filter  ocultar">
             <article class="title-indicadores">
-                <h1 >Indicadores en America Latina</h1>
+                <h1>Indicadores en America Latina</h1>
+                <p>Con base a los siguientes parametros: demográfia, económia, salud, comercio, violencia de genero y educación</p>
             </article>
             <article class="information-filter">
                 <a class="btn_mex search-country" id="MEX" data-ciudad="MEX" data-object="countryMex">México</a>
@@ -79,39 +81,42 @@
                 <select id="list-question" class="list-question">
                     <option value="valor" >Selecciona un pais</option>
                 </select>
-                <div class="order__filters">
-                    <div class="order__items right">
-                        <p><b>Ordenar por Año</b></p>
-                        <label for="asc" class="container__check">Menor
-                            <input type="radio" id="asc" class="radio__filter" name="order" data-sortby="years" data-sortorder="asc" checked>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label for="desc" class="container__check"> Mayor
-                            <input type="radio" id="desc" class="radio__filter" name="order" data-sortby="years" data-sortorder="desc">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="order__items">
-                        <p><b>Ordenar por valor</b></p>                        
-                        <label for="numAsc" class="container__check">Menor
-                            <input type="radio" id="numAsc" class="radio__filter" name="order" data-sortby="values" data-sortorder="asc">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label for="numDesc" class="container__check">Mayor
-                            <input type="radio" id="numDesc" class="radio__filter" name="order" data-sortby="values" data-sortorder="desc">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div>
+                
+                <div class="prmedio">
                     <p id="avg"></p>
                 </div>
             </article>
-
-            <article id="information-filter-inner" class="information__filtered" >
-            </article>
-            <canvas id="graficaDatos" width="400" height="150"></canvas>
+                <article id="show-canvas" class="show-canvas ocultar"> 
+                    <canvas id="graficaDatos" class="grafica-datos" width="400" height="400"></canvas>
+                </article>
+                <article class="order__filters">
+                        <article class="order__items right">
+                            <p><b>Ordenar por Año</b></p>
+                            <label for="asc" class="container__check">Menor
+                                <input type="radio" id="asc" class="radio__filter" name="order" data-sortby="years" data-sortorder="asc" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="desc" class="container__check"> Mayor
+                                <input type="radio" id="desc" class="radio__filter" name="order" data-sortby="years" data-sortorder="desc">
+                                <span class="checkmark"></span>
+                            </label>
+                        </article>
+                        <article class="order__items">
+                            <p><b>Ordenar por valor</b></p>                        
+                            <label for="numAsc" class="container__check">Menor
+                                <input type="radio" id="numAsc" class="radio__filter" name="order" data-sortby="values" data-sortorder="asc">
+                                <span class="checkmark"></span>
+                            </label>
+    
+                            <label for="numDesc" class="container__check">Mayor
+                                <input type="radio" id="numDesc" class="radio__filter" name="order" data-sortby="values" data-sortorder="desc">
+                                <span class="checkmark"></span>
+                            </label>
+                        </article>
+                    </article>
+                <article id="information-filter-inner" class="information__filtered" >
+                </article>
+            
         </section>    
     </main>
     <footer>

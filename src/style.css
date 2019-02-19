@@ -22,8 +22,7 @@ body{
     text-align: right;
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 .header-left{
     float: left;
@@ -72,6 +71,9 @@ body{
     padding: 1rem  1rem;
     min-height: 82vh;
 }
+.about-bancamundial{
+    text-align: center;
+}
 .news{
     width: 100%;
 }
@@ -93,22 +95,12 @@ height: auto;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     padding-left: 1rem;
     padding-right: 1rem;
-    }
+}
 .title-indicadores>h1{
     font-size: 2rem;
     margin-top: 0;
     font-size: 1.5rem;
     color: #002f54;
-}
-.title-indicadores>h1:before{
-    content: "";
-position: absolute;
-width: 5rem;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-border-bottom: 1px solid #009fda
 }
 .information-filter-inner{
     border: 1px solid black;
@@ -239,7 +231,6 @@ footer{
     line-height: 50px;
     text-align: center;
 }
-
 /* filtros de ordenamiento */
 .order__filters{
     display: inline-block;
@@ -293,24 +284,20 @@ footer{
   .container__check:hover input ~ .checkmark {
     background-color: #ccc;
   }
-  
   /* When the radio button is checked, add a blue background */
   .container__check input:checked ~ .checkmark {
     background-color: #ab82ce;
   }
-  
   /* Create the indicator (the dot/circle - hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
-  
   /* Show the indicator (dot/circle) when checked */
   .container__check input:checked ~ .checkmark:after {
     display: block;
   }
-  
   /* Style the indicator (dot/circle) */
   .container__check .checkmark:after {
     top: 9px;
@@ -334,8 +321,28 @@ footer{
       -ms-transition: all linear .35s  ;
       -o-transition: all linear .35s  ;
 }
+.promedio{
+    text-align: center;
+}
+
+/* .show-canvas{
+    box-sizing:border-box;
+    width:100%;
+} */
 
 @media screen and (min-width: 640px){
+    .container {
+        padding: 1rem 2rem;
+        
+    }
+    .who-we-are,
+    .what-we-do{
+        padding: 30px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
     .search-country{
         display: block;
         margin-left: auto;
@@ -363,6 +370,12 @@ footer{
         text-align: center;
     }
     .list-question{
-        width: 80%
-    } 
+        width: 80%;
+    }  
+    .show-canvas{
+        box-sizing:border-box;
+        width:80%;
+        padding-left:20%;     
+    }
+    
 }
