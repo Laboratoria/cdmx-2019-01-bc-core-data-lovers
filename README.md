@@ -1,5 +1,14 @@
 # Data Lovers
 
+### Preámbulo
+Los Indicadores Demográficos Básicos constituyen una operación estadística conformada
+por una colección de indicadores que permiten analizar cómo inciden los fenómenos
+demográficos.
+
+Su objetivo es proporcionar la intensidad, las principales características, la dinámica y la
+evolución de los fenómenos demográficos sobre la población residente.
+
+Concretamente pueden ser muy útiles para la implementación de programas sociales, pues muestran el estado en el que se encuentra y ha ido evolucionando una sociedad.
 ### Definición del producto
 
 El propósito de este producto, es facilitar el acceso de información demográfica femenina, que utilizan las ONG (Organización No Gubernamental)para la planificación de servicios sociales (programas infancia, juventud, salud
@@ -73,8 +82,9 @@ filtrado, ordenado, ...).
 
 ### Pruebas
 
+![pruebas](https://i.ibb.co/wRWCdDj/2019-02-18-2.png)
 
-Las pruebas automatizadas para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que se realice el filtrado y el orden de la data. Analiza que la función filtrar sea función y permita el filtrado de la información por país e indicadores; Analiza que la función ordenar, sea función y permita el orden de la información de forma ascendente o descentente.
+Las pruebas automatizadas para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que se realice el filtrado y el orden de la data. Analiza que la función filtrar sea función y permita el filtrado de la información por país e indicadores; Analiza que la función ordenar, sea función y permita el orden de la información de forma ascendente o descentente.Analiza que la función de valor máximo/mínimo traiga el valor indicado de acuerdo a la selección.
 
 El _boilerplate_ contiene una estructura de archivos como punto de partida así
 como toda la configuración de dependencias:
@@ -150,11 +160,26 @@ También expresaron que les gustaría obtener un análisis preliminar de los dat
 
 
 ### Resultado Final
+![pantalla1.1](https://i.ibb.co/SB9Gryb/1.png)
 - Se decidió agregar un logo y nombre como fondo en las pantallas para que sea fácil idenrtificarnos.
-- Se agregó un apartado de contacto para poder recibir comentarios.
+
+![pantalla2.1](https://i.ibb.co/wBfkVLh/2.png)
+![pantalla3.1](https://i.ibb.co/dBbmbZK/2-5.png)
+- Se agregó una explicación de la gráfica, asi como la opción de limpiar los campos y volver a empezar.
+
+![pantalla4.1](https://i.ibb.co/qBJsCxM/6.png" )
 - Se agregó un apartado de próposito para informar a los usuarios lo que se pretende aportar.
+
+![pantalla4.1](https://i.ibb.co/WFTL4ZG/4.png
+)
+- Se agregó un apartado de contacto para poder recibir comentarios, asi como una barra de redes sociales.
+
 ### Autores
 Olga Contreras y Elizabeth Monroy.
 ### Agradecimientos
 A todo el equipo de Laboratoria.
+
+
+
+
 
