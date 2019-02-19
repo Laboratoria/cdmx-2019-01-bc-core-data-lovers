@@ -1,26 +1,39 @@
-document.getElementById("next").addEventListener("click", () => {
-  imprimir(dataPokemon);
+//Declaración de variables y constantes que se utilizaran
+
+var POKEMON;
+const dataPokemon = POKEMON.pokemon;
+const buttonTypes = Array.from(document.getElementsByClassName("typesPokemon"));
+const buttonOrder = Array.from(document.getElementsByClassName("orderButtonType"));
+const searchLett = document.getElementById("searchNav");
+const pokemons = document.getElementById("pokemons");
+const pokemones = document.getElementById("pokemones");
+const pokemonees = document.getElementById("pokemonees");
+
+
+//Funcion de boton de Inicio
+document.getElementById("NextButton").addEventListener("click", () => {
+  paintData(dataPokemon);
   document.getElementById("navs").style.display = "none";
   document.getElementById("barra").style.display = "block";
   document.getElementById("serch").style.display = "block";
-  document.getElementById("main").style.display = "none";
+  document.getElementById("mainSection").style.display = "none";
   document.getElementById("order").style.display = "none";
  
   
  })
- 
+ //Funcion de Boton home
  document.getElementById("home").addEventListener("click", () => {
   document.getElementById("navs").style.display = "none";
   // document.getElementById("navs").style.display="none";
   document.getElementById("serch").style.display = "block";
-  document.getElementById("main").style.display = "none";
+  document.getElementById("mainSection").style.display = "none";
   document.getElementById("order").style.display = "none"
   document.getElementById("pokemons").style.display = "block";
-  imprimir(dataPokemon);
+  paintData(dataPokemon);
   
  })
- 
- document.getElementById("neews").addEventListener("click", () => {
+ //Funcion de Filtrado en el navegador
+ document.getElementById("filterNav").addEventListener("click", () => {
  
   document.getElementById("navs").style.display = "block";
   // document.getElementById("order").style.display="none";
@@ -28,36 +41,27 @@ document.getElementById("next").addEventListener("click", () => {
   
  
  })
- 
- document.getElementById("orderBy").addEventListener("click", () => {
+ //Funcion de Ordenado en el navegador
+ document.getElementById("orderNav").addEventListener("click", () => {
  
   document.getElementById("order").style.display = "block";
   document.getElementById("navs").style.display = "none"
   document.getElementById("pokemons").style.display = "none";
   
  })
- 
- function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+ //Funcion hace al navegado responsive
+ function functionNav() {
+  var x = document.getElementById("navBarTop");
+  if (x.className === "navBar") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "navBar";
   }
  }
  
- myFunction();
- 
- 
- var POKEMON;
- const dataPokemon = POKEMON.pokemon;
- const buttonTypes = Array.from(document.getElementsByClassName("bottonPokemons"));
- const buttonOrder = Array.from(document.getElementsByClassName("sortTipo"));
- 
- 
- 
- 
- const obtenerTipo = (arregloBotones) => {
+ functionNav();
+ //Funcion para llamar al filter
+ const dataPaint = (arregloBotones) => {
  
   arregloBotones.map((tipo) => {
  
@@ -69,14 +73,14 @@ document.getElementById("next").addEventListener("click", () => {
  
       const arregloFiltrado = window.data.filterPokemon(dataPokemon, getTypePokemon);
  
-      imprimir(arregloFiltrado);
+      paintData(arregloFiltrado);
     })
   });
  
  }
  
- obtenerTipo(buttonTypes);
- 
+ dataPaint(buttonTypes);
+ //Funcion para llamar a odernar
  const sortButton = (botonesOrder) => {
   botonesOrder.map(eventoSor => {
     eventoSor.addEventListener("click", (event) => {
@@ -85,7 +89,7 @@ document.getElementById("next").addEventListener("click", () => {
       const sortOrder = idDivi[1];
       const arrayOrde = window.data.sortDataPokemon(dataPokemon, sortBy, sortOrder);
  
-      imprimir(arrayOrde);
+      paintData(arrayOrde);
  
     })
   })
@@ -93,36 +97,32 @@ document.getElementById("next").addEventListener("click", () => {
  
  sortButton(buttonOrder);
  
- const searchLett = document.getElementById("search");
  
  const filterCoincidence = () => {
   searchLett.addEventListener("keyup", () => {
-    let searchValue = document.getElementById("search").value;
-    imprimir(window.data.filterLetterPokemon(dataPokemon, searchValue));
+    let searchValue = document.getElementById("searchNav").value;
+    paintData(window.data.filterLetterPokemon(dataPokemon, searchValue));
   });
  }
  
  filterCoincidence();
+
+//  Funcion de Imprimir 
+
+ const paintData = (dataPaint) => {
+   
+  pokemons.innerHTML = " ";
+  pokemones.innerHTML = " ";
+  pokemonees.innerHTML = " ";
  
- const imprimir = (obtenerTipo) => {
- 
-  const pokemons = document.getElementById("pokemons");
-  const pokemones = document.getElementById("pokemones");
-  const pokemonees = document.getElementById("pokemonees");
- 
-  pokemons.innerHTML = "";
-  pokemones.innerHTML = "";
-  pokemonees.innerHTML = "";
- 
- 
-  obtenerTipo.map((dataPokemon) => {
+  dataPaint.map((dataPokemon) => {
  
     pokemons.innerHTML += `<div class="divPokemon" "><p class="namePokemon numberSite" id="idPokemon"> # ${dataPokemon.num} / 151</p><br><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> 
-                    <p class="namePokemon" id="nameCenter"> Nombre:${dataPokemon.name}</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+                    <p class="namePokemon" id="nameCenter"> Nombre:${dataPokemon.name}</p><br><p class="namePokemon">Tipo: ${dataPokemon.type}</p></div>`;
     pokemones.innerHTML += `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
-                    <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon"> ${dataPokemon.type}</p></div>`;
+                    <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon">Tipo: ${dataPokemon.type}</p></div>`;
  
-    pokemonees.innerHTML += `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure> <p class="namePokemon" id="idPokemon"> N.°${dataPokemon.id}</p><br>
+    pokemonees.innerHTML += `<div class="divPokemon" "><figure class="imgPokemon"><img  src="${dataPokemon.img}"></figure>
                                         <p class="namePokemon" id="nameCenter"> Nombre:  ${ dataPokemon.name }</p><br><p class="namePokemon" id="nameCenter"> Altura:  ${ dataPokemon.height }</p><br><p class="namePokemon">Peso: ${dataPokemon.weight}</p></div>`;
   })
  }

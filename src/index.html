@@ -12,28 +12,28 @@
  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nova+Flat|Open+Sans|Quattrocento+Sans|Sunflower:300" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
 </head>
 
 <body>
- <section id="main">
+ <section id="mainSection">
    <header id="title">
-       <img src="../src/assets/img/POKEMON.png" class="logo" alt="Logo Pokemon">
+       <img src="../src/assets/img/POKEMON.png" class="logo-style" alt="Logo Pokemon">
    </header>
 
-   <button type="submit" id="next" class="styleButtonNext buttonNext">Entrar</button>
+   <button type="submit" id="NextButton" class="buttons-style buttonNext">Entrar</button>
 
    <p class="messageWelcome">Encuentra TODO sobre tus Pokemons!!</p>
  </section>
 
  <section id="serch">
      <section id="barra">
-         <div class="topnav" id="myTopnav">
-             <a href="#home" id="home" class="active"><img src="https://fontmeme.com/permalink/190218/900a15e8c634225979616f1590e0b99f.png" alt="fuente-pokemon" border="0"></a></a>
-             <a href="#news" id="neews">Filtrado</a>
-             <a href="#contact" id="orderBy">Ordenado</a>
-             <input type="search" class="search" id="search" placeholder="Ejemplo: Pikachu">
-             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <div class="navBar" id="navBarTop">
+             <a href="#home" id="home" class="active"><img src="https://fontmeme.com/permalink/190219/14ab33fbcfd74d5dd1a6b58fa455cca7.png" alt="fuente-pokemon"></a>
+             <a href="#filter" id="filterNav"><i class="fas fa-filter"></i>Filtrado</a>
+             <a href="#order" id="orderNav"><i class="fas fa-list-ol"></i>Ordenado</a>
+             <i class="fas fa-search"></i><input type="search" class="search-style" id="searchNav" placeholder="Ejemplo: Pikachu" >
+             <a href="javascript:void(0);" class="icon" onclick="functionNav()">
                <i class="fa fa-bars"></i>
              </a>
   
@@ -41,52 +41,47 @@
   
    </section>
   
-  
-  
-   <h1 id="pokemons"></h1>
-  
-
+   <div class="paintPokemons" id="pokemons"></div>
     
    <section id="navs">
 
    <form>
        <fieldset id="typesPokeBottons">
-         <legend><i class="fas fa-filter"></i>FILTRO </legend>
-         <p><i class="fas fa-thumbtack"></i>Tipos</p>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Fire"><i class="fas fa-fire-alt"></i> Fuego</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Normal"><i class="fas fa-ticket-alt"></i> Normal</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Water"><i class="fas fa-tint"></i> Agua</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Grass"><i class="fas fa-leaf"></i> Hierba</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Electric"><i class="fas fa-bolt"></i> Electrico</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Ice"><i class="fas fa-snowflake"></i> Hielo</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Fighting"><i class="fas fa-fist-raised"></i> Pelea</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Poison"><i class="fas fa-book-dead"></i> Veneno</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Ground"><i class="fas fa-mountain"></i> Tierra</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Flying"><i class="fas fa-feather-alt"></i> Volador</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Psychic"><i class="fas fa-hat-wizard"></i> Psiquico</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Bug"><i class="fas fa-bug"></i> Bicho</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Rock"><i class="fab fa-shopware"></i> Roca</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Ghost"><i class="fas fa-ghost"></i> Fantasma</button>
-     <button type="button" class="bottonPokemons styleButtonNext1" id="Dragon"><i class="fas fa-dragon"></i> Dragon</button>
+         <legend><i class="fas fa-thumbtack"></i>Tipos </legend>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Fire"><i class="fas fa-fire-alt"></i> Fuego</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Normal"><i class="fas fa-ticket-alt"></i> Normal</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Water"><i class="fas fa-tint"></i> Agua</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Grass"><i class="fas fa-leaf"></i> Hierba</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Electric"><i class="fas fa-bolt"></i> Electrico</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Ice"><i class="fas fa-snowflake"></i> Hielo</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Fighting"><i class="fas fa-fist-raised"></i> Pelea</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Poison"><i class="fas fa-book-dead"></i> Veneno</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Ground"><i class="fas fa-mountain"></i> Tierra</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Flying"><i class="fas fa-feather-alt"></i> Volador</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Psychic"><i class="fas fa-hat-wizard"></i> Psiquico</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Bug"><i class="fas fa-bug"></i> Bicho</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Rock"><i class="fab fa-shopware"></i> Roca</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Ghost"><i class="fas fa-ghost"></i> Fantasma</button>
+     <button type="button" class="typesPokemon buttons-style sizeButtonTypes" id="Dragon"><i class="fas fa-dragon"></i> Dragon</button>
    </fieldset>
  </form>
- <h1 id="pokemones"></h1>
+ <div class="paintPokemons" id="pokemones"></div>
 
 </section>
 
-<section id="order" class="orderBy">
+<section id="order" >
     <form>
-     <fieldset id="propiedadButtons">
-       <legend><i class="fas fa-list-ol"></i>ORDENAR</legend>
+     <fieldset >
+       <legend>ORDENAR</legend>
        <p><i class="fas fa-balance-scale"></i>Peso</p>
-       <button type="button" class="sortTipo styleButtonNext2" id="weight-asc"><i class="fas fa-caret-square-up"></i> Ligeros-Pesados</button>
-       <button type="button" class="sortTipo styleButtonNext2" id="weight-dsc"><i class="fas fa-caret-square-down"></i> Pesados-Ligeros</button>
+       <button type="button" class="orderButtonType buttons-style sizeButtonOrder" id="weight-asc"><i class="fas fa-caret-square-up"></i> Ligeros-Pesados</button>
+       <button type="button" class="orderButtonType buttons-style sizeButtonOrder" id="weight-dsc"><i class="fas fa-caret-square-down"></i> Pesados-Ligeros</button>
        <p><i class="fas fa-arrows-alt-v"></i>Tamaño</p>
-       <button type="button" class="sortTipo styleButtonNext2" id="height-asc"><i class="fas fa-caret-square-up"></i> Pequeños-Grandes</button>
-       <button type="button" class="sortTipo styleButtonNext2" id="height-dsc"><i class="fas fa-caret-square-down"></i> Grandes-Pequeños</button>
+       <button type="button" class="orderButtonType buttons-style sizeButtonOrder" id="height-asc"><i class="fas fa-caret-square-up"></i> Pequeños-Grandes</button>
+       <button type="button" class="orderButtonType buttons-style sizeButtonOrder" id="height-dsc"><i class="fas fa-caret-square-down"></i> Grandes-Pequeños</button>
      </fieldset>
    </form>
-   <h1 id="pokemonees"></h1>
+   <div class="paintPokemons" id="pokemonees"></div>
  </section>
  </section>
 

@@ -1,18 +1,15 @@
 window.data = {
-
+  //Función de Filtrado, recibe Data y condición por la que se va a filtrar, tipo de pokémon
   filterPokemon: (dataPokemon, types) => {
-
-    // const arrayPokemon = dataPokemon;
-    // const tipoElegido = types;
 
     const arrayFilter = dataPokemon.filter(dataPokemon => dataPokemon.type.includes(types));
 
     return arrayFilter;
 
   },
-
+  
+  //Función de Ordenado, recibe la Data el parametro por el que se va a Ordenar: altura o peso, y si será ascendente o Descendente
   sortDataPokemon: (data, sortBy, sortOrder) => {
-
 
     if (sortBy == "weight" && sortOrder == "asc") {
       return data.sort((a, b) => (parseFloat(a.weight) - parseFloat(b.weight)));
@@ -26,6 +23,8 @@ window.data = {
       return data;
     }
   },
+
+  //Función de Filtrado por coincidencia de Nombre, Recibe la data y la parabra 
 
   filterLetterPokemon: (dataPokemon, letterValue) => {
 
