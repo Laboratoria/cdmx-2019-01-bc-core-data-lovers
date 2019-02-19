@@ -337,7 +337,7 @@ figure.conf {
   background: #FFD252;
   text-align: center;
   color: #404040;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .infoAll {
@@ -435,11 +435,12 @@ h2#conf {
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top:60px;
 }
 
 #text-conf{
   align-items: center;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
 }
 
@@ -452,7 +453,7 @@ h2#conf {
 
 .imag{
   align-items: center;
-  display: flex;
+ display: inline-block;
   flex-direction: column;
 } 
-}
+
