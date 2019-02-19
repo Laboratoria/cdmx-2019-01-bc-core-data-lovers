@@ -54,6 +54,8 @@ El sitio web tiene como objetivo brindar la información indispensable para eleg
 
 ![Prototipo](https://github.com/Cristalgarcia/cdmx-2019-01-bc-core-data-lovers/blob/rama-cris/src/assets/prototipo%20de%20baja%20fidelidad.jpeg)
 
+![Prototipo](https://github.com/Cristalgarcia/cdmx-2019-01-bc-core-data-lovers/blob/rama-cris/src/assets/prototipo%20de%20baja%20fidelidad_2.jpeg)
+
 - **Prototipo de alta fidelidad.** El sketch se realizó en [Figman](https://www.figma.com/proto/ciJPALOwmDoRxJ62H0xwpyd6/LoL-Prototipo?node-id=1%3A2&scaling=scale-down). La primera pantalla mantuvo el diseño del prototipo de baja fidelidad. La segunda pantalla, Home, brinda información general de LoL (objetivo, mapa del videojuego y comandos del juego). El menú consta de tres secciones; personajes, roles y poderes. Cuenta con un buscador y cada uno de los campeones tienen una tarjeta complementaria con información adicional. 
 
 ## Diseño de la interfaz de usuario
