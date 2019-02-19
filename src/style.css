@@ -13,6 +13,14 @@ img {
   width: 70%;
 }
 
+#avg{
+  background-color: #1c295a;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  width: 97%;
+}
+
 h2 {
   color: white;
   font-size: 4em;
@@ -61,6 +69,7 @@ table {
 }
 
 .id {
+  background: #1c295a;
   width: 23%;
 }
 
@@ -74,39 +83,6 @@ table {
   border-radius: 25px;
   background-color: rgba(27, 27, 27, 0.9);
   font-size: 2em;
-}
-
-/* Estilos para las celdas de la tabla del modal */
-.type {
-  background: rgb(3, 95, 0);
-}
-
-.height {
-  background: rgb(163, 87, 0)
-}
-
-.weigh {
-  background: rgb(182, 0, 0);
-}
-
-.candy {
-  background: rgb(0, 102, 170);
-}
-
-.candy_c {
-  background: rgb(184, 184, 0);
-}
-
-.egg {
-  background: rgb(0, 129, 101);
-}
-
-.spawn_t {
-  background: rgb(81, 0, 148);
-}
-
-.weaknesses {
-  background: rgb(134, 1, 63);
 }
 
 /* Terminan estilos de las celdas para la tabla del modal */
@@ -135,15 +111,6 @@ table {
 .space {
   padding-top: 3%;
   padding-bottom: 2%;
-}
-
-/*Fa:Imagen de fondo de la pagina principal*/
-.pokemonBackground {
-  background-image: url("./images/Teselia_N2B2.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
 
 .imgModal {
@@ -797,8 +764,7 @@ nav.navbar {
     width: 80%;
   }
 
-  #pokemones,
-  #filtered_out {
+  #pokemones, #filtered_out {
     /*Agregue*/
     padding-top: 21%;
   }

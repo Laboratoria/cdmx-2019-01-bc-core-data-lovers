@@ -4,16 +4,20 @@ window.data = {
     return result;
   },
 
-  sortData: (dataPokemon, sortOrder) => {
+  sortData: (DataFilter, sortOrder) => {
     if (sortOrder == "ascendente") {
-      return dataPokemon.sort((a, b) => (a.name > b.name) ? 1 : -1);
-    } else if (sortOrder == "descendente") {
-      return dataPokemon.sort((a, b) => (a.name < b.name) ? 1 : -1);
+      return DataFilter.sort((a, b) => (a.name > b.name) ? 1 : -1);
+    } else /* if (sortOrder == "descendente")  */ {
+      return DataFilter.sort((a, b) => (a.name < b.name) ? 1 : -1);
     }
   },
  
-  /* computeStats: (a,b) => {
-    a+b == 20;
-  } */
 
+  computeStats: (array) => {
+    const result = array.reduce((previuosVal, actualVal ) =>{
+      return previuosVal + actualVal;
+    });
+    const average = (result/array.length).toFixed(2);
+    return average;
+  }
 };
