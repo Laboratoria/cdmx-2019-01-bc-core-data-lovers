@@ -1,16 +1,23 @@
-##DataLovers Personas lesionadas dependiendo su medio de transporte
+# DataLovers Personas lesionadas dependiendo su medio de transporte
 
-##Preámbulo
+## Índice
+
+- [Preámbulo](#preámbulo)
+- [Consideraciones técnicas](#consideraciones-técnicas)
+- [Primeros pasos](#primeros-pasos)
+
+
+## Preámbulo
 En el gremio de los especialistas, sociedad civil, académicos o curiosos de lo urbano, se sabe que un factor importante para entender lo que acontece en las ciudades, especialmente en temas de seguridad vial, son las bases de datos.
 El tener bases de datos homologadas de percances viales es fundamental para evaluar políticas públicas y proponer soluciones.
 
-###Problemas a los que nos enfrentamos
+### Problemas a los que nos enfrentamos
 
 Durante el proceso de desarrollo de esta aplicación web nos enfrentamos a diversas dificultades, entre las más relevantes destaca el aprender a procesar la data para generar nuevos datos que sean relevantes para el usuario, para lo cual tuvimos que aprender a identificar y aplicar las funciones para devolver los datos necesarios.
 De igual manera, nos dimos a la tarea de ordenar el código para facilitar el entendimiento; para lo cual separamos las funciones puras del DOM, esto con la finalidad de poder testear las funciones y simplificarlas.
 Por último, la coordinación de tiempo derivado del trabajo en equipo y la falta de práctica de uso de GITHUB colaborativo. Sin embargo, creemos que es una tarea que se tiene que ir aprendiendo conforme a la práctica.
 
-###Lo aprendido
+### Lo aprendido
 
 A trabajar en equipo y mejorar nuestra comunicación dentro del mismo.
 Aprender a poner en práctica algunas de las técnicas fundamentales de las distintas fases del proceso del Design Thinking.
@@ -21,7 +28,7 @@ Refactorización de código.
 Web responsive design.
 Sintaxis y uso de tests.
 
-##Metodología, proceso de diseño e implementación de UX
+## Metodología, proceso de diseño e implementación de UX
 Para el presente proyecto incorporamos la metodología Design Thinking;la cual es una metodología ágil que nos ayuda a adaptarnos fácilmente a los cambios e imprevistos que surgieron en los tres sprints de duración del proceso de diseño.
 (imagen png proceso Design Thinking)
 UX Research
@@ -37,7 +44,7 @@ Al omitir el scroll infinito permite al usuario acceder a la información que de
 
 De lo particular a lo general: la forma de presentar la información se da de dos formas diferentes. En primera instancia se presenta el acceso a los datos que hacen referencia a un modo particular de transporte. La segunda forma permite conocer los datos de los 5 medios en un año especifico.
 
-##Los usuarios y clientes
+## Los usuarios y clientes
 
 Historias de usuarios:
 
@@ -61,13 +68,13 @@ Queremos comparar los incidentes viales de los últimos años, que es cuando a n
 
 La investigación sobre movilidad urbana tiene como objetivo lograr una perfecta integración de los servicios de transporte actuales y futuros para las áreas urbanas. Los modos activos de movilidad (peatonal y de bicicletas) son una parte importante, y los investigadores ponemos mucho esfuerzo en obtener y analizar datos empíricos de varios sitios en condiciones que nos ayuden a sustentar y llevar a cabo varios grandes proyectos.
 
-##Descubrimiento e investigación
+## Descubrimiento e investigación
 
 En la fase inicial de diseño es necesario acercarnos con una curiosidad enfocada, ya que es muy fácil divagar en la amplitud de los aspectos que abarca un sujeto o tema de observación, además de que incluye una buena práctica siempre contestarnos un protocolo de preguntas base que nos ayudarán a:
 Ubicar y conocer a nuestro usuario
 Alinear expectativas con el usuario de lo que espera del proyecto
 
-##Síntesis de problemáticas a resolver:
+## Síntesis de problemáticas a resolver:
 
 Se requiere de un nuevo sistema de procesamiento de información. En términos de UX (experiencia de usuario) y claridad de lo que se envía o pretende compartir.
 Se requiere un sistema que traduzca esa información en una vista más útil.
@@ -84,15 +91,16 @@ Incidentes por los cinco modos de transporte urbanos más usados: peatones, cicl
 Datos generales de los cinco modos de transporte por año
 Datos de los últimos veinte años
 
-##Base de Datos:
+## Base de Datos:
 
 La data proporcionada para este ejercicio es un archivo JS que debemos implementar en un servidor local o desde un link en un servidor externo. Esta data tipo árbol cuenta con información dentro de objetos y arreglos por año (desde 1960) y por veinte modos de transporte que va desde aéreo, marítimo y terrestre.
 
-##Ideas de prototipado:
+## Ideas de prototipado:
 
-![sketch_lowfidelity](https://raw.githubusercontent.com/UnaTal/cdmx-2019-01-bc-core-data-lovers/ramaTalia/src/images/sketch_lowfidelity)
+![sketch_lowfidelity](./src/images/sketch_lowfidelity.png)
+![sketch_highfidelity](./src/images/mockup_desktopbuttons.png)
 
-##Implementación
+## Implementación
 
 Los recursos utilizados en la implementación del proyecto utilizamos:
 
@@ -104,7 +112,7 @@ Los recursos utilizados en la implementación del proyecto utilizamos:
 - Figma para sketches de alta fidelidad.
 - Google Charts para las gráficas
 
-##Experiencia de usuario
+## Experiencia de usuario
 
 MENÚ: El menú sidebar es sencillo y colapsable en dispositivos móviles, permite tener acceso a los distintos modos de transporte.
 
@@ -112,7 +120,16 @@ BOTONES: Colocamos la información destaca a primera vista y en una misma págin
 
 RESPONSIVE: Ya que es información que en ciertos usuarios convendría tener a la mano, la aplicación puede visualizarse tanto en dispositivos móviles como en desktop. Sin embargo, fue inicialmente pensada para tener una mejor visualización desde un dispositivo de escritorio.
 
-Elena Hernández
+### Herramientas
+
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [Node.js](https://nodejs.org/)
+- [Jest](https://jestjs.io/)
+
+
+María Elena Hernández Payán
 Lic. en Filosofía  Laboratoria 7ta Generación Sede CDMX
 
 Talía González y González
