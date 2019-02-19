@@ -1,8 +1,6 @@
 nav {
   display: block;
 }
-
-
 header {
   background: white;
   display: inline-block;
@@ -11,7 +9,6 @@ header {
   top: 0;
   left: 0;
 }
-
 figure {
   margin: 0%;
   display: inline-block;
@@ -116,8 +113,6 @@ figure {
      right:208px;
      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
    }
-
-
 
 .info {
   background-color: #eb008b;
@@ -305,12 +300,6 @@ footer {
   margin-top: 8%;
 }
 
-
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
 @media (min-width: 1281px) {
 
 .logo{
@@ -469,10 +458,6 @@ text-align: center;
   }
 
 }
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 767px) and (max-width: 1024px) {
 
@@ -511,11 +496,6 @@ text-align: center;
   }
 
 }
-/*
-
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
 
 @media (min-width: 300px) and (max-width: 767px) {
 
@@ -533,5 +513,4 @@ text-align: center;
   right: -435px;
   padding-top: 47px;
   }
-
 }

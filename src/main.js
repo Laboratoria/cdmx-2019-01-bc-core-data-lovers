@@ -10,7 +10,6 @@ const resultsecc = document.getElementById("result");
 const injuriesBy = window.INJURIES;
 //Constante que contiene la tabla
 const table = document.getElementById('table');
-
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
@@ -47,5 +46,4 @@ searchbutton.addEventListener("click", () => {
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);
     resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
   }
-
 });
