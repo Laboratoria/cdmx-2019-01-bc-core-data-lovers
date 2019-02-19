@@ -60,19 +60,17 @@ Sin duda Crhistian busca una app completa y con una interfaz amigable para que l
 
 ### Diseño de la Interfaz de Usuario
 
-
 #### Prototipo de baja fidelidad
 
-https://ibb.co/JrGRd47
-
+![Sketch Baja Fidelidad](imgReadMe/bajaFidelidad_prototipo.jpg)
 
 #### Prototipo de alta fidelidad
 
-https://ibb.co/S5ydJJW
+![Prototipo Alta Fidelidad Mobile](imgReadMe/primerPrototipo_alta.png)
 
-https://ibb.co/z78nft8
+![Prototipo Alta Fidelidad Mobile](imgReadMe/Interfaz_altaFidelidad_mobile.png)
 
-https://ibb.co/dm18swg
+![Prototipo Alta Fidelidad Web](imgReadMe/prototipo_altaFidelidad_web.jpg)
 
 
 #### Testeos de usabilidad
@@ -92,11 +90,7 @@ https://ibb.co/dm18swg
 - Imagen / contraste tratar de buscar referencias de imagen header en web. Investigar “fondo - contraste”
 - Input / Buscador. Poner icono de lupa y una leyenda dentro del buscador que diga “Buscador sólo por nombre. Ejemplo “pikachu”.”
 
-(https://ibb.co/0yvbt7K)
-
 - Modales. Agrandar los títulos:
-
-(https://ibb.co/JyZ1zz1)
 
 Separar las debilidades. Buscar referencias gráficas para cambiar apariencia de botón, conservando la línea de diseño de la interfaz. Revisar la posibilidad de cuando abre el modal, poder dar click en cualquier parte de la página y que este se cierre.
 
