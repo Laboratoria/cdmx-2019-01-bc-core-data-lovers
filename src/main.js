@@ -4,10 +4,11 @@ const bienvenido = document.getElementById('nombre-bienvenido');
 const sectionName = document.getElementById('pantalla1');
 
 const pantalla2 = document.getElementById('pantalla2');
-//const showPokemons = document.getElementById('showPokemons');
+const showPokemons = document.getElementById('showPokemons');
 const root = document.getElementById('root');
 const cajitas = document.getElementsByClassName('cajitas')
 const dataPokemon = window.POKEMON.pokemon;
+const forWeight = document.getElementById("forWeight");
 //const Water = document.getElementById('Water');
 //const Flying = document.getElementById('Flying')
 
@@ -20,6 +21,7 @@ btngetName.addEventListener("click", () => {
 
 const printData = (data) => {
   root.innerHTML = '';
+
   data.forEach(pokemon => {
     let namePokemon = `<figure class="tarjeta"> <h1> ${pokemon.num} </h1> <h2> ${pokemon.name} </h2>    <div> <img = class "imageBox" src ="${pokemon.img}"> </div>
     <p> TYPE: ${pokemon.type} </p>
@@ -50,4 +52,25 @@ for (let i = 0; i < cajitas.length; i++) {
     printData(pokemonType);
 
   });
+
+
 }
+
+forWeight.addEventListener("click",() => {
+  const pokemonTotalPeso =  window.pokemon.totalWeightPokemon(dataPokemon);
+  root.innerHTML= pokemonTotalPeso;
+//  root.innerHTML = '';
+  //console.log(pokemonTotalPeso);
+ //const parrafo= `<p>Peso total de los Pokemon:${pokemonTotalPeso}</p>`
+//  root.insertAdjacentHTML("beforeend", parrafo);
+
+
+
+
+});
+
+
+showPokemons.addEventListener("click",() => {
+  pantalla2.insertAdjacentHTML("beforeend", printData(showPokemons));
+
+})
