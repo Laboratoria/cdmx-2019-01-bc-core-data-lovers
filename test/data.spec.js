@@ -206,9 +206,6 @@ describe('Ordenar, devuelve un arreglo de champions ordernado por dificultad de 
   it('Dado la muestra, si ordena de manera ascendente, Aatrox es el primer elemento', () =>{
     expect(window.lol.sortByDifficulty(1, dataToArray)[0].name).toBe('Aatrox');
   });
-  it('Dado la muestra, si pedimos el campeon Morgana debería dar un arreglo vacío', () => {
-    expect(window.lol.sortByDifficulty(0, dataToArray).name).toBe(undefined);
-  });
 });
 
 //Reduce
