@@ -71,8 +71,8 @@ La tipografía seleccionada corresponde a la familia **adobe-garamond-pro**, la 
 El sitio web está disponible para desktop y mobile contando con un diseño responsive por lo que su navegación se adapta a diversos dispositivos. 
 
 ### Desktop
-
-
+![desktop](https://github.com/Cristalgarcia/cdmx-2019-01-bc-core-data-lovers/blob/rama-cris/src/assets/Interfaz_desktop.PNG)
 
 ### Mobile
+![mobile](https://github.com/Cristalgarcia/cdmx-2019-01-bc-core-data-lovers/blob/rama-cris/src/assets/Interfaz_mobile.PNG)
 
