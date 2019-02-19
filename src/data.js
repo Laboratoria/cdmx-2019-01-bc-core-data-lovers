@@ -13,16 +13,19 @@ window.pokesaurius = {
         return 1;
       } else {
         return -1;
+     
       }
     })
     return (orderPokemonNAme)
   },
 
 
-  //   // getPokemonById:(data, getIdElement) =>{
-  //     const pokemon = data.filter(element => element.id == getIdElement);
-  //     return pokemon;
-  // }
+  
+  //getPokemonById:(data, getIdElement) =>{
+   // const pokemon = data.filter(element => element.id == getIdElement);
+   // console.log(pokemon);
+    
+    //return pokemon;
 
 
 }
