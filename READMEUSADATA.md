@@ -1,15 +1,18 @@
 ##DataLovers Personas lesionadas dependiendo su medio de transporte
 
-##Preámbulo 
-En el gremio de los especialistas, sociedad civil, académicos o curiosos de lo urbano, saben que un factor importante para entender lo que acontece en ellas, y especialmente en temas de seguridad vial, son las bases de datos. Tener bases de datos homologadas de percances viales es fundamental para evaluar políticas públicas y proponer soluciones. 
-Los problemas a los que nos enfrentamos
-Durante todo el proceso de desarrollo de esta aplicación web nos enfrentamos a diferentes dificultades entre las más relevantes fue saber procesar la data para generar nuevos datos (en este caso relevantes al usuario) e identificar las funciones precisas para devolver los datos necesarios.
-La manipulación del DOM, es importante tener muy clara la estructura del documento para poder avanzar, si no hay retrocesos que pueden demorar mucho.
+##Preámbulo
+En el gremio de los especialistas, sociedad civil, académicos o curiosos de lo urbano, se sabe que un factor importante para entender lo que acontece en las ciudades, especialmente en temas de seguridad vial, son las bases de datos.
+El tener bases de datos homologadas de percances viales es fundamental para evaluar políticas públicas y proponer soluciones.
+
+###Problemas a los que nos enfrentamos
+
+Durante el proceso de desarrollo de esta aplicación web nos enfrentamos a diversas dificultades, entre las más relevantes destaca el aprender a procesar la data para generar nuevos datos que sean relevantes para el usuario, para lo cual tuvimos que aprender a identificar y aplicar las funciones para devolver los datos necesarios.
+De igual manera, nos dimos a la tarea de ordenar el código para facilitar el entendimiento; para lo cual separamos las funciones puras del DOM, esto con la finalidad de poder testear las funciones y simplificarlas.
 Por último, la coordinación de tiempo derivado del trabajo en equipo y la falta de práctica de uso de GITHUB colaborativo. Sin embargo, creemos que es una tarea que se tiene que ir aprendiendo conforme a la práctica.
 
-##Lo aprendido
+###Lo aprendido
 
-A trabajar en equipo y mejorar nuestra comunicación dentro del mismo. 
+A trabajar en equipo y mejorar nuestra comunicación dentro del mismo.
 Aprender a poner en práctica algunas de las técnicas fundamentales de las distintas fases del proceso del Design Thinking.
 Manipulación de datos.
 Iteración de datos complejos.
@@ -19,41 +22,40 @@ Web responsive design.
 Sintaxis y uso de tests.
 
 ##Metodología, proceso de diseño e implementación de UX
-Para el presente proyecto incorporamos la metodología Design Thinking, que a su vez es una metodología ágil que nos ayuda a adaptarnos fácilmente a los cambios e imprevistos que surgieron en los tres sprints de duración del proceso de diseño. 
+Para el presente proyecto incorporamos la metodología Design Thinking;la cual es una metodología ágil que nos ayuda a adaptarnos fácilmente a los cambios e imprevistos que surgieron en los tres sprints de duración del proceso de diseño.
 (imagen png proceso Design Thinking)
 UX Research
-Un método utilizado fue la búsqueda de soluciones análogas a la misma problemática de nuestro usuario. Estas son experiencias de interfaz y de usuario previas con problemas similares. La visualización de la información o de data es un tema que popularizado por la transversalidad de usuarios que recurren a ellas. Es por eso, que más empresas y manejadores de datos deben implementar interfaces que ayuden a la interpretación de la misma, así como que facilite su acceso, manejo y entendimiento. 
-Ejemplos de visualizadores de data existen bastantes últimamente ya que existen herramientas que tienen gráficas predeterminadas que sólo requieren que se le vincule la base de datos. 
+El método utilizado para la búsqueda de soluciones análogas a la problemática de nuestro usuario fueron las metodologías ágiles. mediante las cuales dimos solución a los diferentes problemas de visualización de los datos a los que se enfrentaban los usuarios.
+Teniendo en cuenta la importancia que tiene tanto a nivel empresa, como a nivel de investigación el uso de interfaces que permitan el manejo y entendimiento de la información nos dimos a la tarea de brindar al usuario herramientas, como gráficas y tablas, que le faciliten el análisis de los datos.
 (imagen de bases de datos)
- 
-Durante la búsqueda se encontraron MindSets útiles para implementar en nuestro desarrollo como son:
 
-Barra de menú lateral izquierda: Es un menú que puede desplegarse para hacerse más específico o también retraerse para permitir visualizar toda la información de la pantalla, el usuario promedio se ha adaptado a este tipo de menú desde la interfaz de Facebook por lo que su implementación puede cortar la brecha de curva de aprendizaje para el desarrollo de la solución.
+Durante la búsqueda se encontraron herramientas útiles para implementar en nuestro desarrollo.
 
-Scroll Infinito: Otro regalo de la interfaz de Facebook, el usuario no encuentra molestia alguna en visualizar la información mediante un scroll infinito, de hecho lo prefiere a un refrescamiento de pantalla.
+El posicionamiento del menú permite al usuario una interacción más sencilla, pues su localización familiar le permite reconocerlo a simple vista.
 
-De Mayor a menor: En los DashBoards se entiende que la información se verá presentada de lo general a lo particular por lo que el usuario siempre tendrá a primera vista información global antes de algo particular, si no es que lo predeterminó en algún setting.
+Al omitir el scroll infinito permite al usuario acceder a la información que desea conocer de forma rápida y sin la necesidad de saturarse con datos que no son de su interés en el momento.
+
+De lo particular a lo general: la forma de presentar la información se da de dos formas diferentes. En primera instancia se presenta el acceso a los datos que hacen referencia a un modo particular de transporte. La segunda forma permite conocer los datos de los 5 medios en un año especifico.
 
 ##Los usuarios y clientes
 
 Historias de usuarios:
 
-1. saber el número de lesionados(as) por modo de transporte del año 2001 al 2016. 
+1.  Como ciudadana(o) estadounidense quiero una aplicacion que me permita comparar por año el número de lesionados en los cinco diferentes modos de transportes urbanos.
+2. saber el número de lesionados(as) por modo de transporte del año 2001 al 2016.
 
-2. como ciudadana(o) estadounidense quiero una aplicación que me permita comparar por año el número de lesionados en los cinco diferentes modos de transportes urbanos. 
 
 ¿Quiénes son los principales usuarios de producto?
 
-Especialistas en espacio público y movilidad urbana que quieren estudiar los datos para poder hacer conjeturas, hipótesis para la creación de futuras políticas públicas en torno a medios de transporte.  Mencionan que los datos, así como su interpretación y lectura son fundamentales para que existan leyes de movilidad que den prioridad a los actores más vulnerables.
-
+Especialistas en espacio público y movilidad urbana que quieren estudiar los datos para poder hacer conjeturas, hipótesis para la creación de futuras políticas públicas en torno a medios de transporte.  Para quienes los datos, así como su interpretación y lectura son, fundamentales para que existan leyes de movilidad que den prioridad a los actores más vulnerables.
 
 ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 
-Entender las acciones tomadas a partir del número de incidentes viales del 2006 a la fecha. 
+Entender las acciones tomadas a partir del número de incidentes viales del 2001 a la fecha.
 
 ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 
-Queremos comparar los incidentes viales de los últimos 10 años que es cuando a nivel mundial se ha intentado hacer un cambio de paradigma sobre cómo estamos construyendo las ciudades. Si bien existe el factor humano que puede, los incidentes podrían prevenirse si existen políticas que cuidan la vida de quienes conducen los medios de transporte: las personas. 
+Queremos comparar los incidentes viales de los últimos años, que es cuando a nivel mundial se ha intentado hacer un cambio de paradigma sobre cómo estamos construyendo las ciudades. Si bien existe el factor humano que puede, los incidentes podrían prevenirse si existen políticas que cuidan la vida de quienes conducen los medios de transporte: las personas.
 
 ¿Cuándo utilizan o utilizarían el producto?
 
@@ -67,24 +69,24 @@ Alinear expectativas con el usuario de lo que espera del proyecto
 
 ##Síntesis de problemáticas a resolver:
 
-Se requiere de un nuevo sistema de procesamiento de información. En términos de UX (experiencia de usuario) y claridad de lo que se envía o pretende compartir. 
-Se requiere un sistema que traduzca esa información en una vista más útil. 
-Se requiere que todo lo anterior se traduzca en una base de datos, visualización de la información. 
+Se requiere de un nuevo sistema de procesamiento de información. En términos de UX (experiencia de usuario) y claridad de lo que se envía o pretende compartir.
+Se requiere un sistema que traduzca esa información en una vista más útil.
+Se requiere que todo lo anterior se traduzca en una base de datos, visualización de la información.
 Es importante acceder desde un dispositivo móvil pero principalmente computadora porque generalmente se trabaja desde el escritorio.
-Información importante: poder filtrar por modo de transporte y después verlo de manera general para poder comparar el número de percances entre modos. 
+Información importante: poder filtrar por modo de transporte y después verlo de manera general para poder comparar el número de percances entre modos.
 Poder descargar la base de datos excel.
 No interesa que sea increíble, interesa que sea fácil de leer.
-Los datos más relevantes en los estudios urbanos son precisamente los modos hegemónicos de transporte en las ciudades: peatones, usuarios de transporte público, ciclistas, motociclistas, automovilistas. 
+Los datos más relevantes en los estudios urbanos son precisamente los modos hegemónicos de transporte en las ciudades: peatones, usuarios de transporte público, ciclistas, motociclistas, automovilistas.
 
 ¿Cuáles crees que son los datos más importantes a tener en cuenta para el DataByMode?
 
-Incidentes por los cinco modos de transporte urbanos más usados: peatones, ciclistas, usuarios de transporte público, motociclistas y automovilistas. 
+Incidentes por los cinco modos de transporte urbanos más usados: peatones, ciclistas, usuarios de transporte público, motociclistas y automovilistas.
 Datos generales de los cinco modos de transporte por año
 Datos de los últimos veinte años
 
 ##Base de Datos:
 
-La data proporcionada para este ejercicio es un archivo JSON que debemos implementar en un servidor local o desde un link en un servidor externo. Esta data tipo árbol cuenta con información dentro de objetos y arreglos por año (desde 1960) y por veinte modos de transporte que va desde aéreo, marítimo y terrestre.
+La data proporcionada para este ejercicio es un archivo JS que debemos implementar en un servidor local o desde un link en un servidor externo. Esta data tipo árbol cuenta con información dentro de objetos y arreglos por año (desde 1960) y por veinte modos de transporte que va desde aéreo, marítimo y terrestre.
 
 ##Ideas de prototipado:
 
@@ -95,21 +97,23 @@ La data proporcionada para este ejercicio es un archivo JSON que debemos impleme
 Los recursos utilizados en la implementación del proyecto utilizamos:
 
 - CSS para realizar el diseño y estilo de la página
-- Realizamos investigación sobre cómo manejar Fetch, JSON. Todo esto de la mano de las sesiones de Office Hours con los coaches.
+- JS para la interacción  de la página
+- HTML para dar forma y presentar la información
 - Procesadores de texto Atom y Visual Studio Code.
 - LMS de Laboratoria
-- Figma para sketches de alta fidelidad. 
+- Figma para sketches de alta fidelidad.
+- Google Charts para las gráficas
 
 ##Experiencia de usuario
 
-MENU: El menú sidebar es sencillo y collapsable en dispositivos móviles, permite tener acceso a los distintos modos de transporte.
+MENÚ: El menú sidebar es sencillo y colapsable en dispositivos móviles, permite tener acceso a los distintos modos de transporte.
 
-BOTONES: Colocamos la información destacada a primera vista y en una misma página para que pueda hacer scroll libremente o hacer desplazamiento a la información que sea de su interés.
+BOTONES: Colocamos la información destaca a primera vista y en una misma página para que pueda tener acceso a la información que sea su interés.
 
-RESPONSIVE: Ya que es información que en ciertos usuarios convendría tenerse a la mano, la aplicación puede visualizarse tanto en dispositivos móviles como en desktop. Sin embargo, fue inicialmente pensada para tener una mejor visualización desde un dispositivo de escritorio.
+RESPONSIVE: Ya que es información que en ciertos usuarios convendría tener a la mano, la aplicación puede visualizarse tanto en dispositivos móviles como en desktop. Sin embargo, fue inicialmente pensada para tener una mejor visualización desde un dispositivo de escritorio.
 
 Elena Hernández
-Filósofa
+Lic. en Filosofía  Laboratoria 7ta Generación Sede CDMX
 
 Talía González y González
 Diseñadora Industrial Laboratoria 7ta Generación Sede CDMX
