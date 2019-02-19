@@ -11,6 +11,8 @@ const selOption = document.getElementById('filtrar-pais');
 const orderAscDat = document.getElementById('order');
 const maximo = document.getElementById('maximo');
 const nameIndicators = document.getElementById('filtrar-indicador');
+const valorMAx = document.getElementById('valorMAx');
+const social = document.getElementById('social');
 const reporte = document.getElementById('reporte');
 let contenido = document.getElementById('contenido');
 const valorMAx = document.getElementById('valorMAx');
@@ -18,12 +20,14 @@ const social = document.getElementById('social');
 let buttonLimpiar = document.getElementById('limpiar');
 let buttonContact = document.getElementById('contact');
 let buttonProp = document.getElementById('prop');
+const change = document.getElementById('change')
 let ctx = document.getElementById("myChart").getContext("2d"); //contenido grafica
 let valorAnioX = [];
 let valorPorcentajeY = [];
 let pais;
 let viewMax;
 let contador = 0;
+
 
 const mostrarMenu = () => { //Funcion mantiene activo o desactivo el menu, segun el valor del contador
   if (contador == 0) {
@@ -84,6 +88,7 @@ const showProp = () => {
   reporte.style.display = 'none';
   valorMAx.style.display = 'none';
   contenido.style.display = 'none';
+  social.style.display= 'none';
   box3.classList.add('hide');
   box2.classList.add('hide');
   box4.classList.add('hide');
@@ -101,7 +106,7 @@ const filtraIndPais = () => {
   //console.log(select);
   pais = window.worldBank.filtroPais(baseDatos, selectPais, indicador); //Se llama la funcion window.filtroPais con el valor de selec
   recorrerObjeto(pais);
-
+  
   valorMAx.style.display = 'none';
 }
 nameIndicators.addEventListener('change', filtraIndPais); //funcion recorre el objeto
@@ -110,7 +115,7 @@ nameIndicators.addEventListener('change', filtraIndPais); //funcion recorre el o
 const recorrerObjeto = (pais) => {
   reporte.style.display = 'block';
   let respuesta = "<li>" + "<font size=4.5>" + "<b>" + "Año " + "&nbsp" + "&nbsp" + "  Valor(%)" + "</font>" + "</li>" + "</b>" + "<br>";
-
+  
   for (let i in pais) //for iteracon cada elemento del objeto que se almacena en la variable pais
   {
     respuesta += "<li>" + "<b>" + i + ": " + "&nbsp;&nbsp;&nbsp;" + " </b>" + pais[i].toFixed(2) + "%" + "</li>" + "<br>"; //cada elemnto del objeto se muestra en li, usando toFixed para delimitar decimales
@@ -139,19 +144,19 @@ const prtOrder = (orderObj) => {
 }
 
 const ptrMax = (selcValor, maxObj) => { //imprime max/min
-
+  
   valorMAx.style.display = 'block';
   viewMax;
   if (selcValor === 'max') {
     viewMax = "<b>" + "El valor maximo es: " + maxObj.toFixed(2) + "%" + "</b>";
   }
-
+  
   if (selcValor === 'min') {
     viewMax = "<b>" + "El valor minimo es: " + maxObj.toFixed(2) + "%" + "</b>";
   }
-
+  
   document.getElementById('valorMAx').innerHTML = viewMax;
-
+  
   return maxObj;
 }
 
@@ -195,8 +200,10 @@ const DatGraph = () => { //funcion llenado de grafica con arrayX y arrayY
   let arrayYear = valorAnioX;
   let arrayValors = valorPorcentajeY;
   let prtGrap = ctx;
-
+  
   let almacenaGraf = window.worldBank2.VerGrafica(arrayYear, arrayValors, prtGrap);
-
+  
   return almacenaGraf;
 }
+
+change.addEventListener('click', muestra_indicador)
