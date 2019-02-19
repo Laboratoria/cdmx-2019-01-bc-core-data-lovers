@@ -19,16 +19,16 @@ btngetName.addEventListener("click", () => {
   sectionName.style.display = "none";
   pantalla2.style.display = "block"
 
-  
 
-  
+
+
 
   })
-  
 
-  
-  
-  
+
+
+
+
 const printData = (data) => {
   root.innerHTML = '';
 
@@ -49,7 +49,7 @@ const printData = (data) => {
 
     root.insertAdjacentHTML("beforeend", namePokemon);
 
-    
+
   })
 }
 
