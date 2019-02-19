@@ -1,6 +1,6 @@
 
 const getData = require('../src/data.js');
-require('../src/data/injuries/injuries.js')
+require('../src/data/injuries/injuries.js');
 
 describe('getData', () => {
       it('is a object', () => {
@@ -25,4 +25,14 @@ describe('getData', () => {
         it('should return [{Total_Injured_Persons_Bus_Occupants: 15427, Total_Injured_Persons_Motorcyclists: 60236, Total_Injured_Persons_Passenger_Car_Occupants: 1926625, Total_Injured_Persons_Pedalcyclists: 45277, Total_Injured_Persons_Pedestrians: 77619}', () => {
               expect(window.data.consult(window.INJURIES,'2001-01-04')).toEqual({'Total_Injured_Persons_Bus_Occupants': 15427, 'Total_Injured_Persons_Motorcyclists': 60236, 'Total_Injured_Persons_Passenger_Car_Occupants': 1926625, 'Total_Injured_Persons_Pedalcyclists': 45277, 'Total_Injured_Persons_Pedestrians': 77619});
               });
+
+      describe('data.getDataAsArray', () => {
+          it('is a funtion',() => {
+            expect(typeof window.data.getDataAsArray).toBe('function');
+            });
+          });
+          it('should return  [[2001, undefined], [2002, undefined], [2003, undefined], [2004, undefined], [2005, undefined], [2006, undefined], [2007, undefined], [2008, undefined], [2009, undefined], [2010, undefined], [2011, undefined], [2012, undefined], [2013, undefined], [2014, undefined], [2015, undefined], [2016, undefined]]', () => {
+              expect(window.data.getDataAsArray(window.INJURIES,'2001-01-04','Total_Injured_Persons_Bus_Occupants')).toEqual( [[2001, undefined], [2002, undefined], [2003, undefined], [2004, undefined], [2005, undefined], [2006, undefined], [2007, undefined], [2008, undefined], [2009, undefined], [2010, undefined], [2011, undefined], [2012, undefined], [2013, undefined], [2014, undefined], [2015, undefined], [2016, undefined]]);
+              });
+
       });
