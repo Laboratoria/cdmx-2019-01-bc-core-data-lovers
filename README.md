@@ -1,4 +1,4 @@
-#Pokesaurius
+###Pokesaurius
 
 Pokémon GO fue un ¡boom! en el verano de 2016, llegó a tener más de 28 millones de usuarios. El hecho de poder salir a cazar pokémon con tus amigos y tener la oportunidad de conquistar los gimnasios fue realmente llamativo e innovador. 
 Pero es probable que nos preguntemos ¿quién juega Pokémon GO hoy en día?
@@ -124,7 +124,7 @@ implementadas en el archivo `data.js`.
 
 
 ### Experiencia de usuario (UX) y Diseño
-Si deseas conocer más acerca del proceso de diseño, nuestro prototipo de alta y baja fidelidad, así como las historias de usuario de **"Pokesaurius"** te recomendamos visitar esta liga.
+Si deseas conocer más acerca del proceso de diseño, nuestro prototipo de alta y baja fidelidad, así como las historias de usuario de **"Pokesaurius"** te recomendamos visitar esta liga[Google Document(https://docs.google.com/document/d/1DiJ3VJ9M7rcssKCINQF_8iUfpAgVJ_de6dcB_vpt9yU/)]
 
 ##Autores
 Karla Lorena Bellacetin Guido.
@@ -140,7 +140,7 @@ Lorena.
 Gracias Lorena por tu pasión, compromiso con el proyecto, tu calidez alegría y energía que sin duda se vio reflejada en la sinergia y el desarrollo del proyecto. Mil gracias por tu paciencia.
 A todas mis compañeras por su ayuda, apoyo y alegría de compartir.
 A los coaches por su entrega, paciencia y disposición. Gracias por tanto.
-Janet
+Janet.
 
 
 # Data Lovers
@@ -657,10 +657,10 @@ compañera:
 - [x] No hace uso de `this`.
 - [x] Pasa linter (`npm pretest`)
 - [x] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
 - [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
 - [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
 - [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
