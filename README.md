@@ -14,13 +14,12 @@
 
 ## Preámbulo
 
-Cada año, 12 millones de niñas se casan antes de los 18 años. A nivel mundial, 1 de cada 5 niñas es madre antes de cumplir dicha edad.
-
 Todas los niñas merecen alcanzar su máximo potencial, pero la desigualdad de género que permea su vida y la de sus cuidadores impide que esto sea realidad.
 
 La desigualdad de género está presente en el día a día de niñas y niños, tanto en sus hogares como en sus comunidades, en los libros de texto, los medios de comunicación y entre los hombres y mujeres que cuidan de ellos.
 
 De la misma manera, la distribución desigual de los quehaceres domésticos socializa a los niños y les hace creer que la única función de las mujeres es hacerse cargo del hogar, lo cual limita el cambio generacional y reduce las ambiciones de las niñas.
+Cada año, 12 millones de niñas se casan antes de los 18 años. A nivel mundial, 1 de cada 5 niñas es madre antes de cumplir dicha edad.
 
 Los niños y niñas que son testigos de violencia de género en sus hogares tienen una mayor tendencia a imitar estas dinámicas violentas en sus relaciones adultas, ya sea como autores o víctimas.
 
@@ -48,7 +47,7 @@ Aprovecha su presencia mundial y las alianzas con sus asociados para fomentar la
 
 ### Historias de usuario
 
-Al realizar las historias de nuestros usuarios, encontramos que las mas recurrentes fueron:
+Al realizar las historias de nuestros usuarios, encontramos que las más recurrentes son:
 
 - Usuario 1: Necesito ver un menú con los países de América Latina y sus niveles en educación.
 
@@ -93,6 +92,16 @@ El prototipo de alta fidelidad sufrió cambios a lo largo de las iteraciones del
 #### Testeos de usabilidad
 Se realizaron encuestas principalmente a profesionales y voluntarios que trabajan en asociaciones no lucrativas. Con el objetivo de conocer su principal impresión del producto.
 
+Los principales problemas que se detectaron en las pruebas de usabilidad fueron:
+
+-Páginas muy complejas de manejar.
+
+-Páginas con diseño poco atractivo.
+
+-Páginas con mucha información.
+
+-Páginas con información no jerarquizada.
+
 ![Encuesta 1](./src/assets/images/usabilidad_1.png)
 ![Encuesta 2](./src/assets/images/usabilidad_2.png)
 ![Encuesta 3](./src/assets/images/usabilidad_3.png)
@@ -103,14 +112,13 @@ Se realizaron encuestas principalmente a profesionales y voluntarios que trabaja
 
 ### Pruebas unitarias
 
-El _boilerplate_ de este proyecto no incluye pruebas unitarias, pero esperamos
-que escribas tus propias pruebas unitarias para las funciones encargadas de
-_procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-Para ello te recomendamos implementar las siguientes funciones en el archivo
+Se implementaron pruebas unitarias para las funciones encargadas de
+_procesar_, _filtrar_ y _ordenar_ la data.
+Para ello se implementaron las siguientes funciones en el archivo
 `src/data.js`:
 
-- `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+- `filterData(data, condition)`: esta función `filter` o filtrar recibe la
+  data, y nos retorna aquellos datos que sí cumplan con la condición.
 
 - `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
   recibe tres parámetros.
@@ -119,21 +127,6 @@ Para ello te recomendamos implementar las siguientes funciones en el archivo
   la data se quiere ordenar.
   El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
   ascendente o descendente.
-
-- `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
-
-Estas son propuestas de funciones que podrías implementar.
-
-El archivo `src/data.js` debe tener una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_).
-
-**Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM**. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
 
 ## Consideraciones técnicas
 
