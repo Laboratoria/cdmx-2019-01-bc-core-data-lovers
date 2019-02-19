@@ -13,12 +13,22 @@ const forWeight = document.getElementById("forWeight");
 //const Flying = document.getElementById('Flying')
 
 btngetName.addEventListener("click", () => {
+
   const name = trainerName.value;
   bienvenido.innerHTML = '¡Hola entrenador ' + name + '. Bienvenido!';
   sectionName.style.display = "none";
   pantalla2.style.display = "block"
-})
 
+  
+
+  
+
+  })
+  
+
+  
+  
+  
 const printData = (data) => {
   root.innerHTML = '';
 
@@ -39,6 +49,7 @@ const printData = (data) => {
 
     root.insertAdjacentHTML("beforeend", namePokemon);
 
+    
   })
 }
 
