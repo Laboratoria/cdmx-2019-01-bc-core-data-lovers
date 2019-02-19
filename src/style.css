@@ -95,6 +95,9 @@ button[type="submit"]:hover {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+color: black;
+
+
 }
 
 .hide {
@@ -198,10 +201,15 @@ main {
 }
 
 
+
+
 /* For mobile phones: */
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .tarjeta{
-    width: 100%;
+    width: 80%;
     display: block;
   }
+.cajitas {
+  width: 40%;
+}
 }
