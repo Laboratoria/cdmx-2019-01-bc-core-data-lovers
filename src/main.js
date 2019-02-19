@@ -12,9 +12,9 @@ const printType= document.getElementById('printType');
 const alphabeticOrderButton=document.getElementById('totales');
 const menuToogle=document.getElementById('menu-toogle');
 const aside=document.getElementById('aside');
-const printIndividualCard=document.getElementById('print-individual-card');
-const myModal=document.getElementById('my-modal');
-const pokemonModal=document.getElementById('pokemon-modal-${element.id}');
+//const printIndividualCard=document.getElementById('print-individual-card');
+//const myModal=document.getElementById('my-modal');
+//const pokemonModal=document.getElementById('pokemon-modal-${element.id}');
 
 
 
@@ -28,7 +28,6 @@ const print=(data)=>{
     let totalWeight= 0;
     data.forEach(element => {
         totalWeight += parseFloat(element.weight);
-        let id=element.id
         let result = `<div id="${element.id}" class="wrapper">
         <div class="pokemon-card"> 
         <div class="pokemon-card-image">
@@ -37,6 +36,7 @@ const print=(data)=>{
         <div class="box-card">
         <p>Número:${element.num}</p>
         <p>${element.name}</p>
+        <p class="weight-hide">Peso:${element.weight}</p>
         </div>
         </div>
         </div>`
@@ -81,17 +81,6 @@ menuToogle.addEventListener('click',()=>{
     aside.classList.remove('hideElement');
 });
 
-
-
-
-
-
-
-
-
-
-
-
 // const printPokemonValues=(data)=>{
 // data.forEach(element => {
 //         let result= `<div class="wrapper-individual">
@@ -110,16 +99,16 @@ menuToogle.addEventListener('click',()=>{
 //         printIndividualCard.innerHTML=result;      
 // } );
     
-};
 
 
-const wrapper = document.getElementsByClassName('wrapper')
+const wrapper = document.getElementsByClassName('wrapper');
 
 for(let i =0; i< wrapper.length; i++ ){
     wrapper[i].addEventListener('click' , () => {
        const getIdElement=wrapper[i].id;
         const modalSelected= window.pokesaurius.pokemonModal(data, getIdElement);
-        console.log(modalSelected);
+       // console.log(modalSelected);
+       return modalSelected;
         
     });
 }

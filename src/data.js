@@ -12,8 +12,7 @@ window.pokesaurius = {
     const orderPokemonNAme=data.sort((a,b)=> {
       if(a.name > b.name){
         return 1;
-      }
-      if(a.name < b.name){
+      }else{
         return-1;
       }
     })
@@ -21,11 +20,11 @@ window.pokesaurius = {
   },
 
 
-  pokemonModal:(data, getIdElement) =>{
-    const pokemonId = data.filter(element => element.id==getIdElement);
-    console.log(pokemonId)
-    return pokemonId;
-}
+  //pokemonModal:(data, getIdElement) =>{
+  //  const pokemonId = data.filter(element => element.id==getIdElement);
+    //console.log(pokemonId)
+  //  return pokemonId;
+//}
 
 
 
