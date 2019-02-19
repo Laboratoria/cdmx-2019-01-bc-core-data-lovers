@@ -43,7 +43,7 @@ const printYears = (resultYear) => {
       let element = resultYear[key];
       const year = key;
       if (element !== "") {
-        let indicatorDataYear = `<p>Año: <span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`
+        let indicatorDataYear = `<p>Año: <span>${year}   </span> <span><b>${parseFloat(element).toFixed(2)}%</b></span></p>`
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }
 
@@ -54,7 +54,7 @@ const printYears = (resultYear) => {
 const prueba = () => {
   const sortRadio = document.getElementsByName("sort");
   let matchYear = event.target.value;
-  let resultYear = window.WorldBank.percentAndYear(dataFilter, matchYear);
+  let resultYear = window.WorlDbank.percentAndYear(dataFilter, matchYear);
   printYears(resultYear);
   let arrResultYear = [];
   for (let i = 0; i < sortRadio.length; i++) {
@@ -88,7 +88,7 @@ const printYears2 = (resultYear) => {
       let element = resultYear[key];
       const year = key;
       if (year !== "") {
-        let indicatorDataYear = `<p>Año: <span>${element}   </span> <span>${parseFloat(year).toFixed(2)}%</span></p>`
+        let indicatorDataYear = `<p>Año: <span>${element}   </span> <span><b>${parseFloat(year).toFixed(2)}%</b></span></p>`
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }
 
