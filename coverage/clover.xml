@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1550366719488" clover="3.2.0">
-  <project timestamp="1550366719488" name="All files">
-    <metrics statements="14" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0" elements="26" coveredelements="1" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1">
+<coverage generated="1550559484287" clover="3.2.0">
+  <project timestamp="1550559484287" name="All files">
+    <metrics statements="17" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="5" elements="29" coveredelements="21" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1">
       <file name="data.js" path="C:\Users\Sophismata\Desktop\Laboratoria\Proyecto-dos\cdmx-2019-01-bc-core-data-lovers\src\data.js">
-        <metrics statements="14" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="17" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="5"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
         <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="116" type="stmt"/>
+        <line num="22" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="183" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="169" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
       </file>
     </metrics>
   </project>

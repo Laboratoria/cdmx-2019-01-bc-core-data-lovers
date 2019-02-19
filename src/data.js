@@ -14,13 +14,17 @@ window.WorldBank = {
     });
     return newData
   },
-  sortPercentAndYear: (arrResultYear, sortValue) => {
-      if (sortValue === "upward") {
-        arrResultYear.sort((a,b)=>a[1]- b[1]);
-      } else if(sortValue === "falling") {
-        arrResultYear.sort((a,b)=>(b[1]-a[1]));
+  sortPercentAndYear: (objOrder, sortValue) => {
+    let newArrResultYear = [];
+    for (let key in objOrder) {
+        newArrResultYear.push([key, objOrder[key]]);
       }
-    return arrResultYear  
+      if (sortValue === "upward") {
+        newArrResultYear.sort((a,b)=>a[1]- b[1]);
+      } else if(sortValue === "falling") {
+        newArrResultYear.sort((a,b)=>(b[1]-a[1]));
+      }
+    return newArrResultYear  
   }
 };
 

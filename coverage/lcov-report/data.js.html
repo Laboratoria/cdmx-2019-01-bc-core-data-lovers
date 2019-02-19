@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">6.25% </span>
+        <span class="strong">78.95% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/16</span>
+        <span class='fraction'>15/19</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>3/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">83.33% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>5/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">7.14% </span>
+        <span class="strong">76.47% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/14</span>
+        <span class='fraction'>13/17</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -73,29 +73,37 @@
 28
 29
 30
-31</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+31
+32
+33
+34
+35</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">116x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">183x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">169x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -105,13 +113,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//Objeto global
 window.WorldBank = {
-  dataCountries: <span class="fstat-no" title="function not covered" >(d</span>ata, countries) =&gt; { //Función para extraer la data por país. 
-  let dataByCountries = <span class="cstat-no" title="statement not covered" >data[countries].indicators </span>//Obtener los objetos por país.
-<span class="cstat-no" title="statement not covered" >  return dataByCountries;</span>
+  dataCountries: (data, countries) =&gt; { //Función para extraer la data por país. 
+  let dataByCountries = data[countries].indicators //Obtener los objetos por país.
+  return dataByCountries;
   },
-  percentAndYear:<span class="fstat-no" title="function not covered" >(d</span>ata, matchYear) =&gt;{ // Función para integrar al select los indicadores educativos.
-    let newData= <span class="cstat-no" title="statement not covered" >{} </span>//Crear objeto vacío para agregar la condición de búsqueda por palabra: educación.
-<span class="cstat-no" title="statement not covered" >    data.forEach(<span class="fstat-no" title="function not covered" >ob</span>jeto =&gt; { //Recorre el objeto-data.</span>
+  percentAndYear:(data, matchYear) =&gt;{ // Función para integrar al select los indicadores educativos.
+    let newData= {} //Crear objeto vacío para agregar la condición de búsqueda por palabra: educación.
+    data.forEach(<span class="fstat-no" title="function not covered" >ob</span>jeto =&gt; { //Recorre el objeto-data.
 <span class="cstat-no" title="statement not covered" >      if(objeto.indicatorName === matchYear){ //Entra al objeto, busca el indicador por nombre y extrae la coincidencia.</span>
 <span class="cstat-no" title="statement not covered" >        newData = objeto.data </span>//Incorpora a newData el nuevo objeto filtrado.
 <span class="cstat-no" title="statement not covered" >        return newData </span>
@@ -119,13 +127,17 @@ window.WorldBank = {
     });
 <span class="cstat-no" title="statement not covered" >    return newData</span>
   },
-  sortPercentAndYear: <span class="fstat-no" title="function not covered" >(a</span>rrResultYear, sortValue) =&gt; {
-<span class="cstat-no" title="statement not covered" >      if (sortValue === "upward") {</span>
-<span class="cstat-no" title="statement not covered" >        arrResultYear.sort(<span class="fstat-no" title="function not covered" >(a</span>,b)=&gt;<span class="cstat-no" title="statement not covered" >a[1]- b[1])</span>;</span>
-      } else <span class="cstat-no" title="statement not covered" >if(sortValue === "falling") {</span>
-<span class="cstat-no" title="statement not covered" >        arrResultYear.sort(<span class="fstat-no" title="function not covered" >(a</span>,b)=&gt;(<span class="cstat-no" title="statement not covered" >b[1]-a[1])</span>);</span>
+  sortPercentAndYear: (objOrder, sortValue) =&gt; {
+    let newArrResultYear = [];
+    for (let key in objOrder) {
+        newArrResultYear.push([key, objOrder[key]]);
       }
-<span class="cstat-no" title="statement not covered" >    return arrResultYear  </span>
+      if (sortValue === "upward") {
+        newArrResultYear.sort((a,b)=&gt;a[1]- b[1]);
+      } else <span class="missing-if-branch" title="else path not taken" >E</span>if(sortValue === "falling") {
+        newArrResultYear.sort((a,b)=&gt;(b[1]-a[1]));
+      }
+    return newArrResultYear  
   }
 };
 &nbsp;
@@ -139,7 +151,7 @@ window.WorldBank = {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Feb 16 2019 19:25:19 GMT-0600 (GMT-06:00)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 19 2019 00:58:04 GMT-0600 (GMT-06:00)
 </div>
 </div>
 <script src="prettify.js"></script>
