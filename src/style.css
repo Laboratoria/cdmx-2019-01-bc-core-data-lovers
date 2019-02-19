@@ -107,6 +107,10 @@ i {
   height: 38em;
 }
 
+.weight-hide{
+  display: none;
+}
+
 .content,
 .aside {
   background-color: rgba(209, 202, 254, 0.493);
@@ -287,6 +291,7 @@ p {
   .content {
     width: 83.5%;
     margin-left: 8%;
+    height: 136%;
   }
 
   .post {
@@ -353,13 +358,17 @@ p {
     padding: 10px;
     text-align: center;
   }
+ 
+  /*.weight-hide{
+    display: inline-block;
+  }*/
 
   .aside {
-    background: linear-gradient(130deg, #4AB583, #9284FF);
-    width: 255px;
-    height: 78%;
-    position: absolute;
-    right: 4.5%;
+    background:linear-gradient(130deg, #4AB583, #9284FF);
+  width: 255px;
+  height: 90%;
+  position: absolute;
+  right:4.5%;
   }
 
 }
