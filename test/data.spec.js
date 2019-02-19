@@ -129,6 +129,8 @@ for (const key in muestra.data) {
       title: element.title,
       id: element.id,
       splash: element.splash,
+      difficulty: element.info.difficulty,
+      attack: element.info.attack,
     }
     dataToArray.push(objetoVacio)
   }
@@ -178,7 +180,7 @@ it('Debería regresar un arreglo vacio con busqueda que coincida con tx', () =>{
   expect(result.length).toBe(0);
 })
 
-//filtro por dificultad ascendente
+/*//filtro por dificultad ascendente
 describe('Ordenar, devuelve un arreglo de campeones ordenado por dificultad', () =>{
   it('Es una función', () =>{
     expect(typeof window.lol.sortByDifficultyAsc).toBe('function');
@@ -192,23 +194,24 @@ describe('Ordenar, devuelve un arreglo de campeones ordenado por dificultad', ()
   it('Dado la muestra, si pedimos el personaje Amumu debería dar un arreglo vacío', () =>{
     expect(window.lol.sortByDifficultyAsc(dataToArray)[0].name.Amumu).toBe();
 
-})})
+})})*/
 
 //filtro por dificultad descendente
 describe('Ordenar, devuelve un arreglo de campeones ordenado por dificultad', () =>{
   it('Es una función', () =>{
-    expect(typeof window.lol.sortByDifficultyDsc).toBe('function');
+    expect(typeof window.lol.sortByDifficulty).toBe('function');
   });
   it('Dado la muestra, si ordena de manera descendente, Ahri es el primer elemento', () =>{
-    expect(window.lol.sortByDifficultyDsc(dataToArray)[1].name).toBe('Ahri');
+    expect(window.lol.sortByDifficulty(1, dataToArray)[0].name).toBe('Aatrox');
   });
-  it('Dado la muestra, si ordena de manera descendente, Aatrox es el segundo elemento', () => {
-    expect(window.lol.sortByDifficultyDsc(dataToArray)[0].name).toBe('Aatrox');
-  })
+  it('Dado la muestra, si ordena de manera ascendente, Ahri es el primer elemento', () =>{
+    expect(window.lol.sortByDifficulty(-1, dataToArray)[0].name).toBe('Ahri');
+  });
   it('Dado la muestra, si pedimos el personaje Amumu debería dar un arreglo vacío', () =>{
-    expect(window.lol.sortByDifficultyDsc(dataToArray)[0].name.Amumu).toBe();
+    expect(window.lol.sortByDifficulty(0, dataToArray)[0].name).toBe('Ahri');
 
 })})
+
 
 //filtro de selección de personaje
 
@@ -227,3 +230,12 @@ it('Debería devolver un arreglo del personaje Aatrox cuyo nombre coincida con e
     expect(element.id).not.toBe('Aatrox');
   
   }});
+
+  //Función que entrega el promedio de ataque de todos los campeones
+describe('Calcula el promedio de ataque de los campeones', () =>{
+  it('Es una función', () =>{
+    expect(typeof window.lol.averageAttack).toBe('function');
+  });
+  it('Debería retornar el promedio de ataque entre Aatrox y Ahri', () =>{
+    expect(window.lol.averageAttack(dataToArray)).toBe(parseFloat(5.5));
+  })})
