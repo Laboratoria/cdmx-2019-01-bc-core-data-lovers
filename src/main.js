@@ -155,25 +155,40 @@ const stats = document.getElementById('stats');
 const array = [];
 
 stats.addEventListener("click", () => {
-  
-  dataPokemon.forEach(element => {
+  DataFilter.forEach(element => {
+    const type = element.type[0];
     array.push(element.avg_spawns);
-    pokemones.innerHTML = "";
     const pokeStats = window.data.computeStats(array);
-    pokemones.innerHTML = `<p id="avg">El promedio en el que un pokemon aparece es: ${pokeStats} </p>`;
+    pokemones.innerHTML += `
+
+    <div class="modal fade" id="pokemon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+		    <div class="modal-content avg">
+          <div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          
+            <h2 class="modal-title">Did you know ...</h2>
+          </div>
+      
+          <div class="modal-body">
+          <p>${type} type pokemon on average apreciatte ${pokeStats} times compared to other pokemon </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+              Close
+            </button>
+          </div>
+
+		    </div>
+	    </div>
+    </div>`;
 
   });
-})
-  /* const result = array.reduce(suma = (previuosVal, actualVal ) =>{
-    return previuosVal + actualVal;
-  })
-  console.log(result);
+});
 
-  const promedio = result/array.length;
-  console.log(promedio);
- */
-
-//const promedio = document.getElementById('promedio');
 const search = document.getElementById('search');
 
 search.addEventListener("click", () => {
