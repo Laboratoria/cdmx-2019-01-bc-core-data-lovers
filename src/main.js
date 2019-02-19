@@ -128,7 +128,7 @@ if (ubication.includes('typePokemon.html')) {
   const drawChartCandy = () => {
     let data = google.visualization.arrayToDataTable([
       ['feature', 'maximum', 'average', 'minimum'],
-      ['candy count', resultCandy.maximum, resultCandy.average, resultCandy.minimum]
+      ['Candy count', resultCandy.maximum, resultCandy.average, resultCandy.minimum]
     ]);
 
     let options = {
@@ -145,7 +145,7 @@ if (ubication.includes('typePokemon.html')) {
   const drawChartSpawn = () => {
     let data = google.visualization.arrayToDataTable([
       ['feature', 'maximum', 'average', 'minimum'],
-      ['candy count', resultSpawn.maximum, resultSpawn.average, resultSpawn.minimum]
+      ['Spawn Chance', resultSpawn.maximum, resultSpawn.average, resultSpawn.minimum]
     ]);
 
     let options = {
@@ -162,7 +162,7 @@ if (ubication.includes('typePokemon.html')) {
   const drawChartAvg = () => {
     let data = google.visualization.arrayToDataTable([
       ['feature', 'maximum', 'average', 'minimum'],
-      ['candy count', resultAvg.maximum, resultAvg.average, resultAvg.minimum]
+      ['Avg Spawns', resultAvg.maximum, resultAvg.average, resultAvg.minimum]
     ]);
 
     let options = {
@@ -183,7 +183,7 @@ if (ubication.includes('typePokemon.html')) {
 
 
 
-//MENU 
+//MENU
 let menu = document.querySelector('#menu');
 let drawer = document.querySelector('nav');
 let outMenu = document.querySelector('nav');
