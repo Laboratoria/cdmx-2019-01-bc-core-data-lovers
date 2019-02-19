@@ -189,8 +189,8 @@ stats.addEventListener("click", () => {
   });
 });
 
-const search = document.getElementById('search');
+/* const search = document.getElementById('search');
 
 search.addEventListener("click", () => {
   alert('Se esta trabajando en esta sección')
-});
+}); */
