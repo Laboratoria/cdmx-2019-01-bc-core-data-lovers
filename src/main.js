@@ -65,7 +65,7 @@ const printData = (data) => {
 }
  //Evento que imprime toda la data en pokelist
 showPokemons.addEventListener("click", () => {
-  pantalla2.insertAdjacentHTML ( "beforeend",printData(dataPokemon));
+  printData(dataPokemon)
  
  })
 
