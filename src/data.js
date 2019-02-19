@@ -16,11 +16,9 @@ window.data = {
           } //for if If
         } //For IF
       } // For
-      // console.log(yearResult,userResult);
     return [yearResult, userResult]
   }, //Consult
   order: (injuriesBy, yearValue, userValue) => {
-    //const yearFound = injuriesBy.find(element => element.Year == yearValue);
     let yearFind = "";
       injuriesBy.forEach(element => {
       let year = element.Year;
@@ -28,21 +26,10 @@ window.data = {
       let bike = element.Total_Injured_Persons_Pedalcyclists;
       let walk = element.Total_Injured_Persons_Pedestrians;
       let transit = element.Total_Injured_Persons_Transit_Total;
-      //let allInjured = [moto, bike, walk, transit];
         if (yearValue === year && userValue === "all") {
             yearFind = [year.substr(0,4), moto, bike, walk, transit];
         }
       }) //ForEach
       return yearFind;
   },//Order
-  // ordenData: (yearValue, userValue) => {
-  //    //console.log(yearValue, userValue)
-  //    let ordered = [1, 4, 5, 6, 2, 7]
-  //    //let ordered = [newmoto, newbike, newpeaton, newauto]
-  //    const ordenData = ordered.sort((a, b) => {
-  //      a > b
-  //      return a > b
-  //    })
-  //    //console.log(ordenData)
-  //  }
 }; //window
