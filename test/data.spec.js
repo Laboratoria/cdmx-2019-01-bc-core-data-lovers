@@ -70,7 +70,7 @@ const pokemon = [{
   {
     "id": 104,
     "num": "104",
-    "name": "Cubone",
+    "name": " Cubone",
     "img": "http://www.serebii.net/pokemongo/pokemon/104.png",
     "type": [
       "Ground"
@@ -96,6 +96,8 @@ const pokemon = [{
   }
 ]
 
+const array = [69, 61, 22]
+
 
 describe('filterData', () => {
   it('is a function', () => {
@@ -107,14 +109,13 @@ describe('filterData', () => {
   })
 })
 
-
 describe('sortData', () => {
   it('is a function', () => {
     expect(typeof window.data.sortData).toBe('function');
   });
 
   it('return arr A-Z', () => {
-    expect(window.data.sortData(pokemon, "ascendente")[0].name).toEqual('Bulbasaur');
+    expect(window.data.sortData(pokemon, "ascendente")[1].name).toEqual('Bulbasaur');
   });
 
   it('return arr Z-A', () => {
@@ -122,9 +123,12 @@ describe('sortData', () => {
   })
 });
 
-/* describe('computeStats', () => {
+describe('computeStats', () => {
   it('is a function', () => {
     expect(typeof window.data.computeStats).toBe('function');
   });
+  it('Regresa 50.67', () => {
+    expect(window.data.computeStats(array)).toEqual("50.67");
+  })
 })
- */
+
