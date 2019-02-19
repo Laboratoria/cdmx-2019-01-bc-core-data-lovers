@@ -12,8 +12,6 @@ const printType= document.getElementById('printType');
 const alphabeticOrderButton=document.getElementById('totales');
 const menuToogle=document.getElementById('menu-toogle');
 const aside=document.getElementById('aside');
-const printIndividualCard=document.getElementById('print-individual-card');
-
 
 
 pokeballButton.addEventListener('click',()=> { // ocultar página de inicio//
@@ -26,6 +24,7 @@ const print=(data)=>{
     data.forEach(element => {
         totalWeight += parseFloat(element.weight);
         let result = `<div id="${element.id}" class="wrapper">
+   
         <div class="pokemon-card"> 
         <div class="pokemon-card-image">
         <img src="${element.img}">
@@ -96,10 +95,10 @@ menuToogle.addEventListener('click',()=>{
 //               </div>`
 //         printIndividualCard.innerHTML=result;      
 // } );
-    
+// };
 
 
-const wrapper = document.getElementsByClassName('wrapper');
+//const wrapper = document.getElementsByClassName('wrapper');
 
 for(let i =0; i< wrapper.length; i++ ){
     wrapper[i].addEventListener('click' , () => {
@@ -108,6 +107,7 @@ for(let i =0; i< wrapper.length; i++ ){
         console.log(modalSelected);
     });
 }
+
 
 
 
