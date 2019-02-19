@@ -1,5 +1,107 @@
-# Data Lovers
+# PUNTO MUERTO 🚲 🏍 🚗 🚶🏻‍
+_Punto muerto es una web app basada en la campaña “Punto Muerto” de UNICEF, que busca concientizar y prevenir a los adolescentes de 17 a 18 años, profesorado y  familiares sobre accidentes que comprometen el bienestar de la población, por la cercanía de los adolescentes a recibir su licencia de conducir y ser este momento propicio para fomentar conductas responsables._
 
+_Mostramos datos concretos sobre cantidad de heridos por año y medio de transporte para consulta e investigación._
+
+_La campaña se realizará en conjunto con instituciones educativas y entidades gubernamentales para que la población adolescente e interesados tengan fácil acceso a esta información._
+
+## Índice  📌
+
+- [Punto Muerto](#punto-muerto)
+- [Historia de Usuario](#Historia-de-usuario)
+- [Consideraciones generales](#comenzando)
+- [Testing](#testing)
+- [Autoras](#autoras)
+- [Checklist](#checklist)
+- [Data Lovers](#preámbulo)
+
+# Historia de Usuario 👩🏾‍💻
+
+- Yo como usuario quiero conocer más sobre la campaña **Punto** Muerto. 
+- Yo como usuario quiero elegir un **año** y un **tipo de herido**.
+- Yo como usuario quiero que la pagina me muestre el **total de heridos** con los datos que seleccioné.
+- Yo como usuario poder **ordenar** la lista de heridos de forma ascendente o descendente. 
+- Yo como usuario quiero resolver **dudas** sobre la campaña. 
+- Yo como usuario quiero **navegar** entre las diferentes secciones de la página. 
+
+## Prototipos / Sketch 🗂
+
+![prototipo ](src/images/prototipobajafidelidad.png)
+![prototipo ](src/images/prototipobajafidelidad1.png)
+- [Prototipo PDF](https://drive.google.com/file/d/1ocJbk7A98ovJDJD3N_yo8UXRaIF0eAZp/view?usp=sharing)
+- [Nuestra Investigación](https://goo.gl/JGLMS8)
+
+# Comenzando 🚀
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+## Pre-requisitos 📋
+Antes que nada, asegúrate de tener un  editor de texto en condiciones, puedes usar Atom, Sublime Text o cualquier otro de tu preferencia.
+Para ejecutar los comandos a continuación necesitarás una  UNIX Shell, que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar  GNU/Linux como tu Sistema Operativo.
+
+## Instalación 🛠
+Haz tu propio  fork de este repositorio de tu cohort, tus coaches te compartirán un link a un repositorio y te darán acceso de lectura en ese repo.
+ Clona tu fork a tu computadora (copia local).
+ Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
+Si todo ha ido bien, deberías poder ejecutar las  pruebas unitarias (unit tests) con el comando npm run test.
+A codear se ha dicho! 
+
+## Testing 👩🏾‍🔬 👨🏾‍🔬
+Si todo ha ido bien, deberías poder ejecutar las pruebas unitarias (unit tests) con el comando npm run test y pasarlas correctamente una vez completado el código.
+
+### Analizando las pruebas  🧪
+Las pruebas Unitarias fueron desarrolladas en **JEST** y verifican:
+Data _debería ser un objeto._
+Consult _debería ser una función._
+Consult _debería retornar ”Debería devolver el año 2015 y 2443175, al elegir 2015 y TODOS”_
+
+Por ejemplo _window.data = {} para el test ya que cipher se encuentra dentro del objeto window._
+
+### Herramientas 🔧
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [Node.js](https://nodejs.org/)
+- [Jest](https://jestjs.io/)
+- [Vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e)
+- [CSS3](https://developer.mozilla.org/es/docs/Web/CSS/CSS3)
+- [HTML5](https://hipertextual.com/archivo/2013/05/entendiendo-html5-guia-para-principiantes/)
+
+
+# Autoras 👩🏻‍💻👩🏻‍💻
+- Andrea Cruz Hernández - [AndieCruz](https://github.com/AndieCruz)
+- Hameyalli Elizalde Acevedo - [AcheZeta](https://github.com/AcheZeta)
+
+## Expresiones de Gratitud 🌟 
+- A los coaches, especialmente a [John](https://github.com/Jonhks) 🤘🏾
+- A todas las compañeras que compartieron su conocimiento 🙌🏼 
+
+## Checklist
+
+- [ ] Usa VanillaJS.
+- [ ] No hace uso de `this`.
+- [ ] Pasa linter (`npm pretest`)
+- [ ] Pasa tests (`npm test`)
+- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+      lines y branches.
+- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [ ] Incluye historias de usuario en `README.md`.
+- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+      `README.md`.
+- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+      en `README.md`.
+- [ ] Incluye el listado de problemas que detectaste a través de tests de
+      usabilidad en el `README.md`.
+- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [ ] UI: Permite filtrar data en base a una condición.
+
+## Checklist (Opcional)
+
+- [ ] Consume data de forma dinámica (`fetch()`).
+- [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
+- [ ] Cobertura de coverage al 100%.
+
+# Data Lovers
 ## Índice
 
 - [Preámbulo](#preámbulo)
@@ -506,28 +608,4 @@ compañera:
 
 ---
 
-## Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-      lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-      `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-      en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
-      usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
-
-## Checklist (Opcional)
-
-- [ ] Consume data de forma dinámica (`fetch()`).
-- [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
-- [ ] Cobertura de coverage al 100%.

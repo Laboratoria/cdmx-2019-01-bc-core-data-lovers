@@ -47,3 +47,4 @@ searchbutton.addEventListener("click", () => {
     resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
   }
 });
+
