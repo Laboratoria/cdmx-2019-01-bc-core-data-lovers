@@ -12,31 +12,12 @@
    
    }
 
-  
-
-   h1.animate{
-    font-family: 'Staatliches', cursive;
-    font-size: 80px;
-    color: rgba(232, 236, 13, 0.726);
-    -webkit-text-stroke: 2px black;
-   animation-duration: 7s;
-   animation-name: slidein;
+h3{
+    font-size: 30px;
+    padding-bottom:25px;
+    font-family:'Caveat Brush'
+}
    
- }
- 
- @keyframes slidein {
-   from {
-     margin-left:0;
-     width: 100% border #FF33C7 solid;
-     font-family: 'Staatliches', cursive;
-     font-size: 100px;
-   }
-   to {
-     margin-left: 0%;
-     width: 100%;
-   }
- 
-   }
    .typesPokemon{
     padding-top: 5px;
    }
@@ -54,7 +35,7 @@
         max-width: 100%;
         height: 15%;
         margin: -1%;
-        color:rgb(175, 179, 187);
+        color:whitesmoke;
   }
 .grid-img{
     display: grid;
@@ -112,13 +93,14 @@ span.tooltip:hover::before {
 
 .ocultar{
     padding-top: 0%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 nav{
     font-size: 50px;
     color:yellow;
     font-family: 'Rock Salt'; 
     text-align: center; 
+    margin-top: -30px;
 }
 
 a{
@@ -159,9 +141,10 @@ a{
     display: block;
     width: 100%;
     height: auto;
+    margin-top: -100px;
 }
 
-#splash .splash-inner h1{
+#splash .splash-inner h2{
     padding-top:10px;
     font-size: 50px;
     color:yellow;
@@ -176,10 +159,29 @@ a{
 }
 
 #splash.hide{
-    top:-100%;
+    top:-110%;
 
 }
+
+input[type="radio"] {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(2);
+}
+section{
+    padding: 2%;
+    font-family: 'Rock Salt';
+    font-size: 15px;
+}
+#asc-name{
+    margin: 2%;
+}
+#desc-name{
+    margin: 2%;
+}
+
 header{
     background: white;
 }
+
 
