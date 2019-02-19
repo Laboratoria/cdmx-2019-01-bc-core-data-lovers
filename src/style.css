@@ -13,10 +13,10 @@ img {
   width: 70%;
 }
 
-#avg{
+.avg{
   background-color: #1c295a;
   color: white;
-  font-size: 5em;
+  font-size: 2em;
   text-align: center;
   width: 97%;
 }

@@ -37,20 +37,34 @@ El videojuego requiere que el jugador recorra las calles de su ciudad para descu
 La librería Pokémon es una aplicación que ayuda al usuario a visualizar de una manera más accesible y dinámica el contenido del videojuego POKÉMON GO. Muestra los 151 pokémons con sus características, debilidades y tiempos específicos de aparición. ¿Qué la hace diferente a lo que ya muestra  el videojuego? La  diferencia radica en que nuestra librería visualiza desde un inicio cada uno de los pokémons sin importar si el usuario los ha atrapado o no. Situación que el videojuego no maneja; además tiene opciones más especificas de búsqueda que ayudan al usuario a filtrar los 151 pokémons por tipo, por orden y por tiempo de aparición
 
 ### Historias de usuario
+1.- Como USUARIO quiero tener una pantalla de incio que sea acorde a la temática de POKEMON.
+
+    -Criterios de Aceptación:
+
+    PANTALLA DE INICIO: En caso de que el usuario al ingresar a nuestra página necesite una pantalla de incio, mostrarlo elementos relacionados a Pokemon, teniendo un fondo y colores alucives al mismo, cuando el juego de PokemonGo no le de esa ttemática la aplicación será clara y minimalista para que sea agradable al ojo de nuestro usuario.
+
+2.- Como USUARIO quiero poder ver los 151 pokemon de la región de Kanto de manera clara y amigable.
+
+    -Criterios de Aceptación:
+    MOSTRAR TODOS LOS POKEMON: En caso de que el usuario quiera ver todos lo pokemones en una sola pantalla, cuando el videojuego de PokemonGo no le esta dando esta alternativa si el mismo no ha capturado el pokemon, nuestra aplicación debe mostrarle la información que necesite aún cuando el usuario no tenga capturado ese pokemon.
+
+3.-Como USUARIO quiero poder FILTRAR a los pokemon por su tipo, para poder solo observar los que me interesan de una manera más concisa.
+
+    -Criterios de Aceptaión: 
+    FILTAR POR TIPO: En caso de que el usuario al usar nuestra aplicación decida filtar los pokemon por su tipo, cual el videojuego de PokemonGo no le de esa alternativa; nuestra aplicación le permitirá filtrar la información cuantas veces quiera, mostrandole así la información que buesca a través de sencillos e intuitivos pasos.
 
 4.- Como USUARIO quiero tener acceso a los 151 pokémons ordenados de manera ascendente o descendente para poder acceder a ellos de una manera más eficiente.
 
-	- Criterios de Aceptación:
+    - Criterios de Aceptación:
 
 	ORDENAR DE MANERA ASCENDENTE. En caso que el usuario al usar nuestra
-    aplicación haga una búsqueda de una manera más especifica y adicionalmente 	lo haga	de manera ascendente, cuando el videojuego Pokemon 	Go no le de esta alternativa, nuestra aplicación debe llevarlo de manera clara al resultado que busca através de sencillos e intuitivos pasos para lograrlo.
+    aplicación haga una búsqueda de una manera más especifica y adicionalmente 	lo haga	de manera ascendente, cuando el videojuego PokemonGo no le de esta alternativa, nuestra aplicación debe llevarlo de manera clara al resultado que busca a través de sencillos e intuitivos pasos para lograrlo.
 
 5.-Como USUARIO quiero saber que tiempo de espera aproximada se tiene al atrapar a cada uno de los Pokémon para poder hacer mas ágil la búsqueda de los mismo por la ciudad.
 
-	-Criterios de Aceptación:
+    -Criterios de Aceptación:
 
-	TIEMPO DE APARICIÓN. En caso que el usuario este en búsqueda de un  determinado Pokémon y vaya a la ubicación predeterminada y adicionalmente que el Pokémon en cuestión no se encuentre en ese momento, cuando  el videojuego no especifique de una manera mas puntual el tiempo a esperar, nuestra
-    aplicación debe solventar esa información para que el usuario decida si esperar o regresar al lugar de una forma más inteligente y sencilla.
+    TIEMPO DE APARICIÓN. En caso que el usuario este en búsqueda de un  determinado Pokémon y vaya a la ubicación predeterminada y adicionalmente que el Pokémon en cuestión no se encuentre en ese momento, cuando  el videojuego no especifique de una manera mas puntual el tiempo a esperar, nuestra aplicación debe solventar esa información para que el usuario decida si esperar o regresar al lugar de una forma más inteligente y sencilla.
 
 6.-Como USUARIO quiero que la aplicación tenga una funcionalidad e interfaz agradable para poder acceder de manera intuitiva y rápida al contenido que buscó en determinado momento.
 
@@ -73,7 +87,16 @@ Dentro del proyecto realizamos las dos visualizaciones requeridas: [Mobile](http
 
 #### Testeos de usabilidad
 
-Aquí van los comentarios de la data.
+Para los testeos de usabilidad:
+1. Le mostramos la data a los usuarios para que observaran que elementos le eran útil y cuál veían inecesaria a lo que obtuvimos lo siguiente:
+
+
+![Data](./src/images/2019-02-18_1.png)
+
+
+![Data](./src/images/2019-02-18_2.png)
+
+Con base a esa información fue que se fue manejando la Base de Datos a corde a lo que el usuario nos menciono y la información mostrada fue la que el usuario solicito y menciono que le funcionaba.
 
 
 ## Contenido de referencia
@@ -81,6 +104,21 @@ Aquí van los comentarios de la data.
 ### Diseño de experiencia de usuario (User Experience Design)
 
 - Investigación con usuarios / entrevistas
+
+    Una vez que ya teniamos el prototipo de alta fidelidad fue testeado; a lo que el usuario hizo las siguientes observaciones para ambos prototipos de alta fidelidad:
+
+    #### Versión Mobile
+        1. El carrusel que esta en la pantalla de inicio para la verisón mobile no es tan intuitivo, debe hacerse más accesible.
+        2. La ficha técnica del pokemon es la que lo muestra como un perfil de la red social Facebook con la misma temática que tiene POKEMON GO, que contiene un fondo acorde al tipo que es el pokemon y debajo su información.
+        3. Los colores que se usaron en el prototipo no son los adecuados por lo que hubo que modificarlos.
+
+    #### Versión Desktop
+        Esta versión fue la que más le agrado al usuario y en la que se baso el proyecto, de tal forma que esta 90% apegado a este prototipo; ya que se modifico la imagen que hay de fondo en el incio y el fondo del contenido con una temática más apegada a Pokemon y a la región de Kanto.
+    
+    Una vez hecho es testeo de los prototipos de alta fidelida se paso a testear la app ya con las funcionalidades sugeridas por el usuario. Se testeo con usuario de diferentes edades y los resultados los podras encontrar en la siguiente liga:
+
+    [Testo de la página](https://1drv.ms/p/s!AmkkKLbuChrBgp9-JgMOcXCDqpA-eg)
+
 - Principios de diseño visual
 
 ### Desarrollo Front-end
@@ -108,6 +146,7 @@ Aquí van los comentarios de la data.
 - [GitHub Pages](https://pages.github.com/)
 - [Node.js](https://nodejs.org/)
 - [Jest](https://jestjs.io/)
+- [Boostrap](https://getbootstrap.com/docs/4.0/getting-started/download/)
 
 ---
 
@@ -116,16 +155,16 @@ Aquí van los comentarios de la data.
 - [x] Usa VanillaJS.
 - [x] No hace uso de `this`.
 - [x] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
 - [x] UI: Permite ordenar data por uno o más campos (asc y desc).
