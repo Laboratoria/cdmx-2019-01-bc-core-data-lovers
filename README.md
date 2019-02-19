@@ -1,5 +1,62 @@
+# LatinoEduca
 
-## ¿Qué dicen los usuarios?
+## Preview
+## Índice
+
+
+- [Descripción](#resumen-del-proyecto)
+- [Problema](#problema)
+- [Consideraciones Técnicas](#Consideraciones-técnicas)
+- [Proceso de diseño](#historias-de-usuario)
+- [Diseño de interfaz](#prototipado)
+- [Testeos de usabilidad](#testeos-de-usabilidad)
+- [Construido con](#construido-con)
+
+
+## Resumen del proyecto 🚀
+
+El proyecto LatinoEduca se crea con el objetivo de que el gremio de investigadores utilicen los datos obtenidos en lista, información que pueda ser relevante y genere propuestas hacia la mejora continua de la educación en Latinoamérica. Creamos una app que integre información de confianza ya que son datos del Banco Mundial,que especificamente se centran en indicadores de educación en los países México, Chile, Brasil y Perú.
+
+
+## Problema  
+Nos enfocamos en un problema que se vive en todas las carreras o sectores, que es el encontrar documentación que tenga fuentes fidedignas y que informe de países que se encuentran en Latinoamérica, seleccionando sólo a mujeres en la educación.Esto con el fin de que nuestro usuario pueda recabar información que le sirva para dar propuesras a las problemáticas educativas dentro de los países que seleccione y que tenga una visión precisa de la realidad.
+
+
+## Consideraciones técnicas 📋
+1.-Antes que nada, asegúrate de tener un 📝 editor de texto en condiciones, algo como Atom o Code.
+2.-Para ejecutar los comandos a continuación necesitarás una 🐚 UNIX Shell, que es un programita que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar 🐧 GNU/Linux.
+3.-Haz tu propio 🍴 fork del repo de tu cohort.
+4.-⬇️ Clona tu fork a tu computadora (copia local).
+5.-📦 Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
+6.-Si todo ha ido bien, deberías poder ejecutar las 🚥 pruebas unitarias (unit tests) con el comando npm test.
+7.-A codear se ha dicho! 🚀
+
+## Historias de usuario
+-El colectivo de investigación busca conocer los indicadores de alfabetismo en LatinoAmérica (mujeres) para conocer su comportamiento por año.
+
+
+## Diseño de la Interfaz de Usuario
+
+### Prototipo de baja fidelidad
+
+
+El proyecto se da inicio con un sketch a mano alzada que crea una interfaz sencilla para iniciar.
+
+![marvel](https://i.ibb.co/b2sndrk/Imagen-de-i-OS-1.jpg)
+![marvel](https://i.ibb.co/RbY4j0r/Imagen-de-i-OS-2.jpg)
+![marvel](https://i.ibb.co/JF8nTdL/Imagen-de-i-OS.jpg)
+
+
+#### Prototipo de alta fidelidad
+
+En nuestra sección de prototipado de alta fidelidad utilizamos Figma esta herramienta era muy sencilla de utilizar e hicimos lo que podría ser un acercamiento a lo que requeriamos en nuestra html, sin embargo optamos por utilizar bootstrap que nos facilito el diseño que no era responsive como queríamos.
+
+![Figma](https://i.ibb.co/yVq1LdK/fig1.jpg)
+![Figma](https://i.ibb.co/hmv8PRk/fig2.jpg)
+![Figma](https://i.ibb.co/SJZWb4T/fig3.jpg)
+
+
+## Testeos de usabilidad
 
 Para obtener la retroalimentación de los usuarios se decidió probar la web app con cinco personas dedicadas al ámbito educativo y vinculadas a la investigación. Las opiniones resultaron cruciales para determinar el valor de LatinoEduca 
 en las vidas académicas de los participantes, así como para los ajustes en diseño y el tipo de datos a presentar.
@@ -50,3 +107,12 @@ Finalmente, se buscó obtener una apreciación sobre el sitio en general y que e
 
 En conclusión, las áreas fuertes son identidad y contenido; mientras que, las de oportunidad son gráfica web y utilidad. La retoalimentación arrojó luz sobre los siguientes pasos a seguir.
 
+## Construido con
+
+Las herramientas son: 
+
+* Vanilla Js
+* HTML
+* CSS
+* Bootstrap
+* Testing mediante Jasmine
