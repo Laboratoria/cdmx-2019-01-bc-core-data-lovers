@@ -7,6 +7,38 @@
 }
 @media (max-width:768px){
 
+
+  
+ 
+
+  .nav > li > div {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    cursor: default;
+  }
+  .navbar-nav > li > div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+  .navbar-default .navbar-nav > li > div {
+    color: green);
+  }
+  .navbar-collapse.collapse {
+    display: none;
+  }
+  .dropdown-open {
+    background: black;
+  }
+
+
+
+
+
+
+
+
   .carousel-caption{
     position:absolute;
     top:45%;
@@ -70,12 +102,27 @@
 
 /* GENERALES  */
 
-body{
+body {
+  padding-top: 20px;
   height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: #222;
+}
+.navbar {
   
+  background: #00455A;
+ 
+  padding-top: 10px;
+  
+  position:fixed;
+
+  padding-bottom: 20px;
+
+  
+
+  
+
 }
 
 
@@ -86,15 +133,6 @@ header{
    background-size:cover;}
 
 
-.navbar {
-
-  background: #00455A;
- 
-  padding-top: 10px;
-  
-  position:fixed;
-
-}
 
 .navbar-bar li{
   padding-right:20px;
