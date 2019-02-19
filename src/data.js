@@ -12,21 +12,20 @@ window.pokesaurius = {
     const orderPokemonNAme=data.sort((a,b)=> {
       if(a.name > b.name){
         return 1;
-      }
-      if(a.name < b.name){
+      }else{
         return-1;
       }
     })
     return(orderPokemonNAme)
   },
 
-
-  getPokemonById:(data, getIdElement) =>{
-    const pokemon = data.filter(element => element.id == getIdElement);
-    console.log(pokemon);
+  
+  //getPokemonById:(data, getIdElement) =>{
+   // const pokemon = data.filter(element => element.id == getIdElement);
+   // console.log(pokemon);
     
-    return pokemon;
-}
+    //return pokemon;
+
 
 
 

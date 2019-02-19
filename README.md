@@ -95,7 +95,7 @@ La línea quedaría así:
 Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
 scripts (como `src/data.js` o `src/main.js`).
 
-En este proyecto usaremos y descomentaremos la data de Pokémon para poder trabajar adecuqadamente.
+En este proyecto usaremos y descomentaremos la data de Pokémon para poder trabajar adecuadamente.
 
 ### `src/main.js`
  
@@ -127,8 +127,8 @@ implementadas en el archivo `data.js`.
 Si deseas conocer más acerca del proceso de diseño, nuestro prototipo de alta y baja fidelidad, así como las historias de usuario de **"Pokesaurius"** te recomendamos visitar esta liga.
 
 ##Autores
-Janet Urbina Núñez.
 Karla Lorena Bellacetin Guido.
+Janet Urbina Núñez.
 
 ##Contribuciones
 Shirley-Startary
@@ -137,15 +137,10 @@ Shirley-Startary
 A Janet por su paciencia, y por siempre mostrar entusiasmo y actitud positiva durante la realización de este proyecto. Aprendí muchísimo de tu capacidad de sorprenderte y apreciar los pequeños detalles. 
 A mis coaches que sin su vocación y sus horas dedicadas, este proyecto no sería posible. Gracias por su cálido acompañamiento.
 Lorena.
-
-
-
-
-
-
-
-
-
+Gracias Lorena por tu pasión, compromiso con el proyecto, tu calidez alegría y energía que sin duda se vio reflejada en la sinergia y el desarrollo del proyecto. Mil gracias por tu paciencia.
+A todas mis compañeras por su ayuda, apoyo y alegría de compartir.
+A los coaches por su entrega, paciencia y disposición. Gracias por tanto.
+Janet
 
 
 # Data Lovers
