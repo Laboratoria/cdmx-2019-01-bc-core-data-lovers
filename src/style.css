@@ -272,6 +272,9 @@ figure img{
     padding-left: 45%;
     padding-right: 45%;
   }
+  #blurb{
+    color: whitesmoke;
+  }
 .rolTitle{
   position: center;
   margin-left: auto;

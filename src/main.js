@@ -111,7 +111,7 @@ const printCharacterSheet = (datos) => {
    <p>Magic: ${champ.magic}</p><p>Difficulty: ${champ.difficulty}</p></div></div>
    <div id="allStats" class="nameList"><div id="statsInfo2" class="stats"><h2>Stats</h2><p>Hp:<br>${champ.hp}</p><p>Hp per level:<br>${champ.hpperlevel}</p><p>Hp regeneration:<br>${champ.hpregen}</p><p>Hp regen per level:<br>${champ.hpregenperlevel}</p>
    <p>Mp:<br>${champ.mp}</p><p>Mp per level:<br>${champ.mpperlevel}</p><p>Mp regeneration:<br>${champ.mpregen}</p><p>Mp regen per level:<br>${champ.mpregenperlevel}</p></div>
-   <div id="statsInfo3" class="stats" class="statsOrder"><p>Movespeed:<br>${champ.movespeed}</p> <p>Armor:<br>${champ.armor}</p><p>Armor per level:<br>${champ.armorperlevel}</p><p>Attack Range:<br>${champ.attackrange}</p><p>Attack Damage:<br>${champ.attackdamage}</p><p>Attack Damage per level:<br>${champ.attackdamageperlevel}</p></div></div>  <h3 class="nameList">${champ.blurb}</h3></div></div>`;
+   <div id="statsInfo3" class="stats" class="statsOrder"><p>Movespeed:<br>${champ.movespeed}</p> <p>Armor:<br>${champ.armor}</p><p>Armor per level:<br>${champ.armorperlevel}</p><p>Attack Range:<br>${champ.attackrange}</p><p>Attack Damage:<br>${champ.attackdamage}</p><p>Attack Damage per level:<br>${champ.attackdamageperlevel}</p></div></div>  <h3 id="blurb" class="nameList">${champ.blurb}</h3></div></div>`;
     showFirstChampionList.insertAdjacentHTML("beforeend", nameList);
   });
 }
