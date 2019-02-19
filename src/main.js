@@ -71,6 +71,6 @@ forWeight.addEventListener("click",() => {
 
 
 showPokemons.addEventListener("click",() => {
-  pantalla2.insertAdjacentHTML("beforeend", printData(showPokemons));
+   printData(dataPokemon)
 
 })
