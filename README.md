@@ -64,15 +64,6 @@ Se realizaron encuestas principalmente a profesionales y voluntarios que trabaja
 ![Encuesta 5](./src/assets/images/usabilidad_5.png)
 
 
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario filtrar y ordenar la data.
-3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
-   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
-   un determinado valor, por ejemplo.
-4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
 
 ### Pruebas unitarias
 
