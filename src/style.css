@@ -30,7 +30,9 @@ header {
 
 #hamburguerMenu,
 #hamburguerMenuFilterPage,
-#hamburguerMenuTypePage {
+#hamburguerMenuTypePage,
+#hamburguerMenuPageKanto,
+#hamburguerMenuCuriousPokemon{
   display: none;
 }
 
@@ -91,7 +93,7 @@ header label:hover {
 
 }
 
-.menu_gral_type_pokemon li a {
+.menu_gral_type_pokemon li a{
   display: block;
   padding: 14px 14px;
   text-decoration: none;
@@ -211,7 +213,7 @@ p {
   position: relative;
   top: 65px;
   margin: 1%;
-  width: 16%;
+  width: 164px;
 }
 
 .descriptionType p {
@@ -258,6 +260,7 @@ p {
 
 .cardBox:hover .card {
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .front,
@@ -349,7 +352,7 @@ p {
   text-align: center;
 }
 .Average-Weight, .Average-Height{
-  width:50%;
+  width:92%;
   background: #5433FF;  /* fallback for old browsers */
   margin: 5%;
   position: relative;
@@ -490,7 +493,9 @@ footer {
 
   #hamburguerMenu:checked~.menu_gral,
   #hamburguerMenuFilterPage:checked~.menu_gral,
-  #hamburguerMenuTypePage:checked~.menu_gral_type_pokemon {
+  #hamburguerMenuTypePage:checked~.menu_gral_type_pokemon,
+  #hamburguerMenuPageKanto:checked~.menu_gral,
+  #hamburguerMenuCuriousPokemon:checked~.menu_gral{
     margin: 0;
   }
 
@@ -498,7 +503,7 @@ footer {
     min-height: 200rem;
   }
   .typeCard {
-    width: 26%;
+    width: 126px;
   }
   .descriptionType p{
     font-size:16px
@@ -533,123 +538,7 @@ footer {
   }
 }
 
-@media screen and ( min-width: 250px) and (max-width:767px) {
 
-  header label,
-  .headerType label {
-    display: block;
-  }
-
-  .menu_gral {
-    position: absolute;
-    background-color: #00CED1;
-    width: 50%;
-    margin-left: -70%;
-    transition: all 1.5s;
-
-  }
-
-  .menu_gral_type_pokemon {
-    background-color: #5de6de;
-    background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
-    position: absolute;
-    width: 50%;
-    margin-left: -70%;
-    transition: all 1.5s;
-
-  }
-
-
-  .menu_gral ul,
-  .menu_gral_type_pokemon ul {
-    flex-direction: column;
-  }
-
-  .menu_gral li,
-  .menu_gral_type_pokemon li {
-    border-top: .5px solid white;
-  }
-
-  .menu_gral li a,
-  .menu_gral_type_pokemon li a {
-
-    line-height: .8rem;
-
-  }
-
-  #hamburguerMenu:checked~.menu_gral,
-  #hamburguerMenuFilterPage:checked~.menu_gral,
-  #hamburherMenuTypePokemon:checked~.menu_gral_type_pokemon {
-    margin: 0;
-  }
-
-  .typeCard{ 
-    width:25%;
-    margin: 3%;
-  }
-  .descriptionType p{
-    font-size:14px
-  }
-  
-  .imageType img {
-    height:70%;
-    width:70%;
-    position: relative;
-    display: block;
-    margin: auto;
-    background-position:center 
-}
-
-   .imageType{  
-    display: block;
-    margin: auto;
-    background-position: center;
-  }
-  .nameTypeCard{
-    font-size:16px;
-  }
-
-  .footer-main .footer-column {
-    width: 100%;
-    text-align: center;
-  }
-
-
-  .footer-main .footer-column h3 {
-    margin-bottom: 10px;
-  }
-
-  .footer-main .footer-column span {
-    display: block;
-    text-align: center;
-    line-height: 1.5;
-  }
-
-  .main-copy-redes {
-    width: 83%;
-    max-width: 1000px;
-    padding: 0px 0;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    -ms-align-items: center;
-    align-items: center;
-  }
-
-  .main-copy-redes .footer-copy {
-    widows: 100%;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-
-  .main-copy-redes .footer-redes {
-    width: 70%;
-    margin: auto;
-  }
-
-}
 
 
 
@@ -723,6 +612,10 @@ footer {
         position: relative;
         left: 30%;
         width: 90%;
+    }
+
+    .typeCard{
+        width: 171px;
     }
     
 }
@@ -798,14 +691,9 @@ footer {
             font-size: .6em;
             margin:0;
         }
-        #titlePokemonLight,#titlePokemonHevy,#titlePokemonSmall,#titlePokemonMedium,
-        #titlePokemonTall,#titlePokemonSortByHeightAscending,#titlePokemonSortByHeightDescending,
-        #titlePokemonsortByWeightAscending,#titlePokemonSortByWeightDescending{
-            width: 80%;
-            position: relative;
-            left: 20%;
+        
             
-        }
+        
         .namePokemonFilter{
             width: 15%;
             height: auto;
@@ -817,6 +705,126 @@ footer {
         .quality{
             font-size: .6em;
         }
-      
+    }
 
-    } 
+     
+    /*resposive telefono andy*/
+    @media screen and ( min-width: 250px) and (max-width:767px) {
+
+        header label,
+        .headerType label {
+          display: block;
+        }
+      
+        .menu_gral {
+          position: absolute;
+          background-color: #00CED1;
+          width: 50%;
+          margin-left: -70%;
+          transition: all 1.5s;
+      
+        }
+      
+        .menu_gral_type_pokemon {
+          background-color: #5de6de;
+          background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+          position: absolute;
+          width: 50%;
+          margin-left: -70%;
+          transition: all 1.5s;
+      
+        }
+      
+      
+        .menu_gral ul,
+        .menu_gral_type_pokemon ul {
+          flex-direction: column;
+        }
+      
+        .menu_gral li,
+        .menu_gral_type_pokemon li {
+          border-top: .5px solid white;
+        }
+      
+        .menu_gral li a,
+        .menu_gral_type_pokemon li a {
+      
+          line-height: .8rem;
+      
+        }
+      
+        #hamburguerMenu:checked~.menu_gral,
+        #hamburguerMenuFilterPage:checked~.menu_gral,
+        #hamburguerMenuTypePokemon:checked~.menu_gral_type_pokemon,
+        #hamburguerMenuPageKanto:checked~.menu_gral,
+        #hamburguerMenuCuriousPokemon:checked~.menu_gral{
+          margin: 0;
+        }
+      
+        .typeCard{ 
+          width:136%;
+          margin: 3%;
+        }
+        .descriptionType p{
+          font-size:14px
+        }
+        
+        .imageType img {
+          height:70%;
+          width:70%;
+          position: relative;
+          display: block;
+          margin: auto;
+          background-position:center 
+      }
+      
+         .imageType{  
+          display: block;
+          margin: auto;
+          background-position: center;
+        }
+        .nameTypeCard{
+          font-size:16px;
+        }
+      
+        .footer-main .footer-column {
+          width: 100%;
+          text-align: center;
+        }
+      
+      
+        .footer-main .footer-column h3 {
+          margin-bottom: 10px;
+        }
+      
+        .footer-main .footer-column span {
+          display: block;
+          text-align: center;
+          line-height: 1.5;
+        }
+      
+        .main-copy-redes {
+          width: 83%;
+          max-width: 1000px;
+          padding: 0px 0;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          -ms-align-items: center;
+          align-items: center;
+        }
+      
+        .main-copy-redes .footer-copy {
+          widows: 100%;
+          text-align: center;
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+      
+        .main-copy-redes .footer-redes {
+          width: 70%;
+          margin: auto;
+        }
+      
+      }

@@ -1,3 +1,106 @@
+
+# Pikapedía
+
+Esta página esta creada para jugadores de Pokémon Go.
+Es una guía práctica para los jugadores que quieran saber más acerca de sus pokémon favoritos y obtener información detallada sobre ellos.
+Pueden buscarlos ya sea por tamaño, peso y tipo. 
+La página puede ser vista en cualquier tipo de dispositivo(tablets, celulares, computadoras, etc...), de tal manera que sea  accesible independientemente del dispositivo en uso.
+
+
+## Historia de usuario
+
+¿Quiénes son los principales usuarios ?
+
+Gamers que estén interesados en el mundo pokémon.
+
+¿Cuáles son los objetivos de estos usuarios en relación con el producto ?
+
+Tener una guía básica de los principales pokémon y que muestre las diferentes características de éstos.
+
+¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+
+Clasificación por:
+Tipo(Agua, Bicho,Dragón, etc...);
+peso y estatura.
+
+
+¿Cuándo utilizan o utilizarían el producto?
+
+Mientras juegan Pokémon Go y en su tiempo libre.Preferentemente en algún dispositivo móvil.
+
+#### Historias de usuario utilizadas para Pikapedía
+
+1.-Yo como usuario quiero poder visualizar los pokémon para identificarlos mejor .
+
+
+2.-Yo como usuario quiero poder tener diferentes opciones de filtrado para los  pokémon para formar un mejor equipo.
+
+
+
+3.-Yo como usuario quiero poder visualizar  los pokémon por tipo para encontrarlos de manera más rápida.
+
+
+4.-Yo como usuario quiero poder usar un buscador para encontrar algún pokémon en particular.
+
+Si quieres saber más acerca de nuestro proceso de diseño. Ingresa en el siguiente link :
+
+- [Pikapedía](https://docs.google.com/document/d/13Rr-IIlPjt_cPD5ThN1Gx63W86EQ1Fa79dduli4tRA0/edit?usp=sharing)
+
+
+## Pruebas unitarias
+Las pruebas unitarias para este proyecto están implementadas en jest.
+La configuración de las pruebas ya está incluida, sólo necesitas ingresar en comando npm install en tu terminal para que se instalen las dependencias.
+Todo nuestro test se encuentra en el archivo data.spec.js
+
+Todas nuestras funciones contenidas en el archivo Data.js son puras y cada una es testeable. Para cada función escribimos un test, utilizando un pedazo de código de la data proporcionada en el proyecto, para hacer nuestro test lo más corto y entendible posible .
+
+La función sortByName ordena los pokémon de manera alfabética.
+
+La función sortByHeightAscending oredena la estatura de los pokémon de manera ascendente.
+
+La función sortByHeightDescending ordena la estatura de los pokémon de manera descendente.
+
+La función sortByWeightAscending ordena el peso de los pokémon de manera ascendente.
+
+La función sortByWeightDescending ordena el peso de los pokémon de manera descendente.
+
+La función filterByWeightLight ordena el peso de los pokémon de menos de 30 kg.
+
+La función filterByWeihgtHeavy ordena el peso de los pokémon de más de 30 kg.
+
+La función filterByHeightSmall ordena la estatura de los pokémon de menos de un metro.
+
+La función filterByHeightMedium ordena la estatura de los pokémon de más de un metro y menos de 1.80m.
+
+La función filterByHeightTall ordena la estatura de los pokémon de más de 1.80m.
+
+La función pokmonFilterType filtra los pokémon por filtro.
+
+La función averagaHeight da el promedio total de la altura de los pokémon.
+
+La función averageWeight da el promedio total de peso de los pokémon.
+
+
+
+
+## Consideraciones Técnicas
+
+Este proyecto está hecho con vanilla Javascript, CSS3 y HTML5, no utilizamos ninguna librería ni framework.
+Para filtrar nuestra data (Pokémon) utilizamos métodos de Array como : filter( ) , sort( ) , includes( ) , y reduce( ).
+Este proyecto fue creado usando Git colaborativo (1 dueña de repositorio y 1 colaboradora)
+
+Cuando ya estés listo para codear, te sugerimos empezar de esta manera:
+Una de las integrantes del equipo debe realizar un 🍴 fork del repo de tu cohort, tus _coaches* te compartirán un _link* a un repo y te darán acceso de lectura en ese repo. La otra integrante del equipo deber hacer un fork del repositorio de su compañera y configurar un remote hacia el mismo.
+⬇️ Clona tu 🍴 a tu computadora (copia local).
+📦 Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
+
+## Autores y Reconocimiento
+Agradecemos al equipo de Laboratoria por hacer posible este proyecto, a nuestro squad por el apoyo . 
+
+Autores: Andrea Velázquez y Gabriela Castro.
+
+
+
 # Data Lovers
 
 ## Índice
@@ -508,23 +611,23 @@ compañera:
 
 ## Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [X] Usa VanillaJS.
+- [X] No hace uso de `this`.
+- [X] Pasa linter (`npm pretest`)
+- [X] Pasa tests (`npm test`)
+- [X] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [X] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [X] Incluye historias de usuario en `README.md`.
+- [X] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [X] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [X] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
+- [X] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [X] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [X] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Opcional)
 

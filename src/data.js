@@ -11,7 +11,7 @@ window.pokemonFunction = {
     const pokemonSortedData= arrayPokemonData.sort((a,b) => {
       if (a.name > b.name){
         return 1;
-      }else if (a.name < b.name){
+      }else {
         return -1;
       }
     })
@@ -22,21 +22,17 @@ window.pokemonFunction = {
       if (a.height > b.height) {
         return 1;
       }
-      if (a.height < b.height) {
+      else {
         return -1;
       } 
     })
     return pokemonSortedData;
   },
+
   sortByHeightDescending: (arrayPokemonData) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
-      if (a.height > b.height) {
-        return -1;
-      }
       if (a.height < b.height) {
-        return 1;
-      } else {
-        return 0;
+        return 1
       }
     })
     return pokemonSortedData;
@@ -48,7 +44,7 @@ window.pokemonFunction = {
       if ((parseFloat(a.weight)) > (parseFloat(b.weight))) {
         return 1;
       }
-      if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
+      else {
         return -1;
       } 
     });
@@ -57,14 +53,9 @@ window.pokemonFunction = {
 
   sortByWeightDescending:(arrayPokemonData) =>{
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
-      if ((parseFloat(a.weight)) > (parseFloat(b.weight))) {
-        return -1;
-      }
-      if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
+       if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
         return 1;
-      } else {
-        return 0;
-      }
+      } 
     });
     return pokemonSortedData;
   },

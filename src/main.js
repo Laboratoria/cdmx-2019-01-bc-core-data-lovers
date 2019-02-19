@@ -42,8 +42,14 @@ const averageHeightPokemon = document.getElementById('averageHeightPokemon');
 const averageWeightPokemon = document.getElementById ('averageWeightPokemon');
 const buttonRegionKantoOnFilter = document.getElementById('buttonRegionKantoOnFilter');
 const buttonHomeOnCuriousPage = document.getElementById('buttonHomeOnCuriousPage');
+const buttonRegionKantoOnCuriousPage = document.getElementById("buttonRegionKantoOnCuriousPage");
 const buttonSearchByTypeOnCuriousPage = document.getElementById('buttonSearchByTypeOnCuriousPage');
 const buttonFilterOnCuriousPage = document.getElementById('buttonFilterOnCuriousPage');
+const buttonHomeOnKantoPage = document.getElementById("buttonHomeOnKantoPage");
+const buttonCuriousOnKanto = document.getElementById("buttonCuriousOnKanto");
+const buttonSearchByTypeOnKanto = document.getElementById("buttonSearchByTypeOnKanto");
+const buttonFilterPokemonOnKanto = document.getElementById("buttonFilterPokemonOnKanto");
+
 
 buttonFilterPokemon.addEventListener('click', () => {
   homePage.classList.add('hide');
@@ -93,10 +99,33 @@ buttonFilterOnCuriousPage.addEventListener("click", () =>{
   curiousPokemonFactsPage.classList.add('hide');
   filterPage.classList.remove('hide');
 })
+
 buttonRegionKantoOnCuriousPage.addEventListener("click", ()=>{
   curiousPokemonFactsPage.classList.add('hide');
   pageKanto.classList.remove('hide');
 })
+
+buttonHomeOnKantoPage.addEventListener("click", () => {
+  pageKanto.classList.add("hide");
+  homePage.classList.remove("hide");
+})
+
+buttonCuriousOnKanto.addEventListener("click", () => {
+  pageKanto.classList.add("hide");
+  curiousPokemonFactsPage.classList.remove("hide");
+})
+
+buttonSearchByTypeOnKanto.addEventListener("click", () =>{
+  pageKanto.classList.add("hide");
+  typePokemonPage.classList.remove("hide");
+})
+
+buttonFilterPokemonOnKanto.addEventListener("click", () => {
+  pageKanto.classList.add("hide");
+  filterPage.classList.remove("hide");
+})
+
+
 
 const allPokemon = 151
 const averageWeight = window.pokemonFunction.averageWeight(pokemonData, allPokemon);
