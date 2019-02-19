@@ -1,4 +1,4 @@
-#  Data Lovers, viaje extendido
+# Proyecto LoL Data, UX Desing
 
 ## Introducción
 El mercado de los videojuegos se ha convertido en una de las industrias más rentables y atractiva en la última década. Sólo en México, el mercado de los videojuegos registró en 2018 ingresos por más de mil millones de dólares, ubicándolo en la posición 12 del ranking mundial y la primera posición de Latinoamérica.
@@ -12,9 +12,9 @@ LoL cuenta con más de 100 campeones que se adaptan a cada estilo de juego, haci
 ## Definición del producto
 Para el desarrollo del producto se realizó una investigación para definir el segmento al que estaría dirigido, conocer sus necesidades entorno al videojuego LoL y sus expectativas de diseño de interfaz para una nueva aplicación.
 
-⋅⋅* Primera etapa: Se analizó la data brindada por Laboratoria, conformada por información específica de 133 campeones de LoL. El objetivo fue identificar las áreas de oportunidad para el desarrollo de la aplicación y los posibles usuarios. Se situaron dos segmentos, jugadores expertos, y amateurs, por lo que fue necesario desarrollar encuestas entre jugadores activos de LoL que permitieran conocer las áreas de oportunidad, sus experiencias y las áreas de oportunidad de una nueva aplicación. 
+- Primera etapa: Se analizó la data brindada por Laboratoria, conformada por información específica de 133 campeones de LoL. El objetivo fue identificar las áreas de oportunidad para el desarrollo de la aplicación y los posibles usuarios. Se situaron dos segmentos, jugadores expertos, y amateurs, por lo que fue necesario desarrollar encuestas entre jugadores activos de LoL que permitieran conocer las áreas de oportunidad, sus experiencias y las áreas de oportunidad de una nueva aplicación. 
 
-⋅⋅* Segunda etapa: Se realizaron un total de 11 encuestas el día 29 de enero de 2018 entre jugadores activos de LoL, a través de un cuestionario formulado en [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSexeI9z0Wul5JzPcVLkAkzXL47iqwXJNGrPQdLxwhnmKavTIw/viewform?usp=sf_link). La encuesta consistió de doce preguntas entorno a la información general de los jugadores, intereses concretos sobre LoL, aspectos de diseño y expectativas del usuario ante una nueva aplicación del videojuego.
+- Segunda etapa: Se realizaron un total de 11 encuestas el día 29 de enero de 2018 entre jugadores activos de LoL, a través de un cuestionario formulado en [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSexeI9z0Wul5JzPcVLkAkzXL47iqwXJNGrPQdLxwhnmKavTIw/viewform?usp=sf_link). La encuesta consistió de doce preguntas entorno a la información general de los jugadores, intereses concretos sobre LoL, aspectos de diseño y expectativas del usuario ante una nueva aplicación del videojuego.
 
 ## Análisis de la información
 - El 73% de los jugadores son hombres y el 24% son mujeres.
@@ -31,11 +31,11 @@ Con base en la información obtenida en las encuestas e información de la data 
 
 ### Perfil
 
-| Edad             | 21 a 27 años                                       | 
-| Género           | Masculino                                          |
-| Ubicación        | México                                             |
-| Intereses        | Jugar videojugos para pasar el tiempo de ocio      |
-| Objetivo         |  Buscar información para mejor estrategía de juego |
+Edad: 21 a 27 años                                       
+Género: Masculino                                          
+Ubicación: México                                             
+Intereses: Jugar videojugos para pasar el tiempo de ocio      
+Objetivo: Buscar información para mejor estrategía de juego
 
 
 ## Producto
@@ -67,7 +67,7 @@ La tipografía seleccionada corresponde a la familia **adobe-garamond-pro**, la 
 El sitio web está disponible para desktop y mobile contando con un diseño responsive por lo que su navegación se adapta a diversos dispositivos. 
 
 ### Desktop
-(src/assets/prototipo de baja fidelidad_2jpeg)
+(./assets/prototipo de baja fidelidad_2jpeg)
 
 
 ### Mobile
