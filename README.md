@@ -24,29 +24,29 @@ Con el éxito del primer videojuego, en abril de 1997, se estrenó en Japón el 
 
 ## Presentación
 
-[](src/presentacion.png)
+![](src/presentacion.png)
 
 ## Historias de Usuario
 
-[](src/historias.png)
+![](src/historias.png)
 
 ## Prototipos
 
-[](src/3.png)
-[](src/4.png)
+![](src/3.png)
+![](src/4.png)
 
 ## Pruebas de Usabilidad
 
 Las pruebas de usabilidad se aplicaron a 19 personas, de las cuáles se obtuvo de la gran mayoría la aceptación y buena experiencia. 
 Sin embargo una muy pequeña minoría externo su disgusto hacia ciertos elementos de diseño, como tipos de fuente, fondo, posicionamiento, además sugerieron que la experiencia mejoraría al agregar sonido. 
 
-[](src/5.png)
-[](src/6.png)
-[](src/7.png)
-[](src/8.png)
-[](src/9.png)
-[](src/10.png)
-[](src/11.png)
+![](src/5.png)
+![](src/6.png)
+![](src/7.png)
+![](src/8.png)
+![](src/9.png)
+![](src/10.png)
+![](src/11.png)
 
 ## Pruebas de estilo y de codificación
 
@@ -80,7 +80,7 @@ Usuario de "slack"
 
 ## Autores
 
-[](src/imagen1.png)
+![](src/imagen1.png)
 
 ________
 
