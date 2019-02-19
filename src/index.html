@@ -7,8 +7,9 @@
   
   <meta charset="utf-8">
   <title>Data Lovers</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   
@@ -25,51 +26,14 @@
   <header>
     
 
-      
-        
-          <nav class="navbar navbar-default navbar-expand-lg  sticky-top">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                  
-                <button  class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navHeaderCollapse #navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" ><img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX"> </a>
-              </div>
-
-
-              <div id="navbar" class="collapse navbar-collapse navHeaderCollapse">
-                <ul class="nav navbar-nav navbar-right ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Indicadores</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                      </li>
-                 
-                 
-                </ul>
-              </div><!--/.nav-collapse -->
-            
-          </nav>
+    
 
 
 
-
-
-    <!--
+    
     <nav class="navbar navbar-expand-lg  sticky-top">
       
-      <div class="container-fluid">
+      <div class="container-fluid padding">
       
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navHeaderCollapse">
         <span class="icon-bar"></span>
@@ -77,7 +41,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" ></a><img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoX"> </a>
+      <a class="navbar-brand" ></a><img id="logo" src="./assets/images/Logo Hipatia-01.png" style="width:15%" alt="logoX"> </a>
 
 
       <div class="collapse navbar-collapse navHeaderCollapse">
@@ -88,13 +52,13 @@
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="#we">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Indicadores</a>
+            <a class="nav-link" href="#Stadistics">Indicadores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contact">Contacto</a>
           </li>
 
         </ul>
@@ -104,7 +68,7 @@
     </nav>
   
 
- -->
+
 
 </header>
 
@@ -124,25 +88,25 @@
   </div>
 
 
-  <div class="container-welcome">
+  <div class="container-welcome" id="We">
     <div class="welcome text-center">
 
       <h2>¿Qué es Hipatia Project?</h2>
       <hr>
-      <p class="lead">Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil, Chile,
+      <p id="pWelcome">Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil, Chile,
         México y Perú. Aquí podrás visualizar datos históricos de diferentes indicadores del Banco Mundial en
         tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.</p>
 
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container padding">
 
-    <div id="Stadistics">
+    
 
       <h3>Estadísticas laborales</h3>
 
-
+      <div id="Stadistics">
       <select id="selects" class="container-fluid">
 
         <option class="indicatorGroup">Seleccionar un indicador</option>
@@ -235,17 +199,28 @@
     </div>
 
    
-
+<div class="container-results">
 
     <form id="sorters">
-      <label for="">Ordenar</label>
+      <label for=""> Ordenar</label>
+      <br>
+      <br>
+      <br>
       <input type="radio" class="order" value="downward">Ascendente
       <input type="radio" class="order" value="upward">Descendente
     </form>
+
+    
 <br>
+
+
+
+   
     <p id="table-title"></p>
     <p id="country-name"></p>
 
+    <div class=content-gender>
+    
     <table id="table-year-data">  
       <tr>
         <th>Año</th>
@@ -254,22 +229,25 @@
       <tbody id="table-indicators">
       </tbody>
     </table>
-
- 
+  </div>
+  
    
-
+    <br>
     <button id="average">Calcular promedio</button>
+    <br>
+    <br>
     <p id="result"></p>
 
+    
+     
 
-
-
+ 
 
 
     <hr class="my-4">
 
 
-    <div class="container">
+    <div class="container-gender">
       <div class="row padding">
         <div class="col-lg-6">
           <h3>¿Qué es género?</h3>
@@ -308,7 +286,7 @@
     </div>
 
 
-    <div class="container-fluid padding">
+    <div class="container-fluid padding socialmedia" id="contact">
       <div class="row text-center padding">
         <div class="col-12">
           <h3>Contacto</h3>
@@ -357,30 +335,30 @@
       <div class="col-md-4">
         <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoF">
         <hr class="light">
-        <p>66423-1873</p>
-        <p>HipatiaProject@gmail.com</p>
-        <p>Insurgentes Sur 23</p>
-        <p>Ciudad de México</p>
+        <p class="foot">66423-1873</p>
+        <p class="foot">HipatiaProject@gmail.com</p>
+        <p class="foot"> Insurgentes Sur 23</p>
+        <p class="foot">Ciudad de México</p>
       </div>
       <div class="col-md-4">
         <hr class="light">
         <h5>Horarios</h5>
         <hr class="light">
-        <p> Lunes: 9am-5pm</p>
-        <p> Sábado: 10am-5pm</p>
-        <p> Domingo: Cerrado</p>
+        <p class="foot"> Lunes: 9am-5pm</p>
+        <p class="foot"> Sábado: 10am-5pm</p>
+        <p class="foot"> Domingo: Cerrado</p>
       </div>
       <div class="col-md-4">
         <hr class="light">
         <h5>Paises</h5>
         <hr class="light">
-        <p> Perú, Lima</p>
-        <p> Santiago, Chile</p>
-        <p> Sao Paulo, Brasil</p>
+        <p class="foot" >  Perú, Lima</p>
+        <p class="foot"> Santiago, Chile</p>
+        <p class="foot"> Sao Paulo, Brasil</p>
       </div>
       <div class="col-12">
         <hr class="light">
-        <h5>&copy; www.hipatia.org</h5>
+        <h5 >&copy; www.hipatia.org</h5>
 
       </div>
     </div>
