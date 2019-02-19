@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.hideElement{
+.hideElement {
   display: none;
 }
 
@@ -45,9 +45,18 @@ body {
   animation-timing-function: linear;
 }
 
-@keyframes pulse {0% {transform: scale(1);}
-  50% {transform: scale(1.1);}
-  100% {transform: scale(1);}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .header,
@@ -83,7 +92,7 @@ nav {
 }
 
 i {
-   background-color: #FFBA5C;
+  background-color: #FFBA5C;
   width: 30px;
   height: 30px;
   border-radius: 3px;
@@ -163,7 +172,7 @@ i {
 }
 
 
-.fa-angle-up{
+.fa-angle-up {
   display: inline-block;
 }
 
@@ -190,16 +199,17 @@ p {
   border-radius: 14px;
   border: 3px solid #FFBA5C;
 }
-.wrapper:hover{
-  background:rgba(209, 202, 254, 0.493); 
+
+.wrapper:hover {
+  background: rgba(209, 202, 254, 0.493);
 }
 
 .pokemon-card-image {
   background: #EAFEE6;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
-padding-left: 6%; 
- }
+  padding-left: 6%;
+}
 
 .box-card {
   font-family: 'Roboto', sans-serif;
@@ -226,102 +236,130 @@ padding-left: 6%;
   border-top-right-radius: 14px;
   right: 30px;
 }
-.image-individual{
- margin-left: 30%;
+
+.image-individual {
+  margin-left: 30%;
 }
 
 .box-properties {
-  width:90%;
-  height:100%;
-  font-family:'Roboto',sans-serif;
-  color:#003471;
+  width: 90%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #003471;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   margin-top: 9px;
-  
+
 }
+
 @media screen and (min-width: 769px) {
-  .aside{
+  .aside {
     display: inherit;
   }
-  .menu-toogle{
+
+  .menu-toogle {
     display: none;
   }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  #root {width: 100%;}
-  header {width: 100%;}
+  #root {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
   .img-pokesaurius {
     width: 70%;
-    }
-  .contenido {width: 100%;}
-  .main-content {width: 100%;}
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
   .content {
     width: 83.5%;
     margin-left: 8%;
   }
-  .post {margin-left: 7%;
-  }
-  .wrapper {margin: 9px 15px;}
-  .aside {
-    background:linear-gradient(130deg, #4AB583, #9284FF);
-    width: 280px;
-  position: absolute;
-  right:4.5%;
-    }
-     }
 
-  @media screen and (min-width: 375px) and (max-width: 425px) {
+  .post {
+    margin-left: 7%;
+  }
+
+  .wrapper {
+    margin: 9px 15px;
+  }
+
+  .aside {
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 280px;
+    position: absolute;
+    right: 4.5%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
   #root {
     width: 100%;
   }
+
   .img-pokesaurius {
     width: 70%
   }
+
   .content {
     width: 92%;
     height: 105%;
   }
-  .post {margin-left: 3%;
+
+  .post {
+    margin-left: 3%;
     margin-top: 3%;
   }
-  .wrapper{
-    background:#FFD185;
-    width:88%;
+
+  .wrapper {
+    background: #FFD185;
+    width: 88%;
     height: 128px;
-    border-radius:14px;
+    border-radius: 14px;
     border: 2px solid #FFBA5C;
-    }
-  
-  .pokemon-card-image{
-    background:#EAFEE6;
-    width:48%;
-    border-top-right-radius:0px;
-    border-top-left-radius:14px;
-  border-bottom-left-radius:14px;
-  padding-left: 2%; 
-    display:inline-block;
   }
-  
-  .box-card{  
+
+  .pokemon-card-image {
+    background: #EAFEE6;
+    width: 48%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding-left: 2%;
+    display: inline-block;
+  }
+
+  .box-card {
     font-family: 'Roboto', sans-serif;
-    font-size:15px; 
+    font-size: 15px;
     font-weight: bold;
     color: #003471;
-   float:right;
-   top: 0px;
-   margin: 9% 5%;
-   padding: 10px;
-   text-align:center;
+    float: right;
+    top: 0px;
+    margin: 9% 5%;
+    padding: 10px;
+    text-align: center;
   }
+
   .aside {
-    background:linear-gradient(130deg, #4AB583, #9284FF);
-  width: 255px;
-  height: 78%;
-  position: absolute;
-  right:4.5%;
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 255px;
+    height: 78%;
+    position: absolute;
+    right: 4.5%;
   }
 
 }
@@ -330,38 +368,40 @@ padding-left: 6%;
   #root {
     width: 100%;
   }
+
   .img-pokesaurius {
     width: 90%
   }
+
   i {
-    
+
     float: right;
     margin: 0 2px;
     padding: 5px;
   }
 
-  .content{
+  .content {
     width: 92%;
     height: 85%;
     margin-left: 4%;
   }
-  .post {margin-left: 15%;
+
+  .post {
+    margin-left: 15%;
     margin-top: 3%;
   }
 
   .aside {
-    background:linear-gradient(130deg, #4AB583, #9284FF);
-  width: 250px;
-  height: 64%;
-  position: absolute;
-  top: 16%;
-  right:4.5%;
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 250px;
+    height: 64%;
+    position: absolute;
+    top: 16%;
+    right: 4.5%;
   }
 
   .type-button {
     margin: 1% 3%;
   }
-  
+
 }
-
-
