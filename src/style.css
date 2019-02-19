@@ -1,0 +1,449 @@
+@media (max-width:992px){
+  .social a{
+    font-size: 4em;
+    padding:2rem;
+
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 8.5rem;
+    
+  }
+
+  
+
+ 
+}
+@media (max-width:768px){
+  .carousel-caption{
+    position:absolute;
+    top:45%;
+    
+  }
+  
+  .carousel-caption h1{
+    font-size: 350%;
+   
+  }
+  
+  .carousel-caption h3{
+    font-size:140%;
+    font-weight: 400%;
+    padding-bottom: .2rem;
+  
+  
+  }
+  
+  .social a {
+    font-size:3.5em;
+    padding:1.2rem;
+  
+  
+  }
+}
+@media (max-width:576px){
+  .carousel-caption{
+    position:absolute;
+    top:40%;
+    
+  }
+  
+  .carousel-caption h1{
+    font-size: 250%;
+   
+  }
+  
+  .carousel-caption h3{
+    font-size:110%;
+  
+  
+  
+  }
+  
+  .social a {
+    font-size:2.5em;
+    padding:.7rem;
+  
+  
+  }
+
+
+  #average{
+
+    font-size:.8em;
+  
+  }
+  
+  #sorters{
+  
+   
+    font-size:.8em;
+  
+  }
+  #Stadistics{
+  
+  
+    font-size:.8em;
+  
+  }
+  
+  
+  .container-results{
+  
+   
+    font-size:.8em;
+  
+  }
+
+  #table-year-data {
+    border-collapse: collapse;
+    width: 100%; 
+    font-size:.8em;
+    justify-content: center;
+  }
+
+
+}
+
+
+
+
+/* GENERALES  */
+
+body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  
+}
+header{
+  
+ 
+   background-size:cover;
+
+  }
+
+
+.navbar {
+  background: #00455A;
+ 
+  padding-top: 15px;
+ 
+  position:fixed;
+}
+
+.navbar-bar li{
+  padding-right:20px;
+}
+.nav-link{
+  font-size:1.4em;
+  color: white;
+  text-decoration: none;
+  padding-right:60px;
+   
+}
+
+.nav-item{
+  font-size:1.6em;
+  padding-right:60px;
+}
+
+.carousel-inner>img{
+  width:100vw;
+}
+
+
+
+
+
+
+
+
+.container-welcome{
+  margin-top: 120px;
+  margin-bottom:300px;
+}
+.welcome{
+  width:75%;
+  margin:0 auto;
+  padding-top: 2.5rem;
+  padding-bottom:1.2rem;
+  color: #00455A;
+}
+
+
+.welcome hr{
+  border-top: 2px solid #b4b4b4;
+  width:95%;
+  margin-top: .9rem;
+  margin-bottom: 1rem;
+  
+
+}
+
+
+
+
+h2{
+  font-size:4.3em;
+
+
+}
+
+h3{
+
+  font-size:2.6em;
+  color: #00455A;
+  margin-bottom: 2rem;
+
+}
+
+h4{
+
+  font-size:2.1em;
+}
+ 
+  
+.container-fluid {
+  width: 100 vw;
+}
+
+
+
+h5{
+
+  font-size:2.0em;
+  
+
+}
+
+p{
+  font-size:1.9em;
+
+}
+
+#pWelcome{
+  font-size:2.3em;
+  color: #222;
+}
+
+
+
+.padding{
+  padding-bottom:2rem;
+}
+
+.col {
+  display:inline-block;
+}
+
+
+hr.light{
+  border-top:1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+
+}
+
+
+
+.button-flag{
+
+  justify-content: center;
+  display:inline-block;
+}
+
+.container-flags{
+  margin-bottom: 80px;
+  margin-top: 80px;
+  justify-content: center;
+
+}
+
+
+
+/* Tabla */
+
+#table-year-data {
+  border-collapse: collapse;
+  width: 100%; 
+  font-size:1.9em;
+  justify-content: center;
+  margin: 0 auto;
+  
+}
+
+
+#result{
+
+  margin-bottom: 140px;
+  font-size:3em;
+
+}
+
+td{
+  border: 1px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.content-gender{
+  justify-content: center;
+  margin: 0 auto;
+  padding-left:42%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  
+
+}
+
+
+#average{
+
+  margin-bottom: 80px;
+  margin-top: 80px;
+  justify-content: center;
+  font-size:16px;
+  margin: 0 auto;
+
+}
+
+#sorters{
+
+  justify-content: center;
+  font-size:16px;
+
+}
+#Stadistics{
+
+  justify-content: center;
+  font-size:16px;
+
+}
+
+
+.container-results{
+  text-align: center;
+  justify-content: center;
+  
+
+}
+
+
+th{
+  font-size:20px;
+
+}
+
+#sorters{
+  font-size:20px;
+
+}
+
+#table-title{
+  font-size:20px;
+  margin-bottom: 80px;
+
+}
+
+#country-name{
+  font-size:23px;
+
+}
+
+#table-center{
+  justify-content:center;
+}
+
+
+
+/* Carousel */
+
+.mySlides{
+  width:100%;
+  
+}
+.carousel-caption{
+  position:absolute;
+  top:50%;
+  
+}
+
+.carousel-inner img {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.btn-lg {
+
+  font-size: 2.25rem;
+
+}
+
+/* Redes*/
+
+.socialmedia{
+  margin-bottom: 80px;
+  margin-top: 120px;
+}
+
+.social a {
+  font-size:4.5em;
+  padding:3rem;
+
+
+}
+
+
+.fa-facebook{
+  color:#3b5998;
+  }
+
+  .fa-twitter{
+    color:#00aced;
+    }
+  
+    .fa-instagram{
+      color:#517fa4;
+      }
+    
+      .fa-youtube{
+        color:#bb0000;
+        }
+
+
+        .fa-facebook:hover,
+          .fa-twitter:hover,
+          .fa-instagram:hover,
+              .fa-youtube:hover {
+                color:#d5d5d5;
+
+              }
+
+    footer{
+      background-color:#00455A;
+      color:white;
+      padding-top:2rem;
+      font-size:1em;
+      
+
+    }     
+    
+ 
+                    
+
+
+
+
+
+
+
+
+
+
