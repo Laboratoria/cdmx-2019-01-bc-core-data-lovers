@@ -74,7 +74,7 @@ Con esta información el usuario podrá saber si vale la pena cazar al pokemon y
  
 # Agradecimiento
  
-Queremos agradecer a todas aquellas personas que nos apoyaron en dudas y retroalimentaciones para poder lograr este proyecto, a nuestros couches, nuestra compañera Mimi, a nuestro squad, Jedi y a la gente que contribuyó para que esto salga a flote y el día de hoy lo podamos visualizar, así como a él ☕ y   🍭 que nos mantuvieron alertas para llegar a la meta.
+Queremos agradecer a todas aquellas personas que nos apoyaron en dudas y retroalimentaciones para poder lograr este proyecto, a nuestros couches, nuestra compañera Mimi, a nuestro squad, Jedi y a la gente que contribuyó para que esto salga a flote y el día de hoy lo podamos visualizar, así como a él ☕ y   🍭 que nos mantuvieron alertas para llegar a la meta.😉
 
 
 
