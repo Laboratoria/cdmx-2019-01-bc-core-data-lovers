@@ -13,13 +13,6 @@ const menuToogle = document.getElementById('menu-toogle');
 const aside = document.getElementById('aside');
 //const printIndividualCard=document.getElementById('print-individual-card');
 
-const counterCollection=document.getElementById('counterCollection');
-const printType= document.getElementById('printType');
-const alphabeticOrderButton=document.getElementById('totales');
-const menuToogle=document.getElementById('menu-toogle');
-const aside=document.getElementById('aside');
-
-
 pokeballButton.addEventListener('click', () => { // ocultar página de inicio//
   initialPage.classList.add('hideElement');
   pokemonPage.classList.remove('hideElement');
@@ -107,11 +100,11 @@ menuToogle.addEventListener('click', () => {
 //const wrapper = document.getElementsByClassName('wrapper');
 
 
-for (let i = 0; i < wrapper.length; i++) {
-  wrapper[i].addEventListener('click', () => {
-    const getIdElement = wrapper[i].id;
-    const modalSelected = window.pokesaurius.getPokemonById(data, getIdElement);
-    return modalSelected
-  });
-}
+//for (let i = 0; i < wrapper.length; i++) {
+//  wrapper[i].addEventListener('click', () => {
+//    const getIdElement = wrapper[i].id;
+//    const modalSelected = window.pokesaurius.getPokemonById(data, getIdElement);
+//    return modalSelected
+//  });
+//}
 
