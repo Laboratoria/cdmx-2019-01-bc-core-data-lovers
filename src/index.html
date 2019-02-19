@@ -7,7 +7,10 @@
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon(2).ico">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="./data/injuries/injuries.js"></script>
+  <script src="data.js"></script>
+
 </head>
 
 <body>
@@ -24,35 +27,33 @@
         <li><a href="#">Contact</a></li>
         <!-- <i class="fab fa-facebook-f"></i><br>
         <i class="fab fa-twitter"></i> -->
-       </ul>
+      </ul>
     </nav>
-    </header>
+  </header>
 
-    <section id="realB">
+  <section id="realB">
 
-          <!--<section1 id="principalpage" class=hide>-->
-          <h1>Injured persons by<br>transportation mode</h1>
-          <h2>in United States of America</h2>
-          <h3>All cities all over the world recognized safety and security mobility in its goals, objectives and polices. Specific objectives were translated into performance criteria used to establish priorities for planned transportation improvements. A key way to measure safety is evaluating the total number of injured persons in each mode of transportation.</h3>
+    <!--<section1 id="principalpage" class=hide>-->
+    <h1>Injured persons by<br>transportation mode</h1>
+    <h2>in United States of America</h2>
+    <h3>DataDashboard share information to measure safety by evaluating the total number of injured persons in each mode of transportation:</h3>
 
-          <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
-          <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
-          <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
-          <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
-          <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
-    </section>
+    <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
+    <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
+    <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
+    <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
+    <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
+  </section>
 
   <section class="infoBody content">
-    <h1 class="titleToSearch">Pedestrians</h1>
+    <h1 class="subtitles">Pedestrians</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
+       <p>In the pyramid of mobility, pedestrians should be a priority for two main reasons: they are the weakest and it is the majority form of displacement, apart from the reasoning that we are all pedestrians. Making the weak and weak strong is the slogan: the pedestrian must have the highest priority because he is weaker than the bicycle and much weaker than the car. Therefore, the speed of the city should be regulated according to the pedestrian.</p>
+  <img src="./images/Recurso 2.png" width="300" height="300"/>
     </article>
-
     <aside class="table">
-      <table class="fas fa-walking tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -63,19 +64,18 @@
         </tbody>
       </table>
     </aside>
+    <div class="chart_div"></div>
   </section>
 
   <section class="infoBody content">
-    <h1 class="titleToSearch">Pedalcyclists</h1>
+    <h1 class="subtitles">Pedalcyclists</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
+      <p>The bicycle should be the preferred vehicle for several reasons: it is very efficient in small distances (the majority); it's cheap (much less than the 5,000 and 10,000 euros that you have to pay annually for a car); it does not pollute making noise or eliminating toxic gases; It is less dangerous than a car; it consumes less space; It is healthy.</p>
+  <img src="./images/Recurso 1.png" width="300" height="300"/>
     </article>
-
     <aside class="table">
-      <table class="fas fa-bicycle tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -86,19 +86,18 @@
         </tbody>
       </table>
     </aside>
+    <div class="chart_div"></div>
   </section>
 
   <section class="infoBody content">
-    <h1 class="titleToSearch">Bus occupants</h1>
+    <h1 class="subtitles">Bus occupants</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
+      <p>Public transport consumes less public space than cars; it is economically more viable for the user and in public infrastructures; favors intermodality with pedestrians</p>
+  <img src="./images/Recurso 5.png" width="300" height="300"/>
     </article>
-
     <aside class="table">
-      <table class="fas fa-bus tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -109,19 +108,18 @@
         </tbody>
       </table>
     </aside>
+    <div class="chart_div"></div>
   </section>
 
   <section class="infoBody content">
-    <h1 class="titleToSearch">Car occupants</h1>
+    <h1 class="subtitles">Car occupants</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
+      <p>unt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="./images/Recurso 3.png" width="300" height="300"/>
     </article>
-
     <aside class="table">
-      <table class="fas fa-car tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -132,19 +130,22 @@
         </tbody>
       </table>
     </aside>
+
+    <!-- Identify where the chart should be drawn. -->
+      <div class="chart_div"></div>
+
   </section>
 
   <section class="infoBody content">
-    <h1 class="titleToSearch">Motorcyclists</h1>
+    <h1 class="subtitles">Motorcyclists</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
+      <p>oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <img src="./images/Recurso 4.png" width="300" height="300"/>
     </article>
 
     <aside class="table">
-      <table class="fas fa-motorcycle tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -155,38 +156,44 @@
         </tbody>
       </table>
     </aside>
+    <div class="chart_div"></div>
   </section>
 
-   <section id="year_section" class="slideshow-area">
-       <h3>Or search by year:</h3>
-      <select id="selected_year" name="year" class="year_button">
-          <option selected value="0"> YEAR </option>
-          <option class="year" value="2001-01-04">2001</option>
-          <option class="year" value="2002-01-04">2002</option>
-          <option class="year" value="2003-01-04">2003</option>
-          <option class="year" value="2004-01-04">2004</option>
-          <option class="year" value="2005-01-04">2005</option>
-          <option class="year" value="2006-01-04">2006</option>
-          <option class="year" value="2007-01-04">2007</option>
-          <option class="year" value="2008-01-04">2008</option>
-          <option class="year" value="2009-01-04">2009</option>
-          <option class="year" value="2010-01-04">2010</option>
-          <option class="year" value="2011-01-04">2011</option>
-          <option class="year" value="2012-01-04">2012</option>
-          <option class="year" value="2013-01-04">2013</option>
-          <option class="year" value="2014-01-04">2014</option>
-          <option class="year" value="2015-01-04">2015</option>
-          <option class="year" value="2016-01-04">2016</option>
-        </select>
+  <section id="year_section" class="slideshow-area">
+    <h3>Or search by year:</h3>
+    <select id="selected_year" name="year" class="year_button">
+      <option selected value="0"> YEAR </option>
+      <option class="year" value="2001-01-04">2001</option>
+      <option class="year" value="2002-01-04">2002</option>
+      <option class="year" value="2003-01-04">2003</option>
+      <option class="year" value="2004-01-04">2004</option>
+      <option class="year" value="2005-01-04">2005</option>
+      <option class="year" value="2006-01-04">2006</option>
+      <option class="year" value="2007-01-04">2007</option>
+      <option class="year" value="2008-01-04">2008</option>
+      <option class="year" value="2009-01-04">2009</option>
+      <option class="year" value="2010-01-04">2010</option>
+      <option class="year" value="2011-01-04">2011</option>
+      <option class="year" value="2012-01-04">2012</option>
+      <option class="year" value="2013-01-04">2013</option>
+      <option class="year" value="2014-01-04">2014</option>
+      <option class="year" value="2015-01-04">2015</option>
+      <option class="year" value="2016-01-04">2016</option>
+    </select>
 
-        <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE DATA</button>
-  </section>
-  <section id="result_graphic" class="result_graphic">
-  </section>
+    <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE DATA</button>
+ </section>
 
+ <section class="year-section">
+ <section id="result_graphic" class="result_graphic">
+   <h4>Injures by year in all transportation modes</h4>
+ </section>
+ <br>
+ <section class="pieChart">
+   <div id="piechart"></div>
+ </section>
+ </section>
 </body>
 
-<script src="data.js"></script>
 <script src="main.js"></script>
-
 </html>
