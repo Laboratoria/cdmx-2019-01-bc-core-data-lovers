@@ -290,6 +290,9 @@ section {
     margin-left: 18%;
     margin-right: 18%;
   }
+  #valorMAx{
+    text-align: center;
+  }
 
   #contenido {
     text-align: center;
@@ -478,6 +481,7 @@ section {
   #myChart {
     width: 40%;
     float: right;
+    padding-left: 5%;
   }
 
 }

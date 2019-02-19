@@ -126,7 +126,7 @@ const recorrerObjeto = (pais) => {
   for (let j in pais) { //recorre objeto para pasar el año a nuevo arrego de eje Y
     valorPorcentajeY.push(pais[j]);
   }
-  let report = "<p>" + "La gráfica muestra una variación porcentual" + "</br>" + "del año 1960 con " + valorPorcentajeY[0].toFixed(2) + "%" + " a " + valorPorcentajeY[57].toFixed(2) + "%" + " para 2017." + "</p>";
+  let report = "<p>" + "La gráfica muestra una variación porcentual" + " del año 1960 con " + valorPorcentajeY[0].toFixed(2) + "%" + " a " + valorPorcentajeY[57].toFixed(2) + "%" + " para 2017." + "</p>";
   document.getElementById('reporte').innerHTML = report;
   document.getElementById('contenido').innerHTML = respuesta;
   document.getElementById('graf').style.display = 'block'; //comentar grafica
@@ -148,11 +148,11 @@ const ptrMax = (selcValor, maxObj) => { //imprime max/min
   valorMAx.style.display = 'block';
   viewMax;
   if (selcValor === 'max') {
-    viewMax = "<b>" + "El valor maximo es: " + maxObj.toFixed(2) + "%" + "</b>";
+    viewMax = "<b>" + "<font size=4.5>" + "El valor maximo es: " + maxObj.toFixed(2) + "%" + "</b>";
   }
   
   if (selcValor === 'min') {
-    viewMax = "<b>" + "El valor minimo es: " + maxObj.toFixed(2) + "%" + "</b>";
+    viewMax = "<b>" + "<font size=4.5>" +  "El valor minimo es: " + maxObj.toFixed(2) + "%" + "</b>";
   }
   
   document.getElementById('valorMAx').innerHTML = viewMax;
