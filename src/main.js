@@ -10,13 +10,6 @@ const resultsecc = document.getElementById("result");
 const injuriesBy = window.INJURIES;
 //Constante que contiene la tabla
 const table = document.getElementById('table');
-//Declaramos botón de ordenar
-// let ordenbutton = document.getElementById("ordendata");
-// //users
-// let motociclista = "MOTOCICLISTA"
-// ciclista = "CICLISTA"
-// peaton = "PEATÓN"
-// auto = "AUTOMOVILISTA"
 
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
@@ -50,17 +43,9 @@ searchbutton.addEventListener("click", () => {
       </tr>
               </table>`
   } else {
-    //console.log('no soy all');
     table.innerHTML = '';
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);
     resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
   }
 
 });
-
-// // allDataButton.addEventListener("click", () => {
-// //   alert("Hello! I am an alert box!!");
-// //   let yearValue = injuriesBy
-// //   //resultsecc.innerHTML = `${newData[0]}`;
-// //   }
-// );
