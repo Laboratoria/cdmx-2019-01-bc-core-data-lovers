@@ -277,7 +277,7 @@ function carousel() {
 // Navbar and dropdowns
 var toggle = document.getElementsByClassName('navbar-toggle')[0],
     collapse = document.getElementsByClassName('navbar-collapse')[0],
-    dropdowns = document.getElementsByClassName('dropdown');;
+    dropdowns = document.getElementsByClassName('dropdown');
 
 // Toggle if navbar menu is open or closed
 function toggleMenu() {
