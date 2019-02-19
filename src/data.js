@@ -33,6 +33,8 @@ window.pokemonFunction = {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
       if (a.height < b.height) {
         return 1
+      }else{
+        return -1
       }
     })
     return pokemonSortedData;
@@ -55,7 +57,9 @@ window.pokemonFunction = {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
        if ((parseFloat(a.weight)) < (parseFloat( b.weight))) {
         return 1;
-      } 
+      }else{
+        return -1
+      }
     });
     return pokemonSortedData;
   },
