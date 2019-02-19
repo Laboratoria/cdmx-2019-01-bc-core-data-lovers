@@ -304,7 +304,7 @@ div#group-buttons{
 .form-inline {
   display: flex;
   width: 80%;
-margin-top: 50px;
+  margin-top: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }

@@ -14,7 +14,9 @@
 
 ## Preámbulo
 
-Todos los niños merecen alcanzar su máximo potencial, pero la desigualdad de género que permea su vida y la de sus cuidadores impide que esto sea realidad.
+Cada año, 12 millones de niñas se casan antes de los 18 años. A nivel mundial, 1 de cada 5 niñas es madre antes de cumplir dicha edad.
+
+Todas los niñas merecen alcanzar su máximo potencial, pero la desigualdad de género que permea su vida y la de sus cuidadores impide que esto sea realidad.
 
 La desigualdad de género está presente en el día a día de niñas y niños, tanto en sus hogares como en sus comunidades, en los libros de texto, los medios de comunicación y entre los hombres y mujeres que cuidan de ellos.
 
@@ -34,11 +36,45 @@ Factores tales como las tareas domésticas, cuidar de los hermanos o los problem
 
 ### Definición del producto
 
+El desarrollo de esta aplicación web tiene como objetivo servir de apoyo a las organizaciones no lucrativas (y a los profesionales y voluntarios que trabajan o colaboran con ellas), interesadas en impulsar el desarrollo de la mujer a través de la educación. 
+
+La mayoría de estas entidades no lucrativas carecen de la necesaria capacitación que les permita realizar su trabajo de una manera profesional y eficiente.
+
+Esas carencias formativas son el objetivo principal de nuestra organización.
+
+ProMujer es un Centro de investigación para el Desarrollo de la mujer en América Latina que cuenta con programas de investigación y desarrollo, publicación de contenidos, etc.
+
+Aprovecha su presencia mundial y las alianzas con sus asociados para fomentar la igualdad de género. El Plan de Acción para la Igualdad entre los Géneros es la guía para hacer que las reglas del juego sean más justas.
 
 ### Historias de usuario
 
+Al realizar las historias de nuestros usuarios, encontramos que las mas recurrentes fueron:
+
+- Usuario 1: Necesito ver un menú con los países de América Latina y sus niveles en educación.
+
+- Usuario 2: Quiero acceder rápidamente a los indicadores según el país de mi interés.
+
 
 ### Diseño de la Interfaz de Usuario
+
+Con el objetivo de facilitar a los usuarios la navegación por nuestra web app, diseñamos una interfaz gráfica con un look & feel simple y concreto, por medio de los siguientes elementos:
+
+- Identificación: Agregamos un nombre a la web (ProMujer), logo, banner en el main, frase corta con el tema principal.
+
+- Navegación: Agregamos el Menú principal, elemento de regreso a la home, información sobre la ubicación del usuario dentro del sitio web, títulos y textos en un lenguaje claro y conciso, presentados en un formato agradable y de fácil lectura
+
+- Interacción: Para provocar la interacción del usuario, ofrecemos la posibilidad de realizar acciones específicas, para que elija el contenido de su interés.
+
+- Paleta de color: 
+    Amarrillo, para elementos de mayor jerarquía. 
+    Gris, para textos y elementos de poco peso visual.
+    Blanco, para hacer pausas a través de espacios vacíos (background). 
+    
+- Tipografía: Roboto sans-serif para darle un aspecto fresco, simple y legible a la página web.
+
+- Plecas: Se utilizaron para dividir visualmente cada sección de la página.  
+
+- Banner: Uso de banner como elemento princial, que reafirme al usiario el contenido de esta web app.
 
 #### Prototipo de baja fidelidad
 
