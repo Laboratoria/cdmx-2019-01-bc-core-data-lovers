@@ -52,7 +52,7 @@ El sitio web tiene como objetivo brindar la información indispensable para eleg
 ## Proceso de sketching
 - **Prototipo de baja fidelidad.** El diseño de la página web se realizó pensando en mobile firts. La elaboración del boceto fue usando papel y lápiz. La interfaz contó con dos pantallas; la primera mostraba como background un wallpaper del videojuego y en la parte inferior un botón de comenzar. La segunda pantalla presentó un burguer botton para desplegar 5 secciones: consultar el rol de los campeones, búsqueda por nombre, obtención de cuatro indicadores de mayor relevancia; información detallada de los campeones junto con sus estadísticas en gráficas. 
 
-(https://github.com/Cristalgarcia/cdmx-2019-01-bc-core-data-lovers/blob/rama-cris/src/assets/prototipo%20de%20baja%20fidelidad.jpeg)
+1[Prototipo](https://github.com/Cristalgarcia/cdmx-2019-01-bc-core-data-lovers/blob/rama-cris/src/assets/prototipo%20de%20baja%20fidelidad.jpeg)
 
 - **Prototipo de alta fidelidad.** El sketch se realizó en [Figman](https://www.figma.com/proto/ciJPALOwmDoRxJ62H0xwpyd6/LoL-Prototipo?node-id=1%3A2&scaling=scale-down). La primera pantalla mantuvo el diseño del prototipo de baja fidelidad. La segunda pantalla, Home, brinda información general de LoL (objetivo, mapa del videojuego y comandos del juego). El menú consta de tres secciones; personajes, roles y poderes. Cuenta con un buscador y cada uno de los campeones tienen una tarjeta complementaria con información adicional. 
 
