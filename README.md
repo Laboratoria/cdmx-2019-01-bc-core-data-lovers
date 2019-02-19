@@ -1,4 +1,4 @@
-#Pokesaurius
+###Pokesaurius
 
 Pokémon GO fue un ¡boom! en el verano de 2016, llegó a tener más de 28 millones de usuarios. El hecho de poder salir a cazar pokémon con tus amigos y tener la oportunidad de conquistar los gimnasios fue realmente llamativo e innovador. 
 Pero es probable que nos preguntemos ¿quién juega Pokémon GO hoy en día?
