@@ -20,7 +20,7 @@ window.data = {
   }, //Consult
   order: (injuriesBy, yearValue, userValue) => {
     let yearFind = "";
-      injuriesBy.forEach(element => {
+    injuriesBy.forEach(element => {
       let year = element.Year;
       let moto = element.Total_Injured_Persons_Motorcyclists;
       let bike = element.Total_Injured_Persons_Pedalcyclists;

@@ -51,28 +51,43 @@ figure {
 }
 
 .nav__item {
-     display:block;
-     width:70%;
-     margin:0 auto;
-     line-height:4;
-     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
-     border-bottom:.5px solid rgba(59, 62, 61, 1);
-     border-top:.5px solid rgba(59, 62, 61, 1);
-     background-color:transparent;
-     color:rgba(221, 231, 228, 1);
-   }
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 4;
+  position: relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+  border-bottom: .5px solid rgba(59, 62, 61, 1);
+  border-top: .5px solid rgba(59, 62, 61, 1);
+  background-color: transparent;
+  color: rgba(221, 231, 228, 1);
+}
 
 .menu-toogle {
   position: absolute;
-  line-height: 1.5;
+  /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+  line-height: 1.1;
   text-align: center;
-  top: 4px;
-  right: 3%;
+  top: 6.5px;
+  /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+  right: 8px;
   border-radius: 3px;
   background-color: transparent;
   transition: all .5s ease;
+  /*Añadimos una transición para que realice un desplazamineto suave*/
   z-index: 10;
-  }
+}
+
+.menu-toogle::before {
+  content: "☰";
+ font-size: 33px;
+ color: #eb008b;
+ }
+
+.checkbox {
+  float: right;
+  display: none;
+  /*Ocultamos el checkbox pues no nos interesa que se vea*/
+}
 
   .menu-toogle::before {
     content: "☰";
@@ -117,7 +132,16 @@ figure {
      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
    }
 
+.checkbox:checked~.main-w {
+  margin-right: 200px;
+  /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+}
 
+.checkbox:checked~.menu-toogle {
+  right: 208px;
+  position: fixed;
+  /*Fijamos la hamburgues para que se desplace junto con el menú*/
+}
 
 .info {
   background-color: #eb008b;
@@ -311,7 +335,7 @@ footer {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media (min-width: 1380px) {
 
 .logo{
   width: 4%;
