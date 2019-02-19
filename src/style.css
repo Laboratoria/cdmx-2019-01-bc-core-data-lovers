@@ -257,6 +257,8 @@ main {
   transition-duration: 0.4s;
   cursor: pointer;
   color: #444444;
+  text-align: center;
+  padding-top: 15px;
 }
 
 @media(min-width:768px) {
