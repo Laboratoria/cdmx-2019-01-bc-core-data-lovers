@@ -226,7 +226,7 @@ it('PercentAndYear is a function', () => {
   expect(typeof window.WorldBank.percentAndYear).toBe('function');
 })
 it('Debe retornar un objeto', () => {
-  expect(window.WorldBank.percentAndYear(dataFilter, 'Proporción de inscripciones de mujeres con respecto a varones en la educación primaria (%)')).toEqual(dataFilter.MEX.indicators[0].data)
+  expect(window.WorldBank.percentAndYear(dataFilter,'MEX', 'Proporción de inscripciones de mujeres con respecto a varones en la educación primaria (%)')).toEqual(dataFilter.MEX.indicators[0].data)
 });
 
 //Test para funciónde ordenar
