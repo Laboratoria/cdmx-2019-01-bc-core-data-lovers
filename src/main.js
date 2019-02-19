@@ -96,24 +96,6 @@ sortSelect.addEventListener('change',() => {
 
 
 
-//selectIndicator.addEventListener("change", sortByPercent);
-
-     /* printYears= (sortFinal) => {
-
-      }
-     
-      
-      }
-      
-      arrResultYear = new Object()
-      sortFinal.forEach(element=> {
-        let percent=  element[1];
-        let year = element[0];
-       arrResultYear[percent]  = year;
-    })
-    printPercents(arrResultYear);
-  })
-}*/
 
  
 
