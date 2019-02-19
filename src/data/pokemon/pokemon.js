@@ -2215,7 +2215,7 @@ window.POKEMON = {
     "id": 78,
     "num": "078",
     "name": "Rapidash",
-    "img": "http://www.serebii.net/pokemongo/pokemon/078.png",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/3/39/latest/20150321181736/Rapidash_espalda_G6.gif",
     "type": [
       "Fire"
     ],
