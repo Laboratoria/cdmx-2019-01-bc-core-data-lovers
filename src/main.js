@@ -71,7 +71,7 @@ listQuestion.addEventListener("change", () => {
   indicator.innerHTML = "";//Limpiar funcion
   let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
   let QuestionText = listQuestion.options[listQuestion.selectedIndex].text;
-  console.log(listQuestion.selectedIndex)
+  //console.log(listQuestion.selectedIndex)
   let countrySelect = listQuestion.value;
   const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js
   var years = []; // para almacenar los años
@@ -116,7 +116,7 @@ for (let radioItem in radioFilters){
 }
 
 function graficar(datosx, datosy, leyenda){
-  console.log(datosx)
+  //console.log(datosx)
   // aqui graficamos
   //intanciamos chart y como parametro (elemento donde se va a colocar la grafica)
   let myLineChart = new Chart(graficaDatos, {
@@ -143,5 +143,7 @@ function graficar(datosx, datosy, leyenda){
           text: leyenda // le pasamos el texto de la pregunta que seleccionamos en el select
       }
     }
+    
+
   }); 
 }
