@@ -7,7 +7,7 @@ window.data = {
     return arrayFilter;
 
   },
-  
+
   //Función de Ordenado, recibe la Data el parametro por el que se va a Ordenar: altura o peso, y si será ascendente o Descendente
   sortDataPokemon: (data, sortBy, sortOrder) => {
 
