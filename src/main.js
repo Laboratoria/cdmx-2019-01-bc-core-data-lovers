@@ -13,6 +13,11 @@ const menuToogle = document.getElementById('menu-toogle');
 const aside = document.getElementById('aside');
 //const printIndividualCard=document.getElementById('print-individual-card');
 
+const counterCollection=document.getElementById('counterCollection');
+const printType= document.getElementById('printType');
+const alphabeticOrderButton=document.getElementById('totales');
+const menuToogle=document.getElementById('menu-toogle');
+const aside=document.getElementById('aside');
 
 
 pokeballButton.addEventListener('click', () => { // ocultar página de inicio//
@@ -25,6 +30,7 @@ const print=(data)=>{
     data.forEach(element => {
         totalWeight += parseFloat(element.weight);
         let result = `<div id="${element.id}" class="wrapper">
+   
         <div class="pokemon-card"> 
         <div class="pokemon-card-image">
         <img src="${element.img}">
