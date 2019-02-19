@@ -8,55 +8,45 @@ let searchbutton = document.getElementById("search");
 const resultsecc = document.getElementById("result");
 //Constante que contiene la data
 const injuriesBy = window.INJURIES;
-//Constante que tiene el resultado de la función ORDER
-let resultDatos = []
-let table = document.getElementById('table')
+//Constante que contiene la tabla
+const table = document.getElementById('table');
 
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
-  //Users
-  let motociclista = "MOTOCICLISTA"
-  let ciclista = "CICLISTA"
-  let peaton = "PEATÓN"
-  let auto = "AUTOMOVILISTA"
-
-  if (userValue === 'all') {
-    resultsecc.innerHTML = ''
-    resultDatos = window.data.order(injuriesBy, yearValue, userValue);
-    let newMoto = [motociclista, resultDatos[1]]
-    let newBike = [ciclista, resultDatos[2]]
-    let newPeaton = [peaton, resultDatos[3]]
-    let newAuto = [auto, resultDatos[4]]
-    table.innerHTML = `<table>
-    <tr>
-      <th> AÑO ${resultDatos[0]} </th>
-      <th> TIPO DE HERIDO </th>
-      <th> TOTAL </th>
-    </tr>
-    <tr>
-      <td colspan="2">${newMoto[0]}</td>
-      <td> ${newMoto[1]} </td>
-    </tr>
-    <tr>
-      <td colspan="2">${newBike [0]}</td>
-      <td>${newBike[1]}</td>
-    </tr>
-    <tr>
-      <td colspan="2">${newPeaton[0]}</td>
-      <td> ${newPeaton[1]} </td>
-    </tr>
-    <tr>
-      <td colspan="2">${newAuto[0]}</td>
-      <td> ${newAuto[1]} </td>
-    </tr>
-    </table>`
-
-    return resultDatos
+  if(userValue === 'all'){
+    resultsecc.innerHTML = '';
+    const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
+    table.innerHTML = `          <table>
+                <tr>
+                  <th> AÑO </th>
+                  <th> TIPO DE HERIDO </th>
+                  <th> TOTAL </th>
+                  </tr>
+                  <tr>
+                    <td rowspan="4"> ${resultDatos[0]} </td>
+                    <td> MOTOCICLISTA </td>
+                    <td> ${resultDatos[1]} </td>
+                  </tr>
+                  <tr>
+                    <td> CICLISTA </td>
+                    <td> ${resultDatos[2]} </td>
+                  </tr>
+                  <tr>
+            <td> PEATON </td>
+            <td> ${resultDatos[3]} </td>
+        </tr>
+        <tr>
+          <td> AUTOMOVILISTAS </td>
+          <td> ${resultDatos[4]} </td>
+      </tr>
+              </table>`
   } else {
-    table.innerHTML = ''
+    table.innerHTML = '';
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);
     resultsecc.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
   }
+
 });
+

@@ -14,6 +14,7 @@ header {
 
 figure {
   margin: 0%;
+  display: inline-block;
 }
 
 #menu {
@@ -94,8 +95,25 @@ figure {
    color: #eb008b;
    }
 
-   td, th, table {
-     border: 1px solid black;
+.tableData{
+  height: auto;
+  width: 100%;
+  margin-block-start: 3%;
+  margin-block-end: 3%;
+
+}
+   td, th {
+    border: 1px solid #ffffff;
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2%;
+    width: 1%;
+   }
+
+   th{
+     color: #eb008b;
    }
 
    .checkbox {
@@ -130,7 +148,7 @@ figure {
   width: auto;
   height: 100%;
   margin-block-end: 0%;
-  margin-block-start: 15%;
+  margin-block-start: 10%;
   color: white;
   text-align: justify;
   font-family: sans-serif;
@@ -145,12 +163,12 @@ figure {
   height: auto;
   border-radius: 4%;
   padding: 5%;
-  margin: 5% 15% 7% 15%;
 }
 
 #consulta{
   color: white;
   text-decoration: none;
+  display: inline-block;
 }
 
 .button {
@@ -229,8 +247,18 @@ p {
   padding-block-start: 7%;
 }
 
+.imagepeaton {
+  display: block;
+  width: 99%;
+  height: auto;
+  padding: 0.5%;
+  }
+
+.consulta  {
+    text-align: center;
+  }
+
 .select {
-  margin: 20%;
   margin-top: 4%;
   padding: 2%;
   text-align: center;
@@ -253,7 +281,12 @@ p {
 .result {
   text-align: center;
   font-family: sans-serif;
-  margin-block-end: 20%;
+}
+
+table{
+  width: 50%;
+  text-align: center;
+  margin: 1% 1% 1% 10%;
 }
 
 .photos {
@@ -266,7 +299,7 @@ p {
 }
 
 .question{
-  padding: 1%;
+  padding: 5%;
 }
 
 footer {
@@ -304,31 +337,10 @@ footer {
 
 @media (min-width: 1380px) {
 
-  .logo {
-    width: 6%;
-    height: auto;
-    padding: 1%;
-  }
-
-  .menu {
-    width: 6%;
-    height: auto;
-    vertical-align: top;
-    padding: 2%;
-    padding-top: 2%;
-    float: right;
-  }
-
-  .info {
-    background-color: #eb008b;
-    width: auto;
-    height: 100%;
-    margin-block-end: 0%;
-    margin-block-start: 0%;
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 2%;
+.logo{
+  width: 4%;
+  height: auto;
+  padding: 1%;
   }
 
   .total {
@@ -343,10 +355,8 @@ footer {
   p {
     color: white;
     font-family: sans-serif;
-    text-align: center;
     padding: 1%;
     font-size: 14px;
-    margin: 0;
   }
 
   .icon {
@@ -357,7 +367,7 @@ footer {
   }
 
   .select {
-    margin: 10%;
+    margin: 3%;
     margin-top: 4%;
     padding: 1%;
     text-align: center;
@@ -370,72 +380,130 @@ footer {
     padding-top: 8%;
   }
 
+  header{
+    width: 100%;
+    }
 
-@media (min-width: 1025px) and (max-width: 1380px) {
-  .menu {
-    width: 6%;
+    h3{
+      font-size: x-large;
+    }
+
+.button1{
+  text-align: center;
+    background: #231f20;
+    width: 16%;
     height: auto;
-    vertical-align: top;
-    padding: 0;
-    padding-top: 8%;
-    margin-left: 63%;
-  }
+    border-radius: 3%;
+    padding: 3%;
+}
+#infoSecI{
+  width: 25%;
+}
+
+#totalParraph{
+  width: 42%;
+  padding: 3%;
+  margin: 1% 1% 1% 24%;
+}
+
+h2{
+  font-size: -webkit-xxx-large;
+}
+
+.final{
+  width: 47%;
+  margin-top: 2%
+}
+
+.image{
+  padding-block-start: 2%;
+}
+
+.imagepeaton{
+  display: inline-block;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.question{
+  padding: 1%;
+}
+
+.image{
+  display: inline-block;
+  width: 32%;
+}
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1380px) {
+
+  header{
+    width: 100%;
+    }
 
   .logo {
-    width: 8%;
+    width: 10%;
     height: auto;
-    padding: 3%;
+    padding: 1%
   }
 
-  .info {
-
-    background-color: #eb008b;
-    width: auto;
-    height: 100%;
-    margin-block-end: 0%;
-    margin-block-start: 0%;
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 2%;
-  }
-
-  .menu {
-    width: 6%;
-    height: auto;
-    vertical-align: top;
-    padding: 2%;
-    padding-top: 2%;
-    float: right;
-  }
+.info{
+  margin-block-start: 0%;
+}
 
   .sidebar {
-  position: absolute;
-  width: 200px;
-  height: 100vh;
-  top: 0;
   right: -1557px;
   padding-top: 47px;
-  background-color: rgba(29, 33, 32, 1);
-  border-left: 4px solid rgb(235, 0, 139);
-  transition: all .5s ease;
   }
+
+.menu-toogle{
+    top: 19px;
+  }
+
+  #infoSecI{
+    font-size: 14px;
+  display: inline-block;
+  float: left;
+  }
+
+  #map{
+    display: inline-block;
+        width: 70%;
+        height: auto;
+        padding: 1.5%;
+        padding-block-start: 3%
+  }
+
+p{
+  padding: 0%;
+}
+  .image{
+    display: inline-block;
+    width: 32%;
+  }
+
+.map{
+  display: inline-block;
+text-align: center;
+}
+  .question{
+    padding: 1%;
+  }
+
 }
 /*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
 
-   .menu {
-    width: 5%;
-    height: auto;
-    vertical-align: top;
-    padding: 0;
-    padding-top: 5%;
-    margin-left: 63%;
-}
+  header{
+    width: 100%;
+    }
+
 
   .logo {
     width: 8%;
@@ -443,18 +511,10 @@ footer {
     padding: 3%;
   }
 
-  .info {
-
-    background-color: #eb008b;
-    width: auto;
-    height: 100%;
-    margin-block-end: 0%;
+  .info{
     margin-block-start: 0%;
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 2%;
   }
+
 
   .icon {
     display: inline-block;
@@ -465,16 +525,15 @@ footer {
   }
 
   .sidebar {
-  position: absolute;
-  width: 200px;
-  height: 100vh;
-  top: 0;
   right: -656px;
   padding-top: 47px;
-  background-color: rgba(29, 33, 32, 1);
-  border-left: 4px solid rgb(235, 0, 139);
-  transition: all .5s ease;
   }
+
+  .image{
+    display: inline-block;
+    width: 32%;
+  }
+
 }
 /*
 
@@ -483,14 +542,11 @@ footer {
 */
 
 @media (min-width: 300px) and (max-width: 767px) {
-  .menu {
-    width: 8%;
-    height: auto;
-    vertical-align: top;
-    padding: 0;
-    padding-top: 8%;
-    margin-left: 63%;
+
+  header{
+    width: 100%;
   }
+
 
   .logo {
     width: 10%;
@@ -498,42 +554,11 @@ footer {
     padding: 3%;
   }
 
-  .info {
-
-    background-color: #eb008b;
-    width: auto;
-    height: 100%;
-    margin-block-end: 0%;
-    margin-block-start: 10%;
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 2%;
-  }
-
-  .icon {
-    display: inline-block;
-    width: 20%;
-    height: auto;
-    padding: 5%;
-    margin-left: 3%;
-    text-align: center
-  }
-
-#extend{
-  display: none;
-}
 
   .sidebar {
-  position: absolute;
-  width: 200px;
-  height: 100vh;
-  top: 0;
   right: -435px;
   padding-top: 47px;
-  background-color: rgba(29, 33, 32, 1);
-  border-left: 4px solid rgb(235, 0, 139);
-  transition: all .5s ease;
   }
+
 
 }
