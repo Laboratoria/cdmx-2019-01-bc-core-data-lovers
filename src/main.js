@@ -25,7 +25,7 @@ const home = document.getElementById('home');
 //const welcome = document.getElementById('welcomeMssg');
 const buttonDifficultyAsc = document.getElementById('difficultyAsc');
 const buttonDifficultyDsc = document.getElementById('difficultyDsc');
-
+const statsAverage = document.getElementById('statsAverage');
 
 //Trae los divs de cada personaje
 //const character = document.getElementById('character')
@@ -175,7 +175,7 @@ searchByName();
 const difficultyAsc = () => {
     buttonDifficultyAsc.addEventListener('click', () => {
       printRolTitle.innerHTML = "Lower to Higher";
-      const diffA = window.lol.sortByDifficultyAsc(datos);
+      const diffA = window.lol.sortByDifficulty(1,datos);
       document.getElementById("welcomeMssg").style.display = 'none';
       printRolTitle.style.display= "block";
       print(diffA);
@@ -185,7 +185,7 @@ const difficultyAsc = () => {
     const difficultyDsc = () => {
       buttonDifficultyDsc.addEventListener('click', () => {
         printRolTitle.innerHTML = "Higher to Lower";
-        const diffD = window.lol.sortByDifficultyDsc(datos);
+        const diffD = window.lol.sortByDifficulty(-1,datos);
         document.getElementById("welcomeMssg").style.display = 'none';
         printRolTitle.style.display= "block";
         print(diffD);
@@ -193,3 +193,9 @@ const difficultyAsc = () => {
     difficultyDsc();
 
 
+statsAverage.addEventListener('click', () => {
+  showFirstChampionList.innerHTML ="";
+  const showAttackAverage = window.lol.averageAttack(datos);
+  printRolTitle.innerHTML= "Miscellaneous"
+  showFirstChampionList.innerHTML =` <div class="nameList"><div class="rolPersonajes"> Average Attack: <br> ${showAttackAverage}</div></div>`
+})

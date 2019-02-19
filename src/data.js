@@ -46,7 +46,6 @@ window.lol = {
 
 
   filtroDataRoles: (rolId, datos) => {
-
     const filtradoPorRoles = datos.filter(element => element.tags[0] === rolId || element.tags[1] === rolId);
 
     return filtradoPorRoles;
@@ -65,35 +64,21 @@ window.lol = {
     return characterOnClick;
   },
 
-sortByDifficultyAsc: (datos) => {
+sortByDifficulty: (order, datos) => {
     const sortA = datos.sort((a, b) => {
       if (a.difficulty > b.difficulty) {
-        return 1;
+        return 1*order;
       }
-      if (a.difficulty < b.difficulty) {
-        return -1;
-      }
-      else {
-        return 0;
-      } 
+      else (a.difficulty < b.difficulty) 
+        return -1*order;
+      
+       
     })
     return sortA
   },
 
-sortByDifficultyDsc: (datos) => {
-    const sortD = datos.sort((a, b) => {
-      if (a.difficulty < b.difficulty) {
-        return 1;
-      }
-      if (a.difficulty > b.difficulty) {
-        return -1;
-      }
-      else {
-        return 0;
-      } 
-    })
-    return sortD
-  }
-
-
+averageAttack: (datos) =>{
+  const totalAttack = datos.reduce((prev,datos) => prev + datos.attack, 0)/datos.length;
+  return (totalAttack)
+},
 }
