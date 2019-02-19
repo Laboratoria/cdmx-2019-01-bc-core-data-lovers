@@ -59,10 +59,10 @@ const getOrderPokemon = (arrayButtonRadio) => {
   });
 
 
-//creando slash*//
-setTimeout(function(){
-  document.getElementById("splash").className="hide";
-},3000);
+  //creando slash*//
+  setTimeout(function () {
+    document.getElementById("splash").className = "hide";
+  }, 3000);
 
 
 }
@@ -73,16 +73,16 @@ getOrderPokemon(arrayButtonRadio);
 
 const info = document.getElementById('info');
 
-const arreglo=[];
+const arreglo = [];
 
-info.addEventListener("click",()=>{
-result.forEach (element =>{
+info.addEventListener("click", () => {
+  result.forEach(element => {
 
-  
-  arreglo.push(element.avg_spawns);
-  const statsPok = window.data.computeStats (arreglo);
-   alert("Sabías que... en promedio este tipo de pokemons tienden a aparecer cada : " + statsPok);
- statsPok.innerHTML +- "";
- 
-});
+
+    arreglo.push(element.avg_spawns);
+    const statsPok = window.data.computeStats(arreglo);
+    alert("Sabías que... en promedio este tipo de pokemons tienden a aparecer cada : " + statsPok);
+    statsPok.innerHTML + -"";
+
+  });
 })

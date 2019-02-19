@@ -159,7 +159,7 @@ const dataBpokemon = [{
   }]
 }]
 
-const arrayP = [8,2,4,2]
+const arrayP = [8, 2, 4, 2]
 
 describe("data", () => {
   it('is a function', () => {
@@ -186,14 +186,13 @@ describe("data", () => {
       expect(window.data.sortData(dataBpokemon, name, "desc")[2].name).toEqual("Venusaur");
       expect(window.data.sortData(dataBpokemon, name)[0].name).toEqual("Bulbasaur");
     });
-    it ('computeStats is a function',()=>{
+    it('computeStats is a function', () => {
       expect(typeof window.data.computeStats).toBe('function');
     });
-    it('retuns computeStats promedio',()=>{
+    it('retuns computeStats promedio', () => {
       expect(window.data.computeStats(arrayP)).toEqual("4.00");
     })
-   
+
 
   })
 })
-

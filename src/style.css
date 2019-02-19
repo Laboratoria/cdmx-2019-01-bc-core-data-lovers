@@ -6,182 +6,204 @@
 @import url('https://fonts.googleapis.com/css?family=Chewy');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
-   * {
-    box-sizing: border-box;
-    text-align: center;
-   
-   }
+* {
+  box-sizing: border-box;
+  text-align: center;
 
-h3{
-    font-size: 30px;
-    padding-bottom:25px;
-    font-family:'Caveat Brush'
 }
-   
-   .typesPokemon{
-    padding-top: 5px;
-   }
-   
-    body{
-        background-position: center;
-        text-align: center;
-        background: black;
-        color: white;
-    }
-    p{
 
-        font-family: 'Happy Monkey', cursive;
-        font-size: 20px;
-        max-width: 100%;
-        height: 15%;
-        margin: -1%;
-        color:whitesmoke;
-  }
-.grid-img{
-    display: grid;
-    grid-gap: 1px 40px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
+h3 {
+  font-size: 30px;
+  padding-bottom: 25px;
+  font-family: 'Caveat Brush'
 }
-button{
+
+.typesPokemon {
+  padding-top: 5px;
+}
+
+body {
+  background-position: center;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+p {
+
+  font-family: 'Happy Monkey', cursive;
+  font-size: 20px;
+  max-width: 100%;
+  height: 15%;
+  margin: -1%;
+  color: whitesmoke;
+}
+
+.grid-img {
+  display: grid;
+  grid-gap: 1px 40px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+button {
   border-radius: 10px;
   background: black;
   border: solid 1px white;
 }
 
-.ocultar{
-    padding: 5%;
+.ocultar {
+  padding: 5%;
 }
-.imagesPokemon{
-   
-    background-position: center;
-    background-size: 135%;
-    margin: 3%;
-    max-width: 108%;
-    height: 63vh;
-    border: solid 1px white;
-    width: 51vh;
-    border-radius: 15px;
-    
+
+.imagesPokemon {
+
+  background-position: center;
+  background-size: 135%;
+  margin: 3%;
+  max-width: 108%;
+  height: 63vh;
+  border: solid 1px white;
+  width: 51vh;
+  border-radius: 15px;
+
 }
-figure{
-    padding-top: 0%;
-    max-height: 20vh;
+
+figure {
+  padding-top: 0%;
+  max-height: 20vh;
 }
+
 span.tooltip {
-    border-bottom: 1px dashed gray;
-    cursor: pointer;
-    position:relative;
-   }
-   
+  border-bottom: 1px dashed gray;
+  cursor: pointer;
+  position: relative;
+}
+
 span.tooltip::before {
-    display: none; /* Lo ocultamos*/
-    content: attr(data-info);
-    color:black;
-    font-size: 20px;
-    padding: 2px 8px;
-    background:white;
-    border-radius: 5px;
-    position: absolute; /* Lo posicionamos de modo absoluto dentro del span */
-    top: 1.5em;
-    left: 5px;
-    min-width: 80px;
-    z-index:1;
+  display: none;
+  /* Lo ocultamos*/
+  content: attr(data-info);
+  color: black;
+  font-size: 20px;
+  padding: 2px 8px;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  /* Lo posicionamos de modo absoluto dentro del span */
+  top: 1.5em;
+  left: 5px;
+  min-width: 80px;
+  z-index: 1;
 }
+
 span.tooltip:hover::before {
-    display: block;
+  display: block;
 }
 
-.ocultar{
-    padding-top: 0%;
-    padding-bottom: 10%;
-}
-nav{
-    font-size: 50px;
-    color:yellow;
-    font-family: 'Rock Salt'; 
-    text-align: center; 
-    margin-top: -30px;
+.ocultar {
+  padding-top: 0%;
+  padding-bottom: 10%;
 }
 
-a{
-    font-size: 40px;
-    font-family: 'Caveat Brush';
+nav {
+  font-size: 50px;
+  color: yellow;
+  font-family: 'Rock Salt';
+  text-align: center;
+  margin-top: -30px;
+}
+
+a {
+  font-size: 40px;
+  font-family: 'Caveat Brush';
 }
 
 #splash {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:#000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-    -webkit-transition: top 0.5s;
-    transition: top 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
 }
-#splash .splash-inner{
-    display: block;
-    width: 400px;
-    height: auto;
-    padding: 10px;
-    position: relative;
+
+#splash .splash-inner {
+  display: block;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  position: relative;
 }
-#splash .splash-inner .icon{
-    width: 400px;
-    position: relative;  
-    margin:0 auto;
-    height: 400px;
+
+#splash .splash-inner .icon {
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
 
 }
 
-#splash .splash-inner .icon img{
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: -100px;
+#splash .splash-inner .icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -100px;
 }
 
-#splash .splash-inner h2{
-    padding-top:10px;
-    font-size: 50px;
-    color:yellow;
-    text-align: center;
-    font-family:'Rock Salt';
-    animation: jump .6s linear alternate infinite;
-}
-@keyframes jump {    
-    0%  {transform: translate3d(0,0,0)}    
-   40%  {transform: translate3d(0,-5%,0)}    
-    100% {transform: translate3d(0,-10%,0)}
+#splash .splash-inner h2 {
+  padding-top: 10px;
+  font-size: 50px;
+  color: yellow;
+  text-align: center;
+  font-family: 'Rock Salt';
+  animation: jump .6s linear alternate infinite;
 }
 
-#splash.hide{
-    top:-110%;
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0)
+  }
+
+  40% {
+    transform: translate3d(0, -5%, 0)
+  }
+
+  100% {
+    transform: translate3d(0, -10%, 0)
+  }
+}
+
+#splash.hide {
+  top: -110%;
 
 }
 
 input[type="radio"] {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5); 
-    transform: scale(2);
-}
-section{
-    padding: 2%;
-    font-family: 'Rock Salt';
-    font-size: 15px;
-}
-#asc-name{
-    margin: 2%;
-}
-#desc-name{
-    margin: 2%;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(2);
 }
 
-header{
-    background: white;
+section {
+  padding: 2%;
+  font-family: 'Rock Salt';
+  font-size: 15px;
 }
 
+#asc-name {
+  margin: 2%;
+}
 
+#desc-name {
+  margin: 2%;
+}
+
+header {
+  background: white;
+}
