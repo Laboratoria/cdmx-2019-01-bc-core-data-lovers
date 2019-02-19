@@ -262,7 +262,7 @@ p {
 table{
   width: 50%;
   text-align: center;
-  margin: 1% 1% 1% 25%;
+  margin: 1% 1% 1% 10%;
 }
 
 .photos {
@@ -440,25 +440,30 @@ h2{
 
   #infoSecI{
     font-size: 14px;
-    margin: 4% 0% 6% 0%;
-    display: inline-block;
-    float: left;
+  display: inline-block;
+  float: left;
   }
 
   #map{
-  display: inline-block;
-  width: 44%;
-  height: auto;
-  padding: 1.5%;
-  padding-block-start: 5%;
+    display: inline-block;
+        width: 70%;
+        height: auto;
+        padding: 1.5%;
+        padding-block-start: 3%
   }
 
-
+p{
+  padding: 0%;
+}
   .image{
     display: inline-block;
     width: 32%;
   }
 
+.map{
+  display: inline-block;
+text-align: center;
+}
   .question{
     padding: 1%;
   }
@@ -500,7 +505,10 @@ h2{
   padding-top: 47px;
   }
 
-
+  .image{
+    display: inline-block;
+    width: 32%;
+  }
 
 }
 /*
