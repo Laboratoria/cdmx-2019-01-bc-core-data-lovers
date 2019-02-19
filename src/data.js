@@ -19,7 +19,6 @@ window.pokesaurius = {
     return (orderPokemonNAme)
   },
 
-
   
   //getPokemonById:(data, getIdElement) =>{
    // const pokemon = data.filter(element => element.id == getIdElement);
