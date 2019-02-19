@@ -5,7 +5,7 @@ const dataBase = [{
   "id": 1,
   "num": "001",
   "name": "Bulbasaur",
-  "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/001.png",
   "type": [
     "Grass",
     "Poison"
@@ -36,7 +36,7 @@ const dataBase = [{
   "id": 13,
   "num": "013",
   "name": "Weedle",
-  "img": "http://www.serebii.net/pokemongo/pokemon/013.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/013.png",
   "type": [
     "Bug",
     "Poison"
@@ -70,7 +70,7 @@ const dataBase = [{
   "id": 18,
   "num": "018",
   "name": "Pidgeot",
-  "img": "http://www.serebii.net/pokemongo/pokemon/018.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/018.png",
   "type": [
     "Normal",
     "Flying"
@@ -98,7 +98,7 @@ const dataBase = [{
   "id": 14,
   "num": "014",
   "name": "Kakuna",
-  "img": "http://www.serebii.net/pokemongo/pokemon/014.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/014.png",
   "type": [
     "Bug",
     "Poison"
@@ -133,7 +133,7 @@ const dataBase = [{
   "id": 15,
   "num": "015",
   "name": "Beedrill",
-  "img": "http://www.serebii.net/pokemongo/pokemon/015.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/015.png",
   "type": [
     "Bug",
     "Poison"
@@ -163,7 +163,7 @@ const dataBase = [{
   "id": 16,
   "num": "016",
   "name": "Pidgey",
-  "img": "http://www.serebii.net/pokemongo/pokemon/016.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/016.png",
   "type": [
     "Normal",
     "Flying"
