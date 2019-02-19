@@ -1,11 +1,5 @@
 # DataLovers Personas lesionadas dependiendo su medio de transporte
 
-## Índice
-
-- [Preámbulo](#preámbulo)
-- [Consideraciones técnicas](#consideraciones-técnicas)
-- [Primeros pasos](#primeros-pasos)
-
 
 ## Preámbulo
 En el gremio de los especialistas, sociedad civil, académicos o curiosos de lo urbano, se sabe que un factor importante para entender lo que acontece en las ciudades, especialmente en temas de seguridad vial, son las bases de datos.
@@ -97,8 +91,8 @@ La data proporcionada para este ejercicio es un archivo JS que debemos implement
 
 ## Ideas de prototipado:
 
-![sketch_lowfidelity](./src/images/sketch_lowfidelity.png)
-![sketch_highfidelity](./src/images/mockup_desktopbuttons.png)
+![sketch_lowfidelity](./src/images/sketch_lowfidelity.jpg)
+![sketch_highfidelity](./src/images/mockup_desktopbuttons.jpg)
 
 ## Implementación
 
