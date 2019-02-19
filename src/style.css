@@ -1,5 +1,3 @@
-
-
 @media (max-width:992px){
   .social a{
     font-size: 4em;
@@ -8,6 +6,38 @@
  
 }
 @media (max-width:768px){
+
+
+  
+ 
+
+  .nav > li > div {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    cursor: default;
+  }
+  .navbar-nav > li > div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+  .navbar-default .navbar-nav > li > div {
+    color: green);
+  }
+  .navbar-collapse.collapse {
+    display: none;
+  }
+  .dropdown-open {
+    background: black;
+  }
+
+
+
+
+
+
+
 
   .carousel-caption{
     position:absolute;
@@ -72,12 +102,27 @@
 
 /* GENERALES  */
 
-body{
+body {
+  padding-top: 20px;
   height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: #222;
+}
+.navbar {
   
+  background: #00455A;
+ 
+  padding-top: 10px;
+  
+  position:fixed;
+
+  padding-bottom: 20px;
+
+  
+
+  
+
 }
 
 
@@ -88,15 +133,6 @@ header{
    background-size:cover;}
 
 
-.navbar {
-
-  background: #00455A;
- 
-  padding-top: 10px;
-  
-  position:fixed;
-
-}
 
 .navbar-bar li{
   padding-right:20px;
@@ -110,7 +146,9 @@ header{
 }
 
 
-
+.carousel-inner>img{
+  width:100vw;
+}
 
 
 .mySlides{
@@ -161,6 +199,8 @@ header{
 .container-flags{
   margin-bottom: 80px;
   margin-top: 80px;
+  justify-content: center;
+
 }
 .col {
   display:inline-block;
@@ -176,6 +216,9 @@ h3{
 }
 
 
+.container-fluid{
+  width: 100 vw;
+}
 
 
 
@@ -372,6 +415,13 @@ td{
   font-size: 15px;
 }
 
+.carousel-inner img {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+}
 
 
 
