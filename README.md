@@ -10,7 +10,7 @@
 - [Contenido de referencia](#contenido-de-referencia)
 - [Checklist](#checklist)
 
----
+
 
 ## Preámbulo
 
@@ -41,10 +41,27 @@ Factores tales como las tareas domésticas, cuidar de los hermanos o los problem
 ### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
+Para iniciar nuestro diseño partimos desde un dispositivo mobile. Nuestros primeros sketch son los siguientes:
 
+![Pantalla inicio](./src/assets/images/imagen_sket3.jpg)
+![Pantalla 1](./src/assets/images/imagen_sket1.jpg)
+![Pantalla 2](./src/assets/images/imagen_sket2.jpg)
+![Pantalla 3](./src/assets/images/imagen_sket4.jpg)
 #### Prototipo de alta fidelidad
+El prototipo de alta fidelidad sufrió cambios a lo largo de las iteraciones del producto, con base a los resultados obtenidos en las encuestas.
+
+![Prototipo 1](./src/assets/images/PrototypeAlta_01.jpg)
+![Prototipo 2](./src/assets/images/PrototypeAlta_02.jpg)
+
 
 #### Testeos de usabilidad
+Se realizaron encuestas principalmente a profesionales y voluntarios que trabajan en asociaciones no lucrativas. Con el objetivo de conocer su principal impresión del producto.
+
+![Encuesta 1](./src/assets/images/usabilidad_1.png)
+![Encuesta 2](./src/assets/images/usabilidad_2.png)
+![Encuesta 3](./src/assets/images/usabilidad_3.png)
+![Encuesta 4](./src/assets/images/usabilidad_4.png)
+![Encuesta 5](./src/assets/images/usabilidad_5.png)
 
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
@@ -209,5 +226,5 @@ Para empezar se sugiere:
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
 - [ ] Cobertura de coverage al 100%.
 
-## Agradecimientos
+
 
