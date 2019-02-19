@@ -12,7 +12,7 @@ const printType= document.getElementById('printType');
 const alphabeticOrderButton=document.getElementById('totales');
 const menuToogle=document.getElementById('menu-toogle');
 const aside=document.getElementById('aside');
-const printIndividualCard=document.getElementById('print-individual-card');
+//const printIndividualCard=document.getElementById('print-individual-card');
 
 
 
@@ -105,7 +105,7 @@ for(let i =0; i< wrapper.length; i++ ){
     wrapper[i].addEventListener('click' , () => {
        const getIdElement=wrapper[i].id;
         const modalSelected= window.pokesaurius.getPokemonById(data,getIdElement);
-        console.log(modalSelected);
+        return modalSelected
     });
 }
 

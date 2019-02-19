@@ -124,7 +124,7 @@ implementadas en el archivo `data.js`.
 
 
 ### Experiencia de usuario (UX) y Diseño
-Si deseas conocer más acerca del proceso de diseño, nuestro prototipo de alta y baja fidelidad, así como las historias de usuario de **"Pokesaurius"** te recomendamos visitar esta liga.
+Si deseas conocer más acerca del proceso de diseño, nuestro prototipo de alta y baja fidelidad, así como las historias de usuario de **"Pokesaurius"** te recomendamos visitar esta liga[Google Document(https://docs.google.com/document/d/1DiJ3VJ9M7rcssKCINQF_8iUfpAgVJ_de6dcB_vpt9yU/)]
 
 ##Autores
 Janet Urbina Núñez.
@@ -137,10 +137,6 @@ Shirley-Startary
 A Janet por su paciencia, y por siempre mostrar entusiasmo y actitud positiva durante la realización de este proyecto. Aprendí muchísimo de tu capacidad de sorprenderte y apreciar los pequeños detalles. 
 A mis coaches que sin su vocación y sus horas dedicadas, este proyecto no sería posible. Gracias por su cálido acompañamiento.
 Lorena.
-
-
-
-
 
 
 
@@ -662,10 +658,10 @@ compañera:
 - [x] No hace uso de `this`.
 - [x] Pasa linter (`npm pretest`)
 - [x] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
 - [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
 - [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
 - [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
