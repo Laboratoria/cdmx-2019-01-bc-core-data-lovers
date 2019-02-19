@@ -1,5 +1,5 @@
-global.window=global;
- require('../src/data.js');
+global.window = global;
+require('../src/data.js');
 require('../src/data/pokemon/pokemon');
 
 const dataBpokemon = [{
@@ -157,18 +157,19 @@ const dataBpokemon = [{
     "num": "006",
     "name": "Charizard"
   }]
-}
- ]
+}]
+
+const arrayP = [8,2,4,2]
 
 describe("data", () => {
   it('is a function', () => {
     expect(typeof window.data).toBe("object");
   });
-  
+
   it('returns filterData', () => {
-   
+
   });
-  it ('returns Pokemon filtrado',()=>{
+  it('returns Pokemon filtrado', () => {
     expect(window.data.filterData(dataBpokemon, "Grass")[0]).toEqual(dataBpokemon[0]);
   });
 
@@ -177,9 +178,22 @@ describe("data", () => {
       expect(typeof window.data.sortData).toBe("function");
     });
 
-  it('retuns sortData',()=>{
-    expect(window.data.sortData(dataBpokemon,name,"asc")[0].name).toEqual("Bulbasaur");
-  });
+    it('retuns sortData ascendente', () => {
+      expect(window.data.sortData(dataBpokemon, name, "asc")[0].name).toEqual("Bulbasaur");
+    });
+
+    it('retuns sortData descendente', () => {
+      expect(window.data.sortData(dataBpokemon, name, "desc")[2].name).toEqual("Venusaur");
+      expect(window.data.sortData(dataBpokemon, name)[0].name).toEqual("Bulbasaur");
+    });
+    it ('computeStats is a function',()=>{
+      expect(typeof window.data.computeStats).toBe('function');
+    });
+    it('retuns computeStats promedio',()=>{
+      expect(window.data.computeStats(arrayP)).toEqual("4.00");
+    })
+   
 
   })
 })
+

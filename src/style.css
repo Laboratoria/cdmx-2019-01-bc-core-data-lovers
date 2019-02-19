@@ -162,6 +162,7 @@ a{
     top:-110%;
 
 }
+
 input[type="radio"] {
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5); 
@@ -178,3 +179,9 @@ section{
 #desc-name{
     margin: 2%;
 }
+
+header{
+    background: white;
+}
+
+

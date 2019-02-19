@@ -20,11 +20,11 @@ const imprimir = (obtenerTipo) => {
 
   const pokemons = document.getElementById("paint");
   pokemons.innerHTML = "";
-
   obtenerTipo.map((dataPokes) => {
     pokemons.innerHTML += `<div class="imagesPokemon"><figure>
 
 <img src="${dataPokes.img}"></figure>
+
 <div class="texto-pokemon"><p>Nombre: ${ dataPokes.name}</p>
 <p> Candy: ${ dataPokes.candy}</p>
 <p> Altura: ${ dataPokes.height}</p>
@@ -32,6 +32,7 @@ const imprimir = (obtenerTipo) => {
 <p> Avg Spawns: ${ dataPokes.avg_spawns}</p>
 <p> Debilidades: </p>
 <p>${ dataPokes.weaknesses}</p></div>
+
 </div>`
   })
 
@@ -57,12 +58,31 @@ const getOrderPokemon = (arrayButtonRadio) => {
 
   });
 
+
 //creando slash*//
 setTimeout(function(){
   document.getElementById("splash").className="hide";
 },3000);
 
+
 }
 
 getOrderPokemon(arrayButtonRadio);
 
+//calculo
+
+const info = document.getElementById('info');
+
+const arreglo=[];
+
+info.addEventListener("click",()=>{
+result.forEach (element =>{
+
+  
+  arreglo.push(element.avg_spawns);
+  const statsPok = window.data.computeStats (arreglo);
+   alert("Sabías que... en promedio este tipo de pokemons tienden a aparecer cada : " + statsPok);
+ statsPok.innerHTML +- "";
+ 
+});
+})
