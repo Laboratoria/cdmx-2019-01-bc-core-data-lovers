@@ -119,7 +119,7 @@ function graficar(datosx, datosy, leyenda){
   //console.log(datosx)
   // aqui graficamos
   //intanciamos chart y como parametro (elemento donde se va a colocar la grafica)
-  let myLineChart = new Chart(graficaDatos, {
+  let myLineChart = new window.Chart(graficaDatos, {
     type: 'line', // graficar linear
     data:{ // data general
       labels: datosx, // ["1960","1961"] asi es la estructura
@@ -143,7 +143,6 @@ function graficar(datosx, datosy, leyenda){
           text: leyenda // le pasamos el texto de la pregunta que seleccionamos en el select
       }
     }
-    
-
   }); 
+  return myLineChart;
 }
