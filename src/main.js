@@ -46,7 +46,6 @@ const printYears = (resultYear) => {
         let indicatorDataYear = `<p>Año: <span>${year}   </span> <span><b>${parseFloat(element).toFixed(2)}%</b></span></p>`
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }
-
     }
   }
 }
