@@ -509,22 +509,22 @@ compañera:
 ## Checklist
 
 - [x] Usa VanillaJS.
-- [x] No hace uso de `this`.
-- [x] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [X] No hace uso de `this`.
+- [X] Pasa linter (`npm pretest`)
+- [X] Pasa tests (`npm test`)
+- [X] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [X] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [X] Incluye historias de usuario en `README.md`.
+- [X] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [X] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [X] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [x] UI: Permite filtrar data en base a una condición.
+- [X] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [X] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [X] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Opcional)
 

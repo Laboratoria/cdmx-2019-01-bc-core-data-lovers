@@ -13,10 +13,10 @@ img {
   width: 70%;
 }
 
-#avg{
+.avg{
   background-color: #1c295a;
   color: white;
-  font-size: 5em;
+  font-size: 2em;
   text-align: center;
   width: 97%;
 }
@@ -34,7 +34,7 @@ h2 {
 
 #pokemones,
 #filtered_out {
-  padding-top: 10%;
+  padding-top: 7%;
   margin-left: 1.5%;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,6 +44,7 @@ h2 {
 #btnStart {
   font-size: 4vmin
 }
+
 
 .divPokemon {
   text-align: center;
@@ -159,9 +160,11 @@ table {
 nav.navbar {
   background-color: black;
   border: 0;
-  min-height: 30px;
+  min-height: 80px;
   font-size: 20px;
 }
+
+
 
 .dark {
   /*Estilo para el boton de pokebola del navbar*/
@@ -310,7 +313,7 @@ nav.navbar {
 
   #pokemones,
   #filtered_out {
-    padding-top: 12%;
+    padding-top: 10%;
   }
 
 }
@@ -384,7 +387,7 @@ nav.navbar {
 
   #pokemones,
   #filtered_out {
-    padding-top: 15%;
+    padding-top: 12%;
   }
 
 }
@@ -469,7 +472,7 @@ nav.navbar {
 
   #pokemones,
   #filtered_out {
-    padding-top: 18%;
+    padding-top: 15%;
   }
 
 }
@@ -553,7 +556,7 @@ nav.navbar {
 
   #pokemones,
   #filtered_out {
-    padding-top: 20%;
+    padding-top: 15%;
   }
 
   #iconBall {
@@ -654,7 +657,7 @@ nav.navbar {
   #pokemones,
   #filtered_out {
     /*Agregue*/
-    padding-top: 17%;
+    padding-top: 20%;
   }
 
   .btnPokemon {
@@ -676,11 +679,6 @@ nav.navbar {
     border-radius: 25px;
     background-color: rgba(27, 27, 27, 0.9);
     font-size: 1em;
-  }
-
-  #pokemones,
-  #filtered_out {
-    padding-top: 28%;
   }
 
 }
@@ -766,7 +764,7 @@ nav.navbar {
 
   #pokemones, #filtered_out {
     /*Agregue*/
-    padding-top: 21%;
+    padding-top: 24%;
   }
 
   .btnPokemon {
@@ -787,11 +785,6 @@ nav.navbar {
     border-radius: 25px;
     background-color: rgba(27, 27, 27, 0.9);
     font-size: 1em;
-  }
-
-  #pokemones,
-  #filtered_out {
-    padding-top: 34%;
   }
 
 }
@@ -884,7 +877,7 @@ nav.navbar {
   #pokemones,
   #filtered_out {
     /*Agregue*/
-    padding-top: 23%;
+    padding-top: 27%;
   }
 
   .btnPokemon {
@@ -908,10 +901,6 @@ nav.navbar {
     font-size: 1em;
   }
 
-  #pokemones,
-  #filtered_out {
-    padding-top: 40%;
-  }
 
 }
 
