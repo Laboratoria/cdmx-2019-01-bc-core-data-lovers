@@ -51,7 +51,7 @@ const printYears = (resultYear) => {  // Imprimir los datos(año-porcentaje) del
       let element = resultYear[key];
       const year = key;
       if (element !== "") {
-        let indicatorDataYear = `<p>Año: <span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`
+        let indicatorDataYear = `<p><span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }
 
