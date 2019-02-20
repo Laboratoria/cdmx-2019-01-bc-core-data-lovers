@@ -16,6 +16,8 @@ const buttonClick = () => {
   printOption(result);
 }
 
+{}
+
 for (let i = 0; i < buttonCountries.length; i++) {
   buttonCountries[i].addEventListener("click", buttonClick);
 }
