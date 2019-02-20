@@ -3,7 +3,6 @@ window.pokesaurius = {
   typeFilter: (data, pokemonElegido) => {
     const filterPokemonType = data.filter(element => element.type.includes(pokemonElegido));
     return filterPokemonType
-
   },
 
 
@@ -13,19 +12,10 @@ window.pokesaurius = {
         return 1;
       } else {
         return -1;
-     
       }
     })
     return (orderPokemonNAme)
   },
-
-  
-  //getPokemonById:(data, getIdElement) =>{
-   // const pokemon = data.filter(element => element.id == getIdElement);
-   // console.log(pokemon);
-    
-    //return pokemon;
-
 
 }
 
