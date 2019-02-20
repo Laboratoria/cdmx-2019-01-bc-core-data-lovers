@@ -99,12 +99,12 @@ menuToogle.addEventListener('click', () => {
 
 //const wrapper = document.getElementsByClassName('wrapper');
 
+// for (let i = 0; i < wrapper.length; i++) {
+//   wrapper[i].addEventListener('click', () => {
+//     const getIdElement = wrapper[i].id;
+//     const modalSelected = window.pokesaurius.getPokemonById(data, getIdElement);
+//     return modalSelected
+//   });
+// }
 
-//for (let i = 0; i < wrapper.length; i++) {
-//  wrapper[i].addEventListener('click', () => {
-//    const getIdElement = wrapper[i].id;
-//    const modalSelected = window.pokesaurius.getPokemonById(data, getIdElement);
-//    return modalSelected
-//  });
-//}
 
