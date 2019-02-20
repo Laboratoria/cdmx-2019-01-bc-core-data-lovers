@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 </head>
+
 <body>
   <div id="root"></div>
   <!--<script src="./data/injuries/injuries.js"></script>-->
@@ -18,10 +20,20 @@
     <!--menu responsive-->
     <input type="checkbox" id="burger-menu">
     <label for="burger-menu"><img src="images/burger.png" alt="Bold"></label>
-    <nav class="menu">
+    <nav id='menu-up' class="menu" >
       <ul>
+        <li><a class="logo"> City / Transport / Data</a></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a  href="#">About</a>
+          <ul id="site_about" class="site_about" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">City / Transport / Data is the principal data organization with respect to mobility injures by urbans transportations modes.
+              Our mission is to make through investigation, data collection, analysis, and information sharing.
+              All cities all over the world recognized safety and security mobility in its goals, objectives and polices. 
+              Specific objectives were translated into performance criteria used to establish priorities for planned transportation improvements.
+              A key way to measure safety is evaluating the total number of injured persons in each mode of transportation.
+                
+              DataDashboard share information to measure safety evaluating the total number of injured persons in each mode of transportation by year
+          </ul>
+          </li>
         <li><a href="#">Contact</a></li>
         <!-- <i class="fab fa-facebook-f"></i><br>
         <i class="fab fa-twitter"></i> -->
@@ -32,7 +44,8 @@
     <!--<section1 id="principalpage" class=hide>-->
     <h1>Injured persons by<br>transportation mode</h1>
     <h2>in United States of America</h2>
-    <h3>DataDashboard share information to measure safety by evaluating the total number of injured persons in each mode of transportation:</h3>
+    <h3>DataDashboard share information to measure safety by evaluating the total number of injured persons in each
+      mode of transportation:</h3>
     <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
     <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
     <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
@@ -40,15 +53,16 @@
     <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
   </section>
   <section class="infoBody content">
-    <h1 class="titleToSearch">Pedestrians</h1>
+    <h1 class="subtitles">Pedestrians</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
+      <p>In the pyramid of mobility, pedestrians should be a priority for two main reasons: they are the weakest and it is the majority form of displacement, apart from the reasoning that we are all pedestrians. Making the weak and weak strong is the slogan: the pedestrian must have the highest priority because he is weaker than the bicycle and much weaker than the car. Therefore, the speed of the city should be regulated according to the pedestrian.</p>
+      <article class="images">
+          <img src="./images/pedestrian.png" width="300" height="300"/>
+      </article>
     </article>
     <aside class="table">
-      <table class="fas fa-walking tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -62,15 +76,16 @@
     <div class="chart_div"></div>
   </section>
   <section class="infoBody content">
-    <h1 class="titleToSearch">Pedalcyclists</h1>
+    <h1 class="subtitles">Pedalcyclists</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>The bicycle should be the preferred vehicle for several reasons: it is very efficient in small distances (the majority); it's cheap (much less than the 5,000 and 10,000 euros that you have to pay annually for a car); it does not pollute making noise or eliminating toxic gases; It is less dangerous than a car; it consumes less space; It is healthy.</p>
+      <article class="images">
+          <img src="./images/bikecyclist.png" width="300" height="300"/>
+      </article>
     </article>
     <aside class="table">
-      <table class="fas fa-bicycle tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -84,15 +99,16 @@
     <div class="chart_div"></div>
   </section>
   <section class="infoBody content">
-    <h1 class="titleToSearch">Bus occupants</h1>
+    <h1 class="subtitles">Bus occupants</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>Public transport consumes less public space than cars; it is economically more viable for the user and in public infrastructures; favors intermodality with pedestrians</p>
+          <article class="images">
+              <img src="./images/busoccupants.png" width="300" height="300"/>
+          </article>
+        </article>
     <aside class="table">
-      <table class="fas fa-bus tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -106,15 +122,20 @@
     <div class="chart_div"></div>
   </section>
   <section class="infoBody content">
-    <h1 class="titleToSearch">Car occupants</h1>
+    <h1 class="subtitles">Car occupants</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis
         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <article class="images">
+            <img src="./images/car occupants.png" width="300" height="300"/>
+        </article>
+      </article>
     <aside class="table">
-      <table class="fas fa-car tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -128,15 +149,20 @@
     <div class="chart_div"></div>
   </section>
   <section class="infoBody content">
-    <h1 class="titleToSearch">Motorcyclists</h1>
+    <h1 class="subtitles">Motorcyclists</h1>
     <article class="info">
-      <h4>This is de number of injuries at year for this transport mode since 2001 to 2015</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis
         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <article class="images">
+            <img src="./images/motorcyclist.png" width="300" height="300"/>
+        </article>
+      </article>
     <aside class="table">
-      <table class="fas fa-motorcycle tableStructure">
+      <table class="tableStructure">
         <thead>
           <tr>
             <td>Years</td>
@@ -170,22 +196,19 @@
       <option class="year" value="2015-01-04">2015</option>
       <option class="year" value="2016-01-04">2016</option>
     </select>
-    <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE DATA</button>
+    <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE
+      DATA</button>
   </section>
+  <section class="year-section">
   <section id="result_graphic" class="result_graphic">
     <h4>Injures by year in all transportation modes</h4>
-    <!-- <button id="drawChart"> Show chart </button> -->
-    <!-- <div class="container-chart"></div> -->
-
-  <!-- <nav id="data_in_order" class="data_sort">
-    <h5>You can order the information to asc to desc</h5>
-    <button onclick="sortNumber()"> Sort </button>
-  </nav> -->
   </section>
+  <br>
   <section class="pieChart">
     <div id="piechart"></div>
   </section>
-  
+  </section>
 </body>
 <script src="main.js"></script>
+
 </html>

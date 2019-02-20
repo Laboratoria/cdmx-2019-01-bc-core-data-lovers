@@ -48,17 +48,20 @@ function printDataInHTML(year, number, tableToPrint, canPrint) {
 
 function drawGraphic(arraysToPrint, graphicToDraw) {
   google.charts.load('current', {
-    packages: ['corechart', 'line']
+    packages: ['corechart', 'bar']
   });
   google.charts.setOnLoadCallback(() => {
     drawBasic(arraysToPrint, graphicToDraw);
   });
-}
-function drawBasic(arraysToPrint, graphicToDraw) {
+ }
+ 
+ function drawBasic(arraysToPrint, graphicToDraw){
   var data = new google.visualization.DataTable();
   data.addColumn('number', 'X');
   data.addColumn('number', 'Injuries');
+ 
   data.addRows(arraysToPrint);
+ 
   var options = {
     hAxis: {
       title: 'Years'
@@ -67,9 +70,11 @@ function drawBasic(arraysToPrint, graphicToDraw) {
       title: 'Injuries'
     }
   };
-  var chart = new google.visualization.LineChart(graphicToDraw);
+ 
+  var chart = new google.visualization.ColumnChart(graphicToDraw);
+ 
   chart.draw(data, options);
-}
+ }
 
 // Declaramos las variables de la sección de Year
 let selectedYear = document.getElementById('selected_year');
@@ -91,12 +96,14 @@ visualizeData.addEventListener("click", () => {
   return arrayData;
 });
 
+
+
 google.charts.load('current', {
   packages: ['corechart']
 });
 // google.charts.setOnLoadCallback(drawChart);
 
-function drawChart(arrayData, chartByMode) {
+function drawChart(arrayData) {
 
   var data = google.visualization.arrayToDataTable([
     ['Mode', 'Injured persons'],
@@ -107,7 +114,9 @@ function drawChart(arrayData, chartByMode) {
     ['Motorcyclists', arrayData[4]]
   ]);
   var options = {
-    title: 'Total of injured persons by transportation mode'
+    title: 'Total of injured persons by transportation mode',
+    width: 450,
+    height: 350,
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -115,40 +124,4 @@ function drawChart(arrayData, chartByMode) {
   chart.draw(data, options);
 }
 
-
-
-
-
-
-
-
-
-//Función para gráfica de pie   
-// function drawChart(arraysHoleData, chartToDraw) {
-//   google.charts.load('current', {
-//     packages: ['corechart']
-// });
-// google.charts.setOnLoadCallback(drawChart);
-
-// }
-
-
-//       // Define the chart to be drawn.
-//       
-//       let dataInPieChart = google.visualization.arrayToDataTable([
-//         ['Pedestrians', arrayData[0]],
-//         ['Bikecyclists', arrayData[1]],
-//         ['Bus Occupants', arrayData[2]],
-//         ['Car Occupants', arrayData[3]],
-//         ['Motorcyclists', arrayData[4]]
-//       ]);
-// //Set chart options
-//       var pieChartSettings = {'title':'Total persons injured by transportation mode',
-//                      'width':400,
-//                      'height':300};
-
-//       // Instantiate and draw the chart.
-//       var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-//       chart.draw(dataInPieChart, pieChartSettings);
-//     });
 
