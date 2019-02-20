@@ -6,7 +6,7 @@ const dataYear = document.getElementById("data-year");
 const sortSelect = document.getElementById("sort");
 let resultYear= {};//objeto con indicador filtro
 
-let dataFilter = {}
+//let dataFilter = {}
 
 //Constante para cachar el evento y puntualizar mediante id, el resultado de la función
 const buttonClick = () => { 
