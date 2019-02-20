@@ -1,6 +1,6 @@
   const pokemon = POKEMON.pokemon;
   var POKEMON = POKEMON;
-  const botonMenu = document.getElementById('menuHide');
+  const buttonMenu = document.getElementById('menuHide');
   const returnFilter = document.getElementById('returnFilter');
   const botonFilter = Array.from(document.getElementsByClassName("boton-filter"));
   const browser = document.getElementById("browser");
@@ -11,15 +11,13 @@
   const buttonRefreshMobile = document.getElementById('refreshMobile');
   const dataShow = document.getElementById('dataAverageShow');
 
-  botonMenu.addEventListener("click", showfilter)
-
+  buttonMenu.addEventListener("click", showfilter)  //Boton "burguer mobile" para ocultar y mostrar menú
   function showfilter() {
-
     let menuShow = document.getElementById('menuShow');
       menuShow.classList.toggle("mostrar");
   }
 
-  const getTypePokemon = (arrayButtons) => {
+  const getTypePokemon = (arrayButtons) => { // Botones para filtrar por tipos
     arrayButtons.map((buttonType) => {
       buttonType.addEventListener("click", (event) => {
         const buttonType = event.target.id;
@@ -28,14 +26,13 @@
       })
     })
   }
-
   getTypePokemon(botonFilter);
 
-  buttonNav.addEventListener("click", () => {
+  buttonNav.addEventListener("click", () => { //Boton que refresca la página en versión web
     location.reload(true);
   });
 
-  const drawPokemon = (arrayPokemons) => {
+  const drawPokemon = (arrayPokemons) => { //Función que imprime las tarejtas de pokemon.
     const sectionRoot = returnFilter
     sectionRoot.innerHTML = "";
     arrayPokemons.map((pokemon) => {
@@ -87,12 +84,11 @@
   </div>
     `
     })
-
   }
 
-  drawPokemon(pokemon);
+  drawPokemon(pokemon); //Pinta todos los pokemones de la primera sección (inicio)
 
-  const filterLetter = () => {
+  const filterLetter = () => {  // Input para buscar por nombre con función "filterInput" de data.js
     browser.addEventListener('keyup', () => {
       let searchValueInput = browser.value;
       drawPokemon(window.data.filterInput(pokemon, searchValueInput));
@@ -118,7 +114,6 @@
     sectionRoot.innerHTML += `<h4>Promedio de la Cantidad en la que aparecen todos los pokemons</h4><p>${newProm}</p>`
     return sectionRoot
   });
-
 
   buttonRefreshMobile.addEventListener('click', () => {
     location.reload(true);
