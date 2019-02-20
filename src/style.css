@@ -2,43 +2,19 @@
   .social a{
     font-size: 4em;
     padding:2rem;
+
   }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 8.5rem;
+    
+  }
+
+  
+
  
 }
 @media (max-width:768px){
-
-
-  
- 
-
-  .nav > li > div {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    cursor: default;
-  }
-  .navbar-nav > li > div {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    line-height: 20px;
-  }
-  .navbar-default .navbar-nav > li > div {
-    color: green);
-  }
-  .navbar-collapse.collapse {
-    display: none;
-  }
-  .dropdown-open {
-    background: black;
-  }
-
-
-
-
-
-
-
-
   .carousel-caption{
     position:absolute;
     top:45%;
@@ -57,20 +33,15 @@
   
   
   }
-
   
-
   .social a {
-    font-size:2.5em;
+    font-size:3.5em;
     padding:1.2rem;
   
   
   }
-
 }
 @media (max-width:576px){
-
-
   .carousel-caption{
     position:absolute;
     top:40%;
@@ -88,86 +59,106 @@
   
   
   }
-
   
-
   .social a {
-    font-size:2em;
+    font-size:2.5em;
     padding:.7rem;
   
   
   }
 
+
+  #average{
+
+    font-size:.8em;
+  
+  }
+  
+  #sorters{
+  
+   
+    font-size:.8em;
+  
+  }
+  #Stadistics{
+  
+  
+    font-size:.8em;
+  
+  }
+  
+  
+  .container-results{
+  
+   
+    font-size:.8em;
+  
+  }
+
+  #table-year-data {
+    border-collapse: collapse;
+    width: 100%; 
+    font-size:.8em;
+    justify-content: center;
+  }
+
+
 }
+
+
+
 
 /* GENERALES  */
 
-body {
-  padding-top: 20px;
+body{
   height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: #222;
+  
 }
-.navbar {
-  
-  background: #00455A;
- 
-  padding-top: 10px;
-  
-  position:fixed;
-
-  padding-bottom: 20px;
-
-  
-
-  
-
-}
-
-
-
 header{
   
  
-   background-size:cover;}
+   background-size:cover;
+
+  }
 
 
+.navbar {
+  background: #00455A;
+ 
+  padding-top: 15px;
+ 
+  position:fixed;
+}
 
 .navbar-bar li{
   padding-right:20px;
 }
-
 .nav-link{
-  font-size:1.1em;
+  font-size:1.4em;
   color: white;
   text-decoration: none;
+  padding-right:60px;
    
 }
 
+.nav-item{
+  font-size:1.6em;
+  padding-right:60px;
+}
 
 .carousel-inner>img{
   width:100vw;
 }
 
 
-.mySlides{
-  width:100%;
-  
-}
-.carousel-caption{
-  position:absolute;
-  top:50%;
-  
-}
 
 
 
 
 
-.padding{
-  padding-bottom:2rem;
-}
 
 .container-welcome{
   margin-top: 120px;
@@ -176,19 +167,87 @@ header{
 .welcome{
   width:75%;
   margin:0 auto;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom:1.2rem;
+  color: #00455A;
 }
-
 
 
 .welcome hr{
   border-top: 2px solid #b4b4b4;
   width:95%;
-  margin-top: .3rem;
+  margin-top: .9rem;
   margin-bottom: 1rem;
   
 
 }
+
+
+
+
+h2{
+  font-size:4.3em;
+
+
+}
+
+h3{
+
+  font-size:2.6em;
+  color: #00455A;
+  margin-bottom: 2rem;
+
+}
+
+h4{
+
+  font-size:2.1em;
+}
+ 
+  
+.container-fluid {
+  width: 100 vw;
+}
+
+
+
+h5{
+
+  font-size:2.0em;
+  
+
+}
+
+p{
+  font-size:1.9em;
+
+}
+
+#pWelcome{
+  font-size:2.3em;
+  color: #222;
+}
+
+
+
+.padding{
+  padding-bottom:2rem;
+}
+
+.col {
+  display:inline-block;
+}
+
+
+hr.light{
+  border-top:1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+
+}
+
+
 
 .button-flag{
 
@@ -202,35 +261,140 @@ header{
   justify-content: center;
 
 }
-.col {
-  display:inline-block;
+
+
+
+/* Tabla */
+
+#table-year-data {
+  border-collapse: collapse;
+  width: 100%; 
+  font-size:1.9em;
+  justify-content: center;
+  margin: 0 auto;
+  
 }
 
 
-h3{
+#result{
 
-  font-size:1.6em;
-  color:  #00455A;
-  margin-bottom: 2rem;
+  margin-bottom: 140px;
+  font-size:3em;
+
+}
+
+td{
+  border: 1px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.content-gender{
+  justify-content: center;
+  margin: 0 auto;
+  padding-left:42%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  
 
 }
 
 
-.container-fluid{
-  width: 100 vw;
+#average{
+
+  margin-bottom: 80px;
+  margin-top: 80px;
+  justify-content: center;
+  font-size:16px;
+  margin: 0 auto;
+
+}
+
+#sorters{
+
+  justify-content: center;
+  font-size:16px;
+
+}
+#Stadistics{
+
+  justify-content: center;
+  font-size:16px;
+
+}
+
+
+.container-results{
+  text-align: center;
+  justify-content: center;
+  
+
+}
+
+
+th{
+  font-size:20px;
+
+}
+
+#sorters{
+  font-size:20px;
+
+}
+
+#table-title{
+  font-size:20px;
+  margin-bottom: 80px;
+
+}
+
+#country-name{
+  font-size:23px;
+
+}
+
+#table-center{
+  justify-content:center;
 }
 
 
 
+/* Carousel */
 
+.mySlides{
+  width:100%;
+  
+}
+.carousel-caption{
+  position:absolute;
+  top:50%;
+  
+}
 
+.carousel-inner img {
+  width: 100%;
+}
 
+.img-responsive {
+  width: 100%;
+}
 
+.btn-lg {
 
+  font-size: 2.25rem;
 
+}
+
+/* Redes*/
+
+.socialmedia{
+  margin-bottom: 80px;
+  margin-top: 120px;
+}
 
 .social a {
-  font-size:2.5em;
+  font-size:4.5em;
   padding:3rem;
 
 
@@ -266,181 +430,20 @@ h3{
       background-color:#00455A;
       color:white;
       padding-top:2rem;
+      font-size:1em;
       
 
     }     
     
-    hr.light{
-      border-top:1px solid #d5d5d5;
-      width: 75%;
-      margin-top: .8rem;
-      margin-bottom: 1rem;
-
-    }
+ 
                     
 
-/*  
-}
-
-header nav{
-  width:100%;
-  max-width: 1300px;
-  margin:20px auto;
-  background:rgb(8, 80, 122);
-  
-}
-
-.navMenu {
-  overflow:hidden;
- 
-  
-}
-
-.navMenu a{
-  float: right;
-  display:block;
-  color:white;
-  text-align:center;
-  padding:14px 45px;
-  text-decoration:none;
-}
-
-.navMenu a:hover{
-  background-color:rgb(243, 148, 39);
-  color: white;
-}
-
-#Objetivo{
-  background-color:rgba(255, 255, 255, 0.281);
- color: black;
-}
-
-
-h1 {
-  color:rgb(8, 80, 122);
-  font-family: 'Franklin Gothic';
-}
-
-h3{
-  color:rgb(8, 80, 122);
-  font-size: 20px;
-  margin-bottom: 30px;
-  padding-top: 20px;
-  font-family: 'Franklin Gothic';
-  
-  
-}
-
-#contenedor-descripcion {
-  background-color: white;
-  color: black;
-  padding: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.region {
-    height: 50px;
-    width: 200px;
-    background-color:rgb(119, 220, 234) ;
-    border-radius:0%;
-    text-align: center;
-    font-size: 10px;
-    font-family: Lucida Sans Unicode;
-    border:19px;
-    display: block, center;
-    margin-bottom: 10px;
-    
-}
-
-#option  {
-    height: 50px;
-    width: 200px;
-    background-color:rgb(26, 172, 177) ;
-    border-radius:0%;
-    text-align: center;
-    font-size: 10px;
-    font-family: Lucida Sans Unicode;
-    border:19px;
-    display: block, center;
-    margin-bottom: 10px;
-    
-}
-
-
-
-#country {
- 
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-
-}
-
-#Estadisticas{
-  text-align: center;
-}
-
-
-
-#secondPage{
-  margin-bottom: 30px;
-  text-align: center;
-
-}
-
-footer{
- 
-  width:100%;
-  height:15vh;
-  left:0px;
-  margin-top:500px;
-  background: rgb(8, 80, 122);
-
-  
-}*/
-
-#table-year-data {
-  border-collapse: collapse;
-  width: 100%; 
-}
-td{
-  border: 1px solid black;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-}
-
-.carousel-inner img {
-  width: 100%;
-}
-
-.img-responsive {
-  width: 100%;
-}
 
 
 
 
 
-/*  BREAKPOINTS- BOOSTRAP
 
-Extra small (xs) devices  (portrait phones, less than 576px)
-No media query since this is the default in Boostrap
 
-Small(sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) {...}
 
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) {...}
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) {...}
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {...}*/
 
