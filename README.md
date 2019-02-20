@@ -125,7 +125,7 @@ Para esta última sección es importante reacomodarla. Se sugiere que en cuanto 
    también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
    aunque recomendaría que consideres probar GNU/Linux como tu Sistema Operativo.
 3. Haz tu propio [fork](https://help.github.com/articles/fork-a-repo/)
-   de [ este repositorio](https://github.com/GENESIS-ENRIQUEZ/cdmx-2019-01-bc-core-am-cipher)
+   de [ este repositorio](https://github.com/GENESIS-ENRIQUEZ/cdmx-2019-01-bc-core-data-lovers)
 4. [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu _fork_ a tu computadora (copia local).
 5. Instala las dependencias del proyecto con el comando `npm
