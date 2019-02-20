@@ -36,7 +36,6 @@ const printOption = (result) => { // Filtrar los indicadores del select por pala
 }
 
 const catchObject = () => {
-  //const sortSelect = document.getElementById("sort");
   let data = dataFilter;
   let matchYear = event.target.value;
   resultYear = window.WorldBank.percentAndYear(data, matchYear);
