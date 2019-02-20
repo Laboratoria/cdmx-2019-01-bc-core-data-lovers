@@ -96,18 +96,18 @@
   }
   filterLetter();
 
-  orderedButton.addEventListener("click", () => {
+  orderedButton.addEventListener("click", () => { // Boton que ejecuta función de ordenar de la A-Z
     const newSortedData = window.data.sortData(pokemon);
     drawPokemon(newSortedData);
   });
 
-  orderedReverseButton.addEventListener("click", () => {
+  orderedReverseButton.addEventListener("click", () => { //Boton que aplica método reverse a función Z-A
     const dataForReverse = window.data.sortData(pokemon);
     const dataReverse = dataForReverse.reverse();
     drawPokemon(dataReverse);
   });
 
-  computeStats.addEventListener("click", () => {
+  computeStats.addEventListener("click", () => { //Boton que ejecuta función de promedio
     const newProm = window.data.computeStats(pokemon)
     const sectionRoot = dataShow;
     sectionRoot.innerHTML = "";
@@ -115,6 +115,6 @@
     return sectionRoot
   });
 
-  buttonRefreshMobile.addEventListener('click', () => {
+  buttonRefreshMobile.addEventListener('click', () => { // Boton para refresh versión mobile (casita)
     location.reload(true);
   })
