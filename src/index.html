@@ -20,10 +20,19 @@
     <!--menu responsive-->
     <input type="checkbox" id="burger-menu">
     <label for="burger-menu"><img src="images/burger.png" alt="Bold"></label>
-    <nav class="menu">
+    <nav id='menu-up' class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">About</a>
+           <ul id="site_about" class="site_about" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">City / Transport / Data is the principal data organization with respect to mobility injures by urbans transportations modes.
+               Our mission is to make through investigation, data collection, analysis, and information sharing.
+               All cities all over the world recognized safety and security mobility in its goals, objectives and polices.
+               Specific objectives were translated into performance criteria used to establish priorities for planned transportation improvements.
+               A key way to measure safety is evaluating the total number of injured persons in each mode of transportation.
+
+               DataDashboard share information to measure safety evaluating the total number of injured persons in each mode of transportation by year
+           </ul>
+          </li>
         <li><a href="#">Contact</a></li>
         <!-- <i class="fab fa-facebook-f"></i><br>
         <i class="fab fa-twitter"></i> -->
@@ -49,8 +58,9 @@
     <h1 class="subtitles">Pedestrians</h1>
     <article class="info">
       <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
-       <p>In the pyramid of mobility, pedestrians should be a priority for two main reasons: they are the weakest and it is the majority form of displacement, apart from the reasoning that we are all pedestrians. Making the weak and weak strong is the slogan: the pedestrian must have the highest priority because he is weaker than the bicycle and much weaker than the car. Therefore, the speed of the city should be regulated according to the pedestrian.</p>
-  <img src="./images/Recurso 2.png" width="300" height="300"/>
+      <p>In the pyramid of mobility, pedestrians should be a priority for two main reasons: they are the weakest and it is the majority form of displacement, apart from the reasoning that we are all pedestrians. Making the weak and weak strong is
+        the slogan: the pedestrian must have the highest priority because he is weaker than the bicycle and much weaker than the car. Therefore, the speed of the city should be regulated according to the pedestrian.</p>
+      <img src="./images/Recurso 2.png" width="300" height="300" />
     </article>
     <aside class="table">
       <table class="tableStructure">
@@ -71,8 +81,9 @@
     <h1 class="subtitles">Pedalcyclists</h1>
     <article class="info">
       <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
-      <p>The bicycle should be the preferred vehicle for several reasons: it is very efficient in small distances (the majority); it's cheap (much less than the 5,000 and 10,000 euros that you have to pay annually for a car); it does not pollute making noise or eliminating toxic gases; It is less dangerous than a car; it consumes less space; It is healthy.</p>
-  <img src="./images/Recurso 1.png" width="300" height="300"/>
+      <p>The bicycle should be the preferred vehicle for several reasons: it is very efficient in small distances (the majority); it's cheap (much less than the 5,000 and 10,000 euros that you have to pay annually for a car); it does not pollute
+        making noise or eliminating toxic gases; It is less dangerous than a car; it consumes less space; It is healthy.</p>
+      <img src="./images/Recurso 1.png" width="300" height="300" />
     </article>
     <aside class="table">
       <table class="tableStructure">
@@ -94,7 +105,7 @@
     <article class="info">
       <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
       <p>Public transport consumes less public space than cars; it is economically more viable for the user and in public infrastructures; favors intermodality with pedestrians</p>
-  <img src="./images/Recurso 5.png" width="300" height="300"/>
+      <img src="./images/Recurso 5.png" width="300" height="300" />
     </article>
     <aside class="table">
       <table class="tableStructure">
@@ -115,8 +126,11 @@
     <h1 class="subtitles">Car occupants</h1>
     <article class="info">
       <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
-      <p>unt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <img src="./images/Recurso 3.png" width="300" height="300"/>
+      <p>The security problem is less well quantified or
+        recognized. It particularly affects pedestrians
+        and cyclists, but also affects people in cars.
+        Roadway design details can also cause more frequent and more severe crashes.</p>
+      <img src="./images/Recurso 3.png" width="300" height="300" />
     </article>
     <aside class="table">
       <table class="tableStructure">
@@ -132,7 +146,7 @@
     </aside>
 
     <!-- Identify where the chart should be drawn. -->
-      <div class="chart_div"></div>
+    <div class="chart_div"></div>
 
   </section>
 
@@ -140,8 +154,10 @@
     <h1 class="subtitles">Motorcyclists</h1>
     <article class="info">
       <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
-      <p>oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="./images/Recurso 4.png" width="300" height="300"/>
+      <p>Motorcycles are a fast and seemingly efficient form of personal transportation. They differ from other motor vehicles in their physical operation, much smaller size (and lower weight), two heel (rather than four-wheel) base, and driver
+        exposure (with seating on top of the vehicle rather than inside it). Their design renders them highly unstable for many potential users while
+        providing little protection in the event of a crash.</p>
+      <img src="./images/Recurso 4.png" width="300" height="300" />
     </article>
 
     <aside class="table">
@@ -182,18 +198,19 @@
     </select>
 
     <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE DATA</button>
- </section>
+  </section>
 
- <section class="year-section">
- <section id="result_graphic" class="result_graphic">
-   <h4>Injures by year in all transportation modes</h4>
- </section>
- <br>
- <section class="pieChart">
-   <div id="piechart"></div>
- </section>
- </section>
+  <section class="year-section">
+    <section id="result_graphic" class="result_graphic">
+      <h4>Injures by year in all transportation modes</h4>
+    </section>
+    <br>
+    <section class="pieChart">
+      <div id="piechart"></div>
+    </section>
+  </section>
 </body>
 
 <script src="main.js"></script>
+
 </html>

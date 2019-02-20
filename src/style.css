@@ -30,6 +30,30 @@ header {
   opacity: .8;
 }
 
+.site_about {
+  width: 20%;
+  top: 100%;
+  right: 0;
+  position: absolute;
+  background: #112659;
+  text-align: justify;
+  font-size: .8em;
+  line-height: 140%;
+  color: white;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+#menu-up ul li ul {
+  display: none;
+}
+
+#menu-up ul li:hover ul {
+  display: block;
+}
+
 table {
   border-spacing: 20px;
   display: inline;
@@ -113,6 +137,8 @@ header label:hover {
 .menu li:hover {
   background: #037393;
 }
+
+
 
 /**************** div  ***********************/
 #realB {
@@ -283,14 +309,14 @@ section.content {
     display: block;
   }
 
-  p{
+  p {
     margin: 0 10%;
   }
 
-.subtitles{
-  text-align: center;
-  padding: 0;
-}
+  .subtitles {
+    text-align: center;
+    padding: 0;
+  }
 
   .menu {
     position: absolute;
@@ -304,7 +330,7 @@ section.content {
     flex-direction: column;
   }
 
-  .pieChart{
+  .pieChart {
     top: 200px;
     margin-left: 0;
     width: 100%;
@@ -313,6 +339,4 @@ section.content {
   #burger-menu:checked~.menu {
     margin: 0;
   }
-
-
 }
