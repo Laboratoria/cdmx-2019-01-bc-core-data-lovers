@@ -1,22 +1,22 @@
-
 window.pokesaurius = {
-  
+
   typeFilter: (data, pokemonElegido) => {
-   const filterPokemonType = data.filter(element => element.type.includes(pokemonElegido));
-   return filterPokemonType
+    const filterPokemonType = data.filter(element => element.type.includes(pokemonElegido));
+    return filterPokemonType
 
   },
 
 
-  sortByName:(data)=>{
-    const orderPokemonNAme=data.sort((a,b)=> {
-      if(a.name > b.name){
+  sortByName: (data) => {
+    const orderPokemonNAme = data.sort((a, b) => {
+      if (a.name > b.name) {
         return 1;
-      }else{
-        return-1;
+      } else {
+        return -1;
+     
       }
     })
-    return(orderPokemonNAme)
+    return (orderPokemonNAme)
   },
 
   
@@ -27,11 +27,6 @@ window.pokesaurius = {
     //return pokemon;
 
 
-  getPokemonById:(data, getIdElement) =>{
-    const pokemon = data.filter(element => element.id == getIdElement);
-    console.log(pokemon);
-    
-    return pokemon;
 }
 
 
@@ -45,22 +40,43 @@ window.pokesaurius = {
 
 
 
-//   {
-//   if (element.id === modalSelected){
-//   console.log(element.id);
 
-//   pokemonId = element;
-//   return element;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//typeSort:(data, ordenElegido) => {    
+//}
+
+// nameSort: (data) => {
+//   const sortPokemonName = elementSort.sort();
+//   console.log(sortPokemonName)
+
 // }
 
 
 
-// return pokemonId;
-// }
-
-
-}
 
 
 
 
+
+//promedio : (peso)=>{
+//for(let i=0; i< peso.length; i++){
+// const sumWeight=
+//}
+
+//}
