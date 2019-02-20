@@ -74,11 +74,9 @@ body {
 
 nav {
   background: #003471;
-  /*opacity: .8;*/
   margin: auto;
   border-radius: 10px;
   width: 92.5%;
-  /*height: 50%;*/
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
@@ -359,10 +357,6 @@ p {
     text-align: center;
   }
  
-  /*.weight-hide{
-    display: inline-block;
-  }*/
-
   .aside {
     background:linear-gradient(130deg, #4AB583, #9284FF);
   width: 255px;
@@ -383,7 +377,6 @@ p {
   }
 
   i {
-
     float: right;
     margin: 0 2px;
     padding: 5px;
