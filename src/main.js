@@ -1,4 +1,4 @@
-const baseDatos = window.WORLDBANK;
+let baseDatos = {};
 const buttonMenu = document.getElementById('showMenu');
 const menuList = document.getElementById('menuList');
 const box2 = document.getElementById('box2');
@@ -58,17 +58,17 @@ const bienvenida = () => { //funcion muestra apartado Bienvenida
 buttonHome.addEventListener('click', bienvenida);
 
 
-const muestra_indicador = () => { // funcion muestra apartado indicador
-  mostrarMenu()
-  valorMAx.style.display = 'block';
-  contenido.style.display = 'block';
-  reporte.style.display = 'block';
-  box2.classList.add('hide');
-  box3.classList.remove('hide');
-  box4.classList.add('hide');
-  box5.classList.add('hide');
-}
-buttonIndicador.addEventListener('click', muestra_indicador);
+ const muestra_indicador = () => { // funcion muestra apartado indicador
+   mostrarMenu()
+   valorMAx.style.display = 'block';
+   contenido.style.display = 'block';
+   reporte.style.display = 'block';
+   box2.classList.add('hide');
+   box3.classList.remove('hide');
+   box4.classList.add('hide');
+   box5.classList.add('hide');
+ }
+ buttonIndicador.addEventListener('click', muestra_indicador);
 
 const showContact = () => {
   mostrarMenu()
@@ -98,6 +98,8 @@ buttonProp.addEventListener('click', showProp);
 
 
 const filtraIndPais = () => {
+  baseDatos = JSON.parse(localStorage.getItem('data'))
+  console.log(baseDatos)
   valorAnioX = []; //inicializa los arreglo eje X para el pintado de la grafica
   valorPorcentajeY = []; //inicializa los arreglo eje Y para el pintado de la grafica
   contenido.style.display = 'block';
@@ -134,31 +136,31 @@ const recorrerObjeto = (pais) => {
   return respuesta;
 }
 
-const prtOrder = (orderObj) => {
-  let respOrder = "<li>"  + "<font size=4.5>" + "<b>" + "Año " + "&nbsp" + "&nbsp" + "  Valor(%)" + "</li>" + "</b>" + "<br>";
-  for (let i in orderObj) {
-    respOrder += "<li>" + "<b>" + orderObj[i][0] + ":  " + "</b>" + "&nbsp" + "&nbsp" + parseFloat(orderObj[i][1]).toFixed(2) + "%" + "</li>" + "<br>";
-  }
-  document.getElementById('contenido').innerHTML = respOrder;
-  return respOrder;
-}
+// const prtOrder = (orderObj) => {
+//   let respOrder = "<li>"  + "<font size=4.5>" + "<b>" + "Año " + "&nbsp" + "&nbsp" + "  Valor(%)" + "</li>" + "</b>" + "<br>";
+//   for (let i in orderObj) {
+//     respOrder += "<li>" + "<b>" + orderObj[i][0] + ":  " + "</b>" + "&nbsp" + "&nbsp" + parseFloat(orderObj[i][1]).toFixed(2) + "%" + "</li>" + "<br>";
+//   }
+//   document.getElementById('contenido').innerHTML = respOrder;
+//   return respOrder;
+// }
 
-const ptrMax = (selcValor, maxObj) => { //imprime max/min
+// const ptrMax = (selcValor, maxObj) => { //imprime max/min
   
-  valorMAx.style.display = 'block';
-  viewMax;
-  if (selcValor === 'max') {
-    viewMax = "<b>" + "<font size=4.5>" + "El valor maximo es: " + maxObj.toFixed(2) + "%" + "</b>";
-  }
+//   valorMAx.style.display = 'block';
+//   viewMax;
+//   if (selcValor === 'max') {
+//     viewMax = "<b>" + "<font size=4.5>" + "El valor maximo es: " + maxObj.toFixed(2) + "%" + "</b>";
+//   }
   
-  if (selcValor === 'min') {
-    viewMax = "<b>" + "<font size=4.5>" +  "El valor minimo es: " + maxObj.toFixed(2) + "%" + "</b>";
-  }
+//   if (selcValor === 'min') {
+//     viewMax = "<b>" + "<font size=4.5>" +  "El valor minimo es: " + maxObj.toFixed(2) + "%" + "</b>";
+//   }
   
-  document.getElementById('valorMAx').innerHTML = viewMax;
+//   document.getElementById('valorMAx').innerHTML = viewMax;
   
-  return maxObj;
-}
+//   return maxObj;
+// }
 
 
 const orderByAscent = () => { //funcion ordenar asc/desc
@@ -172,28 +174,28 @@ const orderByAscent = () => { //funcion ordenar asc/desc
 orderAscDat.addEventListener('change', orderByAscent); //funcion recorre el objeto*/
 
 
-const valorMaximo = () => { //funcion ordenar max/min
-  let arrayMax = valorPorcentajeY;
-  //console.log(arrayMax);
-  let selcValor = maximo.value;
-  let maxObj = window.worldBank.objMax(selcValor, arrayMax);
-  ptrMax(selcValor, maxObj)
-}
-maximo.addEventListener('change', valorMaximo); //funcion recorre el objeto*/
+// const valorMaximo = () => { //funcion ordenar max/min
+//   let arrayMax = valorPorcentajeY;
+//   //console.log(arrayMax);
+//   let selcValor = maximo.value;
+//   let maxObj = window.worldBank.objMax(selcValor, arrayMax);
+//   ptrMax(selcValor, maxObj)
+// }
+// maximo.addEventListener('change', valorMaximo); //funcion recorre el objeto*/
 
 
-const limpiar = () => {
-  document.getElementById('filtrar-pais').value = '';
-  document.getElementById('filtrar-indicador').value = '';
-  document.getElementById('order').value = '';
-  document.getElementById('valorMAx').style.display = 'none';
-  document.getElementById('reporte').style.display = 'none';
-  document.getElementById('contenido').innerHTML = '';
-  document.getElementById('graf').style.display = 'none';
-}
+// const limpiar = () => {
+//   document.getElementById('filtrar-pais').value = '';
+//   document.getElementById('filtrar-indicador').value = '';
+//   document.getElementById('order').value = '';
+//   document.getElementById('valorMAx').style.display = 'none';
+//   document.getElementById('reporte').style.display = 'none';
+//   document.getElementById('contenido').innerHTML = '';
+//   document.getElementById('graf').style.display = 'none';
+// }
 
-buttonLimpiar.addEventListener('click', limpiar)
-//console.log(limpiar);
+// buttonLimpiar.addEventListener('click', limpiar)
+// //console.log(limpiar);
 
 
 const DatGraph = () => { //funcion llenado de grafica con arrayX y arrayY
@@ -206,4 +208,13 @@ const DatGraph = () => { //funcion llenado de grafica con arrayX y arrayY
   return almacenaGraf;
 }
 
-change.addEventListener('click', muestra_indicador)
+// change.addEventListener('click', muestra_indicador)
+
+const url = './data/worldbank/worldbank.json'
+
+fetch(url)
+.then(resp => resp)
+.then(response => response.json())
+.then(data => localStorage.setItem('data', JSON.stringify(data)))
+
+.catch(err => console.error(err))
