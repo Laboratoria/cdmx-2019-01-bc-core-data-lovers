@@ -11,8 +11,7 @@
 
 //   }
 window.WorldBank = {
-  filterCountry: (data, country, countrySelect) => {
-    //console.log(data,listQuestion)
+  filterCountry: (data, country, countrySelect) => { // data dataset indicatorcode
     //let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
     // console.log(country)
     let paisElegido = data[country].indicators // entrams a la data de cada pais y los indicadores
@@ -20,15 +19,14 @@ window.WorldBank = {
     let result = {}; //declaramos una variable vacia  para que aqui almacene el resultado
     // if(country === 'ciudadesMex'){ // comparamos la data-ciudad que sea igual a la que seleccionamos
     paisElegido.forEach(ciudad => { //  seleccionamos la idicadores de mexico 
-      if (ciudad.indicatorCode == countrySelect) { //si el codigo y el select son iguales
-        //console.log(result)
+      if (ciudad.indicatorCode == countrySelect) { //si  los codigo son iguales
+        //console.log(ciudad.data )
         result = ciudad.data //retornamos la data años y numeros 
       }
     });
-    //console.log(result)
     return result //retorna a la variable vacia que declaramos al inicio
   },
-  // order numbers en mayor, menor, asc, desc
+  //  data, case: values, order numbers en mayor, menor, asc, desc
   orderData: (data, sortBy, sortOrder) => {
     let orderDataYear = {}; // empty array
     let unorderDataYear = data; // object data
@@ -36,7 +34,7 @@ window.WorldBank = {
       case "years": {
         //console.log("order by years");
         if (sortOrder === 'asc') {
-          // menor a mayor
+          // menor a mayor devuelve un array de las propiedades names de un objeto, en el mismo orden 
           orderDataYear = Object.keys(unorderDataYear).sort((a, b) => a - b)
           //orderDataYear = Object.keys(unorderDataYear).sort((a,b ) => (a > b)? 1 : -1)
         } else if (sortOrder === 'desc') {

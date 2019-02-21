@@ -1,9 +1,3 @@
-// function limpiarSelect(){
-//   listQuestion.innerHTML = "";
-// }
-// function setearCiudad(ciudad){
-//   listQuestion.dataset.ciudad =  ciudad;
-// }
 // const para desplegar menu
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
@@ -48,44 +42,42 @@ const indicator = document.getElementById("information-filter-inner");
 const listQuestion = document.getElementById("list-question");
 
 // ejecutar el llenado del selector dependiendo del país
-const buttonTypes = Array.from(document.getElementsByClassName('search-country'));
+const buttonTypes = Array.from(document.getElementsByClassName('search-country'));//tomar botones 4  en una sola clase
 //console.log(buttonTypes);
 for (let boton in buttonTypes){
   buttonTypes[boton].addEventListener('click',(e) =>{
     e.preventDefault() //e.target()
-    let paisElegido = data[e.target.dataset.ciudad].indicators;
+    let paisElegido = data[e.target.dataset.ciudad].indicators;//ayuda a identificar el pais que dimos click en ingresamos a la data especifica
     listQuestion.innerHTML = "";
-    listQuestion.dataset.ciudad = e.target.dataset.ciudad;
+    listQuestion.dataset.ciudad = e.target.dataset.ciudad;// para que tomme el pais y logremos pintarlo
     listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>'); 
     paisElegido.forEach( ciudad => {
     listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
     });
-
   })
 }
 
 //filtrar 
-const graficaDatos = document.getElementById("graficaDatos").getContext('2d');
-const avg = document.getElementById("avg");
+const graficaDatos = document.getElementById("graficaDatos").getContext('2d');// grafica
+const avg = document.getElementById("avg");//media porcentual
 listQuestion.addEventListener("change", () => {
   indicator.innerHTML = "";//Limpiar funcion
   let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
-  let QuestionText = listQuestion.options[listQuestion.selectedIndex].text;
-  //console.log(listQuestion.selectedIndex)
-  let countrySelect = listQuestion.value;
-  const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js
+  let countrySelect = listQuestion.value; //obtenemos el indicator code
+  let QuestionText = listQuestion.options[listQuestion.selectedIndex].text;//listQuestion.selectedIndex obetnemos por numero de tema y texto del tema 
+  const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js año valor
+  //para almacenar ddatos de la grafica
   var years = []; // para almacenar los años
   var dataPerYear = []; // para almacenar el dato por cada año
   for (let resultYear in resultado) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
     indicator.insertAdjacentHTML('beforeend', `<p><b>Año</b>: ${resultYear} => ${resultado[resultYear] || "N/A"}</p>`);
-
+      //Datos en la grafica
       years.push(resultYear); // anadimos al final del array years (para eso es push() ) el valor del año que tenemos en la posicion 1..n
       dataPerYear.push(resultado[resultYear].toString()); // añadimos al final de array los datos reales por año
-    
-    // llamos a la funcion de graficar (par1 eje x par2 eje y, par3 titulo de la grafica)
+      // llamos a la funcion de graficar (par1 eje x par2 eje y, par3 titulo de la grafica)
     graficar(years, dataPerYear, QuestionText)
   }
-  //ocultar y mostar grafica para que elimine el espacio que genera en el html
+  //ocultar y mostrar grafica para que elimine el espacio que genera en el html
   const showCanva = document.getElementById("show-canvas");
   showCanva.classList.remove('ocultar');
   //codigo prueba 
@@ -96,7 +88,6 @@ listQuestion.addEventListener("change", () => {
 });
 
 const radioFilters = Array.from(document.getElementsByClassName('radio__filter'));
-//console.log(radioFilters)
 for (let radioItem in radioFilters){
   radioFilters[radioItem].addEventListener('change',(e) =>{
     e.preventDefault() //e.target()
@@ -104,8 +95,7 @@ for (let radioItem in radioFilters){
     let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
     let countrySelect = listQuestion.value;
     const resultado = window.WorldBank.filterCountry(data, country,countrySelect)//Datos de data.js
-    const resultadoOrder = window.WorldBank.orderData(resultado, e.target.dataset.sortby, e.target.dataset.sortorder)//Datos de data.js
-    
+    const resultadoOrder = window.WorldBank.orderData(resultado, e.target.dataset.sortby, e.target.dataset.sortorder)//Datos de data.js 
     for (let resultadoYear in resultadoOrder) { //declaramos una variable y el obejto de donse encuentra lo que vamos a filtrar
       let parrafo = document.createElement('p'); // creamos un elemento p temporal ira grafica
       parrafo.innerHTML = `<b>Año</b>: ${resultadoOrder[resultadoYear]} = ${resultado[resultadoOrder[resultadoYear]] || "N/A"} ` //imprimimos el año y numeros
