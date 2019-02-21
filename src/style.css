@@ -11,7 +11,6 @@
   display: none;
 }
 
-
 body {
   background: linear-gradient(130deg, #4AB583, #9284FF);
   height: 100vh;
@@ -105,9 +104,6 @@ i {
   height: 38em;
 }
 
-.weight-hide{
-  display: none;
-}
 
 .content,
 .aside {
@@ -139,7 +135,7 @@ i {
   text-align: center;
 }
 
-.type-button,
+.button-filter-by-type,
 .sort-button {
   background: #E6FDFB;
   border: none;
@@ -154,7 +150,7 @@ i {
   display: inline-block;
 }
 
-.type-button:hover,
+.button-filter-by-type:hover,
 .sort-button:hover {
   background: #FFBA5C;
 }
@@ -164,8 +160,8 @@ i {
 }
 
 .type,
-.orderByName,
-.doYouKnow {
+.order-by-name,
+.did-you-know {
   font-size: 25px;
   font-weight: bold;
   color: #003471;
@@ -222,45 +218,13 @@ p {
   margin-top: 9px;
 }
 
-.wrapper-individual {
-  display: inline-block;
-  background: #FFD185;
-  margin: 9px 15px;
-  padding-bottom: 10px;
-  width: 76%;
-  border-radius: 14px;
-  border: 3px solid #FFBA5C;
-}
-
-.pokemon-card-individual {
-  background: #EAFEE6;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  right: 30px;
-}
-
-.image-individual {
-  margin-left: 30%;
-}
-
-.box-properties {
-  width: 90%;
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  color: #003471;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 9px;
-
-}
 
 @media screen and (min-width: 769px) {
   .aside {
     display: inherit;
   }
 
-  .menu-toogle {
+  .menu-toggle {
     display: none;
   }
 }
@@ -356,13 +320,13 @@ p {
     padding: 10px;
     text-align: center;
   }
- 
+
   .aside {
-    background:linear-gradient(130deg, #4AB583, #9284FF);
-  width: 255px;
-  height: 90%;
-  position: absolute;
-  right:4.5%;
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 255px;
+    height: 90%;
+    position: absolute;
+    right: 4.5%;
   }
 
 }
@@ -402,7 +366,7 @@ p {
     right: 4.5%;
   }
 
-  .type-button {
+  .button-filter-by-type {
     margin: 1% 3%;
   }
 
