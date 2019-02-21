@@ -14,11 +14,11 @@ window.WorldBank = {
   filterCountry: (data, country, countrySelect) => { // data dataset indicatorcode
     //let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
     // console.log(country)
-    let paisElegido = data[country].indicators // entrams a la data de cada pais y los indicadores
+    let chooseCoutry = data[country].indicators // entrams a la data de cada pais y los indicadores
     //et countrySelect = listQuestion.value; //obtenemos el idicator code que tiene de la pregunta
     let result = {}; //declaramos una variable vacia  para que aqui almacene el resultado
     // if(country === 'ciudadesMex'){ // comparamos la data-ciudad que sea igual a la que seleccionamos
-    paisElegido.forEach(ciudad => { //  seleccionamos la idicadores de mexico 
+    chooseCoutry.forEach(ciudad => { //  seleccionamos la idicadores de mexico 
       if (ciudad.indicatorCode == countrySelect) { //si  los codigo son iguales
         //console.log(ciudad.data )
         result = ciudad.data //retornamos la data años y numeros 

@@ -9,30 +9,30 @@ const btnFilters = document.getElementById("btn-general-filter");
 const news = document.getElementById("news");
 const about = document.getElementById("about");
 const filters = document.getElementById("general-filter");
-//evento para ocultar y mostrar elementos
+//evento para hide y mostrar elementos
 navIcon.addEventListener('click', () => {
-navMenu.classList.toggle('ocultar'); 
+navMenu.classList.toggle('hide'); 
 });
 btnAbout.addEventListener('click', () => {
-  about.classList.remove('ocultar');
-  filters.classList.add('ocultar');
-  navMenu.classList.add('ocultar');
-  news.classList.add('ocultar');
+  about.classList.remove('hide');
+  filters.classList.add('hide');
+  navMenu.classList.add('hide');
+  news.classList.add('hide');
 });
 btnNews.addEventListener('click', () => {
-  about.classList.add('ocultar');
-  filters.classList.add('ocultar');
-  navMenu.classList.add('ocultar');
-  news.classList.remove('ocultar');
+  about.classList.add('hide');
+  filters.classList.add('hide');
+  navMenu.classList.add('hide');
+  news.classList.remove('hide');
 });
 btnFilters.addEventListener('click', () => {
-  about.classList.add('ocultar');
-  filters.classList.remove('ocultar');
-  navMenu.classList.add('ocultar');
-  news.classList.add('ocultar');
+  about.classList.add('hide');
+  filters.classList.remove('hide');
+  navMenu.classList.add('hide');
+  news.classList.add('hide');
 });
 window.onload = function cargar(){
-  filters.classList.remove('ocultar');
+  filters.classList.remove('hide');
 }
 //acceder a la data de cada pais
 const data = window.WORLDBANK;
@@ -47,11 +47,11 @@ const buttonTypes = Array.from(document.getElementsByClassName('search-country')
 for (let boton in buttonTypes){
   buttonTypes[boton].addEventListener('click',(e) =>{
     e.preventDefault() //e.target()
-    let paisElegido = data[e.target.dataset.ciudad].indicators;//ayuda a identificar el pais que dimos click en ingresamos a la data especifica
+    let chooseCoutry = data[e.target.dataset.ciudad].indicators;//ayuda a identificar el pais que dimos click en ingresamos a la data especifica
     listQuestion.innerHTML = "";
     listQuestion.dataset.ciudad = e.target.dataset.ciudad;// para que tomme el pais y logremos pintarlo
     listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>'); 
-    paisElegido.forEach( ciudad => {
+    chooseCoutry.forEach( ciudad => {
     listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
     });
   })
@@ -77,9 +77,9 @@ listQuestion.addEventListener("change", () => {
       // llamos a la funcion de graficar (par1 eje x par2 eje y, par3 titulo de la grafica)
     graficar(years, dataPerYear, QuestionText)
   }
-  //ocultar y mostrar grafica para que elimine el espacio que genera en el html
+  //hide y mostrar grafica para que elimine el espacio que genera en el html
   const showCanva = document.getElementById("show-canvas");
-  showCanva.classList.remove('ocultar');
+  showCanva.classList.remove('hide');
   //codigo prueba 
   //let mediaContent = document.createElement('span');
   const media = window.WorldBank.getMathMedia(resultado);
