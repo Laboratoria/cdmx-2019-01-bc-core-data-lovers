@@ -90,13 +90,16 @@ body{
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.title-indicadores{
+.title-indicators{
     position: relative;
     text-align: center;
     font-size: 2rem;
     margin-top: 0;
     font-size: 1.5rem;
     color: #002f54;
+}
+.subtitle-idicators{
+    text-align: center;
 }
 .information-filter-inner{
     border: 1px solid black;
@@ -168,7 +171,7 @@ body{
     border: 1px solid #002f54; 
     color: #fff; 
 }
-.ocultar{
+.hide{
     display: none;
 }
 .mostrar-filters{
@@ -317,7 +320,7 @@ footer{
       -ms-transition: all linear .35s  ;
       -o-transition: all linear .35s  ;
 }
-.promedio{
+.prmedio{
     text-align: center;
 }
 
@@ -353,7 +356,7 @@ footer{
         display: inline-block;
         width: 45%;
         margin-left: 3.5%;
-        text-align: center;
+        text-align: right;
         vertical-align: top;
         height: auto;
         margin-bottom: 30px;
@@ -371,5 +374,6 @@ footer{
         box-sizing:border-box;
         width:80%;
         padding-left:20%;     
-    }  
+    }
+  
 }
