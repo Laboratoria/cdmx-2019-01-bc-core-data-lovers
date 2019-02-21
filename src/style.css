@@ -241,50 +241,6 @@ main {
   }
 }
 
-#btn-est {
-  left: 155px;
-  margin-top: 65px;
-  width: 160px;
-  height: 50px;
-  left: 65px;
-  border: 0px;
-  border-radius: 10px 0px 10px 0px;
-  background-color: #FFD252;
-  font-style: normal;
-  font-size: .9em;
-  letter-spacing: 0.4px;
-  mix-blend-mode: normal;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  color: #444444;
-  text-align: center;
-  padding-top: 15px;
-}
-
-@media(min-width:768px) {
-  #btn-est {
-    position: relative;
-    margin-top: 140px;
-    width: 170px;
-    height: 50px;
-    font-size: 1em;
-    letter-spacing: 0.4px;
-  }
-}
-
-#btn-est:hover {
-  color: white;
-  background: transparent;
-  opacity: 15%;
-  border: 2px solid #FFD252;
-  color: #444444;
-}
-
-@media(min-width:768px) {
-  #btn-est:hover {
-    color: white;
-  }
-}
 
 div#group-buttons{
   width: 80%;
@@ -369,6 +325,7 @@ select#indicator {
 .col-50,
 .col-70 {
   width: 100%;
+  display: inline-table;
 }
 
 div#data-year {
