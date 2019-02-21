@@ -1,83 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
-</head>
-
-<body>
-  <div id="root">
-    <section id="initial-page" class="initial-page">
-      <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img-pokesaurius">
-
-      <button id="pokeball-button" class="pokebola-button"><img src="./assets/poke-ball-button_2.png" alt="pokebola-boton"></button>
-    </section>
-
-    <section id="pokemon-page" class="hideElement">
-      <header class="header">
-        <div>
-          <img src="./assets/pokesaurius_logo_2cm.png" alt="Logo-Pokesaurius" class="img-logo-chico">
-        </div>
-
-        <nav>
-          <p class="text-page">COLECCIÓN <span id="counter-collection"></span>/151</p>
-          <a href="#" id="menu-undo" class="menu-undo"><i class="fas fa-undo"></i></a>
-          <a href="#" id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></a>
-        </nav>
-      </header>
-
-      <section class="main-content">
-        <div class="content">
-          <article id="print-list" class="post">
-          </article>
-        </div>
-
-        <aside class="aside hideElement" id="aside">
-          <h3 class="type">Tipo</h3>
-          <button class="button-filter-by-type" id="Grass">Planta</button>
-          <button class="button-filter-by-type" id="Poison">Veneno</button>
-          <button class="button-filter-by-type" id="Fire">Fuego</button>
-          <button class="button-filter-by-type" id="Ice">Hielo</button>
-          <button class="button-filter-by-type" id="Flying">Volador</button>
-          <button class="button-filter-by-type" id="Psychic">Psíquico</button>
-          <button class="button-filter-by-type" id="Water">Agua</button>
-          <button class="button-filter-by-type" id="Ground">Tierra</button>
-          <button class="button-filter-by-type" id="Rock">Roca</button>
-          <button class="button-filter-by-type" id="Electric">Eléctrico</button>
-          <button class="button-filter-by-type" id="Bug">Bicho</button>
-          <button class="button-filter-by-type" id="Normal">Normal</button>
-          <br>
-          <h3 class="order-by-name">Ordenar</h3>
-          <button class="button-filter-by-type sort-button" id="totales">Por nombre <i class="fas fa-angle-up"></i></button>
-          <article class="average">
-            <h4 class="did-you-know">Sabías que...</h4>
-            <p>El peso promedio de tus Pokémones <span id="print-type"></span> es de <span id="weight"></span>kg</p>
-          </article>
-        </aside>
-      </section>
-      <!--termina main content-->
-
-    </section>
-    <!--termina pokemon-page-->
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="./data/pokemon/pokemon.js"></script>
+    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
      <script src="./data/lol/lol.js"></script> 
     <script src="data.js"></script>
     <script src="main.js"></script>
-
-  </div>
-  <!--termina div root-->
-
-</body>
-
+  </body>
 </html>
