@@ -18,21 +18,21 @@ pokeballButton.addEventListener('click', () => { // ocultar página de inicio//
 });
 
 const print=(data)=>{ //imprime data//
-    let totalWeight= 0;
-    data.forEach(element => {
-        totalWeight += parseFloat(element.weight); 
-        let result = `<div id="${element.id}" class="wrapper">
-        <div class="pokemon-card"> 
-        <div class="pokemon-card-image">
-        <img src="${element.img}">
-        </div>
-        <div class="box-card">
-        <p>Número:${element.num}</p>
-        <p>${element.name}</p>
-        <p class="weight-hide">Peso:${element.weight}</p>
-        </div>
-        </div>
-        </button>`
+  let totalWeight= 0;
+  data.forEach(element => {
+    totalWeight += parseFloat(element.weight); 
+    let result = `<div id="${element.id}" class="wrapper">
+    <div class="pokemon-card"> 
+    <div class="pokemon-card-image">
+    <img src="${element.img}">
+    </div>
+    <div class="box-card">
+    <p>Número:${element.num}</p>
+    <p>${element.name}</p>
+    <p class="weight-hide">Peso:${element.weight}</p>
+    </div>
+    </div>
+    </button>`
     printList.insertAdjacentHTML("beforeend", result);
     return print;
   });
