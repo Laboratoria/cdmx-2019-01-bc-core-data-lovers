@@ -321,13 +321,13 @@ p {
     padding: 10px;
     text-align: center;
   }
- 
+
   .aside {
-    background:linear-gradient(130deg, #4AB583, #9284FF);
-  width: 255px;
-  height: 90%;
-  position: absolute;
-  right:4.5%;
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 255px;
+    height: 90%;
+    position: absolute;
+    right: 4.5%;
   }
 
 }
@@ -367,7 +367,7 @@ p {
     right: 4.5%;
   }
 
-  .button-filter-by-type{
+  .button-filter-by-type {
     margin: 1% 3%;
   }
 
