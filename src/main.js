@@ -21,13 +21,23 @@ const difficultyDsc = document.getElementById("difficultyDsc");
 const containerInfo = document.getElementsByClassName("containerInfo");
 const stats = document.getElementById("stats");
 
+const lolJson = "./data/lol/lol.json"
+  fetch(lolJson)
+  .then(response => response.json()
+  .then(dataLolJson => {
+    const allLol = dataLolJson
+   .then(dataJson => localStorage.setItem()  
+   .cath (error => console.log(error)) 
+    console.log(allLol)
+  })
+  ) 
 
 //-----FUNCIONES PARA DESPLEGAR LA INFORMACIÓN DE LOS CAMPEONES
 
 //Limpia los elementos de las secciones Campeones, Search y Dicultad para mostrar la lista completa de los campeones.
 home.addEventListener("click", () => {
   imprimirRoles.innerHTML = "";
-  print(datosArr)
+  print(datoLolJso)
 });
 
 //Función para iterar la lista de  los campeones e imprimir la tarjeta con información seleccionada de cada uno de los campeones 
