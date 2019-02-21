@@ -49,7 +49,7 @@ const buttonHomeOnKantoPage = document.getElementById("buttonHomeOnKantoPage");
 const buttonCuriousOnKanto = document.getElementById("buttonCuriousOnKanto");
 const buttonSearchByTypeOnKanto = document.getElementById("buttonSearchByTypeOnKanto");
 const buttonFilterPokemonOnKanto = document.getElementById("buttonFilterPokemonOnKanto");
-
+const pokemonJson = ("./data/pokemon/pokemon.json")
 
 buttonFilterPokemon.addEventListener('click', () => {
   homePage.classList.add('hide');
@@ -239,11 +239,10 @@ checkboxWeightAscending.addEventListener("click", () => {
   pokemonsSortWeight.forEach(element => {
     let name = element.name;
     let img = element.img;
-    let weight = element.weight;
+    let weight = element.weight
     printPokemon(name, img, weight);
   });
 });
-
 checkboxHeightDescending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const pokemonSortHeightDescending = window.pokemonFunction.sortByHeightDescending(pokemonData);
@@ -324,7 +323,8 @@ ButtonDragon.addEventListener("click", () => {
   filtrar(14);
 })
 
-pokemonData.forEach(element => {
+
+const pokemonjson = (pokemonArray) => { pokemonArray.forEach(element => {
   let num = element.num;
   let name = element.name;
   let img = element.img;
@@ -343,19 +343,41 @@ pokemonData.forEach(element => {
   printData(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
     weaknesses, next_evolution);
 })
+}
+
+const printType = (pokemonSortedName) =>{ pokemonSortedName.forEach(element => {
+  let name = element.name;
+  let img = element.img;
+  let type = element.type;
+  printAll(name, img, type);
+})
+};
+
+
+fetch(pokemonJson)
+.then(response => response.json())
+
+.then(dataPokemon => {
+  const allPokemon = dataPokemon.pokemon
+  pokemonjson(allPokemon);
+})
+
+
 
 function filtrar(id_tipo) {
 
   if (id_tipo == 1) { //tipo fuego
-    const fireType = "Fire";
-    const pokemonType = window.pokemonFunction.pokemonFilterType(pokemonData, fireType);
-    const pokemonSortedName = window.pokemonFunction.sortByName(pokemonType);
-    pokemonSortedName.forEach(element => {
-      let name = element.name;
-      let img = element.img;
-      let type = element.type;
-      printAll(name, img, type);
-    });
+    fetch(pokemonJson)
+.then(response => response.json())
+  
+.then(datajson => {
+  const filterFire = datajson.pokemon
+  const fire = "Fire"
+  const pokemonType = window.pokemonFunction.pokemonFilterType(filterFire,fire);
+  const pokemonSortedName=window.pokemonFunction.sortByName(pokemonType);
+  printType(pokemonSortedName)
+});
+    
   } else if (id_tipo == 2) { //tipo grass
     const grassType = "Grass";
     const pokemonType = window.pokemonFunction.pokemonFilterType(pokemonData, grassType);
@@ -489,5 +511,14 @@ function filtrar(id_tipo) {
     });
   }
 }
+
+
+
+
+
+
+
+
+
 
 
