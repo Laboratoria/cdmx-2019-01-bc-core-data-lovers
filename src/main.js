@@ -32,7 +32,7 @@ const print=(data)=>{ //imprime la data//
         </div>
         </div>
         </div>`
-    printList.insertAdjacentHTML("beforeend", result);
+    printList.insertAdjacentHTML("beforeend", result);//insertAdjacentHTML renderiza cada iteración y  coloca los elementos uno después del otro.
     return print;
   });
   const averageWeight = totalWeight / data.length; //saca promedio del peso//
