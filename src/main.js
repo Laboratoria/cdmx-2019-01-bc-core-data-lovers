@@ -5,7 +5,7 @@ const dataPokemon = window.POKEMON.pokemon;
 const pokemones = document.getElementById('pokemones');
 const theme = document.getElementById('theme');
 
-//Declaración para la pantalla de walcome
+//Declaración para la pantalla de welcome
 const welcome = document.getElementById('welcome');
 const btnStart = document.getElementById('btnStart');
 const burguer = document.getElementById('burguer');
