@@ -11,6 +11,7 @@
   display: none;
 }
 
+
 body {
   background: linear-gradient(130deg, #4AB583, #9284FF);
   height: 100vh;
@@ -169,6 +170,7 @@ i {
   padding-bottom: 3%;
 }
 
+
 .fa-angle-up {
   display: inline-block;
 }
@@ -216,6 +218,7 @@ p {
   text-align: center;
   margin-top: 9px;
 }
+
 
 @media screen and (min-width: 769px) {
   .aside {
