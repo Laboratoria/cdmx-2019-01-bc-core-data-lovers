@@ -25,7 +25,7 @@ const toPrint = (mapData) => {
   let printPokeons = '';
   mapData.map((dataPokemon) => {
     printPokeons +=
-    ` <button type="button" class="divPokemon btnPokemon ${dataPokemon.type[0]} btn btn-primary btn-lg" data-toggle="modal" data-target="#pokemon${dataPokemon.id}">
+      ` <button type="button" class="divPokemon btnPokemon ${dataPokemon.type[0]} btn btn-primary btn-lg" data-toggle="modal" data-target="#pokemon${dataPokemon.id}">
         <img src="${dataPokemon.img}"> <br><p class="name">${dataPokemon.name}</p><br>
       </button>
 

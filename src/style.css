@@ -13,7 +13,7 @@ img {
   width: 70%;
 }
 
-.avg{
+.avg {
   background-color: #1c295a;
   color: white;
   font-size: 2em;
@@ -762,7 +762,8 @@ nav.navbar {
     width: 80%;
   }
 
-  #pokemones, #filtered_out {
+  #pokemones,
+  #filtered_out {
     /*Agregue*/
     padding-top: 24%;
   }
