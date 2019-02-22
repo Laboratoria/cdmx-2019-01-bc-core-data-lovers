@@ -7,9 +7,9 @@
 window.example = example;*/
 
 window.pokemonFunction = {
-  sortByName: (arrayPokemonData, property) =>{
+  sortByName: (arrayPokemonData) =>{
     const pokemonSortedData= arrayPokemonData.sort((a,b) => {
-      if (a[property] > b[property]){
+      if (a.name > b.name){
         return 1;
       }else {
         return -1;

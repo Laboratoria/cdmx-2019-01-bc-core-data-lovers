@@ -411,8 +411,8 @@ const filterType = (arrayPokemon,str) => {
   return typePokemon;
 }
 
-const sortName = (arrayPokemon, property) => {
-  const nameSorted = window.pokemonFunction.sortByName(arrayPokemon, property);
+const sortName = (arrayPokemon) => {
+  const nameSorted = window.pokemonFunction.sortByName(arrayPokemon);
   return nameSorted;
 }
 
@@ -429,9 +429,8 @@ function filtrar(id_tipo) {
 .then(datajson => {
   const filterFire = datajson.pokemon
   const fire = "Fire";
-  const property = "name";
   const pokemonType = filterType(filterFire,fire);
-  const pokemonSortedName=sortName(pokemonType, property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName);
 });
     
@@ -441,9 +440,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const grass = "Grass"
-  const property = "name";
   const pokemonType = filterType(filterFire,grass);
-  const pokemonSortedName=sortName(pokemonType, property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
 
@@ -453,9 +451,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const ice = "Ice"
-  const property = "name";
   const pokemonType = filterType(filterFire,ice);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 4) { //tipo poison
@@ -464,9 +461,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const poison = "Poison"
-  const property = "name";
   const pokemonType = filterType(filterFire,poison);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     
     });
@@ -476,9 +472,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const flying = "Flying"
-  const property = "name";
   const pokemonType = filterType(filterFire,flying);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 6) { //tipo psychic
@@ -487,9 +482,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const psychic = "Psychic"
-  const property = "name";
   const pokemonType = filterType(filterFire,psychic);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 7) { //tipo water
@@ -498,9 +492,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const water = "Water"
-  const property = "name";
   const pokemonType = filterType(filterFire,water);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 8) { //tipo Ground
@@ -509,9 +502,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const ground = "Ground"
-  const property = "name";
   const pokemonType = filterType(filterFire,ground);
-  const pokemonSortedName=sortName(pokemonType, property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 9) { //tipo Rock
@@ -520,9 +512,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const rock = "Rock"
-  const property = "name";
   const pokemonType = filterType(filterFire,rock);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 10) { //tipo Electric
@@ -531,9 +522,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const electric = "Electric"
-  const property = "name";
   const pokemonType = filterType(filterFire,electric);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 11) { //tipo Bug
@@ -542,9 +532,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const bug = "Bug"
-  const property = "name";
   const pokemonType = filterType(filterFire,bug);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 12) { //tipo Normal
@@ -553,9 +542,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const normal = "Normal"
-  const property = "name";
   const pokemonType = filterType(filterFire,normal);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 13) { //tipo Fighting
@@ -564,9 +552,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const fighting = "Fighting"
-  const property = "name";
   const pokemonType = filterType(filterFire,fighting);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   } else if (id_tipo == 14) { //tipo Dragon
@@ -575,9 +562,8 @@ function filtrar(id_tipo) {
     .then(datajson => {
   const filterFire = datajson.pokemon
   const dragon = "Dragon"
-  const property = "name";
   const pokemonType = filterType(filterFire,dragon);
-  const pokemonSortedName=sortName(pokemonType,property);
+  const pokemonSortedName=sortName(pokemonType);
   printType(pokemonSortedName)
     });
   }
