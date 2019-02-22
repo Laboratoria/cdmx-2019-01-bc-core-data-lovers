@@ -9,7 +9,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
+div.cont{
+  overflow: scroll !important
 
+}
 
 #social ul {
   display: inline-block;
