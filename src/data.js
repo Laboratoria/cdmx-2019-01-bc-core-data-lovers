@@ -7,9 +7,9 @@
 window.example = example;*/
 
 window.pokemonFunction = {
-  sortByName: (arrayPokemonData) =>{
+  sortByName: (arrayPokemonData, property) =>{
     const pokemonSortedData= arrayPokemonData.sort((a,b) => {
-      if (a.name > b.name){
+      if (a[property] > b[property]){
         return 1;
       }else {
         return -1;
@@ -17,9 +17,9 @@ window.pokemonFunction = {
     })
     return pokemonSortedData
   },
-  sortByHeightAscending: (arrayPokemonData) => {
+  sortFunction: (arrayPokemonData,property) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
-      if (a.height > b.height) {
+      if ((parseFloat(a[property])) > (parseFloat(b[property]))) {
         return 1;
       }
       else {
