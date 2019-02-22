@@ -4,7 +4,7 @@ const filterPage = document.getElementById('filterPage')
 const curiousPokemonFactsPage= document.getElementById('curiousPokemonFactsPage');
 const buttonFilterPokemon = document.getElementById("buttonFilterPokemon");
 const totalData = document.getElementById("total-data");
-const pokemonData = window.POKEMON.pokemon;
+
 const buttonRegionKanto = document.getElementById('buttonRegionKanto')
 const buttonCuriousPokemonFacts = document.getElementById('buttonCuriousPokemonFacts');
 const buttonHomeOnFilter = document.getElementById('buttonHomeOnFilter');
@@ -133,12 +133,12 @@ buttonFilterPokemonOnKanto.addEventListener("click", () => {
 
 
 
-const allPokemon = 151
+/*const allPokemon = 151
 const averageWeight = window.pokemonFunction.averageWeight(pokemonData, allPokemon);
 const averageHeight =window.pokemonFunction.averageHeight(pokemonData, allPokemon);
 averageWeightPokemon.innerHTML = `<div class ="averageWeightPokemonText">The average weight of all Pokémon is  ${averageWeight} kilograms.</div>`;
 averageHeightPokemon.innerHTML = `<div class ="averageWeightPokemonText">The average height of all Pokémon is ${averageHeight} meters.</div>`;
-
+*/
 
 const printPokemon = (name, img, quality) => {
   let resultPokemonPrint = `<div class="filterCard"><h1>${name}</h1>
@@ -169,10 +169,7 @@ const printAll = (name, img, type) => {
   pokemonTypeAll.insertAdjacentHTML("beforeend", resultTypeAll);
 };
 
-const weightAscending = (arrayPokemon) => {
-  const filterWeight = window.pokemonFunction.sortByWeightAscending(arrayPokemon);
-  return filterWeight;
-}
+
 
 const heightAscending = (arrayPokemon,property) => {
   const filterHeight = window.pokemonFunction.sortFunction(arrayPokemon,property);
@@ -219,7 +216,7 @@ checkboxWeightHeavy.addEventListener("click", () => {
    .then( dataPokemon => {
     const weightHeavy = dataPokemon.pokemon 
     const pokemonsHeavy = window.pokemonFunction.filterByWeightHeavy(weightHeavy);
-    const pokemonSortedHeavy = weightAscending(pokemonsHeavy,property);
+    const pokemonSortedHeavy = heightAscending(pokemonsHeavy,property);
     printProperty(pokemonSortedHeavy);
    })
 });
@@ -286,27 +283,30 @@ checkboxWeightAscending.addEventListener("click", () => {
     printProperty(pokemonsSortWeight);
   })
 });
+
 checkboxHeightDescending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
-  const pokemonSortHeightDescending = window.pokemonFunction.sortByHeightDescending(pokemonData);
-  pokemonSortHeightDescending.forEach(element => {
-    let name = element.name;
-    let img = element.img;
-    let height = element.height;
-    printPokemon(name, img, height);
+  const property = "height"
+  fetch(pokemonJson)
+  .then( response => response.json())
+  .then( datajson => {
+    const height = datajson.pokemon
+    const heightDescending = window.pokemonFunction.sortByDescending(height,property);
+    printHeight(heightDescending);
   });
 });
 
 checkboxWeightDescending.addEventListener("click", () => {
  printPokemonFilter.innerHTML = "";
-  const pokemonSortWeightDescending = window.pokemonFunction.sortByWeightDescending(pokemonData);
-  pokemonSortWeightDescending.forEach(element => {
-    let name = element.name;
-    let img = element.img;
-    let weight = element.weight;
-    printPokemon(name, img, weight);
-  })
-})
+ const property = "weight"
+ fetch(pokemonJson)
+ .then( response => response.json())
+ .then( datajson => {
+   const weight = datajson.pokemon
+   const weightDescending = window.pokemonFunction.sortByDescending(weight,property);
+   printProperty(weightDescending);
+ });
+});
 
 
 buttonPokemonFire.addEventListener("click", () => {
