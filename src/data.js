@@ -23,8 +23,10 @@ window.lol = {
           armor: element.stats.armor,
         }
         datosArr.push(obj)
+        
       }
     }
+    
     return datosArr
   },
 
@@ -68,8 +70,6 @@ window.lol = {
     })
     return sortDsc
   },*/
-
-
 
   
 averageAttack: (datosArr) => {
