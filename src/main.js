@@ -4,7 +4,6 @@ const filterPage = document.getElementById('filterPage')
 const curiousPokemonFactsPage= document.getElementById('curiousPokemonFactsPage');
 const buttonFilterPokemon = document.getElementById("buttonFilterPokemon");
 const totalData = document.getElementById("total-data");
-
 const buttonRegionKanto = document.getElementById('buttonRegionKanto')
 const buttonCuriousPokemonFacts = document.getElementById('buttonCuriousPokemonFacts');
 const buttonHomeOnFilter = document.getElementById('buttonHomeOnFilter');
@@ -49,7 +48,7 @@ const buttonHomeOnKantoPage = document.getElementById("buttonHomeOnKantoPage");
 const buttonCuriousOnKanto = document.getElementById("buttonCuriousOnKanto");
 const buttonSearchByTypeOnKanto = document.getElementById("buttonSearchByTypeOnKanto");
 const buttonFilterPokemonOnKanto = document.getElementById("buttonFilterPokemonOnKanto");
-const pokemonJson = ("./data/pokemon/pokemon.json")
+const pokemonJson = ("./data/pokemon/pokemon.json");
 
 // const pokemonTypes = {
 //   Fire, 
@@ -170,12 +169,12 @@ const printAll = (name, img, type) => {
 };
 
 
-
+//Función sort () general para peso y altura
 const heightAscending = (arrayPokemon,property) => {
   const filterHeight = window.pokemonFunction.sortFunction(arrayPokemon,property);
   return filterHeight;
 }
-
+//itera para nombre, img y peso 
 const printProperty =(arrayPokemon) => {
   arrayPokemon.forEach(element => {
     let name = element.name;
@@ -184,7 +183,7 @@ const printProperty =(arrayPokemon) => {
     printPokemon(name, img, weight);
 });
 };
-
+//itera para nombre, img, y altura 
 const printHeight = (arrayPokemon) => {
   arrayPokemon.forEach(element=> {
     let name = element.name;
@@ -194,118 +193,129 @@ const printHeight = (arrayPokemon) => {
   });
 };
 
+//JSON que pinta en la región Kanto y guarda en local storage
+fetch(pokemonJson)
+.then(response => response.json())
+
+.then(dataPokemon => {
+  const allPokemon = dataPokemon.pokemon
+  localStorage.setItem("pokemon",JSON.stringify(allPokemon));
+  pokemonjson(allPokemon);
+})
+
+//itera para imprimir en todos los elementos de las tarjetas de la region kanto 
+const pokemonjson = (pokemonArray) => { pokemonArray.forEach(element => {
+  let num = element.num;
+  let name = element.name;
+  let img = element.img;
+  let type = element.type;
+  let height = element.height;
+  let weight = element.weight;
+  let candy = element.candy;
+  let candy_count = element.candy_count;
+  let egg = element.egg;
+  let spawn_chance = element.spawn_chance;
+  let avg_spawns = element.avg_spawns;
+  let spawn_time = element.spawn_time;
+  let multipliers = element.multipliers;
+  let weaknesses = element.weaknesses;
+  let next_evolution = element.next_evolution;
+  printData(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
+    weaknesses, next_evolution);
+})
+}
+
+//Invoca json para pokemones ligeros 
 checkboxWeightLight.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "weight"
-  fetch(pokemonJson)
-  .then(response => response.json())
-  .then( dataPokemon => {
-  const weightLight= dataPokemon.pokemon
-  const pokemonsLight = window.pokemonFunction.filterByWeightLight(weightLight);
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const pokemonsLight = window.pokemonFunction.filterByWeightLight(newData);
   const pokemonSortedLight = heightAscending(pokemonsLight,property);
   printProperty(pokemonSortedLight);
-  });
+  
 });
 
-
+//Invoca json para pokemones pesados 
 checkboxWeightHeavy.addEventListener("click", () => {
-   printPokemonFilter.innerHTML = "";
-   const property = "weight"
-   fetch(pokemonJson)
-   .then(response => response.json())
-   .then( dataPokemon => {
-    const weightHeavy = dataPokemon.pokemon 
-    const pokemonsHeavy = window.pokemonFunction.filterByWeightHeavy(weightHeavy);
-    const pokemonSortedHeavy = heightAscending(pokemonsHeavy,property);
-    printProperty(pokemonSortedHeavy);
-   })
+  printPokemonFilter.innerHTML = "";
+  const property = "weight"
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const pokemonsHeavy = window.pokemonFunction.filterByWeightHeavy(newData);
+  const pokemonSortedHeavy = heightAscending(pokemonsHeavy,property);
+  printProperty(pokemonSortedHeavy);
+   
 });
 
+//invoca json para pokemones pequeños 
 checkboxHeightSmall.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "height"
-  fetch(pokemonJson)
-  .then(response => response.json())
-  .then(dataPokemon => {
-    const heightSmall = dataPokemon.pokemon
-    const pokemonSmall = window.pokemonFunction.filterByHeightSmall(heightSmall);
-    const pokemonSortedSmall = heightAscending(pokemonSmall,property);
-    printHeight(pokemonSortedSmall);
-  });
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const pokemonSmall = window.pokemonFunction.filterByHeightSmall(newData);
+  const pokemonSortedSmall = heightAscending(pokemonSmall,property);
+  printHeight(pokemonSortedSmall);
+  
 });
 
+//invoca json para pokemones medianos
 checkboxHeightMedium.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";  
   const property = "height"
-  fetch(pokemonJson)
-  .then (response=> response.json())
-  .then (dataPokemon=> {
-    const medium = dataPokemon.pokemon
-    const pokemosMedium = window.pokemonFunction.filterByHeightMedium(medium);
-    const pokemonSortedMedium = heightAscending(pokemosMedium,property);
-    printHeight(pokemonSortedMedium);
-  });
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const pokemosMedium = window.pokemonFunction.filterByHeightMedium(newData);
+  const pokemonSortedMedium = heightAscending(pokemosMedium,property);
+  printHeight(pokemonSortedMedium);
 });
 
+//invoca json para pokemons altos
 checkboxHeightTall.addEventListener("click", () => {
-   printPokemonFilter.innerHTML = "";
-   const property = "height"
-   fetch(pokemonJson)
-   .then(response => response.json())
-   .then (dataPokemon => {
-     const tall = dataPokemon.pokemon
-     const pokemonsTall = window.pokemonFunction.filterByHeightTall(tall);
-     const pokemonSortedTall = heightAscending(pokemonsTall,property);
-     printHeight(pokemonSortedTall);
-   });
+  printPokemonFilter.innerHTML = "";
+  const property = "height"
+  const newData= JSON.parse(localStorage.getItem("pokemon"));
+  const pokemonsTall = window.pokemonFunction.filterByHeightTall(newData);
+  const pokemonSortedTall = heightAscending(pokemonsTall,property);
+  printHeight(pokemonSortedTall);
+   
 });
 
+//Invoca json para pokemones ordenados por altura de manera ascendente
 checkboxHeightAscending.addEventListener("click", () => {
-   printPokemonFilter.innerHTML = "";
-   const property = "height"
-   fetch (pokemonJson)
-   .then( response=> response.json())
-   .then( dataPokemon => {
-     const height = dataPokemon.pokemon
-     const pokemonSortHeight = heightAscending(height,property);
-     printHeight(pokemonSortHeight);
-   });
+  printPokemonFilter.innerHTML = "";
+  const property = "height"
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const pokemonSortHeight = heightAscending(newData,property);
+  printHeight(pokemonSortHeight);
+   
 });
 
+//Invoca json para pokemones oredenados por peso de manera ascendete
 checkboxWeightAscending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "weight"
-  fetch(pokemonJson)
-  .then (response => response.json())
-  .then( datajson => {
-    const weight = datajson.pokemon 
-    const pokemonsSortWeight = heightAscending(weight,property);
-    printProperty(pokemonsSortWeight);
-  })
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const pokemonsSortWeight = heightAscending(newData,property);
+  printProperty(pokemonsSortWeight);
 });
 
+//invoca json para pokemones de ordenados por altura de manera descendete
 checkboxHeightDescending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "height"
-  fetch(pokemonJson)
-  .then( response => response.json())
-  .then( datajson => {
-    const height = datajson.pokemon
-    const heightDescending = window.pokemonFunction.sortByDescending(height,property);
-    printHeight(heightDescending);
-  });
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const heightDescending = window.pokemonFunction.sortByDescending(newData,property);
+  printHeight(heightDescending);
+  
 });
 
+//invoca json por peso de manera descendente
 checkboxWeightDescending.addEventListener("click", () => {
- printPokemonFilter.innerHTML = "";
- const property = "weight"
- fetch(pokemonJson)
- .then( response => response.json())
- .then( datajson => {
-   const weight = datajson.pokemon
-   const weightDescending = window.pokemonFunction.sortByDescending(weight,property);
-   printProperty(weightDescending);
- });
+  printPokemonFilter.innerHTML = "";
+  const property = "weight"
+  const newData = JSON.parse(localStorage.getItem("pokemon"));
+  const weightDescending = window.pokemonFunction.sortByDescending(newData,property);
+  printProperty(weightDescending);
+ 
 });
 
 
@@ -366,28 +376,7 @@ ButtonDragon.addEventListener("click", () => {
   filtrar(14);
 })
 
-
-const pokemonjson = (pokemonArray) => { pokemonArray.forEach(element => {
-  let num = element.num;
-  let name = element.name;
-  let img = element.img;
-  let type = element.type;
-  let height = element.height;
-  let weight = element.weight;
-  let candy = element.candy;
-  let candy_count = element.candy_count;
-  let egg = element.egg;
-  let spawn_chance = element.spawn_chance;
-  let avg_spawns = element.avg_spawns;
-  let spawn_time = element.spawn_time;
-  let multipliers = element.multipliers;
-  let weaknesses = element.weaknesses;
-  let next_evolution = element.next_evolution;
-  printData(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
-    weaknesses, next_evolution);
-})
-}
-
+//itera para obtener nombre, img y tipo
 const printType = (pokemonSortedName) =>{ pokemonSortedName.forEach(element => {
   let name = element.name;
   let img = element.img;
@@ -396,178 +385,136 @@ const printType = (pokemonSortedName) =>{ pokemonSortedName.forEach(element => {
 })
 };
 
-
-fetch(pokemonJson)
-.then(response => response.json())
-
-.then(dataPokemon => {
-  const allPokemon = dataPokemon.pokemon
-  pokemonjson(allPokemon);
-})
-
+//Es la función general para seleccionar por tipo
 const filterType = (arrayPokemon,str) => {
   const typePokemon = window.pokemonFunction.pokemonFilterType(arrayPokemon,str);
   
   return typePokemon;
 }
-
+// es la funcion sort () para ordenar por nombre
 const sortName = (arrayPokemon) => {
   const nameSorted = window.pokemonFunction.sortByName(arrayPokemon);
   return nameSorted;
 }
 
-
-
-
-
+//Funciones por tipo 
 function filtrar(id_tipo) {
 
   if (id_tipo == 1) { //tipo fuego
-    fetch(pokemonJson)
-.then(response => response.json())
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const fire = "Fire";
+    const pokemonType = filterType(newData,fire);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+
+}else if (id_tipo == 2) { //tipo grass
   
-.then(datajson => {
-  const filterFire = datajson.pokemon
-  const fire = "Fire";
-  const pokemonType = filterType(filterFire,fire);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName);
-});
-    
-  } else if (id_tipo == 2) { //tipo grass
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const grass = "Grass"
-  const pokemonType = filterType(filterFire,grass);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const grass = "Grass";
+    const pokemonType = filterType(newData,grass);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
 
   } else if (id_tipo == 3) { //tipo ice
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const ice = "Ice"
-  const pokemonType = filterType(filterFire,ice);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+  
+    const newData = JSON.parse(localStorage.getItem("pokemon"));  
+    const ice = "Ice";
+    const pokemonType = filterType(newData,ice);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+   
   } else if (id_tipo == 4) { //tipo poison
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const poison = "Poison"
-  const pokemonType = filterType(filterFire,poison);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const poison = "Poison";
+    const pokemonType = filterType(newData,poison);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
     
-    });
   } else if (id_tipo == 5) { //tipo Flying
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const flying = "Flying"
-  const pokemonType = filterType(filterFire,flying);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const flying = "Flying";
+    const pokemonType = filterType(newData,flying);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 6) { //tipo psychic
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const psychic = "Psychic"
-  const pokemonType = filterType(filterFire,psychic);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const psychic = "Psychic";
+    const pokemonType = filterType(newData,psychic);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 7) { //tipo water
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const water = "Water"
-  const pokemonType = filterType(filterFire,water);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const water = "Water";
+    const pokemonType = filterType(newData,water);
+    const pokemonSortedName = sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 8) { //tipo Ground
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const ground = "Ground"
-  const pokemonType = filterType(filterFire,ground);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const ground = "Ground";
+    const pokemonType = filterType(newData,ground);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 9) { //tipo Rock
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const rock = "Rock"
-  const pokemonType = filterType(filterFire,rock);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const rock = "Rock";
+    const pokemonType = filterType(newData,rock);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 10) { //tipo Electric
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const electric = "Electric"
-  const pokemonType = filterType(filterFire,electric);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const electric = "Electric";
+    const pokemonType = filterType(newData,electric);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 11) { //tipo Bug
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const bug = "Bug"
-  const pokemonType = filterType(filterFire,bug);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const bug = "Bug";
+    const pokemonType = filterType(newData,bug);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 12) { //tipo Normal
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const normal = "Normal"
-  const pokemonType = filterType(filterFire,normal);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+
+    const newData = JSON.parse(localStorage.getItem("pokemon")); 
+    const normal = "Normal";
+    const pokemonType = filterType(newData,normal);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 13) { //tipo Fighting
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const fighting = "Fighting"
-  const pokemonType = filterType(filterFire,fighting);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+    
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const fighting = "Fighting";
+    const pokemonType = filterType(newData,fighting);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   } else if (id_tipo == 14) { //tipo Dragon
-    fetch(pokemonJson)
-    .then(response => response.json())
-    .then(datajson => {
-  const filterFire = datajson.pokemon
-  const dragon = "Dragon"
-  const pokemonType = filterType(filterFire,dragon);
-  const pokemonSortedName=sortName(pokemonType);
-  printType(pokemonSortedName)
-    });
+    
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const dragon = "Dragon";
+    const pokemonType = filterType(newData,dragon);
+    const pokemonSortedName=sortName(pokemonType);
+    printType(pokemonSortedName);
+    
   }
 }
+
 
 
 
