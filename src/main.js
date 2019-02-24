@@ -1,65 +1,27 @@
-const homePage = document.getElementById('homePage')
+const homePage = document.getElementById('homePage');
 const pageKanto = document.getElementById('pageKanto');
-const filterPage = document.getElementById('filterPage')
+const filterPage = document.getElementById('filterPage');
 const curiousPokemonFactsPage= document.getElementById('curiousPokemonFactsPage');
 const buttonFilterPokemon = document.getElementById("buttonFilterPokemon");
 const totalData = document.getElementById("total-data");
 const buttonRegionKanto = document.getElementById('buttonRegionKanto')
 const buttonCuriousPokemonFacts = document.getElementById('buttonCuriousPokemonFacts');
-const buttonHomeOnFilter = document.getElementById('buttonHomeOnFilter');
 const buttonSearchByType = document.getElementById('buttonSearchByType');
 const pokemonTypeAll = document.getElementById("pokemonTypeAll");
-const checkboxWeightLight = document.getElementById("checkboxWeightLight");
-const checkboxWeightHeavy = document.getElementById("checkboxWeightHeavy");
-const checkboxWeightAscending = document.getElementById("checkboxWeightAscending");
-const checkboxWeightDescending = document.getElementById("checkboxWeightDescending");
-const checkboxHeightSmall = document.getElementById("checkboxHeightSmall");
-const checkboxHeightMedium = document.getElementById("checkboxHeightMedium");
-const checkboxHeightTall = document.getElementById("checkboxHeightTall");
-const checkboxHeightAscending = document.getElementById("checkboxHeightAscending")
-const checkboxHeightDescending = document.getElementById("checkboxHeightDescending")
-const ButtonGround = document.getElementById("ButtonGround");
-const ButtonRock = document.getElementById("ButtonRock");
-const ButtonElectric = document.getElementById("ButtonElectric");
-const ButtonBug = document.getElementById("ButtonBug");
-const ButtonNormal = document.getElementById("ButtonNormal");
-const ButtonFighting = document.getElementById("ButtonFighting");
-const ButtonDragon = document.getElementById("ButtonDragon");
-const buttonPokemonFire = document.getElementById('buttonPokemonFire');
-const buttonPokemonGrass = document.getElementById('buttonPokemonGrass');
-const buttonPokemonIce = document.getElementById('buttonPokemonIce');
-const buttonPokemonPoison = document.getElementById('buttonPokemonPoison');
-const buttonPokemonFlying = document.getElementById('buttonPokemonFlying');
-const buttonPokemonPsychic = document.getElementById('buttonPokemonPsychic');
-const buttonPokemonWater = document.getElementById('buttonPokemonWater');
 const typePokemonPage = document.getElementById('typePokemonPage');
 const printPokemonFilter = document.getElementById('printPokemonFilter');
-const buttonSearchPokemonOnFilter = document.getElementById("buttonSearchPokemonOnFilter");
-const buttonCuriousPokemonFactsOnFilter = document.getElementById("buttonCuriousPokemonFactsOnFilter");
-const buttonHomeTypePage = document.getElementById('buttonHomeTypePage')
 const averageHeightPokemon = document.getElementById('averageHeightPokemon');
 const averageWeightPokemon = document.getElementById ('averageWeightPokemon');
 const buttonRegionKantoOnFilter = document.getElementById('buttonRegionKantoOnFilter');
-const buttonHomeOnCuriousPage = document.getElementById('buttonHomeOnCuriousPage');
-const buttonRegionKantoOnCuriousPage = document.getElementById("buttonRegionKantoOnCuriousPage");
-const buttonSearchByTypeOnCuriousPage = document.getElementById('buttonSearchByTypeOnCuriousPage');
-const buttonFilterOnCuriousPage = document.getElementById('buttonFilterOnCuriousPage');
-const buttonHomeOnKantoPage = document.getElementById("buttonHomeOnKantoPage");
-const buttonCuriousOnKanto = document.getElementById("buttonCuriousOnKanto");
-const buttonSearchByTypeOnKanto = document.getElementById("buttonSearchByTypeOnKanto");
-const buttonFilterPokemonOnKanto = document.getElementById("buttonFilterPokemonOnKanto");
 const pokemonJson = ("./data/pokemon/pokemon.json");
 
-// const pokemonTypes = {
-//   Fire, 
-//   Ice, 
-
-// };
 
 buttonFilterPokemon.addEventListener('click', () => {
   homePage.classList.add('hide');
   filterPage.classList.remove('hide');
 });
+
+const buttonHomeOnFilter = document.getElementById('buttonHomeOnFilter');
 buttonHomeOnFilter.addEventListener('click', () => {
   filterPage.classList.add('hide');
   homePage.classList.remove('hide');
@@ -75,11 +37,15 @@ buttonCuriousPokemonFacts .addEventListener('click', () => {
 buttonRegionKanto.addEventListener('click', () => {
   homePage.classList.add('hide');
   pageKanto.classList.remove('hide');
-})
+});
+
+const buttonSearchPokemonOnFilter = document.getElementById("buttonSearchPokemonOnFilter");
 buttonSearchPokemonOnFilter.addEventListener('click', () => {
   filterPage.classList.add('hide');
   typePokemonPage.classList.remove('hide');
 });
+
+const buttonCuriousPokemonFactsOnFilter = document.getElementById("buttonCuriousPokemonFactsOnFilter");
 buttonCuriousPokemonFactsOnFilter.addEventListener('click', () => {
   filterPage.classList.add('hide');
   curiousPokemonFactsPage.classList.remove('hide');
@@ -87,50 +53,61 @@ buttonCuriousPokemonFactsOnFilter.addEventListener('click', () => {
 buttonRegionKantoOnFilter.addEventListener('click', () =>{
   filterPage.classList.add('hide');
   pageKanto.classList.remove('hide');
-})
+});
+
+const buttonHomeTypePage = document.getElementById('buttonHomeTypePage')
 buttonHomeTypePage.addEventListener("click", () => {
   typePokemonPage.classList.add('hide');
   homePage.classList.remove('hide');
-})
+});
+
+const buttonHomeOnCuriousPage = document.getElementById('buttonHomeOnCuriousPage');
 buttonHomeOnCuriousPage.addEventListener("click", ()=>{
   curiousPokemonFactsPage.classList.add('hide');
   homePage.classList.remove('hide');
-})
+});
+
+const buttonSearchByTypeOnCuriousPage = document.getElementById('buttonSearchByTypeOnCuriousPage');
 buttonSearchByTypeOnCuriousPage.addEventListener('click',() =>{
   curiousPokemonFactsPage.classList.add ('hide');
   typePokemonPage.classList.remove('hide');
-})
+});
+
+const buttonFilterOnCuriousPage = document.getElementById('buttonFilterOnCuriousPage');
 buttonFilterOnCuriousPage.addEventListener("click", () =>{
   curiousPokemonFactsPage.classList.add('hide');
   filterPage.classList.remove('hide');
-})
+});
 
+const buttonRegionKantoOnCuriousPage = document.getElementById("buttonRegionKantoOnCuriousPage");
 buttonRegionKantoOnCuriousPage.addEventListener("click", ()=>{
   curiousPokemonFactsPage.classList.add('hide');
   pageKanto.classList.remove('hide');
-})
+});
 
+const buttonHomeOnKantoPage = document.getElementById("buttonHomeOnKantoPage");
 buttonHomeOnKantoPage.addEventListener("click", () => {
   pageKanto.classList.add("hide");
   homePage.classList.remove("hide");
-})
+});
 
+const buttonCuriousOnKanto = document.getElementById("buttonCuriousOnKanto");
 buttonCuriousOnKanto.addEventListener("click", () => {
   pageKanto.classList.add("hide");
   curiousPokemonFactsPage.classList.remove("hide");
-})
+});
 
+const buttonSearchByTypeOnKanto = document.getElementById("buttonSearchByTypeOnKanto");
 buttonSearchByTypeOnKanto.addEventListener("click", () =>{
   pageKanto.classList.add("hide");
   typePokemonPage.classList.remove("hide");
-})
+});
 
+const buttonFilterPokemonOnKanto = document.getElementById("buttonFilterPokemonOnKanto");
 buttonFilterPokemonOnKanto.addEventListener("click", () => {
   pageKanto.classList.add("hide");
   filterPage.classList.remove("hide");
-})
-
-
+});
 
 /*const allPokemon = 151
 const averageWeight = window.pokemonFunction.averageWeight(pokemonData, allPokemon);
@@ -139,12 +116,14 @@ averageWeightPokemon.innerHTML = `<div class ="averageWeightPokemonText">The ave
 averageHeightPokemon.innerHTML = `<div class ="averageWeightPokemonText">The average height of all Pokémon is ${averageHeight} meters.</div>`;
 */
 
+//Imprime en filterpage las tarjetas con nombre, img y propiedad (peso ó altura)
 const printPokemon = (name, img, quality) => {
   let resultPokemonPrint = `<div class="filterCard"><h1>${name}</h1>
    <div><img class="filterimg" src=${img}></div>
    <p class='quality'> ${quality}</p></div>`;
   printPokemonFilter.insertAdjacentHTML("beforeend", resultPokemonPrint);
 };
+//Imoprime en pagekanto los datos de los pokemon en las tarjetas
 const printData = (num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns,
   spawn_time, multipliers, weaknesses) => {
   let result = `<div class="boxesContainer"><div class="cardBox">
@@ -160,7 +139,7 @@ const printData = (num, name, img, type, height, weight, candy, candy_count, egg
         <p>WEAKNESSES: ${weaknesses}</p></article></div></div></div></div>`;
   totalData.insertAdjacentHTML("beforeend", result);
 }
-
+//Imprime en Pagetype nombre, img  tipo
 const printAll = (name, img, type) => {
   let resultTypeAll = `<div class="typeCard"><h1 class="nameTypeCard">${name}</h1>
    <div class="imageType"><img src=${img}></div>
@@ -196,12 +175,11 @@ const printHeight = (arrayPokemon) => {
 //JSON que pinta en la región Kanto y guarda en local storage
 fetch(pokemonJson)
 .then(response => response.json())
-
 .then(dataPokemon => {
   const allPokemon = dataPokemon.pokemon
   localStorage.setItem("pokemon",JSON.stringify(allPokemon));
   pokemonjson(allPokemon);
-})
+});
 
 //itera para imprimir en todos los elementos de las tarjetas de la region kanto 
 const pokemonjson = (pokemonArray) => { pokemonArray.forEach(element => {
@@ -223,9 +201,10 @@ const pokemonjson = (pokemonArray) => { pokemonArray.forEach(element => {
   printData(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
     weaknesses, next_evolution);
 })
-}
+};
 
 //Invoca json para pokemones ligeros 
+const checkboxWeightLight = document.getElementById("checkboxWeightLight");
 checkboxWeightLight.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "weight"
@@ -237,6 +216,7 @@ checkboxWeightLight.addEventListener("click", () => {
 });
 
 //Invoca json para pokemones pesados 
+const checkboxWeightHeavy = document.getElementById("checkboxWeightHeavy");
 checkboxWeightHeavy.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "weight"
@@ -248,6 +228,7 @@ checkboxWeightHeavy.addEventListener("click", () => {
 });
 
 //invoca json para pokemones pequeños 
+const checkboxHeightSmall = document.getElementById("checkboxHeightSmall");
 checkboxHeightSmall.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "height"
@@ -259,6 +240,7 @@ checkboxHeightSmall.addEventListener("click", () => {
 });
 
 //invoca json para pokemones medianos
+const checkboxHeightMedium = document.getElementById("checkboxHeightMedium");
 checkboxHeightMedium.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";  
   const property = "height"
@@ -269,6 +251,7 @@ checkboxHeightMedium.addEventListener("click", () => {
 });
 
 //invoca json para pokemons altos
+const checkboxHeightTall = document.getElementById("checkboxHeightTall");
 checkboxHeightTall.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "height"
@@ -280,6 +263,7 @@ checkboxHeightTall.addEventListener("click", () => {
 });
 
 //Invoca json para pokemones ordenados por altura de manera ascendente
+const checkboxHeightAscending = document.getElementById("checkboxHeightAscending");
 checkboxHeightAscending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "height"
@@ -290,6 +274,7 @@ checkboxHeightAscending.addEventListener("click", () => {
 });
 
 //Invoca json para pokemones oredenados por peso de manera ascendete
+const checkboxWeightAscending = document.getElementById("checkboxWeightAscending");
 checkboxWeightAscending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "weight"
@@ -299,6 +284,7 @@ checkboxWeightAscending.addEventListener("click", () => {
 });
 
 //invoca json para pokemones de ordenados por altura de manera descendete
+const checkboxHeightDescending = document.getElementById("checkboxHeightDescending");
 checkboxHeightDescending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "height"
@@ -309,6 +295,7 @@ checkboxHeightDescending.addEventListener("click", () => {
 });
 
 //invoca json por peso de manera descendente
+const checkboxWeightDescending = document.getElementById("checkboxWeightDescending");
 checkboxWeightDescending.addEventListener("click", () => {
   printPokemonFilter.innerHTML = "";
   const property = "weight"
@@ -317,60 +304,86 @@ checkboxWeightDescending.addEventListener("click", () => {
   printProperty(weightDescending);
  
 });
-
-
+//Accion que imprime tipo fuego
+const buttonPokemonFire = document.getElementById('buttonPokemonFire');
 buttonPokemonFire.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(1);
 });
+//Accion que imprime tipo grass
+const buttonPokemonGrass = document.getElementById('buttonPokemonGrass');
 buttonPokemonGrass.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(2);
 });
+//Accion que imprime ice
+const buttonPokemonIce = document.getElementById('buttonPokemonIce');
 buttonPokemonIce.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(3);
 });
+//accion que imprime poison
+const buttonPokemonPoison = document.getElementById('buttonPokemonPoison');
 buttonPokemonPoison.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(4);
-})
+});
+//Accion que imprime flying
+const buttonPokemonFlying = document.getElementById('buttonPokemonFlying');
 buttonPokemonFlying.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(5);
-})
+});
+//Accion que imprime psychic
+const buttonPokemonPsychic = document.getElementById('buttonPokemonPsychic');
 buttonPokemonPsychic.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(6);
-})
+});
+//Accion que imprime water
+const buttonPokemonWater = document.getElementById('buttonPokemonWater');
 buttonPokemonWater.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(7);
-})
+});
+//Accion que imprime ground
+const ButtonGround = document.getElementById("ButtonGround");
 ButtonGround.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(8);
 });
+//Accion que imprime rock
+const ButtonRock = document.getElementById("ButtonRock");
 ButtonRock.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(9);
 });
+//accion que imprime electric
+const ButtonElectric = document.getElementById("ButtonElectric");
 ButtonElectric.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(10);
 });
+//Accion que imprime bug
+const ButtonBug = document.getElementById("ButtonBug");
 ButtonBug.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(11);
 });
+//Accion que imprime normal 
+const ButtonNormal = document.getElementById("ButtonNormal");
 ButtonNormal.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(12);
 });
+//Accion que imprime fighting
+const ButtonFighting = document.getElementById("ButtonFighting");
 ButtonFighting.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(13);
 });
+//Accion que imprime dragon
+const ButtonDragon = document.getElementById("ButtonDragon");
 ButtonDragon.addEventListener("click", () => {
   pokemonTypeAll.innerHTML = "";
   filtrar(14);

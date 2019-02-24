@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+
+
 :root {
   background: #2980B9;
 }
@@ -11,6 +13,8 @@
 .show {
   display: contents;
 }
+
+
 
 body {
   margin: 0;
