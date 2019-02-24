@@ -4,11 +4,11 @@ window.data = {
     return result;
   },
 
-  sortData: (DataFilter, sortOrder) => {
+  sortData: (dataFilter, sortOrder) => {
     if (sortOrder == "ascendente") {
-      return DataFilter.sort((a, b) => (a.name > b.name) ? 1 : -1);
+      return dataFilter.sort((a, b) => (a.name > b.name) ? 1 : -1);
     } else /* if (sortOrder == "descendente")  */ {
-      return DataFilter.sort((a, b) => (a.name < b.name) ? 1 : -1);
+      return dataFilter.sort((a, b) => (a.name < b.name) ? 1 : -1);
     }
   },
 

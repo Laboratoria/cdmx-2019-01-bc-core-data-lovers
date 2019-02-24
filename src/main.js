@@ -126,7 +126,7 @@ toPrint(dataPokemon);
 
 //Filtrado
 const filterType = document.getElementsByClassName('filterType');
-let DataFilter;
+let dataFilter;
 
 for (let i = 0; i < filterType.length; i++) {
   filterType[i].addEventListener("click", () => {
@@ -134,7 +134,7 @@ for (let i = 0; i < filterType.length; i++) {
     pokemones.innerHTML = "";
     const pokeFilter = window.data.filterData(dataPokemon, poke);
     toPrint(pokeFilter);
-    DataFilter = pokeFilter;
+    dataFilter = pokeFilter;
   });
 }
 
@@ -145,7 +145,7 @@ for (let i = 0; i < orderName.length; i++) {
   orderName[i].addEventListener("click", () => {
     const howDoesItOrder = orderName[i].id;
     pokemones.innerHTML = "";
-    const pokeOrder = window.data.sortData(DataFilter, howDoesItOrder);
+    const pokeOrder = window.data.sortData(dataFilter, howDoesItOrder);
     toPrint(pokeOrder);
   })
 }
@@ -155,7 +155,7 @@ const stats = document.getElementById('stats');
 const array = [];
 
 stats.addEventListener("click", () => {
-  DataFilter.forEach(element => {
+  dataFilter.forEach(element => {
     const type = element.type[0];
     array.push(element.avg_spawns);
     const pokeStats = window.data.computeStats(array);
