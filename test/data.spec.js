@@ -73,7 +73,7 @@ const database = {
 };
 
 
-const dataFilter = {
+const dataFilter = [{
   "MEX": {
     "indicators": [
       {
@@ -84,7 +84,25 @@ const dataFilter = {
         "indicatorCode": "SE.TER.TCHR.FE.ZS"
       }]
   }
-};
+}];
+
+const dataFilterCountry = {
+  2002: 70.0301971435547, 
+  2003: 69.0485000610352, 
+  2004: 70.3840026855469, 
+  2005: 68.869499206543, 
+  2006: 69.7163009643555, 
+  2007: 72.8778991699219, 
+  2008: 72.2699966430664, 
+  2009: 72.4912033081055, 
+  2010: 74.2916030883789, 
+  2011: 73.6003036499023, 
+  2012: 72.7871017456055, 
+  2013: 72.2193984985352, 
+  2014: 71.2494964599609, 
+  2015: 71.3886032104492, 
+  2016: 71.5625991821289, 
+  2017: 71.3718032836914};
 
 const objOrder = {
  1970: 44.0310401916504, 
@@ -188,14 +206,9 @@ it('PercentAndYear is a function', () => {
   expect(typeof window.WorldBank.percentAndYear).toBe('function');
 })
 it('Debe retornar un objeto', () => {
-  expect(window.WorldBank.percentAndYear(dataFilter, 'Proporción de inscripciones de mujeres con respecto a varones en la educación primaria (%)')).toEqual(dataFilter.MEX.indicators[0].data)
+  expect(window.WorldBank.percentAndYear(dataFilter, 'Fuerza laboral con educación intermedia, varones (% de la fuerza laboral masculina)')).toEqual(dataFilterCountry)
 });
-/*it('Debe retornar un objeto', () => {
-  expect(window.WorldBank.percentAndYear(dataFilter.forEach(objeto => {
-    if( objeto.indicatorName === 'Proporción de inscripciones de mujeres con respecto a varones en la educación primaria (%)')
-    return objeto.data})).toEqual(dataFilter.MEX.indicators[0].data)
-  )
-});*/
+
 
 //Test para funciónde ordenar
 it('SortPercentAndYear is a function', () => {
