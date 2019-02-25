@@ -1,9 +1,10 @@
+//Variables globales y llamadas a inputs de HTML
+
 var WORLDBANK;
 const perIndicators = WORLDBANK.PER.indicators;
 const mexIndicators = WORLDBANK.MEX.indicators;
 const chlIndicators = WORLDBANK.CHL.indicators;
 const braIndicators = WORLDBANK.BRA.indicators;
-
 const indicators = [{
     name: "Desempleo total",
     peru: perIndicators[106],
@@ -159,25 +160,26 @@ const indicators = [{
     brasil: braIndicators[113]
   },
 ]
-
 const table = document.getElementById("table-year-data");
-table.style.display = "none";
 const tableBody = document.getElementById("table-indicators");
 const country = document.getElementsByClassName("country");
 const selects = document.getElementById("selects");
 const sorting = document.getElementsByClassName("order");
 const sorters = document.getElementById("sorters");
-sorters.style.display = "none";
 const tableTitle= document.getElementById("table-title");
 const countryName= document.getElementById("country-name");
-const average = document.getElementById("average");
-average.style.display= "none";
+const average = document.getElementById("resulting");
 let countryValue="";
 let objectSelected = {};
 let dataCountry = {};
 let indicatorName="";
 let years = "";
 let percent = "";
+
+//Oculta tabla, sorters y el botón e input del promedio
+table.style.display = "none";
+sorters.style.display = "none";
+average.style.display= "none";
 
 //Guarda el valor del input select para poderlo usar en la función filter de data.js
 selects.addEventListener("change", () => {
@@ -189,16 +191,17 @@ selects.addEventListener("change", () => {
 for (let i = 0; i < country.length; i++) {
   country[i].addEventListener("click", () => {
     tableBody.innerHTML = "";
-    countryValue = country[i].value
-    //Recorre el objeto del indicador seleccionado y guarda el objeto correspondiente al país seleccionado con los botones
+    countryValue = country[i].value;
+    //Recorre el objeto del indicador seleccionado y guarda el objeto correspondiente al país seleccionado con los botones y el nombre del indicador
     for (let countryS in objectSelected) {
       if (countryS === countryValue) {
         indicatorName=objectSelected[countryS].indicatorName;
         dataCountry = objectSelected[countryS].data;
-        //Recorre la data del objeto del país seleccionado y pinta el año y el dato del indicador
+        //Recorre las propiedades del objeto "data" y pinta el years (propiedad) y el percent (valor asociado al año)
         for (let year in dataCountry) {
-          years = `${year}`
-          percent = `${dataCountry[year]}`
+          years = `${year}`;
+          //parseFloat convierte los strings en número de punto flotante y .toFixed le da un punto fijo de x posiciones
+          percent = `${parseFloat(dataCountry[year]).toFixed(2)}`;
           if (percent > 0) {
             printing(indicatorName, countryValue, years, percent);
           }
@@ -212,13 +215,17 @@ for (let i = 0; i < country.length; i++) {
 for (let i = 0; i < sorting.length; i++) {
   sorting[i].addEventListener("click", () => {
     tableBody.innerHTML = "";
+    //Con el for se recorre el array de radios y se guarda el valor (upward o downward) en una variable 
     let sortingValue = sorting[i].value;
+    //Hace un array con las propiedades del objeto dataCountry
     let sortingObject = Object.keys(dataCountry);
     let sortedArray = window.data.sort(sortingObject, sortingValue);
+    //Recorre los elementos del array ordenado y "k" toma esos valores. 
     for (let i = 0; i < sortedArray.length; i++) {
-      let k = sortedArray[i]
-      years = `${k}`
-      percent = `${dataCountry[k]}`
+      let k = sortedArray[i];
+      //"Years" se pasa como parámetro a printing, con los valores de "k" y se usa para buscar en dataCountry los valores asociados a years.
+      years = `${k}`;
+      percent = `${(parseFloat(dataCountry[years]).toFixed(2))}`;
       if (percent > 0) {
         printing(indicatorName, countryValue, years, percent);
       }
@@ -229,17 +236,18 @@ for (let i = 0; i < sorting.length; i++) {
 //Evento que calcula el promedio
 average.addEventListener("click", () => {
   let values = [];
+  //Itera en las propiedades del objeto "dataCountry"
   for (let years in dataCountry) {
+    //Si los valores de years son mayores que cero, hace un array con esos valores y los parsea para tenerlos como números
     if (dataCountry[years] > 0) {
       values.push(parseInt(dataCountry[years]));
     }
   }
   let avg = window.data.average(values);
-  document.getElementById("result").innerHTML = `El promedio es: ${parseInt(avg)}%`;
+  document.getElementById("result").innerHTML = `El promedio es: ${(parseFloat(avg).toFixed(2))}%`;
 })
 
 //Función que pinta los años y datos filtrados en una tabla
-
 const printing = (indicatorName, countryValue, years, percent) => {
   table.style.display = "block";
   sorters.style.display = "block";
@@ -253,21 +261,28 @@ const printing = (indicatorName, countryValue, years, percent) => {
   cellPercent.innerHTML = `${percent}`;
 }
 
-//Slides
+//Carrusel
 
-let myIndex = 0
+let myIndex = 0;
 carousel();
-
-function carousel() {
-  let i;
+function carousel () {
   let x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
+  for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
   myIndex++;
   if (myIndex > x.length) {
-    myIndex = 1
+    myIndex = 1;
   }
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 3000);
 }
+
+const navigator = document.getElementById("naving");
+navigator.addEventListener("click", ()=>{
+  if (navigator.className === "hipatia-nav") {
+    navigator.className += " responsive";
+  } else {
+    navigator.className = "hipatia-nav";
+  }
+})
