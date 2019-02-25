@@ -31,7 +31,9 @@ window.pokemonFunction = {
 
   sortByDescending: (arrayPokemonData,property) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
-      if ((parseFloat(a[property]))< (parseFloat(b[property]))) {
+      if ((parseFloat(a[property])) > (parseFloat(b[property]))) {
+        return -1
+      }else{
         return 1
       }
     })

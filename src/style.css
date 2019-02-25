@@ -205,9 +205,12 @@ p {
 
 }
 
-.containterPokemon, .container-Stadistics {
+.containterPokemon,  {
   min-height: 120rem;
   text-align: center;
+}
+.container-Stadistics{
+  min-height: 5rem;
 }
 
 .typeCard {

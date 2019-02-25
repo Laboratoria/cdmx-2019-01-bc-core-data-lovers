@@ -14,30 +14,52 @@ const printPokemonFilter = document.getElementById('printPokemonFilter');
 //const averageWeightPokemon = document.getElementById ('averageWeightPokemon');
 const buttonRegionKantoOnFilter = document.getElementById('buttonRegionKantoOnFilter');
 const pokemonJson = ("./data/pokemon/pokemon.json");
-
+var ctx = document.getElementById("myChart");
 
 //grafica
+
+
 //const tipoFiltrar="Fire";
-const  filterGrafica = {
-  
-  typo : (tipoFiltrar) =>{
+const  filterGrafica = (tipoFiltrar) =>{
     const newData = JSON.parse(localStorage.getItem("pokemon"));
     const pokemonByType =window.pokemonFunction.pokemonFilterType(newData,tipoFiltrar);
     let total = 0;
     let totalAverage=0;
-    const longitudArr = pokemonByType.length;
-    pokemonByType.forEach( (pokemonByType,longitudArr) => {//obtener lasuma del peso de todos los pokemon
+    const longitudArr=pokemonByType.length;
+    pokemonByType.forEach( (pokemonByType) => {//obtener lasuma del peso de todos los pokemon
       total += parseFloat(pokemonByType.weight);
-      totalAverage = total/longitudArr;
+      totalAverage = total/longitudArr
     });
     return totalAverage;
-  }
+  
 };
 
-console.log(filterGrafica.typo("Fire"));        
+const fireGraf =filterGrafica("Fire");  
+const grassGraf = filterGrafica("Grass");
+const iceGraf = filterGrafica("Ice");
+const poisonGraf = filterGrafica("Poison");
+const flyingGraf = filterGrafica("Flying");
+const psychicGraf = filterGrafica("Psychic");
+const waterGraf = filterGrafica("Water");
+const groundGraf = filterGrafica("Ground");
+const rockGraf = filterGrafica("Rock");
+const electricGraf = filterGrafica("Electric");
+const bugGraf = filterGrafica("Bug");
+const normalGraf = filterGrafica("Normal");
+const fightingGraf = filterGrafica("Fighting");
+const dragonGraf = filterGrafica("Dragon");
+
+//Grafica
+
+
+const etiquetas =["Fire","Grass","Ice","Poison","Flying","Psychic","Water","Ground","Rock","Electric","Bug","Normal","Fighting","Dragon"];
+const dataType = [fireGraf,grassGraf,iceGraf,poisonGraf,flyingGraf,psychicGraf,waterGraf,groundGraf,rockGraf,electricGraf,bugGraf,normalGraf,fightingGraf,dragonGraf ];
+
+
+
 
   
-  
+
 
 
 //console.log(total);
@@ -61,6 +83,7 @@ buttonSearchByType.addEventListener('click', () => {
 buttonCuriousPokemonFacts .addEventListener('click', () => {
   homePage.classList.add('hide');
   curiousPokemonFactsPage.classList.remove('hide');
+  window.grafica.myChart(ctx,etiquetas,dataType);
 });
 buttonRegionKanto.addEventListener('click', () => {
   homePage.classList.add('hide');

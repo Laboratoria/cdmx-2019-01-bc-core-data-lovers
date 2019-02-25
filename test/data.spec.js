@@ -1411,10 +1411,14 @@ describe('sortFunction debería ser una función', () => {
   it('Es una función', () => {
     expect(typeof window.pokemonFunction.sortFunction).toEqual('function')
   })
+
 });
 describe('La función sortFunction debería ordenar la estatura de los pokémon de manera ascendente', () => {
   it("Ordena la estatura de los pokémon de manera ascendente", () => {
     expect(window.pokemonFunction.sortFunction(pokemonSortTest.pokemon,height)).toEqual(pokemonSortedAscending);
+  });
+  it("Ordena el peso de los pokémon de manera ascendente", () => {
+    expect(window.pokemonFunction.sortFunction(pokemonSortTest.pokemon,weight)).toEqual(sortedWeightAscending);
   });
 });
 
@@ -1422,19 +1426,11 @@ describe('La función sortByDescending debería ordenar la estatura de los poké
   it("Ordena la estatura de los pokémon de manera descendente", () => {
     expect(window.pokemonFunction.sortByDescending(pokemonSortTest.pokemon,height)).toEqual(pokemonSortedDescending);
   });
-})
 
-describe('La función sortFunction debería ordenar el peso de los pokémon de manera ascendente', () => {
-  it("Ordena el peso de los pokémon de manera ascendente", () => {
-    expect(window.pokemonFunction.sortFunction(pokemonSortTest.pokemon,weight)).toEqual(sortedWeightAscending);
-  });
-})
-
-
-describe('La función sortByDescending debería ordenar el peso de los pokémon de manera descendente', () => {
   it("Ordena el peso de los pokémon de manera descendente", () => {
     expect(window.pokemonFunction.sortByDescending(pokemonSortTest.pokemon,weight)).toEqual(sortedWeightDescending);
   });
+
 })
 
 

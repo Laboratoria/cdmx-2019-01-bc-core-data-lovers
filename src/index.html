@@ -113,7 +113,12 @@
    <article class="container-Stadistics"> 
    <main class="Average-Weight" id ="averageWeightPokemon"></main>
    <main class="Average-Height" id= "averageHeightPokemon"></main></article>
- 
+    
+   <canvas id="myChart" width="400" height="400"></canvas>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
   </section>
 
   <!--PAGE 5-->
@@ -189,46 +194,11 @@
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <script src ="grafs.js"></script>
 
 
-
-  <canvas id="myChart" width="400" height="400"></canvas>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-
-  <script>
-    var ctx = document.getElementById("myChart");
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["Fire", "Blue", "Yellow", "Green", "Purple", "Orange"],
-            datasets: [{
-                label: '# of Votes',
-                data: [filterGrafica.typo("Fire"), 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.9)',
-                    'rgba(54, 162, 235, 0.9)',
-                    'rgba(255, 206, 86, 0.9)',
-                    'rgba(75, 192, 192, 0.9)',
-                    'rgba(153, 102, 255, 0.9)',
-                    'rgba(255, 159, 64, 0.9)'
-                ],
-                
-                
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
-    </script>
+  
+  
 
 
 </body>
