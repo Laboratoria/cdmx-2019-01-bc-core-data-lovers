@@ -76,7 +76,7 @@ const printPercents = (sortFinal) => { // Imprimir los porcentajes ordenados
       }}
     };
 
-const calculateAverage = () => { //
+const calculateAverage = () => { // Función para obtener los porcentajes a promediar
   let valuesResultYear = Object.values(resultYear);
   let arrData = [];
   for(let j in valuesResultYear){
@@ -90,9 +90,9 @@ const calculateAverage = () => { //
   printAverage(averageResult); 
 };
 
-buttonAverage.addEventListener("click",calculateAverage);
+buttonAverage.addEventListener("click",calculateAverage); // Asignar evento al botón
 
-const printAverage = (averageResult) => {
+const printAverage = (averageResult) => { // Imprimir promedio
   printAvg.innerHTML = `<p><span>${parseFloat(averageResult).toFixed(2)}%</span></p>`;
 };
 
