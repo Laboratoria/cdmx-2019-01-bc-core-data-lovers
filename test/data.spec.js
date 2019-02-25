@@ -121,8 +121,18 @@ for (const key in muestra.data) {
       tag: element.tags,
       splash: element.splash,
       title: element.title,
-      difficulty: element.info.difficulty,
+      id: element.id,
+      blurb: element.blurb,
       attack: element.info.attack,
+      defense: element.info.defense,
+      magic: element.info.magic,
+      difficulty: element.info.difficulty,
+      hp: element.stats.hp,
+      hpperlevel: element.stats.hpperlevel,
+      mp: element.stats.mp,
+      mpperlevel: element.stats.mpperlevel,
+      movespeed: element.stats.movespeed,
+      armor: element.stats.armor,
     }
     dataToArray.push(objetoVacio)
   }
@@ -140,6 +150,9 @@ describe('Debería de ser una función', () => {
   it('is a function', () => {
     expect(typeof window.lol.iterarData).toBe('function');
   });
+  it('iterarData debería regresar el objeto Atrox en un arreglo', () => {
+  expect(window.lol.iterarData(muestra.data)).toEqual(dataToArray);
+   });
 });
 
 //Función filtrado por roles  

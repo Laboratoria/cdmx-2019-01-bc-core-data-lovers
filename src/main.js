@@ -30,9 +30,6 @@ const stats = document.getElementById("stats");
 //-----FUNCIONES PARA DESPLEGAR LA INFORMACIÓN DE LOS CAMPEONES
 
 //Limpia los elementos de las secciones Campeones, Search y Dicultad para mostrar la lista completa de los campeones.
-home.addEventListener("click", () => {
-  imprimirRoles.innerHTML = "";
-});
 
 //Función para iterar la lista de  los campeones e imprimir la tarjeta con información seleccionada de cada uno de los campeones 
 const print = (datosArr) => {
@@ -198,15 +195,30 @@ stats.addEventListener('click', () => {
 })
 
 
-const url = ' ./data/lol/lol.json'
+const url = './data/lol/lol.json'
 
 fetch(url)
 .then(resp => resp.json())
 .then(lol => lol.data)
-.then(data => window.lol.iterarData(data))
+.then(data => {
+  const hola = window.lol.iterarData(data);
+  return hola;
+})
 .then(arrData=>{
   localStorage.setItem('nombre',JSON.stringify(arrData))
  
  print(arrData)
  })
 .catch(err => (err))
+
+
+home.addEventListener("click", () => {
+  titleBySection.innerHTML = "";
+  document.getElementById("objetive").style.display = "block";
+  imprimirRoles.innerHTML = "";
+  const arrData = JSON.parse(localStorage.getItem('nombre'));
+  print(arrData)
+
+  
+});
+ 
