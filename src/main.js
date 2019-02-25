@@ -5,7 +5,7 @@ const selectIndicator = document.getElementById("indicator");
 const dataYear = document.getElementById("data-year");
 const sortSelect = document.getElementById("sort");
 const buttonAverage = document.getElementById("average");
-const printAverage = document.getElementById("print-average");
+const printAvg = document.getElementById("print-average");
 
 let dataFilter = {}; 
 
@@ -92,9 +92,9 @@ const calculateAverage = () => { //
 
 buttonAverage.addEventListener("click",calculateAverage);
 
-/*const printAverage = (averageResult) => {
-
-}*/
+const printAverage = (averageResult) => {
+  printAvg.innerHTML = `<p><span>${parseFloat(averageResult).toFixed(2)}%</span></p>`;
+};
 
  
 
