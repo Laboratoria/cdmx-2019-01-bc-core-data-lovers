@@ -29,7 +29,6 @@ window.WorldBank = {
   averageFunction: (arrData) => { // Función para calcular el promedio
     let sum = arrData.reduce((previous, current) => current += previous)
     let avgRes = sum / arrData.length;
-    console.log(avgRes)
     return avgRes;
   }
 };

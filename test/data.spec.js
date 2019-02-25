@@ -185,14 +185,16 @@ const sortAscend = [
 ["2005", 70.2429962158203],
 ["2003", 70.5823211669922]];
 
+const arrData = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 69, 70, 68, 69, 72, 72, 72, 74, 73, 72, 72, 71, 71, 71, 71];
+
 
 //Test para la función de filtrar por países
 describe('WorldBank', () => {
-  it('WorldBank is an object', () => {
+  it('WorldBank es un objeto', () => {
     expect(typeof window.WorldBank).toBe('object');
   });
 
-  it('WorldBank.dataCountries is a function', () => {
+  it('WorldBank.dataCountries es una función', () => {
     expect(typeof window.WorldBank.dataCountries).toBe('function');
   })
 
@@ -202,7 +204,7 @@ describe('WorldBank', () => {
 });
 
 //Test para la función de filtrar por indicador "educación"
-it('PercentAndYear is a function', () => {
+it('PercentAndYear es una función', () => {
   expect(typeof window.WorldBank.percentAndYear).toBe('function');
 })
 it('Debe retornar un objeto', () => {
@@ -210,8 +212,8 @@ it('Debe retornar un objeto', () => {
 });
 
 
-//Test para funciónde ordenar
-it('SortPercentAndYear is a function', () => {
+// Test para funciónde ordenar
+it('SortPercentAndYear es una función', () => {
   expect(typeof window.WorldBank.sortPercentAndYear).toBe('function');
 });
 it('Debe retornar un array ordenado ascendente', () => {
@@ -220,4 +222,15 @@ it('Debe retornar un array ordenado ascendente', () => {
 it('Debe retornar un array ordenado de forma descendente', () => {
   expect(window.WorldBank.sortPercentAndYear(objOrder, 'descend')).toEqual(newArrResultYear)
 });
+
+//Test para función de promedio
+it('AverageFunction es una función', () => {
+  expect(typeof window.WorldBank.averageFunction).toBe('function');
+});
+it('Debe retornar el promedio', () => {
+  expect(window.WorldBank.averageFunction(arrData)).toEqual(19.603448275862068)
+});
+
+
+
 

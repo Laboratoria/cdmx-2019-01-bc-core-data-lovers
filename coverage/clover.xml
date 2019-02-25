@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551120524913" clover="3.2.0">
-  <project timestamp="1551120524913" name="All files">
-    <metrics statements="17" coveredstatements="15" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="6" elements="29" coveredelements="25" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1">
+<coverage generated="1551136771628" clover="3.2.0">
+  <project timestamp="1551136771628" name="All files">
+    <metrics statements="20" coveredstatements="18" conditionals="6" coveredconditionals="4" methods="8" coveredmethods="8" elements="34" coveredelements="30" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1">
       <file name="data.js" path="C:\Users\Sophismata\Desktop\Laboratoria\Proyecto-dos\cdmx-2019-01-bc-core-data-lovers\src\data.js">
-        <metrics statements="17" coveredstatements="15" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="6"/>
+        <metrics statements="20" coveredstatements="18" conditionals="6" coveredconditionals="4" methods="8" coveredmethods="8"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -21,6 +21,9 @@
         <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="25" count="115" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
+        <line num="30" count="57" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
