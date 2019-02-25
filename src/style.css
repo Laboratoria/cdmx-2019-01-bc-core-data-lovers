@@ -224,7 +224,6 @@ background: rgba(32, 31, 31, 0.7)
   -webkit-border-radius: 5px 5px 5px 5px; 
   border: 3px solid rgb(131, 109, 13);
   border-style: double;
- 
   width: 100%;
 }
 
@@ -234,22 +233,30 @@ footer{
   text-align: center;
   position: fixed;
   width: 100%;
-  height: 50px;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 60px;
     color: white;
     float: left;
     display:fixed;
-
+    border-top: 1px solid #937341;
+}
+.more-information >a{
+  margin-inline-end: 90px;
+  text-align: center;
+  font-size: 15px;
 }
 
-
+a:-webkit-any-link{
+  color: #cc9900;
+  text-decoration:none;
+  -webkit-font-smoothing: antialiased; 
+}  
 footer >ul > a > i{
   color: white;
   font-size: 25px;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: -7px;
 }
 
 .containerStats{
@@ -303,7 +310,8 @@ footer >ul > a > i{
   background: rgba(134, 134, 133, 0.3);
   }
   .imageLOL{
-   display: none;
+   display: block;
+   margin-left: 70px;
 }
 
    #btn-menu .icon{
@@ -355,6 +363,20 @@ footer >ul > a > i{
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
     display: inline-block;
     width: 100%;
+  }
+  .more-information >a{
+    margin-inline-end: 15px;
+    text-align: center;
+    font-size: 8px;
+    margin-right: 55px;
+  }
+
+  footer >ul > a > i{
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+    margin-top: -100px;
+    text-align: center;
   }
    
 }

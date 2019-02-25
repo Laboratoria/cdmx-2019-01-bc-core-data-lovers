@@ -31,7 +31,7 @@ const stats = document.getElementById("stats");
 
 //Limpia los elementos de las secciones Campeones, Search y Dicultad para mostrar la lista completa de los campeones.
 home.addEventListener("click", () => {
-  print(arrData)
+  imprimirRoles.innerHTML = "";
 });
 
 //Función para iterar la lista de  los campeones e imprimir la tarjeta con información seleccionada de cada uno de los campeones 
