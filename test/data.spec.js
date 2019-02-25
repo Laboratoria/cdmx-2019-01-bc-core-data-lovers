@@ -87,16 +87,6 @@ const dataFilter = {
 };
 
 const objOrder = {
- 1960: "",
- 1961: "", 
- 1962: "", 
- 1963: "", 
- 1964: "", 
- 1965: "", 
- 1966: "", 
- 1967: "", 
- 1968: "", 
- 1969: "", 
  1970: 44.0310401916504, 
  1971: 44.100040435791, 
  1972: 44.1003684997559, 
@@ -108,28 +98,6 @@ const objOrder = {
  1978: 44.635799407959, 
  1979: 60.2808113098145, 
  1980: 40.128101348877, 
- 1981: "", 
- 1982: "", 
- 1983: "",
- 1984: "", 
- 1985: "", 
- 1986: "", 
- 1987: "", 
- 1988: "", 
- 1989: "", 
- 1990: "", 
- 1991: "", 
- 1992: "", 
- 1993: "", 
- 1994: "", 
- 1995: "", 
- 1996: "", 
- 1997: "", 
- 1998: "", 
- 1999: "", 
- 2000: "", 
- 2001: "", 
- 2002: "", 
  2003: 70.5823211669922, 
  2004: 67.7231674194336, 
  2005: 70.2429962158203, 
@@ -143,8 +111,7 @@ const objOrder = {
  2013: 48.9428482055664, 
  2014: 54.0125694274902, 
  2015: 56.7083587646484, 
- 2016: 54.6560211181641, 
- 2017: ""};
+ 2016: 54.6560211181641};
 
 const newArrResultYear= [
 ["2003", 70.5823211669922],
@@ -171,75 +138,9 @@ const newArrResultYear= [
 ["1970", 44.0310401916504],
 ["1975", 42.7002105712891],
 ["1976", 42.6476783752441],
-["1980", 40.128101348877],
-["1960", ""],
-["1961", ""],
-["1962", ""],
-["1963", ""],
-["1964", ""],
-["1965", ""],
-["1966", ""],
-["1967", ""],
-["1968", ""],
-["1969", ""],
-["1981", ""],
-["1982", ""],
-["1983", ""],
-["1984", ""],
-["1985", ""],
-["1986", ""],
-["1987", ""],
-["1988", ""],
-["1989", ""],
-["1990", ""],
-["1991", ""],
-["1992", ""],
-["1993", ""],
-["1994", ""],
-["1995", ""],
-["1996", ""],
-["1997", ""],
-["1998", ""],
-["1999", ""],
-["2000", ""],
-["2001", ""],
-["2002", ""],
-["2017", ""]];
+["1980", 40.128101348877]];
 
 const sortAscend = [
-["1960", ""],
-["1961", ""],
-["1962", ""],
-["1963", ""],
-["1964", ""],
-["1965", ""],
-["1966", ""],
-["1967", ""],
-["1968", ""],
-["1969", ""],
-["1981", ""],
-["1982", ""],
-["1983", ""],
-["1984", ""],
-["1985", ""],
-["1986", ""],
-["1987", ""],
-["1988", ""],
-["1989", ""],
-["1990", ""],
-["1991", ""],
-["1992", ""],
-["1993", ""],
-["1994", ""],
-["1995", ""],
-["1996", ""],
-["1997", ""],
-["1998", ""],
-["1999", ""],
-["2000", ""],
-["2001", ""],
-["2002", ""],
-["2017", ""],
 ["1980", 40.128101348877],
 ["1976", 42.6476783752441],
 ["1975", 42.7002105712891],
@@ -289,15 +190,21 @@ it('PercentAndYear is a function', () => {
 it('Debe retornar un objeto', () => {
   expect(window.WorldBank.percentAndYear(dataFilter, 'Proporción de inscripciones de mujeres con respecto a varones en la educación primaria (%)')).toEqual(dataFilter.MEX.indicators[0].data)
 });
+/*it('Debe retornar un objeto', () => {
+  expect(window.WorldBank.percentAndYear(dataFilter.forEach(objeto => {
+    if( objeto.indicatorName === 'Proporción de inscripciones de mujeres con respecto a varones en la educación primaria (%)')
+    return objeto.data})).toEqual(dataFilter.MEX.indicators[0].data)
+  )
+});*/
 
 //Test para funciónde ordenar
 it('SortPercentAndYear is a function', () => {
   expect(typeof window.WorldBank.sortPercentAndYear).toBe('function');
 });
 it('Debe retornar un array ordenado ascendente', () => {
-  expect(window.WorldBank.sortPercentAndYear(objOrder,'ascend').toEqual(sortAscend))
+  expect(window.WorldBank.sortPercentAndYear(objOrder,'ascend')).toEqual(sortAscend)
 });
 it('Debe retornar un array ordenado de forma descendente', () => {
-  expect(window.WorldBank.sortPercentAndYear(objOrder, 'descend').toEqual(newArrResultYear))
+  expect(window.WorldBank.sortPercentAndYear(objOrder, 'descend')).toEqual(newArrResultYear)
 });
 
