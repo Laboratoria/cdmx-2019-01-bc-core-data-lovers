@@ -26,9 +26,10 @@ window.WorldBank = {
       }
     return newArrResultYear;  
   },
-  averageFunction: (arrValuesAverage) => { // Función para calcular el promedio
-    let sum = arrValuesAverage.reduce((previous, current) => current += previous)
-    let avgRes = sum / arrValuesAverage.length;
+  averageFunction: (arrData) => { // Función para calcular el promedio
+    let sum = arrData.reduce((previous, current) => current += previous)
+    let avgRes = sum / arrData.length;
+    console.log(avgRes)
     return avgRes;
   }
 };

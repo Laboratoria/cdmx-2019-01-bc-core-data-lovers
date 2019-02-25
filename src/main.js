@@ -11,10 +11,6 @@ let dataFilter = {};
 
 let resultYear= {}; //objeto con indicador filtro
 
-let arrYear = []; // Convertir en array los años de ResultYear
-
-let arrData = []; // Convertir en array los datos de Resultyear
-
 //Constante para el evento y puntualizar mediante id, el resultado de la función
 const buttonClick = () => { 
   let countries = event.target.id;
@@ -58,17 +54,7 @@ const printYears = (resultYear) => {  // Imprimir los datos(año-porcentaje) del
       const year = key;
       if (element !== "") {
        let indicatorDataYear = `<p><span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`;
-       for(let i in resultYear){
-         arrYear.push(i)
-       }
-       for(let j in resultYear){
-         if(resultYear[j] === ""){
-          arrData.push(0)
-         }else {
-          arrData.push(parseInt(resultYear[j]))
-         }
-        }
-         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
+       dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }
     }
   }
@@ -81,7 +67,7 @@ sortSelect.addEventListener('change',() => { // Asignar evento al select que ord
   printPercents(sortFinal);
 });
 
-const printPercents = (sortFinal) => { // Imprimir los porcentajes ordenados, sea ascendente o descendente
+const printPercents = (sortFinal) => { // Imprimir los porcentajes ordenados
   dataYear.innerHTML = " ";
       for(let value of sortFinal){
       if (value[1] !== ""){
@@ -91,16 +77,24 @@ const printPercents = (sortFinal) => { // Imprimir los porcentajes ordenados, se
     };
 
 const calculateAverage = () => { //
-  let arrValuesAverage = arrData;
-  let averageResult = window.WorldBank.averageFunction(arrValuesAverage);
+  let valuesResultYear = Object.values(resultYear);
+  let arrData = [];
+  for(let j in valuesResultYear){
+    if(valuesResultYear[j] === ""){
+      arrData.push(0)
+    } else {
+      arrData.push(parseInt(valuesResultYear[j]))
+    }
+  }
+  let averageResult = window.WorldBank.averageFunction(arrData);
   printAverage(averageResult); 
 };
 
 buttonAverage.addEventListener("click",calculateAverage);
 
-const printAverage = (averageResult) => {
+/*const printAverage = (averageResult) => {
 
-}
+}*/
 
  
 
