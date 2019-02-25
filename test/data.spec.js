@@ -206,7 +206,7 @@ const newArrResultYear= [
 ["2002", ""],
 ["2017", ""]];
 
-const sortUpward = [
+const sortAscend = [
 ["1960", ""],
 ["1961", ""],
 ["1962", ""],
@@ -266,6 +266,7 @@ const sortUpward = [
 ["2005", 70.2429962158203],
 ["2003", 70.5823211669922]];
 
+
 //Test para la función de filtrar por países
 describe('WorldBank', () => {
   it('WorldBank is an object', () => {
@@ -293,9 +294,10 @@ it('Debe retornar un objeto', () => {
 it('SortPercentAndYear is a function', () => {
   expect(typeof window.WorldBank.sortPercentAndYear).toBe('function');
 });
-it('Debe retornar un array ordenado de forma descendente', () => {
-  expect(window.WorldBank.sortPercentAndYear(objOrder,"falling").toEqual(newArrResultYear))
-});
 it('Debe retornar un array ordenado ascendente', () => {
-  expect(window.WorldBank.sortPercentAndYear(objOrder,"upward").toEqual(sortUpward))
+  expect(window.WorldBank.sortPercentAndYear(objOrder,'ascend').toEqual(sortAscend))
 });
+it('Debe retornar un array ordenado de forma descendente', () => {
+  expect(window.WorldBank.sortPercentAndYear(objOrder, 'descend').toEqual(newArrResultYear))
+});
+

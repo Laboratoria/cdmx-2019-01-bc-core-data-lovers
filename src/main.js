@@ -4,12 +4,19 @@ const buttonCountries = document.getElementsByClassName("btnCountry");
 const selectIndicator = document.getElementById("indicator");
 const dataYear = document.getElementById("data-year");
 const sortSelect = document.getElementById("sort");
+const buttonAverage = document.getElementById("average");
 
 let resultYear= {};//objeto con indicador filtro
 
 let dataFilter = {};
 
-//Constante para cachar el evento y puntualizar mediante id, el resultado de la función
+let arrResultYear = []; // Convertir objeto ResultYear en array
+
+//let arrYear; // Convertir en array los años de ResultYear
+
+//let arrData; // Convertir en array los datos de Resultyear
+
+//Constante para el evento y puntualizar mediante id, el resultado de la función
 const buttonClick = () => { 
   let countries = event.target.id;
   let result = window.WorldBank.dataCountries(dataWorldbank, countries);
@@ -44,7 +51,6 @@ printYears (resultYear);
 
 selectIndicator.addEventListener("change", catchObject); // Asignar evento al select 
 
-
 const printYears = (resultYear) => {  // Imprimir los datos(año-porcentaje) del indicador-original
   dataYear.innerHTML = "";
   for (const key in resultYear) {
@@ -52,7 +58,7 @@ const printYears = (resultYear) => {  // Imprimir los datos(año-porcentaje) del
       let element = resultYear[key];
       const year = key;
       if (element !== "") {
-        let indicatorDataYear = `<p><span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`;
+       let indicatorDataYear = `<p><span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`;
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }
     }
@@ -71,12 +77,20 @@ const printPercents = (sortFinal) => { // Imprimir los porcentajes ordenados, se
       for(let value of sortFinal){
       if (value[1] !== ""){
         let indicatorDataYear = `<p><span>${value[0]}   </span> <span>${parseFloat(value[1]).toFixed(2)}%</span></p>`;
-        console.log(indicatorDataYear)
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }}
     };
 
+const calculateAverage = () => {
+  let valuesResultYear = Object.values(resultYear);
+  let solonumero = valuesResultYear.map(value => value)
+console.log(solonumero)
+  //let averageButton = event.target.value;
+  let averageResult = window.WorldBank.averageFunction(valuesResultYear);
+  printArithmeticMean(averageResult); 
+};
 
+buttonAverage.addEventListener("click",calculateAverage);
 
  
 

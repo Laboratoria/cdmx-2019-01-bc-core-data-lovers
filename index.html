@@ -55,7 +55,6 @@
   <header class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/bmjy3px/manzana1.jpg');">
     <img class="img-fluid bg-image-full" src="https://i.ibb.co/zGPn6xL/indicadores-educativos-en-latinoam-ric-A-4.png"
       alt="logo">
-
   </header>
 
   <!-- Content section -->
@@ -64,19 +63,14 @@
       <h1 id="what">¿Qué es LatinoEduca?</h1>
       <p id="app" class="lead">Esta app te podrá ayudar a:</p>
       <ul>
-        <li id="list" type="circle">Encontrar datos específicos acerca del nivel Educativo en Latinoamérica.</li>
-        <li id="list" type="circle">La información recopilada te ayudará a distinguir el comportamiento de la
-          educación a
-          través de los año.</li>
-        <li id="list" type="circle">La fuente de la base de datos es el Banco Mundial</li>
+        <li>Encontrar datos específicos acerca del nivel Educativo en Latinoamérica.</li>
+        <li>La información recopilada te ayudará a distinguir el comportamiento de la educación a través de los año.</li>
+        <li>La fuente de la base de datos es el Banco Mundial</li>
       </ul>
     </div>
   </section>
 
   
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 200px;"></div>
-  </section>
   <!-- Carousel -->
   <div id="carousel-Example-Indicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -108,9 +102,9 @@
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-      <h1 id="inf">Datos</h1>
+      <h2 id="inf">Datos</h2>
       <h4 class="lead-container">1. Inicia eligiendo un país</h4>
-      <!-------bottons----->
+      <!--bottons-->
       <div class="row">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <button class="btnCountry" id="PER">Perú</button>
@@ -126,6 +120,7 @@
           <button class="btnCountry" id="CHL">Chile</button>
         </div>
       </div>
+    </div>
   </section>
 
   <!-- Indicadores -->
@@ -138,18 +133,28 @@
         </select>
       </fieldset>
       <fieldset>
-        <h4 class="container">3. Ordena de mayor a menor</h4><select name="sort-by-year" id="sort">
-          <option class="opt" id="upward" value="upward">Ascendente</option>
-          <option class="opt" id="falling" value="falling">Descendente</option>
+        <h4 class="container">3. Ordena de mayor a menor</h4>
+        <select name="sort-by-year" id="sort">
+          <option class ="opt" id= "options" value= "options">Opciones</option>
+          <option class="opt" id="ascend" value="ascend">Ascendente</option>
+          <option class="opt" id="descend" value="descend">Descendente</option>
         </select>
       </fieldset>
     </article>
   </section>
-  <!-----Datos------>
+
+  <section>
+      <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+          <h4>Cálculo</h4>
+        <button class="average" id="average" value= "average">Promedio</button>
+      </article>
+  </section>
+
+  <!--Datos-->
   <section>
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
       <h3>Datos</h3>
-      <div class="card">
+       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Año---------- Porcentaje</h5>
           <h5 id="data-year"></h5>
@@ -163,16 +168,11 @@
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; LatinoEduca 2019</p>
     </div>
-    <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./data/worldbank/worldbank.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-
   <script src="src/data/worldbank/worldbank.js"></script>
   <script src="src/data.js"></script>
   <script src="src/main.js"></script>

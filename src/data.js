@@ -9,22 +9,29 @@ window.WorldBank = {
     data.forEach(objeto => { //Recorre el objeto-data.
       if(objeto.indicatorName === matchYear){ //Entra al objeto, busca el indicador por nombre y extrae la coincidencia.
         newData = objeto.data //Incorpora a newData el nuevo objeto filtrado.
-        return newData 
+        return newData;
       }
     });
     return newData
   },
-  sortPercentAndYear: (objOrder, sortValue) => {
+  sortPercentAndYear: (objOrder, sortValue) => { // Función para ordenar el objeto 
     let newArrResultYear = [];
     for (let key in objOrder) {
         newArrResultYear.push([key, objOrder[key]]);
       }
-      if (sortValue === "upward") {
+      if (sortValue === "ascend") {
         newArrResultYear.sort((a,b)=>a[1]- b[1]);
-      } else if(sortValue === "falling") {
+      } else if(sortValue === "descend") {
         newArrResultYear.sort((a,b)=>(b[1]-a[1]));
       }
-    return newArrResultYear  
+    return newArrResultYear;  
+  },
+  averageFunction: (valuesResultYear) => { // Función para calcular el promedio
+    
+    let sum = valuesResultYear.reduce((previous, current) => current += previous);
+    let avgRes = sum / valuesResultYear.length;
+    
+    return avgRes
   }
 };
 
