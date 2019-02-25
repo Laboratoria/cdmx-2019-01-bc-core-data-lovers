@@ -1,8 +1,9 @@
 
 //Convierte la base de datos en una variable
-const datalol = window.LOL.data;
+// const datalol = window.LOL.data;
 //Resultado de la función it3erarData, convierte la data en un arreglo
-const datosArr = window.lol.iterarData(datalol);
+//let datalol = []
+//const datosArr = window.lol.iterarData(datalol);
 //ID de la sección Home
 const home = document.getElementById("home");
 //Obtiene el id de la sección que mostrara el titulo de cada una de las secciones seleccionadas 
@@ -20,15 +21,15 @@ const difficultyDsc = document.getElementById("difficultyDsc");
 //Obtiene el id del div en donde se va a imprimir la tarjeta de los campeones
 const containerInfo = document.getElementsByClassName("containerInfo");
 const stats = document.getElementById("stats");
+//let arreglo = [];
+//const dataLocal = JSON.parse(localStorage.getItem('nombre'));
+//console.log(dataLocal)
+
 
 
 //-----FUNCIONES PARA DESPLEGAR LA INFORMACIÓN DE LOS CAMPEONES
 
 //Limpia los elementos de las secciones Campeones, Search y Dicultad para mostrar la lista completa de los campeones.
-home.addEventListener("click", () => {
-  imprimirRoles.innerHTML = "";
-  print(datosArr)
-});
 
 //Función para iterar la lista de  los campeones e imprimir la tarjeta con información seleccionada de cada uno de los campeones 
 const print = (datosArr) => {
@@ -46,13 +47,13 @@ const print = (datosArr) => {
   //Iteración de la tarjeta del campeon seleccionada e impresión de éste 
   for (let i = 0; i < containerInfo.length; i++) {
     containerInfo[i].addEventListener('click', () => {
-      let characterId = containerInfo[i].id;
-      const elementChampion = window.lol.selectCharacter(characterId, datosArr);
+     let characterId = containerInfo[i].id;
+   const elementChampion = window.lol.selectCharacter(characterId, datosArr);
       printCharacterSheet(elementChampion);
     })
-  }
+ }
 };
-print(datosArr)
+
 
 //Función para iterar las primeras tarjetas de los campeones e imprimir solo la tarjeta con las propiedades completas del campeon seleccionado.
 const printCharacterSheet = (datosArr) => {
@@ -114,9 +115,10 @@ const selectRol = () => {
     rol[i].addEventListener("click", () => {
       let rolId = rol[i].id;
       titleBySection.innerHTML = "";
+      const dataLocal = JSON.parse(localStorage.getItem('nombre'));
       titleBySection.insertAdjacentHTML("beforeend", rolId);
       //const printSection = document.getElementById("imprimirRoles");
-      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, datosArr);
+      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataLocal);
       print(arrayRolesFiltered);
       document.getElementById("objetive").style.display = "none";
       titleBySection.style.display = "block"
@@ -140,7 +142,8 @@ const filterRolBySearch = () => {
     titleBySection.innerHTML = "";
     titleBySection.innerHTML = "Champion";
     //console.log(searchValue);
-    const showSearch = window.lol.filterBySearch(searchValue, datosArr);
+    const dataLocal = JSON.parse(localStorage.getItem('nombre'));
+    const showSearch = window.lol.filterBySearch(searchValue, dataLocal);
     print(showSearch);
     document.getElementById("objetive").style.display = "none";
     titleBySection.style.display = "block";
@@ -156,7 +159,8 @@ const orderByDifficultyAsc = () => {
   difficultyAsc.addEventListener("click", () => {
     //console.log("si funciono wey");
     titleBySection.innerHTML = "Lower to higher difficulty";
-    const asc = window.lol.sortByDifficulty(1, datosArr);
+    const dataLocal = JSON.parse(localStorage.getItem('nombre'));
+    const asc = window.lol.sortByDifficulty(1, dataLocal);
     print(asc)
     document.getElementById("objetive").style.display = "none";
     titleBySection.style.display = "block"
@@ -171,7 +175,8 @@ const orderByDifficultyDsc = () => {
   difficultyDsc.addEventListener("click", () => {
     //console.log("si funciono wey");
     titleBySection.innerHTML = "Higher to lower difficulty"
-    const decent = window.lol.sortByDifficulty(-1, datosArr);
+    const dataLocal = JSON.parse(localStorage.getItem('nombre'));
+    const decent = window.lol.sortByDifficulty(-1, dataLocal);
     print(decent)
     document.getElementById("objetive").style.display = "none";
     titleBySection.style.display = "block"
@@ -182,8 +187,38 @@ orderByDifficultyDsc();
 stats.addEventListener('click', () => {
   imprimirRoles.innerHTML = "";
   titleBySection.innerHTML = "Stats Average";
-  const averageAttackP = window.lol.averageAttack(datosArr);
+  const dataLocal = JSON.parse(localStorage.getItem('nombre'));
+  const averageAttackP = window.lol.averageAttack(dataLocal);
   imprimirRoles.innerHTML = `<div class="containerStats"> Average attack: <br> ${averageAttackP}</div>`;
   document.getElementById("objetive").style.display = "none";
   titleBySection.style.display = "block"
 })
+
+
+const url = './data/lol/lol.json'
+
+fetch(url)
+.then(resp => resp.json())
+.then(lol => lol.data)
+.then(data => {
+  const hola = window.lol.iterarData(data);
+  return hola;
+})
+.then(arrData=>{
+  localStorage.setItem('nombre',JSON.stringify(arrData))
+ 
+ print(arrData)
+ })
+.catch(err => (err))
+
+
+home.addEventListener("click", () => {
+  titleBySection.innerHTML = "";
+  document.getElementById("objetive").style.display = "block";
+  imprimirRoles.innerHTML = "";
+  const arrData = JSON.parse(localStorage.getItem('nombre'));
+  print(arrData)
+
+  
+});
+ 

@@ -1,9 +1,9 @@
 window.lol = {
   iterarData: (datalol) => {
-    let datosArr = []
+    let datosArr = [];
     for (const key in datalol) {
       if (datalol.hasOwnProperty(key)) {
-        const element = datalol[key];
+        const element = datalol[key]
         let obj = {
           name: element.name,
           tag: element.tags,
@@ -23,8 +23,10 @@ window.lol = {
           armor: element.stats.armor,
         }
         datosArr.push(obj)
+        
       }
     }
+    
     return datosArr
   },
 
@@ -54,28 +56,12 @@ window.lol = {
     return sortAsc
   },
 
-  /*sortByDifficultyDsc: (datosArr) => {
-    const sortDsc = datosArr.sort((a, b) => {
-      if (a.difficulty < b.difficulty) {
-        return 1;
-      }
-      if (a.difficulty > b.difficulty) {
-        return -1;
-      }
-      else {
-        return sortDsc;
-      }
-    })
-    return sortDsc
-  },*/
-
-
-
   
 averageAttack: (datosArr) => {
   //console.log(datosArr) 
  const totalattack = datosArr.reduce((prev, datosArr) => prev + datosArr.attack, 0)/datosArr.length;
   //console.log(totalattack)
   return totalattack
-}
+},
+
 }
