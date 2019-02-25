@@ -10,10 +10,38 @@ const buttonSearchByType = document.getElementById('buttonSearchByType');
 const pokemonTypeAll = document.getElementById("pokemonTypeAll");
 const typePokemonPage = document.getElementById('typePokemonPage');
 const printPokemonFilter = document.getElementById('printPokemonFilter');
-const averageHeightPokemon = document.getElementById('averageHeightPokemon');
-const averageWeightPokemon = document.getElementById ('averageWeightPokemon');
+//const averageHeightPokemon = document.getElementById('averageHeightPokemon');
+//const averageWeightPokemon = document.getElementById ('averageWeightPokemon');
 const buttonRegionKantoOnFilter = document.getElementById('buttonRegionKantoOnFilter');
 const pokemonJson = ("./data/pokemon/pokemon.json");
+
+
+//grafica
+//const tipoFiltrar="Fire";
+const  filterGrafica = {
+  
+  typo : (tipoFiltrar) =>{
+    const newData = JSON.parse(localStorage.getItem("pokemon"));
+    const pokemonByType =window.pokemonFunction.pokemonFilterType(newData,tipoFiltrar);
+    let total = 0;
+    let totalAverage=0;
+    const longitudArr = pokemonByType.length;
+    pokemonByType.forEach( (pokemonByType,longitudArr) => {//obtener lasuma del peso de todos los pokemon
+      total += parseFloat(pokemonByType.weight);
+      totalAverage = total/longitudArr;
+    });
+    return totalAverage;
+  }
+};
+
+console.log(filterGrafica.typo("Fire"));        
+
+  
+  
+
+
+//console.log(total);
+//console.log(total/pokemonByType.length);
 
 
 buttonFilterPokemon.addEventListener('click', () => {
