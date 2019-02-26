@@ -343,6 +343,23 @@ div#data-year p {
   padding: .5rem;
 }
 
+div#value-average {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#value-average p {
+  display: flex;
+  flex-direction: column;
+  background-color: #d4d4d491;
+  margin: .4rem .3rem;
+  padding: .5rem;
+}
+
+
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -416,9 +433,3 @@ h2#conf {
   flex-direction: column;
 } 
 
-#average{
-  width: 15vh;
-  height: 10%;
-  text-align: center;
-  
-}

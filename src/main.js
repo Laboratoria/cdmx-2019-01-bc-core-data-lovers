@@ -111,7 +111,7 @@ const printAverage = () => {
           }
         }
         let resultAverage = window.WorldBank.average(arrData);
-        let totalAverage = `<p>${parseFloat(resultAverage).toFixed(2)}%</p>`
+        let totalAverage = `<p><b>${parseFloat(resultAverage).toFixed(2)}%</b></p>`
         inputAverage.innerHTML = totalAverage;
         return totalAverage
     }
