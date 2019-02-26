@@ -1,20 +1,16 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
-window.WorldBank = {
+window.WorldBank = { 
+  //filtro por pais
   filterCountry: (data, country, countrySelect) => { // data dataset indicatorcode
-    //let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
-    // console.log(country)
-    let chooseCoutry = data[country].indicators // entrams a la data de cada pais y los indicadores
-    //et countrySelect = listQuestion.value; //obtenemos el idicator code que tiene de la pregunta
-    let result = {}; //declaramos una variable vacia  para que aqui almacene el resultado
-    // if(country === 'ciudadesMex'){ // comparamos la data-ciudad que sea igual a la que seleccionamos
-    chooseCoutry.forEach(ciudad => { //  seleccionamos la idicadores de mexico 
+    let chooseCountry = data[country].indicators // entrams a la data de cada pais y los indicadores
+    let resultFilter = {}; //declaramos una variable vacia  para que aqui almacene el resultado
+    chooseCountry.forEach(ciudad => { //  seleccionamos la idicadores de mexico 
       if (ciudad.indicatorCode == countrySelect) { //si  los codigo son iguales
-        //console.log(ciudad.data )
-        result = ciudad.data //retornamos la data años y numeros 
+        resultFilter = ciudad.data //retornamos la data años y numeros 
       }
     });
-    return result //retorna a la variable vacia que declaramos al inicio
+    return resultFilter //retorna a la variable vacia que declaramos al inicio
   },
   //  data, case: values, order numbers en mayor, menor, asc, desc
   orderData: (data, sortBy, sortOrder) => {
@@ -47,20 +43,20 @@ window.WorldBank = {
     }
   },
   // funcion que saque la media de los porcentajes
-  getMathMedia: (resultado) => {
-    let suma = 0;//suma = suma + element
+  getMathMedia: (result) => {
+    let sum = 0;//sum = sum + element
     let count = 0;//contador  que intera para contar los que si tengan 
     //  porcentajes =  parseFloat(porcentajes)
-    for (const key in resultado) {
-      if (resultado.hasOwnProperty(key)) { //key : valor, propety:"2000"
-        const element = resultado[key];
+    for (const key in result) {
+      if (result.hasOwnProperty(key)) { //key : valor, propety:"2000"
+        const element = result[key];
         if (typeof element === 'number') {
-          suma += element 
+          sum += element 
           count++
         }
       }
     }
-  const avg = suma/count
+  const avg = sum/count
   //console.log(avg)
   return avg;
   },
