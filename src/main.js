@@ -7,11 +7,11 @@ const pantalla2 = document.getElementById('pantalla2');
 const showPokemons = document.getElementById('showPokemons');
 const root = document.getElementById('root');
 const cajitas = document.getElementsByClassName('cajitas')
-const dataPokemon = window.POKEMON.pokemon;
+// const dataPokemon = window.POKEMON.pokemon;
 const forWeight = document.getElementById("forWeight");
-//const Water = document.getElementById('Water');
-//const Flying = document.getElementById('Flying')
+const url = ('./data/pokemon/pokemon.json')
 
+  const newData = JSON.parse(localStorage.getItem("pokemoncitos"))
 btngetName.addEventListener("click", () => {
 
   const name = trainerName.value;
@@ -23,7 +23,7 @@ btngetName.addEventListener("click", () => {
 
 
 
-  })
+})
 
 
 
@@ -48,8 +48,6 @@ const printData = (data) => {
     `
 
     root.insertAdjacentHTML("beforeend", namePokemon);
-
-
   })
 }
 
@@ -58,7 +56,7 @@ const printData = (data) => {
 for (let i = 0; i < cajitas.length; i++) {
   cajitas[i].addEventListener('click', () => {
     let elementPokemon = cajitas[i].id;
-    let pokemonType = window.pokemon.filterPokemons(dataPokemon, elementPokemon);
+    let pokemonType = window.pokemon.filterPokemons(newData, elementPokemon);
     window.pokemon.ordenarPorNombre(pokemonType);
     printData(pokemonType);
 
@@ -67,13 +65,11 @@ for (let i = 0; i < cajitas.length; i++) {
 
 }
 
+
 forWeight.addEventListener("click",() => {
-  const pokemonTotalPeso =  window.pokemon.totalWeightPokemon(dataPokemon);
+  const newData = JSON.parse(localStorage.getItem("pokemoncitos"))
+  const pokemonTotalPeso =  window.pokemon.totalWeightPokemon(newData);
   root.innerHTML= pokemonTotalPeso;
-//  root.innerHTML = '';
-  //console.log(pokemonTotalPeso);
- //const parrafo= `<p>Peso total de los Pokemon:${pokemonTotalPeso}</p>`
-//  root.insertAdjacentHTML("beforeend", parrafo);
 
 
 
@@ -82,6 +78,29 @@ forWeight.addEventListener("click",() => {
 
 
 showPokemons.addEventListener("click",() => {
-   printData(dataPokemon)
+  const newData = JSON.parse(localStorage.getItem("pokemoncitos"))
+   printData(newData)
 
 })
+
+
+
+
+
+
+fetch(url)
+  .then(response => response.json())
+  .then(printJson => printJson.pokemon)
+  .then(data => { //window.pokemon(data
+    localStorage.setItem ("pokemoncitos", JSON.stringify (data))
+    
+
+  })
+
+/* .then (filter=> filterPokemons (filter))
+  console.log(filterPokemons(filter))
+.then (sort => ordenarPorNombre(sort))
+.then (wieght =>totalWeightPokemon(wieght))
+
+*/
+  //.catch(error => console.error(error));
