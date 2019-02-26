@@ -31,18 +31,17 @@ El objetivo de la plataforma es que los usuarios la utilizen como biblioteca vir
 
 Mediante varias encuestas que realizamos a usuarios interesados en la trayectoria de POKEMON, nos dimos cuenta que la data mostrada, se encontraba en la aplicación POKEMON GO (de hecho la data está extraída de esta última aplicación). Por lo que decidimos con base a toda la retroalimentación recibida, crear una "biblioteca virtual" para que los usuarios accedieran a los 151 pokemon de la región Kanto (primera generación).
 
+## Proto persona
+
+![Proto persona](imgReadMe/Proto-persona.png)
+
 ### Historias de usuario
 
 1. A mi como usuario me gustaría visualizar a todos los Pokemones en la primera pantalla.
-Definition of done
 2. A mi como usuario me gustaría tener filtros para ordenar a los pokemones dependiendo del tipo.
-	Definition of done
 3. A mi como usuario me gustaría que la plataforma me permita ordenar los pokemones en orden alfabético, de la A-Z y de la Z-A.
-	Definition of done
 4. A mi como usuario me gustaría que la interfaz tenga un diseño simple y de fácil manejo
-	Definition of done
 5. A mi como usuario me gustaría que todas la funciones de la interfaz están respaldadas por pruebas unitarias.
-  Definition of done
 
 ### Entrevistas a usuarios
 
@@ -109,7 +108,23 @@ Separar las debilidades. Buscar referencias gráficas para cambiar apariencia de
 
 Para esta última sección es importante reacomodarla. Se sugiere que en cuanto cargue el navegador, la primera pantalla que se muestre, arroje está cifra y tengo un texto cómo “¿Sabías qué?”.
 
+## Iteración de usabilidad
 
+Para esta primera iteración de experiencia al usuario de la plataforma, se realizaron seis entrevistas. Para escuchar las entrevistas da click [aquí](https://soundcloud.com/egenesis-egonzalez).
+
+Con base a las anteriores pruebas de usabilidad se llegó a los siguientes insights:
+
+![Insights pruebas de usabilidad](imgReadMe/insight_pokepedia.png)
+
+Partiendo de estos puntos, se sugiere realizar los siguientes cambios en la interfaz:
+
+1. Mejorar la imagen de la interfaz. Los usuarios no tienen del todo claro que se trata de una biblioteca virtual de **la primera generación de Pokemon**. Por tanto se incluyó una pantalla de inicio con el logo de Pokep-dia.
+2. A pesar de que el modo de juego es online y mediante celular, los usuarios buscan algún tipo de interacción con otros jugadores. Se sugiere agregar botones de compartir y alguna sección donde se comparta los lugares de reunión para cazar Pokemon.
+3. Las pruebas de usabilidad arrojaron que para los usuarios fue difícil encontrar los botones para acomodar por orden ascendente, descendente y el botón de "Sabías qué". En este punto se sugiere reacomodar el orden de las secciones de botones.
+
+Con estos puntos, se realizó la siguiente iteración en la interfaz:
+
+![UX iteración de diseño](imgReadMe/pokepedia.gif)
 
 ## Pre-requisitos e instalación
 
