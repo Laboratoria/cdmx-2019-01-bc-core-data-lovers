@@ -114,13 +114,14 @@ Para esta primera iteración de experiencia al usuario de la plataforma, se real
 
 Con base a las anteriores pruebas de usabilidad se llegó a los siguientes insights:
 
-![Insights pruebas de usabilidad](imgReadMe/insight_pokepedia.png)
+![Insights pruebas de usabilidad](imgReadMe/gif_pokepedia.png)
 
 Partiendo de estos puntos, se sugiere realizar los siguientes cambios en la interfaz:
 
-1. Mejorar la imagen de la interfaz. Los usuarios no tienen del todo claro que se trata de una biblioteca virtual de **la primera generación de Pokemon**. Por tanto se incluyó una pantalla de inicio con el logo de Pokep-dia.
-2. A pesar de que el modo de juego es online y mediante celular, los usuarios buscan algún tipo de interacción con otros jugadores. Se sugiere agregar botones de compartir y alguna sección donde se comparta los lugares de reunión para cazar Pokemon.
-3. Las pruebas de usabilidad arrojaron que para los usuarios fue difícil encontrar los botones para acomodar por orden ascendente, descendente y el botón de "Sabías qué". En este punto se sugiere reacomodar el orden de las secciones de botones.
+1. Escuchando el día a día de los usuarios, se llegó a la conclusión de que la interacción para la plataforma es mediante dispositivos móviles, por lo que se sugiere mejorar el rendimiento de esta parte de la interfaz.
+2. Mejorar la imagen de la interfaz. Los usuarios no tienen del todo claro que se trata de una biblioteca virtual de **la primera generación de Pokemon**. Por tanto se incluyó una pantalla de inicio con el logo de Pokep-dia.
+3. A pesar de que el modo de juego es online y mediante celular, los usuarios buscan algún tipo de interacción con otros jugadores. Se sugiere agregar botones de compartir y alguna sección donde se comparta los lugares de reunión para cazar Pokemon.
+4. Las pruebas de usabilidad arrojaron que para los usuarios fue difícil encontrar los botones para acomodar por orden ascendente, descendente y el botón de "Sabías qué". En este punto se sugiere reacomodar el orden de las secciones de botones.
 
 Con estos puntos, se realizó la siguiente iteración en la interfaz:
 
