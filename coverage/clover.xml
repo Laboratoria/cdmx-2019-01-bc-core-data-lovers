@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551136771628" clover="3.2.0">
-  <project timestamp="1551136771628" name="All files">
+<coverage generated="1551151355179" clover="3.2.0">
+  <project timestamp="1551151355183" name="All files">
     <metrics statements="20" coveredstatements="18" conditionals="6" coveredconditionals="4" methods="8" coveredmethods="8" elements="34" coveredelements="30" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1">
       <file name="data.js" path="C:\Users\Sophismata\Desktop\Laboratoria\Proyecto-dos\cdmx-2019-01-bc-core-data-lovers\src\data.js">
         <metrics statements="20" coveredstatements="18" conditionals="6" coveredconditionals="4" methods="8" coveredmethods="8"/>
