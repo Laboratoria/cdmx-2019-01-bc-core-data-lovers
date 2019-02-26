@@ -13,10 +13,19 @@ const printPokemonFilter = document.getElementById('printPokemonFilter');
 //const averageHeightPokemon = document.getElementById('averageHeightPokemon');
 //const averageWeightPokemon = document.getElementById ('averageWeightPokemon');
 const buttonRegionKantoOnFilter = document.getElementById('buttonRegionKantoOnFilter');
-const pokemonJson = ("./data/pokemon/pokemon.json");
+//const pokemonJson = ("./data/pokemon/pokemon.json");
 var ctx = document.getElementById("myChart");
 
-//grafica
+const pokemonJson = ("https://gabycastro1403.github.io/cdmx-2019-01-bc-core-data-lovers/src/data/pokemon/pokemon.json");
+//console.log(pokemonJson);
+//JSON que pinta en la región Kanto y guarda en local storage
+fetch(pokemonJson)
+.then(response => response.json())
+.then(dataPokemon => {
+  const allPokemon = dataPokemon.pokemon
+  localStorage.setItem("pokemon",JSON.stringify(allPokemon));
+  pokemonjson(allPokemon);
+});
 
 
 //const tipoFiltrar="Fire";
@@ -30,40 +39,31 @@ const  filterGrafica = (tipoFiltrar) =>{
       total += parseFloat(pokemonByType.weight);
       totalAverage = total/longitudArr
     });
+    
     return totalAverage;
   
 };
 
-const fireGraf =filterGrafica("Fire");  
-const grassGraf = filterGrafica("Grass");
-const iceGraf = filterGrafica("Ice");
-const poisonGraf = filterGrafica("Poison");
-const flyingGraf = filterGrafica("Flying");
-const psychicGraf = filterGrafica("Psychic");
-const waterGraf = filterGrafica("Water");
-const groundGraf = filterGrafica("Ground");
-const rockGraf = filterGrafica("Rock");
-const electricGraf = filterGrafica("Electric");
-const bugGraf = filterGrafica("Bug");
-const normalGraf = filterGrafica("Normal");
-const fightingGraf = filterGrafica("Fighting");
-const dragonGraf = filterGrafica("Dragon");
+const fireGraf =filterGrafica("Fire").toFixed(2);  
+const grassGraf = filterGrafica("Grass").toFixed(2);
+const iceGraf = filterGrafica("Ice").toFixed(2);
+const poisonGraf = filterGrafica("Poison").toFixed(2);
+const flyingGraf = filterGrafica("Flying").toFixed(2);
+const psychicGraf = filterGrafica("Psychic").toFixed(2);
+const waterGraf = filterGrafica("Water").toFixed(2);
+const groundGraf = filterGrafica("Ground").toFixed(2);
+const rockGraf = filterGrafica("Rock").toFixed(2);
+const electricGraf = filterGrafica("Electric").toFixed(2);
+const bugGraf = filterGrafica("Bug").toFixed(2);
+const normalGraf = filterGrafica("Normal").toFixed(2);
+const fightingGraf = filterGrafica("Fighting").toFixed(2);
+const dragonGraf = filterGrafica("Dragon").toFixed(2);
 
 //Grafica
 
 
 const etiquetas =["Fire","Grass","Ice","Poison","Flying","Psychic","Water","Ground","Rock","Electric","Bug","Normal","Fighting","Dragon"];
 const dataType = [fireGraf,grassGraf,iceGraf,poisonGraf,flyingGraf,psychicGraf,waterGraf,groundGraf,rockGraf,electricGraf,bugGraf,normalGraf,fightingGraf,dragonGraf ];
-
-
-
-
-  
-
-
-
-//console.log(total);
-//console.log(total/pokemonByType.length);
 
 
 buttonFilterPokemon.addEventListener('click', () => {
@@ -223,14 +223,7 @@ const printHeight = (arrayPokemon) => {
   });
 };
 
-//JSON que pinta en la región Kanto y guarda en local storage
-fetch(pokemonJson)
-.then(response => response.json())
-.then(dataPokemon => {
-  const allPokemon = dataPokemon.pokemon
-  localStorage.setItem("pokemon",JSON.stringify(allPokemon));
-  pokemonjson(allPokemon);
-});
+
 
 //itera para imprimir en todos los elementos de las tarjetas de la region kanto 
 const pokemonjson = (pokemonArray) => { pokemonArray.forEach(element => {

@@ -26,6 +26,7 @@ header {
   background: #00CED1;
 }
 
+
 .headerType {
   width: 100%;
   background-color: #5de6de;
@@ -205,12 +206,18 @@ p {
 
 }
 
-.containterPokemon,  {
+.containterPokemon  {
   min-height: 120rem;
   text-align: center;
 }
 .container-Stadistics{
-  min-height: 5rem;
+  min-height: 1rem;
+}
+.graphic {
+  width: 50%;
+  position: relative;
+  
+  
 }
 
 .typeCard {

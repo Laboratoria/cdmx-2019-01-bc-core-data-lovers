@@ -7,9 +7,11 @@
 window.example = example;*/
 
 window.pokemonFunction = {
+  
   sortByName: (arrayPokemonData) =>{
     const pokemonSortedData= arrayPokemonData.sort((a,b) => {
       if (a.name > b.name){
+        
         return 1;
       }else {
         return -1;
@@ -32,9 +34,9 @@ window.pokemonFunction = {
   sortByDescending: (arrayPokemonData,property) => {
     const pokemonSortedData = arrayPokemonData.sort((a, b) => {
       if ((parseFloat(a[property])) > (parseFloat(b[property]))) {
-        return -1
+        return -1;
       }else{
-        return 1
+        return 1;
       }
     })
     return pokemonSortedData;
@@ -43,31 +45,31 @@ window.pokemonFunction = {
 
   filterByWeightLight: (arrayPokemonData) => {
       const pokemonFilteredLight = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) < 30);
-      return pokemonFilteredLight
+      return pokemonFilteredLight;
   },
 
    filterByWeightHeavy: (arrayPokemonData) => {
     const pokemonFilteredHeavy = arrayPokemonData.filter(pokemon => parseInt(pokemon.weight) > 30);
-    return pokemonFilteredHeavy
+    return pokemonFilteredHeavy;
   },
 
   filterByHeightSmall: (arrayPokemonData) => {
     const pokemonFilteredSmall = arrayPokemonData.filter(pokemon => parseInt(pokemon.height) < 1.00);
-    return pokemonFilteredSmall
+    return pokemonFilteredSmall;
   },
 
   filterByHeightMedium: (arrayPokemonData) => {
     const pokemonFilteredMedium = arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.00) && (parseInt(pokemon.height) <= 1.80));
-    return pokemonFilteredMedium
+    return pokemonFilteredMedium;
   },
 
   filterByHeightTall: (arrayPokemonData) => {
     const pokemonFilteredTall = arrayPokemonData.filter(pokemon => (parseInt(pokemon.height) >= 1.80));
-    return pokemonFilteredTall
+    return pokemonFilteredTall;
   },
-  pokemonFilterType: (arrayPokemonData, string) => {
-    const pokemonfilter = arrayPokemonData.filter(pokemon => pokemon.type.includes(string));
-    return pokemonfilter
+  pokemonFilterType: (arrayPokemonData, string_pokemon) => {
+    const pokemonfilter = arrayPokemonData.filter(pokemon => pokemon.type.includes(string_pokemon));
+    return pokemonfilter;
   },
 
 
@@ -78,6 +80,28 @@ window.pokemonFunction = {
       return pokemonAverageHeight;
 },
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   averageWeight: (arrayPokemonData,numberOfPokemon) => {
 
     const pokemonAverageWeight = arrayPokemonData.reduce((total, pokemonData) =>{
@@ -85,5 +109,5 @@ window.pokemonFunction = {
     return pokemonAverageWeight;
   
   
-},
+}
 }
