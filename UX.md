@@ -76,3 +76,67 @@ El sitio web está disponible para desktop y mobile contando con un diseño resp
 ### Mobile
 ![mobile](https://github.com/Cristalgarcia/cdmx-2019-01-bc-core-data-lovers/blob/rama-cris/src/assets/Interfaz_mobile.PNG)
 
+# Análisis heurístico
+El sitio LOL LOVERS presentó una evaluación de interfaz para analizar la usabilidad y el objetivo de negocio de la aplicación con la finalidad de desprender una propuesta de mejora. 
+
+### Visibilidad del estado de sistema
+El sitio LOL LOVERS no presenta elementos hovers que informen al usuario de lo que está haciendo o en qué sección está ubicado.
+
+### Conexión entre el sistema y el mundo real
+LOL LOVERS utiliza los mismos términos que el videojuego League of Legends para que los usuarios muestren una relación con éste. El diseño está basado en la interfaz de videojuego. Utiliza representaciones gráficas claras y convenciones que crean homogeneidad en el sitio.
+
+### Uso y control del usuario
+El sitio web carece de comandos que permitan al usuario regresar a secciones previas generando la necesidad de ubicarse de nueva cuenta en el inicio de una sección. El usuario pierde el control en el flujo de la información al realizar acciones adicionales y más scroll.
+
+### Consistencia y estándares 
+El logo ubicado en la parte superior izquierda suele asociarse con la ejecución de una acción, sin embargo, el texto “Home” es el que presenta una acción. Para el usuario genera confusión y resalta una falta de consistencia. 
+Las tarjetas al cliquearlas despliegan información detallada del campeón.
+El diseño de interfaz guarda una consistencia entre dispositivos.
+
+### Prevención de errores
+El buscador por nombre no presenta un mensaje que indique cuando el texto ingresado no corresponde con los resultados de búsqueda. Tampoco existe un mensaje de error ante un problema de información en las secciones.
+
+### Reconocimiento en lugar de recuerdo 
+Las secciones de LOL LOVERS presentan un nombre clave para indicar el objetivo o el contenido que despliega. El buscador tiene un placeholder de instrucción. 
+Las tarjetas con el nombre de los campeones despliegan información adicional al realizar un click sobre éstas, ya que los usuarios están acostumbrados en obtener más datos de estos elementos.
+
+### Uso eficiente y flexibilidad
+El diseño de la página está basado en los sitios web oficiales del juego y en la interfaz del mismo con el objetivo de capturar la esencia y una asociación. La paleta de colores, imágenes y estructura de los elementos mantiene correlación con el juego y peticiones de los usuarios. 
+La información incorpora algunos de los elementos señalados por jugadores experimentados y datos que pueden ser de utilidad y de fácil manejo para los jugadores que están iniciando. 
+
+### Diseño práctico y minimalista 
+El diseño es práctico al no utilizar elementos innecesarios para obtener información. La información no contiene datos irrelevantes que entorpezca el flujo de navegación. 
+
+### Ayuda, diagnóstico y recuperación de errores
+El sitio web ante un error no le indica al usuario qué ha pasado y cómo resolverlo.
+
+### Ayuda y documentación
+El sitio web LoL Lover no proporciona documentación o información enfocada en la tarea del usuario. 
+
+### Interacción con el usuario placentera y respetuosa 
+El objetivo del sitio web es facilitar a los jugadores principiantes información clave para un buen desempeño en el juego.
+
+# Pruebas de usabilidad
+El día viernes 22 de febrero de 2019, el sitio web LoL Lover fue mostrado a tres personas para que evaluar la usabilidad de la página. Los datos recabados fueron:
+
+- Los usuarios al navegar realizaron click en el icono de LoL ubicado en el lado superior izquierdo, sin embargo, era el texto Home el que realizaba la acción.
+- La tarjeta de los campeones con información complementaria mostraba bordes para agrupar información. Una usuario señaló que dicho bordes los interpretaba cómo botones y con ello los cliqueo.
+- Cuando los usuarios ingresaban a la sección de Average Stats, los usuarios enfocaban más atención al dato mostrado debido a que es poco entendible. 
+- Los usuarios indicaron que las secciones eran claras.
+
+## Moficaciones
+Acorde al análisis heurístico y pruebas de usabilidad se realizaron los siguientes cambios:
+
+- El texto Home que ejecutaba la acción de mostrar todos los campeones fue eliminado para ser asignado al icono del juego.
+- El placeholder del buscador fue editado para especificar la instrucción.
+- El color del menú cambio por un negro sólido para generar más contraste y evitar destellos blancos que causaran ruido en su lectura.
+- El background-image conformado por un wallpaper del juego fue modificado por un fondo negro con textura debido a que la anterior imagen mostraba un texto que era obstruido por el contenido y era difícil de leer.
+- El footer presenta dos secciones nuevas para brindar información complementaria del juego. 
+
+
+![Home]
+
+- Las tarjetas de información de los campeones presentaron como cambio la eliminación de bordes para no ser interpretados como botones.
+
+![Tarjetas]
+

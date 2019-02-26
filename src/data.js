@@ -55,13 +55,31 @@ window.lol = {
     })
     return sortAsc
   },
+   
 
+  averageAttack: (datosArr) => {
+    //console.log(datosArr) 
+   const totalattack = datosArr.reduce((prev, datosArr) => prev + datosArr.attack, 0)/datosArr.length;
+    //console.log(totalattack)
+    return totalattack
+  },
   
-averageAttack: (datosArr) => {
-  //console.log(datosArr) 
- const totalattack = datosArr.reduce((prev, datosArr) => prev + datosArr.attack, 0)/datosArr.length;
-  //console.log(totalattack)
-  return totalattack
-},
+/*averageAttack: (datosArr) => {
+  console.log(datosArr) 
+  let tank = 0;
+  count = 0;
+//  const totalattack = datosArr.reduce((prev, datosArr) => prev + datosArr.attack, 0)/datosArr.length;
+datosArr.forEach(champ => {
+  if(champ.tag[0] === 'Tank'){
+    tank += champ.attack
+    count++
+  }
+})
+const average = tank/count
+//console.log('suma tankes' + tank + ' contador ' + count + 'wrer' + tank/count)
 
+console.log(average);
+return average;
+
+},*/
 }
