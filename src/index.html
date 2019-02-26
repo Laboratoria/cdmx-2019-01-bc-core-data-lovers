@@ -9,24 +9,44 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
+<div class="ctn__general" id="ctn__general">
   <header class="header">
-    <div class="header-left">
+      <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li id="btn-about" class="item-menu">Acerca de</li>
+        <li id="btn-general-filter" class="item-menu">Indicadores en America Latina</li>
+        <li id="btn-news" class="item-menu">Noticias</li>
+        <li class="item-menu">Contacto</li>
+      </ul>
+      </nav>
       <img class="icon-logo" src="./images/logo.svg" alt="nav">
-    </div>
-    <div class="header-right">
-      <a id="nav-icon" class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>
-    </div>
+      <!-- <a id="nav-icon" class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a> -->
+      <div id="nav-icon" class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
   </header>
-  <nav id="nav-menu" class="nav-menu hide">
-    <ul>
+  <!-- <header id="mySidenav" class="header hide">
+  <nav id="nav-menu" class="nav-menu"> 
+      <a  id="closeNav"  class="closebtn">&times;</a> 
+    <ul >
       <li id="btn-about" class="item-menu">Acerca de</li>
       <li id="btn-general-filter" class="item-menu">Indicadores en America Latina</li>
       <li id="btn-news" class="item-menu">Noticias</li>
       <li class="item-menu">Contacto</li>
     </ul>
   </nav>
+</header> -->
   <main id="container" class="container">
+      <!-- <div class="header-left">
+          <img class="icon-logo" src="./images/logo.svg" alt="nav">
+        </div>
+        <div class="header-right">
+          <a id="nav-icon" class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>
+        </div> -->
     <section id="news" class="news hide">
       <div class="card-news">
         <h2 class=" news-mexico">
@@ -89,12 +109,12 @@
         <h4 class="title-indicators">Indicadores en America Latina</h4>
         <p class="subtitle-idicators">Con base a los siguientes parametros: demográfia, económia, salud, comercio, violencia de genero y educación</p>
       <div class="information-filter">
-        <a  id="MEX" class="btn_mex search-country" data-ciudad="MEX" data-object="countryMex">México</a>
+        <a  id="MEX" class="btn_mex search-country"  data-ciudad="MEX" data-object="countryMex">México</a>
         <a  id="btn_per" class="btn_per search-country" data-ciudad="PER" data-object="countryPer">Peru</a>
         <a  id="btn_bra" class="btn_bra search-country" data-ciudad="BRA" data-object="countryBra">Brasil</a>
         <a  id="btn_Chl" class="btn_Chl search-country" data-ciudad="CHL" data-object="countryChl">Chile</a>
       </div>
-      <div class="item-filter-sort">
+      <div  class="item-filter-sort">
         <select id="list-question" class="list-question">
           <option value="valor">Selecciona un pais</option>
         </select>
@@ -104,7 +124,7 @@
       </div>
 
       <div id="show-canvas" class="show-canvas hide">
-        <canvas id="graficaDatos" class="grafica-datos" width="400" height="400"></canvas>
+        <canvas id="graph" width="400" height="400"></canvas>
       </div>
 
       <div class="order__filters">
@@ -136,9 +156,11 @@
       <div id="information-filter-inner" class="information__filtered"></div>
     </section>
   </main>
+
   <footer>
     <p class="title-footer"> ©2019 Grupo Banco Mundial. Reservados todos los derechos.</p>
   </footer>
+</div>
   <script src="./data/worldbank/worldbank.js"></script>
   <script src="main.js"></script>
   <script src="data.js"></script>
