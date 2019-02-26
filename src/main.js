@@ -183,6 +183,7 @@ average.style.display= "none";
 
 //Guarda el valor del input select para poderlo usar en la función filter de data.js
 selects.addEventListener("change", () => {
+  document.getElementById("result").innerHTML ="";
   let selectVal = selects.value;
   objectSelected = window.data.filter(indicators, selectVal);
 })
@@ -191,6 +192,7 @@ selects.addEventListener("change", () => {
 for (let i = 0; i < country.length; i++) {
   country[i].addEventListener("click", () => {
     tableBody.innerHTML = "";
+    document.getElementById("result").innerHTML ="";
     countryValue = country[i].value;
     //Recorre el objeto del indicador seleccionado y guarda el objeto correspondiente al país seleccionado con los botones y el nombre del indicador
     for (let countryS in objectSelected) {
