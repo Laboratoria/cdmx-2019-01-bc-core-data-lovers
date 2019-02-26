@@ -99,7 +99,6 @@ const printYears2 = (resultYear) => {
 selectIndicator.addEventListener("change", prueba);
 const buttonAverage = document.getElementById('average');
 const inputAverage = document.getElementById('value-average');
-//console.log(inputAverage)
 
 const printAverage = () => {
         let arrAverage = Object.values(resultYear);
@@ -113,9 +112,7 @@ const printAverage = () => {
         }
         let resultAverage = window.WorldBank.average(arrData);
         let totalAverage = `<p>${parseFloat(resultAverage).toFixed(2)}%</p>`
-        console.log(totalAverage)
         inputAverage.innerHTML = totalAverage;
-        //document.getElementById('value-average').innerHTML=totalAverage;
         return totalAverage
     }
 
