@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#what">¿Qué es LatinoEduca?
+            <a class="nav-link" href="#what">Inicio
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -42,9 +42,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#inf">País e Indicador</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sobre">Información</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -52,25 +49,24 @@
 
   <!-- Header - set the background image for the header in the line below -->
 
-  <header class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/bmjy3px/manzana1.jpg');">
-    <img class="img-fluid bg-image-full" src="https://i.ibb.co/zGPn6xL/indicadores-educativos-en-latinoam-ric-A-4.png"
-      alt="logo">
+  <header class="py-5 bg-image-full">
+   
   </header>
 
   <!-- Content section -->
-  <section class="py-5">
+  <section id="home-about">
     <div class="container">
-      <h1 id="what">¿Qué es LatinoEduca?</h1>
-      <p id="app" class="lead">Esta app te podrá ayudar a:</p>
-      <ul>
-        <li>Encontrar datos específicos acerca del nivel Educativo en Latinoamérica.</li>
-        <li>La información recopilada te ayudará a distinguir el comportamiento de la educación a través de los año.</li>
-        <li>La fuente de la base de datos es el Banco Mundial</li>
-      </ul>
+      <h1 id="what">índices Educativos del Banco Mundial</h1>
+      <p id="app" class="lead">LatinoEduca proporciona los datos educativos más relevantes de Perú, Chile, México y Brasil</p>
+      <a class="btn btn-outline-dark btn-lg" href="#btn-country" role="button" >Conoce los países</a>
     </div>
   </section>
 
   
+  <section class="py-5">
+    <div class="container">
+      <h3>Noticias</h3>
+    </div>
   <!-- Carousel -->
   <div id="carousel-Example-Indicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -98,66 +94,98 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</section>
 
   <!-- Content section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 id="inf">Datos</h2>
-      <h4 class="lead-container">1. Inicia eligiendo un país</h4>
-      <!--bottons-->
-      <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="PER">Perú</button>
-        </div>
-        <div class="clearfix-sm-block"></div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="MEX">México</button>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="BRA">Brasil</button>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="CHL">Chile</button>
-        </div>
-      </div>
+<section class="py-5">
+  <h2 id="inf">Países e indicadores</h2>
+  <div class="container">
+      
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">1. Países</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-indicator" role="tab" aria-controls="nav-profile" aria-selected="false">2. Indicadores</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-sort" role="tab" aria-controls="nav-contact" aria-selected="false">3. Ordenar</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-average" role="tab" aria-controls="nav-average" aria-selected="false">4. Promedio</a>
     </div>
-  </section>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <section class="py-5">
+            <div class="container">
+              <h4 class="lead-container">1. Inicia eligiendo un país</h4>
+              <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btnCountry" id="PER">Perú</button>
+                </div>
+                <div class="clearfix-sm-block"></div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btnCountry" id="MEX">México</button>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btnCountry" id="BRA">Brasil</button>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btnCountry" id="CHL">Chile</button>
+                </div>
+              </div>
+          </section>
+    </div>
 
-  <!-- Indicadores -->
-  <section>
-    <h4 class="container">2. Selecciona un Indicador</h4>
-    <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-      <fieldset>
-        <select name="indicators-by-country" id="indicator">
-          <option class="list-group-item-light" value="indicators-country" disabled selected>Indicador</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <h4 class="container">3. Ordena de mayor a menor</h4>
-        <select name="sort-by-year" id="sort">
-          <option class ="opt" id= "options" value= "options">Opciones</option>
-          <option class="opt" id="ascend" value="ascend">Ascendente</option>
-          <option class="opt" id="descend" value="descend">Descendente</option>
-        </select>
-      </fieldset>
-    </article>
-  </section>
+    <div class="tab-pane fade" id="nav-indicator" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <section>
+            <div class="container" id="indicators-group">
+                <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h4>2. Selecciona un Indicador</h4>
+                  <fieldset>
+                    <select name="indicators-by-country" id="indicator">
+                      <option class="list-group-item-light" value="indicators-country" disabled selected>Indicador</option>
+                    </select>
+                  </fieldset>
+                </article>
+              </div>
+          </section>
+    </div>
 
-  <section>
-      <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-          <h4>Cálculo</h4>
-        <button class="average" id="average" value= "average">Promedio</button>
-      </article>
-  </section>
+    <div class="tab-pane fade" id="nav-sort" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <section>
+            <div class="container" id="sort-group">
+                <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h4>3. Ordena de mayor a menor</h4>
+                  <fieldset>
+                    <select name="sort-by-year" id="sort">
+                      <option class ="opt" id= "options" value= "options">Opciones</option>
+                      <option class="opt" id="ascend" value="ascend">Ascendente</option>
+                      <option class="opt" id="descend" value="descend">Descendente</option>
+                    </select>
+                  </fieldset>
+                </article>
+            </div>
+          </section>
+    </div>
+
+    <div class="tab-pane fade" id="nav-average" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <section>
+            <div class="container" id="average-group">
+              <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <button class="average" id="average" value= "average">Promedio</button>
+                <h5 id="print-average">Resultado:</h5>
+              </article>
+            </div>
+          </section>
+    </div>
+  </div>
+</div>
+</section>
+
 
   <!--Datos-->
   <section>
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-      <h5 id="print-average">Resultado:</h5>
        <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Año---------- Porcentaje</h5>
-          <h5 id="data-year"></h5>
+          <h5 class="card-title">Año-----Porcentaje</h5>
+          <h5 id="data-year">Ver indicadores</h5>
         </div>
       </div>
     </article>

@@ -1,3 +1,5 @@
+
+
 .btnCountry {
     display: inline-block;
     font-weight: 400;
@@ -69,13 +71,6 @@
     font-display: hidden;
   }
   
-  
-  h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6,
   h1,
   h2,
   h3,
@@ -93,6 +88,7 @@
     font-family: inherit;
     color: #212529;
     font-size: 3em;
+    text-align: center;
   }
   
   #list {
@@ -106,6 +102,10 @@
     font-family: inherit;
     color: #212529;
     font-size: 3em;
-  
-  
+    text-align: justify;
+  }
+
+  .card {
+    border-color: yellow;
+    margin-left: 15%;
   }
