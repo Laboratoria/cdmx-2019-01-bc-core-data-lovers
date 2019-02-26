@@ -1,5 +1,14 @@
 # DataDex
 
+
+https://docs.google.com/document/d/1QBxTqCnAobiJbBwQpTZBE6y57NAMHdT824hSmxniU_E/edit
+
+
+
+
+
+
+
 ## INTRODUCCIÓN
 
 En la investigación acerca de Pokemón y sus antecedentes, se hace referencia al impacto tan grande que tuvo, comenzando originalmente como un Video Juego, el cual se fue expandiendo hacia otros medios de entretenimiento, volviéndose muy reconocido en el mercado mundial.
