@@ -1,5 +1,213 @@
-# Data Lovers
+# Hipatia Project
 
+![Hipatia Logo](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Logo%20Hipatia-02.png)
+
+## ¿Qué es Hipatia Project?
+
+Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil, Chile, México y Perú. Aquí podrás visualizar datos históricos de diferentes indicadores del Banco Mundial en tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.
+
+# Instrucciones para usuarios
+1. Ingresa a la página [Hipatia Project](https://karenamicone.github.io/cdmx-2019-01-bc-core-data-lovers/src/index.html)
+
+2. Al inicio encontrarás una breve descripción sobre la página
+
+3. Posteriormente encontrarás un botón que desplegará la lista de indicadores de la cual podrás seleccionar el que quieres consultar. 
+
+4. A continuación, da click en el botón del país de tu interés.
+
+5. Se desplegará una tabla con los datos disponibles por año. Así mismo, arriba de la tabla encontrarás unos botones para ordenar la información de forma ascendete y descendente y un botón con el cual al dar click, podrás conocer el promedio de la serie de datos.
+
+6. En la última sección de la página encontrarás la definición de *género* y de *desigualdad de género*.
+
+# Información para desarrolladores
+
+## Consideraciones técnicas
+
+El proyecto está implementado en JavaScript (ES6), HTML y CSS. En este proyecto se utilizó [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+
+
+El _boilerplate_ contiene una estructura de archivos como punto de partida así
+como toda la configuración de dependencias:
+
+```text
+.
+├── package.json
+├── README.md
+├── src
+│   ├── data
+│   │   ├── injuries
+│   │   │   ├── injuries.js
+│   │   │   └── injuries.json
+│   │   ├── lol
+│   │   │   ├── lol.js
+│   │   │   └── lol.json
+│   │   ├── pokemon
+│   │   │   ├── pokemon.js
+│   │   │   └── pokemon.json
+│   │   ├── steam
+│   │   │   ├── steam.js
+│   │   │   └── steam.json
+│   │   └── worldbank
+│   │       ├── worldbank.js
+│   │       └── worldbank.json
+│   ├── data.js
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+└── test
+    └── data.spec.js
+
+8 directories, 17 files
+```
+## Herramientas
+
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [Node.js](https://nodejs.org/)
+- [Jest](https://jestjs.io/)
+
+# Instrucciones
+
+## Obtener una copia local del repositorio
+1. Hacer un 🍴 fork de este repositorio: <https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers>
+
+2. Clonar el fork en tu computadora (copia local).
+
+
+## Instalar las dependencias y ejecutar los tests
+
+1. Instala las dependencias del proyecto con el comando `npm install`. Esto
+   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
+
+2. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
+   pruebas unitarias (unit tests) con el comando `npm run test`.
+
+## Funcionalidad de la página
+Hipatia Project está constituida por tres funciones principales: filtrar información (función *filter*), ordenarla de forma ascendente y descendente (función *sort*), y calcular el promedio(función *average*).
+
+## Pruebas unitarias
+Las pruebas unitarias verifican las propiedades de las funciones principales y están constituidas por 7 pruebas. 
+
+1. Verifica que *filter* sea una función.
+2. Verifica que *filter* filtre la información por indicador.
+3. Verifica que *sort* sea una función. 
+4. Verifica que *sort* ordene de forma ascendente.
+5. Verifica que *sort* ordene de forma descendente. 
+6. Verifica que *average* sea una función.
+7. Verifica que *average* calcule el promedio de los datos ingresados.
+
+---
+# Diseño UX
+
+## Definición del producto
+
+### ¿Qué es Hipatia Project?
+
+Es un repositorio de estadísticas sobre la brecha laboral de género de Brasil, Chile, México y Perú. Aquí podrás visualizar datos históricos de diferentes indicadores del Banco Mundial en tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.
+
+### Objetivo
+
+Mostrar datos estadísticos para el estudio y sensibilización social sobre la desigualdad de género en el trabajo, de forma accesible y amigable. 
+
+
+*¿Qué es género?*
+
+Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos. Históricamente y en la mayor parte del mundo, estas desigualdades han afectado a las mujeres.
+
+*Desigualdad de género*
+
+La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que prevalecen entre mujeres y hombres se asocian a la
+histórica división del trabajo para el mercado y el trabajo doméstico, o para la reproducción material de los hogares" (Instituto Nacional de las Mujeres [INMUJERES], 2008) . 
+
+El trabajo es una de las principales vías por las cuales las personas obtienen ingresos para su supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante el estudio de la desigualdad de género en el trabajo.
+
+*Referencias*
+
+
+*INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.
+
+*Lau, A. y Cruz, M (2005). La incorporación de los estudios de mujeres y de género a las instituciones de educación superior. El Programa de Especialización-Maestría en Estudios de la Mujer de la UAM-Xochimilco. La ventana (21) 228-251.
+
+
+
+### Problemática
+
+Observamos que hay un interés creciente, tanto académico como social, en la información con enfoque de género, por un lado. Y por otro lado, poca oferta de páginas web que contengan y muestren de forma accesible los datos de la brecha laboral de género en América Latina. 
+
+
+### Creciente interés en los estudios de género
+
+La Conferencia del Año Internacional de la Mujer celebrada en México en 1975 tuvo un impacto importante en América Latina porque por primera vez los gobiernos tuvieron que comunicar al mundo y a sus ciudadanos sobre las condiciones laborales, educativas y de salud en las que se desenvolvían las mujeres. En México este evento fue un parteaguas en la institucionalización y organización del movimiento feminista, ya que comenzó a tener mayor poder de convocatoria y fuerza política. Las desigualdades entre hombres y mujeres empezaron a cuestionarse con más fuerza, buscando el sustento teórico y académico sobre la creación cultural y no biológica de la brecha de género. Con este objetivo se crearon varios centros y programas de estudios de género. Actualmente hay más de treinta de ellos (Lau y Cruz, 2005). 
+ 
+
+### Oferta de páginas web sobre estadísticas de género
+
+En [encuestas](https://docs.google.com/forms/d/1xyq6JV84yFPrlVP5IGgi47BK6nCygZQio4WeC98z1Ug/edit#responses) realizadas a 7 usuarios de repositorios estadísticos, se identificó que una de las debilidades que detectan en estas páginas es el difícil acceso a las bases de datos, así como no poder manipular la información ni poder hacer cálculos estadísticos. Además, en una investigación que realizamos en 4 páginas web oficiales de estadísticas de género (las páginas consultadas fueron [ONU Mujeres](https://bit.ly/2yTKLil), el repositorio de la [CEPAL](https://bit.ly/2SqaOvh), [Sistema de Indicadores de Género de Inmujeres](https://bit.ly/2tPNp6z),  y la [UNICEF](https://uni.cf/2MZch5Z)), observamos que el diseño es poco eficiente para consultar series de datos, el formato de descarga en la mayoría de ellos es pdf, el cual dificulta la manipulación de datos, las tablas donde se muestran las series de datos son difíciles de encontrar, i.e. hay que dar muchos clicks, y el diseño es poco agradable.    
+
+
+### Historias de usuarios
+
+1. Como usuario quiero una página que muestre indicadores de la brecha de género en el ámbito laboral
+
+2. Como usuario quiero una página intuitiva, de fácil uso e interactiva
+
+3. Como usuario quiero ver los datos en una Interfaz (tabla, card, lista)
+
+4. Como usuario quiero poder filtrar la info por indicador y país
+
+5. Como usuario quiero ordenar los datos por año en orden ascendente y descendente
+
+6. Como usuario quiero calcular el promedio de una serie de datos
+
+
+## Diseño de la interfaz
+
+### Prototipo de baja fidelidad
+
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20.jpg)
+
+
+### Prototipo de alta fidelidad
+
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-01.jpg)
+
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-02.jpg)
+
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-03.jpg)
+ 
+![alt text](https://github.com/KarenAmicone/cdmx-2019-01-bc-core-data-lovers/blob/rama-karen/src/assets/images/Sketch%20Fino-04.jpg)
+
+
+## Checklist
+
+- [x] Usa VanillaJS.
+- [x] No hace uso de `this`.
+- [x] Pasa linter (`npm pretest`)
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+      lines y branches.
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+      `README.md`.
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+      en `README.md`.
+- [ ] Incluye el listado de problemas que detectaste a través de tests de
+      usabilidad en el `README.md`.
+- [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite filtrar data en base a una condición.
+
+## Checklist (Opcional)
+
+- [ ] Consume data de forma dinámica (`fetch()`).
+- [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
+- [x] Cobertura de coverage al 100%.
+
+
+
+# Laboratoria: requerimientos del proyecto Data Lovers
 ## Índice
 
 - [Preámbulo](#preámbulo)

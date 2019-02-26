@@ -1,8 +1,31 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
 
-const example = () => {
-  return 'example';
-};
+window.worldBnk = {
 
-window.example = example;
+filterCountry:(dataWorld,countrySelect,indiSelect)=> {
+
+  
+const country= dataWorld[countrySelect].indicators;
+
+const matchIndicator= country.filter (element => {
+return element.indicatorName === indiSelect;
+
+})
+
+
+ let indicatorFilter=matchIndicator;
+
+  indicatorFilter.forEach (element => {
+   
+   
+   let dataIndicator= element.data;
+console.log (dataIndicator);
+   return (dataIndicator);
+   
+    
+  })
+  
+
+}
+
+}
+ 
