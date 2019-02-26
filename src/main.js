@@ -3,20 +3,18 @@ const dataWorldbank = WORLDBANK; //variable que nos permite enlazar la data y ut
 const buttonCountries = document.getElementsByClassName("button");
 const selectIndicator = document.getElementById("indicator");
 const dataYear = document.getElementById("data-year");
-const sort=document.getElementById("sort");
+const sort = document.getElementById("sort");
 
 let dataFilter = {}
-
+let resultYear = {}
 //Con esta función enlazamos mediante el id del botón,la data de cada país. Para eso fue necesario poner
-//una misma clase a todos los botones y escribir el ID igual que como está en  la data.
+//una misma clase a todos los botones y escribir el ID igual que como está en la data.
 const buttonClick = () => {
   sort.classList.remove("hide");
   let countries = event.target.id;
   let result = window.WorldBank.dataCountries(dataWorldbank, countries);
   printOption(result);
 }
-
-{}
 
 for (let i = 0; i < buttonCountries.length; i++) {
   buttonCountries[i].addEventListener("click", buttonClick);
@@ -35,8 +33,8 @@ const printOption = (result) => {
       return matchs
     }
   });
-
 }
+
 
 const printYears = (resultYear) => {
   dataYear.innerHTML = "";
@@ -55,7 +53,7 @@ const printYears = (resultYear) => {
 const prueba = () => {
   const sortRadio = document.getElementsByName("sort");
   let matchYear = event.target.value;
-  let resultYear = window.WorlDbank.percentAndYear(dataFilter, matchYear);
+  resultYear = window.WorlDbank.percentAndYear(dataFilter, matchYear);
   printYears(resultYear);
   let arrResultYear = [];
   for (let i = 0; i < sortRadio.length; i++) {
@@ -77,8 +75,8 @@ const prueba = () => {
       })
       printYears2(obj);
     })
-
   }
+
 }
 
 
@@ -98,4 +96,27 @@ const printYears2 = (resultYear) => {
 }
 
 
-selectIndicator.addEventListener("change", prueba)
+selectIndicator.addEventListener("change", prueba);
+const buttonAverage = document.getElementById('average');
+const inputAverage = document.getElementById('value-average');
+//console.log(inputAverage)
+
+const printAverage = () => {
+        let arrAverage = Object.values(resultYear);
+        let arrData = []
+        for (let i in arrAverage) {
+          if (arrAverage[i] === "") {
+            arrData.push(0)
+          } else {
+            arrData.push(parseInt(arrAverage[i]))
+          }
+        }
+        let resultAverage = window.WorldBank.average(arrData);
+        let totalAverage = `<p>${parseFloat(resultAverage).toFixed(2)}%</p>`
+        console.log(totalAverage)
+        inputAverage.innerHTML = totalAverage;
+        //document.getElementById('value-average').innerHTML=totalAverage;
+        return totalAverage
+    }
+
+    buttonAverage.addEventListener('click', printAverage);
