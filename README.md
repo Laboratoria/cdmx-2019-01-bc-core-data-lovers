@@ -1,50 +1,66 @@
 # LatinoEduca
 
-## Preview
 ## Índice
 
 
+- [Introducción](#introducción)
 - [Descripción](#resumen-del-proyecto)
 - [Problema](#problema)
 - [Consideraciones Técnicas](#Consideraciones-técnicas)
 - [Proceso de diseño](#historias-de-usuario)
 - [Diseño de interfaz](#prototipado)
 - [Testeos de usabilidad](#testeos-de-usabilidad)
-- [Construido con](#construido-con)
+- [Herramientas](#Herramientas)
+
+
+
+## Introducción
+
+La educación se ha convertido en un tema de agenda y detectar las falencias de los sistemas educativos en los diferentes países es una prioridad para el progreso y desarrollo de las naciones. Sin embargo, a pesar de los múltiples esfuerzos, todavía queda mucho camino por recorrer; y eso es lo que está sucediendo en el mundo, América Latina.
+
+De acuerdo con los datos actualizados del Instituto de Estadística de la Unesco, un total de 617 millones de niños y adolescentes en todo el mundo carecen de un nivel mínimo en lectura y matemáticas. Según el organismo internacional, más de 387 millones de niños con edad para estar en primaria (un 56  por ciento) y 230 millones de adolescentes con edad para cursar el primer ciclo de secundaria (un 61  por ciento) no alcanzan ese nivel mínimo, [ver fuente](https://www.semana.com/educacion/articulo/informe-unesco-sobre-educacion-en-america-latina/542592).
 
 
 ## Resumen del proyecto 🚀
 
-El proyecto LatinoEduca se crea con el objetivo de que el gremio de investigadores utilicen los datos obtenidos en lista, información que pueda ser relevante y genere propuestas hacia la mejora continua de la educación en Latinoamérica. Creamos una app que integre información de confianza ya que son datos del Banco Mundial,que especificamente se centran en indicadores de educación en los países México, Chile, Brasil y Perú.
+LatinoEduca se crea con el objetivo de brindar datos estadísticos confiables sobre educación en una selección de países latinoamericanos, a saber Perú, Chile, Brasil y México. Está dirigido a investigadorxs, estudiantes y profesores del ámbito educativo. El alcance máximo para los datos es que sean utilizados como fundamento de proyectos y justificación para propuestas de mejora continua de la educación en Latinoamérica. La app tiene la ventaja de ofrecer objetividad al tener como fuente de información la base de datos del Banco Mundial.
 
 
-## Problema  
-Nos enfocamos en un problema que se vive en todas las carreras o sectores, que es el encontrar documentación que tenga fuentes fidedignas y que informe de países que se encuentran en Latinoamérica, seleccionando sólo a mujeres en la educación.Esto con el fin de que nuestro usuario pueda recabar información que le sirva para dar propuesras a las problemáticas educativas dentro de los países que seleccione y que tenga una visión precisa de la realidad.
+## Problema 
+
+La construcción de proyectos académicos y escolares del área educativa requieren datos recientes, confiables y objetivos para que puedan servir. La investigación, sea novel o con experiencia, implica invertir tiempo en la búsqueda de información útil para iniciar un proceso. Aunado, navegar por internet, en ocasiones se asemeja más al naufragio, debido a la enorme cantidad de portales con indicadores y que no siempre tienen la facilidad para que el usuario acceda directamente a las bases de datos; así, se requiere explorar diversas rutas y lo peor, no hay certeza de encontrar lo deseado. 
+En consecuencia, LatinoEduca busca disminuir tiempos de búsqueda y ofrece la opción de manejar los datos.
 
 
 ## Consideraciones técnicas 📋
-1.-Antes que nada, asegúrate de tener un 📝 editor de texto en condiciones, algo como Atom o Code.
-2.-Para ejecutar los comandos a continuación necesitarás una 🐚 UNIX Shell, que es un programita que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar 🐧 GNU/Linux.
-3.-Haz tu propio 🍴 fork del repo de tu cohort.
-4.-⬇️ Clona tu fork a tu computadora (copia local).
-5.-📦 Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
-6.-Si todo ha ido bien, deberías poder ejecutar las 🚥 pruebas unitarias (unit tests) con el comando npm test.
-7.-A codear se ha dicho! 🚀
+1. Antes que nada, asegúrate de tener un 📝 editor de texto en condiciones, algo como [Atom](https://atom.io/) , [Visual Code](https://code.visualstudio.com/), [Sublime  Text](https://www.sublimetext.com/3) o cualquier otro de tu preferencia.
+2. Para ejecutar los comandos a continuación necesitarás una 🐚 [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell), que es un programa que interpreta líneas de comando (command-line interpreter) así como tener [git](https://git-scm.com/) instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una *shell* (terminal) instalada por defecto (y probablemente `git` también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win), aunque recomendaría que consideres probar 🐧 GNU/Linux como tu Sistema Operativo.
+3. Haz tu propio 🍴 [fork](https://help.github.com/articles/fork-a-repo/) de este repositorio de tu cohort. Solo selecciona en el menú la opción.
+4. ⬇️ Clona tu *fork* a tu computadora (copia local).
+5. 📦 Instala las dependencias del proyecto con el comando `npm` `install`. Esto asume que has instalado [Node.js](https://nodejs.org/en/) (que incluye [npm](https://docs.npmjs.com/)).
+6. Si todo ha ido bien, deberías poder ejecutar las 🚥 pruebas unitarias (unit tests) con el comando `npm` `run` `test`.
+7. ¡Listo! 🚀
 
 ## Historias de usuario
--El colectivo de investigación busca conocer los indicadores de alfabetismo en LatinoAmérica (mujeres) para conocer su comportamiento por año.
+La primera historia consistió en:
+A. El colectivo de investigación busca conocer los indicadores de alfabetismo en LatinoAmérica (mujeres) para conocer su comportamiento por año.
 
+Conforme el proyecto fue creciendo, se escribieron las siguientes: 
+1. Yo como investigadorx quiero entrar a la aplicación y escoger un país para conocer sus índices de educación.
+2. Yo como investigadorx quiero ordenar de forma ascendente y/o descendente los datos por indicador para analizarlo.
+3. Yo como investigadorx quiero obtener el promedio del indicador revisado para analizar el grupo de datos.
 
 ## Diseño de la Interfaz de Usuario
 
 ### Prototipo de baja fidelidad
 
 
-El proyecto se da inicio con un sketch a mano alzada que crea una interfaz sencilla para iniciar.
+El proyecto se da inicio con un sketch a mano alzada que crea una interfaz sencilla para iniciar. Para darle dinamismo, utilizamos Marvel, [ver proyecto](https://marvelapp.com/599360f).
 
-![marvel](https://i.ibb.co/b2sndrk/Imagen-de-i-OS-1.jpg)
-![marvel](https://i.ibb.co/RbY4j0r/Imagen-de-i-OS-2.jpg)
-![marvel](https://i.ibb.co/JF8nTdL/Imagen-de-i-OS.jpg)
+
+
+![marvel](https://i.ibb.co/vPT8hHV/proto.png)
+
 
 
 #### Prototipo de alta fidelidad
@@ -57,6 +73,30 @@ En nuestra sección de prototipado de alta fidelidad utilizamos Figma esta herra
 
 
 ## Testeos de usabilidad
+
+En esta sección se presenta los hallazgos recientes en primer lugar y posteriormente, se podrá leer la información recabada para el sprint 3.
+
+####Segunda prueba
+
+El testeo fue realizado con cinco personas. Se les asignó una tarea a ejecutar, tenían que ubicar el indicador **Fuerza laboral con educación intermedia, varones (%de la fuerza laboral)** para el país de Perú y ordenarlos de manera ascendente.
+
+
+Al observarlas fue posible detectar que las participantes tuvieron dificultad para encontrar el área de datos, pues las primeras secciones se interponían e incluso causaban olvido sobre la consigna. En este sentido, alguna pregunto sobre la existencia de algún botón para acceder al lugar indicado.
+
+
+La introducción les permitió reconocer el tipo de sitio, pero se requiere mayor contexto en el área de datos, pues no es clara.
+
+
+La información desplegada por indicador, aparece debajo de los selectores y esto hace creer que no sucede algo, por lo que es necesario ajustar la presentación.
+
+
+[![Prueba1](https://i.ibb.co/0sFS7y1/prueba1.jpg)]
+[![Prueba2](https://i.ibb.co/wrR9XfJ/prueba2.jpg)]
+[![Prueba3](https://i.ibb.co/bFvGF1L/prueba3.jpg)]
+
+
+####Primera Prueba
+
 
 Para obtener la retroalimentación de los usuarios se decidió probar la web app con cinco personas dedicadas al ámbito educativo y vinculadas a la investigación. Las opiniones resultaron cruciales para determinar el valor de LatinoEduca 
 en las vidas académicas de los participantes, así como para los ajustes en diseño y el tipo de datos a presentar.
@@ -107,9 +147,9 @@ Finalmente, se buscó obtener una apreciación sobre el sitio en general y que e
 
 En conclusión, las áreas fuertes son identidad y contenido; mientras que, las de oportunidad son gráfica web y utilidad. La retoalimentación arrojó luz sobre los siguientes pasos a seguir.
 
-## Construido con
+## Herramientas
 
-Las herramientas son: 
+Las app se construyó con: 
 
 * Vanilla Js
 * HTML
