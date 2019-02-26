@@ -110,7 +110,14 @@ Para esta última sección es importante reacomodarla. Se sugiere que en cuanto 
 
 ## Iteración de usabilidad
 
-Para esta primera iteración de experiencia al usuario de la plataforma, se realizaron seis entrevistas. Para escuchar las entrevistas da click [aquí](https://soundcloud.com/egenesis-egonzalez).
+Para esta primera iteración de experiencia al usuario de la plataforma, se realizaron seis entrevistas con base en la siguiente guía:
+
+![Guia prueba de usabilidad](imgReadMe/primera_parteEncuesta.png)
+![Card Sorting 1](imgReadMe/card_sorting1.png)
+![Card Sorting 1](imgReadMe/card_sorting2.png)
+![Guia prueba de usabilidad](imgReadMe/segunda_parteEncuesta.png)
+
+ Para escuchar las entrevistas da click [aquí](https://soundcloud.com/egenesis-egonzalez).
 
 Con base a las anteriores pruebas de usabilidad se llegó a los siguientes insights:
 
