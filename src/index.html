@@ -1,18 +1,205 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon(2).ico">
+  <script src="./data/injuries/injuries.js"></script>
+  <script src="data.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <!--<script src="./data/injuries/injuries.js"></script>-->
+  <header>
+    <!--menu responsive-->
+    <input type="checkbox" id="burger-menu">
+    <label for="burger-menu"><img src="images/burger.png" alt="Bold"></label>
+    <nav id='menu-up' class="menu">
+      <ul>
+        <li><a class="logo"> City / Transport / Data</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a>
+          <ul id="site_about" class="site_about" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">City
+            / Transport / Data is the principal data organization with respect to mobility injures by urbans
+            transportations modes.
+            Our mission is to make through investigation, data collection, analysis, and information sharing.
+            All cities all over the world recognized safety and security mobility in its goals, objectives and polices.
+            Specific objectives were translated into performance criteria used to establish priorities for planned
+            transportation improvements.
+            A key way to measure safety is evaluating the total number of injured persons in each mode of
+            transportation.
+
+            DataDashboard share information to measure safety evaluating the total number of injured persons in each
+            mode of transportation by year
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <!-- <i class="fab fa-facebook-f"></i><br>
+        <i class="fab fa-twitter"></i> -->
+      </ul>
+    </nav>
+  </header>
+  <nav id="cd-vertical-nav">
+    <p style="font-size:12px;">Use the menú<br>to navegate</p>
+    <ul>
+        <li>
+            <a href="#section1" data-number="1">
+                <span class="cd_dot">1</span>
+                <span class="cd-label">Top</span>
+            </a>
+        </li>
+        <li>
+            <a href="#section2" data-number="2">
+                <span class="cd_dot">2</span>
+                <span class="cd-label">Pedestrians</span>
+            </a>
+        </li>
+        <li>
+            <a href="#section3" data-number="3">
+                <span class="cd_dot">3</span>
+                <span class="cd-label">Bikecyclists</span>
+            </a>
+        </li>
+        <li>
+            <a href="#section4" data-number="4">
+                <span class="cd_dot">4</span>
+                <span class="cd-label">Bus Occupants</span>
+            </a>
+        </li>
+        <li>
+            <a href="#section5" data-number="5">
+                <span class="cd_dot">5</span>
+                <span class="cd-label">Car Occupants</span>
+            </a>
+        </li>
+        <li>
+          <a href="#section6" data-number="6">
+              <span class="cd_dot">6</span>
+              <span class="cd-label">Motorcyclists</span>
+          </a>
+      </li>
+  <section id="realB">
+    <!--<section1 id="principalpage" class=hide>-->
+    <h1>Injured people by<br>transportation mode</h1>
+    <h2>in United States of America</h2>
+    <h3>DataDashboard share information to measure safety by evaluating the total number of injured persons in each
+      mode of transportation:</h3>
+    <button class="fas fa-walking button-transport" id="pedestrians" name="Total_Injured_Persons_Pedestrians"></button>
+    <button class="fas fa-bicycle button-transport" id="pedalcyclists" name="Total_Injured_Persons_Pedalcyclists"></button>
+    <button class="fas fa-bus button-transport" id="bus_occupants" name="Total_Injured_Persons_Bus_Occupants"></button>
+    <button class="fas fa-car button-transport" id="car_occupants" name="Total_Injured_Persons_Passenger_Car_Occupants"></button>
+    <button class="fas fa-motorcycle button-transport" id="motorcyclists" name="Total_Injured_Persons_Motorcyclists"></button>
+  </section>
+  <section class="infoBody content">
+    <h1 class="subtitles">Pedestrians</h1>
+    <article class="info">
+      <h4>Number of injuries at year for this transport mode since 2001 to 2016</h4>
+      <p>In the pyramid of mobility, pedestrians should be a priority for two main reasons: they are the weakest and it
+        is the majority form of displacement, apart from the reasoning that we are all pedestrians. Making the weak and
+        weak strong is the slogan: the pedestrian must have the highest priority because he is weaker than the bicycle
+        and much weaker than the car. Therefore, the speed of the city should be regulated according to the pedestrian.</p>
+      <article class="images">
+        <img src="./images/pedestrian.png" width="300" height="300" />
+      </article>
+    </article>
+    <div class="chart_div"></div>
+  </section>
+  <section class="infoBody content">
+    <h1 class="subtitles">Pedalcyclists</h1>
+    <article class="info">
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>The bicycle should be the preferred vehicle for several reasons: it is very efficient in small distances (the
+        majority); it's cheap (much less than the 5,000 and 10,000 euros that you have to pay annually for a car); it
+        does not pollute making noise or eliminating toxic gases; It is less dangerous than a car; it consumes less
+        space; It is healthy.</p>
+      <article class="images">
+        <img src="./images/bikecyclist.png" width="300" height="300" />
+      </article>
+    </article>
+    <div class="chart_div"></div>
+  </section>
+  <section class="infoBody content">
+    <h1 class="subtitles">Bus occupants</h1>
+    <article class="info">
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>Public transport consumes less public space than cars; it is economically more viable for the user and in
+        public infrastructures; favors intermodality with pedestrians</p>
+      <article class="images">
+        <img src="./images/busoccupants.png" width="300" height="300" />
+      </article>
+    </article>
+    <div class="chart_div"></div>
+  </section>
+  <section class="infoBody content">
+    <h1 class="subtitles">Car occupants</h1>
+    <article class="info">
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <article class="images">
+        <img src="./images/car occupants.png" width="300" height="300" />
+      </article>
+    </article>
+    <div class="chart_div"></div>
+  </section>
+  <section class="infoBody content">
+    <h1 class="subtitles">Motorcyclists</h1>
+    <article class="info">
+      <h4>Number of injuries at year for this transport mode since 2001 to 2015</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <article class="images">
+        <img src="./images/motorcyclist.png" width="300" height="300" />
+      </article>
+    </article>
+    <div class="chart_div"></div>
+  </section>
+  <section id="year_section" class="slideshow-area">
+    <h3>Or search by year:</h3>
+    <select id="selected_year" name="year" class="year_button">
+      <option selected value="0"> YEAR </option>
+      <option class="year" value="2001-01-04">2001</option>
+      <option class="year" value="2002-01-04">2002</option>
+      <option class="year" value="2003-01-04">2003</option>
+      <option class="year" value="2004-01-04">2004</option>
+      <option class="year" value="2005-01-04">2005</option>
+      <option class="year" value="2006-01-04">2006</option>
+      <option class="year" value="2007-01-04">2007</option>
+      <option class="year" value="2008-01-04">2008</option>
+      <option class="year" value="2009-01-04">2009</option>
+      <option class="year" value="2010-01-04">2010</option>
+      <option class="year" value="2011-01-04">2011</option>
+      <option class="year" value="2012-01-04">2012</option>
+      <option class="year" value="2013-01-04">2013</option>
+      <option class="year" value="2014-01-04">2014</option>
+      <option class="year" value="2015-01-04">2015</option>
+      <option class="year" value="2016-01-04">2016</option>
+    </select>
+    <button class="visualize_data_button" id="visualize_data" name="visualize_data" value="visualize_data">VISUALIZE
+      DATA</button>
+  </section>
+  <section class="year-section">
+    <section id="result_graphic" class="result_graphic">
+      <h4>Injures by year in all transportation modes</h4>
+    </section>
+    <br>
+    <section class="pieChart">
+      <div id="piechart"></div>
+    </section>
+  </section>
+</body>
+<script src="main.js"></script>
+
 </html>
