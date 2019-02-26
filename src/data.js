@@ -1,15 +1,5 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
-// window.WorldBank = {
-//     filterData: (arrayData, stringYear) =>{
-
-//       const dataFiltered = arrayData.filter((element) =>{
-//         return element.year === stringYear;
-//       })
-//       return dataFiltered
-//     }
-
-//   }
 window.WorldBank = {
   filterCountry: (data, country, countrySelect) => { // data dataset indicatorcode
     //let country = listQuestion.dataset.ciudad;// Obtenemos la ciudad de la que vamos a filtrar, es decir, obtenemos el data-ciudad del select
