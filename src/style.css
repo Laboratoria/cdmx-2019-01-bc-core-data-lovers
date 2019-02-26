@@ -1,216 +1,220 @@
-/* 
---------------------------
-----ESTILOS GENERALES-----
--------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');   
-*{
-   padding: 0vw;
-   margin:0vw;
-   font-family: 'Special Elite', cursive;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   display: inline-block;
-   
-}
-/* 
---------------------------
-------ESTILOS MOBIL------
--------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
-@media only screen and (max-width: 600px){
-  title {
-    color: transparent;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
   }
-  #regresar {
+body {
+ background:#cf2835;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+ 
+  background-image: url(assets/favicon.png);
+  background-repeat: no-repeat;
+  
+  }
+
+  input {
+    background: rgb(32, 30, 30);
+    color: rgb(210, 203, 203);
+    width: 72%;
+    padding: 2vh 0vh 2vh 3vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 17px;
+    margin-left: 50px;
+    display: inline-block;
+    position: absolute;
+    }
+
+    nav {
+      overflow: hidden;
+      margin-left: 10px;
+    }
+    
+   nav button {
+      float: left; 
+      margin-right: 6px;
+      display: block;
+      text-decoration: none;
+  }
+ 
+button:hover {
+  background-color: #0431B4;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header{ 
+    width: 850px;
+    background-size: 6vh;
+  background-position-x: 3vh;
+  background-position-y: 3vh; 
+  }
+
+input{
+  margin-left: 50px;
+}
+
+.button-group {
+    margin-left: 3vh;
+    overflow: hidden;
+    margin-top: 5vh;
+          }
+          
+.btn {
+    color: #fff; /* color tipográfico */
+   font-family: 'Rubik', sans-serif; /* familia tipográfica */
+    font-size: 10px; /* tamaño de la fuente */
+    background-color: #0080FF; /* color de fondo */ 
+    padding: 1%; /* más cuerpo al botón */
+    border: 1px solid #0040FF;
+    border-radius: 3px; /* puntas redondeadas*/
+    padding: -2vh 7vh 10vh 7vh;
+ }
+
+ .screen{
+    display: inline-block;
+    position: absolute;
+    bottom: 45px;
+    right: 10px;
+    background: rgb(32, 30, 30);
+    height: 57%;
+    border-radius: 2vh;
+    width: 89%;
+    margin: 1vh;
+    border-style: solid;
+    border-width: 13px;
+    border-color: white;
+}
+
+#bottom-button-sort-AtoZ {
+    height: 4%;
+    width: 22vh;
+    border-radius: 2vh;
+    position: absolute;
+    bottom: 4vh;
+    left: 5vh;
+    border: .2vh solid darkred;
+    background: #FF002B;
+    z-index: 3;
+    color: darkred;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vh;
+    box-shadow: -.2vh .2vh darkred;
+  }
+  #bottom-button-sort-ZtoA {
+    height: 4%;
+width: 22vh;
+border-radius: 2vh;
+position: absolute;
+bottom: 4vh;
+left: 30vh;
+border: .2vh solid darkblue;
+background: #0040FF;
+z-index: 3;
+color: darkblue;
+font-family: 'Rubik', sans-serif;
+font-size: 2vh;
+box-shadow: -.2vh .2vh darkblue;
+  }
+  #results {
+    overflow: auto;
+  }
+  .pokedex {
+      background: transparent;
+      color: white;
+    }
+  }
+  
+
+
+  @media only screen and (min-width: 601px) {
+
+    header {
+width: 100%;
+background-size: 15vh;
+background-position-x: 20vh;
+background-position-y: 7vh;
+}
+input {
+  margin-left: 235px;
+  margin-top: 75px;
+  width: 70%;
+  }
+    .button-group {
+        display: inline-flex;
+  margin-left: 36vh;
+  margin-top: 14vh;
+}
+.btn {
+  color: #fff;
+font-family: 'Rubik', sans-serif;
+font-size: 12px;
+background-color: #0080FF;
+border: 0px solid #0040FF;
+border-radius: 3px;
+padding: 12px;
+}
+
+.screen {
+  display: inline-block;
+  position: absolute;
+  bottom: 82px;
+  right: 238px;
+  background: rgb(32, 30, 30);
+  height: 59%;
+  border-radius: 2vh;
+  width: 60%;
+  margin: 1vh;
+  border-style: solid;
+  border-width: 13px;
+  border-color: white;
+}
+
+#bottom-button-sort-AtoZ {
+  height: 4%;
+  width: 22vh;
+  border-radius: 2vh;
+  position: absolute;
+  bottom: 4vh;
+  left: 65vh;
+  border: .2vh solid darkred;
+  background: #FF002B;
+  z-index: 3;
+  color: darkred;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2vh;
+  box-shadow: -.2vh .2vh darkred;
+}
+#bottom-button-sort-ZtoA {
+  height: 4%;
+width: 22vh;
+border-radius: 2vh;
+position: absolute;
+bottom: 4vh;
+    left: 125vh;
+border: .2vh solid darkblue;
+background: #0040FF;
+z-index: 3;
+color: darkblue;
+font-family: 'Rubik', sans-serif;
+font-size: 2vh;
+box-shadow: -.2vh .2vh darkblue;
+}
+#results {
+  overflow: auto;
+}
+.pokedex {
+  size: 50%;
     background: transparent;
-    border: 0;
     color: white;
-    font-size: 100%;
-    float: right;
-    margin-top: 30%;
-    margin-right: 12%;
-}
-#start {
-  background-image: url(./start.png);
-  height: -webkit-fill-available;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: 100vW;
- }
- #buttonContainer {
-     display: inline-block;
-     padding: 41vw;
-     height: 59vw;
-     width: 60vw;
-     margin-top: 39vw;
-     margin-left: 0vw;
-
- }
- #startPokemon  {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 4vw;
-}
-.boton-typeChart  {
-  background-color: #0763db;
-  border: none;
-  padding: 2vw;
-  margin: 1vw;
-  font-size: 4vw;
-}
- #options {
-  background-image: url(./options.png);
-  height: -webkit-fill-available;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: 100vw;
- }
- #optionsContainer {
-  display: inline-block;
-  height: 28vw;
-  width: 70vw;
-  margin-top: 70vw;
-  margin-left: 18vw;
-}
-
- #rootContainer {
-  background-image: url(./result.png);
-  height: -webkit-fill-available;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: 100vw;
- }
-
-#nextContainer {
-  display: inline-block;
-  height: 57vw;
-  width: 66vw;
-}
-#nextPage {
-  margin-top: 46vw;
-  margin-left: 42vw;
-  background-color: transparent;
-  font-size: 5vw;
-  padding: 3vw;
-  color: white;
-  border: 0;
-}
-#root {
-  overflow: auto;
-  height: 85vw;
-  width: 66vw;
-  margin-top: 17vw;
-  margin-left: 14vw;
-}
-#options, #rootContainer {
-  display: none;
-}
-#ordenar{
-  margin-top: 12%;
-  float: right;
-  margin-right: -36%;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 102%;
-}
-#ordenarDesktop {
-  display: none
-}
-}
-
-/* 
---------------------------
-------ESTILOS DESKTOP-----
--------------------------*/
-@media only screen and (min-width: 601px) {
-  body {
-    background-image: url(./background.png);
-     background-color: #2697FF;
-     BACKGROUND-REPEAT: NO-REPEAT;
-     BACKGROUND-SIZE: 80%;
-     background-position: center;
-}
-
-#startPokemon {
-  color: transparent;
-  background-color: transparent;
-  border: none;
-}
-.boton-typeChart {
-  display: inline-block;
-  background-color: #0763db;
-  padding: 1%;
-  font-size: 83%;
-  margin: 1%;
-  background-attachment: fixed;
-}
-.botonesInferiores{
- display: none;
-  margin-top: 16%
-}
-#regresar{
-  display:none;
-}
-#options {
-  float: right;
-  width: 45vw;
-  height: 69vw;
-  background-attachment: fixed;
-}
-
-#optionsContainer {
-  width: 59%;
-    height: 24%;
-    margin-top: 74%;
-    margin-left: 8%;
-  background-attachment: fixed;
-}
-#rootContainer {
-  float: left;
-  width: 51vw;
-  height: 68vw;
-  background-attachment: fixed;
-}
-#root {
-  overflow: auto;
-  width: 24vw;
-  height: 29vh;
-  margin-top: 22vw;
-  padding: 7%;
-  margin-left: 26%;
-}
-
-#nextPage {
-  background-color: transparent;
-  color: transparent;
-  border: 0;
-}
-head {
-  color: transparent;
-}
-#charmander {
-  background-image: url(./atrapalosya.png);
-  width: 44%;
-  display: inline-block;
-  height: 15%;
-  background-size: 101%;
-  margin-top: 51%;
-  margin-left: 33%;
-
-}
-.gif{
-  background-image: url(./FeminineRemarkableChuckwalla-small.gif);
-    width: 45%;
-    height: 67%;
-    /* display: inline-block; */
-    float: inherit;
-    margin-top: -16%;
-    margin-left: 33%;
-}
-#ordenarDesktop {
-  margin-top: 16%;
-  margin-left: 29%;
-}
+  }
 }
