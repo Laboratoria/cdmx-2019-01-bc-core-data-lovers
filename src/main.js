@@ -2,6 +2,8 @@
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
 const container = document.getElementById('ctn__general');
+const body = document.getElementById('body');
+const header = document.getElementById('header');
 // const para opciones de menu 
 const btnAbout = document.getElementById("btn-about");
 const btnNews = document.getElementById("btn-news");
@@ -12,10 +14,12 @@ const about = document.getElementById("about");
 const filters = document.getElementById("general-filter");
 //evento para hide y mostrar elementos
 navIcon.addEventListener("click", () =>{  
+  navIcon.classList.toggle("open");
+
 	navMenu.classList.toggle("open");
   container.classList.toggle("open");
-  navIcon.classList.toggle("open");
-  navIcon.style.overflow= "hidden";
+  body.classList.toggle("fixed");
+  header.classList.toggle("open");
 })
 btnAbout.addEventListener('click', () => {
   about.classList.remove('hide');
@@ -41,6 +45,20 @@ btnFilters.addEventListener('click', () => {
 window.onload = function cargar(){
   filters.classList.remove('hide');
 }
+
+var elementsArray = document.querySelectorAll('.item-menu');
+
+elementsArray.forEach(function(elem) {
+    elem.addEventListener("click", function() {
+      navIcon.classList.remove("open");
+      container.classList.remove("open");
+
+      navMenu.classList.remove("open");
+      body.classList.remove("fixed");
+      header.classList.remove("open");
+    });
+});
+
 //acceder a la data de cada pais
 //const data = window.WORLDBANK;
 let data = {};
