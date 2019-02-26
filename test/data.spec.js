@@ -1,12 +1,11 @@
 require('../src/data.js');
 require('../src/data/pokemon/pokemon.js')
 
-const dataBase = [
-  {
+const dataBase = [{
   "id": 1,
   "num": "001",
   "name": "Bulbasaur",
-  "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/001.png",
   "type": [
     "Grass",
     "Poison"
@@ -15,6 +14,7 @@ const dataBase = [
   "weight": "6.9 kg",
   "candy": "Bulbasaur Candy",
   "candy_count": 25,
+  
   "egg": "2 km",
   "spawn_chance": 0.69,
   "avg_spawns": 69,
@@ -33,11 +33,11 @@ const dataBase = [
     "num": "003",
     "name": "Venusaur"
   }]
-},{
+}, {
   "id": 13,
   "num": "013",
   "name": "Weedle",
-  "img": "http://www.serebii.net/pokemongo/pokemon/013.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/013.png",
   "type": [
     "Bug",
     "Poison"
@@ -67,11 +67,11 @@ const dataBase = [
     "num": "015",
     "name": "Beedrill"
   }]
-},{
+}, {
   "id": 18,
   "num": "018",
   "name": "Pidgeot",
-  "img": "http://www.serebii.net/pokemongo/pokemon/018.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/018.png",
   "type": [
     "Normal",
     "Flying"
@@ -99,7 +99,7 @@ const dataBase = [
   "id": 14,
   "num": "014",
   "name": "Kakuna",
-  "img": "http://www.serebii.net/pokemongo/pokemon/014.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/014.png",
   "type": [
     "Bug",
     "Poison"
@@ -134,7 +134,7 @@ const dataBase = [
   "id": 15,
   "num": "015",
   "name": "Beedrill",
-  "img": "http://www.serebii.net/pokemongo/pokemon/015.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/015.png",
   "type": [
     "Bug",
     "Poison"
@@ -164,7 +164,7 @@ const dataBase = [
   "id": 16,
   "num": "016",
   "name": "Pidgey",
-  "img": "http://www.serebii.net/pokemongo/pokemon/016.png",
+  "img": "https://www.serebii.net/pokemongo/pokemon/016.png",
   "type": [
     "Normal",
     "Flying"
@@ -192,8 +192,7 @@ const dataBase = [
     "num": "018",
     "name": "Pidgeot"
   }]
-},
-]
+}, ]
 
 describe('data', () => {
   it('data is a object', () => {
@@ -205,15 +204,15 @@ describe('data', () => {
   });
 
   it('Deberia devolver el arr de Poison si elegimos Poison ', () => {
-    expect(window.data.filterPokemon(dataBase,"Grass")[0].type[0]).toEqual("Grass");
+    expect(window.data.filterPokemon(dataBase, "Grass")[0].type[0]).toEqual("Grass");
   });
 
   it('Deberia devolver el arr de Bug si elegimos Bug ', () => {
-    expect(window.data.filterPokemon(dataBase,"Bug")[0]).toEqual(dataBase[1]);
+    expect(window.data.filterPokemon(dataBase, "Bug")[0]).toEqual(dataBase[1]);
   });
 
   it('Deberia devolver el arr de Normal si elegimos Normal ', () => {
-    expect(window.data.filterPokemon(dataBase,"Normal")[0]).toEqual(dataBase[2]);
+    expect(window.data.filterPokemon(dataBase, "Normal")[0]).toEqual(dataBase[2]);
   });
 
   it('sortDataPokemon is a function', () => {
@@ -221,16 +220,18 @@ describe('data', () => {
   });
 
   it('Deberia devolver el arr con peso Ascendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"weight","asc")[0].weight).toEqual("1.8 kg");
+    expect(window.data.sortDataPokemon(dataBase, "weight", "asc")[0].weight).toEqual("1.8 kg");
   });
   it('Deberia devolver el arr con peso Descendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"weight","dsc")[0].weight).toEqual("39.5 kg");
+    expect(window.data.sortDataPokemon(dataBase, "weight", "dsc")[0].weight).toEqual("39.5 kg");
   });
   it('Deberia devolver el arr con Altura Ascendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"height","asc")[0].height).toEqual("0.30 m");
+    expect(window.data.sortDataPokemon(dataBase, "height", "asc")[0].height).toEqual("0.30 m");
   });
   it('Deberia devolver el arr con Altura Descendente', () => {
-    expect(window.data.sortDataPokemon(dataBase,"height","dsc")[0].height).toEqual("1.50 m");
+    expect(window.data.sortDataPokemon(dataBase, "height", "dsc")[0].height).toEqual("1.50 m");
+    expect(window.data.sortDataPokemon(dataBase, "height")[0].height).toEqual("1.50 m");
+
   });
 
   it('filterLetterPokemon is a function', () => {
@@ -238,14 +239,12 @@ describe('data', () => {
   });
 
   it('Deberia devolver la coincidencia de Bul Bulbasaur', () => {
-    expect(window.data.filterLetterPokemon(dataBase,"Bul")[0].name).toEqual("Bulbasaur");
+    expect(window.data.filterLetterPokemon(dataBase, "Bul")[0].name).toEqual("Bulbasaur");
   });
 
   it('Deberia devolver la coincidencia de Kakuna', () => {
-    expect(window.data.filterLetterPokemon(dataBase,"Kakuna")[0]).toEqual(dataBase[3]);
+    expect(window.data.filterLetterPokemon(dataBase, "Kakuna")[0]).toEqual(dataBase[3]);
   });
 
-  
+
 });
-
-
