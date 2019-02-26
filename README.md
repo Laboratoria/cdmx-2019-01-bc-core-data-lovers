@@ -114,7 +114,7 @@ Para esta primera iteración de experiencia al usuario de la plataforma, se real
 
 Con base a las anteriores pruebas de usabilidad se llegó a los siguientes insights:
 
-![Insights pruebas de usabilidad](imgReadMe/gif_pokepedia.png)
+![Insights pruebas de usabilidad](imgReadMe/insight_pokepedia.png)
 
 Partiendo de estos puntos, se sugiere realizar los siguientes cambios en la interfaz:
 
@@ -125,7 +125,7 @@ Partiendo de estos puntos, se sugiere realizar los siguientes cambios en la inte
 
 Con estos puntos, se realizó la siguiente iteración en la interfaz:
 
-![UX iteración de diseño](imgReadMe/pokepedia.gif)
+![UX iteración de diseño](imgReadMe/gif_pokepedia.gif)
 
 ## Pre-requisitos e instalación
 
