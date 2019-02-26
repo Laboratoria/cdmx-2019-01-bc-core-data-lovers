@@ -15,15 +15,15 @@ const printPokemonFilter = document.getElementById('printPokemonFilter');
 const buttonRegionKantoOnFilter = document.getElementById('buttonRegionKantoOnFilter');
 //const pokemonJson = ("./data/pokemon/pokemon.json");
 var ctx = document.getElementById("myChart");
-
-const pokemonJson = ("https://gabycastro1403.github.io/cdmx-2019-01-bc-core-data-lovers/src/data/pokemon/pokemon.json");
+console.log('aslnasljdn')
+const pokemonJson = ("./data/pokemon/pokemon.json");
 //console.log(pokemonJson);
 //JSON que pinta en la región Kanto y guarda en local storage
 fetch(pokemonJson)
 .then(response => response.json())
 .then(dataPokemon => {
-  const allPokemon = dataPokemon.pokemon
-  localStorage.setItem("pokemon",JSON.stringify(allPokemon));
+  const data = dataPokemon.pokemon
+  const allPokemon =  localStorage.setItem("pokemon",JSON.stringify(data));
   pokemonjson(allPokemon);
 });
 
