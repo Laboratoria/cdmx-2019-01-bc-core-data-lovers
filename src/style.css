@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media screen and (min-width:320px) {
+
+  #start {
+    background-image: url(./imagenes/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  article {
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 75%;
+    background-color: rgba(29, 33, 40, 0.5);
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #efc056;
+    font-size: 2.5em;
+    margin: 0 auto;
+  }
+
+  .logo1 {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+
+  .logo2 {
+    width: 40%;
+    padding: 30px;
+    float: right;
+  }
+
+  .start {
+    border-radius: 20px;
+    border-color: #efc056;
+    border-width: 5px;
+    color: #efc056;
+    padding: 50px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgba(29, 33, 40, 0.5);
+    font-size: 3em;
+    font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #enlisted {
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    display: inline-block;
+  }
+
+  ul {
+    list-style: none;
+    padding: 30px;
+  }
+
+  .drop-down li {
+    background-color: black;
+    color: #efc056;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+  }
+
+  .drop-down li:hover {
+    background-color: #434343;
+  }
+
+  .drop-down li ul {
+    margin: 0px;
+    display: none;
+    position: absolute;
+    width: 40%;
+  }
+
+  .drop-down li:hover>ul {
+    display: block;
+  }
+
+  .drop-down li ul li {
+    position: relative;
+    margin-left: -40px;
+  }
+
+  .drop-down li ul li ul {
+    left: 100%;
+    top: -30px;
+    width: 50%;
+  }
+
+  .drop-down li ul li ul li ul li {
+    width: 200%;
+  }
+
+  #hamburger {
+    width: 100%;
+  }
+
+  #search {
+    background-color: rgba(29, 33, 40, 0.5);
+    border-color: #efc056;
+    background-image: url(./imagenes/lupa.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-width: 5px;
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 3em;
+    color: #efc056;
+    margin-top: 25%;
+    margin-bottom: 22px;
+  }
+
+  footer {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 2em;
+    color: #efc056;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    left: -24px;
+    height: 2.2em;
+    padding-top: 30px;
+  }
+
+  #separator {
+    height: 100px;
+  }
+
+  #footer-lens {
+    width: 6%;
+    position: absolute;
+    margin-top: -3%;
+    margin-left: 4%;
+  }
+
+  #champion-list {
+    background-color: black;
+    padding: 25px;
+    padding-top: 50px;
+    min-height: 100vh;
+  }
+
+  h3 {
+    color: white;
+    font-size: 2.7em;
+    color: #efc056;
+    position: absolute;
+    transform: translate(0, -58px);
+    background-color: rgba(29, 33, 40, 0.5);
+    width: 29%;
+    text-align: center;
+  }
+
+  p {
+    font-size: 2.5em;
+    color: #efc056;
+  }
+
+  .square {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .champion {
+    width: 31%;
+    display: inline-block;
+    margin: 0 1% 1%;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .tags {
+    background-color: rgba(29, 33, 40, 0.5);
+    border-top-color: #efc056;
+    border-top-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 6em;
+    text-align: center;
+  }
+
+  /* Aquí comienzan los estilos del modal de los campeones */
+  #modal-champ {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #close-fun {
+    color: #efc056;
+    font-size: 2.8em;
+    font-weight: bold;
+    border-radius: 50%;
+    border-color: #efc056;
+    border-style: solid;
+    margin: 0px;
+    position: absolute;
+    right: 10%;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+  }
+
+  /* Contenido del modal */
+  .modal-content {
+    display: block;
+    background-color: rgba(29, 33, 40);
+    margin: auto;
+    border: 0px;
+    width: 85%;
+    height: 60%;
+    padding-top: 30%;
+  }
+
+  .background-modal {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    border-top-color: #efc056;
+    border-top-style: solid;
+    padding-top: 3%;
+  }
+
+  h1 {
+    font-size: 3em;
+    color: #efc056;
+    text-align: center;
+    padding: 1%;
+  }
+
+  .champion-title {
+    font-size: 3em;
+    color: #efc056;
+    text-align: center;
+    padding-bottom: 2%
+  }
+
+  .champion-stats {
+    padding-left: 3%;
+  }
+
+  /* Aquí comienzan los estilos del modal fun */
+  #modal-fun {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-box {
+    display: block;
+    background-color: rgba(29, 33, 40);
+    margin: auto;
+    border: 0px;
+    width: 85%;
+    height: 60%;
+    padding-top: 30%;
+  }
+
+  .background-fun {
+    background-image: url(./imagenes/garen.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    border-top-color: #efc056;
+    border-top-style: solid;
+    padding-top: 3%;
+  }
+
+  #average-fun {
+    font-size: 3em;
+    padding: 5%;
+    text-align: center;
+  }
+
+  #close-modal-fun {
+    color: #efc056;
+    font-size: 2.8em;
+    font-weight: bold;
+    border-radius: 50%;
+    border-color: #efc056;
+    border-style: solid;
+    margin: 0px;
+    position: absolute;
+    right: 10%;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+  }
+}
+
+@media screen and (min-width:992px) {
+  article {
+    width: 60%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: #efc056;
+    text-align: center;
+    padding: 1%;
+  }
+
+  .logo1 {
+    width: 30%;
+    padding-top: 50px;
+  }
+
+  .logo2 {
+    width: 15%;
+    padding: 12px;
+  }
+
+  .start {
+    padding: 25px 50px;
+    font-size: 2em;
+  }
+
+  #search {
+    margin-top: 8%;
+    width: 40%;
+    height: 50px;
+    font-size: 1.8em;
+  }
+
+  footer {
+    font-size: 1em;
+    padding-top: 16px;
+  }
+
+  #footer-lens {
+    width: 2%;
+    margin-top: -2%;
+  }
+
+  h3 {
+    font-size: 1.8em;
+    width: 20%;
+    transform: translate(0, -50px);
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+
+  .champion {
+    width: 21%;
+    margin: 0 2% 2%;
+  }
+
+  #enlisted {
+    width: 5%;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-top: 2px;
+    font-size: 2em;
+  }
+
+  ul {
+    padding: 0px;
+  }
+
+  .drop-down li {
+    padding: 0px 0px;
+  }
+
+  .drop-down li ul {
+    margin: 0px;
+    display: none;
+    position: absolute;
+    width: 27%;
+  }
+
+  .drop-down li:hover>ul {
+    display: block;
+  }
+
+  .drop-down li ul li {
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .drop-down li ul li ul {
+    left: 100%;
+    top: 0px;
+    width: 73%;
+  }
+
+  .drop-down li ul li ul li ul li {
+    width: 140%;
+  }
+
+  .tags {
+    height: 3em;
+  }
+
+  #close-fun {
+    font-size: 1.8em;
+    margin-top: 2%
+  }
+
+  /* Contenido del modal */
+  .modal-content {
+    padding-top: 10%;
+    height: 70%;
+  }
+
+  .background-modal {
+    height: 50vh;
+    padding-top: 3%;
+  }
+
+  h1 {
+    font-size: 2.2em;
+    color: #efc056;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .champion-title {
+    font-size: 2.2em;
+    color: #efc056;
+    text-align: center;
+    padding-bottom: 2%
+  }
+
+  .champion-stats {
+    padding-left: 3%;
+    font-size: 2em;
+  }
+
+  /* Aquí comienzan los estilos del modal fun */
+  .background-fun {
+    background-image: url(./imagenes/garen.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    border-top-color: #efc056;
+    border-top-style: solid;
+    padding-top: 3%;
+  }
+
+  .modal-box {
+    display: block;
+    background-color: rgba(29, 33, 40);
+    margin: auto;
+    border: 0px;
+    width: 85%;
+    height: 70%;
+    padding-top: 10%;
+  }
+
+  #average-fun {
+    font-size: 2.5em;
+    padding: 1%;
+    text-align: center;
+  }
+
+  #close-modal-fun {
+    color: #efc056;
+    font-size: 2.8em;
+    font-weight: bold;
+    border-radius: 50%;
+    border-color: #efc056;
+    border-style: solid;
+    margin: 0px;
+    position: absolute;
+    right: 10%;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 1.7em;
+    width: 15.4%;
+    transform: translate(0, -50px);
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .champion {
+    width: 16%;
+    margin: 0 2% 2%;
+  }
+
+  #close-fun {
+    font-size: 1.8em;
+    margin-top: 2%;
+    margin-right: 7%;
+  }
+
+  /* Contenido del modal */
+  .modal-content {
+    padding-top: 10%;
+    height: 75%;
+    width: 70%;
+  }
+
+  .background-modal {
+    height: 50vh;
+    padding-top: 3%;
+  }
+
+  h1 {
+    font-size: 2em;
+    color: #efc056;
+    text-align: center;
+    padding: 1%;
+  }
+
+  .champion-title {
+    font-size: 2em;
+    color: #efc056;
+    text-align: center;
+    padding-bottom: 1%
+  }
+
+  .champion-stats {
+    padding-left: 3%;
+    font-size: 1.3em;
+  }
+
+/* Aquí comienzan los estilos del modal fun */
+.background-fun {
+  background-image: url(./imagenes/garen.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  border-top-color: #efc056;
+  border-top-style: solid;
+  padding-top: 3%;
+}
+
+.modal-box {
+  display: block;
+  background-color: rgba(29, 33, 40);
+  margin: auto;
+  border: 0px;
+  width: 50%;
+  height: 75%;
+  padding-top: 10%;
+}
+
+#average-fun {
+  font-size: 1.5em;
+  padding: 1.8%;
+  text-align: center;
+}
+
+
+
+#close-modal-fun {
+  color: #efc056;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 50%;
+  border-color: #efc056;
+  border-style: solid;
+  margin: 0px;
+  position: absolute;
+  right: 26%;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+}

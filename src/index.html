@@ -1,18 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>LoL: Walkthrough</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--imagen para pestaña-->
+  <link rel="icon" href="imagenes/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="root"></div>
+  <!--Página de inicio-->
+  <section id="start">
+   <!--h2 con class hide escrito por requerimiento para validar en w3-->
+    <h2 class="hide">HEADING</h2>
+    <img class="logo1" src="imagenes/logo_lol2.png" alt="">
+    <article>
+      <h2>Here you can find information about
+        <br>League of Legends champions
+      </h2>
+    </article>
+    <!-- <input id="user-name" type="text" placeholder="Username">
+    <input id="user-password" type="text" placeholder="Password"> -->
+
+    <button class="start" id="start-button">Log In</button>
+  </section>
+
+  <!--Página de acción-->
+  <section class="hide" id="champion-list">
+    <!--Cuerpo de la página-->
+
+    <input id="search" type="search" placeholder="Search by name">
+
+    <h2>Select a champion <br> to view their stats!</h2>
+
+    <div class="square" id="card-summary">
+    </div>
+    <!-- Contenido del modal de cada campeon-->
+    <div class="hide" id="modal-champ">
+      <!-- Contenido del modal -->
+      <div class="modal-content">
+        <span class="close" id="close-fun">x</span>
+        <div id="printModal">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hide" id="modal-fun">
+          <!-- Contenido del modal de fun facts-->
+          <div class="modal-box">
+            <span class="close" id="close-modal-fun">x</span>
+            <h1>Did you know?</h1>
+            <div class="background-fun">
+            </div>
+            <p id="average-fun">The averge difficulty of the champions is <span id="average"></span> </p>
+
+          </div>
+        </div>
+
+    <div id="separator"></div>
+
+    <!--Pie de página-->
+    <footer>
+      All Rights Reserved, Elenore-Maritza duo®, 2019.
+      <a href="#champion-list"> <img id="footer-lens" src="imagenes/subir.png" alt=""></a>
+    </footer>
+    <!--Header -->
+    <header>
+      <div id="enlisted">
+        <ul class="drop-down">
+          <li><a><img id="hamburger" src="imagenes/hamb.png" alt=""></a>
+
+            <ul>
+              <li><a>Filter by role</a>
+                <ul>
+                  <li class="rol" id="Tank">Tank</li>
+                  <li class="rol" id="Fighter">Fighter</li>
+                  <li class="rol" id="Assassin">Assassin</li>
+                  <li class="rol" id="Mage">Mage</li>
+                  <li class="rol" id="Marksman">Marksman</li>
+                  <li class="rol" id="Support">Support</li>
+                </ul>
+              </li>
+              <li><a>Sort by</a>
+                <ul>
+                  <li id="attack"><a>Attack</a>
+                    <ul>
+                      <li id="attack-desc">Descendant</li>
+                      <li id="attack-upw">Upward</li>
+                    </ul>
+                  </li>
+                  <li id="magic">Magic</li>
+                  <li id="defense">Defense</li>
+                </ul>
+              </li>
+              <li id="fun-facts">Average Difficulty
+              </li>
+              <li id="back">Log Out</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <img class="logo2" src="imagenes/logo_lol2.png" alt="">
+    </header>
+  </section>
+
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
