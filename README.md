@@ -1,3 +1,118 @@
+# Indicadores economicos en America Latina
+
+## Índice del proyecto de pagina
+
+- [Introducción](#Introducción)
+- [Descripción](#Descripción-del-proyecto)
+- [Parámetros](#Parámetros)
+- [Comenzando](#Comenzando)
+- [Pre-requisitos](#Pre-requisitos)
+- [Instalación](#Instalación)
+- [Pruebas unitarias](#Pruebas-unitarias)
+- [Pruebas de estilo de estilo de codificación](#Pruebas-de-estilo-de-codificación)
+- [Construido con](#Construido-con)
+- [Contribuyendo](#Contribuyendo)
+- [Versionando](#Versionando)
+- [Autores](#Autores)
+- [Licencia](#Licencia)
+- [Agradecimientos](#Agradecimientos)
+
+## Introducción
+
+La siguiente página fue creada en base a la necesidad de estudiantes de economía, a los que esta dirigida la misma, de obtener informacion sobre indicadores del banco mundial, de manera ordenada y sencilla, ademas de poder acceder a los numeros de estos indicadores, es decir los años y las mediciones de cada uno asi como lo son porcentajes; Proporcionandoles tambien la medicion del promedio de cada data por indicador; La tematica de los indicadores se dirige primordialmente a la poblacion femenina, aunque no es exclusiva de esta.
+
+Historia de usuario:
+
+Yo como usuario quiero poder acceder a los datos de manera ordenada
+Yo como usuario quiero poder ordenar los datos por año
+Yo como usuario quiero ordenar los datos de los porcentajes
+yo como usuario quiero tener el promedio de estos porcentajes
+
+## Descripción
+
+Prototipo de baja fidelidad:
+
+https://marvelapp.com/3dej696
+
+Pruebas de usabilidad:
+
+https://docs.google.com/forms/d/1gi4ybwQSOvqVvxtmSK1Zp3wWfRT3j5-JWEuMSQVS1kg/edit
+
+Prototipo de alta fidelidad:
+
+https://www.figma.com/file/VofsoE0IoUCePd1G6VCBDpEC/Untitled?node-id=4%3A1
+
+## Parámetros
+
+Para elaborar esta pagina se han tomado los siguientes indicadores o parametros: demográfia, económia, salud, comercio, violencia de genero y educación.
+
+Los paises que se analizan en esta pagina son: México, Peru, Brasil y Chile.
+
+## Comenzando
+
+Este proyecto toma los datos de base de datos en un archivo .spec.js, los cuales se manipulan con una funcion que los filtra por año, otra funcion que los ordena de mayor a menor o viceversa por los años o los porcentajes de estos y una funcion que muestra el promedio de los datos de los años.
+
+La pagina se realizo usando el editor de texto de Visual Studio Code, con en lenguaje JavaScript, sobre el marcador de texto HTML, con el lenguaje de diseño grafico CSS; el repositorio original se obtuvo de git hub. A continuación las especificaciones técnicas
+
+## Pre requisitos
+
+Para poder descargar y usar este repositorio se necesita tener:
+-un editor de texto.
+-una shell para interpretar líneas de comando 
+-git
+
+## Instalación
+
+Para poder usar el repositorio necesitas forquearlo (dando click donde dice fork) y despues clonarlo en la consola
+
+## Pruebas unitarias
+
+Las pruebas para esta pagina se relizaron con el framework Jest
+Para poder ejecutar las pruebas abres la terminal, te posicionas en la carpeta de el proyecto y en la de test, posteriormente ejecutas npm run test.
+Las pruebas te indican que es lo que deben de retornar para ser positivas
+
+## Pruebas de estilo de codificación
+
+- "htmlhint": "^0.10.1"
+- "eslint": "^5.9.0"
+
+## Construido con
+
+- marvel app
+- figma
+- Vanilla Javascript
+- HTML
+- CSS
+- Jest
+
+## Contribuyendo
+
+Se agradecerá toda contribución y comentarios a este proyecto.
+Lo podras hacer haciendo fork en el repositorio de git, clonandolo de manera local en tu pc.
+
+## Versionando
+
+El sistema de control de versiones en este caso es el de git que permite descargar el repositorio y las actualizaciones a traves de el comando git pull. Se recomienda numerar el versionado por si se quiere tener mayor orden sobre lo que se hace.
+
+## Autores
+## Licencia
+
+codigo abierto
+datos tomados del Banco Mundial
+
+## Agradecimientos
+
+Al equipo No 1:
+
+- Claudia Ramirez(claudiaramirez)
+- Ely Ramírez 
+- Daan (Da-ani)
+- Diana Lizbeth(DianaLiz11)
+- Erandi
+- Fabis Juárez (JessFabis)
+- Katt Rodríguez (KatyaRD)
+- Mit (MitziYolotzin)
+
 # Data Lovers
 
 ## Índice
@@ -52,22 +167,22 @@ ayude a interactuar y entender mejor esos datos.
 Estos son datos que te proponemos:
 
 - [Indicadores de desarrollo del Banco Mundial](src/data/worldbank/worldbank.json)
-  de algunos países (Brasil, Chile, México y Perú). Estos datos incluyen
-  indicadores demográficos, económicos y comerciales.
+de algunos países (Brasil, Chile, México y Perú). Estos datos incluyen
+indicadores demográficos, económicos y comerciales.
 - [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
+En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
+junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
 - [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
+Lista noticias relacionadas a los videojuegos presentes en la
+plataforma de [Steam](https://store.steampowered.com/).
 - [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
+Este set de datos muestra la lista de jugadores en una liga del
+juego League of Legends (LoL), puedes revisar la documentación de su API en
+este [link](https://developer.riotgames.com/api-methods/).
 - [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicicleta, ...).
+Este set nos muestra el número de personas heridas en accidentes de
+transporte, con data anual desde 1960 y categorizada por tipo de transporte
+(aire, barco, automóvil, moto, bicicleta, ...).
 
 Como entregable final tendrás una página web que permita **visualizar la data,
 filtrarla, ordenarla y hacer algún cálculo agregado**. Como aclaración,
@@ -82,7 +197,7 @@ podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
 
 - Este proyecto se debe resolver en duplas.
 - El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
+interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
 - Tiempo para completarlo: 3 semana divididas en 3 sprints (una entrega del producto funcional al término de cada sprint).
 
 ## Objetivos de aprendizaje
@@ -96,20 +211,20 @@ Dicho en palabras sencillas, aprenderás a:
 - Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
 - Pensar en las **necesidades de los usuarios** para crear historias de usuario.
 - Escribir y trabajar con **historias de usuario**, sus definiciones de
-  terminado (_definition of done_) en la organización y planificación de tu
-  trabajo.
+terminado (_definition of done_) en la organización y planificación de tu
+trabajo.
 - Definir qué data y de qué forma mostrarla en el producto, basándote en
-  tu **entendimiento del usuario**.
+tu **entendimiento del usuario**.
 - Crear productos que sigan los **principios básicos de diseño visual** y
-  las **heurísticas de usabilidad**.
+las **heurísticas de usabilidad**.
 - Iterar el diseño del producto, basándote en los resultados de los
-  **tests de usabilidad**.
+**tests de usabilidad**.
 - Manipular **_arreglos_ (_arrays_) y _objetos_ (_objects_)**.
 - **Manipular el DOM** (agregar elementos dinámicamente basados en la data).
 - **Manejar eventos del DOM** para permitir interacción con el usuario
-  (filtrado, ordenado, ...).
+(filtrado, ordenado, ...).
 - Entender los beneficios y complejidades de **trabajar en equipo** en un
-  ambiente de incertidumbre.
+ambiente de incertidumbre.
 
 ## Parte Obligatoria
 
@@ -171,10 +286,10 @@ Como mínimo, tu implementación debe:
 1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
 2. Permitir al usuario filtrar y ordenar la data.
 3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
-   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
-   un determinado valor, por ejemplo.
+máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
+un determinado valor, por ejemplo.
 4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
+tablets y desktops.
 
 Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
 siga los fundamentos de _visual design_.
@@ -188,19 +303,19 @@ Para ello te recomendamos implementar las siguientes funciones en el archivo
 `src/data.js`:
 
 - `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+data, y nos retornaría aquellos datos que sí cumplan con la condición.
 
 - `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
+recibe tres parámetros.
+El primer parámetro, `data`, nos entrega los datos.
+El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
+la data se quiere ordenar.
+El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
+ascendente o descendente.
 
 - `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
+cálculos estadísticos básicos para ser mostrados de acuerdo a la data
+proporcionada.
 
 Estas son propuestas de funciones que podrías implementar.
 
@@ -218,12 +333,12 @@ filtrado, ordenado, ...).
 Features/características extra sugeridas:
 
 - En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json`
-  de cada set datos.
+consumir la data de forma dinámica, cargando un archivo JSON por medio de
+`fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json`
+de cada set datos.
 - Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
-  ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
+ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
+o [Google Charts](https://developers.google.com/chart/).
 - 100% Coverage
 
 ## Consideraciones técnicas
@@ -258,14 +373,14 @@ como toda la configuración de dependencias:
 │   │   │   ├── steam.js
 │   │   │   └── steam.json
 │   │   └── worldbank
-│   │       ├── worldbank.js
-│   │       └── worldbank.json
+│   │   ├── worldbank.js
+│   │   └── worldbank.json
 │   ├── data.js
 │   ├── index.html
 │   ├── main.js
 │   └── style.css
 └── test
-    └── data.spec.js
+└── data.spec.js
 
 8 directories, 17 files
 ```
@@ -341,56 +456,56 @@ cuando lo completes:
 
 | Característica/Habilidad |
 | ------------------------ |
-| Completitud              |
+| Completitud |
 
 ### Tech
 
-| Habilidad              |
+| Habilidad |
 | ---------------------- |
-| **JavaScript**         |
-| Estilo                 |
+| **JavaScript** |
+| Estilo |
 | Nomenclatura/semántica |
-| Funciones/modularidad  |
-| Estructuras de datos   |
-| Tests                  |
-| **HTML**               |
-| Validación             |
-| Estilo                 |
-| Semántica              |
-| **CSS**                |
-| DRY                    |
-| Responsive             |
-| **SCM**                |
-| Git                    |
-| GitHub                 |
-| **CS**                 |
-| Lógica                 |
-| Arquitectura           |
+| Funciones/modularidad |
+| Estructuras de datos |
+| Tests |
+| **HTML** |
+| Validación |
+| Estilo |
+| Semántica |
+| **CSS** |
+| DRY |
+| Responsive |
+| **SCM** |
+| Git |
+| GitHub |
+| **CS** |
+| Lógica |
+| Arquitectura |
 
 ### UX
 
-| Habilidad       |
+| Habilidad |
 | --------------- |
 | User Centricity |
-| Entrevistas     |
-| Contraste       |
-| Alineación      |
-| Jerarquía       |
-| Tipografía      |
-| Color           |
+| Entrevistas |
+| Contraste |
+| Alineación |
+| Jerarquía |
+| Tipografía |
+| Color |
 
 ### Habilidades Blandas
 
-| Habilidad                    |
+| Habilidad |
 | ---------------------------- |
 | Planificación y organización |
-| Autoaprendizaje              |
-| Solución de problemas        |
-| Dar y recibir feedback       |
-| Adaptabilidad                |
-| Trabajo en equipo            |
-| Comunicación eficaz          |
-| Presentaciones               |
+| Autoaprendizaje |
+| Solución de problemas |
+| Dar y recibir feedback |
+| Adaptabilidad |
+| Trabajo en equipo |
+| Comunicación eficaz |
+| Presentaciones |
 
 ---
 
@@ -408,17 +523,17 @@ pueden ayudar:
 Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus \_coaches\* te compartirán un \_link\* a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1)
-   un `remote` hacia el mismo.
+[fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
+tus \_coaches\* te compartirán un \_link\* a un repo y te darán acceso de lectura
+en ese repo. La otra integrante del equipo deber hacer un fork **del
+repositorio de su compañera** y [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1)
+un `remote` hacia el mismo.
 2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu :fork_and_knife: a tu computadora (copia local).
+tu :fork_and_knife: a tu computadora (copia local).
 3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
+asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
 4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
+pruebas unitarias (unit tests) con el comando `npm test`.
 5. A codear se ha dicho! :rocket:
 
 <!--
@@ -439,34 +554,34 @@ Aquí algunas recomendaciones para que organices mejor el trabajo con tu
 compañera:
 
 * En lugar de trabajar en una sola rama o _branch_, puedes organizar el flujo de
-  trabajo con dos ramas principales:
-  - `master`: rama que contiene las funcionalidades terminadas y sin errores.
-  - `develop`: rama dónde integrarás las funcionalidades conforme las vayas
-    desarrollando.
+trabajo con dos ramas principales:
+- `master`: rama que contiene las funcionalidades terminadas y sin errores.
+- `develop`: rama dónde integrarás las funcionalidades conforme las vayas
+desarrollando.
 
 * Además de tener las dos ramas anteriores, puedes trabajar cada nueva
-  funcionalidad en una rama individual (_feature branches_), estas ramas en
-  lugar de crearse a partir de `master`, tienen a `develop` como su rama de
-  origen. Cuando una funcionalidad es terminada se integra de nuevo a `develop`.
-  Las _feature branches_ no se deben integrar directamente a `master`.
+funcionalidad en una rama individual (_feature branches_), estas ramas en
+lugar de crearse a partir de `master`, tienen a `develop` como su rama de
+origen. Cuando una funcionalidad es terminada se integra de nuevo a `develop`.
+Las _feature branches_ no se deben integrar directamente a `master`.
 
 * Por último, te sugerimos codear usando la técnica de
-  [pair programming](https://goo.gl/uAMBX2).
+[pair programming](https://goo.gl/uAMBX2).
 
 ¿Quieres saber más forks y pull requests?
 
 * Un [fork](https://help.github.com/articles/fork-a-repo/) es una copia de un
-  repositorio en el que puedes experimentar sin afectar al repositorio original.
-  Generalmente se usa para proponer cambios al proyecto de alguien más o para
-  usar el proyecto de otra persona como punto de partida para una idea que
-  quieras realizar.
+repositorio en el que puedes experimentar sin afectar al repositorio original.
+Generalmente se usa para proponer cambios al proyecto de alguien más o para
+usar el proyecto de otra persona como punto de partida para una idea que
+quieras realizar.
 
 * Un [pull request](https://help.github.com/articles/about-pull-requests/) (PR)
-  te permite solicitar la inclusión de cambios al repositorio original (tu punto
-  de partida) en GitHub. Cuando un PR es abierto, este permite solicitar,
-  discutir y revisar los cambios realizados con todos los colaboradores y
-  agregar otros commits antes de que los cambios sean incluidos al repositorio
-  original.
+te permite solicitar la inclusión de cambios al repositorio original (tu punto
+de partida) en GitHub. Cuando un PR es abierto, este permite solicitar,
+discutir y revisar los cambios realizados con todos los colaboradores y
+agregar otros commits antes de que los cambios sean incluidos al repositorio
+original.
 -->
 
 ---
@@ -508,26 +623,28 @@ compañera:
 
 ## Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-      lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-      `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-      en `README.md`.
+- [x] Usa VanillaJS.
+- [x] No hace uso de `this`.
+- [x] Pasa linter (`npm pretest`)
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+lines y branches.
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+`README.md`.
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
-      usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
+usabilidad en el `README.md`.
+- [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Opcional)
 
 - [ ] Consume data de forma dinámica (`fetch()`).
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
 - [ ] Cobertura de coverage al 100%.
+
+
