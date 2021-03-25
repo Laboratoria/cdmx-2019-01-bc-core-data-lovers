@@ -8,133 +8,129 @@
   <title>Hipatia Project</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="new-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js">
 </head>
 
 <body>
-    <header>
-      <nav class="hipatia-nav" id="naving">
-        <a href="">Inicio</a>
-        <a href="#we">Nosotros</a>
-        <a href="#stats">Indicadores</a>
-        <a href="#faqs">FAQs</a>
-        <a href="javascript:void(0);" class="icon">
-          <i class="fa fa-bars"></i></a>
-      </nav>
-    </header>
+  <header>
+    <nav class="hipatia-nav" id="naving">
+      <a href="">Inicio</a>
+      <a href="#we">Nosotros</a>
+      <a href="#stats">Indicadores</a>
+      <a href="#faqs">FAQs</a>
+    </nav>
+    <a href="javascript:void(0);" class="nav-icon">
+      <i class="fa fa-bars"></i></a>
+  </header>
+  <main>
+    <div class="main-container flex-column">
 
-  <div class="container1">
-    <div id="slides" class="carousel" data-ride="carousel">
-      <img class="mySlides" src="https://source.unsplash.com/featured/1600x900/?women, empowerment" alt="Pic 1">
-      <img class="mySlides" src="https://source.unsplash.com/featured/1600x900/?women, business" alt="Pic 2">
-      <img class="mySlides" src="https://source.unsplash.com/featured/1600x900/?women, work" alt="Pic 3">
-    </div>
-  
-    <div class="welcome">
-      <div id="we">
-        <h2>¿Qué es Hipatia Project?</h2>
-        <p id="pWelcome">Hipatia Project es una página de consulta estadística y visualización de datos sobre la brecha laboral de
-          género
-          de Brasil, Chile,
-          México y Perú. Aquí podrás consultar datos históricos de diferentes indicadores del Banco Mundial y verlos en
-          tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container2">
-    <div class="selection" id="stats">
-      <h4>1. Selecciona un indicador</h4>
-      <br>
-      <select id="selects" class="container-fluid">
-        <option class="indicatorGroup">Indicadores</option>
-        <option value="Desempleo total" class="indicatorGroup">Desempleo, total (% de participación total en la fuerza
-          laboral) (estimación nacional)</option>
-        <option value="Desempleo mujeres" class="indicatorGroup">Desempleo, mujeres (% de participación femenina en la
-          fuerza laboral) (estimación nacional)</option>
-        <option value="Desempleo hombres" class="indicatorGroup">Desempleo, varones (% de participación masculina en la
-          fuerza laboral) (estimación nacional)</option>
-        <option value="Participación en la fuerza laboral total" class="indicatorGroup"> Tasa de participación en la
-          fuerza laboral, total (% de la población total mayor de 15 años) (estimación nacional)</option>
-        <option value="Participación en la fuerza laboral mujeres" class="indicatorGroup">Tasa de participación en la
-          fuerza laboral, varones (% de la población masculina mayor de 15 años) (estimación nacional)</option>
-        <option value="Participación en la fuerza laboral hombres" class="indicatorGroup">Tasa de participación en la
-          fuerza laboral, mujeres (% de la población femenina mayor de 15 años) (estimación nacional)</option>
-        <option value="Desempleo total de jovenes" class="indicatorGroup">Desempleo, total de jóvenes (% del total de
-          participación en la fuerza laboral de 15 a 24 años) (estimación nacional)</option>
-        <option value="Desempleo total de jovenes mujeres" class="indicatorGroup">Desempleo, mujeres jóvenes (% de
-          participación en la fuerza laboral de mujeres de 15 a 24 años) (estimación nacional)</option>
-        <option value="Desempleo total de jovenes varones" class="indicatorGroup">Desempleo, varones jóvenes (% de
-          participación en la fuerza laboral de varones de 15 a 24 años) (estimación nacional)</option>
-        <option value="Proporcion de mujeres y hombres en la fuerza laboral" class="indicatorGroup">Proporción de
-          participación en la fuerza laboral de mujeres y varones (%) (estimación nacional)</option>
-        <option value="Participacion en la fuerza laboral de 15 a 24 años" class="indicatorGroup">Tasa de participación
-          en la fuerza laboral, de 15 a 24 años, total (%) (estimación nacional)</option>
-        <option value="Participacion en la fuerza laboral de 15 a 24 años, mujeres" class="indicatorGroup"> Tasa de
-          participación en la fuerza laboral, de 15 a 24 años, mujeres (%) (estimación nacional)</option>
-        <option value="Participacion en la fuerza laboral de 15 a 24 años, varones" class="indicatorGroup">Tasa de
-          participación en la fuerza laboral, de 15 a 24 años, varones (%) (estimación nacional)</option>
-        <option value="Fuerza laboral con educación básica" class="indicatorGroup">Fuerza laboral con educación básica
-          (% del total)</option>
-        <option value="Fuerza laboral con educación básica, mujeres" class="indicatorGroup">Fuerza laboral con
-          educación básica, mujeres (% de la fuerza laboral femenina)</option>
-        <option value="Fuerza laboral con educación básica, varones" class="indicatorGroup">Fuerza laboral con
-          educación básica, varones (% de la fuerza laboral masculina)</option>
-        <option value="Fuerza laboral con educación intermedia" class="indicatorGroup">Fuerza laboral con educación
-          intermedia (% del total)</option>
-        <option value="Fuerza laboral con educación intermedia, mujeres" class="indicatorGroup">Fuerza laboral con
-          educación intermedia, mujeres (% de la fuerza laboral femenina)</option>
-        <option value="Fuerza laboral con educación intermedia, varones" class="indicatorGroup">Fuerza laboral con
-          educación intermedia, varones (% de la fuerza laboral masculina)</option>
-        <option value="Fuerza laboral con educación avanzada" class="indicatorGroup">Fuerza laboral con educación
-          avanzada (% del total)</option>
-        <option value="Fuerza laboral con educación avanzada, mujeres" class="indicatorGroup">Fuerza laboral con
-          educación avanzada, mujeres (% de la fuerza laboral femenina)</option>
-        <option value="Fuerza laboral con educación avanzada, varones" class="indicatorGroup">Fuerza laboral con
-          educación avanzada, varones (% de la fuerza laboral masculina)</option>
-      </select>
-      <br>
-      <br>
+      <h2>¿Qué es Hipatia Project?</h2>
+      <p>Hipatia Project es una página de consulta estadística y visualización de datos sobre la
+        brecha
+        laboral de
+        género
+        de Brasil, Chile,
+        México y Perú. Aquí podrás consultar datos históricos de diferentes indicadores del Banco Mundial y verlos
+        en
+        tablas y gráficas. Además, podrás calcular el promedio de la serie de datos.</p>
     </div>
 
-    <div class="buttons">
-      <h4>2. Selecciona un país</h4>
-      <div class="container3">
+    <div class="main-container flex-column">
+      <div class="countries flex-column">
+        <h4>1. Selecciona un país</h4>
+        <div class="flex-row">
+          <div class="country-container flex-column flex-column">
+            <h4>México</h4>
+            <button class="country" value="MEX"> <img src="./assets/images/mex.png" width="50" height="50"
+                alt="flagChl">
+            </button>
+          </div>
 
-        <div class="mex">
-        <h4>México</h4>
-        <button class="country" value="mexico"> <img src="./assets/images/mex.png" width="50" height="50" alt="flagChl">
-        </button>
+          <div class="country-container flex-column">
+            <h4>Chile</h4>
+            <button class="country" value="CHL"> <img src="./assets/images/chile.png" width="50" height="50"
+                alt="flagChl">
+            </button>
+          </div>
+
+          <div class="country-container flex-column">
+            <h4>Brasil</h4>
+            <button class="country" value="BRA"><img src="./assets/images/brazil.png" width="50" height="50"
+                alt="flagBra">
+            </button>
+          </div>
+
+          <div class="country-container flex-column">
+            <h4>Perú</h4>
+            <button class="country" value="PER"><img src="./assets/images/peru.png" width="50" height="50"
+                alt="flagPer">
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="chl">
-        <h4>Chile</h4>
-        <button class="country" value="chile"> <img src="./assets/images/chile.png" width="50" height="50" alt="flagChl">
-        </button>
+      <div class="indicators flex-column" id="stats">
+        <h4>2. Selecciona un indicador</h4>
+        <select id="selects" class="container-fluid">
+          <option class="indicatorGroup">Indicadores</option>
+          <option value="SL.UEM.TOTL.NE.ZS" class="indicatorGroup">Desempleo, total (% de participación total
+            en la
+            fuerza
+            laboral) (estimación nacional)</option>
+          <option value="SL.UEM.TOTL.FE.NE.ZS" class="indicatorGroup">Desempleo, mujeres (% de participación femenina en
+            la
+            fuerza laboral) (estimación nacional)</option>
+          <option value="SL.UEM.TOTL.MA.NE.ZS" class="indicatorGroup">Desempleo, varones (% de participación masculina
+            en
+            la
+            fuerza laboral) (estimación nacional)</option>
+          <option value="SL.TLF.CACT.NE.ZS" class="indicatorGroup"> Tasa de participación en la
+            fuerza laboral, total (% de la población total mayor de 15 años) (estimación nacional)</option>
+          <option value="SL.TLF.CACT.MA.NE.ZS" class="indicatorGroup">Tasa de participación en la
+            fuerza laboral, varones (% de la población masculina mayor de 15 años) (estimación nacional)</option>
+          <option value="SL.TLF.CACT.FE.NE.ZS" class="indicatorGroup">Tasa de participación en la
+            fuerza laboral, mujeres (% de la población femenina mayor de 15 años) (estimación nacional)</option>
+          <option value="SL.UEM.1524.NE.ZS" class="indicatorGroup">Desempleo, total de jóvenes (% del total de
+            participación en la fuerza laboral de 15 a 24 años) (estimación nacional)</option>
+          <option value="SL.UEM.1524.FE.NE.ZS" class="indicatorGroup">Desempleo, mujeres jóvenes (% de
+            participación en la fuerza laboral de mujeres de 15 a 24 años) (estimación nacional)</option>
+          <option value="SL.UEM.1524.MA.NE.ZS" class="indicatorGroup">Desempleo, varones jóvenes (% de
+            participación en la fuerza laboral de varones de 15 a 24 años) (estimación nacional)</option>
+          <option value="SL.TLF.CACT.FM.NE.ZS" class="indicatorGroup">Proporción de
+            participación en la fuerza laboral de mujeres y varones (%) (estimación nacional)</option>
+          <option value="SL.TLF.ACTI.1524.NE.ZS" class="indicatorGroup">Tasa de participación en la fuerza laboral, de
+            15 a 24 años, total (%) (estimación nacional)</option>
+          <option value="SL.TLF.ACTI.1524.FE.NE.ZS" class="indicatorGroup"> Tasa de
+            participación en la fuerza laboral, de 15 a 24 años, mujeres (%) (estimación nacional)</option>
+          <option value="SL.TLF.ACTI.1524.MA.NE.ZS" class="indicatorGroup">Tasa de
+            participación en la fuerza laboral, de 15 a 24 años, varones (%) (estimación nacional)</option>
+          <option value="SL.TLF.BASC.ZS" class="indicatorGroup">Fuerza laboral con educación básica (% del total)
+          </option>
+          <option value="SL.TLF.BASC.FE.ZS" class="indicatorGroup">Fuerza laboral con
+            educación básica, mujeres (% de la fuerza laboral femenina)</option>
+          <option value="SL.TLF.BASC.MA.ZS" class="indicatorGroup">Fuerza laboral con
+            educación básica, varones (% de la fuerza laboral masculina)</option>
+          <option value="SL.TLF.INTM.ZS" class="indicatorGroup">Fuerza laboral con educación
+            intermedia (% del total)</option>
+          <option value="SL.TLF.INTM.FE.ZS" class="indicatorGroup">Fuerza laboral con
+            educación intermedia, mujeres (% de la fuerza laboral femenina)</option>
+          <option value="SL.TLF.INTM.MA.ZS" class="indicatorGroup">Fuerza laboral con
+            educación intermedia, varones (% de la fuerza laboral masculina)</option>
+          <option value="SL.TLF.ADVN.ZS" class="indicatorGroup">Fuerza laboral con educación
+            avanzada (% del total)</option>
+          <option value="SL.TLF.ADVN.FE.ZS" class="indicatorGroup">Fuerza laboral con
+            educación avanzada, mujeres (% de la fuerza laboral femenina)</option>
+          <option value="SL.TLF.ADVN.MA.ZS" class="indicatorGroup">Fuerza laboral con
+            educación avanzada, varones (% de la fuerza laboral masculina)</option>
+        </select>
       </div>
+    </div>
 
-      <div class="bra">
-        <h4>Brasil</h4>
-        <button class="country" value="brasil"><img src="./assets/images/brazil.png" width="50" height="50" alt="flagBra">
-        </button>
-      </div>
-
-      <div class="per">
-        <h4>Perú</h4>
-        <button class="country" value="peru"><img src="./assets/images/peru.png" width="50" height="50" alt="flagPer">
-        </button>
-      </div>
-      </div>  
-      </div>     
-    
- 
-
-
-
-    <div class="table">
-      <form id="sorters">
-        <label>Ordenar</label>
-        <br>
+    <div class="table flex-column main-container">
+      <h4>Ordenar</h4>
+      <form class="sorters-container" id="sorters">
         <label for="downward">Ascendente</label>
         <input type="radio" class="order" value="downward">
         <label for="upward">Descendente</label>
@@ -163,82 +159,52 @@
       <br>
 
       <div id="resulting" class="results">
-      <button id="average">Calcular promedio</button>
-      <br>
-      <p id="result"></p>
+        <button id="average">Calcular promedio</button>
+        <br>
+        <p id="result"></p>
+      </div>
+
     </div>
+
+    <div id="faqs" class="main-container">
+      <div class="gender">
+        <h3>¿Qué es género?</h3>
+        <p> Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada
+          sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a
+          cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos (Organización Mundial
+          de la Salud). Históricamente y en
+          la mayor parte del mundo, estas desigualdades han afectado a las mujeres.</p>
+
+        <h3>Desigualdad de género </h3>
+
+        <p>La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que
+          prevalecen entre mujeres y hombres se asocian a la
+          histórica división del trabajo para el mercado y el trabajo doméstico, o para la reproducción material de
+          los hogares" (Instituto Nacional de las Mujeres [INMUJERES], 2008) . </p>
+
+        <p>El trabajo es una de las principales vías por las cuales las personas obtienen ingresos para su
+          supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y
+          empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación
+          política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante
+          el estudio de la desigualdad de género en el trabajo.
+        </p>
+
+        <h3>Referencias</h3>
+        <p>INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.</p>
+        <p>Organización Mundial de la Salud. En línea: https://www.who.int/topics/gender/es/.</p>
+      </div>
     </div>
-  </div>
 
-  <div id= "faqs" class="container4">
-  <div class="gender">
-    <h3>¿Qué es género?</h3>
-    <p> Género se refiere a la conceptualización de los comportamientos, atributos y actividades que cada
-      sociedad considera apropiados para los hombres y las mujeres. Estas características asignadas socialmente a
-      cada grupo pueden generar desigualdades que favorecen sistemáticamente a uno de ellos (Organización Mundial
-      de la Salud). Históricamente y en
-      la mayor parte del mundo, estas desigualdades han afectado a las mujeres.</p>
 
-    <h3>Desigualdad de género </h3>
+  </main>
 
-    <p>La desigualdad de género trasciende todas las esferas de la vida. "Muchas de las desigualdades que
-      prevalecen entre mujeres y hombres se asocian a la
-      histórica división del trabajo para el mercado y el trabajo doméstico, o para la reproducción material de
-      los hogares" (Instituto Nacional de las Mujeres [INMUJERES], 2008) . </p>
-
-    <p>El trabajo es una de las principales vías por las cuales las personas obtienen ingresos para su
-      supervivencia, autonomía e independencia. La autonomía económica da la pauta a otros tipos de autonomía y
-      empoderamiento para la toma de decisiones, tales como el libre ejercicio de la ciudadanía, la participación
-      política y el pleno acceso al goce de los derechos humanos (INMUJERES, 2008). Es por ello que es importante
-      el estudio de la desigualdad de género en el trabajo.
-    </p>
-
-    <h3>Referencias</h3>
-    <p>INMUJERES (2008). La desigualdad de género en el trabajo. Gobierno Federal, México.</p>
-    <p>Organización Mundial de la Salud. En línea: https://www.who.int/topics/gender/es/.</p>
-  </div>
-</div>
 
 
   <script src="./data/worldbank/worldbank.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <script src="chart.js"></script>
 
-  <!--<footer>
-      <div class="container-fluid padding">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <img src="assets/images/Logo Hipatia-01.png" style="width:25%" alt="logoF">
-            <hr class="light">
-            <p class="foot">66423-1873</p>
-            <p class="foot">HipatiaProject@gmail.com</p>
-            <p class="foot"> Insurgentes Sur 23</p>
-            <p class="foot">Ciudad de México</p>
-          </div>
-          <div class="col-md-4">
-            <hr class="light">
-            <h5>Horarios</h5>
-            <hr class="light">
-            <p class="foot"> Lunes: 9am-5pm</p>
-            <p class="foot"> Sábado: 10am-5pm</p>
-            <p class="foot"> Domingo: Cerrado</p>
-          </div>
-          <div class="col-md-4">
-            <hr class="light">
-            <h5>Paises</h5>
-            <hr class="light">
-            <p class="foot"> Perú, Lima</p>
-            <p class="foot"> Santiago, Chile</p>
-            <p class="foot"> Sao Paulo, Brasil</p>
-          </div>
-          <div class="col-12">
-            <hr class="light">
-            <h5>&copy; www.hipatia.org</h5>
-
-          </div>
-        </div>
-      </div>
-    </footer>-->
 
 </body>
 

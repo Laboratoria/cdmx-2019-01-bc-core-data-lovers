@@ -1,7 +1,7 @@
 body {
   margin: 0%;
   border: 0%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /*Grids*/
@@ -80,7 +80,6 @@ body {
   grid-column: 4/5;
 }
 
-
 .container4 {
   display: grid;
   max-width: 1280px;
@@ -131,14 +130,14 @@ nav {
   max-height: 100%;
 }
 
-.carousel>img {
+.carousel > img {
   width: 100vw;
 }
 
 #selects {
   width: 100%;
   border-radius: 5px;
-  background-color: #D8BFD8;
+  background-color: #d8bfd8;
 }
 
 button {
@@ -146,16 +145,17 @@ button {
   border-radius: 7px;
 }
 
-
 td {
-  width:10%;
+  width: 10%;
 }
 
 th {
   height: 50px;
 }
 
-table, td, th{
+table,
+td,
+th {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -166,13 +166,12 @@ table, td, th{
   width: 80%;
 }
 
-.results>button {
-  background-color: #D8BFD8;
+.results > button {
+  background-color: #d8bfd8;
   border: transparent;
   font-size: medium;
   font-weight: bold;
 }
-
 
 /*Text*/
 h4 {
@@ -186,9 +185,8 @@ label {
   font-size: large;
 }
 
-
 /*Media queries*/
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
   body {
     font-size: small;
   }
@@ -208,7 +206,7 @@ label {
     text-align: center;
   }
 
-  label{
+  label {
     font-size: smaller;
   }
 }
@@ -314,11 +312,11 @@ label {
   }
 }
 
-@media screen and (max-width:961px) {
+@media screen and (max-width: 961px) {
   .table {
     grid-column: 2/4;
     grid-row: 3/4;
-    padding-top: 8%; 
+    padding-top: 8%;
     text-align: center;
   }
 
