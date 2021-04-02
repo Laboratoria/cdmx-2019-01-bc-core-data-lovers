@@ -3,7 +3,7 @@ const tableBody = document.getElementById("table-indicators");
 const country = document.getElementsByClassName("country");
 const selects = document.getElementById("selects");
 const sorting = document.getElementsByClassName("order");
-const sorters = document.getElementById("sorters");
+const sort = document.getElementById("sort");
 const tableTitle = document.getElementById("table-title");
 const countryName = document.getElementById("country-name");
 const average = document.getElementById("resulting");
@@ -17,6 +17,7 @@ let countryNameValue;
 //Oculta tabla, sorters y el botón e input del promedio
 table.style.display = "none";
 average.style.display = "none";
+sort.style.display = "none";
 
 function fetchingData(country) {
   fetch("./data/worldbank/worldbank.json")
@@ -47,6 +48,7 @@ function extractingCountryData(arr) {
 Array.from(country).forEach(function (element) {
   element.addEventListener("click", function (event) {
     event.preventDefault();
+    element.classList.toggle("active");
     fetchingData(element.value);
   });
 });
@@ -98,6 +100,7 @@ average.addEventListener("click", () => {
 
 //Función que pinta los años y datos filtrados en una tabla
 const printing = (indicatorName, years, percent, country) => {
+  sort.style.display = "flex";
   table.style.display = "block";
   average.style.display = "block";
   tableTitle.innerHTML = `${indicatorName}`;

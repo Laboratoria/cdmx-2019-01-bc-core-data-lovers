@@ -3,10 +3,34 @@ body {
   flex-direction: column;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-p {
+p,
+h3 {
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Work Sans", sans-serif;
+}
+
+hr {
+  border: 1px solid grey;
+  width: 90%;
+  margin-top: 3em;
+}
+
+.shadow {
+  background-color: gainsboro;
+  border-radius: 15px;
+  box-shadow: -10px -10px 10px 0 rgba(255, 255, 255, 0.35),
+    -4px -4px 4px 0 rgba(255, 255, 255, 0.45),
+    10px 10px 10px 0 rgba(0, 0, 0, 0.2), 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+  outline: transparent;
 }
 
 header {
@@ -59,8 +83,64 @@ main {
   justify-content: center;
 }
 
+.country {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.country:focus {
+  box-shadow: inset -8px -8px 8px 0 rgba(0, 0, 0, 0.3),
+    inset 7px 7px 7px 0 rgba(255, 255, 255, 0.5);
+}
+
+#selects {
+  height: 30px;
+  padding: 0 15px;
+  border: 0;
+}
+
+.sort {
+  margin-bottom: 10%;
+}
+
 .sorters-container {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  align-items: center;
+  width: 75%;
+}
+
+.order {
+  width: 30px;
+  height: 30px;
+  appearance: none;
+}
+.order:focus {
+  box-shadow: inset -5px -5px 5px 0 rgba(0, 0, 0, 0.3),
+    inset 4px 4px 4px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 1200px) {
+  .nav-icon {
+    margin: 2% 3%;
+  }
+
+  main {
+    padding: 10% 0;
+  }
+
+  .main-container {
+    padding: 0 20% 5% 20%;
+  }
+
+  .country {
+    width: 100px;
+    height: 70px;
+  }
 }

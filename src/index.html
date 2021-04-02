@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="new-styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,32 +41,32 @@
 
     <div class="main-container flex-column">
       <div class="countries flex-column">
-        <h4>1. Selecciona un país</h4>
+        <h3>1. Selecciona un país</h3>
         <div class="flex-row">
           <div class="country-container flex-column flex-column">
             <h4>México</h4>
-            <button class="country" value="MEX"> <img src="./assets/images/mex.png" width="50" height="50"
+            <button class="country shadow" value="MEX"> <img src="./assets/images/mex.png" width="50" height="50"
                 alt="flagChl">
             </button>
           </div>
 
           <div class="country-container flex-column">
             <h4>Chile</h4>
-            <button class="country" value="CHL"> <img src="./assets/images/chile.png" width="50" height="50"
+            <button class="country shadow" value="CHL"> <img src="./assets/images/chile.png" width="50" height="50"
                 alt="flagChl">
             </button>
           </div>
 
           <div class="country-container flex-column">
             <h4>Brasil</h4>
-            <button class="country" value="BRA"><img src="./assets/images/brazil.png" width="50" height="50"
+            <button class="country shadow" value="BRA"><img src="./assets/images/brazil.png" width="50" height="50"
                 alt="flagBra">
             </button>
           </div>
 
           <div class="country-container flex-column">
             <h4>Perú</h4>
-            <button class="country" value="PER"><img src="./assets/images/peru.png" width="50" height="50"
+            <button class="country shadow" value="PER"><img src="./assets/images/peru.png" width="50" height="50"
                 alt="flagPer">
             </button>
           </div>
@@ -72,8 +74,8 @@
       </div>
 
       <div class="indicators flex-column" id="stats">
-        <h4>2. Selecciona un indicador</h4>
-        <select id="selects" class="container-fluid">
+        <h3>2. Selecciona un indicador</h3>
+        <select id="selects" class="container-fluid shadow">
           <option class="indicatorGroup">Indicadores</option>
           <option value="SL.UEM.TOTL.NE.ZS" class="indicatorGroup">Desempleo, total (% de participación total
             en la
@@ -126,21 +128,23 @@
             educación avanzada, varones (% de la fuerza laboral masculina)</option>
         </select>
       </div>
+      <!-- <hr class="shadow"> -->
     </div>
 
     <div class="table flex-column main-container">
-      <h4>Ordenar</h4>
-      <form class="sorters-container" id="sorters">
-        <label for="downward">Ascendente</label>
-        <input type="radio" class="order" value="downward">
-        <label for="upward">Descendente</label>
-        <input type="radio" class="order" value="upward">
-      </form>
-      <br>
 
+      <h2 id="country-name"></h2>
+      <h3 id="table-title"></h3>
 
-      <p id="table-title"></p>
-      <p id="country-name"></p>
+      <div class="sort flex-column" id="sort">
+        <h3>Ordenar</h3>
+        <form class="sorters-container" id="sorters">
+          <label for="downward">Ascendente</label>
+          <input type="radio" class="order shadow" value="downward">
+          <label for="upward">Descendente</label>
+          <input type="radio" class="order shadow" value="upward">
+        </form>
+      </div>
 
       <table id="table-year-data">
         <tr>
