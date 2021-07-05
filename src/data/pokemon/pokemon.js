@@ -4023,7 +4023,7 @@ var POKEMON = {
     "weight": "210.0 kg",
     "candy": "Dratini Candy",
     "egg": "Not in Eggs",
-    "spawn_chance": 0.0011,
+    "spa  wn_chance": 0.0011,
     "avg_spawns": 0.11,
     "spawn_time": "23:38",
     "multipliers": null,
@@ -4083,5 +4083,4 @@ var POKEMON = {
       "Dark"
     ]
   }]
-}
-;;
+};;
