@@ -6,8 +6,8 @@
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
-    "pretest": "npm run eslint && npm run htmlhint",
-    "test": "jest"
+    "pretesto": "npm run eslint && npm run htmlhint",
+    "test": "jest --coverage"
   },
   "dependencies": {
     "eslint": "^5.9.0",
