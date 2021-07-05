@@ -1,18 +1,179 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banco Mundial</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body id="body">
+    <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li id="btn-about" class="item-menu">Acerca de</li>
+          <li id="btn-general-filter" class="item-menu">Indicadores en America Latina</li>
+          <li id="btn-news" class="item-menu">Noticias</li>
+          <li class="item-menu">Contacto</li>
+        </ul>
+      </nav>
+<div class="ctn__general" id="ctn__general">
+  <header class="header" id="header">
+      <!--<nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li id="btn-about" class="item-menu">Acerca de</li>
+          <li id="btn-general-filter" class="item-menu">Indicadores en America Latina</li>
+          <li id="btn-news" class="item-menu">Noticias</li>
+          <li class="item-menu">Contacto</li>
+        </ul>
+      </nav> -->
+      <img class="icon-logo" src="./images/logo.svg" alt="nav">
+      <!-- <a id="nav-icon" class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a> -->
+      <div id="nav-icon" class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+  </header>
+  <!-- <header id="mySidenav" class="header hide">
+  <nav id="nav-menu" class="nav-menu"> 
+      <a  id="closeNav"  class="closebtn">&times;</a> 
+    <ul >
+      <li id="btn-about" class="item-menu">Acerca de</li>
+      <li id="btn-general-filter" class="item-menu">Indicadores en America Latina</li>
+      <li id="btn-news" class="item-menu">Noticias</li>
+      <li class="item-menu">Contacto</li>
+    </ul>
+  </nav>
+</header> -->
+  <main id="container" class="container">
+      <!-- <div class="header-left">
+          <img class="icon-logo" src="./images/logo.svg" alt="nav">
+        </div>
+        <div class="header-right">
+          <a id="nav-icon" class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>
+        </div> -->
+    <section id="news" class="news hide">
+      <div class="card-news">
+        <h2 class=" news-mexico">
+          <strong class="title-news">Mexico</strong>
+        </h2>
+        <p class="info-news">La labor del Banco Mundial en México se organiza en torno a un modelo que ofrece
+          soluciones integrales y personalizadas para el desarrollo mediante un paquete de herramientas financieras, de
+          conocimiento y coordinación en todas las ramas de la institución.</p>
+      </div>
+
+      <div class="card-news">
+        <h2 class="news-brazil">
+          <strong class="title-news">Brasil</strong>
+        </h2>
+        <p class="info-news">El progreso económico y social de Brasil entre 2003 y 2014 sacó a 29 millones de personas
+          de la pobreza y la desigualdad se redujo significativamente. Restaurar la sostenibilidad fiscal es el desafío
+          económico más urgente para Brasil.</p>
+      </div>
+
+      <div class="card-news">
+        <h2 class="news-peru">
+          <strong class="title-news">Peru</strong>
+        </h2>
+        <p class="info-news">Las acertadas políticas macroeconómicas y estructurales del Perú, combinadas con
+          condiciones externas propicias, han generado un crecimiento importante. El país creció a un ritmo cercano al
+          6% durante la última década y, entre 2004 y 2015, 9 millones de peruanos salieron de la pobreza.</p>
+      </div>
+
+      <div class="card-news">
+        <h2 class="news-chile">
+          <strong class="title-news">Chile</strong>
+        </h2>
+        <p class="info-news">En las últimas décadas, Chile ha sido una de las economías de más rápido crecimiento en
+          Latinoamérica. Esto le ha permitido una importante reducción de la pobreza. Por ejemplo, entre 2000 y 2015,
+          la proporción de la población considerada pobre (US$4 por día) se redujo del 26 a 7.9%.</p>
+      </div>
+
+    </section>
+    <section id="about" class="about-bancamundial hide">
+      <div class="who-we-are">
+        <h3>Quienes somos</h3>
+        <p>Con base a la necesidad de estudiantes de economía, a los que esta dirigida en sitio web, de obtener
+          información sobre indicadores del banco mundial, de manera ordenada y sencilla, ademas de poder acceder a los
+          numeros de estos indicadores, es decir los años y las mediciones de cada uno asi como lo son porcentajes;
+          Proporcionandoles tambien el calculo del promedio de cada data por indicador; La tematica de los indicadores
+          se enfoca principalmente en población femenina, aunque no es exclusiva de esta.</p>
+        <p>El Grupo Banco Mundial está conformado por 189 países miembros; su personal proviene de más de 170 países, y
+          tiene más de 130 oficinas en todo el mundo. Constituye una asociación mundial única: las cinco instituciones
+          que lo integran trabajan en la búsqueda de soluciones sostenibles para reducir la pobreza y generar
+          prosperidad compartida en los países en desarrollo.</p>
+      </div>
+      <div class="what-we-do">
+        <h3> Que hacemos</h3>
+        <p>El Grupo Banco Mundial trabaja en todas las principales esferas del desarrollo: proporciona una gran
+          variedad de productos financieros y asistencia técnica, y ayuda a los países a enfrentar los desafíos
+          mediante el intercambio de conocimiento de vanguardia y la aplicación de soluciones innovadoras.</p>
+      </div>
+    </section>
+    <section id="general-filter" class="general-filter  hide">
+        <h4 class="title-indicators">Indicadores en America Latina</h4>
+        <p class="subtitle-idicators">Con base a los siguientes parametros: demográfia, económia, salud, comercio, violencia de genero y educación</p>
+      <div class="information-filter">
+        <a  id="MEX" class="btn_mex search-country"  data-ciudad="MEX" data-object="countryMex">México</a>
+        <a  id="btn_per" class="btn_per search-country" data-ciudad="PER" data-object="countryPer">Peru</a>
+        <a  id="btn_bra" class="btn_bra search-country" data-ciudad="BRA" data-object="countryBra">Brasil</a>
+        <a  id="btn_Chl" class="btn_Chl search-country" data-ciudad="CHL" data-object="countryChl">Chile</a>
+      </div>
+      <div  class="item-filter-sort">
+        <select id="list-question" class="list-question">
+          <option value="valor">Selecciona un pais</option>
+        </select>
+        <div class="prmedio">
+          <p id="avg"></p>
+        </div>
+      </div>
+
+      <div id="show-canvas" class="show-canvas hide">
+        <canvas id="graph" width="400" height="400"></canvas>
+      </div>
+
+      <div class="order__filters">
+        <div class="order__items right">
+          <p><b>Ordenar por Año</b></p>
+          <label for="asc" class="container__check">Menor
+            <input id="asc" type="radio" class="radio__filter" name="order" data-sortby="years" data-sortorder="asc"
+              checked>
+            <span class="checkmark"></span>
+          </label>
+          <label for="desc" class="container__check"> Mayor
+            <input id="desc" type="radio" class="radio__filter" name="order" data-sortby="years" data-sortorder="desc">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="order__items">
+          <p><b>Ordenar por valor</b></p>
+          <label for="numAsc" class="container__check">Menor
+            <input  id="numAsc" type="radio" class="radio__filter" name="order" data-sortby="values" data-sortorder="asc">
+            <span class="checkmark"></span>
+          </label>
+          <label for="numDesc" class="container__check">Mayor
+            <input id="numDesc" type="radio" class="radio__filter" name="order" data-sortby="values" data-sortorder="desc">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div id="information-filter-inner" class="information__filtered"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="title-footer"> ©2019 Grupo Banco Mundial. Reservados todos los derechos.</p>
+  </footer>
+</div>
+  <script src="./data/worldbank/worldbank.js"></script>
+  <script src="main.js"></script>
+  <script src="data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+</body>
+
 </html>

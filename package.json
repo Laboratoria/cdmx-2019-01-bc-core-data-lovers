@@ -12,7 +12,24 @@
   "dependencies": {
     "eslint": "^5.9.0",
     "eslint-plugin-jest": "^22.1.2",
-    "htmlhint": "^0.10.1",
+    "htmlhint": "^0.10.1"
+  },
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiaramirez/cdmx-2019-01-bc-core-data-lovers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/claudiaramirez/cdmx-2019-01-bc-core-data-lovers/issues"
+  },
+  "homepage": "https://github.com/claudiaramirez/cdmx-2019-01-bc-core-data-lovers#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.0.0",
     "jest": "^23.6.0"
   }
 }

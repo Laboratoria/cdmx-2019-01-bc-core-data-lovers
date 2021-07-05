@@ -1,0 +1,645 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #585858;
+  
+  }
+  
+  body.fixed {
+      overflow: hidden;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 0;
+    min-height: 80px;
+    background-color: #fff;
+    padding: 5px 2rem;
+    text-align: right;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  .header.open {
+      left: -300px;
+      right: 300px;
+  }
+  
+  /* Icon menu */
+  #nav-icon {
+    float: right;
+    width: 30px;
+    height: 35px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #002f54;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon span:nth-child(1) {
+    top: 6px;
+  }
+  
+  #nav-icon span:nth-child(2),
+  #nav-icon span:nth-child(3) {
+    top: 18px;
+  }
+  
+  #nav-icon span:nth-child(4) {
+    top: 29px;
+  }
+  
+  #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  
+  .ctn__general {
+    left: 0;
+    position: relative;
+    z-index: 2;
+      min-height: 100%;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+  }
+  
+  .ctn__general.open {
+      left: -300px;
+      right: 300px;
+      overflow-y: hidden;
+  }
+  
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right,
+  .header-left {
+    width: auto;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  
+  .icon-logo {
+    float: left;
+    width: 171px;
+    height: 37px;
+    margin-top: 20px;
+  }
+  
+  .icon-logo-menu {
+    padding-top: 20px;
+    float: none;
+  }
+  
+  .nav-icon {
+    margin-top: 20px;
+    width: 25px
+  }
+  
+  .nav-menu {
+    cursor: pointer;
+    background: #4d4d4d;
+    text-align: center;
+    padding: 0 10px;
+   
+    position: fixed;
+    right: -250px;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    position: fixed;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    bottom: 0;
+    background-color: #002f54;
+    width: 300px;
+    text-align: left;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+  }
+  .nav-menu.open{
+      right: 0;
+  }
+  
+  .nav-menu ul {
+    line-height: 3rem;
+    color: #fff;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .nav-menu ul>li:hover {
+    color: #58cef8;
+  }
+  
+  .nav-menu .item-menu {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .nav-menu .item-menu:last-child{
+      border-bottom: none;
+  }
+  
+  .container {
+    padding: 6rem 1rem;
+    min-height: 94vh;
+  }
+  
+  .about-bancamundial {
+    text-align: center;
+  }
+  
+  .news {
+    width: 100%;
+  }
+  
+  .news-mexico,
+  .news-brazil,
+  .news-peru,
+  .news-chile {
+    height: auto;
+  }
+  
+  .general-filter {
+    padding: 1.5rem 2rem;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+  }
+  
+  .title-indicators {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #002f54;
+  }
+  
+  .subtitle-idicators {
+    text-align: center;
+  }
+  
+  .information-filter-inner {
+    border: 1px solid black;
+  }
+  
+  .information-filter {
+    margin: 30px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .list-question {
+    width: 100%;
+    font-size: 1rem;
+    color: #002f54;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    margin-top: 1rem;
+    border: 1px solid #808080;
+  }
+  
+  .search-country {
+    cursor: pointer;
+    min-width: 70px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding-left: 52px;
+    padding-right: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border: 1px solid #002f54;
+    color: #002f54;
+    border-radius: 4px;
+    font-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    background-size: 30px;
+    transition: all linear 300ms;
+    -webkit-transition: all linear 300ms;
+    -moz-transition: all linear 300ms;
+    -ms-transition: all linear 300ms;
+    -o-transition: all linear 300ms;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    max-width: 200px;
+  }
+  
+  .search-country.btn_mex {
+    background-image: url('images/icons/mexico.svg');
+  }
+  
+  .search-country.btn_per {
+    background-image: url('images/icons/peru.svg');
+  }
+  
+  .search-country.btn_bra {
+    background-image: url('images/icons/brazil.svg');
+  }
+  
+  .search-country.btn_Chl {
+    background-image: url('images/icons/chile.svg');
+  }
+  
+  .search-country:hover {
+    background-color: #002f54;
+    border: 1px solid #002f54;
+    color: #fff;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .mostrar-filters {
+    display: block;
+    font-size: 0;
+  }
+  
+  .card-news {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 2rem;
+    transition: all linear .25s;
+    -webkit-transition: all linear .25s;
+    -moz-transition: all linear .25s;
+    -ms-transition: all linear .25s;
+    -o-transition: all linear .25s;
+  }
+  .card-news:hover{
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .title-news {
+    margin: 0;
+    color: #fff;
+    text-align: right;
+    font-size: 1.4rem;
+    padding-right: 10px;
+    font-weight: 400;
+    padding: .5rem 1rem;
+    text-shadow: 0 0 15px rgba(0,0,0,.5)
+  }
+  
+  .info-news {
+    padding: 1rem;
+    margin-top: 35px;
+    line-height: 30px;
+    text-align: center;
+    font-size: .875rem;
+  
+  }
+  
+  .news-mexico,
+  .news-brazil,
+  .news-peru,
+  .news-chile {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .news-mexico {
+    background-image: url('images/cdmx.jpg')
+  }
+  
+  .news-brazil {
+    background-image: url('images/brazil.jpg')
+  }
+  
+  .news-peru {
+    background-image: url('images/peru.jpeg')
+  }
+  
+  .news-chile {
+    background-image: url('images/Chile.jpg')
+  }
+  
+  footer {
+    background-color: #333333;
+    ;
+    height: 50px;
+    ;
+  }
+  
+  .title-footer {
+    margin: 0;
+    font-size: .6em;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  /* filtros de ordenamiento */
+  .order__filters {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+  }
+  
+  .order__filters .order__items {
+    display: inline-block;
+    font-size: 1rem;
+    width: 50%;
+    vertical-align: top;
+    text-align: center
+  }
+  
+  .order__items.right {
+    border-right: 1px solid #585858;
+  }
+  
+  /* custom checkbox */
+  /* Customize the label (the container) */
+  .container__check {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container__check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container__check:hover input~.checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container__check input:checked~.checkmark {
+    background-color: #ab82ce;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container__check input:checked~.checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container__check .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  .information__filtered {
+    margin-top: 2rem;
+  }
+  
+  .information__filtered p {
+    background-color: #fff;
+    padding: .5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+    transition: all linear .35s;
+    -webkit-transition: all linear .35s;
+    -moz-transition: all linear .35s;
+    -ms-transition: all linear .35s;
+    -o-transition: all linear .35s;
+  }
+  
+  .prmedio {
+    text-align: center;
+  }
+  
+  /* .show-canvas{
+      box-sizing:border-box;
+      width:100%;
+  } */
+  
+  @media screen and (min-width: 640px) {
+    .container {
+      padding: 6rem 2rem;
+    }
+  
+    /* .ctn__general {
+      position: relative;
+      -webkit-transition: all .4s linear;
+      -moz-transition: all .4s linear;
+      -ms-transition: all .4s linear;
+      -o-transition: all .4s linear;
+      transition: all .4s linear;
+    }
+  
+    .ctn__general.open {
+      -webkit-transform: translate(-300px, 0);
+      -moz-transform: translate(-300px, 0);
+      -ms-transform: translate(-300px, 0);
+      -o-transform: translate(-300px, 0);
+      transform: translate(-300px, 0);
+    } */
+  
+    /* .nav-menu {
+      cursor: pointer;
+      background: #4d4d4d;
+      text-align: center;
+      padding: 0 10px;
+      -webkit-transition: all linear 0.5s;
+      -o-transition: all linear 0.5s;
+      transition: all linear 0.5s;
+      position: fixed;
+      right: -300px;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+    } */
+  
+    .who-we-are,
+    .what-we-do {
+      padding: 30px;
+      margin-bottom: 20px;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+  
+    .search-country {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      max-width: 200px;
+    }
+  
+    .information-filter {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .card-news {
+      display: inline-block;
+      width: 45%;
+      margin-left: 3.5%;
+      text-align: right;
+      vertical-align: top;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  
+    .news-mexico,
+    .news-brazil,
+    .news-peru,
+    .news-chile {
+      height: 300px;
+    }
+  
+    .item-filter-sort {
+      text-align: center;
+    }
+  
+    .list-question {
+      width: 80%;
+    }
+  
+    .show-canvas {
+      box-sizing: border-box;
+      width: 80%;
+      padding-left: 20%;
+    }
+  
+  }
