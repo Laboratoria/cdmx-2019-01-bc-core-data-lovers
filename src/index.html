@@ -1,18 +1,208 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Pikapedia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- PAGE 1 -->
+  <section id="homePage">
+    <header> <input type="checkbox" id="hamburguerMenu">
+      <label for="hamburguerMenu"><i class="fas fa-bars"></i>
+      </label>
+      <nav class="menu_gral">
+        <ul>
+          <li><a id="buttonBack"><i class="fas fa-home"></i> Home</a></li>
+          <li><a id="buttonCuriousPokemonFacts"><i class="fas fa-cat"></i> Curious Pokémon Facts</a></li>
+          <li><a id="buttonSearchByType"><i class="fas fa-search"></i> Search By Type</a></li>
+          <li><a id="buttonFilterPokemon"><i class="fas fa-filter"></i> Filter Pokémon</a></li>
+          <li><a id="buttonRegionKanto"><i class="far fa-compass"></i> Kanto Region</a></li>
+        </ul>
+      </nav>
+    </header>
+
+     <figure class="titleHomePage"><img src="https://fontmeme.com/permalink/190215/4483a9ef98073987d2a0b50457a1f3ed.png"></figure>
+     <figure class="detectivePikachu"><img src="https://www.gameit.es/wp-content/uploads/2018/01/Detective_Pikachu_2.png"></figure>
+    
+  </section>
+
+  <!-- PAGE 2 -->
+  <section id="filterPage" class="hide">
+    <header> <input type="checkbox" id="hamburguerMenuFilterPage">
+      <label for="hamburguerMenuFilterPage"><i class="fas fa-bars"></i></label>
+      <nav class="menu_gral">
+        <ul>
+          <li><a id="buttonHomeOnFilter"><i class="fas fa-home"></i> Home</a></li>
+          <li><a id="buttonCuriousPokemonFactsOnFilter"><i class="fas fa-cat"></i> Curious Pokémon Facts</a></li>
+          <li><a id="buttonSearchPokemonOnFilter"><i class="fas fa-search"></i> Search By Type</a></li>
+          <li><a id="buttonRegionKantoOnFilter"><i class="far fa-compass"></i> Kanto Region</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <figure class="checkbox">
+        <div> <i class="fas fa-align-left"> </i> FILTRAR POKÉMON</div>
+        <label><input type="checkbox" class = "seleccion" id="checkboxWeightLight"> LIGHT </label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxWeightHeavy"> HEAVY</label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxWeightAscending">BY ASCENDING WEIGHT</label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxWeightDescending"> BY DESCENDING WEIGHT</label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxHeightSmall">SMALL </label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxHeightMedium"> MEDIUM </label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxHeightTall"> TALL</label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxHeightAscending"> BY ASCENDING HEIGHT</label><br>
+        <label><input type="checkbox" class = "seleccion" id="checkboxHeightDescending"> BY DESCENDING HEIGHT</label><br>
+      </figure>
+      <main class="boxPokemones">
+        <div id="printPokemonFilter" class="pokemones"></div>
+      </main>
+
+    </section>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section id="pageKanto" class="hide">
+    <header> <input type="checkbox" id="hamburguerMenuPageKanto">
+      <label for="hamburguerMenuPageKanto"><i class="fas fa-bars"></i>
+      </label>
+      <nav class="menu_gral">
+        <ul>
+          <li><a id="buttonHomeOnKantoPage"><i class="fas fa-home"></i> Home</a></li>
+          <li><a id="buttonCuriousOnKanto"><i class="fas fa-cat"></i>Curious Pokémon Facts</a></li>
+          <li><a id="buttonSearchByTypeOnKanto"><i class="fas fa-search"></i> Search By Type</a></li>
+          <li><a id="buttonFilterPokemonOnKanto"><i class="fas fa-filter"></i> Filter Pokémon</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+    <article id="total-data" class="pokemones"></article>
+  </section>
+
+
+  <!-- PAGE 4 -->
+  <section id="curiousPokemonFactsPage" class="hide">
+      <header> <input type="checkbox" id="hamburguerMenuCuriousPokemon">
+        <label for="hamburguerMenuCuriousPokemon"><i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu_gral">
+          <ul>
+            <li><a id="buttonHomeOnCuriousPage"><i class="fas fa-home"></i> Home</a></li>
+            <li><a id="buttonSearchByTypeOnCuriousPage"><i class="fas fa-search"></i> Search By Type</a></li>
+            <li><a id="buttonFilterOnCuriousPage"><i class="fas fa-filter"></i> Filter Pokémon</a></li>
+            <li><a id="buttonRegionKantoOnCuriousPage"><i class="far fa-compass"></i> Kanto Region</a></li>
+          </ul>
+        </nav>
+      </header>
+   <article class="container-Stadistics"> 
+   <main class="Average-Weight" id ="averageWeightPokemon"></main>
+   <main class="Average-Height" id= "averageHeightPokemon"></main></article>
+    
+   <div class="graphic">
+   <canvas id="myChart" width="400" height="400"></canvas>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+  </section>
+
+  <!--PAGE 5-->
+  <section id="typePokemonPage" class="hide">
+    <header class="headerType"> <input type="checkbox" id="hamburguerMenuTypePage">
+      <label for="hamburguerMenuTypePage"><i class="fas fa-bars"></i>
+      </label>
+      <nav class="menu_gral_type_pokemon">
+        <ul>
+          <li><a id="buttonHomeTypePage"><i class="fas fa-home"></i> Home</a></li>
+          <li><a id="buttonPokemonFire"><i class="fas fa-fire-alt"></i> Fire</a></li>
+          <li><a id="buttonPokemonGrass"><i class="fas fa-leaf"></i> Grass</a></li>
+          <li><a id="buttonPokemonIce"><i class="fas fa-icicles"></i> Ice</a></li>
+          <li><a id="buttonPokemonPoison"><i class="fas fa-skull-crossbones"></i> Poison</a></li>
+          <li><a id="buttonPokemonFlying"><i class="fas fa-feather"></i> Flying</a></li>
+          <li><a id="buttonPokemonPsychic"><i class="fas fa-eye"></i> Psychic</a></li>
+          <li><a id="buttonPokemonWater"><i class="fas fa-water"></i> Water</a></li>
+          <li><a id="ButtonGround"><i class="fas fa-globe-americas"></i> Ground </a></li>
+          <li><a id="ButtonRock"><i class="fas fa-spinner"></i> Rock</a></li>
+          <li><a id="ButtonElectric"><i class="fas fa-bolt"></i> Electric</a></li>
+          <li><a id="ButtonBug"><i class="fas fa-bug"></i> Bug</a></li>
+          <li><a id="ButtonNormal"><i class="fas fa-star"></i> Normal</a></li>
+          <li><a id="ButtonFighting"> <i class="fas fa-hand-rock"></i> Fighting </a></li>
+          <li><a id="ButtonDragon"><i class="fas fa-dragon"></i> Dragon </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="containterPokemon">
+      <main id="pokemonTypeAll" class="pokemones">
+
+
+      </main>
+    </section>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-column">
+          <h3>About Pikapedia</h3>
+          <span>
+            Pikapedia is a project of the
+            <i>laboratorians</i> Gabriela Castro <br> and Andrea Velázquez.
+            Has been designed for people like you: <br>
+            lovers of the Pokemon world.</span>
+        </div>
+        <div class="footer-column">
+          <h3>Contact us</h3>
+          <span><i class="fas fa-map-marker-alt"></i>
+            Tonalá 10, Roma Sur, 06700 México City, CDMX
+          </span> <br>
+          <span><i class="fas fa-phone"></i>
+            01 800 000 000
+          </span> <br>
+          <span><i class="far fa-envelope"></i> info@pikapedia.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy-redes">
+      <div class="main-copy-redes">
+        <div class="footer-copy">
+          &copy; Pikapedia, 2019. All rights reserved.</div>
+
+        <div class="footer-redes">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="https://github.com/gabycastro1403" class="fab fa-github"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src ="grafs.js"></script>
+
+
+  
+  
+
+
+</body>
+
 </html>
