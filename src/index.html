@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <!--primera pantalla-->
+  <section id="inicio">
+    <div id="primera-pantalla">
+      <figure id="logo-lol"><img src="./assets/lol-logo.png"></figure>
+      <span class="blinke"> Click anywhere...</span>
+
+      <!-- <button id="inicio" class>Bienvenidos</button>-->
+    </div>
+  </section>
+
+
+  <!--lista de campeones-->
+  <section id="fondo-de-lista-de-campeones" class="hidden">
+
+    <header id="mainHeader" class="closeMenu">
+      <i id="menu" class="fas fa-bars"></i> <div id="searchDiv"><i id= "iconGlass" class="fas fa-search"></i><input type="searchInput" id="searchInput" placeholder="Find a Champion" ></div>
+
+    </header>
+    <div id="mySidenavOne"></div>
+    <div id="mySidenav" class="sidenav">
+      <a id="home" href="#"><i class="fas fa-home"></i>HOME</a>
+      <p class="titulo">ROL FILTER</p>
+      <a id="Support" class="rolPersonajes" href="#">Support</a>
+      <a id="Assassin" class="rolPersonajes" href="#">Assassin</a>
+      <a id="Marksman" class="rolPersonajes" href="#">Marksman</a>
+      <a id="Fighter" class="rolPersonajes" href="#">Figther</a>
+      <a id="Mage" class="rolPersonajes" href="#">Mage</a>
+      <a id="Tank" class="rolPersonajes" href="#">Tank</a>
+      <p class="titulo">FILTER BY DIFFICULTY</p>
+      <a id="difficultyAsc" class="rolPersonajes" href="#">1-10</a>
+      <a id="difficultyDsc" class="rolPersonajes" href="#">10-1</a>
+      <p class="titulo">Miscellaneous</p> 
+      <a id="statsAverage" class="rolPersonajes" href="#">Stats</a>
+    </div>
+
+    <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
+<div  class="closeMenu"><h1>CHAMPIONS</h1></div>
+<div id="welcomeMssg">
+  <h1 class="welcome" >Welcome to the Summoner's Rift</h1>
+<h2 class="welcome"> Find your champion info or search them by trait</h2></div>
+<div id="titleChampions" class="closeMenu"><h1 id="rolTitle" class>CHAMPIONS</h1></div>
+
+    <div id="showFirstChampionList" class="closeMenu"></div>
+    <footer></footer>
+  </section>
+<section id="printed">
+
+  
+
+</section>
+
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+
+
+</body>
+
 </html>

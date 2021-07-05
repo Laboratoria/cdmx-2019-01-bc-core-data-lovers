@@ -584,7 +584,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcranck_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/05/Lancer-Paragon-Blitzcrank-Splash-Art-HD-4k-6k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-1024x614.jpg",
       blurb:
         "Zaun is a place where both magic and science have gone awry, and the unchecked nature of experimentation has taken its toll. However, Zaun's lenient restrictions allow their researchers and inventors the leeway to push the bounds of science at an ...",
       info: {
@@ -1309,6 +1309,8 @@ var LOL = {
       key: "28",
       name: "Evelynn",
       title: "the Widowmaker",
+      img:
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/Evelynn.png",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
       blurb:
@@ -2403,7 +2405,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Jinx.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/jinx_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/12/Odyssey-Jinx-Splash-Art-HD-4k-6k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol.jpg",
       blurb:
         "Jinx lives to wreak havoc without a thought for the consequences, leaving a trail of mayhem and panic in her wake. A manic and impulsive criminal, she despises nothing more than boredom, and gleefully brings her own volatile brand of pandemonium to ...",
       info: {
@@ -3024,7 +3026,7 @@ var LOL = {
       key: "7",
       name: "LeBlanc",
       title: "the Deceiver",
-      "name:":
+      img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Leblanc.png",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
@@ -3079,7 +3081,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/LeeSin.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/05/Playmaker-Lee-Sin-Sweeper-Rammus-Splash-Art-HD-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-1.jpg",
       blurb:
         "As a young teen, Lee Sin was intent on becoming a summoner. His will and dedication were unmatched by any of his peers, and his skill drew the attention of Reginald Ashram, the League's High Councilor at the time. While studying at the Arcanum Majoris,...",
       info: {
@@ -3235,7 +3237,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Lucian.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucia_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/08/High-Noon-Lucian-Splash-Art-HD-4k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-3-1024x580.jpg",
       blurb:
         "Lucian wields relic weapons imbued with ancient power and stands a stalwart guardian against the undead. His cold conviction never wavers, even in the face of the maddening horrors he destroys beneath his hail of purifying fire. Lucian walks alone on ...",
       info: {
@@ -4171,7 +4173,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Orianna.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Oriana_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/08/Orianna-by-margo_zakharova-HD-Wallpaper-Background-Fan-Art-Artwork-League-of-Legends-lol-1024x631.jpg",
       blurb:
         "There once was a Piltovian man named Corin Reveck who had a daughter named Orianna, whom he loved more than anything else in the world. Though Orianna had incredible talent for dancing, she was deeply fascinated by the champions of the League of ...",
       info: {
@@ -4795,7 +4797,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Shaco.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shack_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/09/Ace-of-Spades-Ezreal-Jack-of-Hearts-Twisted-Fate-Wild-Card-Shaco-Syndra-Mordekaiser-Splash-Art-Update-Rework-HD-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-1-1024x612.jpg",
       blurb:
         "Most would say that death isn't funny. It isn't, unless you're Shaco - then it's hysterical. He is Valoran's first fully functioning homicidal comic; he jests until someone dies, and then he laughs. The figure that has come to be known as the Demon ...",
       info: {
@@ -4951,7 +4953,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Signed_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/06/Beekeeper-Singed-Splash-Art-HD-4k-6k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol.jpg",
       blurb:
         "Singed descended from a long line of Zaun's revered chemists. Even in his youth, his talent for concocting potions far outstripped that of his peers, and he quickly distinguished himself from his less extraordinary chemist compatriots. It came as no ...",
       info: {
@@ -5367,7 +5369,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/TahmKench.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tamkench_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2019/01/Coin-Emperor-Tahm-Kench-Splash-Art-HD-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol.jpg",
       blurb:
         "''The whole world's a river, and I'm its king.''<br>Tahm Kench travels Runeterra's waterways, feeding his insatiable appetite with the misery of the unsuspecting. The singularly charming gourmand savors every moment of his victims' suffering.  A deal ...",
       info: {
@@ -5627,7 +5629,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Thresh.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tresh_0.jpg",
+        "http://www.lol-wallpapers.com/wp-content/uploads/2018/08/High-Noon-Thresh-Splash-Art-HD-4k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-3.jpg",
       blurb:
         "''The mind is a wondrous thing to tear apart.''<br><br>Sadistic and cunning, Thresh is a restless spirit who prides himself on tormenting mortals and breaking them with slow, excruciating inventiveness. His victims suffer far beyond the point of death,...",
       info: {

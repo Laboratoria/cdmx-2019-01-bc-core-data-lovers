@@ -1,0 +1,695 @@
+body {
+  background-image: url(./assets/cover.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-position: center;
+  background-attachment: fixed;
+  
+ 
+}
+#mainHeader{
+  width: 100%;
+  left:0;
+  top:0;
+  position:fixed;
+  height:9%;
+  background-color: #111;
+  display:flex;
+}
+
+#mySidenavOne{
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+
+}
+#showFirstChampionList{
+  margin-top: 50px;
+}
+
+
+#welcomeMssg{
+  background-image: url(http://www.lol-wallpapers.com/wp-content/uploads/2017/01/Summoners-Rift-4-League-of-Legends-Artwork-Wallpaper-lol-1024x688.jpg);
+  width: 100%;
+  height: 100%;
+  position: static;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 5px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+.welcome{
+  font-size: 140%;
+  background: -webkit-linear-gradient(left top, whitesmoke, yellow);
+  background: linear-gradient(to bottom right, whitesmoke, yellow);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+  text-align: center;
+  
+}  
+
+#iconGlass{
+  font-size:100%;
+  margin-left:50px;
+  margin-top:10%;
+  float: left;
+ 
+}
+
+#searchDiv{
+  margin-left: 40%;
+  position: absolute;
+  margin-top: 3%;
+
+ 
+}
+
+#searchInput{
+  width: 130px;
+  border: 2px solid rgba(120, 90, 40);
+  border-radius: 4px;
+  font-size: 80%;
+  background-color: white;
+  background-image: url(); 
+  background-repeat: no-repeat; 
+  margin-top: 4%;
+  margin-left: 5%;
+  position: absolute;
+
+  
+}
+
+#titleChampions{
+  margin-top: 10px;
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+#rolTitle{
+  margin-top: 10%;
+  margin-bottom: 7%;
+  color:white;
+  display: flex;
+  justify-content: center;
+  }
+
+#logo-lol {
+display:flex;
+justify-content: center;
+}
+
+figure img{
+  margin-top: 230px;
+  width: 90%;
+  height: 80%;
+}
+
+.fa-home:before {
+  content: "\f015";
+  margin-right: 500%;
+  font-size: 70%;
+}
+
+.fas {
+  color:rgba(120, 90, 40);
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top:6px;
+  
+
+}
+
+#presentation{
+  width: 90%;
+  height: 80%;
+}
+
+.lolIcons {
+  width: 25%;
+  margin: 5px;
+  display: inline-block;
+}
+
+.nameList {
+  margin: 5%;
+  background-color: rgb(1, 10, 19);
+  padding: 5%;
+  border: 3px solid rgba(120, 90, 40);
+  background-size: 100%;
+}
+
+.rolPersonajes{
+  font-size: 25px;
+  color: rgba(201, 170, 113);
+}
+
+.titulo{
+  font-size: 20px;
+  color: rgb(240, 236, 228);
+  width: max-content;
+  margin-left: 4%;
+  margin-bottom: -2%;
+}
+.hidden {
+  display: none;
+}
+
+#letras {
+  display: inline-block;
+  margin-top: 5%;
+  margin: 0px auto;
+  width: 60%;
+
+}
+
+
+#home{
+  padding-left: 2%;
+  margin-bottom: -7%;
+  color: ghostwhite;
+  font-size: 160%;
+}
+#nombre {
+
+  font-size: 20px;
+  color: white;
+  margin: 2%;
+  width: max-content;
+}
+
+
+#titulo{
+  font-size: 20px;
+  color: rgba(201, 170, 113);
+  margin: 2%;
+}
+
+
+.blinke {
+  color: rgba(201, 170, 113);
+  font-size: 30px;
+  text-align: center;
+  padding-left: 23%;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.bigImg{
+  display:none;
+}
+
+.splashPresentation{
+  display:block;
+  width: 100%;
+  height: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  display:inline-block;}
+
+  #title{
+    color: whitesmoke;
+    padding-left: 45%;
+    padding-right: 45%;
+  }
+  #blurb{
+    color: whitesmoke;
+  }
+.rolTitle{
+  position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding-left: 30%;
+  padding-right: 30%;
+  color: rgba(201, 170, 113);
+}
+.stats{
+  display: inline-block;
+  color: whitesmoke;
+}
+.statsOrder{
+  margin-left: 7%;
+}
+footer{
+  width: 100%;
+  left:0;
+  top:0;
+  height:50px;
+  background-color: #111;
+  display:none;
+  
+}
+
+/*Media Query Ipad*/
+@media only screen  and (min-width : 768px) {
+
+
+  figure img {
+    margin-top: 50%;
+  }  
+
+#titulo {
+    width: max-content;
+}
+#rolTitle {
+  margin-top: -10%;
+  margin-bottom: -7%;}
+
+.blinke {
+  font-size: 200%;
+  }
+
+.bigImg{
+  display: block;
+  width: 120%;
+  height: 80%;
+  margin-right: 0%;
+  margin-left: 0%; 
+  margin-bottom: 3%;
+
+
+  }  
+
+.lolIcons {
+    
+    display:none;
+  } 
+  
+  #showFirstChampionList{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+  }
+  
+  .nameList{
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+   margin-top: 25px;
+   margin-bottom: 0px;
+   display: flex;
+   flex-wrap: wrap;
+justify-content:center;
+padding-left: 4%;
+padding-right: 4%;
+padding-top: 1%;
+  }
+
+  .fa-home:before {
+    font-size: 100%;
+}
+  .fas{
+    margin-top: 2%;
+  }
+
+  .sidenav a{
+    font-size: 200%;
+    padding-left:10%;
+  }
+
+  .titulo{
+    font-size: 150%;
+    padding-left: 3%;
+    padding-top: 4%;
+   
+  
+    
+}
+#titleChampions{
+  margin-top: 20%;
+  font-size: 120%;
+}
+#showFirstChampionList{
+  margin-top: 5%;
+}
+
+#iconGlass{
+  font-size:100%;
+  margin-left:50px;
+  margin-top:10%;
+  float: left;
+ 
+}
+
+#searchDiv{
+  margin-left: 57%;
+  position: absolute;
+  margin-top: 3%;
+
+ 
+}
+
+#searchInput{
+  width: 200px;
+  
+
+  
+}
+#home{
+
+  font-size: 250%;
+}
+
+
+#mainHeader{
+  height: 7%;
+}
+
+
+#letras{
+  margin-top: 2%
+}
+
+#nombre{
+  font-size: 25px;
+}
+}
+
+
+/*Media Query Ipad-Pro*/
+@media only screen  and (min-width : 1024px) {
+
+  figure img {
+    margin-top: 50%;
+  }
+
+  .blinke {
+    font-size: 200%;
+    }
+  
+    .bigImg{
+      display: block;
+      width: 120%;
+      height: 80%;
+      margin-right: 0%;
+      margin-left: 0%; 
+      margin-bottom: 3%;
+    
+    
+      }  
+
+  .lolIcons {
+      
+      display:none;
+    } 
+    
+    #showFirstChampionList{
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     
+      
+    }
+    
+   .nameList{
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+   margin-top: 25px;
+   margin-bottom: 0px;
+   display: flex;
+   flex-wrap: wrap;
+justify-content:center;
+padding-left: 4%;
+padding-right: 4%;
+padding-top: 1%;
+  }
+  
+  
+    .fas{
+      margin-top: 2%;
+    }
+  
+    .sidenav a{
+      font-size: 200%;
+      padding-left:10%;
+    }
+  
+    .titulo{
+      font-size: 150%;
+      padding: 5%;
+      
+  }
+  #titleChampions{
+    margin-top: 20%;
+    font-size: 120%;
+  }
+  #showFirstChampionList{
+    margin-top: 7%;
+  }
+  
+  #searchDiv{
+    margin-left: 64%;
+    position: absolute;
+    margin-top: 2%;
+  
+   
+  }
+  
+  #searchInput{
+    width: 250px;
+    
+    
+  
+    
+  }
+  
+  #mainHeader{
+    height: 7%;
+  }
+  
+}
+
+
+/*Desktop*/
+
+@media (min-width: 1025px) {
+
+  figure img {
+    margin-top: 50%;
+  }
+  .hidden{
+    margin-left: 200px;
+  }
+
+  #mainHeader{
+    height: 9%;
+  }
+
+  #showFirstChampionList{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+  }
+
+  
+  .nameList{
+    width: 20%;
+    margin-right: 2px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  display: flex;
+justify-content:center;}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidenav a {
+    padding: 1px 12px 2px 55px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.fa-home:before {
+  display: block;
+}
+
+#letras{
+  margin-left: -12%
+}
+
+#home {
+  padding-left: 2%;
+  margin-bottom: -8%;
+  margin-top: 8%;}
+}
+
+@media (min-width: 1025px){
+
+  #mySidenavOne{
+    display: block;
+  
+  }
+
+}
+
+
+
+
+@media (min-width: 1281px){
+
+
+  figure img {
+    margin-top: 50%;
+  }
+
+  .hidden{
+    margin-left: 220px;
+  }
+
+  #mainHeader{
+    height: 9%;
+  }
+
+  #showFirstChampionList{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+  }
+  
+  .nameList{
+    width: 20%;
+    margin-right: 2px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  display: flex;
+justify-content:center;}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#mySidenavOne{
+  display: block;
+
+}
+
+.sidenav a {
+    padding: 1px 15px 2px 55px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.fa-home:before {
+  display: block;
+}
+
+#letras{
+  margin-left: -12%
+}
+
+#home {
+  padding-left: 2%;
+  margin-bottom: -8%;
+  margin-top: 8%;}
+}
+
