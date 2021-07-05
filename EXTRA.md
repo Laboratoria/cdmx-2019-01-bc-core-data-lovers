@@ -57,7 +57,7 @@ interfaz).
 
 - Esta segunda parte del proyecto es _individual_, salvo alguna excepción que
   decida tu _Training Manager_.
-  
+
 
 ## ¿Cómo empezar?
 

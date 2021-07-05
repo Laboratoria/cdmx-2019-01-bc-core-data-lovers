@@ -1,8 +1,31 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+  window.data = {
 
-const example = () => {
-  return 'example';
-};
+    filterData: (pokemon, optionFilter) => {
+      const arrayFilteredPokemons = pokemon.filter(pokemon => pokemon.type.includes(optionFilter));
+      return arrayFilteredPokemons;
+    },
 
-window.example = example;
+    filterInput: (pokemon, letter) => {
+      const search = pokemon.filter(pokemon => (pokemon.name.toLowerCase().match(letter.toLowerCase())));
+      return search;
+
+    },
+
+    sortData: (pokemon) => {
+      const sortByName = pokemon.sort((sortOrderA, sortOrderZ) => (sortOrderA.name < sortOrderZ.name) ? -1 : 1);
+      return sortByName;
+    },
+
+    computeStats: (pokemon) => {
+      const candyCount = [];
+      pokemon.forEach((element) => {
+        if (element.candy_count > 0 ) {
+          candyCount.push(element.candy_count)
+        }
+      });
+      const suma = candyCount.reduce((prev, next) => prev + next);
+      const prom = suma / candyCount.length;
+      return prom
+    }
+
+  };
