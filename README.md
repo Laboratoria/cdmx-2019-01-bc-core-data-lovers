@@ -1,3 +1,148 @@
+###Pokesaurius
+
+Pokémon GO fue un ¡boom! en el verano de 2016, llegó a tener más de 28 millones de usuarios. El hecho de poder salir a cazar pokémon con tus amigos y tener la oportunidad de conquistar los gimnasios fue realmente llamativo e innovador. 
+Pero es probable que nos preguntemos ¿quién juega Pokémon GO hoy en día?
+
+Aunque es verdad que Pokémon GO perdió su auge muy rápido, nos bastó investigar un poco para  descubrir que aún quedan 5 millones de usuarios activos, y que son una comunidad constante.
+Encontramos que el 60% de los jugadores de Pokémon GO tienen un rango de edad de  18 a 34 años.
+ 
+Pensando en estos usuarios y en ayudar a que nuevos jugadores conozcan el juego desarrollamos “Pokesaurius”. Nuestro proyecto es un app web enfocada a los jugadores de Pokémon GO y a las personas  que quieran iniciarse como entrenadores en este juego. 
+
+Para el desarrollo de la aplicación realizamos una investigación con jugadores de Pokémon GO, quienes nos explicaron que existen dos tipos de jugadores; los que salen a la calle para jugar o los jugadores de consola.
+
+Nosotras nos enfocaremos en este proyecto a los jugadores que salen a la calle, porque nos dimos cuenta que necesitan una guía.
+
+Descubrimos que para estos usuarios es importante primero visualizar a todos los pokémon con sus respectivas evoluciones. Tener diferentes formas de ordenar y filtrar las cartas de pokemones para obtener sus características de manera rápida, y así obtener ventaja a la hora de iniciar una batalla.
+
+Llegamos a la conclusión de que “Pokesaurius” a través de su funcionalidad podría ser utilizada por personas con experiencia en el juego como por nuevos jugadores.
+
+Los jugadores expertos necesitan encontrar a sus pokémon de manera rápida; para eso contamos con una barra lateral de filtrado, la cual permite encontrar a todos los pokémon por sus diferentes tipos. También necesitan que se muestre una carta individual con ciertas características específicas  como las evoluciones, los candies (caramelos) que son necesarios para llegar a su siguiente evolución, el tipo y las debilidades de cada uno.  Y descubrimos que esta función es muy útil también para los jugadores nuevos que quieren conocer el tipo de todos sus pokémon.
+
+
+Nuestra app busca ser un punto de apoyo para cuando un jugador tenga dudas acerca de sus pokémon y quiera encontrar información específica, de una manera **sencilla y rápida**.
+
+##¿Cómo comenzar a trabajar?
+Para comenzar este proyecto tendrás que hacer un fork y clonar este repositorio que contiene el boilerplate.
+
+## Consideraciones técnicas
+
+La lógica de "Pokesaurius" está implementada en JavaScript
+(ES6), HTML y CSS. En este proyecto **NO** se usaron librerías o
+frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
+
+En este proyecto NO se utilizó la _pseudo-variable_ `this`.
+
+### Pruebas unitarias
+
+El _boilerplate_ de este proyecto incluye pruebas unitarias, éstas verifican que las funciones de _filtrar_ y _ordenar_ la data, funcionen correctamente.
+
+El _boilerplate_ contiene una estructura de archivos como punto de partida así
+como toda la configuración de dependencias:
+
+```text
+.
+├── package.json
+├── README.md
+├── src
+│   ├── data
+│   │   ├── injuries
+│   │   │   ├── injuries.js
+│   │   │   └── injuries.json
+│   │   ├── lol
+│   │   │   ├── lol.js
+│   │   │   └── lol.json
+│   │   ├── pokemon
+│   │   │   ├── pokemon.js
+│   │   │   └── pokemon.json
+│   │   ├── steam
+│   │   │   ├── steam.js
+│   │   │   └── steam.json
+│   │   └── worldbank
+│   │       ├── worldbank.js
+│   │       └── worldbank.json
+│   ├── data.js
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+└── test
+    └── data.spec.js
+
+8 directories, 17 files
+```
+
+### `src/index.html`
+
+Existe un archivo `index.html`. Como ya sabrás, acá va la página que se mostrará al usuario. También nos sirve para
+indicar qué scripts se usarán y unir todo lo que hemos hecho.
+
+En este archivo encontrarás una serie de _etiquetas_ (_tags_) `<script>`
+_comentadas_. Para _cargar_ las diferentes fuentes de datos tendrás que
+_descomentar_ estas _etiquetas_. Cada uno de estos scripts asignará una variable
+global con la data correspondiente a esa fuente de datos.
+
+Por ejemplo, si descomentamos la siguiente línea:
+
+```html
+<!-- <script src="./data/worldbank/worldbank.js"></script> -->
+```
+
+La línea quedaría así:
+
+```html
+<script src="./data/worldbank/worldbank.js"></script>
+```
+
+Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
+scripts (como `src/data.js` o `src/main.js`).
+
+En este proyecto usaremos y descomentaremos la data de Pokémon para poder trabajar adecuadamente.
+
+### `src/main.js`
+ 
+Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
+mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
+interacción con el DOM. Operaciones como creación de nodos, registro de
+manejadores de eventos (_event listeners_ o _event handlers_), ....
+
+Esta no es la única forma de dividir tu código, puedes usar más archivos y
+carpetas, siempre y cuando la estructura sea clara para tus compañeras.
+
+### `src/data.js`
+
+El corazón de este proyecto es la manipulación de datos a través de arreglos y
+objetos. La idea de este archivo es contener toda la funcionalidad
+que corresponda a obtener, procesar y manipular datos.
+
+En este archivo esperamos que implementes las funciones detalladas en la sección
+de [_Pruebas Unitarias_](#pruebas-unitarias).
+
+
+### `test/data.spec.js`
+
+Tendrás también que completar las pruebas unitarias de las funciones
+implementadas en el archivo `data.js`.
+
+
+### Experiencia de usuario (UX) y Diseño
+Si deseas conocer más acerca del proceso de diseño, nuestro prototipo de alta y baja fidelidad, así como las historias de usuario de **"Pokesaurius"** te recomendamos visitar esta liga[Google Document(https://docs.google.com/document/d/1DiJ3VJ9M7rcssKCINQF_8iUfpAgVJ_de6dcB_vpt9yU/)]
+
+##Autores
+Karla Lorena Bellacetin Guido.
+Janet Urbina Núñez.
+
+##Contribuciones
+Shirley-Startary
+
+##Agradecimientos
+A Janet por su paciencia, y por siempre mostrar entusiasmo y actitud positiva durante la realización de este proyecto. Aprendí muchísimo de tu capacidad de sorprenderte y apreciar los pequeños detalles. 
+A mis coaches que sin su vocación y sus horas dedicadas, este proyecto no sería posible. Gracias por su cálido acompañamiento.
+Lorena.
+Gracias Lorena por tu pasión, compromiso con el proyecto, tu calidez alegría y energía que sin duda se vio reflejada en la sinergia y el desarrollo del proyecto. Mil gracias por tu paciencia.
+A todas mis compañeras por su ayuda, apoyo y alegría de compartir.
+A los coaches por su entrega, paciencia y disposición. Gracias por tanto.
+Janet.
+
+
 # Data Lovers
 
 ## Índice
@@ -297,7 +442,7 @@ Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
 scripts (como `src/data.js` o `src/main.js`).
 
 ### `src/main.js`
-
+ 
 Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
 mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
 interacción con el DOM. Operaciones como creación de nodos, registro de
@@ -508,23 +653,23 @@ compañera:
 
 ## Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] Usa VanillaJS.
+- [x] No hace uso de `this`.
+- [x] Pasa linter (`npm pretest`)
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
+- [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Opcional)
 
