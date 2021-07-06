@@ -11,6 +11,8 @@ h3 {
   line-height: 1.5;
 }
 
+p{font-size: 1em;}
+
 h1,
 h2,
 h3,
@@ -25,7 +27,7 @@ hr {
 }
 
 .shadow {
-  background-color: gainsboro;
+  background-color: lavender;
   border-radius: 15px;
   box-shadow: -10px -10px 10px 0 rgba(255, 255, 255, 0.35),
     -4px -4px 4px 0 rgba(255, 255, 255, 0.45),
@@ -103,10 +105,13 @@ main {
   height: 30px;
   padding: 0 15px;
   border: 0;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
 }
 
 .sort {
   margin-bottom: 10%;
+  align-items: center;
 }
 
 .sorters-container {
@@ -117,13 +122,44 @@ main {
 }
 
 .order {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   appearance: none;
 }
 .order:focus {
   box-shadow: inset -5px -5px 5px 0 rgba(0, 0, 0, 0.3),
     inset 4px 4px 4px 0 rgba(255, 255, 255, 0.5);
+}
+
+#table-year-data{
+  display: grid;
+  justify-items: center;
+  height: 80vh;
+}
+
+#table-indicators{
+  overflow-y: auto;
+}
+
+tbody, tfoot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  padding: 4% 0;
+}
+
+tr{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  width: 100%;
+  justify-items: center;
+  height: 35px;
+}
+
+#foot{
+  grid-template-columns: 100%;
 }
 
 @media (min-width: 1200px) {

@@ -101,7 +101,7 @@ average.addEventListener("click", () => {
 //Función que pinta los años y datos filtrados en una tabla
 const printing = (indicatorName, years, percent, country) => {
   sort.style.display = "flex";
-  table.style.display = "block";
+  table.style.display = "grid";
   average.style.display = "block";
   tableTitle.innerHTML = `${indicatorName}`;
   countryName.innerHTML = country;
