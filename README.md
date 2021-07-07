@@ -1,3 +1,108 @@
+# Readme.md Data Lovers
+
+## Interfaz Pokémon
+
+## Preámbulo
+
+Para poder
+lograr la interfaz se dio a la tarea de llevar a cabo una investigación de
+campo con usuarios ya conocedores del tema de Pokémon, principalmente sobre la
+pokedext, realizando las siguientes preguntas clave para el equipo. ¿qué es?,
+¿para qué sirve?, ¿Cómo le puede dar usabilidad el usuario?, y ¿qué mejoras se
+pueden lograr con respecto a otras interfaces?
+ 
+Se realizaron varias encuestas a diferentes tipos
+de usuarios experimentados siguiendo un formato de cuestionario sencillo.
+
+## Historias de Usuario
+[Historias de usuario](https://github.com/Andraco/cdmx-2019-01-bc-core-data-lovers/tree/rama-andrea/src/Historias%20de%20Usuario)
+
+[Encuesta](https://docs.google.com/forms/d/e/1FAIpQLSecy3iHRg064xWWGYwQLwLftOIPJS93kWD1KnbIn4VUanYJhA/viewform?vc=0&c=0&w=1).
+
+ con esta información recabada se ralizo un prototipado de baja fidelidad , y un prototipado de alta fidelidad 
+
+## Prototipo Baja fidelidad
+[Baja fidelidad](https://github.com/Andraco/cdmx-2019-01-bc-core-data-lovers/tree/rama-andrea/src/Prototipo%20baja%20Fidelidad)
+
+## Prototipo Alta fidelidad
+[Alta Fidelidad](https://github.com/Andraco/cdmx-2019-01-bc-core-data-lovers/tree/rama-andrea/src/Prototipo%20Alta%20Fidelidad)
+[Foto](https://docs.google.com/document/d/1MzqXN6Du3KzJ72L7YKJNr1j3MikVkCKxRegFvLLkK1s/edit).
+
+
+## Feedback
+
+Se realizaron observaciones y pruebas donde se percató que los usuarios requerían una interfaz más sencilla de navegar, proporcionar información de los pokemones con un filtrado por elemento y peso, así como ordenarlos por nombre y que esta fuera intuitiva sin tantas instrucciones.
+ 
+La cual fuera un apoyo de la interfaz de pokemon go ya que no se sabe que tan poderoso pueda ser el pokemon de captura y esto provoca una saturación de espacio por lo tanto obliga al jugador a desinstalarla o bien eliminar otras interfaces, así como tener pokemones que no les son útiles.
+
+
+Esto nos llevó a una evolución de la interfaz pasando por varios cambios desde modificar el Background, poner un navegador, respetar los colores institucionales de Pokemon, eliminar botones, y rehacer totalmente la interfaz para lograr el diseño que nuestros usuarios demandaban.
+
+
+
+
+## Objetivo de La Interfaz
+
+Pokedex Website surge dando solución a usuarios ya consolidados, así como a los nuevos y futuros consumidores aportando el conocimiento necesario sobre los pokemones de la región kanto filtrados por elementos con sus caracterizas para la hora de un combate puede tener la noción de:
+
+-Qué tipo de elemento pertenecen
+-Como se llaman
+-El número que ocupan en la lista
+-Cuánto pesan
+ 
+Con esta información el usuario podrá saber si vale la pena cazar al pokemon y retarlo a un combate sabiendo que pokemones tiene con cuál de ellos pueda vencer al que quiere obtener, y  así evitando tener pokemones que no valgan tanto la pena a consideración del usuario para no saturar su capacidad de espacio.
+ 
+## Herramientas
+ 
+- Java Script Vanilla
+- CSS con diseño responsivo
+- HTML Vanilla
+- Jest para pruebas unitarias
+ 
+# Métodos y Funciones utilizadas
+ 
+- filter
+- Funciones puras
+- sort
+- redius
+ 
+## Colaboradores
+ 
+- Claudia Ferrusca
+- Karen Legorreta
+- Andrea Ramírez
+ 
+# Agradecimiento
+ 
+Queremos agradecer a todas aquellas personas que nos apoyaron en dudas y retroalimentaciones para poder lograr este proyecto, a nuestros couches, nuestra compañera Mimi, a nuestro squad, Jedi y a la gente que contribuyó para que esto salga a flote y el día de hoy lo podamos visualizar, así como a él ☕ y   🍭 que nos mantuvieron alertas para llegar a la meta.😉
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Data Lovers
 
 ## Índice
