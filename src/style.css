@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Righteous|Dosis:400,500');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+/* Classes for the pokemon card with the effect that is flipped and shows information */
+.divPokemon {
+  border: 2px solid #99b89d;
+  width: 20%;
+  margin: 1%;
+  text-align: center;
+  border-radius: 1em;
+  height: 12em;
+  perspective: 100em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.divPokemon:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #d45827;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  border-radius: 1em;
+  text-align: justify;
+
+}
+
+/* Stats */
+#details td {
+  padding-left: 1em;
+  font-family: 'Dosis', sans-serif;
+
+}
+
+#details th {
+  padding-left: 5%;
+  font-family: 'Dosis', sans-serif;
+}
+
+h4 {
+  color: orange;
+  text-align: center;
+  padding: 8%;
+}
+
+.break-words {
+  overflow-wrap: break-word;
+}
+
+.color-type {
+  color: #e37222;
+}
+
+h5,
+p,
+h4 {
+  font-family: 'Righteous', cursive;
+}
+
+/* Index */
+.fondo {
+  background-image: url('./assets/images/backInicio.jpg');
+  width: 100%;
+  height: -webkit-fill-available;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#pokemones {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+#logo-poke {
+  width: 100%;
+  text-align: center;
+}
+
+#subtitle {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 6em;
+  text-align: center;
+  text-shadow: 0 0 8px black, 0 0 12px blue;
+  color: #FDCA14;
+  padding-top: 3%;
+}
+
+#pokemon-title {
+  width: 50%;
+  margin-top: 5%;
+}
+
+/* Filter, search */
+input[type=search] {
+  width: 50%;
+}
+
+#icon-lup {
+  width: 45%;
+  padding-left: 25%;
+}
+
+#icon-menu {
+  width: 84%;
+}
+
+#search-section,
+#type-button {
+  margin: 1em 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#order-section {
+  margin: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#order-section>section {
+  margin: 0% 1%;
+  width: 30%
+}
+
+/* Buttons by type */
+#normal {
+  background-image: url('./assets/images/Type_Normal.png');
+}
+
+#fire {
+  background-image: url('./assets/images/Type_Fuego.png');
+}
+
+#water {
+  background-image: url('./assets/images/Type_Agua.png');
+}
+
+#grass {
+  background-image: url('./assets/images/Type_Planta.png');
+}
+
+#electric {
+  background-image: url('./assets/images/Type_Eléctrico.png');
+}
+
+#ice {
+  background-image: url('./assets/images/Type_Hielo.png');
+}
+
+#fighting {
+  background-image: url('./assets/images/Type_Lucha.png');
+}
+
+#poison {
+  background-image: url('./assets/images/Type_Veneno.png');
+}
+
+#ground {
+  background-image: url('./assets/images/Type_Tierra.png');
+}
+
+#flying {
+  background-image: url('./assets/images/Type_Volador.png');
+}
+
+#psychic {
+  background-image: url('./assets/images/Type_Psíquico.png');
+}
+
+#bug {
+  background-image: url('./assets/images/Type_Bicho.png');
+}
+
+#rock {
+  background-image: url('./assets/images/Type_Roca.png');
+}
+
+#ghost {
+  background-image: url('./assets/images/Type_Fantasma.png');
+}
+
+#dragon {
+  background-image: url('./assets/images/Type_Dragón.png');
+}
+
+/* Input Radios */
+input[type=radio] {
+  margin-left: 20%;
+}
+
+label {
+  color: #eeaa78;
+}
+
+h2 {
+  margin-top: 5%;
+  margin-left: 5%;
+  color: #ff383f;
+  font-family: 'Courgette', cursive;
+}
+
+/* button group */
+fieldset {
+  padding: 1em;
+  border-radius: 1em;
+  border: 2px solid #fece00;
+}
+
+legend {
+  font-size: 20px;
+  color: #e37222;
+  font-family: 'Courgette', cursive;
+}
+
+.typesPokemon {
+  border-radius: 50%;
+  margin: 0.5%;
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Stats */
+.stats {
+  text-align: center;
+}
+
+#stats-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 10%;
+
+}
+
+#stats-table td,
+#stats-table th {
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+#stats-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#stats-table tr:hover {
+  background-color: #ddd;
+}
+
+#stats-table th {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+  background-color: #d14f1f;
+  color: white;
+
+}
+
+#principal-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* MAIN MENU */
+#principal-stats>section {
+  width: 55%;
+  margin-top: 5%;
+
+}
+
+/* MENU */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+a:link {
+  color: #0013bf;
+}
+
+a:visited {
+  color: #101061;
+}
+
+.menu-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 72px;
+  padding: 0 2em;
+  background-color: #0c4fb4;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.blanco,
+.icon {
+  color: white;
+
+}
+
+
+
+nav {
+  z-index: 100;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgb(247, 186, 56);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translate(-300px, 0);
+  transition: transform .3s ease;
+}
+
+/* Unfold main menu */
+nav.open {
+  transform: translate(0, 0);
+}
+
+/* Items main menu*/
+nav li {
+  padding: 1em;
+}
+
+nav li a {
+  text-align: center;
+  padding: 1em;
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  font-size: 140%;
+}
+
+ul li:hover {
+  background: rgb(255, 215, 54);
+}
+
+/* Desktop */
+@media only screen and (min-widh: 992px) {
+
+  .divPokemon {
+    /*position: relative;*/
+    width: 20%;
+
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+
+  .menu-mobile {
+
+    background-color: rgb(6, 90, 158);
+  }
+
+
+  .divPokemon {
+
+    width: 30%;
+  }
+
+  #subtitle {
+    font-size: 4em;
+  }
+
+  #principal-stats>section {
+    width: 70%;
+
+  }
+
+
+}
+
+/* Mobiles */
+@media only screen and (max-width: 576px) {
+
+  .menu-mobile {
+    background-color: rgb(10, 113, 182);
+  }
+
+
+  .divPokemon {
+
+    width: 48%;
+
+  }
+
+  #type-button {
+    margin: 1em 2em;
+
+  }
+
+  #order-section {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #order-section>section {
+    width: 85%;
+  }
+
+  input[type=radio] {
+    transform: scale(2, 2);
+    margin-left: 20%;
+  }
+
+  label {
+    margin-left: 2%;
+  }
+
+  #subtitle {
+    font-size: 2em;
+  }
+
+  #principal-stats>section {
+    width: 80%;
+
+  }
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+
+    <!--MENU-->  <!--MENU-->
+    <div class="menu-mobile">
+      <div>
+        <span class="blanco"></span>
+      </div>
+      <a href="#" id="menu">
+        <i class="icon"></i>
+        <figure id="lines-menu">
+          <i class="icon"> <img id="icon-menu" src="./assets/images/menu-icon-4.png" alt="MENÚ"></i>        </figure>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="typePokemon.html" target="_self">Filter your Pokemon</a></li>
+        <li><a href="orderPokemon.html">Order your Pokemon</a></li>
+        <li><a href="statsPokemon.html">Stats</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--ORDER DATA-->
+  <h2>Order your Pokemon by:</h2>
+  <section id="order-section">
+
+    <section>
+      <fieldset>
+        <legend>Name</legend>
+        <input id="asc-name" type="radio" name="order">
+        <label for="asc-name">A-Z</label>
+        <input id="desc-name" type="radio" name="order">
+        <label for="desc-name">Z-A</label>
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>Weight</legend>
+        <input id="asc-weight" type="radio" name="order">
+        <label for="asc-weight">Light</label>
+        <input id="desc-weight" type="radio" name="order">
+        <label for="desc-weight">Heavy</label>
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>Height</legend>
+        <input id="asc-height" type="radio" name="order">
+        <label for="asc-height">Small</label>
+        <input id="desc-height" type="radio" name="order">
+        <label for="desc-height">Big</label>
+      </fieldset>
+    </section>
+
+  </section>
+  <section id="pokemones">
+
+  </section>
+
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

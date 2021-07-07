@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
-<body class="fondo">
+<body>
   <header>
-    <div id="inicio">
-    </div>
 
     <!--MENU-->
     <div class="menu-mobile">
@@ -19,11 +18,10 @@
         <span class="blanco"></span>
       </div>
       <a href="#" id="menu">
-
+        <i class="icon"></i>
         <figure id="lines-menu">
           <i class="icon"> <img id="icon-menu" src="./assets/images/menu-icon-4.png" alt="MENÚ"></i>
         </figure>
-
       </a>
     </div>
     <nav>
@@ -35,13 +33,46 @@
       </ul>
     </nav>
   </header>
+  <!--STATS-->
+  <h2 class="stats">Principal Stats</h2>
+  <section id="principal-stats">
+    <section id="chart-candy">
 
-  <!--BACK-->
-  <figure id="logo-poke">
-    <img id="pokemon-title" src="./assets/images/pokemon-logo.png" alt="POKÉMON">
-  </figure>
-  <p id="subtitle">Encyclopedia</p>
+    </section>
+    <section id="chart-spawn">
 
+    </section>
+    <section id="chart-avg">
+
+    </section>
+
+    <table id="stats-table">
+      <tr>
+        <th>Feature</th>
+        <th>Max</th>
+        <th>Min</th>
+        <th>Avg</th>
+      </tr>
+      <tr>
+        <td>Candy Count</td>
+        <td id="max-candy"></td>
+        <td id="min-candy"></td>
+        <td id="avg-candy"></td>
+      </tr>
+      <tr>
+        <td>Spawn Chance</td>
+        <td id="max-spawn"></td>
+        <td id="min-spawn"></td>
+        <td id="avg-spawn"></td>
+      </tr>
+      <tr>
+        <td>Avg Spawns</td>
+        <td id="max-avg"></td>
+        <td id="min-avg"></td>
+        <td id="avg-avg"></td>
+      </tr>
+    </table>
+  </section>
 
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>

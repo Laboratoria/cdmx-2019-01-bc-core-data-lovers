@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <!--MENU-->
+    <div class="menu-mobile">
+      <div>
+        <span class="blanco"></span>
+      </div>
+      <a href="#" id="menu">
+        <i class="icon"></i>
+        <figure id="lines-menu">
+          <i class="icon"> <img id="icon-menu" src="./assets/images/menu-icon-4.png" alt="MENÚ"></i>
+        </figure>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="typePokemon.html" target="_self">Filter your Pokemon</a></li>
+        <li><a href="orderPokemon.html">Order your Pokemon</a></li>
+        <li><a href="statsPokemon.html">Stats</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--SEARCH-->
+    <!--SEARCH-->
+  <section id="search-section">
+    <input id="search-coincidences" type="search" placeholder="Search by name">
+    <figure id="icon-search">
+      <img id="icon-lup" src="./assets/images/search.png">
+    </figure>
+  </section>
+  <!--BUTTONS-->
+  <section id="type-button">
+    <button id="normal" class="typesPokemon" name="Normal" title="Normal"></button>
+    <button id="fire" class="typesPokemon" name="Fire" title="Fire"></button>
+    <button id="water" class="typesPokemon" name="Water" title="Water"></button>
+    <button id="grass" class="typesPokemon" name="Grass" title="Grass"></button>
+    <button id="electric" class="typesPokemon" name="Electric" title="Electric"></button>
+    <button id="ice" class="typesPokemon" name="Ice" title="Ice"></button>
+    <button id="fighting" class="typesPokemon" name="Fighting" title="Fighting"></button>
+    <button id="poison" class="typesPokemon" name="Poison" title="Poison"></button>
+    <button id="ground" class="typesPokemon" name="Ground" title="Ground"></button>
+    <button id="flying" class="typesPokemon" name="Flying" title="Flying"></button>
+    <button id="psychic" class="typesPokemon" name="Psychic" title="Psychic"></button>
+    <button id="bug" class="typesPokemon" name="Bug" title="Bug"></button>
+    <button id="rock" class="typesPokemon" name="Rock" title="Rock"></button>
+    <button id="ghost" class="typesPokemon" name="Ghost" title="Ghost"></button>
+    <button id="dragon" class="typesPokemon" name="Dragon" title="Dragon"></button>
+  </section>
+  <section id="pokemones">
+
+  </section>
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
