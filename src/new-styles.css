@@ -11,7 +11,9 @@ h3 {
   line-height: 1.5;
 }
 
-p{font-size: 1em;}
+p {
+  font-size: 1em;
+}
 
 h1,
 h2,
@@ -131,17 +133,18 @@ main {
     inset 4px 4px 4px 0 rgba(255, 255, 255, 0.5);
 }
 
-#table-year-data{
+#table-year-data {
   display: grid;
   justify-items: center;
   height: 80vh;
 }
 
-#table-indicators{
+#table-indicators {
   overflow-y: auto;
 }
 
-tbody, tfoot{
+tbody,
+tfoot {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +152,7 @@ tbody, tfoot{
   padding: 4% 0;
 }
 
-tr{
+tr {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
@@ -158,7 +161,20 @@ tr{
   height: 35px;
 }
 
-#foot{
+#average {
+  height: 60px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+#foot {
   grid-template-columns: 100%;
 }
 
