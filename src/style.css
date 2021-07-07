@@ -1,0 +1,374 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hideElement {
+  display: none;
+}
+
+
+body {
+  background: linear-gradient(130deg, #4AB583, #9284FF);
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+.initial-page {
+  width: 90%;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*logo Pokesaurius*/
+.img-pokesaurius {
+  width: 40%;
+  margin: auto;
+  padding-top: 30%;
+  display: block;
+}
+
+.pokebola-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.pokebola-button:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header,
+.main-content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.img-logo-chico {
+  width: 200px;
+  margin: auto;
+  display: block;
+}
+
+nav {
+  background: #003471;
+  margin: auto;
+  border-radius: 10px;
+  width: 92.5%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.text-page {
+  color: #FFBA5C;
+  display: inline-block;
+  margin-top: 3px;
+  margin-left: 3%;
+}
+
+i {
+  background-color: #FFBA5C;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  color: #003471;
+  text-align: center;
+  float: right;
+  margin: 0 2px;
+  padding: 5px;
+}
+
+.main-content {
+  height: 38em;
+}
+
+
+.content,
+.aside {
+  background-color: rgba(209, 202, 254, 0.493);
+  height: 36em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  float: left;
+}
+
+.content {
+  width: 63%;
+  margin-left: 4%;
+  overflow: auto;
+  overflow-x: hidden;
+  border-radius: 14px;
+}
+
+.post {
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+.aside {
+  width: 27%;
+  margin-right: 4%;
+  margin-left: 2%;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.button-filter-by-type,
+.sort-button {
+  background: #E6FDFB;
+  border: none;
+  width: 37%;
+  border-radius: 10px;
+  margin: 2% 4%;
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #003471;
+  display: inline-block;
+}
+
+.button-filter-by-type:hover,
+.sort-button:hover {
+  background: #FFBA5C;
+}
+
+.sort-button {
+  width: 55%;
+}
+
+.type,
+.order-by-name,
+.did-you-know {
+  font-size: 25px;
+  font-weight: bold;
+  color: #003471;
+  padding-top: 6%;
+  padding-bottom: 3%;
+}
+
+
+.fa-angle-up {
+  display: inline-block;
+}
+
+.average {
+  background: #FFD185;
+  margin: 8% 8.5% 5%;
+  border-radius: 15px;
+  border: 3px solid #FFBA5C;
+  padding-bottom: 10px;
+}
+
+p {
+  font-weight: bold;
+  color: #003471;
+}
+
+.wrapper {
+  display: inline-block;
+  background: #FFD185;
+  margin: 9px 15px;
+  padding-bottom: 10px;
+  width: 153px;
+  height: 180px;
+  border-radius: 14px;
+  border: 3px solid #FFBA5C;
+}
+
+.wrapper:hover {
+  background: rgba(209, 202, 254, 0.493);
+}
+
+.pokemon-card-image {
+  background: #EAFEE6;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  padding-left: 6%;
+}
+
+.box-card {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #003471;
+  text-align: center;
+  margin-top: 9px;
+}
+
+
+@media screen and (min-width: 769px) {
+  .aside {
+    display: inherit;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #root {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .img-pokesaurius {
+    width: 70%;
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .content {
+    width: 83.5%;
+    margin-left: 8%;
+    height: 136%;
+  }
+
+  .post {
+    margin-left: 7%;
+  }
+
+  .wrapper {
+    margin: 9px 15px;
+  }
+
+  .aside {
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 280px;
+    position: absolute;
+    right: 4.5%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  #root {
+    width: 100%;
+  }
+
+  .img-pokesaurius {
+    width: 70%
+  }
+
+  .content {
+    width: 92%;
+    height: 105%;
+  }
+
+  .post {
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+
+  .wrapper {
+    background: #FFD185;
+    width: 88%;
+    height: 128px;
+    border-radius: 14px;
+    border: 2px solid #FFBA5C;
+  }
+
+  .pokemon-card-image {
+    background: #EAFEE6;
+    width: 48%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding-left: 2%;
+    display: inline-block;
+  }
+
+  .box-card {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #003471;
+    float: right;
+    top: 0px;
+    margin: 9% 5%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .aside {
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 255px;
+    height: 90%;
+    position: absolute;
+    right: 4.5%;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  #root {
+    width: 100%;
+  }
+
+  .img-pokesaurius {
+    width: 90%
+  }
+
+  i {
+    float: right;
+    margin: 0 2px;
+    padding: 5px;
+  }
+
+  .content {
+    width: 92%;
+    height: 85%;
+    margin-left: 4%;
+  }
+
+  .post {
+    margin-left: 15%;
+    margin-top: 3%;
+  }
+
+  .aside {
+    background: linear-gradient(130deg, #4AB583, #9284FF);
+    width: 250px;
+    height: 64%;
+    position: absolute;
+    top: 16%;
+    right: 4.5%;
+  }
+
+  .button-filter-by-type {
+    margin: 1% 3%;
+  }
+
+}
