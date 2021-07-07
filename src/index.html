@@ -1,18 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Pókemon</title>
+</head>
+
+
+<!--En esta seccion esta todos los elementos que contiene la pagina principal-->
+
+<body>
+  <div id="splash">
+    <div class="splash-inner">
+      <div class="icon">
+        <h2>PokeGram </h2>
+        <img src="assets/ball.png" alt="Mi pokebola">
+      </div>
+      <h3>Aquí encontrarás todo a cerca de los pókemons!</h3>
+    </div>
+  </div>
+  <!--En esta seccion estan todos los elementos correspondientes a la pagina de los elementos -->
+  <div id="PaginaElementos" class="ocultar">
+
+    <!--onkeyup es un evento de liberacion de tecla-->
+
+    <ul id="result"></ul>
+  </div>
+  <nav>
+    PokeGram
+  </nav>
+  <a>Elementos</a>
+  <div>
+    <button type="submit" href="#pok"> <span class="tooltip" data-info="AGUA"><img src="./assets/agua.png" id="Water"
+          class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="INSECTO"><img src="assets/bug.png" id="Bug" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="DRAGON"><img src="assets/dragon.png" id="Dragon" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="ELECTRICO"><img src="assets/electric.png" id="Electric"
+          class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="FANTASMA"><img src="assets/ghost.png" id="Ghost" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="HIERBA"><img src="assets/grass.png" id="Grass" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="PSIQUICO"><img src="assets/psychic.png" id="Psychic" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="HIELO"><img src="assets/ice.png" id="Ice" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="NORMAL"><img src="assets/normal.png" id="Normal" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="VOLADOR"><img src="assets/flying.png" id="Flying" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="ROCA"><img src="assets/rock.png" id="Rock" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="PELEA"><img src="assets/fight.png" id="Fighting" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="FUEGO"><img src="assets/fire.png" id="Fire" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="TIERRA"><img src="assets/ground.png" id="Ground" class="typesPokemon"></span></button>
+    <button type="submit"><span class="tooltip" data-info="VENENO"><img src="assets/poison.png" id="Poison" class="typesPokemon"></span></button>
+  </div>
+
+  <section id="order-pokes">
+    <section>
+      <br>Ordena Alfabéticamente
+      <input id="asc-name" type="radio" name="order">
+      <label for="asc-name">A-Z</label>
+      <input id="desc-name" type="radio" name="order">
+      <label for="desc-name">Z-A</label>
+    </section>
+
+    <section>
+      <input type="button" id="info" value="Dato Curioso">
+    </section>
+
+
+    <seccion id="paint" class="grid-img">
+      <script src="./data/pokemon/pokemon.js"></script>
+    </seccion>
     <script src="data.js"></script>
     <script src="main.js"></script>
-  </body>
-</html>
+
+
+
+    <div id="PaginaPerfil" class="ocultar">
+    </div>
+
+
+  </section>
+</body>
