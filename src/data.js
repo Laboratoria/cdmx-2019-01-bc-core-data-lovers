@@ -1,8 +1,23 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+window.allPokemon = {
 
-const example = () => {
-  return 'example';
+  dataFiltered: (data, types) => {
+    const arrayFilter = data.filter(data => data.type.includes(types));
+    return arrayFilter;
+
+  },
+
+  filterByName: (data, inputValue) => {
+    let searchedByName = data.filter(data => (data.name.toUpperCase().match(inputValue)));
+    return (searchedByName)
+  },
+
+  orderData: (arrayOfType) => {
+    arrayOfType.sort((a, b) => a.name > b.name ? 1 : - 1);
+    return arrayOfType;
+  },
+
+  orderDataZtoA: (arrayOfType) => {
+    arrayOfType.sort((a, b) => a.name < b.name ? 1 : - 1);
+    return arrayOfType;
+  }
 };
-
-window.example = example;

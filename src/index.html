@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <title>P O K E D E X</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image" href="./favicon.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="text" id="searcher" name="search" placeholder="Busca a tu Pókemon por nombre">
+      <br><br>
+      <div class="button-group">
+        <button type="button" id="Fire" class="btn">Fuego</button>
+        <button type="button" id="Normal" class="btn">Normal</button>
+        <button type="button" id="Grass" class="btn">Hierba</button>
+        <button type="button" id="Ice" class="btn">Hielo</button>
+        <button type="button" id="Electric" class="btn">Eléctrico</button>
+        <br><br>
+        <button type="button" id="Fighting" class="btn">Pelea</button>
+        <button type="button" id="Poison" class="btn">Veneno</button>
+        <button type="button" id="Ground" class="btn">Tierra</button>
+        <button type="button" id="Flying" class="btn">Volador</button>
+        <button type="button" id="Rock" class="btn">Roca</button>
+        <br><br>
+        <button type="button" id="Bug" class="btn">Bicho</button>
+        <button type="button" id="Psychic" class="btn">Psíquico</button>
+        <button type="button" id="Ghost" class="btn">Fantasma</button>
+        <button type="button" id="Dragon" class="btn">Dragón</button>
+      </div>
+    </nav>
+  </header>
+  <div id="botton-Buttons" class="botton-Buttons">
+    <button type="button" id="bottom-button-sort-AtoZ" class="bottom-buttons">Ordenar de A - Z</button>
+    <button type="button" id="bottom-button-sort-ZtoA" class="bottom-buttons">Ordenar de Z - A</button>
+  </div>
+  <div id="results" class="screen">
+  </div>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

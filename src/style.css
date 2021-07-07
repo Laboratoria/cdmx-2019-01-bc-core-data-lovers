@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+  }
+body {
+ background:#cf2835;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+ 
+  background-image: url(assets/favicon.png);
+  background-repeat: no-repeat;
+  
+  }
+
+  input {
+    background: rgb(32, 30, 30);
+    color: rgb(210, 203, 203);
+    width: 72%;
+    padding: 2vh 0vh 2vh 3vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 17px;
+    margin-left: 50px;
+    display: inline-block;
+    position: absolute;
+    }
+
+    nav {
+      overflow: hidden;
+      margin-left: 10px;
+    }
+    
+   nav button {
+      float: left; 
+      margin-right: 6px;
+      display: block;
+      text-decoration: none;
+  }
+ 
+button:hover {
+  background-color: #0431B4;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header{ 
+    width: 850px;
+    background-size: 6vh;
+  background-position-x: 3vh;
+  background-position-y: 3vh; 
+  }
+
+input{
+  margin-left: 50px;
+}
+
+.button-group {
+    margin-left: 3vh;
+    overflow: hidden;
+    margin-top: 5vh;
+          }
+          
+.btn {
+    color: #fff; /* color tipográfico */
+   font-family: 'Rubik', sans-serif; /* familia tipográfica */
+    font-size: 10px; /* tamaño de la fuente */
+    background-color: #0080FF; /* color de fondo */ 
+    padding: 1%; /* más cuerpo al botón */
+    border: 1px solid #0040FF;
+    border-radius: 3px; /* puntas redondeadas*/
+    padding: -2vh 7vh 10vh 7vh;
+ }
+
+ .screen{
+    display: inline-block;
+    position: absolute;
+    bottom: 45px;
+    right: 10px;
+    background: rgb(32, 30, 30);
+    height: 57%;
+    border-radius: 2vh;
+    width: 89%;
+    margin: 1vh;
+    border-style: solid;
+    border-width: 13px;
+    border-color: white;
+}
+
+#bottom-button-sort-AtoZ {
+    height: 4%;
+    width: 22vh;
+    border-radius: 2vh;
+    position: absolute;
+    bottom: 4vh;
+    left: 5vh;
+    border: .2vh solid darkred;
+    background: #FF002B;
+    z-index: 3;
+    color: darkred;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vh;
+    box-shadow: -.2vh .2vh darkred;
+  }
+  #bottom-button-sort-ZtoA {
+    height: 4%;
+width: 22vh;
+border-radius: 2vh;
+position: absolute;
+bottom: 4vh;
+left: 30vh;
+border: .2vh solid darkblue;
+background: #0040FF;
+z-index: 3;
+color: darkblue;
+font-family: 'Rubik', sans-serif;
+font-size: 2vh;
+box-shadow: -.2vh .2vh darkblue;
+  }
+  #results {
+    overflow: auto;
+  }
+  .pokedex {
+      background: transparent;
+      color: white;
+    }
+  }
+  
+
+
+  @media only screen and (min-width: 601px) {
+
+    header {
+width: 100%;
+background-size: 15vh;
+background-position-x: 20vh;
+background-position-y: 7vh;
+}
+input {
+  margin-left: 235px;
+  margin-top: 75px;
+  width: 70%;
+  }
+    .button-group {
+        display: inline-flex;
+  margin-left: 36vh;
+  margin-top: 14vh;
+}
+.btn {
+  color: #fff;
+font-family: 'Rubik', sans-serif;
+font-size: 12px;
+background-color: #0080FF;
+border: 0px solid #0040FF;
+border-radius: 3px;
+padding: 12px;
+}
+
+.screen {
+  display: inline-block;
+  position: absolute;
+  bottom: 82px;
+  right: 238px;
+  background: rgb(32, 30, 30);
+  height: 59%;
+  border-radius: 2vh;
+  width: 60%;
+  margin: 1vh;
+  border-style: solid;
+  border-width: 13px;
+  border-color: white;
+}
+
+#bottom-button-sort-AtoZ {
+  height: 4%;
+  width: 22vh;
+  border-radius: 2vh;
+  position: absolute;
+  bottom: 4vh;
+  left: 65vh;
+  border: .2vh solid darkred;
+  background: #FF002B;
+  z-index: 3;
+  color: darkred;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2vh;
+  box-shadow: -.2vh .2vh darkred;
+}
+#bottom-button-sort-ZtoA {
+  height: 4%;
+width: 22vh;
+border-radius: 2vh;
+position: absolute;
+bottom: 4vh;
+    left: 125vh;
+border: .2vh solid darkblue;
+background: #0040FF;
+z-index: 3;
+color: darkblue;
+font-family: 'Rubik', sans-serif;
+font-size: 2vh;
+box-shadow: -.2vh .2vh darkblue;
+}
+#results {
+  overflow: auto;
+}
+.pokedex {
+  size: 50%;
+    background: transparent;
+    color: white;
+  }
+}
